@@ -1,0 +1,14 @@
+{
+  "gameVersion": "1.14.7",
+  "changelist": 647472,
+  "format": "jsonl",
+  "playerHuntRows": 161,
+  "matchmakerHuntRows": 614,
+  "huntRegionRows": 45,
+  "escalationModeSpecRows": 19,
+  "huntModifierRows": 180,
+  "gameActivityRows": 10,
+  "unlockCriteriaRows": 148,
+  "scheduleRows": 201,
+  "notes": "Read-only live table export. Tag-routed query dictionaries and raw token streams are preserved. FText display fields are deliberately omitted (FText is a shared-ref to FTextData, not an FString; reading it faults). map_metadata_table is omitted: Blueprint-defined row struct with no verified layout. Do not replace backend tables until importer validation is complete."
+}

@@ -1,0 +1,3562 @@
+{
+  "schema": 1,
+  "targetVersion": "1.14.7",
+  "catalogSha256": "f83942c963291fed2a6099d1aba6f81dba6bed063052f25f7bf34f6cc9974a40",
+  "generatedAt": "2026-10-08",
+  "referencedCatalogIds": 367,
+  "sourceScope": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    "game-data/*.json"
+  ],
+  "entries": {
+    "AC_BACK_HP06-1_00": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Back",
+        "Owned",
+        "ACCESSORY"
+      ]
+    },
+    "AC_BACK_HP06-1_01": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Back",
+        "Owned",
+        "ACCESSORY"
+      ]
+    },
+    "AC_BACK_TRIALS_00": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Back",
+        "Owned",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_ARMSTRONG_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_FUNGUY_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_GLITTER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_MINT_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_RAINBOW_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_RANDALL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_SHOCK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_TRIALS_00": {
+      "storage": "stacked",
+      "maxQuantity": 10,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "AC_HEAD_UNSEEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Accessory",
+        "Head",
+        "ACCESSORY"
+      ]
+    },
+    "ARC_ZONE_0": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Archonite",
+        "Reagent"
+      ]
+    },
+    "AR_ARMSTRONG_ARMS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_ARMSTRONG_CHEST_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_ARMSTRONG_HELM_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_ARMSTRONG_LEGS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_BEGINNER_ARMS": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "initial",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_BEGINNER_CHEST": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "initial",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_BEGINNER_LEGS": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "initial",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP07A_MONK_ARMS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP07A_MONK_HELM_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP07B_WITCH_ARMS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP07B_WITCH_CHEST_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP07B_WITCH_HELM_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP07B_WITCH_LEGS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP08A_HEROES_ARMS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP08A_HEROES_CHEST_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP08A_HEROES_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP08A_HEROES_LEGS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP08B_PUNK_ARMS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP08B_PUNK_CHEST_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP08B_PUNK_HELM_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP08B_PUNK_LEGS_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP09A_ASSASSINS_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP09A_ASSASSINS_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP09A_ASSASSINS_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP09A_ASSASSINS_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP09B_COMMANDO_ARMS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP09B_COMMANDO_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP09B_COMMANDO_CHEST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP09B_COMMANDO_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP09B_COMMANDO_HELM_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP09B_COMMANDO_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP09B_COMMANDO_LEGS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP09B_COMMANDO_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP10A_CELESTIAL_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP10A_CELESTIAL_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP10A_CELESTIAL_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP10A_CELESTIAL_HELM_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP10A_CELESTIAL_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP10B_RAIDERS_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP10B_RAIDERS_ARMS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP10B_RAIDERS_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP10B_RAIDERS_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP10B_RAIDERS_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP11A_ALCHEMIST_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP11A_ALCHEMIST_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP11A_ALCHEMIST_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP11A_ALCHEMIST_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_HP12A_FROSTWARDEN_ARMS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Arms",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_ARMS"
+      ]
+    },
+    "AR_HP12A_FROSTWARDEN_CHEST_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_HP12A_FROSTWARDEN_HELM_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "AR_HP12A_FROSTWARDEN_LEGS_00_ULTRA": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Legs",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_LEGS"
+      ]
+    },
+    "AR_TRIALS_CHEST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Chest",
+        "transmog",
+        "owned",
+        "ARMOUR",
+        "ArmorType_CHEST"
+      ]
+    },
+    "AR_UNEQUIPPED_HELM": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Armour",
+        "Helm",
+        "initial",
+        "owned",
+        "hidden",
+        "ARMOUR",
+        "ArmorType_HELMET"
+      ]
+    },
+    "BNC_ANIMATION_001": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_AUTUMN_FOX_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_BEGINNER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "initial",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_EVENT_FROST17_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP05_FLAMES_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP05_NINJASTARS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP05_PETALS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_HP12A_FROSTWARDEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_ANIMATION_SAINTS_BOND_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerEmote",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_ARMSTRONG": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_AUTUMN_FOX": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_BEGINNER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "initial",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_DARK17_000": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_FROST18_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_FROST18_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP08B_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP08B_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP08B_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP09A_ASSASSINS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP09B_COMMANDO_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP10B_RAIDERS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_EVENT_HP12A_FROSTWARDEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_FABRIC_FUNGUY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerFabric",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_MESH_BEGINNER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "initial",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_MESH_EVENT_FROST17_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_036": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_BEGINNER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "initial",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_DARK17_000": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_FROST17_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_FROST17_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_HP08A_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_HP08B_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_HP08B_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_HP08B_03": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_EVENT_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_FUNGUY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_HP09B_COMMANDO_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_HP10B_RAIDERS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_SIGIL_RANDALL": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerSigil",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_1P_ARCSLAYER": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_1P_UNSEEN": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_FUNGUY_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP03_MOSSY_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP05_NINJA_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP05_NINJA_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP05_NINJA_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP07A_MONK_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP08A_HEROES_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP08B_PUNK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP09B_COMMANDO_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_HP10B_RAIDERS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "owned",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_OSTIA_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_STANDARD_OSTIA_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "BannerStandard",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BNC_VFX_BEGINNER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "BannerCustomization",
+        "initial",
+        "BANNERCUSTOMIZATION"
+      ]
+    },
+    "BN_BEGINNER_00": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "Banner",
+        "initial",
+        "BANNER"
+      ]
+    },
+    "BREAK_LERAWR_HIDE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Break",
+        "Item"
+      ]
+    },
+    "CC_HAIR_SPIKED": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": []
+    },
+    "CELL_PREVENT_STAGGER_UC": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Cell",
+        "CELL"
+      ]
+    },
+    "CHANGE_APPEARANCE_TOKEN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "ChangeAppearanceToken"
+      ]
+    },
+    "CONTAINER_CORE_FOUNDER_SLAYER": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "tank",
+        "noboost",
+        "founder",
+        "TANK"
+      ]
+    },
+    "CONTAINER_CORE_PRESTIGE_HP08A_00": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "tank",
+        "tank_Model_C",
+        "TANK"
+      ]
+    },
+    "CONTAINER_CORE_REWARD_DAILY": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "tank",
+        "tank_Model_C",
+        "TANK"
+      ]
+    },
+    "CONTAINER_CORE_SLAYERPACK": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "tank",
+        "noboost",
+        "founder",
+        "TANK"
+      ]
+    },
+    "CONTAINER_PROMO_KIWO_00": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "tank",
+        "noboost",
+        "stylehunter",
+        "TANK"
+      ]
+    },
+    "CURRENCY_CELLDUST": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_ESCALATION_HEROIC": {
+      "storage": "stacked",
+      "maxQuantity": 30000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_EVENT_DARKHARVEST": {
+      "storage": "stacked",
+      "maxQuantity": 10000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_EVENT_FROSTFALL": {
+      "storage": "stacked",
+      "maxQuantity": 10000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_EVENT_RAMSGIVING": {
+      "storage": "stacked",
+      "maxQuantity": 10000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_EVENT_SAINTSBOND": {
+      "storage": "stacked",
+      "maxQuantity": 10000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_EVENT_SPRINGTIDE": {
+      "storage": "stacked",
+      "maxQuantity": 10000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_GAUNTLET_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "gauntlet_currency"
+      ]
+    },
+    "CURRENCY_GAUNTLET_COIN_FADED": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "gauntlet_currency"
+      ]
+    },
+    "CURRENCY_MARKS_GILDED": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_MARKS_STEEL": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_NOTES": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_AIRSHIP": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "deprecated",
+        "hidden"
+      ]
+    },
+    "CURRENCY_PJM_ALCHEMY": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_ARMOR": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_FISHING": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_PRESTIGE_EMPTY": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_PRESTIGE_FILLED": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PJM_WEAPON": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_PLATINUM": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_CS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_EPIC": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_EPIC_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_PLATFORM": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_PLATFORM_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_PSN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_PSN_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_SWITCH": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_SWITCH_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_UNIV": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_XBOX": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PLATINUM_XBOX_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "platinum"
+      ]
+    },
+    "CURRENCY_PRESTIGE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_REWARDCACHE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S13_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S13_DAILY": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S14_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S15_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S16_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S17_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S18_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S19_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_S20_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_SEASONAL_COIN": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "seasonal_currency"
+      ]
+    },
+    "CURRENCY_SEASON_13_FUTURE": {
+      "storage": "stacked",
+      "maxQuantity": 30000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_SEASON_13_PAST": {
+      "storage": "stacked",
+      "maxQuantity": 30000,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_TOKEN_EXCHANGE_SPEED_UP": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency"
+      ]
+    },
+    "CURRENCY_TOKEN_TRANSMOG": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "currency",
+        "TransmogToken"
+      ]
+    },
+    "DEBUG_CURRENCY_PLATINUM_10K": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": []
+    },
+    "DYE_BABYBLUE_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_BANNER_BACKGROUND_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_BANNER_SIGIL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_BLUE05_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye",
+        "paperdoll_primary"
+      ]
+    },
+    "DYE_BLUE13_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_BROWN07_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye",
+        "initial"
+      ]
+    },
+    "DYE_GRAY05_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_GREEN04_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye",
+        "initial"
+      ]
+    },
+    "DYE_GREEN14_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_HP11B_ENGINEER_00_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "DYE_RED01_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Dye"
+      ]
+    },
+    "EJ_PLAYER_BOSUN_JOY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_GREGARIO_QUESTION": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_KAT_PRAY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_MIDDLEMAN_HMM": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_MOYRA_MUSCLE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_OMG": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_PRIYANI_WINK": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_ZAI_ANGRY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "hidden",
+        "EMOJI"
+      ]
+    },
+    "EJ_PLAYER_ZAI_SWEAT": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "EMOJI"
+      ]
+    },
+    "EJ_SYSTEM_TYPING": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emoji",
+        "hidden",
+        "EMOJI"
+      ]
+    },
+    "EM_END_BEGINNER_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "moth",
+        "initial",
+        "hidden",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_3POINT_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_BEGINNER_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "intro",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_GENERIC_001": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "intro",
+        "hidden",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_GENERIC_002": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "intro",
+        "hidden",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_GENERIC_003": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "intro",
+        "hidden",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP03_VINE_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP07B_COFFINDROP_BAT_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP07B_COFFINDROP_DANCE_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP08A_HEROIC_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP08A_WARCRY_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP08B_SKATEBOARD_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP09B_COMMANDO_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP10B_RAIDERS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP10B_RAIDERS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_INTRO_HP12A_FROSTWARDEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_BEGINNER_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_BEGINNER_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_BEGINNER_03": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_BEGINNER_04": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "initial",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_EVENT_FROST17_002": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "intro",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_HP07A_FIREBALL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_HP10A_CELESTIAL_04": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "EM_PLAYER_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "emote",
+        "owned",
+        "EMOTE"
+      ]
+    },
+    "FL_HEALING_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "initial",
+        "FLASK",
+        "FLASK"
+      ]
+    },
+    "GATHER_DEFENSE_01": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "Gathered",
+        "Item",
+        "SuppressEndOfHuntNotification"
+      ]
+    },
+    "GD_FRAME_A_BASE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "owned",
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_A_REDSTRIPE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "owned",
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_B_BASE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_B_BLUEWING": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_B_FLUTTERHEART": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_B_SPRINGTIDE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_C_BASE": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "GD_FRAME_STARTER_BASE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "GLIDER"
+      ]
+    },
+    "LT_BASIC": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "initial",
+        "hidden",
+        "LANTERN"
+      ]
+    },
+    "LT_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "LANTERN"
+      ]
+    },
+    "LT_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "transmog",
+        "owned",
+        "LANTERN"
+      ]
+    },
+    "LT_TRIALS_00": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "LANTERN"
+      ]
+    },
+    "LT_TRIALS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "transmog",
+        "owned",
+        "LANTERN"
+      ]
+    },
+    "LT_UNSEEN_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Lantern",
+        "Armour",
+        "transmog",
+        "owned",
+        "LANTERN"
+      ]
+    },
+    "MP_PUFFLEHOP_SPRING_BASE": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "COMPANION"
+      ]
+    },
+    "PART_AC_LEGENDARY_SHOCK": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_AC_PASSIVE_MASTERY_01": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "acaster",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_AC_PASSIVE_MASTERY_02": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "acaster",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_AC_PASSIVE_MASTERY_03": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "acaster",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_AC_SPECIAL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "acaster",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_AC_SPECIAL_MASTERY": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "acaster",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_PASSIVE_BLENDER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_PASSIVE_DASH_AGGRESSION": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_PASSIVE_SWINGING_CRIT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_PASSIVE_TRIALS_02": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "ShowItemAcquiredStinger",
+        "NonRepeaterPart",
+        "TrialStore",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_SPECIAL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_CB_SPECIAL_RIFTSTRIKE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "cblades",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_GRIP_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "HideInNotificationShelf",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_PASSIVE_DOUBLE_SHOT_DAMAGE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_PASSIVE_LONG_RANGE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_PASSIVE_LOW_AMMO_CRIT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_RECEIVER_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "HideInNotificationShelf",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_RECEIVER_PART_MARKER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "ShowItemAcquiredStinger",
+        "WEAPONPART"
+      ]
+    },
+    "PART_DP_RECEIVER_PIERCING": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "dp",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_EB_PASSIVE_DODGE_ATTACK": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_EB_PASSIVE_METER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_EB_PASSIVE_STAGGERPROOF": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_EB_SPECIAL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_EB_SPECIAL_SPIN": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "eblade",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_GA_PASSIVE_CHARGE_AOE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "gaxe",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_GA_PASSIVE_CHARGING_MOVESPEED": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "gaxe",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_GA_PASSIVE_METER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "gaxe",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_GA_SPECIAL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "gaxe",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_GA_SPECIAL_SKILLSHOT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "gaxe",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_IH_PASSIVE_JUMP_ATTACK_BUFF": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "ihammer",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_IH_PASSIVE_METER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "ihammer",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_IH_PASSIVE_STAGGER_PASSTHROUGH": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "ihammer",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_IH_SPECIAL_DEFAULT": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "ihammer",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PART_IH_SPECIAL_ISLANDCRACKER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "ihammer",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_MS_PASSIVE_AMMO_GROWTH": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "mspear",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_MS_PASSIVE_CHARGE_SPEED": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "mspear",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_MS_PASSIVE_WEAVING": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "mspear",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_MS_SPECIAL_ATTACK_SPEED_DAMAGE_BUFF": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "mspear",
+        "NonRepeaterPart",
+        "MasteryReward",
+        "WEAPONPART"
+      ]
+    },
+    "PART_MS_SPECIAL_PROJECTILE": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "WeaponPart",
+        "mspear",
+        "HideInNotificationShelf",
+        "NonRepeaterPart",
+        "WEAPONPART"
+      ]
+    },
+    "PR_FRANK": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "PlayerRole",
+        "PLAYER_ROLE"
+      ]
+    },
+    "QI_ATTACK_SPEED_POTION": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "supplies",
+        "tonic",
+        "QUICKITEM"
+      ]
+    },
+    "QI_BASIC_FLARE_DURABLE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "initial",
+        "QUICKITEM"
+      ]
+    },
+    "QI_FLARE_FUNGUY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "QUICKITEM"
+      ]
+    },
+    "QI_FLARE_HP08B_03": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "QUICKITEM"
+      ]
+    },
+    "QI_FLARE_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "QUICKITEM"
+      ]
+    },
+    "QI_FLARE_SAINTS19_06": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "QUICKITEM"
+      ]
+    },
+    "TITLE_BLANK": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "initial",
+        "TITLE"
+      ]
+    },
+    "TITLE_HP07B_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP08A_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP08B_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP09A_ASSASSINS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP09B_COMMANDO_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP10A_CELESTIAL_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_HP10B_RAIDERS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TITLE_PHOENIX_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "TITLE"
+      ]
+    },
+    "TOKEN_BOUNTY_DRAFT": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token"
+      ]
+    },
+    "TOKEN_BOUNTY_DRAFT_PREMIUM": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token"
+      ]
+    },
+    "TOKEN_CELL_EXCHANGE": {
+      "storage": "instanced",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden",
+        "EXCHANGE_TOKEN"
+      ]
+    },
+    "TOKEN_DAILY_CHALLENGE_DRAFT": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_DAILY_CHALLENGE_DRAFT_PREMIUM": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_DAILY_PATROL_BONUS": {
+      "storage": "stacked",
+      "maxQuantity": 6,
+      "tags": [
+        "hidden",
+        "token"
+      ]
+    },
+    "TOKEN_HUNTPASS_PRESTIGE_S08A": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_HUNT_PASS_TUTORIAL": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_KILL_COUNT_LERAWR_BETA": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden",
+        "initial"
+      ]
+    },
+    "TOKEN_KILL_COUNT_SHADOWCAT_NORMAL": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden",
+        "initial"
+      ]
+    },
+    "TOKEN_KILL_COUNT_SNOWFLAKE_NORMAL": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden",
+        "initial"
+      ]
+    },
+    "TOKEN_OB_PROGRESSION": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_WEEKLY_CHALLENGE_DRAFT": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TOKEN_WEEKLY_CHALLENGE_DRAFT_PREMIUM": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "token",
+        "hidden"
+      ]
+    },
+    "TY_FIREWORK_BASE": {
+      "storage": "stacked",
+      "maxQuantity": 0,
+      "tags": [
+        "toy",
+        "firework",
+        "QUICKITEM"
+      ]
+    },
+    "WP_AC_ARMSTRONG": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "ArmstrongGear",
+        "legendary",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_HP07A_MONK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_HP08B_PUNK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_HP10A_CELESTIAL_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_AC_TRIALS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "ac",
+        "transmog",
+        "owned",
+        "WEAPON",
+        "WeaponType_AC"
+      ]
+    },
+    "WP_CB_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "cblades",
+        "WEAPON",
+        "WeaponType_CBLADES"
+      ]
+    },
+    "WP_DP_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "dp",
+        "Weapon",
+        "WEAPON",
+        "WeaponType_DP"
+      ]
+    },
+    "WP_DP_EVENT_SPRING_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "dp",
+        "transmog",
+        "WEAPON",
+        "WeaponType_DP"
+      ]
+    },
+    "WP_DP_HP10A_CELESTIAL_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "dp",
+        "transmog",
+        "WEAPON",
+        "WeaponType_DP"
+      ]
+    },
+    "WP_EB_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_FROSTFALL_L1": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "crafteb",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_HOST": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "crafteb",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_HP08A_HEROES_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_EB_HP12A_FROSTWARDEN_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "eblade",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_EBLADE"
+      ]
+    },
+    "WP_GA_ARCSLAYER_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_ELVEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HEADSMAN": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP03_MOSSY": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP04_ARID": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP05_NINJA_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP05_NINJA_02": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP06B_ACADEMY_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP06_PIRATE_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP07A_MONK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP07B_WITCH_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP08A_HEROES_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP08B_PUNK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP09A_ASSASSINS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP09B_COMMANDO_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP10A_CELESTIAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP10B_RAIDERS_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP11A_ALCHEMIST_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP12A_FROSTWARDEN_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_HP16A_MARAUDERS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_METAL_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_ROMANTIC": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_GA_SPOOKY_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "gaxe",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_GAXE"
+      ]
+    },
+    "WP_IH_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "ihammer",
+        "Weapon",
+        "WEAPON",
+        "WeaponType_IHAMMER"
+      ]
+    },
+    "WP_IH_HP08B_PUNK_00": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "ihammer",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_IHAMMER"
+      ]
+    },
+    "WP_IH_HP10B_RAIDERS_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "ihammer",
+        "Weapon",
+        "transmog",
+        "WEAPON",
+        "WeaponType_IHAMMER"
+      ]
+    },
+    "WP_MS_BEGINNER": {
+      "storage": "instanced",
+      "maxQuantity": 1,
+      "tags": [
+        "mspear",
+        "Weapon",
+        "WEAPON",
+        "WeaponType_MSPEAR"
+      ]
+    },
+    "WP_MS_HP11A_ALCHEMIST_01": {
+      "storage": "stacked",
+      "maxQuantity": 1,
+      "tags": [
+        "Weapon",
+        "mspear",
+        "transmog",
+        "WEAPON",
+        "WeaponType_MSPEAR"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5479 @@
+{
+ "Aetherdrive_Tonic_Unlock": {
+  "childNodes": [
+   "Aetherdrive_Tonic_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Aetherdrive_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Aetherdrive_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Aetherdrive_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Aetherdrive_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Aetherdrive_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Aetherdrive_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Aetherdrive_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Aetherdrive_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Aetherdrive_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_A": {
+  "currencyCosts": [
+   {
+    "amount": 10,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_B": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_C"
+  ]
+ },
+ "AirshipUpgrades_Islands_C": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_D": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_E"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_E": {
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_F": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_G"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 225,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_G": {
+  "currencyCosts": [
+   {
+    "amount": 225,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_H": {
+  "currencyCosts": [
+   {
+    "amount": 340,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_I": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_J"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_J": {
+  "currencyCosts": [
+   {
+    "amount": 500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_K": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_T"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 760,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_L": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_M"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 760,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_M": {
+  "currencyCosts": [
+   {
+    "amount": 1150,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_N": {
+  "currencyCosts": [
+   {
+    "amount": 1700,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_O": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_P"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 2500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_P": {
+  "currencyCosts": [
+   {
+    "amount": 2500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_Q": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_R"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_R": {
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_S": {
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_T": {
+  "currencyCosts": [
+   {
+    "amount": 760,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_Islands_U": {
+  "currencyCosts": [
+   {
+    "amount": 2000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "AirshipUpgrades_OrbBase": {
+  "childNodes": [
+   "AirshipUpgrades_Orb_0"
+  ]
+ },
+ "AirshipUpgrades_Orb_0": {
+  "childNodes": [
+   "AirshipUpgrades_Orb_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Orb_1": {
+  "childNodes": [
+   "AirshipUpgrades_Orb_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 2000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Orb_2": {
+  "childNodes": [
+   "AirshipUpgrades_Orb_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Orb_3": {
+  "childNodes": [
+   "AirshipUpgrades_Orb_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Orb_4": {
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_OreBase": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "AirshipUpgrades_Ore_0"
+  ]
+ },
+ "AirshipUpgrades_Ore_0": {
+  "childNodes": [
+   "AirshipUpgrades_Ore_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Ore_1": {
+  "childNodes": [
+   "AirshipUpgrades_Ore_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 2000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Ore_2": {
+  "childNodes": [
+   "AirshipUpgrades_Ore_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 4000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Ore_3": {
+  "childNodes": [
+   "AirshipUpgrades_Ore_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 8000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "AirshipUpgrades_Ore_4": {
+  "currencyCosts": [
+   {
+    "amount": 16000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Airstrike_Beacon_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Upgrade_0": {
+  "childNodes": [
+   "Airstrike_Beacon_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Upgrade_1": {
+  "childNodes": [
+   "Airstrike_Beacon_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Upgrade_2": {
+  "childNodes": [
+   "Airstrike_Beacon_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Upgrade_3": {
+  "childNodes": [
+   "Airstrike_Beacon_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Airstrike_Beacon_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "ArmourSmithing": {
+  "childNodes": [
+   "ArmourTypeHelm_00",
+   "ArmourTypeChest_00",
+   "ArmourTypeArms_00",
+   "ArmourTypeLegs_00"
+  ]
+ },
+ "ArmourTypeArms_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "StaminaRegenUpgrade_00"
+  ]
+ },
+ "ArmourTypeArms_01": {
+  "childNodes": [
+   "ArmourTypeArms_02"
+  ]
+ },
+ "ArmourTypeChest_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "HealthUpgrade_00"
+  ]
+ },
+ "ArmourTypeChest_01": {
+  "childNodes": [
+   "ArmourTypeChest_02"
+  ]
+ },
+ "ArmourTypeHelm_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "HealingReceivedUpgrade_00"
+  ]
+ },
+ "ArmourTypeHelm_01": {
+  "childNodes": [
+   "ArmourTypeHelm_02"
+  ]
+ },
+ "ArmourTypeLegs_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "StaminaUpgrade_00"
+  ]
+ },
+ "ArmourTypeLegs_01": {
+  "childNodes": [
+   "ArmourTypeLegs_02"
+  ]
+ },
+ "Assault_Tonic_Unlock": {
+  "childNodes": [
+   "Assault_Tonic_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Assault_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Assault_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Assault_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Assault_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Assault_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Assault_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Assault_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Assault_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Assault_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BankedXP_01": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "BankedXP_02"
+  ]
+ },
+ "BankedXP_02": {
+  "childNodes": [
+   "BankedXP_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 500,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   },
+   {
+    "amount": 1,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ]
+ },
+ "BankedXP_03": {
+  "childNodes": [
+   "BankedXP_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 700,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   },
+   {
+    "amount": 1,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ]
+ },
+ "BankedXP_04": {
+  "childNodes": [
+   "BankedXP_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 900,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   },
+   {
+    "amount": 1,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ]
+ },
+ "BankedXP_05": {
+  "currencyCosts": [
+   {
+    "amount": 1000,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   },
+   {
+    "amount": 1,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ]
+ },
+ "BankedXP_Unlock": {
+  "childNodes": [
+   "BankedXP_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Barrage_Grenade_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Barrage_Grenade_Upgrade_0"
+  ]
+ },
+ "Barrage_Grenade_Upgrade_0": {
+  "childNodes": [
+   "Barrage_Grenade_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Barrage_Grenade_Upgrade_1": {
+  "childNodes": [
+   "Barrage_Grenade_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Barrage_Grenade_Upgrade_2": {
+  "childNodes": [
+   "Barrage_Grenade_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Barrage_Grenade_Upgrade_3": {
+  "childNodes": [
+   "Barrage_Grenade_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Barrage_Grenade_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_00": {
+  "childNodes": [
+   "BehemothXP_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 10000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_01": {
+  "childNodes": [
+   "BehemothXP_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_02": {
+  "childNodes": [
+   "BehemothXP_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 600,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 40000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_03": {
+  "childNodes": [
+   "BehemothXP_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 80000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_04": {
+  "currencyCosts": [
+   {
+    "amount": 2400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 160000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "BehemothXP_Header": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "BehemothXP_00"
+  ]
+ },
+ "Blitz_Tonic_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Blitz_Tonic_Upgrade_0"
+  ]
+ },
+ "Blitz_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Blitz_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Blitz_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Blitz_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Blitz_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Blitz_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Blitz_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Blitz_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Blitz_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Bulwark_Tonic_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Bulwark_Tonic_Upgrade_0"
+  ]
+ },
+ "Bulwark_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Bulwark_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Bulwark_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Bulwark_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Bulwark_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Bulwark_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Bulwark_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Bulwark_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Bulwark_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Charges_Upgrade_01": {
+  "childNodes": [
+   "Charges_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Charges_Upgrade_02": {
+  "childNodes": [
+   "Charges_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 500,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Charges_Upgrade_03": {
+  "childNodes": [
+   "Charges_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 900,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Charges_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2500,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Unlock": {
+  "childNodes": [
+   "Coldsnap_Grenade_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Upgrade_0": {
+  "childNodes": [
+   "Coldsnap_Grenade_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Upgrade_1": {
+  "childNodes": [
+   "Coldsnap_Grenade_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Upgrade_2": {
+  "childNodes": [
+   "Coldsnap_Grenade_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Upgrade_3": {
+  "childNodes": [
+   "Coldsnap_Grenade_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Coldsnap_Grenade_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Unlock": {
+  "childNodes": [
+   "Concussive_Grenade_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Upgrade_0": {
+  "childNodes": [
+   "Concussive_Grenade_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Upgrade_1": {
+  "childNodes": [
+   "Concussive_Grenade_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Upgrade_2": {
+  "childNodes": [
+   "Concussive_Grenade_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Upgrade_3": {
+  "childNodes": [
+   "Concussive_Grenade_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Concussive_Grenade_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Consumableslot_01": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Consumableslot_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 10,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Consumableslot_02": {
+  "childNodes": [
+   "Consumableslot_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Consumableslot_03": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Dojo": {
+  "childNodes": [
+   "AirshipUpgrades_Islands_A"
+  ]
+ },
+ "Drone_Unlock": {
+  "childNodes": [
+   "Drone_Utility_Upgrade_01",
+   "Stacks_Upgrade_01"
+  ]
+ },
+ "Drone_Utility_Upgrade_01": {
+  "childNodes": [
+   "Drone_Utility_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Drone_Utility_Upgrade_02": {
+  "childNodes": [
+   "Drone_Utility_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Drone_Utility_Upgrade_03": {
+  "childNodes": [
+   "Drone_Utility_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1050,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Drone_Utility_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2450,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Battle_Unlock": {
+  "childNodes": [
+   "Elder_Tactics_01",
+   "Elder_Shields_Upgrade_01"
+  ]
+ },
+ "Elder_Shields_Upgrade_01": {
+  "childNodes": [
+   "Elder_Shields_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 250,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Shields_Upgrade_02": {
+  "childNodes": [
+   "Elder_Shields_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 550,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Shields_Upgrade_03": {
+  "childNodes": [
+   "Elder_Shields_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 950,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Shields_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2550,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Tactics_01": {
+  "childNodes": [
+   "Elder_Tactics_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Tactics_02": {
+  "childNodes": [
+   "Elder_Tactics_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Tactics_03": {
+  "childNodes": [
+   "Elder_Tactics_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1000,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Tactics_04": {
+  "childNodes": [
+   "Elder_Tactics_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 2400,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Elder_Tactics_05": {
+  "currencyCosts": [
+   {
+    "amount": 3000,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "ElementalResistanceNode": {
+  "childNodes": [
+   "FlameResistance_01",
+   "ShockResistance_01",
+   "FrostResistance_01",
+   "TerraResistance_01",
+   "RadiantResistance_01",
+   "UmbralResistance_01"
+  ]
+ },
+ "Escalation.Easy.Blaze": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Easy.Frost": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Easy.Radiant": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Easy.Terra": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Easy.Umbral": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Easy.Unlock": {
+  "childNodes": [
+   "Escalation.Easy.Shock",
+   "Escalation.Easy.Blaze",
+   "Escalation.Easy.Umbral",
+   "Escalation.Easy.Terra",
+   "Escalation.Easy.Frost",
+   "Escalation.Easy.Radiant"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Blaze": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Frost": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Radiant": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Terra": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Umbral": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation.Hard.Unlock": {
+  "childNodes": [
+   "Escalation_Heroic_Unlock",
+   "Escalation.Hard.Shock",
+   "Escalation.Hard.Blaze",
+   "Escalation.Hard.Umbral",
+   "Escalation.Hard.Terra",
+   "Escalation.Hard.Frost",
+   "Escalation.Hard.Radiant"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Escalation_Crown_Unlock_Blaze": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_ARMSTRONG_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Frost": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_MINT_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Radiant": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_GLITTER_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Rainbow": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_RAINBOW_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Shock": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_SHOCK_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Terra": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_FUNGUY_00"
+  ]
+ },
+ "Escalation_Crown_Unlock_Umbral": {
+  "currencyCosts": [
+   {
+    "amount": 5,
+    "currency": "CURRENCY_ESCALATION_HEROIC"
+   }
+  ],
+  "rewards": [
+   "AC_HEAD_RANDALL_00"
+  ]
+ },
+ "Escalation_Heroic_Unlock": {
+  "childNodes": [
+   "Escalation_Crown_Unlock_Shock",
+   "Escalation_Crown_Unlock_Blaze",
+   "Escalation_Crown_Unlock_Umbral",
+   "Escalation_Crown_Unlock_Terra",
+   "Escalation_Crown_Unlock_Frost",
+   "Escalation_Crown_Unlock_Radiant",
+   "Escalation_Crown_Unlock_Rainbow"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "FlameResistance_01": {
+  "childNodes": [
+   "FlameResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FlameResistance_02": {
+  "childNodes": [
+   "FlameResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FlameResistance_03": {
+  "childNodes": [
+   "FlameResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FlameResistance_04": {
+  "childNodes": [
+   "FlameResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FlameResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Unlock": {
+  "childNodes": [
+   "Frenzy_Tonic_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Frenzy_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Frenzy_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Frenzy_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Frenzy_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Frenzy_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FrostResistance_01": {
+  "childNodes": [
+   "FrostResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FrostResistance_02": {
+  "childNodes": [
+   "FrostResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FrostResistance_03": {
+  "childNodes": [
+   "FrostResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FrostResistance_04": {
+  "childNodes": [
+   "FrostResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "FrostResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Future_Slayer_00": {
+  "childNodes": [
+   "Future_Slayer_01"
+  ]
+ },
+ "Future_Slayer_01": {
+  "childNodes": [
+   "Drone_Unlock",
+   "Elder_Battle_Unlock"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "GatherHerbUpgrade_01": {
+  "childNodes": [
+   "GatherHerbUpgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherHerbUpgrade_02": {
+  "childNodes": [
+   "GatherHerbUpgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 250,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 18750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherHerbUpgrade_03": {
+  "childNodes": [
+   "GatherHerbUpgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherHerbUpgrade_04": {
+  "childNodes": [
+   "GatherHerbUpgrade_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 650,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 48750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherHerbUpgrade_05": {
+  "currencyCosts": [
+   {
+    "amount": 1050,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 78750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherOreUpgrades_01": {
+  "childNodes": [
+   "GatherOreUpgrades_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherOreUpgrades_02": {
+  "childNodes": [
+   "GatherOreUpgrades_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 250,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 18750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherOreUpgrades_03": {
+  "childNodes": [
+   "GatherOreUpgrades_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherOreUpgrades_04": {
+  "childNodes": [
+   "GatherOreUpgrades_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 650,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 48750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatherOreUpgrades_05": {
+  "currencyCosts": [
+   {
+    "amount": 1050,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 78750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GatheringUpgradesBranch": {
+  "childNodes": [
+   "GatherHerbUpgrade_01",
+   "GatherOreUpgrades_01"
+  ]
+ },
+ "GliderStamina_1": {
+  "childNodes": [
+   "GliderStamina_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GliderStamina_2": {
+  "childNodes": [
+   "GliderStamina_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GliderStamina_3": {
+  "currencyCosts": [
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GliderUpgrade_0": {
+  "childNodes": [
+   "GliderUpgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 10,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GliderUpgrade_1": {
+  "childNodes": [
+   "GliderUpgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "GliderUpgrade_2": {
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Grenade_Unlock": {
+  "childNodes": [
+   "Barrage_Grenade_Unlock",
+   "Coldsnap_Grenade_Unlock",
+   "Transfusion_Grenade_Unlock",
+   "Concussive_Grenade_Unlock",
+   "Inferno_Grenade_Unlock",
+   "Airstrike_Beacon_Unlock"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 10,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "HealingReceivedUpgrade_00": {
+  "childNodes": [
+   "HealingReceivedUpgrade_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealingReceivedUpgrade_01": {
+  "childNodes": [
+   "HealingReceivedUpgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealingReceivedUpgrade_02": {
+  "childNodes": [
+   "HealingReceivedUpgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealingReceivedUpgrade_03": {
+  "childNodes": [
+   "HealingReceivedUpgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealingReceivedUpgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Healing_Flask_Base": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Healing_Flask_Upgrade_0"
+  ]
+ },
+ "Healing_Flask_Upgrade_0": {
+  "childNodes": [
+   "Healing_Flask_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 75,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Healing_Flask_Upgrade_1": {
+  "childNodes": [
+   "Healing_Flask_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Healing_Flask_Upgrade_2": {
+  "childNodes": [
+   "Healing_Flask_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Healing_Flask_Upgrade_3": {
+  "childNodes": [
+   "Healing_Flask_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 600,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 45000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Healing_Flask_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealthUpgrade_00": {
+  "childNodes": [
+   "HealthUpgrade_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealthUpgrade_01": {
+  "childNodes": [
+   "HealthUpgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealthUpgrade_02": {
+  "childNodes": [
+   "HealthUpgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealthUpgrade_03": {
+  "childNodes": [
+   "HealthUpgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HealthUpgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "HuntPass": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "HuntPassBounties"
+  ]
+ },
+ "Inferno_Grenade_Unlock": {
+  "childNodes": [
+   "Inferno_Grenade_Uprgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Inferno_Grenade_Uprgrade_0": {
+  "childNodes": [
+   "Inferno_Grenade_Uprgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Inferno_Grenade_Uprgrade_1": {
+  "childNodes": [
+   "Inferno_Grenade_Uprgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Inferno_Grenade_Uprgrade_2": {
+  "childNodes": [
+   "Inferno_Grenade_Uprgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Inferno_Grenade_Uprgrade_3": {
+  "childNodes": [
+   "Inferno_Grenade_Uprgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Inferno_Grenade_Uprgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Unlock": {
+  "childNodes": [
+   "Insight_Tonic_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Insight_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Insight_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Insight_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Insight_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Insight_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Drask": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Koshai": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Pangar": {
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Shrike": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Skarn": {
+  "currencyCosts": [
+   {
+    "amount": 75,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lantern.Unlock": {
+  "childNodes": [
+   "Lantern.Embermane",
+   "Lantern.Drask",
+   "Lantern.Shrike",
+   "Lantern.Skarn",
+   "Lantern.Pangar",
+   "Lantern.Koshai"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "LT_BEGINNER"
+  ]
+ },
+ "Lifedrain_Tonic_Unlock": {
+  "childNodes": [
+   "Lifedrain_Tonic_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lifedrain_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Lifedrain_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lifedrain_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Lifedrain_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lifedrain_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Lifedrain_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lifedrain_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Lifedrain_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Lifedrain_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "LoadoutSlot_01": {
+  "childNodes": [
+   "LoadoutSlot_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "LoadoutSlot_02": {
+  "childNodes": [
+   "LoadoutSlot_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "LoadoutSlot_03": {
+  "childNodes": [
+   "LoadoutSlot_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "LoadoutSlot_04": {
+  "childNodes": [
+   "LoadoutSlot_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "LoadoutSlot_05": {
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Middleman.Unlock": {
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Past_Slayer_00": {
+  "childNodes": [
+   "Past_Slayer_01"
+  ]
+ },
+ "Past_Slayer_01": {
+  "childNodes": [
+   "Perfect_Strike_Unlock",
+   "Primal_Battle_Unlock"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Perfect_Strike_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Shockwave_Upgrade_01",
+   "Charges_Upgrade_01"
+  ]
+ },
+ "PlayerRole_Bastion": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "PlayerRole_Darkness": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "PlayerRole_Frank": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "PlayerRole_Unlock": {
+  "childNodes": [
+   "PlayerRole_Bastion",
+   "PlayerRole_Iceborne",
+   "PlayerRole_Windfury",
+   "PlayerRole_Darkness",
+   "PlayerRole_Frank"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "PlayerRole_Windfury": {
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Prestige.Unlock": {
+  "childNodes": [
+   "Gauntlet_Unlock"
+  ]
+ },
+ "Primal_Battle_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Primal_Debuff_Upgrade_01",
+   "Primal_Buff_Upgrade_01"
+  ]
+ },
+ "Primal_Buff_Upgrade_01": {
+  "childNodes": [
+   "Primal_Buff_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 250,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Buff_Upgrade_02": {
+  "childNodes": [
+   "Primal_Buff_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 550,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Buff_Upgrade_03": {
+  "childNodes": [
+   "Primal_Buff_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 950,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Buff_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2550,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Debuff_Upgrade_01": {
+  "childNodes": [
+   "Primal_Debuff_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Debuff_Upgrade_02": {
+  "childNodes": [
+   "Primal_Debuff_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Debuff_Upgrade_03": {
+  "childNodes": [
+   "Primal_Debuff_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1000,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Debuff_Upgrade_04": {
+  "childNodes": [
+   "Primal_Debuff_Upgrade_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 2400,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Primal_Debuff_Upgrade_05": {
+  "currencyCosts": [
+   {
+    "amount": 3000,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Unlock": {
+  "childNodes": [
+   "Pylon_Frostbite_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Upgrade_0": {
+  "childNodes": [
+   "Pylon_Frostbite_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Upgrade_1": {
+  "childNodes": [
+   "Pylon_Frostbite_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Upgrade_2": {
+  "childNodes": [
+   "Pylon_Frostbite_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Upgrade_3": {
+  "childNodes": [
+   "Pylon_Frostbite_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Frostbite_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Unlock": {
+  "childNodes": [
+   "Pylon_Inspiring_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Upgrade_0": {
+  "childNodes": [
+   "Pylon_Inspiring_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Upgrade_1": {
+  "childNodes": [
+   "Pylon_Inspiring_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Upgrade_2": {
+  "childNodes": [
+   "Pylon_Inspiring_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Upgrade_3": {
+  "childNodes": [
+   "Pylon_Inspiring_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Inspiring_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Ironhide_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Pylon_Ironhide_Upgrade_0"
+  ]
+ },
+ "Pylon_Ironhide_Upgrade_0": {
+  "childNodes": [
+   "Pylon_Ironhide_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Ironhide_Upgrade_1": {
+  "childNodes": [
+   "Pylon_Ironhide_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Ironhide_Upgrade_2": {
+  "childNodes": [
+   "Pylon_Ironhide_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Ironhide_Upgrade_3": {
+  "childNodes": [
+   "Pylon_Ironhide_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Ironhide_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Unlock": {
+  "childNodes": [
+   "Pylon_Lifespring_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Upgrade_0": {
+  "childNodes": [
+   "Pylon_Lifespring_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Upgrade_1": {
+  "childNodes": [
+   "Pylon_Lifespring_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Upgrade_2": {
+  "childNodes": [
+   "Pylon_Lifespring_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Upgrade_3": {
+  "childNodes": [
+   "Pylon_Lifespring_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Lifespring_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Pylon_Unlock": {
+  "childNodes": [
+   "Pylon_Lifespring_Unlock",
+   "Pylon_Ironhide_Unlock",
+   "Pylon_Inspiring_Unlock",
+   "Pylon_Frostbite_Unlock"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "RadiantResistance_01": {
+  "childNodes": [
+   "RadiantResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "RadiantResistance_02": {
+  "childNodes": [
+   "RadiantResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "RadiantResistance_03": {
+  "childNodes": [
+   "RadiantResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "RadiantResistance_04": {
+  "childNodes": [
+   "RadiantResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "RadiantResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "RepeaterSmithing": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeDP_00"
+  ]
+ },
+ "ShockResistance_01": {
+  "childNodes": [
+   "ShockResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "ShockResistance_02": {
+  "childNodes": [
+   "ShockResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "ShockResistance_03": {
+  "childNodes": [
+   "ShockResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "ShockResistance_04": {
+  "childNodes": [
+   "ShockResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "ShockResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Shockwave_Upgrade_01": {
+  "childNodes": [
+   "Shockwave_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Shockwave_Upgrade_02": {
+  "childNodes": [
+   "Shockwave_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Shockwave_Upgrade_03": {
+  "childNodes": [
+   "Shockwave_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 1050,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Shockwave_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2450,
+    "currency": "CURRENCY_SEASON_13_PAST"
+   }
+  ]
+ },
+ "Slayer_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Slayer_01",
+   "Dojo"
+  ]
+ },
+ "Slayer_01": {
+  "childNodes": [
+   "Slayer_02",
+   "AirshipUpgrades_Islands_B",
+   "Smithing"
+  ]
+ },
+ "Slayer_02": {
+  "childNodes": [
+   "Slayer_03",
+   "ArmourSmithing",
+   "GliderUpgrade_0",
+   "AirshipUpgrades_Islands_D"
+  ]
+ },
+ "Slayer_03": {
+  "childNodes": [
+   "Slayer_04",
+   "Tonic.Unlock",
+   "LoadoutSlot_01",
+   "AirshipUpgrades_Islands_F"
+  ]
+ },
+ "Slayer_04": {
+  "childNodes": [
+   "Slayer_05",
+   "Lantern.Unlock",
+   "WeaponMastery",
+   "AirshipUpgrades_Islands_H"
+  ]
+ },
+ "Slayer_05": {
+  "childNodes": [
+   "Slayer_06",
+   "Tonic.Unlock_0",
+   "Escalation.Easy.Unlock",
+   "AirshipUpgrades_Islands_I",
+   "Middleman.Unlock"
+  ]
+ },
+ "Slayer_06": {
+  "childNodes": [
+   "Slayer_07",
+   "PlayerRole_Unlock",
+   "ElementalResistanceNode",
+   "AirshipUpgrades_Islands_K"
+  ]
+ },
+ "Slayer_07": {
+  "childNodes": [
+   "Slayer_08",
+   "Pylon_Unlock",
+   "AirshipUpgrades_Islands_L"
+  ]
+ },
+ "Slayer_08": {
+  "childNodes": [
+   "Slayer_09",
+   "AirshipUpgrades_Islands_N",
+   "GatheringUpgradesBranch",
+   "GliderStamina_1"
+  ]
+ },
+ "Slayer_09": {
+  "childNodes": [
+   "Slayer_10",
+   "AirshipUpgrades_Islands_O",
+   "Grenade_Unlock"
+  ]
+ },
+ "Slayer_10": {
+  "childNodes": [
+   "Slayer_11",
+   "AirshipUpgrades_Islands_Q",
+   "Trials_Normal_Unlock",
+   "AirshipUpgrades_Islands_S"
+  ]
+ },
+ "Slayer_11": {
+  "childNodes": [
+   "Prestige.Unlock",
+   "Escalation.Hard.Unlock",
+   "Weapon_Prestige_Emp",
+   "Trials_Hard_Unlock",
+   "AirshipUpgrades_Islands_U"
+  ]
+ },
+ "Smithing": {
+  "childNodes": [
+   "WeaponSmithing",
+   "RepeaterSmithing",
+   "StrikerSmithing"
+  ]
+ },
+ "Stacks_Upgrade_01": {
+  "childNodes": [
+   "Stacks_Upgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Stacks_Upgrade_02": {
+  "childNodes": [
+   "Stacks_Upgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 500,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Stacks_Upgrade_03": {
+  "childNodes": [
+   "Stacks_Upgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 900,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "Stacks_Upgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 2500,
+    "currency": "CURRENCY_SEASON_13_FUTURE"
+   }
+  ]
+ },
+ "StaminaRegenUpgrade_00": {
+  "childNodes": [
+   "StaminaRegenUpgrade_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaRegenUpgrade_01": {
+  "childNodes": [
+   "StaminaRegenUpgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaRegenUpgrade_02": {
+  "childNodes": [
+   "StaminaRegenUpgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaRegenUpgrade_03": {
+  "childNodes": [
+   "StaminaRegenUpgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaRegenUpgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaUpgrade_00": {
+  "childNodes": [
+   "StaminaUpgrade_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaUpgrade_01": {
+  "childNodes": [
+   "StaminaUpgrade_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaUpgrade_02": {
+  "childNodes": [
+   "StaminaUpgrade_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaUpgrade_03": {
+  "childNodes": [
+   "StaminaUpgrade_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StaminaUpgrade_04": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Stamina_Tonic_Unlock": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "Stamina_Tonic_Upgrade_0"
+  ]
+ },
+ "Stamina_Tonic_Upgrade_0": {
+  "childNodes": [
+   "Stamina_Tonic_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Stamina_Tonic_Upgrade_1": {
+  "childNodes": [
+   "Stamina_Tonic_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Stamina_Tonic_Upgrade_2": {
+  "childNodes": [
+   "Stamina_Tonic_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Stamina_Tonic_Upgrade_3": {
+  "childNodes": [
+   "Stamina_Tonic_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Stamina_Tonic_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "StrikerSmithing": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeAC_00"
+  ]
+ },
+ "TerraResistance_01": {
+  "childNodes": [
+   "TerraResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "TerraResistance_02": {
+  "childNodes": [
+   "TerraResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "TerraResistance_03": {
+  "childNodes": [
+   "TerraResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "TerraResistance_04": {
+  "childNodes": [
+   "TerraResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "TerraResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Tonic.Unlock": {
+  "childNodes": [
+   "Stamina_Tonic_Unlock",
+   "Bulwark_Tonic_Unlock",
+   "Healing_Flask_Base",
+   "Consumableslot_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 10,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Tonic.Unlock_0": {
+  "childNodes": [
+   "Lifedrain_Tonic_Unlock",
+   "Blitz_Tonic_Unlock",
+   "Assault_Tonic_Unlock",
+   "Aetherdrive_Tonic_Unlock",
+   "Frenzy_Tonic_Unlock",
+   "Insight_Tonic_Unlock"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Unlock": {
+  "childNodes": [
+   "Transfusion_Grenade_Upgrade_0"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 25,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 1875,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Upgrade_0": {
+  "childNodes": [
+   "Transfusion_Grenade_Upgrade_1"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 150,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 11250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Upgrade_1": {
+  "childNodes": [
+   "Transfusion_Grenade_Upgrade_2"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 22500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Upgrade_2": {
+  "childNodes": [
+   "Transfusion_Grenade_Upgrade_3"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 450,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 33750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Upgrade_3": {
+  "childNodes": [
+   "Transfusion_Grenade_Upgrade_4"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 750,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 56250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Transfusion_Grenade_Upgrade_4": {
+  "currencyCosts": [
+   {
+    "amount": 1200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 90000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "Trials_Hard_Unlock": {
+  "currencyCosts": [
+   {
+    "amount": 300,
+    "currency": "CURRENCY_MARKS_STEEL"
+   }
+  ]
+ },
+ "UmbralResistance_01": {
+  "childNodes": [
+   "UmbralResistance_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "UmbralResistance_02": {
+  "childNodes": [
+   "UmbralResistance_03"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 125,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 9375,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "UmbralResistance_03": {
+  "childNodes": [
+   "UmbralResistance_04"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "UmbralResistance_04": {
+  "childNodes": [
+   "UmbralResistance_05"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 275,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 20625,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "UmbralResistance_05": {
+  "currencyCosts": [
+   {
+    "amount": 350,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 26250,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeAC_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeAC_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeAC_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeAC_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeCB_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeCB_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeCB_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeCB_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeDP_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeDP_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeDP_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeDP_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeEB_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeEB_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeEB_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeEB_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeGA_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeGA_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeGA_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeGA_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeIH_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeIH_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeIH_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeIH_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeMS_00": {
+  "childNodes": [
+   "WeaponPowerUpgradeMS_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponCritUpgradeMS_01": {
+  "childNodes": [
+   "WeaponPowerUpgradeMS_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponEmpow_AC": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_AC_0"
+  ]
+ },
+ "WeaponEmpow_AC_0": {
+  "childNodes": [
+   "WeaponEmpow_AC_1"
+  ]
+ },
+ "WeaponEmpow_AC_1": {
+  "childNodes": [
+   "WeaponEmpow_AC_2"
+  ]
+ },
+ "WeaponEmpow_AC_2": {
+  "childNodes": [
+   "WeaponEmpow_AC_3"
+  ]
+ },
+ "WeaponEmpow_AC_3": {
+  "childNodes": [
+   "WeaponEmpow_AC_4"
+  ]
+ },
+ "WeaponEmpow_CB": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_CB_0"
+  ]
+ },
+ "WeaponEmpow_CB_0": {
+  "childNodes": [
+   "WeaponEmpow_CB_1"
+  ]
+ },
+ "WeaponEmpow_CB_1": {
+  "childNodes": [
+   "WeaponEmpow_CB_2"
+  ]
+ },
+ "WeaponEmpow_CB_2": {
+  "childNodes": [
+   "WeaponEmpow_CB_3"
+  ]
+ },
+ "WeaponEmpow_CB_3": {
+  "childNodes": [
+   "WeaponEmpow_CB_4"
+  ]
+ },
+ "WeaponEmpow_DP": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_DP_0"
+  ]
+ },
+ "WeaponEmpow_DP_0": {
+  "childNodes": [
+   "WeaponEmpow_DP_1"
+  ]
+ },
+ "WeaponEmpow_DP_1": {
+  "childNodes": [
+   "WeaponEmpow_DP_2"
+  ]
+ },
+ "WeaponEmpow_DP_2": {
+  "childNodes": [
+   "WeaponEmpow_DP_3"
+  ]
+ },
+ "WeaponEmpow_DP_3": {
+  "childNodes": [
+   "WeaponEmpow_DP_4"
+  ]
+ },
+ "WeaponEmpow_EB": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_EB_0"
+  ]
+ },
+ "WeaponEmpow_EB_0": {
+  "childNodes": [
+   "WeaponEmpow_EB_1"
+  ]
+ },
+ "WeaponEmpow_EB_1": {
+  "childNodes": [
+   "WeaponEmpow_EB_2"
+  ]
+ },
+ "WeaponEmpow_EB_2": {
+  "childNodes": [
+   "WeaponEmpow_EB_3"
+  ]
+ },
+ "WeaponEmpow_EB_3": {
+  "childNodes": [
+   "WeaponEmpow_EB_4"
+  ]
+ },
+ "WeaponEmpow_GA": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_GA_0"
+  ]
+ },
+ "WeaponEmpow_GA_0": {
+  "childNodes": [
+   "WeaponEmpow_GA_1"
+  ]
+ },
+ "WeaponEmpow_GA_1": {
+  "childNodes": [
+   "WeaponEmpow_GA_2"
+  ]
+ },
+ "WeaponEmpow_GA_2": {
+  "childNodes": [
+   "WeaponEmpow_GA_3"
+  ]
+ },
+ "WeaponEmpow_GA_3": {
+  "childNodes": [
+   "WeaponEmpow_GA_4"
+  ]
+ },
+ "WeaponEmpow_IH": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_IH_0"
+  ]
+ },
+ "WeaponEmpow_IH_0": {
+  "childNodes": [
+   "WeaponEmpow_IH_1"
+  ]
+ },
+ "WeaponEmpow_IH_1": {
+  "childNodes": [
+   "WeaponEmpow_IH_2"
+  ]
+ },
+ "WeaponEmpow_IH_2": {
+  "childNodes": [
+   "WeaponEmpow_IH_3"
+  ]
+ },
+ "WeaponEmpow_IH_3": {
+  "childNodes": [
+   "WeaponEmpow_IH_4"
+  ]
+ },
+ "WeaponEmpow_MS": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_MS_0"
+  ]
+ },
+ "WeaponEmpow_MS_0": {
+  "childNodes": [
+   "WeaponEmpow_MS_1"
+  ]
+ },
+ "WeaponEmpow_MS_1": {
+  "childNodes": [
+   "WeaponEmpow_MS_2"
+  ]
+ },
+ "WeaponEmpow_MS_2": {
+  "childNodes": [
+   "WeaponEmpow_MS_3"
+  ]
+ },
+ "WeaponEmpow_MS_3": {
+  "childNodes": [
+   "WeaponEmpow_MS_4"
+  ]
+ },
+ "WeaponMastery": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponMastery_EB",
+   "WeaponMastery_GA",
+   "WeaponMastery_IH",
+   "WeaponMastery_CB",
+   "WeaponMastery_MS",
+   "WeaponMastery_DP",
+   "WeaponMastery_AC"
+  ]
+ },
+ "WeaponMastery_AC": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeAC_Mod_00"
+  ]
+ },
+ "WeaponMastery_CB": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeCB_Mod_00"
+  ]
+ },
+ "WeaponMastery_DP": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponType_DP_Spc_000"
+  ]
+ },
+ "WeaponMastery_EB": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeEB_Mod_00"
+  ]
+ },
+ "WeaponMastery_GA": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeGA_Mod_00"
+  ]
+ },
+ "WeaponMastery_IH": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeIH_Mod_00"
+  ]
+ },
+ "WeaponMastery_MS": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeMS_Mod_00"
+  ]
+ },
+ "WeaponPowerUpgradeAC_00": {
+  "childNodes": [
+   "WeaponCritUpgradeAC_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeAC_01": {
+  "childNodes": [
+   "WeaponCritUpgradeAC_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeAC_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeCB_00": {
+  "childNodes": [
+   "WeaponCritUpgradeCB_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeCB_01": {
+  "childNodes": [
+   "WeaponCritUpgradeCB_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeCB_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeDP_00": {
+  "childNodes": [
+   "WeaponCritUpgradeDP_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeDP_01": {
+  "childNodes": [
+   "WeaponCritUpgradeDP_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeDP_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeEB_00": {
+  "childNodes": [
+   "WeaponCritUpgradeEB_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeEB_01": {
+  "childNodes": [
+   "WeaponCritUpgradeEB_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeEB_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeGA_00": {
+  "childNodes": [
+   "WeaponCritUpgradeGA_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeGA_01": {
+  "childNodes": [
+   "WeaponCritUpgradeGA_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeGA_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeIH_00": {
+  "childNodes": [
+   "WeaponCritUpgradeIH_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeIH_01": {
+  "childNodes": [
+   "WeaponCritUpgradeIH_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeIH_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeMS_00": {
+  "childNodes": [
+   "WeaponCritUpgradeMS_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 3750,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeMS_01": {
+  "childNodes": [
+   "WeaponCritUpgradeMS_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponPowerUpgradeMS_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ]
+ },
+ "WeaponSmithing": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponTypeEB_00",
+   "WeaponTypeGA_00",
+   "WeaponTypeIH_00",
+   "WeaponTypeCB_00",
+   "WeaponTypeMS_00"
+  ]
+ },
+ "WeaponTypeAC_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeAC_00"
+  ]
+ },
+ "WeaponTypeAC_01": {
+  "childNodes": [
+   "WeaponTypeAC_02"
+  ]
+ },
+ "WeaponTypeAC_Mod_00": {
+  "childNodes": [
+   "WeaponTypeAC_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_AC_PASSIVE_MASTERY_01"
+  ]
+ },
+ "WeaponTypeAC_Mod_01": {
+  "childNodes": [
+   "WeaponTypeAC_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_AC_PASSIVE_MASTERY_02"
+  ]
+ },
+ "WeaponTypeAC_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_AC_PASSIVE_MASTERY_03"
+  ]
+ },
+ "WeaponTypeAC_Spc_00": {
+  "childNodes": [
+   "WeaponTypeAC_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_AC_SPECIAL_MASTERY"
+  ]
+ },
+ "WeaponTypeCB_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeCB_00"
+  ]
+ },
+ "WeaponTypeCB_Mod_00": {
+  "childNodes": [
+   "WeaponTypeCB_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_CB_PASSIVE_DASH_AGGRESSION"
+  ]
+ },
+ "WeaponTypeCB_Mod_01": {
+  "childNodes": [
+   "WeaponTypeCB_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_CB_PASSIVE_BLENDER"
+  ]
+ },
+ "WeaponTypeCB_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_CB_PASSIVE_SWINGING_CRIT"
+  ]
+ },
+ "WeaponTypeCB_Spc_00": {
+  "childNodes": [
+   "WeaponTypeCB_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_CB_SPECIAL_RIFTSTRIKE"
+  ]
+ },
+ "WeaponTypeDP_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeDP_00"
+  ]
+ },
+ "WeaponTypeDP_01": {
+  "childNodes": [
+   "WeaponTypeDP_02"
+  ]
+ },
+ "WeaponTypeDP_Mod_00": {
+  "childNodes": [
+   "WeaponTypeDP_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_DP_PASSIVE_DOUBLE_SHOT_DAMAGE"
+  ]
+ },
+ "WeaponTypeDP_Mod_01": {
+  "childNodes": [
+   "WeaponTypeDP_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_DP_PASSIVE_LONG_RANGE"
+  ]
+ },
+ "WeaponTypeDP_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_DP_PASSIVE_LOW_AMMO_CRIT"
+  ]
+ },
+ "WeaponTypeDP_Spc_00": {
+  "childNodes": [
+   "WeaponTypeDP_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_DP_RECEIVER_PIERCING"
+  ]
+ },
+ "WeaponTypeEB_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeEB_00"
+  ]
+ },
+ "WeaponTypeEB_Mod_00": {
+  "childNodes": [
+   "WeaponTypeEB_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_EB_PASSIVE_STAGGERPROOF"
+  ]
+ },
+ "WeaponTypeEB_Mod_01": {
+  "childNodes": [
+   "WeaponTypeEB_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_EB_PASSIVE_DODGE_ATTACK"
+  ]
+ },
+ "WeaponTypeEB_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_EB_PASSIVE_METER"
+  ]
+ },
+ "WeaponTypeEB_Spc_00": {
+  "childNodes": [
+   "WeaponTypeEB_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_EB_SPECIAL_SPIN"
+  ]
+ },
+ "WeaponTypeGA_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeGA_00"
+  ]
+ },
+ "WeaponTypeGA_Mod_00": {
+  "childNodes": [
+   "WeaponTypeGA_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_GA_PASSIVE_CHARGE_AOE"
+  ]
+ },
+ "WeaponTypeGA_Mod_01": {
+  "childNodes": [
+   "WeaponTypeGA_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_GA_PASSIVE_CHARGING_MOVESPEED"
+  ]
+ },
+ "WeaponTypeGA_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_GA_PASSIVE_METER"
+  ]
+ },
+ "WeaponTypeGA_Spc_00": {
+  "childNodes": [
+   "WeaponTypeGA_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_GA_SPECIAL_SKILLSHOT"
+  ]
+ },
+ "WeaponTypeIH_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeIH_00"
+  ]
+ },
+ "WeaponTypeIH_Mod_00": {
+  "childNodes": [
+   "WeaponTypeIH_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_IH_PASSIVE_STAGGER_PASSTHROUGH"
+  ]
+ },
+ "WeaponTypeIH_Mod_01": {
+  "childNodes": [
+   "WeaponTypeIH_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_IH_PASSIVE_JUMP_ATTACK_BUFF"
+  ]
+ },
+ "WeaponTypeIH_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_IH_PASSIVE_METER"
+  ]
+ },
+ "WeaponTypeIH_Spc_00": {
+  "childNodes": [
+   "WeaponTypeIH_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_IH_SPECIAL_ISLANDCRACKER"
+  ]
+ },
+ "WeaponTypeMS_00": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponPowerUpgradeMS_00"
+  ]
+ },
+ "WeaponTypeMS_Mod_00": {
+  "childNodes": [
+   "WeaponTypeMS_Spc_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 100,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 7500,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_MS_PASSIVE_AMMO_GROWTH"
+  ]
+ },
+ "WeaponTypeMS_Mod_01": {
+  "childNodes": [
+   "WeaponTypeMS_Mod_02"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 400,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 30000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_MS_PASSIVE_CHARGE_SPEED"
+  ]
+ },
+ "WeaponTypeMS_Mod_02": {
+  "currencyCosts": [
+   {
+    "amount": 800,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 60000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_MS_PASSIVE_WEAVING"
+  ]
+ },
+ "WeaponTypeMS_Spc_00": {
+  "childNodes": [
+   "WeaponTypeMS_Mod_01"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 200,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 15000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_MS_SPECIAL_ATTACK_SPEED_DAMAGE_BUFF"
+  ]
+ },
+ "WeaponType_DP_Spc_000": {
+  "childNodes": [
+   "WeaponTypeDP_Mod_00"
+  ],
+  "currencyCosts": [
+   {
+    "amount": 50,
+    "currency": "CURRENCY_PJM_WEAPON"
+   },
+   {
+    "amount": 5000,
+    "currency": "CURRENCY_NOTES"
+   }
+  ],
+  "rewards": [
+   "PART_DP_RECEIVER_PART_MARKER"
+  ]
+ },
+ "Weapon_Prestige_Emp": {
+  "autoUnlockIfParentUnlocked": true,
+  "childNodes": [
+   "WeaponEmpow_EB",
+   "WeaponEmpow_GA",
+   "WeaponEmpow_IH",
+   "WeaponEmpow_CB",
+   "WeaponEmpow_MS",
+   "WeaponEmpow_DP",
+   "WeaponEmpow_AC",
+   "BehemothXP_Header",
+   "BankedXP_Unlock"
+  ]
+ }
+}

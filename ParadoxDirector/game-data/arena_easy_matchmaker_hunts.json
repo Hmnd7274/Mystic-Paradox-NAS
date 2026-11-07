@@ -1,0 +1,1439 @@
+[
+  {
+    "Name": "arena_easy_matchmaker_hunts",
+    "Type": "DataTable",
+    "Rows": {
+      "Arena_MatchmakerHunt_Easy_001": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "electroquill_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/electroquill/electroquill_alpha_bp.electroquill_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_NEARSIGHT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_002": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "crowbear_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/crowbear_normal_bp.crowbear_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_FROST"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_003": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "bullseye_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/bullseye/bullseye_alpha_bp.bullseye_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_004": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "lerawr_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/lerawr/lerawr_alpha_bp.lerawr_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_TESLA_TOWERS"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_005": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "snowflake_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/snowflake_alpha_bp.snowflake_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_COMPLEX_UMBRAL_INSTABILITY"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_006": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "scissors_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/scissors/scissors_alpha_bp.scissors_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_SHOCK"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_007": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "paper_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/aq/paper/paper_normal_bp.paper_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SHARKCAT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_008": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "bugbear_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/bugbear/bugbear_normal_bp.bugbear_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_RADIANT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_009": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "sally_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/sally/sq_sally_alpha_bp.sq_sally_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_010": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "moonface_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/moonface_alpha_bp.moonface_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_011": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "rock_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/rock/sq_rock_alpha_bp.sq_rock_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_VOLCANIC"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_012": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "mcrollin_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/mcrollin/mcrollin_alpha_bp.mcrollin_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_LIGHTNING_CURSE"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_013": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "beaver_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/mcrollin/mcbeaver_alpha_bp.mcbeaver_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_TESLA_TOWERS"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_014": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "electroquill_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/electroquill/electroquill_alpha_bp.electroquill_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_TESLA_TOWERS"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_015": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "crowbear_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/crowbear_normal_bp.crowbear_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_FROST"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_016": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "bullseye_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/bullseye/bullseye_alpha_bp.bullseye_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_017": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "lerawr_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/lerawr/lerawr_alpha_bp.lerawr_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_TESLA_TOWERS"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_018": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "snowflake_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/snowflake_alpha_bp.snowflake_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_COMPLEX_UMBRAL_INSTABILITY"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_019": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "scissors_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/scissors/scissors_alpha_bp.scissors_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_SHOCK"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_020": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "paper_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/aq/paper/paper_normal_bp.paper_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SHARKCAT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_021": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "bugbear_normal",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/bugbear/bugbear_normal_bp.bugbear_normal_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_SLIME_RADIANT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_022": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "sally_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/sally/sq_sally_alpha_bp.sq_sally_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_023": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "moonface_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/moonface/moonface_alpha_bp.moonface_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_BLIZZARD"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_024": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "rock_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/rock/sq_rock_alpha_bp.sq_rock_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_VOLCANIC"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_025": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "mcrollin_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/mcrollin/mcrollin_alpha_bp.mcrollin_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_LIGHTNING_CURSE"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_026": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "beaver_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/mcrollin/mcbeaver_alpha_bp.mcbeaver_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_TESLA_TOWERS"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
+      "Arena_MatchmakerHunt_Easy_027": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_01"
+        },
+        "HuntTags": [
+          "Hunt.Arena.Easy"
+        ],
+        "HuntThreatLevel": 8,
+        "GameModeOverride": "",
+        "DangerPerSecOverride": 0,
+        "SpecificBehemoth": {
+          "BehemothName": "electroquill_alpha",
+          "BehemothAsset": {
+            "AssetPathName": "/Game/Monsters/sq/electroquill/electroquill_alpha_bp.electroquill_alpha_bp_C",
+            "SubPathString": ""
+          },
+          "PowerOverride": 275,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Trials_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "arena_ramsgate_00",
+            "MapAssetName": "/Game/Maps/islands/arenas/arena_ramsgate_00.arena_ramsgate_00",
+            "Biome": 0,
+            "Weighting": 1
+          }
+        ],
+        "Modifiers": [
+          "HM_TEST_SELF_REVIVE",
+          "HM_NEARSIGHT"
+        ],
+        "GatherableTier": 0,
+        "MaxPlayers": 4,
+        "bIsGeneratedEncounter": false,
+        "GameModeSpecificData": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      }
+    }
+  }
+]

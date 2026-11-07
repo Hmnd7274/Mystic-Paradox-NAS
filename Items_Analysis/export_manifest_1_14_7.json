@@ -1,0 +1,32 @@
+{
+  "gameVersion": "1.14.7",
+  "changelist": 647472,
+  "engineVersion": "4.26.2",
+  "exportedAt": "2026-11-07T18:41:37Z",
+  "flags": {
+    "EXPORT_CATALOG": true,
+    "EXPORT_PROGRESSION": true,
+    "EXPORT_COMBAT": true,
+    "EXPORT_SKINS": true,
+    "EXPORT_SKINS_RESOLVE_STRINGTABLE": true,
+    "EXPORT_SLAYERS_PATH": true,
+    "EXPORT_WEAPON_SLOTS": true,
+    "EXPORT_HUNTS": true,
+    "EXPORT_TABLE_INVENTORY": true,
+    "EXPORT_STORE_RUNTIME": true,
+    "EXPORT_MASTERY": true
+  },
+  "results": {
+    "catalogGeneralItems": 7318,
+    "catalogEquipmentItems": 1608,
+    "liveWeaponSlotItems": 0,
+    "progressionRows": 139,
+    "combatRows": 1625,
+    "skinsRows": 445,
+    "slayersPathNodes": 509,
+    "huntRows": 1378,
+    "tableInventoryRows": 466,
+    "storeRuntimeRows": 3173,
+    "masteryRows": 304
+  }
+}
