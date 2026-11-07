@@ -43,3 +43,16 @@ desktop.ini
 # --- Generated self-host configuration ---
 .selfhost/
 docs/LOCAL_RELEASE_READINESS.md
+
+# --- Local environment ---
+.env
+.env.*
+
+# --- Local generated game data ---
+ParadoxBackend/game-data/*.json
+!ParadoxBackend/game-data/*.example.json
+ParadoxDirector/game-data/*.json
+!ParadoxDirector/game-data/*.example.json
+
+# --- Local binaries ---
+bin/
