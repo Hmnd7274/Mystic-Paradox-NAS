@@ -92,6 +92,10 @@ function NormalizeEmail(email: string): string {
     return email.trim().toLowerCase();
 }
 
+function UsernameAuthenticationEnabled(): boolean {
+    return (process.env.MYSTICPARADOX_USERNAME_AUTH ?? "").trim().toLowerCase() === "on";
+}
+
 function NormalizeDisplayName(displayName: string): string {
     return displayName.trim().toLowerCase();
 }
@@ -131,8 +135,12 @@ export function IsValidEmailAddress(raw: unknown): raw is string {
     return true;
 }
 
-function ValidateRegistrationInput(email: string, password: string): void {
-    if (!IsValidEmailAddress(email)) {
+function ValidateRegistrationInput(email: string | undefined, password: string, usernameAuth: boolean): void {
+    if (email === undefined) {
+        if (!usernameAuth) {
+            throw new LauncherApiError("AUTH_VALIDATION_FAILED", "Enter a valid email address.");
+        }
+    } else if (!IsValidEmailAddress(email)) {
         throw new LauncherApiError("AUTH_VALIDATION_FAILED", "Enter a valid email address.");
     }
 
@@ -225,7 +233,7 @@ export async function SignInAfterEmailProof(account: LauncherAccountRecord, devi
 
 export async function RegisterAccount(
     displayName: unknown,
-    email: string,
+    email: unknown,
     password: string,
     deviceName: string,
     deviceId: string,
@@ -241,23 +249,35 @@ export async function RegisterAccount(
     // usernameSet false, exactly as Discord accounts do; the launcher then asks for the name (account.needsUsername). A name that is sent is
     // validated as before. [2026-10-16] Launcher 0.1.71 asks for the name on the sign-up form again (a pending account has no session to set
     // one after its email code); the name stays optional here so launchers 0.1.67-0.1.70 can still register.
+    const UsernameAuth = UsernameAuthenticationEnabled();
     const GivenName = displayName === undefined || displayName === null || (typeof displayName === "string" && displayName.trim() === "")
         ? undefined
         : ValidateUsername(displayName);
+
     if (GivenName !== undefined) AssertUsernameAllowed(GivenName);
-    ValidateRegistrationInput(email, password);
+    if (UsernameAuth && GivenName === undefined) {
+        throw new LauncherApiError("AUTH_VALIDATION_FAILED", "Choose a username.");
+    }
+
+    const RawEmail = typeof email === "string" ? email.trim() : "";
+    const NormalizedEmail = RawEmail.length > 0 ? NormalizeEmail(RawEmail) : undefined;
+
+    ValidateRegistrationInput(NormalizedEmail, password, UsernameAuth);
     const AcceptedConsent = ValidateRegistrationConsent(consent, new Date().toISOString());
 
-    const NormalizedEmail = NormalizeEmail(email);
     const NormalizedDisplayName = GivenName === undefined ? undefined : NormalizeDisplayName(GivenName);
 
     const Repos = GetRepositories();
     // [2026-10-15] Under MYSTICPARADOX_EMAIL_VERIFICATION=required the code mail must be set up before an account is created: an account
     // that can never be verified would only wait for the 48 h sweep.
     const VerificationRequired = EmailVerificationRequired();
+    if (VerificationRequired && NormalizedEmail === undefined) {
+        throw new LauncherApiError("AUTH_EMAIL_UNAVAILABLE", "Email verification is enabled, but this account has no email address.");
+    }
     if (VerificationRequired) RequireEmailSending();
 
-    if ((await Repos.launcherAccounts.findByEmail(NormalizedEmail)) != undefined) {
+    if (NormalizedEmail !== undefined &&
+        (await Repos.launcherAccounts.findByEmail(NormalizedEmail)) != undefined) {
         throw new LauncherApiError("AUTH_EMAIL_TAKEN", "That email is already registered.");
     }
 
@@ -273,7 +293,7 @@ export async function RegisterAccount(
 
     const Account: LauncherAccountRecord = {
         userId: UserId,
-        email: NormalizedEmail,
+        ...(NormalizedEmail === undefined ? {} : { email: NormalizedEmail }),
         // The placeholder is the userId, lower-cased for the unique index, as Discord accounts use it.
         displayNameNormalized: (NormalizedDisplayName ?? UserId).toLowerCase(),
         displayName: GivenName ?? UserId,
@@ -310,6 +330,11 @@ export async function RegisterAccount(
     const View = await ToAccountView(Account);
     if (!VerificationRequired) return { approvalRequired, account: View };
 
+    // The earlier validation guarantees an address when email verification is enabled.
+    if (NormalizedEmail === undefined) {
+        throw new LauncherApiError("AUTH_EMAIL_UNAVAILABLE", "This account has no email address to verify.");
+    }
+
     // [2026-10-15] The first code is mailed now (no send limit applies yet). A failure leaves the account in place: the launcher can ask
     // for a code again, and the sweep removes the account if it never verifies. Still no token is issued here.
     try {
@@ -320,16 +345,27 @@ export async function RegisterAccount(
     return { approvalRequired, verificationRequired: true, email: NormalizedEmail, account: View };
 }
 
-export async function LoginWithPassword(email: string, password: string, deviceId: string, deviceName: string, ip: string): Promise<LauncherSessionResult> {
-    if (IsRateLimited(`login:${ip}`, 10, 5 * 60 * 1000) || IsRateLimited(`login:${NormalizeEmail(email ?? "")}`, 10, 5 * 60 * 1000)) {
+export async function LoginWithPassword(identifier: unknown, password: string, deviceId: string, deviceName: string, ip: string): Promise<LauncherSessionResult> {
+    if (typeof identifier !== "string" || typeof password !== "string") {
+        throw new LauncherApiError("AUTH_INVALID_CREDENTIALS", "The username/email or password is incorrect.");
+    }
+
+    const LoginId = identifier.trim();
+    if (LoginId.length === 0) {
+        throw new LauncherApiError("AUTH_INVALID_CREDENTIALS", "The username/email or password is incorrect.");
+    }
+
+    if (IsRateLimited(`login:${ip}`, 10, 5 * 60 * 1000) ||
+        IsRateLimited(`login:${NormalizeEmail(LoginId)}`, 10, 5 * 60 * 1000)) {
         throw new LauncherApiError("AUTH_RATE_LIMITED", "Too many login attempts. Try again later.");
     }
 
-    if (typeof email !== "string" || typeof password !== "string") {
-        throw new LauncherApiError("AUTH_INVALID_CREDENTIALS", "The email or password is incorrect.");
-    }
-
-    const Account = await GetRepositories().launcherAccounts.findByEmail(NormalizeEmail(email));
+    const Accounts = GetRepositories().launcherAccounts;
+    const Account = IsValidEmailAddress(LoginId)
+        ? await Accounts.findByEmail(NormalizeEmail(LoginId))
+        : UsernameAuthenticationEnabled()
+            ? await Accounts.findByDisplayNameNormalized(NormalizeDisplayName(LoginId))
+            : undefined;
     const PasswordOk = await VerifyPassword(Account?.passwordHash, password);
 
     if (Account == undefined || !PasswordOk) {
@@ -343,8 +379,11 @@ export async function LoginWithPassword(email: string, password: string, deviceI
     // before the switch included). A code is mailed within the send limits (when they are reached none is mailed, and the answer is the
     // same) and the sign-in waits for it. A wrong password never gets here.
     if (EmailVerificationRequired() && Account.emailVerifiedAt == undefined) {
+        if (!Account.email) {
+            throw new LauncherApiError("AUTH_EMAIL_UNAVAILABLE", "This account has no email address to verify.");
+        }
         RequireEmailSending();
-        await IssueEmailCode(Account.userId, Account.email ?? "", "verify", ip);
+        await IssueEmailCode(Account.userId, Account.email, "verify", ip);
         throw new LauncherApiError(
             "AUTH_EMAIL_UNVERIFIED",
             `Enter the 6-digit code we sent to ${MaskEmail(Account.email ?? "")}. Older launchers: update the launcher to verify your email.`

@@ -19,6 +19,7 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
   // system, so a local server (which has its own accounts) offers email and password only.
   const { selected, officialNetwork, servers, select } = useServer();
   const serverName = selected && !officialNetwork ? serverNaming(selected).primary : null;
+  const usernameLogin = Boolean(selected && !officialNetwork);
   const legal = useLegalViewer();
 
   const [email, setEmail] = useState("");
@@ -37,7 +38,7 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
     if (!email || !password) {
-      setError("Enter your email and password.");
+      setError(usernameLogin ? "Enter your username and password." : "Enter your email and password.");
       return;
     }
     setError(null);
@@ -89,10 +90,10 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
           {displayedError && <Banner>{displayedError}</Banner>}
 
           <TextField
-            label="Email"
-            type="email"
-            autoComplete="email"
-            placeholder="slayer@example.com"
+            label={usernameLogin ? "Username" : "Email"}
+            type={usernameLogin ? "text" : "email"}
+            autoComplete={usernameLogin ? "username" : "email"}
+            placeholder={usernameLogin ? "Your username" : "slayer@example.com"}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={submitting}

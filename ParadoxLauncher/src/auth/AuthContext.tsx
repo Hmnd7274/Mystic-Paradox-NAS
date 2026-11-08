@@ -338,12 +338,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setStatus("awaitingEmailCode");
       return;
     }
-    const checkedAt = Date.now();
-    accountLastCheckedRef.current = checkedAt;
-    setAccount(registered.account);
-    setAccountSync({ checkedAt, refreshing: false, error: null });
-    setStatus("pendingApproval");
-  }, [serverId]);
+    if (registered.approvalRequired) {
+      const checkedAt = Date.now();
+      accountLastCheckedRef.current = checkedAt;
+      setAccount(registered.account);
+      setAccountSync({ checkedAt, refreshing: false, error: null });
+      setStatus("pendingApproval");
+      return;
+    }
+
+    // Registration succeeded and the server approved the account immediately.
+    // Sign in now so the player receives the session tokens needed to play.
+    const loginIdentifier = email.trim() || displayName || "";
+    await login(loginIdentifier, password);
+  }, [login, serverId]);
 
   // ---- [2026-10-15] email codes and password resets (the official server) -------------------------------------------
 

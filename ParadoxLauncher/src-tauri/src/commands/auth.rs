@@ -470,10 +470,17 @@ struct RefreshRequest<'a> {
     device_name: &'a str,
 }
 
+fn default_pending_registration_approval() -> bool {
+    true
+}
+
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
 struct PendingRegistration {
     account: NativeAccount,
+    /// Older backends without this field are treated conservatively as requiring approval.
+    #[serde(default = "default_pending_registration_approval")]
+    approval_required: bool,
     /// [2026-10-15] A code was emailed; the account signs in once the code is entered (`native_verify_email`).
     #[serde(default)]
     verification_required: bool,
@@ -484,6 +491,7 @@ struct PendingRegistration {
 #[serde(rename_all = "camelCase")]
 pub struct NativeRegistration {
     pub account: NativeAccount,
+    pub approval_required: bool,
     pub verification_required: bool,
 }
 
@@ -1160,6 +1168,7 @@ pub async fn native_register(
         end_pending_sign_in(&AppHost(&app), &scope, expected_epoch)?;
         Ok(NativeRegistration {
             account: pending.account,
+            approval_required: pending.approval_required,
             verification_required,
         })
     })

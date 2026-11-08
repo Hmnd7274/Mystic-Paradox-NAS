@@ -93,6 +93,7 @@ export interface LauncherNotices {
 export interface RegistrationOutcome {
   account: LauncherAccount;
   verificationRequired: boolean;
+  approvalRequired: boolean;
 }
 
 /** [2026-10-15] A verify or reset answer: signed in, or waiting for approval (`approvalRequired`, no session). */

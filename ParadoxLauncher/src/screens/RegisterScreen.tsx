@@ -23,6 +23,7 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
   // [2026-10-14] The official backend (the official server and Paradox realms) requires the age and the acceptance of
   // the documents. A local server keeps its own rules, so its registration is unchanged and sends no consent.
   const askConsent = officialNetwork;
+  const usernameOnlyAuth = Boolean(selected && !officialNetwork);
   const username = useUsernameField();
   const legal = useLegalViewer();
 
@@ -37,7 +38,7 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
   // [2026-10-16] Which fields the player has left: their mistakes show from then on (the button waits, so it must say why).
   const [touched, setTouched] = useState({ email: false, password: false, confirm: false });
   const consentReady = !askConsent || (ageConfirmed && termsAccepted);
-  const emailError = EMAIL_PATTERN.test(email) ? null : "Enter a valid email address.";
+  const emailError = usernameOnlyAuth || EMAIL_PATTERN.test(email) ? null : "Enter a valid email address.";
   // [2026-10-15] The password rule is shared with the password reset (auth/authRules.ts): its length, then the match.
   const passwordLengthError = passwordProblem(password, password);
   const confirmError = confirmPassword && confirmPassword !== password ? "Passwords don't match." : null;
@@ -66,7 +67,7 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
     setSubmitting(true);
     try {
       await register(
-        email,
+        usernameOnlyAuth ? "" : email,
         password,
         askConsent
           ? { termsVersion: LEGAL.termsVersion, privacyVersion: LEGAL.privacyVersion, ageConfirmed: true }
@@ -90,24 +91,26 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
       <AuthCard
         title={serverName ? `Join ${serverName}` : "Become a Slayer"}
         subtitle={serverName
-          ? "Create an account on this server. It is stored only on the server's own PC, it may need the host's approval, and it is not a Mystic Paradox account."
-          : "Create your Mystic Paradox account. Closed-test accounts are approved by an administrator."}
+        ? "Create an account on this server with a username and password. No email address or host approval is required."
+        : "Create your Mystic Paradox account. Closed-test accounts are approved by an administrator."}
       >
         <form onSubmit={handleSubmit} className="auth-form" noValidate>
           {error && <Banner>{error}</Banner>}
 
           <UsernameField field={username} disabled={submitting} />
 
-          <TextField
-            label="Email"
-            type="email"
-            autoComplete="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            onBlur={() => setTouched((current) => ({ ...current, email: true }))}
-            disabled={submitting}
-            error={touched.email && email && emailError ? emailError : undefined}
-          />
+          {!usernameOnlyAuth && (
+            <TextField
+              label="Email"
+              type="email"
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              onBlur={() => setTouched((current) => ({ ...current, email: true }))}
+              disabled={submitting}
+              error={touched.email && email && emailError ? emailError : undefined}
+            />
+          )}
 
           <TextField
             label="Password"
