@@ -4,18 +4,12 @@
   "payload": {
     "paths": [
       {
-        "end_date": "2020-01-01T00:00:00+00:00",
-        "free_rewards": [
-          { "entitlements": [], "instanced_items": [], "rank_id": 0, "stacked_items": [] },
-          {
-            "entitlements": [],
-            "instanced_items": [],
-            "rank_id": 1,
-            "stacked_items": [
-              { "catalog_id": "EXAMPLE_REWARD_00", "hidden": false, "priority": 0, "quantity": 1 }
-            ]
-          }
-        ]
+        "progression_id": "season43",
+        "start_date": "2026-10-22T17:00:00+00:00",
+        "end_date": "2027-01-14T17:00:00+00:00",
+        "requirements": [],
+        "free_rewards": [],
+        "premium_rewards": []
       }
     ]
   }
