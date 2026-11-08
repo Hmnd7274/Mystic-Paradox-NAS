@@ -1,0 +1,1328 @@
+=== Gameserver launch 11/7/2026, 5:42:11 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1374225
+
+wine: created the configuration directory '/home/xavier/.wine'
+0054:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0054:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0054:err:systray:initialize_systray Could not create tray window
+0054:err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hr 0x80004002
+0054:err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, hr 0x80004002
+0054:err:ole:apartment_get_local_server_stream Failed: 0x80004002
+0044:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0044:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+004c:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+004c:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+004c:err:ole:apartment_createwindowifneeded CreateWindow failed with error 3
+004c:err:ole:apartment_createwindowifneeded CreateWindow failed with error 0
+004c:err:ole:apartment_createwindowifneeded CreateWindow failed with error 14007
+004c:err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hr 0x800736b7
+004c:err:ole:CoMarshalInterface Failed to marshal the interface {6d5140c1-7436-11ce-8034-00aa006009fa}, hr 0x800736b7
+004c:err:ole:apartment_get_local_server_stream Failed: 0x800736b7
+004c:err:ole:start_rpcss Failed to open RpcSs service
+002c:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+002c:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+0090:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0090:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+00e8:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+00e8:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+=== Gameserver launch 11/7/2026, 5:43:09 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1374469
+
+01bc:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+01bc:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:43:10,152][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,152][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:43:10,153][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,153][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:43:10,154][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,154][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:43:10,156][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,156][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:43:10,159][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,159][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:43:10,160][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,160][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:43:10,163][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,163][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:43:10,168][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,168][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:43:10,170][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,170][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:43:10,171][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,171][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:43:10,172][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,172][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:43:10,174][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,174][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:43:10,179][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,179][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:43:10,181][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,181][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:43:10,182][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,182][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:43:10,183][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,183][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:43:10,184][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,184][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:43:10,188][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,188][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:43:10,189][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,189][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:43:10,189][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,189][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:43:10,191][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,191][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:43:10,191][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,191][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:43:10,192][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,193][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:43:10,193][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,193][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:43:10,194][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,194][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:43:10,195][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,195][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:43:10,196][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,196][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:43:10,197][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,197][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:43:10,199][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,199][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:43:10,201][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,201][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:43:10,202][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,202][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:43:10,206][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,206][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:43:10,210][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,210][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:43:10,213][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,213][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:43:10,215][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,215][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:43:10,216][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,216][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:43:10,218][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,218][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:43:10,220][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,220][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:43:10,222][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,222][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:43:10,225][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,225][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:43:10,226][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,226][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:43:10,227][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,227][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:43:10,228][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,228][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:43:10,229][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,229][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:43:10,229][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,230][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:43:10,230][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,230][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:43:10,231][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,231][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:43:10,232][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,232][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:43:10,239][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,239][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:43:10,240][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,240][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:43:10,241][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,241][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:43:10,242][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,242][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:43:10,243][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,243][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:43:10,244][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,244][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:43:10,245][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,245][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:43:10,245][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,245][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:43:10,246][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,246][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:43:10,247][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,247][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:43:10,248][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,248][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:43:10,249][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,249][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:43:10,250][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,250][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:43:10,250][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,250][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:43:10,251][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,251][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:43:10,252][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,252][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:43:10,253][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,253][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:43:10,254][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,254][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:43:10,254][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,254][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:43:10,255][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,255][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:43:10,256][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,256][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:43:10,257][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,257][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:43:10,258][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,258][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:43:10,258][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,258][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:43:10,259][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,259][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:43:10,260][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,260][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:43:10,261][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,261][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:43:10,262][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,262][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:43:10,263][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,263][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:43:10,264][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,264][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:43:10,265][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,265][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:43:10,266][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,266][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:43:10,267][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,267][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:43:10,267][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,267][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:43:10,268][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,268][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:43:10,269][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,269][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:43:10,270][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,270][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:43:10,271][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,271][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:43:10,271][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,271][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:43:10,272][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,272][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:43:10,273][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,273][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:43:10,274][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,274][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:43:10,275][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,275][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:43:10,276][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,276][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:43:10,277][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,277][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:43:10,278][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,278][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:43:10,279][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,279][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:43:10,281][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,281][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:43:10,282][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,282][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:43:10,283][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,283][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:43:10,283][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:10,284][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:43:10,834][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:43:10,974][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:43:11,005][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:43:11,005][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:43:11,110][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+01bc:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+01bc:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+01bc:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+01bc:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
+=== Gameserver launch 11/7/2026, 5:43:26 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1374676
+
+0078:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0078:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0078:err:systray:initialize_systray Could not create tray window
+010c:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+010c:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:43:27,403][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,403][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:43:27,404][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,404][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:43:27,405][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,405][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:43:27,408][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,408][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:43:27,410][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,410][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:43:27,411][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,411][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:43:27,415][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,415][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:43:27,420][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,420][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:43:27,421][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,421][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:43:27,423][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,423][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:43:27,424][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,424][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:43:27,425][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,425][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:43:27,431][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,431][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:43:27,432][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,432][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:43:27,434][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,434][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:43:27,435][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,435][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:43:27,437][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,437][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:43:27,441][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,441][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:43:27,442][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,442][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:43:27,442][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,442][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:43:27,443][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,443][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:43:27,444][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,444][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:43:27,445][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,445][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:43:27,445][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,445][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:43:27,446][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,446][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:43:27,447][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,447][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:43:27,448][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,448][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:43:27,449][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,449][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:43:27,452][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,452][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:43:27,454][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,454][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:43:27,455][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,455][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:43:27,458][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,458][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:43:27,462][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,462][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:43:27,465][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,465][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:43:27,468][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,468][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:43:27,469][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,469][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:43:27,471][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,471][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:43:27,474][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,474][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:43:27,476][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,476][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:43:27,478][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,478][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:43:27,479][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,479][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:43:27,480][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,480][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:43:27,481][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,481][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:43:27,482][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,482][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:43:27,482][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,483][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:43:27,483][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,483][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:43:27,484][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,484][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:43:27,485][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,485][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:43:27,490][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,490][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:43:27,491][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,491][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:43:27,492][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,492][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:43:27,493][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,493][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:43:27,494][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,494][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:43:27,494][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,494][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:43:27,495][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,495][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:43:27,496][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,496][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:43:27,497][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,497][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:43:27,498][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,498][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:43:27,499][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,499][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:43:27,500][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,500][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:43:27,500][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,500][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:43:27,502][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,502][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:43:27,504][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,504][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:43:27,505][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,505][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:43:27,506][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,506][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:43:27,506][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,506][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:43:27,507][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,507][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:43:27,508][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,508][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:43:27,509][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,509][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:43:27,510][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,510][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:43:27,511][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,511][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:43:27,511][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,511][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:43:27,512][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,512][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:43:27,513][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,513][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:43:27,514][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,514][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:43:27,515][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,515][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:43:27,516][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,516][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:43:27,516][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,516][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:43:27,517][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,517][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:43:27,518][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,518][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:43:27,519][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,519][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:43:27,520][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,520][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:43:27,521][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,521][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:43:27,522][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,522][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:43:27,523][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,523][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:43:27,523][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,523][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:43:27,524][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,524][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:43:27,525][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,525][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:43:27,526][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,526][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:43:27,527][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,527][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:43:27,528][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,528][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:43:27,528][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,528][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:43:27,529][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,529][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:43:27,530][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,530][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:43:27,531][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,531][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:43:27,533][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,533][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:43:27,534][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,534][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:43:27,535][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,535][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:43:27,537][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:27,537][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:43:28,087][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:43:28,226][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:43:28,253][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:43:28,253][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:43:28,357][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+010c:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+010c:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+010c:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+010c:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
+=== Gameserver launch 11/7/2026, 5:43:58 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1374920
+
+0074:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0074:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0074:err:systray:initialize_systray Could not create tray window
+0108:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+0108:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:43:59,618][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,618][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:43:59,619][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,619][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:43:59,620][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,620][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:43:59,622][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,622][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:43:59,625][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,625][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:43:59,626][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,626][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:43:59,629][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,629][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:43:59,635][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,635][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:43:59,637][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,637][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:43:59,639][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,639][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:43:59,640][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,640][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:43:59,642][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,642][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:43:59,647][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,647][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:43:59,648][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,648][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:43:59,650][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,650][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:43:59,651][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,651][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:43:59,652][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,652][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:43:59,656][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,656][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:43:59,656][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,656][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:43:59,657][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,657][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:43:59,658][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,658][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:43:59,659][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,659][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:43:59,660][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,660][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:43:59,661][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,661][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:43:59,662][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,662][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:43:59,662][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,662][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:43:59,663][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,663][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:43:59,664][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,664][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:43:59,667][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,667][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:43:59,669][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,669][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:43:59,670][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,670][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:43:59,673][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,674][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:43:59,678][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,678][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:43:59,681][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,681][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:43:59,683][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,683][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:43:59,684][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,684][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:43:59,686][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,686][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:43:59,688][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,688][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:43:59,690][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,690][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:43:59,693][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,693][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:43:59,694][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,694][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:43:59,695][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,695][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:43:59,695][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,695][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:43:59,696][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,696][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:43:59,697][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,697][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:43:59,698][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,698][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:43:59,699][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,699][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:43:59,700][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,700][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:43:59,705][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,705][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:43:59,706][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,706][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:43:59,707][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,707][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:43:59,708][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,708][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:43:59,709][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,709][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:43:59,710][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,710][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:43:59,711][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,711][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:43:59,711][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,711][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:43:59,712][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,712][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:43:59,713][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,713][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:43:59,714][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,714][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:43:59,715][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,715][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:43:59,716][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,716][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:43:59,717][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,717][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:43:59,717][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,717][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:43:59,718][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,718][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:43:59,719][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,719][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:43:59,720][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,720][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:43:59,721][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,721][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:43:59,722][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,722][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:43:59,722][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,722][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:43:59,723][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,723][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:43:59,724][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,724][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:43:59,725][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,725][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:43:59,726][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,726][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:43:59,727][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,727][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:43:59,727][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,728][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:43:59,728][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,728][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:43:59,729][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,729][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:43:59,730][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,730][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:43:59,731][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,731][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:43:59,732][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,732][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:43:59,733][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,733][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:43:59,733][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,733][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:43:59,735][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,735][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:43:59,736][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,736][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:43:59,736][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,736][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:43:59,738][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,738][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:43:59,739][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,739][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:43:59,740][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,740][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:43:59,740][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,741][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:43:59,741][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,741][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:43:59,742][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,742][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:43:59,743][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,743][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:43:59,744][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,744][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:43:59,745][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,745][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:43:59,746][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,746][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:43:59,748][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,748][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:43:59,749][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,749][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:43:59,750][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,751][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:43:59,752][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:43:59,752][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:44:00,307][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:44:00,450][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:44:00,478][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:44:00,478][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:44:00,582][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+0108:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0108:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+0108:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+0108:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
+=== Gameserver launch 11/7/2026, 5:45:00 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1375318
+
+0074:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0074:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0074:err:systray:initialize_systray Could not create tray window
+0108:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+0108:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:45:01,869][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,869][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:45:01,870][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,870][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:45:01,871][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,871][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:45:01,873][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,873][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:45:01,875][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,876][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:45:01,877][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,877][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:45:01,880][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,880][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:45:01,885][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,885][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:45:01,886][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,886][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:45:01,888][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,888][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:45:01,889][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,889][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:45:01,892][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,892][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:45:01,897][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,897][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:45:01,899][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,899][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:45:01,901][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,901][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:45:01,901][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,901][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:45:01,902][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,902][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:45:01,906][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,906][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:45:01,907][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,907][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:45:01,908][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,908][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:45:01,909][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,909][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:45:01,910][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,910][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:45:01,911][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,911][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:45:01,911][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,911][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:45:01,912][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,912][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:45:01,913][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,913][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:45:01,914][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,914][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:45:01,915][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,915][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:45:01,917][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,917][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:45:01,919][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,919][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:45:01,920][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,920][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:45:01,924][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,924][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:45:01,928][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,928][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:45:01,931][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,931][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:45:01,933][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,933][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:45:01,934][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,934][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:45:01,936][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,936][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:45:01,938][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,938][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:45:01,940][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,940][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:45:01,943][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,943][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:45:01,944][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,944][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:45:01,945][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,945][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:45:01,946][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,946][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:45:01,947][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,947][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:45:01,947][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,948][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:45:01,948][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,948][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:45:01,949][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,949][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:45:01,950][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,950][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:45:01,956][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,956][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:45:01,957][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,957][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:45:01,958][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,958][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:45:01,959][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,959][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:45:01,961][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,961][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:45:01,962][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,962][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:45:01,963][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,963][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:45:01,964][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,964][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:45:01,965][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,965][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:45:01,966][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,966][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:45:01,966][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,966][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:45:01,967][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,967][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:45:01,968][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,968][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:45:01,969][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,969][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:45:01,970][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,970][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:45:01,971][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,971][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:45:01,972][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,972][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:45:01,972][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,972][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:45:01,973][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,973][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:45:01,974][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,974][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:45:01,975][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,975][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:45:01,976][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,976][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:45:01,977][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,977][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:45:01,978][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,978][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:45:01,978][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,979][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:45:01,979][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,979][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:45:01,980][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,980][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:45:01,981][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,981][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:45:01,982][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,982][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:45:01,983][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,983][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:45:01,983][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,983][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:45:01,984][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,984][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:45:01,985][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,985][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:45:01,986][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,986][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:45:01,987][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,987][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:45:01,988][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,988][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:45:01,989][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,989][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:45:01,990][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,990][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:45:01,991][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,991][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:45:01,992][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,992][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:45:01,993][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,993][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:45:01,994][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,994][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:45:01,996][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,996][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:45:01,996][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,997][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:45:01,997][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,998][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:45:01,999][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:01,999][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:45:02,000][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:02,000][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:45:02,002][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:02,002][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:45:02,003][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:02,003][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:45:02,004][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:02,004][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:45:02,005][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:45:02,005][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:45:02,557][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:45:02,701][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:45:02,731][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:45:02,731][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:45:02,839][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+0108:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0108:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+0108:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+0108:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
+=== Gameserver launch 11/7/2026, 5:47:02 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1375808
+
+0074:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0074:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0074:err:systray:initialize_systray Could not create tray window
+010c:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+010c:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:47:04,157][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,157][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:47:04,158][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,158][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:47:04,159][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,159][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:47:04,162][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,162][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:47:04,164][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,164][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:47:04,165][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,165][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:47:04,169][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,169][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:47:04,173][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,173][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:47:04,175][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,175][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:47:04,177][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,177][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:47:04,178][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,178][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:47:04,180][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,180][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:47:04,185][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,185][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:47:04,186][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,186][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:47:04,188][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,188][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:47:04,189][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,189][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:47:04,190][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,190][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:47:04,193][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,193][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:47:04,195][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,195][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:47:04,195][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,195][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:47:04,196][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,196][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:47:04,197][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,197][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:47:04,199][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,199][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:47:04,199][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,199][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:47:04,200][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,201][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:47:04,202][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,202][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:47:04,202][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,202][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:47:04,203][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,203][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:47:04,206][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,206][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:47:04,208][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,208][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:47:04,209][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,209][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:47:04,213][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,213][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:47:04,217][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,217][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:47:04,220][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,220][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:47:04,222][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,222][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:47:04,223][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,223][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:47:04,225][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,225][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:47:04,227][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,227][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:47:04,229][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,229][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:47:04,232][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,232][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:47:04,233][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,233][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:47:04,234][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,234][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:47:04,235][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,235][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:47:04,236][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,236][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:47:04,237][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,237][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:47:04,238][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,238][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:47:04,239][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,239][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:47:04,239][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,239][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:47:04,246][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,246][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:47:04,247][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,247][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:47:04,248][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,248][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:47:04,249][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,249][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:47:04,250][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,250][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:47:04,251][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,251][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:47:04,252][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,252][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:47:04,252][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,252][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:47:04,253][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,253][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:47:04,254][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,254][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:47:04,255][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,255][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:47:04,256][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,256][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:47:04,256][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,256][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:47:04,257][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,257][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:47:04,258][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,258][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:47:04,259][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,259][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:47:04,260][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,260][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:47:04,261][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,261][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:47:04,261][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,261][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:47:04,262][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,262][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:47:04,264][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,264][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:47:04,265][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,265][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:47:04,266][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,266][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:47:04,267][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,267][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:47:04,268][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,268][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:47:04,269][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,269][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:47:04,270][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,270][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:47:04,270][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,270][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:47:04,271][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,271][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:47:04,272][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,272][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:47:04,273][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,273][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:47:04,274][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,274][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:47:04,275][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,275][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:47:04,275][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,275][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:47:04,276][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,276][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:47:04,277][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,277][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:47:04,278][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,278][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:47:04,278][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,278][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:47:04,279][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,279][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:47:04,280][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,280][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:47:04,281][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,281][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:47:04,282][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,282][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:47:04,283][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,283][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:47:04,284][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,284][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:47:04,285][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,285][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:47:04,286][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,286][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:47:04,287][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,287][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:47:04,289][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,289][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:47:04,290][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,290][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:47:04,291][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,291][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:47:04,292][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:47:04,292][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:47:04,845][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:47:04,986][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:47:05,015][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:47:05,016][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:47:05,121][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+010c:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+010c:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+010c:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+010c:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
+=== Gameserver launch 11/7/2026, 5:52:05 PM (local time) ===
+port=8790 map=/Game/Maps/ramsgate/ramsgate_01_persistent behemoth=NO_BEHEMOTH mmHunt=NO_MM_HUNTID players=NO_EXPECTED_PLAYERS
+
+pid=1376732
+
+0074:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+0074:err:winediag:nodrv_CreateWindow L"The explorer process failed to start."
+0074:err:systray:initialize_systray Could not create tray window
+010c:err:winediag:ntlm_check_version ntlm_auth was not found. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+010c:err:ntlm:ntlm_LsaApInitializePackage no NTLM support, expect problems
+[2026-11-07T22:52:06,347][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,347][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Water_0-WindowsClient.pak.
+[2026-11-07T22:52:06,348][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,348][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_9-WindowsClient.pak.
+[2026-11-07T22:52:06,349][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,349][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_8-WindowsClient.pak.
+[2026-11-07T22:52:06,351][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,351][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_7-WindowsClient.pak.
+[2026-11-07T22:52:06,354][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,354][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_6-WindowsClient.pak.
+[2026-11-07T22:52:06,355][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,355][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_5-WindowsClient.pak.
+[2026-11-07T22:52:06,358][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,358][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_4-WindowsClient.pak.
+[2026-11-07T22:52:06,363][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,363][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_3-WindowsClient.pak.
+[2026-11-07T22:52:06,364][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,364][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_2-WindowsClient.pak.
+[2026-11-07T22:52:06,366][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,366][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_10-WindowsClient.pak.
+[2026-11-07T22:52:06,367][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,367][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_1-WindowsClient.pak.
+[2026-11-07T22:52:06,369][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,369][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_UI_0-WindowsClient.pak.
+[2026-11-07T22:52:06,374][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,374][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_1-WindowsClient.pak.
+[2026-11-07T22:52:06,375][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,375][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Rock_0-WindowsClient.pak.
+[2026-11-07T22:52:06,377][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,377][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_3-WindowsClient.pak.
+[2026-11-07T22:52:06,378][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,378][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_2-WindowsClient.pak.
+[2026-11-07T22:52:06,379][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,379][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_1-WindowsClient.pak.
+[2026-11-07T22:52:06,384][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,384][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Player_0-WindowsClient.pak.
+[2026-11-07T22:52:06,386][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,386][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_3-WindowsClient.pak.
+[2026-11-07T22:52:06,387][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,387][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_2-WindowsClient.pak.
+[2026-11-07T22:52:06,388][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,388][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_1-WindowsClient.pak.
+[2026-11-07T22:52:06,388][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,389][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_NPCs_0-WindowsClient.pak.
+[2026-11-07T22:52:06,389][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,389][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_MoviesHP_0-WindowsClient.pak.
+[2026-11-07T22:52:06,390][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,390][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_2-WindowsClient.pak.
+[2026-11-07T22:52:06,391][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,391][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_1-WindowsClient.pak.
+[2026-11-07T22:52:06,392][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,392][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Maps_0-WindowsClient.pak.
+[2026-11-07T22:52:06,392][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,392][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Landscape_0-WindowsClient.pak.
+[2026-11-07T22:52:06,393][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,393][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Intl_0-WindowsClient.pak.
+[2026-11-07T22:52:06,396][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,396][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Engine_0-WindowsClient.pak.
+[2026-11-07T22:52:06,398][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,398][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_4-WindowsClient.pak.
+[2026-11-07T22:52:06,399][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,399][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_3-WindowsClient.pak.
+[2026-11-07T22:52:06,403][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,403][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_2-WindowsClient.pak.
+[2026-11-07T22:52:06,407][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,407][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_1-WindowsClient.pak.
+[2026-11-07T22:52:06,410][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,410][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Effects_0-WindowsClient.pak.
+[2026-11-07T22:52:06,412][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,412][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_4-WindowsClient.pak.
+[2026-11-07T22:52:06,413][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,413][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_3-WindowsClient.pak.
+[2026-11-07T22:52:06,416][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,416][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_2-WindowsClient.pak.
+[2026-11-07T22:52:06,418][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,418][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_1-WindowsClient.pak.
+[2026-11-07T22:52:06,420][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,421][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Audio_0-WindowsClient.pak.
+[2026-11-07T22:52:06,423][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,423][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Atmospheres_0-WindowsClient.pak.
+[2026-11-07T22:52:06,424][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,424][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_9-WindowsClient.pak.
+[2026-11-07T22:52:06,425][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,425][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_8-WindowsClient.pak.
+[2026-11-07T22:52:06,426][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,426][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_7-WindowsClient.pak.
+[2026-11-07T22:52:06,427][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,427][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_6-WindowsClient.pak.
+[2026-11-07T22:52:06,428][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,428][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_5-WindowsClient.pak.
+[2026-11-07T22:52:06,428][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,428][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_4-WindowsClient.pak.
+[2026-11-07T22:52:06,429][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,429][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_39-WindowsClient.pak.
+[2026-11-07T22:52:06,430][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,430][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_38-WindowsClient.pak.
+[2026-11-07T22:52:06,434][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,434][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_37-WindowsClient.pak.
+[2026-11-07T22:52:06,435][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,435][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_36-WindowsClient.pak.
+[2026-11-07T22:52:06,436][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,436][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_35-WindowsClient.pak.
+[2026-11-07T22:52:06,437][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,437][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_34-WindowsClient.pak.
+[2026-11-07T22:52:06,437][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,437][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_33-WindowsClient.pak.
+[2026-11-07T22:52:06,438][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,438][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_32-WindowsClient.pak.
+[2026-11-07T22:52:06,439][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,439][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_31-WindowsClient.pak.
+[2026-11-07T22:52:06,440][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,440][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_30-WindowsClient.pak.
+[2026-11-07T22:52:06,441][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,441][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_3-WindowsClient.pak.
+[2026-11-07T22:52:06,441][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,441][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_29-WindowsClient.pak.
+[2026-11-07T22:52:06,442][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,442][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_28-WindowsClient.pak.
+[2026-11-07T22:52:06,443][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,443][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_27-WindowsClient.pak.
+[2026-11-07T22:52:06,444][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,444][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_26-WindowsClient.pak.
+[2026-11-07T22:52:06,445][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,445][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_25-WindowsClient.pak.
+[2026-11-07T22:52:06,446][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,446][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_24-WindowsClient.pak.
+[2026-11-07T22:52:06,446][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,446][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_23-WindowsClient.pak.
+[2026-11-07T22:52:06,447][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,447][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_22-WindowsClient.pak.
+[2026-11-07T22:52:06,448][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,448][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_21-WindowsClient.pak.
+[2026-11-07T22:52:06,449][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,449][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_20-WindowsClient.pak.
+[2026-11-07T22:52:06,451][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,451][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_2-WindowsClient.pak.
+[2026-11-07T22:52:06,452][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,452][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_19-WindowsClient.pak.
+[2026-11-07T22:52:06,453][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,453][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_18-WindowsClient.pak.
+[2026-11-07T22:52:06,454][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,454][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_17-WindowsClient.pak.
+[2026-11-07T22:52:06,455][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,455][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_16-WindowsClient.pak.
+[2026-11-07T22:52:06,456][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,456][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_15-WindowsClient.pak.
+[2026-11-07T22:52:06,456][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,456][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_14-WindowsClient.pak.
+[2026-11-07T22:52:06,457][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,457][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_13-WindowsClient.pak.
+[2026-11-07T22:52:06,458][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,458][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_12-WindowsClient.pak.
+[2026-11-07T22:52:06,459][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,459][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_11-WindowsClient.pak.
+[2026-11-07T22:52:06,460][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,460][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_10-WindowsClient.pak.
+[2026-11-07T22:52:06,461][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,461][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_1-WindowsClient.pak.
+[2026-11-07T22:52:06,461][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,461][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourC_0-WindowsClient.pak.
+[2026-11-07T22:52:06,462][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,462][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_1-WindowsClient.pak.
+[2026-11-07T22:52:06,463][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,463][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourB_0-WindowsClient.pak.
+[2026-11-07T22:52:06,464][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,464][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_8-WindowsClient.pak.
+[2026-11-07T22:52:06,465][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,465][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_7-WindowsClient.pak.
+[2026-11-07T22:52:06,465][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,466][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_6-WindowsClient.pak.
+[2026-11-07T22:52:06,466][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,466][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_5-WindowsClient.pak.
+[2026-11-07T22:52:06,467][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,467][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_4-WindowsClient.pak.
+[2026-11-07T22:52:06,468][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,468][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_3-WindowsClient.pak.
+[2026-11-07T22:52:06,469][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,469][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_2-WindowsClient.pak.
+[2026-11-07T22:52:06,470][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,470][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_1-WindowsClient.pak.
+[2026-11-07T22:52:06,471][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,471][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_ArmourA_0-WindowsClient.pak.
+[2026-11-07T22:52:06,471][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,471][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_8-WindowsClient.pak.
+[2026-11-07T22:52:06,472][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,472][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_7-WindowsClient.pak.
+[2026-11-07T22:52:06,474][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,474][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_6-WindowsClient.pak.
+[2026-11-07T22:52:06,474][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,474][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_5-WindowsClient.pak.
+[2026-11-07T22:52:06,477][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,477][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_4-WindowsClient.pak.
+[2026-11-07T22:52:06,477][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,477][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_3-WindowsClient.pak.
+[2026-11-07T22:52:06,478][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,478][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_2-WindowsClient.pak.
+[2026-11-07T22:52:06,479][  0][LogPakFile][Display]Found Pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak attempting to mount.
+[2026-11-07T22:52:06,479][  0][LogPakFile][Display]Mounting pak file ../../../Archon/Content/Paks/Archon_Architecture_1-WindowsClient.pak.
+[2026-11-07T22:52:07,039][  0][LogLuminAPIImpl][Warning]MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2026-11-07T22:52:07,180][  0][LogStreaming][Display]Async Loading initialized: Event Driven Loader: true, Async Loading Thread: true, Async Post Load: true
+[2026-11-07T22:52:07,210][  0][LogModuleManager][Warning]ModuleManager: Module 'ExampleDeviceProfileSelector' not found - its StaticallyLinkedModuleInitializers function is null.
+[2026-11-07T22:52:07,210][  0][LogHAL][Display]Platform has ~ 16 GB [16677486592 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026-11-07T22:52:07,317][  0][LogWindowsTextInputMethodSystem][Display]IME system deactivated.
+010c:err:winediag:nodrv_CreateWindow Application tried to create a window, but no driver could be loaded.
+010c:err:winediag:nodrv_CreateWindow L"Make sure that your X server is running and that $DISPLAY is set correctly."
+010c:err:d3d:wined3d_caps_gl_ctx_create Failed to create a window.
+010c:err:d3d:wined3d_adapter_gl_init Failed to get a GL context for adapter 00007FFFFF6593C0.
