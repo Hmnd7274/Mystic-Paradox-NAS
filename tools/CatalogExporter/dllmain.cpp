@@ -52,6 +52,7 @@ extern int RunDropTableExport();
 extern int RunCurrencyExport();
 extern int RunStoreRuntimeExport();
 extern int RunMasteryExport();
+extern int RunEscalationExport();
 
 // ---- output location -------------------------------------------------------
 // See ExportPaths.hpp: <root>\Items_Analysis when ExportPaths.local.h names a root, else .\Items_Analysis.
@@ -683,7 +684,8 @@ static void WriteManifest(const std::wstring& outDir, const ExportFlags& flags,
     f << "    \"EXPORT_HUNTS\": " << (flags.ExportHunts ? "true" : "false") << ",\n";
     f << "    \"EXPORT_TABLE_INVENTORY\": " << (flags.ExportTableInventory ? "true" : "false") << ",\n";
     f << "    \"EXPORT_STORE_RUNTIME\": " << (flags.ExportStoreRuntime ? "true" : "false") << ",\n";
-    f << "    \"EXPORT_MASTERY\": " << (flags.ExportMastery ? "true" : "false") << "\n";
+    f << "    \"EXPORT_MASTERY\": " << (flags.ExportMastery ? "true" : "false") << ",\n";
+    f << "    \"EXPORT_ESCALATION\": " << (flags.ExportEscalation ? "true" : "false") << "\n";
     f << "  },\n";
     f << "  \"results\": {\n";
     f << "    \"catalogGeneralItems\": " << catalogGeneral << ",\n";
@@ -833,6 +835,12 @@ static DWORD WINAPI ExporterThread(LPVOID) {
         masteryRows = RunMasteryExport();
     } else {
         Status("EXPORT_MASTERY=0, skipping mastery/achievement objective export");
+    }
+
+    if (flags.ExportEscalation) {
+        RunEscalationExport();
+    } else {
+        Status("EXPORT_ESCALATION=0, skipping escalation data export");
     }
 
     // Runs last: the census is a discovery aid for the NEXT injection, so it should not delay the

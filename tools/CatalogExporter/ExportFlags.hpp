@@ -83,6 +83,7 @@ struct ExportFlags {
     // ProcessEvent), same safety class as EXPORT_SLAYERS_PATH. LOAD REQUIREMENT: open the Mastery board once so
     // the tables are loaded. Output: Items_Analysis\mastery_1_14_7\mastery_objectives.json (MasteryExporter.cpp).
     bool ExportMastery = false;
+    bool ExportEscalation = false;
 };
 
 inline std::wstring FindFlagsFile() {
@@ -142,6 +143,7 @@ inline ExportFlags LoadExportFlags() {
     flags.ExportCurrencyNames = parsed.count("EXPORT_CURRENCY_NAMES") ? parsed["EXPORT_CURRENCY_NAMES"] : false;
     flags.ExportStoreRuntime = parsed.count("EXPORT_STORE_RUNTIME") ? parsed["EXPORT_STORE_RUNTIME"] : false;
     flags.ExportMastery = parsed.count("EXPORT_MASTERY") ? parsed["EXPORT_MASTERY"] : false;
+    flags.ExportEscalation = parsed.count("EXPORT_ESCALATION") ? parsed["EXPORT_ESCALATION"] : false;
 
     return flags;
 }
