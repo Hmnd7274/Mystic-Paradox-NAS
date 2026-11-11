@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ActorAnimPair_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
+#include "ActorAnimPair_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -102,18 +102,6 @@ void Aelectroquill_tesla_projectile_C::grug()
 }
 
 
-// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.SpawnedActor_Cleanup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void Aelectroquill_tesla_projectile_C::SpawnedActor_Cleanup()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnedActor_Cleanup", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.MulticastDie
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -234,18 +222,6 @@ void Aelectroquill_tesla_projectile_C::ReceiveBeginPlay()
 }
 
 
-// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.OnProjectileStopped
-// (BlueprintCallable, BlueprintEvent)
-
-void Aelectroquill_tesla_projectile_C::OnProjectileStopped()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.Timeline_1__UpdateFunc
 // (BlueprintEvent)
 
@@ -294,18 +270,6 @@ void Aelectroquill_tesla_projectile_C::Timeline_0__FinishedFunc()
 }
 
 
-// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void Aelectroquill_tesla_projectile_C::UserConstructionScript()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.OnRep_RageMode
 // (BlueprintCallable, BlueprintEvent)
 
@@ -345,6 +309,42 @@ void Aelectroquill_tesla_projectile_C::GetDebrisData(EPhysicalSurface SurfaceTyp
 
 	if (SurfaceName != nullptr)
 		*SurfaceName = Parms.SurfaceName;
+}
+
+
+// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.SpawnedActor_Cleanup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void Aelectroquill_tesla_projectile_C::SpawnedActor_Cleanup()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnedActor_Cleanup", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.OnProjectileStopped
+// (BlueprintCallable, BlueprintEvent)
+
+void Aelectroquill_tesla_projectile_C::OnProjectileStopped()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void Aelectroquill_tesla_projectile_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -34,18 +34,6 @@ void Aelectroquill_projectile_C::ExecuteUbergraph_electroquill_projectile(int32 
 }
 
 
-// Function electroquill_projectile.electroquill_projectile_C.AuthSweepHitEvent
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void Aelectroquill_projectile_C::AuthSweepHitEvent()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthSweepHitEvent", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function electroquill_projectile.electroquill_projectile_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -83,6 +71,18 @@ void Aelectroquill_projectile_C::BndEvt__DamageVolume_K2Node_ComponentBoundEvent
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function electroquill_projectile.electroquill_projectile_C.AuthSweepHitEvent
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void Aelectroquill_projectile_C::AuthSweepHitEvent()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthSweepHitEvent", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

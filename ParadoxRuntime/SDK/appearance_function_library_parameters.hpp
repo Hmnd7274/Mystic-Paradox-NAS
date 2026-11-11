@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CC_MakeupDataTable_Type_structs.hpp"
 #include "CC_FacepaintScaleOffset_Type_structs.hpp"
+#include "CC_MakeupDataTable_Type_structs.hpp"
 
 
 SDK_NAMESPACE_START

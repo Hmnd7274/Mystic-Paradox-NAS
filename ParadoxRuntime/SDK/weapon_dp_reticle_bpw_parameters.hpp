@@ -30,6 +30,16 @@ public:
 };
 DUMPER7_ASSERTS_weapon_dp_reticle_bpw_C_ExecuteUbergraph_weapon_dp_reticle_bpw;
 
+// Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct weapon_dp_reticle_bpw_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_weapon_dp_reticle_bpw_C_Tick;
+
 // Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.TickDynamicReticle
 // 0x00B8 (0x00B8 - 0x0000)
 struct weapon_dp_reticle_bpw_C_TickDynamicReticle final
@@ -94,16 +104,6 @@ public:
 	bool                                          CallFunc_IsFeatureEnabled_ReturnValue;             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_weapon_dp_reticle_bpw_C_ShowEmpoweredReticle;
-
-// Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct weapon_dp_reticle_bpw_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_weapon_dp_reticle_bpw_C_Tick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

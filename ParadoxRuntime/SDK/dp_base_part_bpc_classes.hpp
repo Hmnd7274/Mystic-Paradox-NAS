@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "weapon_part_base_bpc_classes.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "weapon_part_base_bpc_classes.hpp"
 #include "LocalizationFramework_structs.hpp"
 
 

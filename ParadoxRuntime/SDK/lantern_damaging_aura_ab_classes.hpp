@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "lanternhold_damaging_aura_ab_classes.hpp"
 #include "Engine_structs.hpp"
+#include "lanternhold_damaging_aura_ab_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -30,8 +30,8 @@ public:
 public:
 	void ExecuteUbergraph_lantern_damaging_aura_ab(int32 EntryPoint);
 	void AddShields();
-	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbility();
+	void K2_OnEndAbility(bool bWasCancelled);
 
 public:
 	static class UClass* StaticClass()

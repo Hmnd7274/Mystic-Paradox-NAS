@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ArmourSet_Description_Info_structs.hpp"
 #include "Archon_structs.hpp"
+#include "ArmourSet_Description_Info_structs.hpp"
 
 
 SDK_NAMESPACE_START

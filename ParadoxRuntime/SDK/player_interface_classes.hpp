@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
+#include "Archon_structs.hpp"
 #include "jump_type_enum_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Archon_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
 
@@ -65,7 +65,7 @@ public:
 	void SetEarlyOutOfMontage(bool EarlyOutOfMontage);
 	void UpdateTranslateWarpTargetPosition(const struct FVector& Position);
 	void PlayNetworkedMontage(class UAnimMontage* Montage, float ScaleFactor, float PlayRate, class FName Section);
-	void SetCollisionWithDestructible(bool Enabled, bool* return_0);
+	void SetCollisionWithDestructible(bool Enabled, bool* Return);
 	void Set_Dodge_And_Jump_Enable_State(bool Enabled_);
 	void GetAbilitySystemComponent(class UAbilitySystemComponent** AbilitySystem);
 	void GetBleedoutLevel(int32* Level);
@@ -106,7 +106,7 @@ public:
 	void SetEmoteTurnWarpEnabled(bool enable);
 	void IsHelmVisible(bool* Visible);
 	void GetNumPlayersReviving(int32* NumPlayers);
-	void GetIsSprinting(bool* return_0);
+	void GetIsSprinting(bool* Return);
 	void ResetMaxFallTimer(bool* Out);
 	void ShowPlayerMarker();
 	void HidePlayerMarker();
@@ -132,13 +132,13 @@ public:
 	void StartCameraTransition(class UCurveFloat* TargetCurve, const struct FVector& CameraOffsetNoLag, const struct FVector& CameraOffset, const struct FVector& CameraTargetOffset, float CameraArmLengthOffset, float CameraTime, float CameraFOVDelta, float CameraLagSpeed, bool ApplyAsDelta);
 	void StartCameraTransitionBlendOut(class UCurveFloat* TargetCurve, float CameraTime);
 	void IsAPlayerCharacter(bool* IsAPlayerCharacter_0);
-	void IsVentJumping(bool* return_0);
+	void IsVentJumping(bool* Return);
 	void IsStrafing(bool* NewParam);
-	void IsInEdgeRecovery(bool* return_0);
+	void IsInEdgeRecovery(bool* Return);
 	void GetJumpType(Ejump_type_enum* JumpType);
 	void GetDesiredLocomotionState(EArchonLocomotionState* DesiredLocomotionState);
-	void CanMove(bool* return_0);
-	void IsIkinemaEnabled(bool* return_0);
+	void CanMove(bool* Return);
+	void IsIkinemaEnabled(bool* Return);
 	void ClampCamera(bool Clamp);
 	void SetStrafeSpeedMod(float SpeedMod);
 	void EnableWeatherParticles(bool enable);
@@ -150,7 +150,7 @@ public:
 	void SetPelvisCorrection(bool enable);
 	void GetPelvisCorrection(bool* Enabled);
 	void ResyncMovementMode(EMovementMode NewMovement, uint8 NewCustomMovementMode, const struct FTransform& NewTransform);
-	void SetCollisionWithAMonster(bool Enabled, bool* return_0);
+	void SetCollisionWithAMonster(bool Enabled, bool* Return);
 	void ScaleInputTurnRate(float Scale);
 	void ResetInputTurnRate();
 	void GetBPLastMovementInputVector(struct FVector* LastMovementInputVector);
@@ -167,12 +167,12 @@ public:
 
 	void GetCurrentAimDirection(struct FVector* CurrentAimDirection) const;
 	void GetGenderIdentity(ECharacterGender* GenderId) const;
-	void IsInputEnabled_(bool* return_0) const;
-	void IsEmoting(bool* return_0) const;
-	void IsPlantingBanner(bool* return_0) const;
+	void IsInputEnabled_(bool* Return) const;
+	void IsEmoting(bool* Return) const;
+	void IsPlantingBanner(bool* Return) const;
 	void GetPlayerSupportInfo(bool* IsSupported, struct FHitResult* PlayerSupportHitInfo, float* DistanceToGround) const;
 	void CanVentTraversal(bool* CanTraverse) const;
-	void GetMountingComponent(class UArchonMountingComponent** return_0) const;
+	void GetMountingComponent(class UArchonMountingComponent** Return) const;
 	void GetRawMovementInput(struct FVector* RawInput) const;
 	void IsFrostbitten(bool* Frostbitten_) const;
 

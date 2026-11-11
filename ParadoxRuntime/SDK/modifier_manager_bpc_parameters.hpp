@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "buff_GUID_pair_structs.hpp"
-#include "hunt_mod_soft_guid_pair_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "hunt_mod_soft_guid_pair_structs.hpp"
 #include "Archon_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 

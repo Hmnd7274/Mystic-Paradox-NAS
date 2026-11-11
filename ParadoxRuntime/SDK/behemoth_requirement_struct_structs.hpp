@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_req_state_type_structs.hpp"
-#include "part_requirement_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "Enum_CompareOperators_structs.hpp"
+#include "behemoth_req_state_type_structs.hpp"
 #include "blackboard_comparable_key_type_structs.hpp"
 #include "require_or_exclude_structs.hpp"
 #include "simplified_blackboard_key_data_structs.hpp"
+#include "part_requirement_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 
 

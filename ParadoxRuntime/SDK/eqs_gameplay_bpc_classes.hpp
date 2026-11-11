@@ -12,11 +12,11 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "eqs_spawn_query_structs.hpp"
 #include "persistent_request_result_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "eqs_spawn_query_structs.hpp"
 #include "persistent_eqs_spawn_data_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "eqs_gameplay_type_structs.hpp"

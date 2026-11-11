@@ -34,18 +34,6 @@ void Aescalation_zeal_moonface_lantern_buff_C::ExecuteUbergraph_escalation_zeal_
 }
 
 
-// Function escalation_zeal_moonface_lantern_buff.escalation_zeal_moonface_lantern_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Aescalation_zeal_moonface_lantern_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_zeal_moonface_lantern_buff.escalation_zeal_moonface_lantern_buff_C.DamageDealtFromTable
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -77,6 +65,18 @@ void Aescalation_zeal_moonface_lantern_buff_C::ReceiveBeginPlay()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_zeal_moonface_lantern_buff.escalation_zeal_moonface_lantern_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Aescalation_zeal_moonface_lantern_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

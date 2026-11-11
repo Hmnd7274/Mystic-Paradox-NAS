@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "find_near_behemoth_strategy_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "warp_aim_type_structs.hpp"
 #include "behemoth_targetting_data_structs.hpp"
-#include "find_near_behemoth_strategy_structs.hpp"
+#include "warp_aim_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

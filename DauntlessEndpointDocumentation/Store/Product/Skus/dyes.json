@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "single_dye_endurance",
+    "displayName": "Endurance",
+    "displayDescription": "Weather the oncoming storm in effortless style with this dazzling aether-infused dye.",
+    "displayPriority": 412,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN18_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN18_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_yellow04_durable",
+    "displayName": "Alabaster",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 413,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_YELLOW04_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW04_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue04_durable",
+    "displayName": "Altitude",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 414,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE04_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE04_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_orange03_durable",
+    "displayName": "Amaranth",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 415,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_ORANGE03_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE03_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_orange08_durable",
+    "displayName": "Ascendance",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 416,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_ORANGE08_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE08_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp14b_protector_02_durable",
+    "displayName": "Autumn",
+    "displayDescription": "Even in world of drifting islands and elemental aether currents, seasons come and seasons go.",
+    "displayPriority": 417,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP14B_PROTECTOR_02_DURABLE"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2021_Season14b/ui_hp_dye_protector_14B_autumn.ui_hp_dye_protector_14B_autumn'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP14B_PROTECTOR_02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue09_durable",
+    "displayName": "Battalion",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 418,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE09_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE09_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_gray06_durable",
+    "displayName": "Black Pearl",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 419,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GRAY06_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GRAY06_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red09_durable",
+    "displayName": "Blood Moon",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 420,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED09_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED09_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red07_durable",
+    "displayName": "Bloodlust",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 421,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED07_DURABLE"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_dyescarlet.ui_icon_hp_dyescarlet'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED07_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red02_durable",
+    "displayName": "Bubble Gum",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 423,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED02_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_purple12_durable",
+    "displayName": "Celestial",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 424,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_PURPLE12_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE12_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_darkeggplant_durable",
+    "displayName": "Contusion",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 426,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_DARKEGGPLANT_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_DARKEGGPLANT_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp13b_divine_00_durable",
+    "displayName": "Conundrum",
+    "displayDescription": "It's impossible to resist.",
+    "displayPriority": 427,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP13B_DIVINE_00_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP13B_DIVINE_00_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red10_durable",
+    "displayName": "Darling",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 428,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED10_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED10_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_yellow05_durable",
+    "displayName": "Daybreak",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 429,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_YELLOW05_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW05_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red11_durable",
+    "displayName": "Defiance",
+    "displayDescription": "An aether-infused dye favoured by the Zephyr Strike team. It may be applied to many different fabrics and surfaces.",
+    "displayPriority": 431,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED11_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED11_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp14a_ranger_02_durable",
+    "displayName": "Divination",
+    "displayDescription": "Take care when seeking the truth. You might find it.",
+    "displayPriority": 432,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP14A_RANGER_02_DURABLE"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2021_Season13b/ui_hp_dye_divine_13B_02.ui_hp_dye_divine_13B_02'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP14A_RANGER_02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_brown02_durable",
+    "displayName": "Espresso",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 433,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BROWN02_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BROWN02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp13b_divine_01_durable",
+    "displayName": "Event Horizon",
+    "displayDescription": "Nothing escapes its beauty.",
+    "displayPriority": 434,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP13B_DIVINE_01_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP13B_DIVINE_01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_yellow02_durable",
+    "displayName": "Gilded",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 436,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_YELLOW02_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue08_durable",
+    "displayName": "Glacier",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 437,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE08_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE08_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_lightgreen_durable",
+    "displayName": "Greenwood",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 438,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_LIGHTGREEN_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_LIGHTGREEN_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_brown09_durable",
+    "displayName": "Groundbreak",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 439,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BROWN09_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BROWN09_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_darkteal_durable",
+    "displayName": "Grove",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 440,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_DARKTEAL_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_DARKTEAL_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green02_durable",
+    "displayName": "Guerilla",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 441,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN02_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_gray08_durable",
+    "displayName": "Gunmetal",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 442,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GRAY08_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GRAY08_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green16_durable",
+    "displayName": "Harbinger",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 443,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN16_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN16_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_darkyellow_durable",
+    "displayName": "Honey",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 444,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_DARKYELLOW_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_DARKYELLOW_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green11_durable",
+    "displayName": "Hyperion",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 445,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN11_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN11_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue06_durable",
+    "displayName": "Infiltration",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 446,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE06_DURABLE"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/ui_hp_dye_navy.ui_hp_dye_navy'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE06_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue05_durable",
+    "displayName": "Jawbreaker",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 447,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE05_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE05_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_purple04_durable",
+    "displayName": "Lunar",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 448,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_PURPLE04_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE04_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red05_durable",
+    "displayName": "Mandrake",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 449,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED05_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED05_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green01_durable",
+    "displayName": "Meadow",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 450,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN01_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green13_durable",
+    "displayName": "Mirage",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 451,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN13_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN13_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue02_durable",
+    "displayName": "Nauticus",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 453,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE02_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green12_durable",
+    "displayName": "Oasis",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 454,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN12_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN12_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_purple03_durable",
+    "displayName": "Obelisk",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 455,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_PURPLE03_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE03_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green06_durable",
+    "displayName": "Obscura",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 456,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN06_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN06_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp14a_ranger_01_durable",
+    "displayName": "Relentless",
+    "displayDescription": "So called because it never relents.",
+    "displayPriority": 457,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP14A_RANGER_01_DURABLE"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2021_Season13b/ui_hp_dye_divine_13B_02.ui_hp_dye_divine_13B_02'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP14A_RANGER_01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_purple05_durable",
+    "displayName": "Royalty",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 460,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_PURPLE05_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE05_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red03_durable",
+    "displayName": "Sanguine",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 461,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED03_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED03_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp13a_ancient_00_durable",
+    "displayName": "Shifting Radiance",
+    "displayDescription": "\"Time travel is impossible... isn't it?\"",
+    "displayPriority": 462,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP13A_ANCIENT_00_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP13A_ANCIENT_00_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_gray09_durable",
+    "displayName": "Smoke",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 464,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GRAY09_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GRAY09_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green05_durable",
+    "displayName": "Solitude",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 465,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN05_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN05_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_gray03_durable",
+    "displayName": "Sterling",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 467,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GRAY03_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GRAY03_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_darkorange_durable",
+    "displayName": "Sunburn",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 469,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_DARKORANGE_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_DARKORANGE_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_orange01_durable",
+    "displayName": "Sunset",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 470,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_ORANGE01_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_hp15b_grind_durable_00",
+    "displayName": "Superb",
+    "displayDescription": "You won't find a better dye this side of the desert.",
+    "displayPriority": 471,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_HP15B_GRIND_DURABLE_00"
+    ],
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2021_Season15b/ui_hp_dye_warlords_15B_battlescar.ui_hp_dye_warlords_15B_battlescar'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_HP15B_GRIND_DURABLE_00",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_blue01_durable",
+    "displayName": "Tempest",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 472,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BLUE01_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BLUE01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_forestgreen_durable",
+    "displayName": "Timberland",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 473,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_FORESTGREEN_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_FORESTGREEN_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_purple01_durable",
+    "displayName": "Twilight",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 474,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_PURPLE01_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_titan_durable",
+    "displayName": "Vengeance",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 475,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_TITAN_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_TITAN_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_red08_durable",
+    "displayName": "Vice",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 477,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_RED08_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_RED08_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_green07_durable",
+    "displayName": "Woodland",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 478,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_GREEN07_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_GREEN07_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_brown04_durable",
+    "displayName": "Ashen Brown",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 479,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BROWN04_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BROWN04_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_brown06_durable",
+    "displayName": "Dust",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 481,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BROWN06_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BROWN06_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_orange06_durable",
+    "displayName": "Peach",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 484,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_ORANGE06_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE06_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  },
+  {
+    "id": "sku_dye_brown03_durable",
+    "displayName": "Straw",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 485,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100,
+        "salesPrice": null,
+        "multiPrice": null
+      }
+    ],
+    "maxAllowed": 1,
+    "remaining": 1,
+    "duplicateInstancedItems": [
+      "DYE_BROWN03_DURABLE"
+    ],
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_captured"
+    ],
+    "scheduledTags": null,
+    "items": [
+      {
+        "catalogId": "DYE_BROWN03_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "entitlements": [],
+    "skuProgression": null,
+    "loadoutSlots": null,
+    "availableFrom": null,
+    "availableTo": null,
+    "timeAvailabilityReason": null,
+    "platformOfferId": null,
+    "missingEntitlementNames": null
+  }
+]

@@ -76,30 +76,6 @@ void Adot_base_debuff_C::AuthDoDamage()
 }
 
 
-// Function dot_base_debuff.dot_base_debuff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Adot_base_debuff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function dot_base_debuff.dot_base_debuff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Adot_base_debuff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function dot_base_debuff.dot_base_debuff_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -191,6 +167,30 @@ void Adot_base_debuff_C::AuthRestartDuration()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthRestartDuration", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function dot_base_debuff.dot_base_debuff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Adot_base_debuff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function dot_base_debuff.dot_base_debuff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Adot_base_debuff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

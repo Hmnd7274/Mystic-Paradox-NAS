@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "coordination_message_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "coordination_message_type_structs.hpp"
 #include "Engine_structs.hpp"
+#include "coordination_message_type_structs.hpp"
+#include "coordination_message_structs.hpp"
 
 
 SDK_NAMESPACE_START

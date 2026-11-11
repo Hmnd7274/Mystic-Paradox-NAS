@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "Archon_structs.hpp"
 #include "armour_hiding_enum_structs.hpp"
+#include "Archon_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 
 

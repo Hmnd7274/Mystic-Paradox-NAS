@@ -1001,10 +1001,10 @@ void ABP_BaseArchonWeapon_C::UpdateWeaponPartComboMoveInfo()
 // Function BP_BaseArchonWeapon.BP_BaseArchonWeapon_C.Get TransmogClass
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSoftClassPath*                  Class_0                                                (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void ABP_BaseArchonWeapon_C::Get_TransmogClass(bool* return_0, struct FSoftClassPath* Class_0)
+void ABP_BaseArchonWeapon_C::Get_TransmogClass(bool* Return, struct FSoftClassPath* Class_0)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Get TransmogClass", FnName));
@@ -1013,8 +1013,8 @@ void ABP_BaseArchonWeapon_C::Get_TransmogClass(bool* return_0, struct FSoftClass
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 
 	if (Class_0 != nullptr)
 		*Class_0 = std::move(Parms.Class_0);

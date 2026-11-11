@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "shockrod_vfx_pair_structs.hpp"
 #include "effect_magitudes_struct_structs.hpp"
 #include "Engine_structs.hpp"
+#include "shockrod_vfx_pair_structs.hpp"
 #include "shockrod_collision_pair_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "AIModule_structs.hpp"
@@ -55,18 +55,14 @@ public:
 	void GameplayCue_Combat_OnDamageReceived(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void MultiKillCollision_(int32 Collision_Index);
 	void Client_death();
-	void AuthDie();
 	void FenceShockPlayer(const struct FVector& PlayerShockLocation);
-	void AuthOnKilled();
 	void OnComponentBeginOverlap_Event_0(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void MultiCreateCollisionToRod(class Ashock_rod_actor_C* OtherRod);
 	void AuthDisconnectFrom(class Ashock_rod_actor_C* OtherRod, bool SecondConnection);
 	void AuthDisconnectFromAll();
 	void ReceiveDestroyed();
 	void AuthRefreshRods();
-	void ReceiveTick(float DeltaSeconds);
 	void OnQueryFinishedEvent_Event_0(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus);
-	void ReceiveBeginPlay();
 	void AuthConnectToSpooky(class Ashock_rod_actor_C* OtherRod, bool SecondConnection);
 	void HandleHit_Server(class AActor* Damager, class AActor* DamagedActor, const struct FArchonCombatHitParams& Params_0);
 	void HandleHit_Client(class AActor* Damager, class AActor* DamagedActor, const struct FArchonCombatHitParams& Params_0, bool bHitWouldHaveSucceededOnServer);
@@ -75,9 +71,13 @@ public:
 	void AuthConnectToX(class Ashock_rod_actor_C* OtherRod, bool SecondaryConnection);
 	void SpawnCollisionBox(class Ashock_rod_actor_C* OtherRod, bool IsHurtBox, class UBoxComponent** BoxCollision);
 	void GetBeamRodPairs(TArray<struct Fshockrod_vfx_pair>* BeamRodPairs_0);
-	void CanHitCBPushPullTarget(class UPrimitiveComponent* ComponentHit, bool* Hits_);
 	void HitPlayer_NoClientAuthDodging(class AActor* Player, const struct FHitResult& HitResult);
 	void HitPlayer_ClientAuthDodging(class AActor* Player, const struct FHitResult& Hit_Result);
+	void AuthDie();
+	void AuthOnKilled();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void CanHitCBPushPullTarget(class UPrimitiveComponent* ComponentHit, bool* Hits_);
 
 public:
 	static class UClass* StaticClass()

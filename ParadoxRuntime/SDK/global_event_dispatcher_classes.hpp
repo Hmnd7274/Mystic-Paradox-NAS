@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
-#include "behemoth_stagger_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "rankings_enum_structs.hpp"
 #include "Archon_structs.hpp"
+#include "rankings_enum_structs.hpp"
+#include "behemoth_stagger_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

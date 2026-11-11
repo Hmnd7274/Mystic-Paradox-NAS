@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "coordination_message_type_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ai_agent_group_structs.hpp"
-#include "coordination_message_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -46,18 +46,6 @@ void Aescalation_radiant_power_buff_C::SetReadyToUseAgain()
 }
 
 
-// Function escalation_radiant_power_buff.escalation_radiant_power_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_radiant_power_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_radiant_power_buff.escalation_radiant_power_buff_C.BuffExpired
 // (BlueprintCallable, BlueprintEvent)
 
@@ -115,6 +103,18 @@ void Aescalation_radiant_power_buff_C::OnGameplayEventTriggered(const struct FGa
 	Parms.Payload = std::move(Payload);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function escalation_radiant_power_buff.escalation_radiant_power_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_radiant_power_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

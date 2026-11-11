@@ -38,9 +38,9 @@ void Ufootsteps_event_bpn_C::GetIsValidSprintAttempt(bool* Valid)
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsIkinemaEnabled
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsIkinemaEnabled(bool* return_0)
+void Ufootsteps_event_bpn_C::IsIkinemaEnabled(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsIkinemaEnabled", FnName));
@@ -49,17 +49,17 @@ void Ufootsteps_event_bpn_C::IsIkinemaEnabled(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function footsteps_event_bpn.footsteps_event_bpn_C.CanMove
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::CanMove(bool* return_0)
+void Ufootsteps_event_bpn_C::CanMove(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanMove", FnName));
@@ -68,8 +68,8 @@ void Ufootsteps_event_bpn_C::CanMove(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -114,9 +114,9 @@ void Ufootsteps_event_bpn_C::GetJumpType(Ejump_type_enum* JumpType)
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsInEdgeRecovery
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsInEdgeRecovery(bool* return_0)
+void Ufootsteps_event_bpn_C::IsInEdgeRecovery(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsInEdgeRecovery", FnName));
@@ -125,8 +125,8 @@ void Ufootsteps_event_bpn_C::IsInEdgeRecovery(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -152,9 +152,9 @@ void Ufootsteps_event_bpn_C::IsStrafing(bool* NewParam)
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsVentJumping
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsVentJumping(bool* return_0)
+void Ufootsteps_event_bpn_C::IsVentJumping(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsVentJumping", FnName));
@@ -163,8 +163,8 @@ void Ufootsteps_event_bpn_C::IsVentJumping(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -379,9 +379,9 @@ void Ufootsteps_event_bpn_C::ResetMaxFallTimer(bool* Out)
 // Function footsteps_event_bpn.footsteps_event_bpn_C.GetIsSprinting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::GetIsSprinting(bool* return_0)
+void Ufootsteps_event_bpn_C::GetIsSprinting(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetIsSprinting", FnName));
@@ -390,8 +390,8 @@ void Ufootsteps_event_bpn_C::GetIsSprinting(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -804,9 +804,9 @@ void Ufootsteps_event_bpn_C::GetAbilitySystemComponent(class UAbilitySystemCompo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::SetCollisionWithDestructible(bool Enabled, bool* return_0)
+void Ufootsteps_event_bpn_C::SetCollisionWithDestructible(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCollisionWithDestructible", FnName));
@@ -817,8 +817,8 @@ void Ufootsteps_event_bpn_C::SetCollisionWithDestructible(bool Enabled, bool* re
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1350,9 +1350,9 @@ void Ufootsteps_event_bpn_C::GetPelvisCorrection(bool* Enabled)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::SetCollisionWithAMonster(bool Enabled, bool* return_0)
+void Ufootsteps_event_bpn_C::SetCollisionWithAMonster(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCollisionWithAMonster", FnName));
@@ -1363,8 +1363,8 @@ void Ufootsteps_event_bpn_C::SetCollisionWithAMonster(bool Enabled, bool* return
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1533,9 +1533,9 @@ void Ufootsteps_event_bpn_C::GetPlayerSupportInfo(bool* IsSupported, struct FHit
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsPlantingBanner
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsPlantingBanner(bool* return_0) const
+void Ufootsteps_event_bpn_C::IsPlantingBanner(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsPlantingBanner", FnName));
@@ -1544,17 +1544,17 @@ void Ufootsteps_event_bpn_C::IsPlantingBanner(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsEmoting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsEmoting(bool* return_0) const
+void Ufootsteps_event_bpn_C::IsEmoting(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsEmoting", FnName));
@@ -1563,17 +1563,17 @@ void Ufootsteps_event_bpn_C::IsEmoting(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function footsteps_event_bpn.footsteps_event_bpn_C.IsInputEnabled?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ufootsteps_event_bpn_C::IsInputEnabled_(bool* return_0) const
+void Ufootsteps_event_bpn_C::IsInputEnabled_(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsInputEnabled?", FnName));
@@ -1582,8 +1582,8 @@ void Ufootsteps_event_bpn_C::IsInputEnabled_(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1647,9 +1647,9 @@ void Ufootsteps_event_bpn_C::CanVentTraversal(bool* CanTraverse) const
 // Function footsteps_event_bpn.footsteps_event_bpn_C.GetMountingComponent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UArchonMountingComponent**        return_0                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UArchonMountingComponent**        Return                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ufootsteps_event_bpn_C::GetMountingComponent(class UArchonMountingComponent** return_0) const
+void Ufootsteps_event_bpn_C::GetMountingComponent(class UArchonMountingComponent** Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMountingComponent", FnName));
@@ -1658,8 +1658,8 @@ void Ufootsteps_event_bpn_C::GetMountingComponent(class UArchonMountingComponent
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

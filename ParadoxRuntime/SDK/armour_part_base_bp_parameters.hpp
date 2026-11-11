@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "ah_side_struct_structs.hpp"
 #include "Archon_structs.hpp"
-#include "ah_sides_enum_structs.hpp"
-#include "LocalizationFramework_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "ah_body_types_struct_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
 #include "ah_hiding_shrinking_struct_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ah_sides_enum_structs.hpp"
+#include "ah_side_struct_structs.hpp"
 #include "ah_legs_settings_struct_structs.hpp"
 #include "tier_armour_data_structs.hpp"
 #include "Engine_structs.hpp"

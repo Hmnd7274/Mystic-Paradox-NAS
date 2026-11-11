@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "vfx_states_structs.hpp"
-#include "Engine_structs.hpp"
 #include "vfx_struct_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
+#include "element_float_pair_structs.hpp"
+#include "stat_value_type_structs.hpp"
+#include "player_stat_type_structs.hpp"
+#include "LoadoutStatTypes_structs.hpp"
 #include "Archon_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_aspect_mode_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EquipmentVendor_structs.hpp"
-#include "element_float_pair_structs.hpp"
-#include "player_stat_type_structs.hpp"
-#include "LoadoutStatTypes_structs.hpp"
-#include "stat_value_type_structs.hpp"
+#include "E_aspect_mode_structs.hpp"
 #include "loadout_stat_info_structs.hpp"
+#include "EquipmentVendor_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -355,8 +355,8 @@ DUMPER7_ASSERTS_UserWidgetFunctions_C_CombineElementFloatPairs;
 struct UserWidgetFunctions_C_GetElementFloatPairDeltas final
 {
 public:
-	TArray<struct Felement_float_pair>            Removing;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<struct Felement_float_pair>            Adding;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<struct Felement_float_pair>            removing;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<struct Felement_float_pair>            adding;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class UObject*                                __WorldContext;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct Felement_float_pair>            Deltas;                                            // 0x0028(0x0010)(Parm, OutParm)
 	int32                                         LocalIndex;                                        // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

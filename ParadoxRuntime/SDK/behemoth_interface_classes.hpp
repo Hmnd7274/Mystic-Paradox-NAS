@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "behemoth_states_enum_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
-#include "behemoth_part_type_structs.hpp"
 #include "stagger_type_structs.hpp"
-#include "TranslateWarpOverrideType_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 #include "damage_types_structs.hpp"
 #include "TurnWarpOverrideType_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
+#include "TranslateWarpOverrideType_structs.hpp"
+#include "behemoth_part_type_structs.hpp"
 #include "behemoth_loco_type_structs.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
 #include "behemoth_stagger_type_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -70,7 +70,7 @@ public:
 	void ActivateMonsterTrail(class UParticleSystem* ParticleSystem, float LifeTime, class FName In_First_Socket_Name, class FName In_Second_Socket_Name, const class Ubehemoth_trails_ns_C* Calling_Notify, const struct FLinearColor& Trail_Color);
 	void DeactivateMonsterTrail(const class Ubehemoth_trails_ns_C* CallingNotify);
 	void UpdateBehemothMusicState_Interface();
-	void GetIsDead(bool* return_0);
+	void GetIsDead(bool* Return);
 	void ModActionRate(float PercentOfCurrentActionRate);
 	void GetActionRate(float* ActionRate);
 	void GetPartResistMultipliersForType(Ebehemoth_part_type PartType, TArray<struct Fpart_resist_multiplier>* ResistMultipliers);
@@ -105,7 +105,7 @@ public:
 	void SetStaggerProof(bool IsStaggerProof_, bool* Successful);
 	void AddTuningPresets_Interface(const TArray<struct Fbehemoth_tuning_data>& Tuning_Presets, bool Refresh);
 	void AddPaintedTargetWidget(bool ManualAttachment, const struct FTransform& RelativeTransform, class UWidgetComponent** Widget);
-	void RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* return_0);
+	void RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* Return);
 	void UpdateActionWeightsBasedOnChosenAction(class AActor* ChosenAction);
 	void EvaluateActionsByTagQuery(const struct FGameplayTagQuery& TagQuery, bool SkipCooldownAndActionConditions, bool DebugScores, float* BestActionScore, class AActor** BestAction);
 	void CanPartsBeExposed(bool* PartsCanBeExposed);

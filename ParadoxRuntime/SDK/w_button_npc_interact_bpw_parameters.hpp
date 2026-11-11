@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "npc_ui_struct_structs.hpp"
 #include "Archon_structs.hpp"
 #include "UMG_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "npc_ui_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

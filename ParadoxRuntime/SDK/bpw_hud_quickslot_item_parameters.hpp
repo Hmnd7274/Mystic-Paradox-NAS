@@ -82,7 +82,7 @@ public:
 	class ABPH_ArchonHUD_C*                       K2Node_DynamicCast_AsBPH_Archon_HUD_1;             // 0x0510(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_519[0x7];                                      // 0x0519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class Iplayer_controller_interface_C> K2Node_CustomEvent_Player;                // 0x0520(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class Iplayer_controller_interface_C> K2Node_CustomEvent_player;                // 0x0520(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class Uglobal_event_dispatcher_C*             CallFunc_Get_Global_Event_Dispatcher_Global_Event_Dispatcher; // 0x0530(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInCity_ReturnValue;                     // 0x0538(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_539[0x7];                                      // 0x0539(0x0007)(Fixing Size After Last Property [ Dumper-7 ])

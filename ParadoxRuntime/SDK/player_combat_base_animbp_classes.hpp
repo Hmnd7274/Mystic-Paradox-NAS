@@ -11,21 +11,21 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Archon_structs.hpp"
-#include "Archon_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "LocalizationFramework_structs.hpp"
+#include "EPlayerStatesDefault_structs.hpp"
+#include "Archon_structs.hpp"
+#include "Archon_classes.hpp"
 #include "aim_offset_state_enum_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
+#include "strafe_transition_states_structs.hpp"
+#include "dp_weapon_attach_states_enum_structs.hpp"
+#include "PhoenixAnimationCore_structs.hpp"
+#include "strafe_states_structs.hpp"
+#include "player_aim_request_structs.hpp"
 #include "jump_type_enum_structs.hpp"
 #include "EPlayerStatesLayered_structs.hpp"
-#include "strafe_states_structs.hpp"
-#include "PhoenixAnimationCore_structs.hpp"
 #include "bone_offset_str_structs.hpp"
-#include "dp_weapon_attach_states_enum_structs.hpp"
-#include "strafe_transition_states_structs.hpp"
-#include "player_aim_request_structs.hpp"
-#include "EPlayerStatesDefault_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
 
@@ -352,7 +352,7 @@ public:
 	struct FVector                                RetargetAdditionalOffset;                          // 0x8B78(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         IKinemaBlendInTime;                                // 0x8B84(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         IKinemaBlendOutTime;                               // 0x8B88(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	float                                         IKinemaGlobalAlpha;                                // 0x8B8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         IkinemaGlobalAlpha;                                // 0x8B8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CBladePullAttachTarget;                            // 0x8B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                    CBladePullAimTarget;                               // 0x8B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CinematicActive;                                   // 0x8BA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

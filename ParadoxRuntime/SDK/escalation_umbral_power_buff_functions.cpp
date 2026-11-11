@@ -52,18 +52,6 @@ void Aescalation_umbral_power_buff_C::OnGameplayEventTriggered(const struct FGam
 }
 
 
-// Function escalation_umbral_power_buff.escalation_umbral_power_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_umbral_power_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_umbral_power_buff.escalation_umbral_power_buff_C.BuffExpired
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -83,6 +71,18 @@ void Aescalation_umbral_power_buff_C::RemoveElementalForms()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveElementalForms", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_umbral_power_buff.escalation_umbral_power_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_umbral_power_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

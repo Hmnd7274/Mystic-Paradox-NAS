@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "message_slate_image_structs.hpp"
 #include "Archon_structs.hpp"
+#include "message_slate_image_structs.hpp"
 
 
 SDK_NAMESPACE_START

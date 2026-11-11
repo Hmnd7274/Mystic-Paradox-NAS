@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "montage_list_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
+#include "montage_list_structs.hpp"
 
 
 SDK_NAMESPACE_START

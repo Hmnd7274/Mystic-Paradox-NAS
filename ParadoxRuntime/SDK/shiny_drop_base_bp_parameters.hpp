@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "OnlineSubsystemPhoenix_structs.hpp"
 #include "Engine_structs.hpp"
@@ -18,6 +17,7 @@
 #include "SlateCore_structs.hpp"
 #include "player_loot_instance_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "eqs_lobbed_projectile_data_structs.hpp"
 
 
 SDK_NAMESPACE_START

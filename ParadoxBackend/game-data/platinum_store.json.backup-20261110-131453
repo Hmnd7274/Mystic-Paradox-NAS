@@ -1,0 +1,6613 @@
+[
+  {
+    "id": "sku_dye_ashorange_durable",
+    "displayName": "Heatwave Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_ASHORANGE_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_ASHORANGE_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_babyblue_durable",
+    "displayName": "Heaven Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BABYBLUE_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BABYBLUE_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue01_durable",
+    "displayName": "Tempest Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE01_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue02_durable",
+    "displayName": "Nauticus Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE02_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE02_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue03_durable",
+    "displayName": "Lagoon Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue04_durable",
+    "displayName": "Altitude Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue05_durable",
+    "displayName": "Jawbreaker Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE05_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue07_durable",
+    "displayName": "Plunge Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/DyeSwatches/armour_dye_blue07.armour_dye_blue07'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE07_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE07_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue08_durable",
+    "displayName": "Glacier Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE08_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE08_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_blue09_durable",
+    "displayName": "Battalion Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE09_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE09_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown01_durable",
+    "displayName": "Sandstone Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/DyeSwatches/armour_dye_brown01.armour_dye_brown01'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN01_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown02_durable",
+    "displayName": "Espresso Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN02_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN02_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown03_durable",
+    "displayName": "Straw Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown04_durable",
+    "displayName": "Ashen Brown Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown06_durable",
+    "displayName": "Dust Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN06_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN06_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_brown09_durable",
+    "displayName": "Groundbreak Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BROWN09_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BROWN09_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_darkorange_durable",
+    "displayName": "Sunburn Dye",
+    "displayDescription": "<MISSING STRING TABLE ENTRY>",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_DARKORANGE_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_DARKORANGE_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_darkteal_durable",
+    "displayName": "Grove Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_DARKTEAL_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_DARKTEAL_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_darkyellow_durable",
+    "displayName": "Honey Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_DARKYELLOW_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_DARKYELLOW_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_forestgreen_durable",
+    "displayName": "Timberland Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_FORESTGREEN_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_FORESTGREEN_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_gray03_durable",
+    "displayName": "Sterling Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_gray04_durable",
+    "displayName": "Ice Gray Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_gray06_durable",
+    "displayName": "Black Pearl Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY06_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY06_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_gray08_durable",
+    "displayName": "Gunmetal Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY08_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY08_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_gray09_durable",
+    "displayName": "Smoke Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY09_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY09_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green01_durable",
+    "displayName": "Meadow Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN01_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green02_durable",
+    "displayName": "Guerilla Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN02_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN02_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green03_durable",
+    "displayName": "Sapling Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/DyeSwatches/armour_dye_green03.armour_dye_green03'"
+    },
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green05_durable",
+    "displayName": "Solitude Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN05_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green06_durable",
+    "displayName": "Obscura Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN06_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN06_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green07_durable",
+    "displayName": "Woodland Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN07_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN07_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green11_durable",
+    "displayName": "Hyperion Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN11_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN11_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green12_durable",
+    "displayName": "Oasis Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN12_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN12_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green13_durable",
+    "displayName": "Mirage Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN13_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN13_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_green16_durable",
+    "displayName": "Harbinger Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN16_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN16_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_lightgreen_durable",
+    "displayName": "Greenwood Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_LIGHTGREEN_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_LIGHTGREEN_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_lightgreen1_durable",
+    "displayName": "Springtime Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_LIGHTGREEN1_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_LIGHTGREEN1_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_orange01_durable",
+    "displayName": "Sunset Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_ORANGE01_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_orange03_durable",
+    "displayName": "Amaranth Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_ORANGE03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_orange06_durable",
+    "displayName": "Peach Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE06_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_ORANGE06_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_orange08_durable",
+    "displayName": "Ascendance Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_ORANGE08_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_ORANGE08_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple01_durable",
+    "displayName": "Twilight Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE01_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple03_durable",
+    "displayName": "Obelisk Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple04_durable",
+    "displayName": "Lunar Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple05_durable",
+    "displayName": "Royalty Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE05_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple10_durable",
+    "displayName": "Revenant Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE10_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE10_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple11_durable",
+    "displayName": "Quintessence Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE11_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE11_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_purple12_durable",
+    "displayName": "Celestial Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_PURPLE12_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_PURPLE12_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red02_durable",
+    "displayName": "Bubble Gum Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED02_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED02_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red03_durable",
+    "displayName": "Sanguine Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red04_durable",
+    "displayName": "Sakura Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red05_durable",
+    "displayName": "Mandrake Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED05_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red08_durable",
+    "displayName": "Vice Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED08_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED08_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red09_durable",
+    "displayName": "Blood Moon Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED09_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED09_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red10_durable",
+    "displayName": "Darling Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED10_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED10_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_red11_durable",
+    "displayName": "Defiance Dye",
+    "displayDescription": "An aether-infused dye favoured by the Zephyr Strike team. It may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED11_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED11_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_titan_durable",
+    "displayName": "Vengeance Dye",
+    "displayDescription": "<MISSING STRING TABLE ENTRY>",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_TITAN_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_TITAN_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_yellow02_durable",
+    "displayName": "Gilded Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW02_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_YELLOW02_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_yellow03_durable",
+    "displayName": "Goldenrod Dye",
+    "displayDescription": "<MISSING STRING TABLE ENTRY>",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW03_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_YELLOW03_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_yellow04_durable",
+    "displayName": "Alabaster Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW04_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_YELLOW04_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_dye_yellow05_durable",
+    "displayName": "Daybreak Dye",
+    "displayDescription": "<MISSING STRING TABLE ENTRY>",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "dyes",
+      "dye_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_YELLOW05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_YELLOW05_DURABLE"
+    ]
+  },
+  {
+    "id": "sku_bnc_fabric_event_hp07a_00",
+    "displayName": "Eternal Wisdom",
+    "displayDescription": "Proudly displayed by Adamant Fists who study with the Eternal Wisdom School.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/ui_icon_fabric_hp07a_00.ui_icon_fabric_hp07a_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_fabric",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP07A_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP07A_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_fabric_event_hp07b_00",
+    "displayName": "Witch's Window",
+    "displayDescription": "It reveals the darkest secrets.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/ui_equip_fabric_hp07b_00.ui_equip_fabric_hp07b_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_fabric",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP07B_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP07B_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_00",
+    "displayName": "Moonflower",
+    "displayDescription": "A stylized depiction of the bloom that gives the festival its name.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_00.ui_icon_sigil_hp05_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_01",
+    "displayName": "Spinning Star",
+    "displayDescription": "One can almost hear it cutting through the night air.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_01.ui_icon_sigil_hp05_01'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_01"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_02",
+    "displayName": "Five Truths",
+    "displayDescription": "Only the most advanced assassins know their names.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_02.ui_icon_sigil_hp05_02'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_02"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_03",
+    "displayName": "Assassin's Shield",
+    "displayDescription": "A symbol commonly associated with the islands of Andar.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_03.ui_icon_sigil_hp05_03'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_03"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_04",
+    "displayName": "Horns of Blood",
+    "displayDescription": "When the demon strikes the wound cuts deep.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_04.ui_icon_sigil_hp05_04'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_04",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_04"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp05_05",
+    "displayName": "Assassin's Strike",
+    "displayDescription": "One should be all you need.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_sigil_hp05_05.ui_icon_sigil_hp05_05'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP05_05",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP05_05"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp07a_02",
+    "displayName": "Spirit Lock",
+    "displayDescription": "Protects the spirit and brings focus to the mind.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/sigil_monk_02.sigil_monk_02'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP07A_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP07A_02"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp07a_05",
+    "displayName": "Hand of Focus",
+    "displayDescription": "Strike with clarity.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP07A_05",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP07A_05"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp07b_00",
+    "displayName": "Candle Night",
+    "displayDescription": "Just enough light to stab the darkness.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/sigil_witch_00.sigil_witch_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP07B_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP07B_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp07b_01",
+    "displayName": "Book of Secrets",
+    "displayDescription": "All knowledge comes with a price.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/sigil_witch_01.sigil_witch_01'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP07B_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP07B_01"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp07b_02",
+    "displayName": "Night Hunter",
+    "displayDescription": "The ancient enemies of the Unseen cult.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/sigil_witch_02.sigil_witch_02'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP07B_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP07B_02"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_event_hp08a_01",
+    "displayName": "Hero's Charge",
+    "displayDescription": "Try not to stand in its way.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/ui_icon_hp_sigil_8a_01.ui_icon_hp_sigil_8a_01'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP08A_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP08A_01"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Crucible",
+    "displayDescription": "Alchemists work primarily with flasks and vials. Alchemancers require equipment that's a little more sturdy.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_sigil_11a_00.ui_icon_hp_sigil_11a_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_sigil_hp12a_frostwarden_00",
+    "displayName": "Skaldeskar Rune",
+    "displayDescription": "The Skaldish people depend on the Frostwardens for protection in their remote island chain. ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_sigil_12a_00.ui_icon_hp_sigil_12a_00'"
+    },
+    "tags": [
+      "webstore",
+      "personality_flaresigil",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_bnc_standard_hp03_mossy_01",
+    "displayName": "Sylvan Spar",
+    "displayDescription": "A banner standard for Slayers who want to branch out.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 400
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_standard_01.ui_icon_hp_mossy_standard_01'"
+    },
+    "tags": [
+      "webstore",
+      "personality_standard",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP03_MOSSY_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP03_MOSSY_01"
+    ]
+  },
+  {
+    "id": "sku_ar_hp03_mossy_arms",
+    "displayName": "Farslayer's Reach",
+    "displayDescription": "Nothing escapes the grasp of the wild.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_arms_m.ui_icon_hp_mossy_arms_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP03_MOSSY_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP03_MOSSY_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp03_mossy_helm_00",
+    "displayName": "Farslayer's Vision",
+    "displayDescription": "Keep watch over the forests.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_helm_00_m.ui_icon_hp_mossy_helm_00_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP03_MOSSY_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP03_MOSSY_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp03_mossy_legs",
+    "displayName": "Farslayer's Balance",
+    "displayDescription": "Walk with a natural symmetry.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_legs_m.ui_icon_hp_mossy_legs_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP03_MOSSY_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP03_MOSSY_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp04_arid_arms",
+    "displayName": "Barbaric Strength",
+    "displayDescription": "Crush your enemies.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_arms_m.ui_icon_hp_burndown_arid_arms_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP04_ARID_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP04_ARID_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp04_arid_chest",
+    "displayName": "Barbaric Courage",
+    "displayDescription": "Do you want to live forever?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_chest_m.ui_icon_hp_burndown_arid_chest_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP04_ARID_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP04_ARID_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp04_arid_helm_00",
+    "displayName": "Barbaric Crown",
+    "displayDescription": "Worn upon a troubled brow.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_helm_m.ui_icon_hp_burndown_arid_helm_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP04_ARID_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP04_ARID_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp04_arid_helm_01",
+    "displayName": "Helm of Conquest",
+    "displayDescription": "Your victories cannot easily be counted.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_helm_01.ui_icon_hp_burndown_arid_helm_01'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP04_ARID_HELM_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP04_ARID_HELM_01"
+    ]
+  },
+  {
+    "id": "sku_ar_hp04_arid_legs",
+    "displayName": "Barbaric Tread",
+    "displayDescription": "See your foes driven before you.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_legs_m.ui_icon_hp_burndown_arid_legs_m'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP04_ARID_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP04_ARID_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp05_ninja_helm_03",
+    "displayName": "Laughing Death",
+    "displayDescription": "The traditional mask of the Laughing Death clan.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_helm_m_03.ui_icon_hp_ninja_helm_m_03'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP05_NINJA_HELM_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP05_NINJA_HELM_03"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06b_academy_arms",
+    "displayName": "ZA-11 \"Deathgrip\" Field Gloves",
+    "displayDescription": "Functional and flexible grips to fit any mission profile.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/armour_male_academy_arms_00.armour_male_academy_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06B_ACADEMY_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06B_ACADEMY_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06b_academy_chest",
+    "displayName": "ZC-11 \"Airstrike\" Flight Suit",
+    "displayDescription": "The armoured uniform of the Zephyr Strike squad.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/armour_male_academy_chest_00.armour_male_academy_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06B_ACADEMY_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06B_ACADEMY_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06b_academy_helm_00",
+    "displayName": "ZH-1 \"Zero Hour\"",
+    "displayDescription": "A sealed commando's helmet designed for operating in zero gravity or total vacuum. Not technically thoroughly proven in the field.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/armour_male_academy_helm_00.armour_male_academy_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06B_ACADEMY_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06B_ACADEMY_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06b_academy_helm_02",
+    "displayName": "ZH-3 \"Navigator Prime\"",
+    "displayDescription": "Built for operators of Ostian single-pilot airwing fighters. Adapted for Behemoth slaying.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/armour_male_academy_helm_02.armour_male_academy_helm_02'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06B_ACADEMY_HELM_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06B_ACADEMY_HELM_02"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06b_academy_legs",
+    "displayName": "ZL-11 \"Longwalk\" Combat Boots",
+    "displayDescription": "Plated in polished Ostian steel. Custom fitted to every wearer.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/armour_male_academy_legs_00.armour_male_academy_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06B_ACADEMY_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06B_ACADEMY_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07b_witch_arms",
+    "displayName": "Night Hunter's Gloves",
+    "displayDescription": "Seize the night.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_arms_00.armour_male_witch_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07b_witch_chest",
+    "displayName": "Night Hunter's Coat",
+    "displayDescription": "Lightweight leather that absorbs the darkness.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_chest_00.armour_male_witch_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07b_witch_helm",
+    "displayName": "Night Hunter's Bicorne",
+    "displayDescription": "Shadows your face even in the moonlight.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_helm_00.armour_male_witch_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_HELM",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_HELM"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07b_witch_legs",
+    "displayName": "Night Hunter's Boots",
+    "displayDescription": "Walk softly where devils fear to tread.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_legs_00.armour_male_witch_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08a_heroes_arms",
+    "displayName": "Heroic Vambraces",
+    "displayDescription": "Arm protection suitable for a hero of the Shattered Isles.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_arms_00.armour_male_heroes_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08a_heroes_chest",
+    "displayName": "Heroic Plate",
+    "displayDescription": "Torso protection suitable for a hero of the Shattered Isles. ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_chest_00.armour_male_heroes_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08a_heroes_helm_00",
+    "displayName": "Heroic Helm",
+    "displayDescription": "Head protection suitable for a hero of the Shattered Isles. ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_helm_00.armour_male_heroes_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08a_heroes_helm_01",
+    "displayName": "Hero's Band",
+    "displayDescription": "A hero may not have time for a haircut, but that's no reason to let your coiffure affect your sightlines.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/ui_icon_huntpass_helm_01.ui_icon_huntpass_helm_01'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_HELM_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_HELM_01"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08a_heroes_legs",
+    "displayName": "Heroic Greaves",
+    "displayDescription": "Leg protection suitable for a hero of the Shattered Isles. ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_legs_00.armour_male_heroes_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08b_punk_helm_00",
+    "displayName": "Punk's Peak",
+    "displayDescription": "Crest the wave of chaos.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_helm_00.armour_male_punk_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp08b_punk_legs_00",
+    "displayName": "Killer Kicks",
+    "displayDescription": "Give Behemoths a boot to the head.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_legs_00.armour_male_punk_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_LEGS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp09a_assassins_arms_00",
+    "displayName": "Raptor's Grips",
+    "displayDescription": "Iconic gloves and sleeves worn by new Blaze Hawk initiates.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_arms_00.armour_male_assassins_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_ARMS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_ARMS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp09a_assassins_chest_00",
+    "displayName": "Raptor's Cloak",
+    "displayDescription": "Iconic torso covering worn by new Blaze Hawk initiates.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_chest_00.armour_male_assassins_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_CHEST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_CHEST_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp09a_assassins_helm_00",
+    "displayName": "Raptor's Hood",
+    "displayDescription": "Iconic head covering worn by new Blaze Hawk initiates.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_helm_00.armour_male_assassins_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp09a_assassins_legs_00",
+    "displayName": "Raptor's Stride",
+    "displayDescription": "Iconic boots and trousers worn by new Blaze Hawk initiates.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_legs_00.armour_male_assassins_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_LEGS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp10a_celestial_arms_00",
+    "displayName": "Void Runner's Gloves",
+    "displayDescription": "Unnatural gauntlets based on designs and motifs left behind by the Void Runner culture.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_arms_00.armour_male_celestial_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_ARMS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_ARMS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp10a_celestial_chest_00",
+    "displayName": "Void Runner's Cloak",
+    "displayDescription": "Unusual garment based on designs and motifs left behind by the Void Runner culture.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_chest_00.armour_male_celestial_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_CHEST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_CHEST_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp10a_celestial_helm_00",
+    "displayName": "Void Runner's Cowl",
+    "displayDescription": "Unsettling headwear based on designs and motifs left behind by the Void Runner culture.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/ui_hp_outfit_celestial.ui_hp_outfit_celestial'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp10a_celestial_legs_00",
+    "displayName": "Void Runner's Pants",
+    "displayDescription": "Uncanny legwear based on designs and motifs left behind by the Void Runner culture.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_legs_00.armour_male_celestial_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_LEGS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp11a_alchemist_arms_00",
+    "displayName": "Thornguard Bracers",
+    "displayDescription": "Perhaps more than any other piece of protection these terrawoven bracers put the \"thorn\" in \"Thornguard.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_arms_00.armour_male_alchemist_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_ARMS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_ARMS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp11a_alchemist_chest_00",
+    "displayName": "Thornguard Cloak",
+    "displayDescription": "The Arbourhome Thornguard adorn their protective cloaks with small nodes of terra archonite to provide them additional protection against Behemoths that feed on it.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_chest_00.armour_male_alchemist_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_CHEST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_CHEST_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp11a_alchemist_helm_00",
+    "displayName": "Thornguard Crest",
+    "displayDescription": "The Farslayers of the Arbourhome Thornguard craft their own armour with the help of the tribe's elder terraweaver. This helm may appear lightweight, but it's as strong as Ostian steel.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_helm_00.armour_male_alchemist_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp11a_alchemist_helm_01",
+    "displayName": "Alchemancer's Diadem",
+    "displayDescription": "Raven feathers shroud the wearer from easy identification and conceal a hidden source of power.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_helm_01.armour_male_alchemist_helm_01'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_HELM_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_HELM_01"
+    ]
+  },
+  {
+    "id": "sku_ar_hp11a_alchemist_legs_00",
+    "displayName": "Thornguard Leathers",
+    "displayDescription": "The terraweavers of Arbourhome infuse the leather that comprises much of the Thornguard's armour with terra aether during the curing process.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_legs_00.armour_male_alchemist_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_LEGS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp12a_frostwarden_arms_00",
+    "displayName": "Warden Scout's Hanskyrs",
+    "displayDescription": "Layered gloves based on first contact with Frostwarden Scouts.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_frostwarden_arms_00.ico_equip_frostwarden_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_ARMS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_ARMS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp12a_frostwarden_chest_00",
+    "displayName": "Warden Scout's Bryjind",
+    "displayDescription": "Layered armour based on first contact with Frostwarden Scouts.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_frostwarden_chest_00.ico_equip_frostwarden_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_CHEST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_CHEST_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp12a_frostwarden_helm_00",
+    "displayName": "Warden Scout's Jehylm",
+    "displayDescription": "Layered headgear based on first contact with Frostwarden Scouts.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_hp_frostwarden_12b_outfit.ui_hp_frostwarden_12b_outfit'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp12a_frostwarden_legs_00",
+    "displayName": "Warden Scout's Geravyrs",
+    "displayDescription": "Layered legwear based on first contact with Frostwarden Scouts.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_frostwarden_legs_00.ico_equip_frostwarden_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_LEGS_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp05_ninja_arms",
+    "displayName": "Shadow's Grasp",
+    "displayDescription": "Nothing escapes it.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_arms_00.ui_icon_hp_ninja_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP05_NINJA_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP05_NINJA_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp05_ninja_chest",
+    "displayName": "Shadow's Mettle",
+    "displayDescription": "There is strength in secrets.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_chest_m_00.ui_icon_hp_ninja_chest_m_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP05_NINJA_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP05_NINJA_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp05_ninja_helm_00",
+    "displayName": "Shadow's Face",
+    "displayDescription": "A mysterious visage hidden in shadow.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_helm_00.ui_icon_hp_ninja_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP05_NINJA_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP05_NINJA_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp05_ninja_legs",
+    "displayName": "Shadow's Step",
+    "displayDescription": "Walk in silence like the night.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_legs_m_00.ui_icon_hp_ninja_legs_m_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP05_NINJA_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP05_NINJA_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06-1_pirate_arms",
+    "displayName": "Corsair's Steelgrip",
+    "displayDescription": "Go on, give yourself a hand.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_arms_00.ui_icon_hp_pirate_arms_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06-1_PIRATE_ARMS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06-1_PIRATE_ARMS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06-1_pirate_chest",
+    "displayName": "Corsair's Waistcoat",
+    "displayDescription": "Sleeves would just get in the way.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_chest_00.ui_icon_hp_pirate_chest_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06-1_PIRATE_CHEST",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06-1_PIRATE_CHEST"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06-1_pirate_helm_00",
+    "displayName": "Cocked Hat",
+    "displayDescription": "It betrays only the confidence of the corsair captain.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_helm_00.ui_icon_hp_pirate_helm_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06-1_PIRATE_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06-1_PIRATE_HELM_00"
+    ]
+  },
+  {
+    "id": "sku_ar_hp06-1_pirate_legs",
+    "displayName": "Corsair's Wingtreads",
+    "displayDescription": "Step lively, there.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_legs_00.ui_icon_hp_pirate_legs_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP06-1_PIRATE_LEGS",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP06-1_PIRATE_LEGS"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07a_monk_chest_ultra",
+    "displayName": "Master's Tunic",
+    "displayDescription": "Exceptional clothing for a martial master of the Adamant Fist.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/armour_male_monk_chest_00_ultra.armour_male_monk_chest_00_ultra'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07A_MONK_CHEST_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07A_MONK_CHEST_ULTRA"
+    ]
+  },
+  {
+    "id": "sku_ar_hp07a_monk_legs_ultra",
+    "displayName": "Master's Leg Wraps",
+    "displayDescription": "Exceptional legwear for a martial master of the Adamant Fist.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/armour_male_monk_legs_00_ultra.armour_male_monk_legs_00_ultra'"
+    },
+    "tags": [
+      "webstore",
+      "skin_armour",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07A_MONK_LEGS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07A_MONK_LEGS_ULTRA"
+    ]
+  },
+  {
+    "id": "sku_lt_frostfall_mistletoe",
+    "displayName": "Frostfall Mistletoe Lantern",
+    "displayDescription": "A cheerful lantern topped with fresh winter mistletoe.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_FROSTFALL_MISTLETOE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_FROSTFALL_MISTLETOE"
+    ]
+  },
+  {
+    "id": "sku_lt_frostfall_snowflake",
+    "displayName": "Frostfall Crystal Lantern",
+    "displayDescription": "A crystalline star that shines like ice.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {},
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_FROSTFALL_SNOWFLAKE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_FROSTFALL_SNOWFLAKE"
+    ]
+  },
+  {
+    "id": "sku_lt_hp03_mossy_00",
+    "displayName": "Farslayer's Promise",
+    "displayDescription": "Charged with the aetheric essence of the forest.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_lantern_00.ui_icon_hp_mossy_lantern_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_HP03_MOSSY_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_HP03_MOSSY_00"
+    ]
+  },
+  {
+    "id": "sku_lt_hp09a_assassins_00",
+    "displayName": "Hawklight",
+    "displayDescription": "Slices through the darkness like a raptor in flight.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/lantern_assassins_00.lantern_assassins_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "sku_lt_hp09b_commando_00",
+    "displayName": "SM-SL1 \"Blue Truth\" Survival Light",
+    "displayDescription": "Oh, you'd better believe it does more than just light up.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/lantern_commando_00.lantern_commando_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_lt_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Illuminator",
+    "displayDescription": "A lantern containing a tiny fragment of charged archonite shaped by alchemancy.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/lantern_alchemist_00.lantern_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_lt_hp12a_frostwarden_00",
+    "displayName": "Warden's Hjorn",
+    "displayDescription": "A lantern that glows with the power of frost aether. ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 600
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/lantern_frostwarden_00.lantern_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_lantern",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ac_hp09a_assassins_00",
+    "displayName": "Dazzling Owls",
+    "displayDescription": "A very wise choice.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/astrikers_assassins_00.astrikers_assassins_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ac",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ac_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Klaw",
+    "displayDescription": "\"Make no truce nor treaty with foes.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/astrikers_frostwarden_00.astrikers_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ac",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_cb_hp06_pirate_00",
+    "displayName": "Corsair's Hooks",
+    "displayDescription": "Designed for clambering up enemy hulls, but more useful for tearing up savage Behemoths.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_cblades_00.ui_icon_hp_pirate_cblades_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_cb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_HP06_PIRATE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_HP06_PIRATE_00"
+    ]
+  },
+  {
+    "id": "sku_wp_cb_hp09b_commando_00",
+    "displayName": "SM-CB4 \"Hatchet Job\" Chain Blades",
+    "displayDescription": "Seismic Slayers have also nicknamed the SM-CB4 \"Chop Blades,\" \"Li'l Axes,\" and \"the Cutting Wedge.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/cblades_commando_00.cblades_commando_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_cb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_wp_cb_hp10a_celestial_00",
+    "displayName": "Weird Impossibilities",
+    "displayDescription": "They may be weird, but they're certainly effective.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/cblades_celestial_00.cblades_celestial_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_cb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "sku_wp_cb_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Injectors",
+    "displayDescription": "Consider them a violence delivery system.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/cblades_alchemist_00.cblades_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_cb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_wp_cb_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Karvar",
+    "displayDescription": "\"Don't complain about the blizzard if you're lost a second time.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/cblades_frostwarden_00.cblades_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_cb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp04_arid",
+    "displayName": "Guns of the Tyrant",
+    "displayDescription": "Their rule is absolute.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_dp.ui_icon_hp_burndown_arid_dp'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP04_ARID",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP04_ARID"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp05_ninja_01",
+    "displayName": "Fatal Flourish",
+    "displayDescription": "For stylish assassins only.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_dp_01.ui_icon_hp_ninja_dp_01'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP05_NINJA_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP05_NINJA_01"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp08b_punk_00",
+    "displayName": "Stark and Raving",
+    "displayDescription": "Twin pistols that are barking mad.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/dpistols_punk_00.dpistols_punk_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp09a_assassins_00",
+    "displayName": "Peregrine Smiles",
+    "displayDescription": "Just wait until you hear them laugh.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/dpistols_assassins_00.dpistols_assassins_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp10a_celestial_00",
+    "displayName": "Strange Repercussions",
+    "displayDescription": "As inevitable as echoes within the Umbral Deeps, and just as unnatural.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/dpistols_celestial_00.dpistols_celestial_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Equalizers",
+    "displayDescription": "Perfectly balanced, and all repeaters should be.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/dpistols_alchemist_00.dpistols_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_wp_dp_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Skjota",
+    "displayDescription": "\"Two are an army next to one.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/dpistols_frostwarden_00.dpistols_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_dp",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp06_pirate_00",
+    "displayName": "Corsair's Cutlass",
+    "displayDescription": "Barbed and barbaric.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_eblade_00.ui_icon_hp_pirate_eblade_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP06_PIRATE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP06_PIRATE_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp08b_punk_00",
+    "displayName": "Sawbones Sally",
+    "displayDescription": "Don't you dare try to slow her chainsaw down.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/eblade_punk_00.eblade_punk_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp09a_assassins_00",
+    "displayName": "Desert Raptor",
+    "displayDescription": "A blade born of the burning sands.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/eblade_assassins_00.eblade_assassins_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp09b_commando_00",
+    "displayName": "SM-RS4 \"Peacemonger\" Riot Sword",
+    "displayDescription": "Delivering harmony and accord from the blade of a heavy riot sword.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/eblade_commando_00.eblade_commando_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Scalpel",
+    "displayDescription": "No, it has definitely not been sterilized before the procedure.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/eblade_alchemist_00.eblade_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_wp_eb_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Sverd",
+    "displayDescription": "\"Ice and iron can ever be melded.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/eblade_frostwarden_00.eblade_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_eb",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp03_mossy",
+    "displayName": "Wild Triumph",
+    "displayDescription": "Farslayers take pride in a crushing victory like anyone else.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_hammer_small.ui_icon_hp_mossy_hammer_small'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP03_MOSSY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP03_MOSSY"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp06_pirate_00",
+    "displayName": "Corsair's Hullbreaker",
+    "displayDescription": "Just one of the reasons the Ostians started armouring their airships.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_ihammer_00.ui_icon_hp_pirate_ihammer_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP06_PIRATE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP06_PIRATE_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp09b_commando_00",
+    "displayName": "SM-BH8 \"Bone Fracture\" Battle Hammer",
+    "displayDescription": "Snaps, cracks, breaks, and bops. Weighted with superdense alloys found only in the Ostian Skymines.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ihammer_commando_00.ihammer_commando_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp10a_celestial_00",
+    "displayName": "Unthinkable Consequence",
+    "displayDescription": "How could you possibly prepare for it?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/ihammer_celestial_00.ihammer_celestial_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Fracture",
+    "displayDescription": "When there's just no way to break it to them gently.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ihammer_alchemist_00.ihammer_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ih_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Hamar",
+    "displayDescription": "\"The coward thinks they'll live forever, if they keep away from battle.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ihammer_frostwarden_00.ihammer_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ih",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp03_mossy",
+    "displayName": "Wild Howl",
+    "displayDescription": "The most fearsome sound a Behemoth may ever hear.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_spear_small.ui_icon_hp_mossy_spear_small'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP03_MOSSY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP03_MOSSY"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp04_arid",
+    "displayName": "Spear of the Gladiator",
+    "displayDescription": "From the battle pit to the Burning Heights.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_spear.ui_icon_hp_burndown_arid_spear'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP04_ARID",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP04_ARID"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp06_pirate_00",
+    "displayName": "Corsair's Belaying Pike",
+    "displayDescription": "Repel boarders or rake Behemoths.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_mspear_00.ui_icon_hp_pirate_mspear_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP06_PIRATE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP06_PIRATE_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp08b_punk_00",
+    "displayName": "Slashbang Spike",
+    "displayDescription": "It skewers! It concusses! And it slays with no fusses! ",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/mspear_punk_00.mspear_punk_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp09b_commando_00",
+    "displayName": "SM-IP9 \"Longshot\" Infantry Pike",
+    "displayDescription": "Favoured by Seismic snipers for long-range accuracy and simple, cleanly forged design perfect for infiltration work.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/mspear_commando_00.mspear_commando_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp10a_celestial_00",
+    "displayName": "Uncanny Axis",
+    "displayDescription": "A perfect fulcrum between reality and unreality.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/mspear_celestial_00.mspear_celestial_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Needle",
+    "displayDescription": "This will only hurt a lot.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/mspear_alchemist_00.mspear_alchemist_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_wp_ms_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Spyr",
+    "displayDescription": "\"You'll know your true friends when the ice breaks.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/mspear_frostwarden_00.mspear_frostwarden_00'"
+    },
+    "tags": [
+      "webstore",
+      "skin_weapon_ms",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_em_intro_hp06_chestdrop_00",
+    "displayName": "Treasure, I Land",
+    "displayDescription": "Is it bigger on the inside?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/h_mr_ua_hp06_arrival_chestdrop_00.h_mr_ua_hp06_arrival_chestdrop_00'"
+    },
+    "tags": [
+      "webstore",
+      "social_arrival",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP06_CHESTDROP_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP06_CHESTDROP_00"
+    ]
+  },
+  {
+    "id": "sku_em_intro_hp09b_commando_00_f",
+    "displayName": "Arrival Impossible",
+    "displayDescription": "It's the dismount that'll get ya.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_icon_hp_commando_arrival_rappel_fail.ui_icon_hp_commando_arrival_rappel_fail'"
+    },
+    "tags": [
+      "webstore",
+      "social_arrival",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP09B_COMMANDO_00_F",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP09B_COMMANDO_00_F"
+    ]
+  },
+  {
+    "id": "sku_em_intro_hp11a_alchemist_00",
+    "displayName": "Boil and Trouble",
+    "displayDescription": "You never know what an alchemancer might be cooking up.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_alchemist_emote_arrival_cauldron.ui_icon_hp_alchemist_emote_arrival_cauldron'"
+    },
+    "tags": [
+      "webstore",
+      "social_arrival",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_em_intro_hp12a_frostwarden_01",
+    "displayName": "Toboggan Ride",
+    "displayDescription": "When you jump from airships this often, you sometimes have to make your own fun.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_arrival_sled.ui_icon_hp_frostwarden_arrival_sled'"
+    },
+    "tags": [
+      "webstore",
+      "social_arrival",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP12A_FROSTWARDEN_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP12A_FROSTWARDEN_01"
+    ]
+  },
+  {
+    "id": "sku_em_intro_hp12b_magical_00",
+    "displayName": "Impact Winter",
+    "displayDescription": "A very cool way to travel.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12b/ui_icon_hp_magical_arrival_crystal.ui_icon_hp_magical_arrival_crystal'"
+    },
+    "tags": [
+      "webstore",
+      "social_arrival",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP12B_MAGICAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP12B_MAGICAL_00"
+    ]
+  },
+  {
+    "id": "sku_ej_hp09a_assassins_00",
+    "displayName": "Dagger Emoji",
+    "displayDescription": "Looking sharp, Slayer!",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_hp_assassins_emoji_dagger.ui_hp_assassins_emoji_dagger'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "sku_ej_hp09a_assassins_01",
+    "displayName": "Laughing Hood Emoji",
+    "displayDescription": "You'll laugh, but you might feel a little guilty about it.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_hp_assassins_emoji_evil_laugh.ui_hp_assassins_emoji_evil_laugh'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP09A_ASSASSINS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP09A_ASSASSINS_01"
+    ]
+  },
+  {
+    "id": "sku_ej_hp09a_assassins_02",
+    "displayName": "Blaze Emoji",
+    "displayDescription": "This one's so hot right now.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_hp_assassins_emoji_flame.ui_hp_assassins_emoji_flame'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP09A_ASSASSINS_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP09A_ASSASSINS_02"
+    ]
+  },
+  {
+    "id": "sku_ej_hp09b_commando_01",
+    "displayName": "BOOM!",
+    "displayDescription": "BLAMMO! POW! KABLAM!",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui__hp_icon_emoji_blast.ui__hp_icon_emoji_blast'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP09B_COMMANDO_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP09B_COMMANDO_01"
+    ]
+  },
+  {
+    "id": "sku_ej_hp09b_commando_02",
+    "displayName": "Thumbs Up",
+    "displayDescription": "That's an affirmative, Slayer.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui__hp_icon_emoji_thumbsup.ui__hp_icon_emoji_thumbsup'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP09B_COMMANDO_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP09B_COMMANDO_02"
+    ]
+  },
+  {
+    "id": "sku_ej_hp11a_alchemist_00",
+    "displayName": "Xelyanxious",
+    "displayDescription": "\"What? I'm not worried. You're scared. Or worried. Whatever.\"\r\n\r\n—Xelya the Farslayer",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_11a_emoji_xelya.ui_11a_emoji_xelya'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "sku_ej_hp11a_alchemist_01",
+    "displayName": "Grinning Granny",
+    "displayDescription": "\"If you haven't got your health, you haven't got anything.\"\r\n\r\n—Granny Strega",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_11a_emoji_strega.ui_11a_emoji_strega'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP11A_ALCHEMIST_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP11A_ALCHEMIST_01"
+    ]
+  },
+  {
+    "id": "sku_ej_hp11a_alchemist_02",
+    "displayName": "Leafy Breeze",
+    "displayDescription": "\"Smell that? There's terra in the air. And I think the Bosun's marinating some gruk-gruk ribs.\"\r\n\r\n—Arkan Drew",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_11a_emoji_leaves.ui_11a_emoji_leaves'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP11A_ALCHEMIST_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP11A_ALCHEMIST_02"
+    ]
+  },
+  {
+    "id": "sku_ej_hp12a_frostwarden_01",
+    "displayName": "Chill Out",
+    "displayDescription": "Take it easy. For now.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Emoji/single_emote_12a_frostwarden_01.single_emote_12a_frostwarden_01'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP12A_FROSTWARDEN_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP12A_FROSTWARDEN_01"
+    ]
+  },
+  {
+    "id": "sku_ej_hp12a_frostwarden_02",
+    "displayName": "Linnea Silver \"Charm\"",
+    "displayDescription": "Mysterious warrior-queen or charming new friend?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 200
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Emoji/single_emote_12a_frostwarden_02.single_emote_12a_frostwarden_02'"
+    },
+    "tags": [
+      "webstore",
+      "social_emojis",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_2"
+    ],
+    "items": [
+      {
+        "catalogId": "EJ_HP12A_FROSTWARDEN_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EJ_HP12A_FROSTWARDEN_02"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp06_exhaustedfistfight_00",
+    "displayName": "Fight to the Finish",
+    "displayDescription": "You don't know the meaning of the word \"quit.\" But it might just be all those blows to the head.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/h_mr_ua_hp06_emote_drunkenfistfight_00.h_mr_ua_hp06_emote_drunkenfistfight_00'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP06_EXHAUSTEDFISTFIGHT_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP06_EXHAUSTEDFISTFIGHT_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp06_juggle_00",
+    "displayName": "The Jongleur",
+    "displayDescription": "How long can you keep them in the air?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/h_mr_ua_hp06_emote_juggle_00.h_mr_ua_hp06_emote_juggle_00'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP06_JUGGLE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP06_JUGGLE_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp09b_commando_00",
+    "displayName": "Jumping Janeks",
+    "displayDescription": "The admiral always starts off his day with a military calisthenics routine.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_icon_hp_commando_emote_jumpingjacks.ui_icon_hp_commando_emote_jumpingjacks'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp11a_alchemist_01",
+    "displayName": "You Are Killing Me",
+    "displayDescription": "Not literally.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_alchemist_emote_laughcry.ui_icon_hp_alchemist_emote_laughcry'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP11A_ALCHEMIST_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP11A_ALCHEMIST_01"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp11a_alchemist_03",
+    "displayName": "Down the Hatch",
+    "displayDescription": "Yes, it's supposed to taste like that. Just drink it.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_alchemist_emote_potiondrink.ui_icon_hp_alchemist_emote_potiondrink'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP11A_ALCHEMIST_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP11A_ALCHEMIST_03"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp12a_frostwarden_01",
+    "displayName": "Feel the Heat",
+    "displayDescription": "Keep warm in the dead of winter.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_emote_fire.ui_icon_hp_frostwarden_emote_fire'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP12A_FROSTWARDEN_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP12A_FROSTWARDEN_01"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp12a_frostwarden_02",
+    "displayName": "Shiverer",
+    "displayDescription": "I said \"Brr, it's cold out here.\"",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 300
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_emote_warm.ui_icon_hp_frostwarden_emote_warm'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP12A_FROSTWARDEN_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP12A_FROSTWARDEN_02"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp03_throw_00",
+    "displayName": "Skipping Stones",
+    "displayDescription": "It's all in the wrist... but finding a smooth, flat stone doesn't hurt.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_emote_stone_throw.ui_icon_hp_emote_stone_throw'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP03_THROW_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP03_THROW_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp04_neckcrack_00",
+    "displayName": "Crackle and Pop",
+    "displayDescription": "You really ought to loosen up.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_emote_neckcracker.ui_icon_hp_burndown_emote_neckcracker'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP04_NECKCRACK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP04_NECKCRACK_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp09a_assassins_04",
+    "displayName": "Take a Seat",
+    "displayDescription": "It takes practice to sit this aggressively.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_icon_hp_emote_09A_assassins_04.ui_icon_hp_emote_09A_assassins_04'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP09A_ASSASSINS_04",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP09A_ASSASSINS_04"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp09b_commando_02",
+    "displayName": "Stuck In the Middle",
+    "displayDescription": "It's just a feeling that something ain't right.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_icon_hp_commando_emote_fingergunstandoff.ui_icon_hp_commando_emote_fingergunstandoff'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP09B_COMMANDO_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP09B_COMMANDO_02"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp11a_alchemist_04",
+    "displayName": "Alchemancer at Work",
+    "displayDescription": "Everyone just stand back, all right?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_alchemist_emote_potionmaking.ui_icon_hp_alchemist_emote_potionmaking'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP11A_ALCHEMIST_04",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP11A_ALCHEMIST_04"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp12a_frostwarden_00",
+    "displayName": "Slip and Slide",
+    "displayDescription": "Whoops.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_emote_slip.ui_icon_hp_frostwarden_emote_slip'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp12a_frostwarden_03",
+    "displayName": "Gone Fishing",
+    "displayDescription": "Be back later.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_emote_fishing.ui_icon_hp_frostwarden_emote_fishing'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP12A_FROSTWARDEN_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP12A_FROSTWARDEN_03"
+    ]
+  },
+  {
+    "id": "sku_em_player_hp09a_assassins_03",
+    "displayName": "That Sinking Feeling",
+    "displayDescription": "Are you all getting taller, or...?",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 700
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_icon_hp_assassins_emote_quicksand.ui_icon_hp_assassins_emote_quicksand'"
+    },
+    "tags": [
+      "webstore",
+      "social_emote",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP09A_ASSASSINS_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP09A_ASSASSINS_03"
+    ]
+  },
+  {
+    "id": "sku_qi_flare_hp05_01",
+    "displayName": "Spinning Star",
+    "displayDescription": "One can almost hear it cutting through the night air.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_flare_hp05_01.ui_flare_hp05_01'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP05_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp05_02",
+    "displayName": "Five Truths",
+    "displayDescription": "Only the most advanced assassins know their names.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_flare_hp05_02.ui_flare_hp05_02'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP05_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp05_03",
+    "displayName": "Assassin's Shield",
+    "displayDescription": "A symbol commonly associated with the islands of Andar.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_flare_hp05_03.ui_flare_hp05_03'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP05_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp05_05",
+    "displayName": "Assassin's Strike",
+    "displayDescription": "One should be all you need.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_flare_hp05_05.ui_flare_hp05_05'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP05_05",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp07b_00",
+    "displayName": "Candle Night",
+    "displayDescription": "Just enough light to stab the darkness.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Flares/HuntPass/Season07b/ico_flare_hp07b_00.ico_flare_hp07b_00'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP07B_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp07b_02",
+    "displayName": "Night Hunter",
+    "displayDescription": "The ancient enemies of the Unseen cult.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Flares/HuntPass/Season07b/ico_flare_hp07b_02.ico_flare_hp07b_02'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP07B_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp09b_commando_00",
+    "displayName": "Seismic Brigade",
+    "displayDescription": "The symbol of the rebel Slayers who stayed behind to protect their people when their leaders abandoned hope.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_hp_commando_flare_hp09b_00.ui_hp_commando_flare_hp09b_00'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "sku_qi_flare_hp12a_frostwarden_00",
+    "displayName": "Skaldeskar Rune",
+    "displayDescription": "The Skaldeskar Isles are a frozen hunting ground. Within them lies Vylmark, capital city and home of Linnea Silver, Frostwarden-General.",
+    "displayPriority": 1000,
+    "prices": [
+      {
+        "currencyId": "id_currency_platinum",
+        "price": 100
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Flares/HuntPass/Season12a/ico_flare_hp12a_00.ico_flare_hp12a_00'"
+    },
+    "tags": [
+      "webstore",
+      "supplies_supplies",
+      "platinum_store_reconstructed",
+      "platinum_store_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": []
+  }
+]

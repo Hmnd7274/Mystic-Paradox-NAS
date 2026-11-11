@@ -12,8 +12,8 @@
 
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
-#include "lanternhold_base_ab_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "lanternhold_base_ab_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -39,11 +39,11 @@ public:
 
 public:
 	void ExecuteUbergraph_lanternhold_damage_aura_ab(int32 EntryPoint);
-	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbility();
 	void BuffPlayer(class AArchonCharacter* Target);
 	void RemoveBuffFromPlayer(class AArchonCharacter* Target);
 	void GrantDoubleStrikeFromAmp(class AActor* Actor, const struct FDamageTableData& Damage_Data, const struct FVector& Hit_Dir, const struct FHitResult& Hit);
+	void K2_OnEndAbility(bool bWasCancelled);
 
 public:
 	static class UClass* StaticClass()

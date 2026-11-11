@@ -58,18 +58,6 @@ void Agatherable_item_base_bp_C::ReceiveBeginPlay()
 }
 
 
-// Function gatherable_item_base_bp.gatherable_item_base_bp_C.SwapMesh
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void Agatherable_item_base_bp_C::SwapMesh()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwapMesh", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function gatherable_item_base_bp.gatherable_item_base_bp_C.EventOnDisableHighlight
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -351,6 +339,18 @@ bool Agatherable_item_base_bp_C::SetGatherableVisible(bool IsVisible)
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function gatherable_item_base_bp.gatherable_item_base_bp_C.SwapMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void Agatherable_item_base_bp_C::SwapMesh()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwapMesh", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

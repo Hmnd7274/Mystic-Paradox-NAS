@@ -34,9 +34,9 @@ public:
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
 	void CreateWidgetAndAddToViewport(class AController* PlayerController);
-	void CanUserStartInteraction_(class UArchonInteractionUserComponent* User, bool* CanUse);
 	void ChangeLocalAvailabilityOfActor(bool Available_);
 	void OnRep_LocallyAvailable();
+	void CanUserStartInteraction_(class UArchonInteractionUserComponent* User, bool* CanUse);
 
 	class UMarkerComponent* GetMarkerComponent() const;
 

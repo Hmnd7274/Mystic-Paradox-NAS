@@ -1,0 +1,513 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261110223900
+Username: DESKTOP-CI9T2OS\xavie
+RunAs User: DESKTOP-CI9T2OS\xavie
+Configuration Name: 
+Machine: DESKTOP-CI9T2OS (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13976
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\diagnostic-gamedata-20261110-223900.txt
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 1. SOURCES CATALOGEXPORTER
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== ITEMS ANALYSIS ==========" -ForegroundColor Cyan
+
+========== ITEMS ANALYSIS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-ChildItem '.\Items_Analysis' -Recurse -File |
+    Select-Object @{
+        Name = 'File'
+        Expression = { $_.FullName.Substring($root.Length + 1) }
+    }, Length |
+    Sort-Object File |
+    Format-Table -AutoSize
+
+File                                                              Length
+----                                                              ------
+Items_Analysis\catalog_1_14_7.jsonl                              9859036
+Items_Analysis\catalog_export_status.txt                           77689
+Items_Analysis\combat_1_14_7\damage-tables.jsonl                  288000
+Items_Analysis\combat_1_14_7\weapon-power-tables.jsonl            436402
+Items_Analysis\currency_names_1_14_7.jsonl                         16256
+Items_Analysis\drop_tables_1_14_7.jsonl                           549850
+Items_Analysis\equipment_1_14_7.jsonl                             143993
+Items_Analysis\export_manifest_1_14_7.json                           848
+Items_Analysis\hunts_1_14_7\activity_unlock_criteria.jsonl         64529
+Items_Analysis\hunts_1_14_7\escalation_mode_specs.jsonl             8023
+Items_Analysis\hunts_1_14_7\game_activities.jsonl                   2834
+Items_Analysis\hunts_1_14_7\hunt_export_manifest.json                687
+Items_Analysis\hunts_1_14_7\hunt_modifiers.jsonl                   56835
+Items_Analysis\hunts_1_14_7\hunt_regions.jsonl                      9042
+Items_Analysis\hunts_1_14_7\matchmaker_hunts.jsonl                659276
+Items_Analysis\hunts_1_14_7\player_hunts.jsonl                    153979
+Items_Analysis\hunts_1_14_7\schedule_data.jsonl                    83969
+Items_Analysis\live_cell_slots_1_14_7.jsonl                            0
+Items_Analysis\live_weapon_parts_1_14_7.jsonl                          0
+Items_Analysis\loadout_gear_ui_1_14_7.jsonl                            0
+Items_Analysis\mastery_1_14_7\mastery_objectives.json             375545
+Items_Analysis\progression_1_14_7\experience-tracks.jsonl           8293
+Items_Analysis\progression_1_14_7\huntpass-season-table.jsonl      59806
+Items_Analysis\progression_1_14_7\mastery-tracks.jsonl             57802
+Items_Analysis\progression_1_14_7\online-track-info.jsonl            165
+Items_Analysis\progression_1_14_7\player-experience-tracks.jsonl    1019
+Items_Analysis\progression_1_14_7\progression-tracks.jsonl             0
+Items_Analysis\progression_1_14_7\weapon-experience-tracks.jsonl    7274
+Items_Analysis\slayers_path_1_14_7\player_journey_nodes.jsonl     238058
+Items_Analysis\store_item_images_1_14_7.jsonl                     591172
+Items_Analysis\store_item_view_models_1_14_7.jsonl                   941
+Items_Analysis\store_view_models_1_14_7.jsonl                      11156
+Items_Analysis\table_inventory_1_14_7.jsonl                        50585
+Items_Analysis\table_inventory_1_14_7.txt                          26441
+Items_Analysis\weapon_part_catalog_rows_1_14_7.jsonl               57903
+Items_Analysis\weapon_skins_1_14_7.jsonl                          529124
+Items_Analysis\weapon_slots_1_14_7.jsonl                               0
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== EXPORTS 1.12 / 1.14.7 ==========" -ForegroundColor Cyan
+
+========== EXPORTS 1.12 / 1.14.7 ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $expectedExports = @(
+    'catalog_1_12.jsonl',
+    'catalog_1_14_7.jsonl',
+    'store_item_images_1_12.jsonl',
+    'store_item_images_1_14_7.jsonl',
+    'store_view_models_1_12.jsonl',
+    'store_view_models_1_14_7.jsonl',
+    'store_item_view_models_1_12.jsonl',
+    'store_item_view_models_1_14_7.jsonl'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($name in $expectedExports) {
+    $path = Join-Path '.\Items_Analysis' $name
+
+    [PSCustomObject]@{
+        File = $name
+        Present = Test-Path $path
+        Size = if (Test-Path $path) {
+            (Get-Item $path).Length
+        } else { 0 }
+    }
+} | Format-Table -AutoSize
+At line:11 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+At line:11 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : EmptyPipeElement
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 2. CAPTURES API PLATINUM
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== CAPTURES PLATINUM ==========" -ForegroundColor Cyan
+
+========== CAPTURES PLATINUM ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $captureDir = '.\DauntlessEndpointDocumentation\Store\Product\Skus'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $expectedCaptures = @(
+    'awakening_webstore.json',
+    'dyes.json',
+    'hp_level_skip_rank.json',
+    'huntpass_store.json',
+    'ladyluckstore.json'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($name in $expectedCaptures) {
+    $path = Join-Path $captureDir $name
+    $count = '-'
+    $valid = $false
+
+    if (Test-Path $path) {
+        try {
+            $data = Get-Content $path -Raw | ConvertFrom-Json -ErrorAction Stop
+            $count = if ($data -is [array]) {
+                $data.Count
+            } else { 'Object' }
+            $valid = $true
+        } catch {
+            $count = 'JSON ERROR'
+        }
+    }
+
+    [PSCustomObject]@{
+        Capture = $name
+        Present = Test-Path $path
+        ValidJSON = $valid
+        Entries = $count
+    }
+} | Format-Table -AutoSize
+At line:24 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+At line:24 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : EmptyPipeElement
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== TOUTES LES CAPTURES STORE ==========" -ForegroundColor Cyan
+
+========== TOUTES LES CAPTURES STORE ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $captureDir) {
+    Get-ChildItem $captureDir -File |
+        Select-Object Name, Length, LastWriteTime |
+        Format-Table -AutoSize
+}
+
+Name                                      Length LastWriteTime
+----                                      ------ -------------
+ladyluckstore.json                         78279 11/9/2026 9:30:01 PM
+ladyluckstore.json.backup-20261110-124251  78279 11/9/2026 9:30:01 PM
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 3. ESCALATION TUNING
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== ESCALATION TUNING ==========" -ForegroundColor Cyan
+
+========== ESCALATION TUNING ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $escPath = '.\ParadoxBackend\game-data\escalation_tuning.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $escPath) {
+    $esc = Get-Content $escPath -Raw | ConvertFrom-Json
+
+    Write-Host "File size: $((Get-Item $escPath).Length)"
+    Write-Host "Seasons: $($esc.seasons.PSObject.Properties.Count)"
+
+    $esc.seasons.PSObject.Properties |
+        ForEach-Object {
+            $s = $_.Value
+            $xp = @($s.xpToReachLevel)
+
+            [PSCustomObject]@{
+                Season = $_.Name
+                MaxLevel = $s.maxLevel
+                XpCount = $xp.Count
+                UnlockCount = $s.unlocks.PSObject.Properties.Count
+                TalentCount = $s.talents.PSObject.Properties.Count
+                FirstXP = ($xp | Select-Object -First 3) -join ','
+                LastXP = $xp | Select-Object -Last 1
+            }
+        } | Format-Table -AutoSize
+} else {
+    Write-Host "ESCALATION_TUNING.JSON ABSENT" -ForegroundColor Red
+}
+File size: 1131
+Seasons: 1
+
+Season       MaxLevel XpCount UnlockCount TalentCount FirstXP     LastXP
+------       -------- ------- ----------- ----------- -------     ------
+ESC_SEASON_1        3       3 {1, 1}      {1, 1, 1}   100,200,300    300
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== FICHIERS ESCALATION DISPONIBLES ==========" -ForegroundColor Cyan
+
+========== FICHIERS ESCALATION DISPONIBLES ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-ChildItem '.\Items_Analysis' -Recurse -File |
+    Where-Object {
+        $_.Name -match 'escalation|talent|pak|season'
+    } |
+    Select-Object Name, Length |
+    Format-Table -AutoSize
+
+Name                        Length
+----                        ------
+escalation_mode_specs.jsonl   8023
+huntpass-season-table.jsonl  59806
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 4. CATALOGUE : VERIFICATION DES REFERENCES LADY LUCK
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== CATALOGUE 1.14.7 ==========" -ForegroundColor Cyan
+
+========== CATALOGUE 1.14.7 ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $catalogPath = '.\Items_Analysis\catalog_1_14_7.jsonl'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $catalogIds = @{}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $catalogPath) {
+    foreach ($line in [System.IO.File]::ReadLines(
+        (Resolve-Path $catalogPath).Path
+    )) {
+        if (-not $line.Trim()) { continue }
+
+        $item = $line | ConvertFrom-Json
+
+        if ($item.itemId) {
+            $catalogIds[$item.itemId] = $true
+        }
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "Catalogue item IDs: $($catalogIds.Count)"
+Catalogue item IDs: 7318
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 5. LADY LUCK : COMPARAISON CAPTURE / RAW / FINAL
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== LADY LUCK ==========" -ForegroundColor Cyan
+
+========== LADY LUCK ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $livePath = '.\DauntlessEndpointDocumentation\Store\Product\Skus\ladyluckstore.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $rawPath = '.\ParadoxBackend\game-data\raw\ladyluck_store.source.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $finalPath = '.\ParadoxBackend\game-data\ladyluck_store.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $live = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $raw = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $final = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $livePath) {
+    $live = @(Get-Content $livePath -Raw | ConvertFrom-Json)
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $rawPath) {
+    $raw = @(Get-Content $rawPath -Raw | ConvertFrom-Json)
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $finalPath) {
+    $final = @(Get-Content $finalPath -Raw | ConvertFrom-Json)
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> [PSCustomObject]@{
+    LiveCapture = $live.Count
+    RawSource = $raw.Count
+    FinalStore = $final.Count
+} | Format-List
+
+
+LiveCapture : 1
+RawSource   : 1
+FinalStore  : 1
+
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n--- OFFRES FINALES ---"
+
+--- OFFRES FINALES ---
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $ladyResults = foreach ($sku in $final) {
+    $price = @($sku.prices) | Select-Object -First 1
+    $items = @($sku.items)
+    $missing = @(
+        $items | Where-Object {
+            -not $catalogIds.ContainsKey($_.catalogId)
+        }
+    )
+
+    [PSCustomObject]@{
+        SKU = $sku.id
+        Currency = if ($price.currencyId) {
+            $price.currencyId
+        } else { '<MISSING>' }
+        Price = $price.price
+        StoreTag = @($sku.tags) -contains 'ladyluckstore'
+        ItemCount = $items.Count
+        MissingCatalogItems = ($missing.catalogId -join ',')
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $ladyResults | Format-Table -AutoSize
+
+SKU                                                                                             Currency
+---                                                                                             --------
+{ladyluck_cell_epic_01, ladyluck_cell_epic_05, ladyluck_cell_epic_06, ladyluck_cell_epic_02...} id_currency_marks_steel
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n--- ESSAI TRIALS FRANK ---"
+
+--- ESSAI TRIALS FRANK ---
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $frank = @(
+    $final | Where-Object { $_.id -eq 'trials_pr_frank' }
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $frank | ConvertTo-Json -Depth 8
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n--- MONNAIES LADY LUCK ---"
+
+--- MONNAIES LADY LUCK ---
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $ladyResults |
+    Group-Object Currency |
+    Select-Object Name, Count |
+    Format-Table -AutoSize
+
+Name                    Count
+----                    -----
+id_currency_marks_steel     1
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n--- TAG LADYLUCKSTORE ---"
+
+--- TAG LADYLUCKSTORE ---
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host (
+    @($final | Where-Object {
+        @($_.tags) -contains 'ladyluckstore'
+    }).Count
+) "SKU avec le tag ladyluckstore"
+1 SKU avec le tag ladyluckstore
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 6. PLATINUM STORE : COUVERTURE DES CATEGORIES
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== PLATINUM STORE ==========" -ForegroundColor Cyan
+
+========== PLATINUM STORE ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $platinumPath = '.\ParadoxBackend\game-data\platinum_store.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $platinumPath) {
+    $platinum = @(Get-Content $platinumPath -Raw | ConvertFrom-Json)
+
+    Write-Host "Total SKU: $($platinum.Count)"
+
+    $sections = @(
+        'webstore',
+        'dyes',
+        'hp_level_skip_rank',
+        'huntpass_store'
+    )
+
+    foreach ($section in $sections) {
+        $count = @(
+            $platinum | Where-Object {
+                @($_.tags) -contains $section
+            }
+        ).Count
+
+        Write-Host "$section : $count"
+    }
+
+    Write-Host "`n--- CAPTURE / RECONSTRUCTION ---"
+
+    foreach ($tag in @(
+        'platinum_store_captured',
+        'platinum_store_reconstructed'
+    )) {
+        $count = @(
+            $platinum | Where-Object {
+                @($_.tags) -contains $tag
+            }
+        ).Count
+
+        Write-Host "$tag : $count"
+    }
+
+    Write-Host "`n--- PAYLOADS SPECIAUX ---"
+
+    Write-Host "SKU avec skuProgression :" @(
+        $platinum | Where-Object {
+            $null -ne $_.skuProgression
+        }
+    ).Count
+
+    Write-Host "SKU avec entitlements :" @(
+        $platinum | Where-Object {
+            @($_.entitlements).Count -gt 0
+        }
+    ).Count
+
+    Write-Host "`n--- EXEMPLES RANK SKIP ---"
+
+    $platinum |
+        Where-Object {
+            @($_.tags) -contains 'hp_level_skip_rank'
+        } |
+        Select-Object -First 10 id, displayName, prices, skuProgression |
+        Format-List
+
+} else {
+    Write-Host "PLATINUM_STORE.JSON ABSENT" -ForegroundColor Red
+}
+Total SKU: 1
+webstore : 1
+dyes : 1
+hp_level_skip_rank : 0
+huntpass_store : 0
+
+--- CAPTURE / RECONSTRUCTION ---
+platinum_store_captured : 0
+platinum_store_reconstructed : 1
+
+--- PAYLOADS SPECIAUX ---
+SKU avec skuProgression : 1
+SKU avec entitlements : 1
+
+--- EXEMPLES RANK SKIP ---
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 7. HISTORIQUE DES PLAYER HUNTS DANS GIT
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== HISTORIQUE PLAYER HUNTS ==========" -ForegroundColor Cyan
+
+========== HISTORIQUE PLAYER HUNTS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $huntPath = 'ParadoxDirector/game-data/player_hunts_table.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> git log -5 --format="%h %cs %s" -- $huntPath
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $revisions = @(git log -5 --format="%H" -- $huntPath)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($revision in $revisions) {
+    try {
+        $content = git show ($revision + ':' + $huntPath) 2>$null |
+            Out-String
+
+        $document = $content | ConvertFrom-Json
+        $count = @($document[0].Rows.PSObject.Properties).Count
+
+        [PSCustomObject]@{
+            Commit = $revision.Substring(0, 8)
+            PlayerHuntRows = $count
+        }
+    } catch {
+        Write-Host "Impossible de lire $revision"
+    }
+} | Format-Table -AutoSize
+At line:16 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+At line:16 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : EmptyPipeElement
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 8. VERIFICATION DE LA FIXTURE SNOWBALL
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== SNOWBALL TEST FIXTURE ==========" -ForegroundColor Cyan
+
+========== SNOWBALL TEST FIXTURE ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $needle = 'MatchmakerHunt_Event_Snowball_Fight_Test_00'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $checkFiles = @(
+    '.\Items_Analysis\hunts_1_14_7\matchmaker_hunts.jsonl',
+    '.\ParadoxDirector\game-data\matchmaker_hunts_table.json',
+    '.\ParadoxDirector\src\p2p\huntLaunchManifest.gamedata.test.ts'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($file in $checkFiles) {
+    [PSCustomObject]@{
+        File = $file
+        ContainsSnowball = if (Test-Path $file) {
+            [bool](Select-String -Path $file -SimpleMatch $needle -Quiet)
+        } else { $false }
+    }
+} | Format-Table -AutoSize
+At line:8 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+At line:8 char:3
++ } | Format-Table -AutoSize
++   ~
+An empty pipe element is not allowed.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : EmptyPipeElement
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 9. FOUNTAIN OPTIONAL
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== FOUNTAIN DAILY BUNDLE ==========" -ForegroundColor Cyan
+
+========== FOUNTAIN DAILY BUNDLE ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Test-Path '.\ParadoxBackend\game-data\fountain_daily_bundle.json'
+True
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== FIN DIAGNOSTIC ==========" -ForegroundColor Green
+
+========== FIN DIAGNOSTIC ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261110223909
+**********************

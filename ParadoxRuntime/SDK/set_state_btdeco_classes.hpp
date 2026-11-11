@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_classes.hpp"
 #include "behemoth_state_event_structs.hpp"
 

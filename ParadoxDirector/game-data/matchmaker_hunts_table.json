@@ -2469,6 +2469,60 @@
         },
         "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
       },
+      "Adventure_TwilightsDomain": {
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_TWILIGHT"
+        },
+        "HuntTags": [
+          "Hunt.ShatteredIsles.AdventureIsland",
+          "Hunt.ShatteredIsles.IslandT193test"
+        ],
+        "HuntThreatLevel": 19,
+        "GameModeOverride": "/Game/Blueprints/GameMode/BPGM_ArchonExploration.BPGM_ArchonExploration_C",
+        "DangerPerSecOverride": 0.001666,
+        "SpecificBehemoth": {
+          "BehemothName": "",
+          "BehemothAsset": {
+            "AssetPathName": "None",
+            "SubPathString": ""
+          },
+          "PowerOverride": 200,
+          "Weighting": 0
+        },
+        "AdditionalBehemoths": [],
+        "AdditionalSpecificBehemoths": [],
+        "MapMetaData": {
+          "DataTable": {
+            "ObjectName": "DataTable'map_metadata_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/map_metadata_table.0"
+          },
+          "RowName": "Campaign_Island_01"
+        },
+        "MapList": [
+          {
+            "MapName": "Twilight's Domain",
+            "MapAssetName": "/Game/Maps/islands/adventure/Twilights_Domain/twilights_domain.twilights_domain",
+            "Biome": 0,
+            "Weighting": 0
+          }
+        ],
+        "Modifiers": [],
+        "GatherableTier": 0,
+        "MaxPlayers": 12,
+        "bIsGeneratedEncounter": true,
+        "GameModeSpecificData": {
+          "DataTable": {
+            "ObjectName": "DataTable'exploration_island_spec_table'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/exploration_island_spec_table.0"
+          },
+          "RowName": "Island_TwilightsDomain"
+        },
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
       "CR19_MatchmakerHunt_Beaver": {
         "Region": {
           "DataTable": {

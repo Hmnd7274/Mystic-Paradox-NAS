@@ -8288,6 +8288,56 @@
         "IsVisibleWhileLocked": false,
         "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
       },
+      "ShatteredIsles_TwilightsDomain": {
+        "HuntName": {
+          "CultureInvariantString": ""
+        },
+        "HuntDescription": {
+          "CultureInvariantString": ""
+        },
+        "Region": {
+          "DataTable": {
+            "ObjectName": "DataTable'hunt_regions'",
+            "ObjectPath": "Archon/Content/Gameplay/hunts/hunt_regions.0"
+          },
+          "RowName": "ZONE_TWILIGHT"
+        },
+        "MatchmakerHuntIDs": [
+          {
+            "DataTable": {
+              "ObjectName": "DataTable'matchmaker_hunts_table'",
+              "ObjectPath": "Archon/Content/Gameplay/hunts/matchmaker_hunts_table.0"
+            },
+            "RowName": "Adventure_TwilightsDomain"
+          }
+        ],
+        "MatchmakerHuntsByTag": [],
+        "MatchmakingType": 1,
+        "MatchmakingGameType": "EMatchmakingGameType::HuntingGround",
+        "HuntTags": [
+          "Hunt.ShatteredIsles.IslandT193test",
+          "PublicTestRealm.Enabled"
+        ],
+        "EscalationModeSpecification": {
+          "DataTable": null,
+          "RowName": "None"
+        },
+        "EscalationPatrolInitialChallengeLevel": 0,
+        "EscalationPatrolMaxChallengeLevel": 0,
+        "RecommendedEscalationLevel": 0,
+        "bHasPortals": true,
+        "bHasGlitterEvent": false,
+        "bHasPhaelanxEvent": false,
+        "HuntSuccessReward": "None",
+        "FirstCompletionSuccessReward": "None",
+        "TargetedHuntSuccessReward": "None",
+        "HuntFailureReward": "None",
+        "TargetedHuntFailureReward": "None",
+        "MinWeaponSkillLevel": 20,
+        "RecomendedWeaponSkillLevel": 20,
+        "IsVisibleWhileLocked": true,
+        "_importedFrom": "CatalogExporter EXPORT_HUNTS 1.14.7"
+      },
       "Trials_Test_PlayerHunt_Dauntless_01": {
         "HuntName": {
           "CultureInvariantString": ""

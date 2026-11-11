@@ -60,8 +60,8 @@ void Uspline_fx_spawner_bpc_C::ReceiveTick(float DeltaSeconds)
 // float                                   VerticalOffset_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   SourceRadius_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UParticleSystem*                  ParticleSystem                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAkAudioEvent*                    AkStartEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAkAudioEvent*                    AkStopEvent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkAudioEvent*                    AKStartEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkAudioEvent*                    AKStopEvent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UParticleSystem*                  ImpactParticle                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAkAudioEvent*                    AkImpactEvent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class USplineComponent*>&        SplineArray_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
@@ -76,7 +76,7 @@ void Uspline_fx_spawner_bpc_C::ReceiveTick(float DeltaSeconds)
 // float                                   MaxDistanceSpeed__Multiplier_                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    RandomRotationOnX_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Uspline_fx_spawner_bpc_C::InitializeSplineFX(class AActor* ActorSource, const struct FVector& Location_Override__Optional_, float VerticalOffset_0, float SourceRadius_0, class UParticleSystem* ParticleSystem, class UAkAudioEvent* AkStartEvent, class UAkAudioEvent* AkStopEvent, class UParticleSystem* ImpactParticle, class UAkAudioEvent* AkImpactEvent, TArray<class USplineComponent*>& SplineArray_0, float MinLife__Seconds_, float MaxLife__Seconds_, TArray<class USceneComponent*>& TargetArray__Scene_Component_, float MinDelay, float MaxDelay, bool PrintDistance__Debug_, float MaxDistanceFalloff__Units__0, float MinDistanceSpeed__Multiplier_, float MaxDistanceSpeed__Multiplier_, bool RandomRotationOnX_0)
+void Uspline_fx_spawner_bpc_C::InitializeSplineFX(class AActor* ActorSource, const struct FVector& Location_Override__Optional_, float VerticalOffset_0, float SourceRadius_0, class UParticleSystem* ParticleSystem, class UAkAudioEvent* AKStartEvent, class UAkAudioEvent* AKStopEvent, class UParticleSystem* ImpactParticle, class UAkAudioEvent* AkImpactEvent, TArray<class USplineComponent*>& SplineArray_0, float MinLife__Seconds_, float MaxLife__Seconds_, TArray<class USceneComponent*>& TargetArray__Scene_Component_, float MinDelay, float MaxDelay, bool PrintDistance__Debug_, float MaxDistanceFalloff__Units__0, float MinDistanceSpeed__Multiplier_, float MaxDistanceSpeed__Multiplier_, bool RandomRotationOnX_0)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSplineFX", FnName));
@@ -88,8 +88,8 @@ void Uspline_fx_spawner_bpc_C::InitializeSplineFX(class AActor* ActorSource, con
 	Parms.VerticalOffset_0 = VerticalOffset_0;
 	Parms.SourceRadius_0 = SourceRadius_0;
 	Parms.ParticleSystem = ParticleSystem;
-	Parms.AkStartEvent = AkStartEvent;
-	Parms.AkStopEvent = AkStopEvent;
+	Parms.AKStartEvent = AKStartEvent;
+	Parms.AKStopEvent = AKStopEvent;
 	Parms.ImpactParticle = ImpactParticle;
 	Parms.AkImpactEvent = AkImpactEvent;
 	Parms.SplineArray_0 = std::move(SplineArray_0);

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "stagger_montage_data_str_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "stagger_montage_data_str_structs.hpp"
 
 
 SDK_NAMESPACE_START

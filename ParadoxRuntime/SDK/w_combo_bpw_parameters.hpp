@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "ui_combo_structs.hpp"
 #include "UMG_structs.hpp"
-#include "ui_combo_input_concept_structs.hpp"
+#include "ui_combo_keytype_structs.hpp"
+#include "ui_combo_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ui_combo_keytype_structs.hpp"
+#include "ui_combo_input_concept_structs.hpp"
 
 
 SDK_NAMESPACE_START

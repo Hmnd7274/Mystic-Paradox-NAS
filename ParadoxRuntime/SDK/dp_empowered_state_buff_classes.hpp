@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "Struct_ElementToAKEvent_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Struct_ElementToVector_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Struct_ElementToParticleSystem_structs.hpp"
-#include "Struct_ElementToAKEvent_structs.hpp"
-#include "base_buff_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "Struct_ElementToVector_structs.hpp"
+#include "base_buff_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -67,7 +67,6 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void EndMaterialVFX();
 	void MulticastOnRefreshed();
-	void ReceiveDestroyed();
 	void MulticastOnAdded();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
@@ -78,6 +77,7 @@ public:
 	void ApplyGameplayEffects();
 	void RemoveGameplayEffects();
 	void MaterialEffects(float MaterialRamp);
+	void ReceiveDestroyed();
 
 public:
 	static class UClass* StaticClass()

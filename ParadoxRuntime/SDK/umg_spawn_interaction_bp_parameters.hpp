@@ -68,20 +68,6 @@ public:
 };
 DUMPER7_ASSERTS_umg_spawn_interaction_bp_C_CreateWidgetAndAddToViewport;
 
-// Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.CanUserStartInteraction 
-// 0x0010 (0x0010 - 0x0000)
-struct umg_spawn_interaction_bp_C_CanUserStartInteraction_ final
-{
-public:
-	class UArchonInteractionUserComponent*        User;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CanUse;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_CanUserStartInteraction__CanUse;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_umg_spawn_interaction_bp_C_CanUserStartInteraction_;
-
 // Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.ChangeLocalAvailabilityOfActor
 // 0x0001 (0x0001 - 0x0000)
 struct umg_spawn_interaction_bp_C_ChangeLocalAvailabilityOfActor final
@@ -99,6 +85,20 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_umg_spawn_interaction_bp_C_OnRep_LocallyAvailable;
+
+// Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.CanUserStartInteraction 
+// 0x0010 (0x0010 - 0x0000)
+struct umg_spawn_interaction_bp_C_CanUserStartInteraction_ final
+{
+public:
+	class UArchonInteractionUserComponent*        User;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanUse;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanUserStartInteraction__CanUse;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_umg_spawn_interaction_bp_C_CanUserStartInteraction_;
 
 // Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.GetMarkerComponent
 // 0x0008 (0x0008 - 0x0000)

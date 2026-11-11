@@ -1,0 +1,86 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261110223130
+Username: DESKTOP-CI9T2OS\xavie
+RunAs User: DESKTOP-CI9T2OS\xavie
+Configuration Name: 
+Machine: DESKTOP-CI9T2OS (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13976
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\audit-complet-20261110-223130.txt
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # BACKEND
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Set-Location "$root\ParadoxBackend"
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> Write-Host "`n========== BACKEND BUILD ==========" -ForegroundColor Cyan
+
+========== BACKEND BUILD ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> npm run build
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> $backendBuild = $LASTEXITCODE
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> Write-Host "Backend build exit code: $backendBuild"
+Backend build exit code: 0
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> Write-Host "`n========== BACKEND TESTS ==========" -ForegroundColor Cyan
+
+========== BACKEND TESTS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> npm test
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> $backendTests = $LASTEXITCODE
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> Write-Host "Backend tests exit code: $backendTests"
+Backend tests exit code: 1
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> # DIRECTOR
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend> Set-Location "$root\ParadoxDirector"
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> Write-Host "`n========== DIRECTOR BUILD ==========" -ForegroundColor Cyan
+
+========== DIRECTOR BUILD ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> npm run build
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> $directorBuild = $LASTEXITCODE
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> Write-Host "Director build exit code: $directorBuild"
+Director build exit code: 0
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> Write-Host "`n========== DIRECTOR TESTS ==========" -ForegroundColor Cyan
+
+========== DIRECTOR TESTS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> npm test
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> $directorTests = $LASTEXITCODE
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> Write-Host "Director tests exit code: $directorTests"
+Director tests exit code: 1
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> # RESULTATS
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> # ======================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxDirector> Set-Location $root
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== BILAN FINAL ==========" -ForegroundColor Cyan
+
+========== BILAN FINAL ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> [PSCustomObject]@{
+    BackendBuild = $backendBuild
+    BackendTests = $backendTests
+    DirectorBuild = $directorBuild
+    DirectorTests = $directorTests
+} | Format-List
+
+
+BackendBuild  : 0
+BackendTests  : 1
+DirectorBuild : 0
+DirectorTests : 1
+
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261110223340
+**********************

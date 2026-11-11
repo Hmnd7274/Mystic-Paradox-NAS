@@ -34,18 +34,6 @@ void Aescalation_radiant_power_healing_buff_C::ExecuteUbergraph_escalation_radia
 }
 
 
-// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Aescalation_radiant_power_healing_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.TimeUp
 // (BlueprintCallable, BlueprintEvent)
 
@@ -90,18 +78,6 @@ void Aescalation_radiant_power_healing_buff_C::PositionAndFire(class AActor* Tar
 }
 
 
-// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_radiant_power_healing_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.OnHeal_Audio
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -120,18 +96,18 @@ void Aescalation_radiant_power_healing_buff_C::OnHeal_Audio(class AActor* Actor)
 }
 
 
-// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.PositionandFireVFX
+// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.PositionAndFireVFX
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Initiator                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Aescalation_radiant_power_healing_buff_C::PositionandFireVFX(class AActor* Target, class AActor* Initiator)
+void Aescalation_radiant_power_healing_buff_C::PositionAndFireVFX(class AActor* Target, class AActor* Initiator)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PositionandFireVFX", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PositionAndFireVFX", FnName));
 
-	Params::escalation_radiant_power_healing_buff_C_PositionandFireVFX Parms{};
+	Params::escalation_radiant_power_healing_buff_C_PositionAndFireVFX Parms{};
 
 	Parms.Target = Target;
 	Parms.Initiator = Initiator;
@@ -204,6 +180,30 @@ void Aescalation_radiant_power_healing_buff_C::FindTarget(class AActor** PlayerT
 
 	if (PlayerToHeal_0 != nullptr)
 		*PlayerToHeal_0 = Parms.PlayerToHeal_0;
+}
+
+
+// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Aescalation_radiant_power_healing_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_radiant_power_healing_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

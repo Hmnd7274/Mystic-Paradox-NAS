@@ -1366,9 +1366,9 @@ void Adp_weapon_bp_C::SetupTickPrequisites()
 // Parameters:
 // TArray<struct FEquippedCellData>&       EquippedCells                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // const class FString&                    ItemId_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Adp_weapon_bp_C::IsCellEquipped_(TArray<struct FEquippedCellData>& EquippedCells, const class FString& ItemId_0, bool* return_0)
+void Adp_weapon_bp_C::IsCellEquipped_(TArray<struct FEquippedCellData>& EquippedCells, const class FString& ItemId_0, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsCellEquipped?", FnName));
@@ -1382,8 +1382,8 @@ void Adp_weapon_bp_C::IsCellEquipped_(TArray<struct FEquippedCellData>& Equipped
 
 	EquippedCells = std::move(Parms.EquippedCells);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

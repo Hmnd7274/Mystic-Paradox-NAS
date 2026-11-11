@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ai_group_rule_obj_classes.hpp"
 #include "Engine_structs.hpp"
+#include "ai_group_rule_obj_classes.hpp"
 
 
 SDK_NAMESPACE_START

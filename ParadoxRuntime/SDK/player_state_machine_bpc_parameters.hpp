@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Archon_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
-#include "strafe_transition_states_structs.hpp"
 #include "EPlayerStatesDefault_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "player_states_struct_structs.hpp"
+#include "strafe_transition_states_structs.hpp"
 #include "strafe_states_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -826,7 +826,7 @@ DUMPER7_ASSERTS_player_state_machine_bpc_C_UpdateFollowCamera;
 struct player_state_machine_bpc_C_IsFollowCameraEnabled final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_state_machine_bpc_C_IsFollowCameraEnabled;
 

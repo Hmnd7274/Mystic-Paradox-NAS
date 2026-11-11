@@ -13,9 +13,9 @@
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Archon_structs.hpp"
-#include "w_context_menu_action_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "w_context_menu_action_classes.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -40,15 +40,15 @@ public:
 public:
 	void ExecuteUbergraph_w_context_menu_action_icon(int32 EntryPoint);
 	void Refresh_Action();
-	void Handle_Action();
 	void Initialize();
-	void UnSelected();
-	void Selected();
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
 	void OnLoaded_A058EA6248D678A919D5DF914AEC729E(class UObject* Loaded);
 	struct FVector2D Get_Label_Position(float Angle_0);
 	void Set_Action_From_ItemID(const class FString& ItemId);
+	void Handle_Action();
+	void UnSelected();
+	void Selected();
 
 	struct FLinearColor Get_Rarity_Background_Color(EItemRarityLevelType Rarity) const;
 

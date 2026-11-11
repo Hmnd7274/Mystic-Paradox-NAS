@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Archon_structs.hpp"
 #include "weapon_part_audio_struct_structs.hpp"
 #include "weapon_part_emitter_struct_structs.hpp"
-#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

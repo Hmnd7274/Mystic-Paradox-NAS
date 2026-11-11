@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
+#include "game_mode_tunables_structs.hpp"
+#include "behemoth_classassetid_struct_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "Engine_structs.hpp"
-#include "game_mode_type_structs.hpp"
-#include "game_mode_tunables_structs.hpp"
-#include "player_highlight_info_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "behemoth_classassetid_struct_structs.hpp"
-#include "EndOfMatch_GameType_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
 #include "behemoth_kill_loot_override_structs.hpp"
+#include "EndOfMatch_GameType_structs.hpp"
+#include "player_highlight_info_structs.hpp"
+#include "game_mode_type_structs.hpp"
 #include "rankings_enum_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -310,7 +310,7 @@ public:
 	void GetDangerLevel(float* Danger);
 	void GetConnectedPlayerCount(int32* Count);
 	void GetGameModeTunables(struct Fgame_mode_tunables* GameModeTunables_0);
-	void GetIsAnyBehemothInCombat(bool* return_0);
+	void GetIsAnyBehemothInCombat(bool* Return);
 	void GetKillLootOverrideForBehemoth(class FName BehemothName, int32* KillLootAmountOverride);
 	void AreMultipleBehemothsActive(bool* MultiBehemothsActive, int32* NumBehemoths);
 	void GetPerGameModeBehemothTuningOverrides(bool* UseOverrides, float* BaseHealthScaleOverride, float* BasePartHealthScaleOverride, float* PerPlayerCoreHealthScaleOverride, float* BasePartWoundHealthScaleOverride, float* PerPlayerWoundHealthScaleOverride, float* BaseStaggerScaleOverride, float* PerPlayerStaggerHealthScaleOverride);

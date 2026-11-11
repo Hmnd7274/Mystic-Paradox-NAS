@@ -15,9 +15,9 @@
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "HuntActivityType_structs.hpp"
 #include "rankings_enum_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "HuntActivityType_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -37,7 +37,7 @@ public:
 	class UImage*                                 BehemothIconImage;                                 // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UTextBlock*                             BehemothLengthText;                                // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UTextBlock*                             BehemothName;                                      // 0x0530(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
-	class UImage*                                 BG;                                                // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UImage*                                 bg;                                                // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 bg_fill;                                           // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 bg_gradient;                                       // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 BGImage;                                           // 0x0550(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)

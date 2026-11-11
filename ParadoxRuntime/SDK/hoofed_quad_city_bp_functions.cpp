@@ -34,24 +34,6 @@ void Ahoofed_quad_city_bp_C::ExecuteUbergraph_hoofed_quad_city_bp(int32 EntryPoi
 }
 
 
-// Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.OnUserInteractionCompleted
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ahoofed_quad_city_bp_C::OnUserInteractionCompleted(class UArchonInteractionUserComponent* User)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUserInteractionCompleted", FnName));
-
-	Params::hoofed_quad_city_bp_C_OnUserInteractionCompleted Parms{};
-
-	Parms.User = User;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -73,6 +55,24 @@ void Ahoofed_quad_city_bp_C::UserConstructionScript()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.OnUserInteractionCompleted
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ahoofed_quad_city_bp_C::OnUserInteractionCompleted(class UArchonInteractionUserComponent* User)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUserInteractionCompleted", FnName));
+
+	Params::hoofed_quad_city_bp_C_OnUserInteractionCompleted Parms{};
+
+	Parms.User = User;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

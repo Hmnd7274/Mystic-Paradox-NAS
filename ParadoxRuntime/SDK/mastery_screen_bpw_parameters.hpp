@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "message_slate_parameters_structs.hpp"
 #include "Archon_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "message_slate_parameters_structs.hpp"
 #include "Eui_character_screen_mode_structs.hpp"
 
 

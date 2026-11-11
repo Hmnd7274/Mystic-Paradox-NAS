@@ -46,6 +46,18 @@ void Ulanternhold_damaging_aura_ab_C::RockDamage()
 }
 
 
+// Function lanternhold_damaging_aura_ab.lanternhold_damaging_aura_ab_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void Ulanternhold_damaging_aura_ab_C::K2_ActivateAbility()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_ActivateAbility", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function lanternhold_damaging_aura_ab.lanternhold_damaging_aura_ab_C.K2_OnEndAbility
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -61,18 +73,6 @@ void Ulanternhold_damaging_aura_ab_C::K2_OnEndAbility(bool bWasCancelled)
 	Parms.bWasCancelled = bWasCancelled;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function lanternhold_damaging_aura_ab.lanternhold_damaging_aura_ab_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void Ulanternhold_damaging_aura_ab_C::K2_ActivateAbility()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_ActivateAbility", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

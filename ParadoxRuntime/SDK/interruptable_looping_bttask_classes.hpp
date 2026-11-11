@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "LoopMontageUntilState_structs.hpp"
-#include "AIModule_classes.hpp"
 #include "blackboard_comparison_and_name_structs.hpp"
+#include "AIModule_classes.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "game_mode_type_structs.hpp"
+#include "behemoth_requirement_struct_structs.hpp"
 #include "game_mode_tunables_structs.hpp"
 #include "Archon_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
 #include "behemoth_kill_loot_override_structs.hpp"
+#include "player_score_wrapper_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "OnlineSubsystemPhoenix_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
-#include "player_score_wrapper_structs.hpp"
 #include "badge_wrapper_thx_unreal_structs.hpp"
-#include "EndOfMatch_GameType_structs.hpp"
-#include "player_score_info_structs.hpp"
-#include "player_highlight_info_structs.hpp"
 #include "badge_infos_structs.hpp"
+#include "EndOfMatch_GameType_structs.hpp"
+#include "player_highlight_info_structs.hpp"
+#include "player_score_info_structs.hpp"
 #include "rankings_enum_structs.hpp"
 #include "behemoth_spawn_params_structs.hpp"
-#include "behemoth_requirement_struct_structs.hpp"
-#include "behemoth_requirement_result_structs.hpp"
 #include "behemoth_spawn_data_structs.hpp"
+#include "behemoth_requirement_result_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 #include "gamemode_notify_data_structs.hpp"
 
 
@@ -401,7 +401,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_19;                // 0x095C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue_1;       // 0x0960(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_964[0x4];                                      // 0x0964(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_CustomEvent_Player;                         // 0x0968(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_CustomEvent_player;                         // 0x0968(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable_19;                  // 0x0970(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_974[0x4];                                      // 0x0974(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class Iplayer_interface_C>   K2Node_DynamicCast_AsPlayer_Interface;             // 0x0978(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2614,7 +2614,7 @@ DUMPER7_ASSERTS_BPGM_Archon_Prototype_C_GetGameModeTunables;
 struct BPGM_Archon_Prototype_C_GetIsAnyBehemothInCombat final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BPGM_Archon_Prototype_C_GetIsAnyBehemothInCombat;
 

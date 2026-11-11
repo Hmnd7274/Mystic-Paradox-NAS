@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "pickup_notification_item_number_struct_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
+#include "pickup_notification_item_number_struct_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START

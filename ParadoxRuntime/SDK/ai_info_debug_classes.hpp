@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "monster_part_info_struct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "ai_action_info_debug_struct_structs.hpp"
-#include "monster_part_info_struct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

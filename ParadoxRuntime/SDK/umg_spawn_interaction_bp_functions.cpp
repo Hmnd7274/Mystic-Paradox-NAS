@@ -112,28 +112,6 @@ void Aumg_spawn_interaction_bp_C::CreateWidgetAndAddToViewport(class AController
 }
 
 
-// Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.CanUserStartInteraction 
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   CanUse                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Aumg_spawn_interaction_bp_C::CanUserStartInteraction_(class UArchonInteractionUserComponent* User, bool* CanUse)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanUserStartInteraction ", FnName));
-
-	Params::umg_spawn_interaction_bp_C_CanUserStartInteraction_ Parms{};
-
-	Parms.User = User;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CanUse != nullptr)
-		*CanUse = Parms.CanUse;
-}
-
-
 // Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.ChangeLocalAvailabilityOfActor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -161,6 +139,28 @@ void Aumg_spawn_interaction_bp_C::OnRep_LocallyAvailable()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_LocallyAvailable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function umg_spawn_interaction_bp.umg_spawn_interaction_bp_C.CanUserStartInteraction 
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   CanUse                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Aumg_spawn_interaction_bp_C::CanUserStartInteraction_(class UArchonInteractionUserComponent* User, bool* CanUse)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanUserStartInteraction ", FnName));
+
+	Params::umg_spawn_interaction_bp_C_CanUserStartInteraction_ Parms{};
+
+	Parms.User = User;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanUse != nullptr)
+		*CanUse = Parms.CanUse;
 }
 
 

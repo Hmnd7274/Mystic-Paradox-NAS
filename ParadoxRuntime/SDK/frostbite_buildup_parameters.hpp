@@ -253,15 +253,6 @@ public:
 };
 DUMPER7_ASSERTS_frostbite_buildup_C_EscalationRoundEnd;
 
-// Function frostbite_buildup.frostbite_buildup_C.ShouldAddedBuildupPopUI
-// 0x0001 (0x0001 - 0x0000)
-struct frostbite_buildup_C_ShouldAddedBuildupPopUI final
-{
-public:
-	bool                                          ShouldIt;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_frostbite_buildup_C_ShouldAddedBuildupPopUI;
-
 // Function frostbite_buildup.frostbite_buildup_C.SetBuildupAmount
 // 0x001C (0x001C - 0x0000)
 struct frostbite_buildup_C_SetBuildupAmount final
@@ -302,15 +293,6 @@ public:
 };
 DUMPER7_ASSERTS_frostbite_buildup_C_Add_Temp_Resist;
 
-// Function frostbite_buildup.frostbite_buildup_C.ShouldFinishingStopBuildup
-// 0x0001 (0x0001 - 0x0000)
-struct frostbite_buildup_C_ShouldFinishingStopBuildup final
-{
-public:
-	bool                                          ShouldIt;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_frostbite_buildup_C_ShouldFinishingStopBuildup;
-
 // Function frostbite_buildup.frostbite_buildup_C.Test Thaw Value
 // 0x0048 (0x0048 - 0x0000)
 struct frostbite_buildup_C_Test_Thaw_Value final
@@ -332,16 +314,6 @@ public:
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_frostbite_buildup_C_Test_Thaw_Value;
-
-// Function frostbite_buildup.frostbite_buildup_C.ReduceBuildup
-// 0x0008 (0x0008 - 0x0000)
-struct frostbite_buildup_C_ReduceBuildup final
-{
-public:
-	float                                         BuildupToReduce;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_frostbite_buildup_C_ReduceBuildup;
 
 // Function frostbite_buildup.frostbite_buildup_C.GetTimesFrozen
 // 0x0004 (0x0004 - 0x0000)
@@ -365,6 +337,34 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_frostbite_buildup_C_TrackFrostbiteReduction;
+
+// Function frostbite_buildup.frostbite_buildup_C.ShouldAddedBuildupPopUI
+// 0x0001 (0x0001 - 0x0000)
+struct frostbite_buildup_C_ShouldAddedBuildupPopUI final
+{
+public:
+	bool                                          ShouldIt;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_frostbite_buildup_C_ShouldAddedBuildupPopUI;
+
+// Function frostbite_buildup.frostbite_buildup_C.ShouldFinishingStopBuildup
+// 0x0001 (0x0001 - 0x0000)
+struct frostbite_buildup_C_ShouldFinishingStopBuildup final
+{
+public:
+	bool                                          ShouldIt;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_frostbite_buildup_C_ShouldFinishingStopBuildup;
+
+// Function frostbite_buildup.frostbite_buildup_C.ReduceBuildup
+// 0x0008 (0x0008 - 0x0000)
+struct frostbite_buildup_C_ReduceBuildup final
+{
+public:
+	float                                         BuildupToReduce;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_frostbite_buildup_C_ReduceBuildup;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

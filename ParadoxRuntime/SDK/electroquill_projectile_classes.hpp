@@ -31,9 +31,9 @@ public:
 
 public:
 	void ExecuteUbergraph_electroquill_projectile(int32 EntryPoint);
-	void AuthSweepHitEvent();
 	void ReceiveBeginPlay();
 	void BndEvt__DamageVolume_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void AuthSweepHitEvent();
 	void UserConstructionScript();
 
 public:

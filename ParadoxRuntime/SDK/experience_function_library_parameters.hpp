@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Archon_structs.hpp"
 #include "threat_level_data_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

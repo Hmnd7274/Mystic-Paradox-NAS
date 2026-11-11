@@ -34,18 +34,6 @@ void Abehemoth_frost_debuff_C::ExecuteUbergraph_behemoth_frost_debuff(int32 Entr
 }
 
 
-// Function behemoth_frost_debuff.behemoth_frost_debuff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Abehemoth_frost_debuff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_frost_debuff.behemoth_frost_debuff_C.OnGameplayEffectRemoved
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 
@@ -58,18 +46,6 @@ void Abehemoth_frost_debuff_C::OnGameplayEffectRemoved()
 }
 
 
-// Function behemoth_frost_debuff.behemoth_frost_debuff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abehemoth_frost_debuff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_frost_debuff.behemoth_frost_debuff_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -77,6 +53,30 @@ void Abehemoth_frost_debuff_C::MulticastOnAdded()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function behemoth_frost_debuff.behemoth_frost_debuff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Abehemoth_frost_debuff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function behemoth_frost_debuff.behemoth_frost_debuff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abehemoth_frost_debuff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

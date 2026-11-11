@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "city_interactive_npc_bp_classes.hpp"
-#include "npc_ui_struct_structs.hpp"
 #include "Archon_structs.hpp"
-#include "E_aspect_mode_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
+#include "npc_ui_struct_structs.hpp"
+#include "EquipmentVendor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "EquipmentVendor_structs.hpp"
-#include "LocalizationFramework_structs.hpp"
+#include "E_aspect_mode_structs.hpp"
+#include "city_interactive_npc_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass vendor_interactive_bp.vendor_interactive_bp_C
 // 0x02D0 (0x07B0 - 0x04E0)
-class Avendor_interactive_bp_C final : public Acity_interactive_npc_bp_C
+class Avendor_interactive_bp_C : public Acity_interactive_npc_bp_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_vendor_interactive_bp_C;            // 0x04E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)
@@ -106,8 +106,10 @@ public:
 	void UpdateCameraForAspect();
 	void OnConditionalMarkerEvaluated();
 	void Setup_Conditional_Markers();
+	void OnUserCompletedInteraction(class UArchonInteractionUserComponent* User);
 	void K2_OnBecomeViewTarget(class APlayerController* PC);
 	void ReceiveGameplayStart();
+	void ReceiveBeginPlay();
 	void StateTrigger();
 	void OnMenuClosed();
 	void ExecutePayload(class APawn* SuccessfulInteractor);
@@ -146,13 +148,11 @@ public:
 	void GetProgressTrackName(class FName* TrackName);
 	void HasItemsToCraft(bool* IsUnlocked);
 	void Get_Crafting_Location_Transform(struct FTransform* Transform);
-	void OnUserCompletedInteraction(class UArchonInteractionUserComponent* User);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
 
-	class UMarkerComponent* GetMarkerComponent() const;
 	EMarkerQuestStatus GetQuestStatus() const;
 	struct FPointOfInterestInfoModel GetPointOfInterestData() const;
+	class UMarkerComponent* GetMarkerComponent() const;
 
 public:
 	static class UClass* StaticClass()

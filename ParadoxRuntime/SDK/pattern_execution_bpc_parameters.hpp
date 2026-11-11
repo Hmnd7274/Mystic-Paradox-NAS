@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "pattern_targetting_type_structs.hpp"
 #include "pattern_row_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "pattern_state_structs.hpp"
 #include "Engine_structs.hpp"
+#include "pattern_targetting_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

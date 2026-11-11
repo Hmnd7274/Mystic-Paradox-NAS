@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "telegraph_intensity_structs.hpp"
 #include "pattern_targetting_type_structs.hpp"
+#include "telegraph_intensity_structs.hpp"
 
 
 SDK_NAMESPACE_START

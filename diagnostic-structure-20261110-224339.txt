@@ -1,0 +1,1136 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261110224339
+Username: DESKTOP-CI9T2OS\xavie
+RunAs User: DESKTOP-CI9T2OS\xavie
+Configuration Name: 
+Machine: DESKTOP-CI9T2OS (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13976
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\diagnostic-structure-20261110-224339.txt
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # OUTIL : INSPECTION RECURSIVE DE JSON
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> function Get-JsonShape {
+    param(
+        [object]$Value,
+        [string]$Path = '$',
+        [int]$Depth = 0
+    )
+
+    if ($null -eq $Value) {
+        [PSCustomObject]@{
+            Path = $Path
+            Kind = 'Null'
+            Count = 0
+            Members = ''
+        }
+        return
+    }
+
+    if ($Value -is [System.Array]) {
+        $firstFields = ''
+
+        if ($Value.Count -gt 0 -and
+            $Value[0] -is [System.Management.Automation.PSCustomObject]) {
+            $firstFields = (
+                @($Value[0].PSObject.Properties | ForEach-Object {
+                    $_.Name
+                }) -join ', '
+            )
+        }
+
+        [PSCustomObject]@{
+            Path = $Path
+            Kind = 'Array'
+            Count = $Value.Count
+            Members = $firstFields
+        }
+
+        if ($Value.Count -gt 0 -and $Depth -lt 3) {
+            if ($Value[0] -is [System.Management.Automation.PSCustomObject] -or
+                $Value[0] -is [System.Array]) {
+
+                Get-JsonShape -Value $Value[0] `
+                    -Path "$Path[0]" `
+                    -Depth ($Depth + 1)
+            }
+        }
+
+        return
+    }
+
+    if ($Value -is [System.Management.Automation.PSCustomObject]) {
+        $properties = @($Value.PSObject.Properties)
+
+        [PSCustomObject]@{
+            Path = $Path
+            Kind = 'Object'
+            Count = $properties.Count
+            Members = ($properties.Name -join ', ')
+        }
+
+        if ($Depth -lt 3) {
+            foreach ($property in $properties) {
+                if ($property.Value -is [System.Array] -or
+                    $property.Value -is [System.Management.Automation.PSCustomObject]) {
+
+                    Get-JsonShape -Value $property.Value `
+                        -Path "$Path.$($property.Name)" `
+                        -Depth ($Depth + 1)
+                }
+            }
+        }
+
+        return
+    }
+
+    [PSCustomObject]@{
+        Path = $Path
+        Kind = $Value.GetType().Name
+        Count = 1
+        Members = ''
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 1. INVENTAIRE COMPLET DES CAPTURES
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== CAPTURES API ==========" -ForegroundColor Cyan
+
+========== CAPTURES API ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $docDir = '.\DauntlessEndpointDocumentation'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> if (Test-Path $docDir) {
+    $captureFiles = @(
+        Get-ChildItem $docDir -Recurse -File |
+            Select-Object FullName, Length, LastWriteTime
+    )
+
+    $captureFiles | Format-Table -AutoSize
+}
+
+FullName
+--------
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\DauntlessEndpointDocumentation\Store\Product\Skus\ladyluckstore.json
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\DauntlessEndpointDocumentation\Store\Product\Skus\ladyluckstore.json.backup...
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== SOURCES RAW BACKEND ==========" -ForegroundColor Cyan
+
+========== SOURCES RAW BACKEND ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-ChildItem '.\ParadoxBackend\game-data\raw' -Recurse -File |
+    Select-Object FullName, Length, LastWriteTime |
+    Format-Table -AutoSize
+
+FullName                                                                                              Length LastWriteT
+                                                                                                             ime
+--------                                                                                              ------ ----------
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\game-data\raw\ladyluck_store.source.json       78279 11/9/20...
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\game-data\raw\progression_config.source.json 4117890 11/9/20...
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 2. STRUCTURE DES JSON IMPORTANTS
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== STRUCTURE JSON ==========" -ForegroundColor Cyan
+
+========== STRUCTURE JSON ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $inspectFiles = @(
+    '.\DauntlessEndpointDocumentation\Store\Product\Skus\ladyluckstore.json',
+    '.\ParadoxBackend\game-data\raw\ladyluck_store.source.json',
+    '.\ParadoxBackend\game-data\ladyluck_store.json',
+    '.\ParadoxBackend\game-data\platinum_store.json',
+    '.\ParadoxBackend\game-data\raw\progression_config.source.json',
+    '.\ParadoxBackend\game-data\progression_config.json',
+    '.\ParadoxBackend\game-data\escalation_tuning.json',
+    '.\ParadoxBackend\game-data\fountain_daily_bundle.json'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($file in $inspectFiles) {
+    Write-Host "`n--- $file ---" -ForegroundColor Yellow
+
+    if (-not (Test-Path $file)) {
+        Write-Host "ABSENT"
+        continue
+    }
+
+    try {
+        $obj = Get-Content $file -Raw |
+            ConvertFrom-Json -ErrorAction Stop
+
+        $shape = @(Get-JsonShape -Value $obj)
+
+        $shape |
+            Format-Table Path, Kind, Count, Members -AutoSize -Wrap
+
+        Get-Item $file |
+            Select-Object Length, LastWriteTime |
+            Format-List
+
+    } catch {
+        Write-Host "JSON ERROR : $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+--- .\DauntlessEndpointDocumentation\Store\Product\Skus\ladyluckstore.json ---
+
+Path                         Kind   Count Members
+----                         ----   ----- -------
+$                            Array     58 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          remaining, duplicateInstancedItems, images, tags, scheduledTags, items,
+                                          entitlements, skuProgression, loadoutSlots, availableFrom, availableTo,
+                                          timeAvailabilityReason, platformOfferId, missingEntitlementNames
+$[0]                         Object    20 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          remaining, duplicateInstancedItems, images, tags, scheduledTags, items,
+                                          entitlements, skuProgression, loadoutSlots, availableFrom, availableTo,
+                                          timeAvailabilityReason, platformOfferId, missingEntitlementNames
+$[0].prices                  Array      1 currencyId, price, salesPrice, multiPrice
+$[0].prices[0]               Object     4 currencyId, price, salesPrice, multiPrice
+$[0].duplicateInstancedItems Array      0
+$[0].images                  Object     1 standard
+$[0].tags                    Array      2
+$[0].items                   Array      1 catalogId, quantity
+$[0].items[0]                Object     2 catalogId, quantity
+$[0].entitlements            Array      0
+
+
+
+
+Length        : 78279
+LastWriteTime : 11/9/2026 9:30:01 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\raw\ladyluck_store.source.json ---
+
+Path                         Kind   Count Members
+----                         ----   ----- -------
+$                            Array     58 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          remaining, duplicateInstancedItems, images, tags, scheduledTags, items,
+                                          entitlements, skuProgression, loadoutSlots, availableFrom, availableTo,
+                                          timeAvailabilityReason, platformOfferId, missingEntitlementNames
+$[0]                         Object    20 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          remaining, duplicateInstancedItems, images, tags, scheduledTags, items,
+                                          entitlements, skuProgression, loadoutSlots, availableFrom, availableTo,
+                                          timeAvailabilityReason, platformOfferId, missingEntitlementNames
+$[0].prices                  Array      1 currencyId, price, salesPrice, multiPrice
+$[0].prices[0]               Object     4 currencyId, price, salesPrice, multiPrice
+$[0].duplicateInstancedItems Array      0
+$[0].images                  Object     1 standard
+$[0].tags                    Array      2
+$[0].items                   Array      1 catalogId, quantity
+$[0].items[0]                Object     2 catalogId, quantity
+$[0].entitlements            Array      0
+
+
+
+
+Length        : 78279
+LastWriteTime : 11/9/2026 9:30:01 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\ladyluck_store.json ---
+
+Path                         Kind   Count Members
+----                         ----   ----- -------
+$                            Array     58 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          images, tags, items, duplicateInstancedItems
+$[0]                         Object    10 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          images, tags, items, duplicateInstancedItems
+$[0].prices                  Array      1 currencyId, price
+$[0].prices[0]               Object     2 currencyId, price
+$[0].images                  Object     1 standard
+$[0].tags                    Array      2
+$[0].items                   Array      1 catalogId, quantity, instanced
+$[0].items[0]                Object     3 catalogId, quantity, instanced
+$[0].duplicateInstancedItems Array      0
+
+
+
+
+Length        : 45291
+LastWriteTime : 11/10/2026 12:42:53 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\platinum_store.json ---
+
+Path                         Kind   Count Members
+----                         ----   ----- -------
+$                            Array    209 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          images, tags, items, duplicateInstancedItems
+$[0]                         Object    10 id, displayName, displayDescription, displayPriority, prices, maxAllowed,
+                                          images, tags, items, duplicateInstancedItems
+$[0].prices                  Array      1 currencyId, price
+$[0].prices[0]               Object     2 currencyId, price
+$[0].images                  Object     0
+$[0].tags                    Array      5
+$[0].items                   Array      1 catalogId, quantity, instanced
+$[0].items[0]                Object     3 catalogId, quantity, instanced
+$[0].duplicateInstancedItems Array      1
+
+
+
+
+Length        : 165833
+LastWriteTime : 11/10/2026 1:14:57 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\raw\progression_config.source.json ---
+
+Path               Kind   Count Members
+----               ----   ----- -------
+$                  Object     3 code, message, payload
+$.payload          Object     1 paths
+$.payload.paths    Array    108 end_date, free_rewards, premium_gating_entitlement, premium_rewards, prestige,
+                                progression_id, progression_multiplier, requirements, start_date
+$.payload.paths[0] Object     9 end_date, free_rewards, premium_gating_entitlement, premium_rewards, prestige,
+                                progression_id, progression_multiplier, requirements, start_date
+
+
+
+
+Length        : 4117890
+LastWriteTime : 11/9/2026 9:18:09 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\progression_config.json ---
+
+Path               Kind   Count Members
+----               ----   ----- -------
+$                  Object     3 code, message, payload
+$.payload          Object     1 paths
+$.payload.paths    Array    108 end_date, free_rewards, premium_gating_entitlement, premium_rewards, prestige,
+                                progression_id, progression_multiplier, requirements, start_date
+$.payload.paths[0] Object     9 end_date, free_rewards, premium_gating_entitlement, premium_rewards, prestige,
+                                progression_id, progression_multiplier, requirements, start_date
+
+
+
+
+Length        : 2690134
+LastWriteTime : 11/9/2026 9:36:11 PM
+
+
+
+
+--- .\ParadoxBackend\game-data\escalation_tuning.json ---
+
+Path                                  Kind   Count Members
+----                                  ----   ----- -------
+$                                     Object     4 _doc, schemaVersion, source, seasons
+$._doc                                Array      3
+$.seasons                             Object     1 ESC_SEASON_1
+$.seasons.ESC_SEASON_1                Object     6 context, talentTable, maxLevel, xpToReachLevel, unlocks, talents
+$.seasons.ESC_SEASON_1.xpToReachLevel Array      3
+$.seasons.ESC_SEASON_1.unlocks        Object     2 EXAMPLE_REWARD_A, EXAMPLE_REWARD_B
+$.seasons.ESC_SEASON_1.talents        Object     3 EXAMPLE_TALENT_TIER1_A, EXAMPLE_TALENT_TIER1_B,
+                                                   EXAMPLE_TALENT_TIER2_A
+
+
+
+
+Length        : 1131
+LastWriteTime : 11/8/2026 10:38:03 AM
+
+
+
+
+--- .\ParadoxBackend\game-data\fountain_daily_bundle.json ---
+
+Path                              Kind   Count Members
+----                              ----   ----- -------
+$                                 Object     2 comment, skus
+$.skus                            Array      1 id, displayName, displayDescription, displayPriority, prices,
+                                               maxAllowed, images, tags, items, duplicateInstancedItems
+$.skus[0]                         Object    10 id, displayName, displayDescription, displayPriority, prices,
+                                               maxAllowed, images, tags, items, duplicateInstancedItems
+$.skus[0].prices                  Array      1 currencyId, price
+$.skus[0].images                  Object     0
+$.skus[0].tags                    Array      1
+$.skus[0].items                   Array      1 catalogId, quantity, instanced
+$.skus[0].duplicateInstancedItems Array      0
+
+
+
+
+Length        : 858
+LastWriteTime : 11/8/2026 10:38:03 AM
+
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 3. SCRIPTS NPM DE GENERATION
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== SCRIPTS BACKEND ==========" -ForegroundColor Cyan
+
+========== SCRIPTS BACKEND ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $packages = @(
+    '.\ParadoxBackend\package.json',
+    '.\ParadoxDirector\package.json'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($packagePath in $packages) {
+    Write-Host "`n--- $packagePath ---"
+
+    $package = Get-Content $packagePath -Raw |
+        ConvertFrom-Json
+
+    $scriptRows = @(
+        $package.scripts.PSObject.Properties |
+            ForEach-Object {
+                [PSCustomObject]@{
+                    Name = $_.Name
+                    Command = $_.Value
+                }
+            }
+    )
+
+    $scriptRows | Format-Table -AutoSize -Wrap
+}
+
+--- .\ParadoxBackend\package.json ---
+
+Name                              Command
+----                              -------
+dev                               tsx watch --env-file=.env src/server.ts
+clean                             node -e "require('fs').rmSync('build',{recursive:true,force:true})"
+build                             npm run clean && tsc
+prestart                          node scripts/ensure-build-fresh.cjs
+start                             node --env-file=.env build/server.js
+prestart:api                      node scripts/ensure-build-fresh.cjs
+start:api                         node --env-file=.env build/server.js
+test:bootstrap                    npm run build && node --env-file=.env scripts/test_bootstrap_regression.cjs
+test:p2p-distributed-mongo        node --import tsx --test src/p2p/security/guardTrafficDistributed.integration.test.ts
+pretest:mongo-migration-rehearsal node --test scripts/test_mongo_schema_migration_rehearsal.test.cjs
+test:mongo-migration-rehearsal    node scripts/test_mongo_schema_migration_rehearsal.cjs
+test:p2p-auto-pause               node scripts/p2p/test_reward_invariant_pause.cjs
+test:p2p-field-evidence           node --test ../scripts/validate-central-guard-field-evidence.test.mjs
+test:matchmaking                  node --import tsx --test src/matchmakingParty.test.ts
+                                  src/matchmakingHuntPolicy.test.ts src/apiKeysConfig.test.ts
+test:loadout                      node --import tsx --test src/loadoutSlots.test.ts
+test:realtime                     node --import tsx --test src/realtime/jid.test.ts src/realtime/stateMachine.test.ts
+                                  src/realtime/xml.test.ts src/realtime/XMPPAuth.test.ts
+                                  src/realtime/DirectChatService.test.ts src/realtime/RoomService.test.ts
+                                  src/realtime/PresenceService.test.ts src/realtime/SessionRegistry.test.ts
+test:auth-security                node --import tsx --test src/security/accountEligibility.test.ts
+                                  src/security/totp.test.ts src/security/runtimeAuthorization.test.ts
+                                  src/security/launcherVersion.test.ts src/controllers/adminDiscordAuth.test.ts
+                                  src/launcherAuthValidation.test.ts src/launcherUpdatesValidation.test.ts
+                                  src/security/apiKeyHash.test.ts
+test:inventory-storage            node --import tsx --test src/inventoryStoragePolicy.gamedata.test.ts
+test:store                        node --import tsx --test src/controllers/storeRegistry.gamedata.test.ts
+                                  src/controllers/storePlatinumSpend.gamedata.test.ts src/security/logRedaction.test.ts
+test:platinum                     node --import tsx --test src/platinumWallet.test.ts src/skuProgression.test.ts
+                                  src/diagnostics/economyLedgerMonitor.test.ts
+                                  src/diagnostics/economyLedgerInventory.test.ts
+platinum:generate                 tsx scripts/generate_platinum_store.ts && tsx
+                                  scripts/generate_inventory_storage_policy.ts
+generate:progression-config       node scripts/generate_progression_config.cjs
+generate:slayers-path             node scripts/generate_slayers_path.cjs
+generate:ladyluck-store           node scripts/generate_ladyluck_store.cjs
+inventory:storage-policy:generate tsx scripts/generate_inventory_storage_policy.ts
+reward-cache:generate             tsx scripts/generate_reward_cache_store.ts && tsx
+                                  scripts/generate_inventory_storage_policy.ts
+ladyluck:enrich                   tsx scripts/enrich_ladyluck_store.ts && tsx
+                                  scripts/generate_inventory_storage_policy.ts
+inventory:storage-migrate         tsx --env-file=.env scripts/migrate_inventory_storage.ts
+banner:instance-migrate           tsx --env-file=.env scripts/migrate_banner_instance_ids.ts
+starter:instance-migrate          tsx --env-file=.env scripts/migrate_starter_instance_refs.ts
+loadout:slots-migrate             tsx --env-file=.env scripts/migrate_loadout_slot_entitlements.ts
+test:banner-instance              node --import tsx --test src/bannerInstanceMigration.test.ts
+test:starter-instance             node --import tsx --test src/starterInstanceMigration.test.ts
+test:escalation                   node --import tsx --test src/escalationProgress.test.ts
+test:progression                  node --import tsx --test src/progressionHardening.gamedata.test.ts
+test:p2p-admission                node --import tsx --test src/p2p/security/admissionTickets.test.ts
+                                  src/p2p/security/steamTransportIdentity.test.ts
+                                  src/p2p/security/hostCapabilities.test.ts
+                                  src/p2p/security/p2pRuntimeArtifacts.test.ts
+test:p2p-lifecycle                node --import tsx --test src/p2p/config/p2pHostPolicy.test.ts
+                                  src/p2p/controllers/p2pHostLifecycle.test.ts
+test:realm-hub                    node --import tsx --test src/p2p/realm/realmHubRules.test.ts
+                                  src/p2p/persistence/realmHubRepository.test.ts
+                                  src/p2p/security/hubAuthorization.test.ts src/p2p/routes/realmHosting.test.ts
+                                  src/p2p/controllers/realmHubFlow.test.ts src/p2p/realm/realmsServiceWiring.test.ts
+                                  src/p2p/security/hostWrites.test.ts
+                                  src/p2p/security/p2pInventoryTransactions.test.ts
+                                  src/p2p/security/p2pInventoryAuthorization.test.ts
+                                  src/p2p/security/hostGrantPolicy.test.ts
+                                  src/p2p/routes/progressionReforgeHost.gamedata.test.ts
+                                  src/p2p/controllers/p2pRealmRouting.test.ts
+                                  src/p2p/controllers/p2pRealmHunts.test.ts src/p2p/routes/realmHostingStatus.test.ts
+                                  src/controllers/candidateStatus.test.ts src/p2p/security/hostPlatinumSpend.test.ts
+                                  src/p2p/observability/huntXpMonitor.test.ts
+test:realm-hub-mongo              node --import tsx --test --test-concurrency=1
+                                  src/p2p/persistence/mongo/realmHubMongo.integration.test.ts
+                                  src/p2p/realm/realmHubMongoFlow.integration.test.ts
+test:p2p-bridge-interop           node scripts/p2p/test_bridge_ticket_interop.mjs
+                                  ../SteamBridge/build/Release/MysticSteamBridge.exe
+admin:bootstrap                   tsx --env-file=.env scripts/bootstrap_admin.ts
+account:process-deletions         tsx --env-file=.env scripts/process_account_deletions.ts
+logs:purge-uploaded               tsx --env-file=.env scripts/purge_uploaded_logs.ts
+approval:migrate                  tsx --env-file=.env scripts/migrate_launcher_approval.ts
+p2p:steam-link                    tsx --env-file=.env scripts/p2p/bind_p2p_steam_account.ts
+test:p2p-operator                 node --import tsx --test scripts/p2p/bind_p2p_steam_account.test.ts
+test                              node scripts/run-tests.cjs
+
+
+
+--- .\ParadoxDirector\package.json ---
+
+Name                 Command
+----                 -------
+dev                  tsx --env-file=.env src/server.ts
+clean                node scripts/clean-dist.cjs
+build                npm run clean && tsc
+prestart             node scripts/ensure-build-fresh.cjs
+start                node --env-file=.env dist/server.js
+generate:hunt-tables node scripts/import_hunt_tables.cjs
+test                 node scripts/run-tests.cjs
+test:hunt-coverage   node --import tsx --test src/controllers/gameservers.gamedata.test.ts
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 4. RECHERCHE DES SOURCES PLATINUM / ESCALATION
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== RECHERCHE GENERATEURS ==========" -ForegroundColor Cyan
+
+========== RECHERCHE GENERATEURS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $codeRoots = @(
+    '.\ParadoxBackend\scripts',
+    '.\ParadoxBackend\src',
+    '.\tools\CatalogExporter',
+    '.\ParadoxBackend\game-data'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $codeFiles = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($base in $codeRoots) {
+    if (Test-Path $base) {
+        $codeFiles += @(
+            Get-ChildItem $base -Recurse -File |
+                Where-Object {
+                    $_.Extension -in @(
+                        '.ts', '.js', '.cjs', '.cpp',
+                        '.hpp', '.md', '.json'
+                    )
+                }
+        )
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $patterns = @(
+    'escalation_tuning',
+    'ESC_SEASON_1',
+    'hp_level_skip_rank',
+    'platinum_store_captured',
+    'platinum_store_reconstructed',
+    'awakening_webstore',
+    'huntpass_store',
+    'rank.skip',
+    'entitlement'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $matches = @(
+    $codeFiles |
+        Select-String -Pattern $patterns |
+        Select-Object -First 150
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $matches |
+    Select-Object Path, LineNumber, Line |
+    Format-Table -AutoSize -Wrap
+
+Path                                                                                                         LineNumber
+----                                                                                                         ----------
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\clean_progression_config.cjs                         97
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                           70
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                           71
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          149
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          167
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          356
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          357
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          375
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          376
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          381
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          384
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          385
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          386
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          409
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          411
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          415
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          417
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          420
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          426
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          432
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          434
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          435
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          437
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          449
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          456
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          457
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          461
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          473
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          476
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          522
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          530
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          541
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          542
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          544
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\generate_platinum_store.ts                          550
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                  2
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                 17
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                124
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                131
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                132
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                163
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\scripts\migrate_loadout_slot_entitlements.ts                172
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.test.ts                              333
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.test.ts                              408
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.test.ts                              410
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.test.ts                              430
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   161
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   255
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   266
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   355
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   370
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   371
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationProgress.ts                                   503
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        24
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        31
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        38
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        63
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        66
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                        82
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\escalationTuning.gamedata.test.ts                       152
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\gauntletPayloads.test.ts                                 25
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\gauntletPayloads.ts                                      18
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.test.ts                                     24
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.test.ts                                     28
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.test.ts                                     44
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.test.ts                                    104
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.ts                                          12
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.ts                                          67
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\loadoutSlots.ts                                         106
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.test.ts                                   16
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.test.ts                                   44
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.test.ts                                   51
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.test.ts                                   58
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.test.ts                                   76
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\skuProgression.ts                                        26
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              14
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              19
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              21
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              22
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              24
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              27
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              28
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              30
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              32
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              35
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              38
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              39
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              40
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              41
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              42
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              47
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              50
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              51
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              55
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              60
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              62
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              70
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              71
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              74
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              78
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              83
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\entitlements.ts                              90
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\fountainDailyBundle.gamedata.test.ts        115
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\fountainDailyBundle.gamedata.test.ts        255
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\inventory.ts                                418
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\inventory.ts                                421
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\inventory.ts                                533
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\loadout.ts                                   73
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\loadout.ts                                   99
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\loadout.ts                                  100
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\loadout.ts                                  104
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\progression.ts                               75
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\slayersPath.ts                               37
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     19
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     43
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     61
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     79
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     89
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                     90
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    103
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    141
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    163
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    164
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    256
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    257
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    407
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    419
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    537
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    539
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    541
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    542
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\store.ts                                    545
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              327
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              355
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              383
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              384
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              387
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              388
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              391
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              392
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              409
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              410
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              411
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              412
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              414
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              416
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              419
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              424
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              427
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\src\controllers\storeRegistry.gamedata.test.ts              430
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 5. FICHIERS ESCALATION DISPONIBLES
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== GAME DATA ESCALATION ==========" -ForegroundColor Cyan
+
+========== GAME DATA ESCALATION ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-ChildItem '.\ParadoxBackend\game-data' -Recurse -File |
+    Where-Object {
+        $_.Name -match 'escalation|talent|season|pak'
+    } |
+    Select-Object FullName, Length |
+    Format-Table -AutoSize
+
+FullName
+--------
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\game-data\escalation_tuning.example.json
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\game-data\escalation_tuning.json
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\ParadoxBackend\game-data\progression_config.json.backup-season43-20261108-1...
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 6. CONTENU DES MANIFESTES
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== EXPORT MANIFEST ==========" -ForegroundColor Cyan
+
+========== EXPORT MANIFEST ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-Content '.\Items_Analysis\export_manifest_1_14_7.json'
+{
+  "gameVersion": "1.14.7",
+  "changelist": 647472,
+  "engineVersion": "4.26.2",
+  "exportedAt": "2026-11-07T18:41:37Z",
+  "flags": {
+    "EXPORT_CATALOG": true,
+    "EXPORT_PROGRESSION": true,
+    "EXPORT_COMBAT": true,
+    "EXPORT_SKINS": true,
+    "EXPORT_SKINS_RESOLVE_STRINGTABLE": true,
+    "EXPORT_SLAYERS_PATH": true,
+    "EXPORT_WEAPON_SLOTS": true,
+    "EXPORT_HUNTS": true,
+    "EXPORT_TABLE_INVENTORY": true,
+    "EXPORT_STORE_RUNTIME": true,
+    "EXPORT_MASTERY": true
+  },
+  "results": {
+    "catalogGeneralItems": 7318,
+    "catalogEquipmentItems": 1608,
+    "liveWeaponSlotItems": 0,
+    "progressionRows": 139,
+    "combatRows": 1625,
+    "skinsRows": 445,
+    "slayersPathNodes": 509,
+    "huntRows": 1378,
+    "tableInventoryRows": 466,
+    "storeRuntimeRows": 3173,
+    "masteryRows": 304
+  }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== HUNT MANIFEST ==========" -ForegroundColor Cyan
+
+========== HUNT MANIFEST ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-Content '.\Items_Analysis\hunts_1_14_7\hunt_export_manifest.json'
+{
+  "gameVersion": "1.14.7",
+  "changelist": 647472,
+  "format": "jsonl",
+  "playerHuntRows": 161,
+  "matchmakerHuntRows": 614,
+  "huntRegionRows": 45,
+  "escalationModeSpecRows": 19,
+  "huntModifierRows": 180,
+  "gameActivityRows": 10,
+  "unlockCriteriaRows": 148,
+  "scheduleRows": 201,
+  "notes": "Read-only live table export. Tag-routed query dictionaries and raw token streams are preserved. FText display fields are deliberately omitted (FText is a shared-ref to FTextData, not an FString; reading it faults). map_metadata_table is omitted: Blueprint-defined row struct with no verified layout. Do not replace backend tables until importer validation is complete."
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 7. WARNINGS ET ERREURS CATALOGEXPORTER
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== CATALOG EXPORT STATUS ==========" -ForegroundColor Cyan
+
+========== CATALOG EXPORT STATUS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Select-String `
+    -Path '.\Items_Analysis\catalog_export_status.txt' `
+    -Pattern 'ERROR|WARN|FAILED|not found|no tables|0 rows|empty|currency|StringTable|Store' |
+    Select-Object -Last 100
+
+Items_Analysis\catalog_export_status.txt:403:  [stringtable] WP_IH_RAMSGIVING_01/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_RAMSGIVING_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:404:  [stringtable] WP_IH_RAMSGIVING_01/description
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_RAMSGIVING_01|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:405:  [stringtable] WP_IH_ROMANTIC_01/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:406:  [stringtable] WP_IH_ROMANTIC_01/description
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:407:  [stringtable] WP_IH_ROMANTIC_02/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:408:  [stringtable] WP_IH_ROMANTIC_02/description
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:409:  [stringtable] WP_IH_ROCK_FROST/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROCK_FROST|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:410:  [stringtable] WP_IH_ROCK_FROST/description
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROCK_FROST|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:411:  [stringtable] WP_IH_UNSEEN_01/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:412:  [stringtable] WP_IH_UNSEEN_01/description
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:413:  [stringtable] WP_IH_KALTAUGA_00/displayName
+ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:414:  [stringtable] WP_IH_KALTAUGA_00/description
+ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:415:  [stringtable] WP_MS_COBALT_XBOX/displayName EXTRACTION FAILED (no
+LocKey block found in customData)
+Items_Analysis\catalog_export_status.txt:416:  [stringtable] WP_MS_COBALT_XBOX/description EXTRACTION FAILED (no
+LocKey block found in customData)
+Items_Analysis\catalog_export_status.txt:417:  [stringtable] WP_MS_HP11B_ENGINEER_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:418:  [stringtable] WP_MS_HP11B_ENGINEER_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:419:  [stringtable] WP_MS_HP12B_MAGICAL_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:420:  [stringtable] WP_MS_HP12B_MAGICAL_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:421:  [stringtable] WP_MS_HP13A_ANCIENT_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:422:  [stringtable] WP_MS_HP13A_ANCIENT_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:423:  [stringtable] WP_MS_HP13B_DIVINE_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:424:  [stringtable] WP_MS_HP13B_DIVINE_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:425:  [stringtable] WP_MS_HP14A_RANGER_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:426:  [stringtable] WP_MS_HP14A_RANGER_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:427:  [stringtable] WP_MS_HP14B_PROTECTOR_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:428:  [stringtable] WP_MS_HP14B_PROTECTOR_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:429:  [stringtable] WP_MS_HP15A_ELEGANCE_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:430:  [stringtable] WP_MS_HP15A_ELEGANCE_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:431:  [stringtable] WP_MS_FROSTFALL_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:432:  [stringtable] WP_MS_FROSTFALL_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:433:  [stringtable] WP_MS_HP15B_GRIND_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_GRIND_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:434:  [stringtable] WP_MS_HP15B_GRIND_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_GRIND_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:435:  [stringtable] WP_MS_HP15B_WARLORDS_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:436:  [stringtable] WP_MS_HP15B_WARLORDS_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:437:  [stringtable] WP_MS_EVENT_MIDSOMMAR_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:438:  [stringtable] WP_MS_EVENT_MIDSOMMAR_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:439:  [stringtable] WP_MS_HP16B_ROGUE_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:440:  [stringtable] WP_MS_HP16B_ROGUE_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:441:  [stringtable] WP_MS_HP17B_ADAMANT_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:442:  [stringtable] WP_MS_HP17B_ADAMANT_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:443:  [stringtable] WP_MS_HP16A_MARAUDERS_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:444:  [stringtable] WP_MS_HP16A_MARAUDERS_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:445:  [stringtable] WP_MS_HP16A_MARAUDERS_01/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:446:  [stringtable] WP_MS_HP16A_MARAUDERS_01/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:447:  [stringtable] WP_MS_CUTTHROAT_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:448:  [stringtable] WP_MS_CUTTHROAT_00/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:449:  [stringtable] WP_MS_ROMANTIC_01/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:450:  [stringtable] WP_MS_ROMANTIC_01/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:451:  [stringtable] WP_MS_ROMANTIC_02/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:452:  [stringtable] WP_MS_ROMANTIC_02/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:453:  [stringtable] WP_MS_UNSEEN_01/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:454:  [stringtable] WP_MS_UNSEEN_01/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:455:  [stringtable] WP_MS_KALTAUGA_00/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:456:  [stringtable] WP_MS_KALTAUGA_00/description
+ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:457:  [stringtable] WP_MS_ROSE/displayName
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROSE|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:458:  [stringtable] WP_MS_ROSE/description
+ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROSE|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:459:wrote 445 weapon skins -> weapon_skins_1_14_7.jsonl (Strikers=53,
+ChainBlades=64, Repeaters=63, Spear=61, Sword=73, Axe=66, Hammer=65) | names: invariant=267 viaFText=0
+viaStringTable=0 stillUnresolved=178
+Items_Analysis\catalog_export_status.txt:475:[Hunts] wrote 180/180 rows from hunt_modifiers
+(RowStruct=HuntModifierTableRow)
+Items_Analysis\catalog_export_status.txt:476:[Hunts] wrote 10/10 rows from game_activity_table
+(RowStruct=GameActivityTableData)
+Items_Analysis\catalog_export_status.txt:487:[DropTables] wrote 0/0 rows from DT_gather_events
+Items_Analysis\catalog_export_status.txt:488:[DropTables] wrote 0/0 rows from DT_gatherable_items
+Items_Analysis\catalog_export_status.txt:489:[DropTables] wrote 0/0 rows from obsolete_generated_dt_breakitems_evergame
+Items_Analysis\catalog_export_status.txt:492:[DropTables] wrote 30/30 rows from DT_rewards_login
+Items_Analysis\catalog_export_status.txt:494:[DropTables] wrote 10/10 rows from DT_Portal_Keys
+Items_Analysis\catalog_export_status.txt:507:[DropTables] DONE tables=20 rows=1939
+Items_Analysis\catalog_export_status.txt:508:scanning 7318 catalog items for currency-tagged rows
+Items_Analysis\catalog_export_status.txt:509:*** EXPORT_CURRENCY_NAMES=1: calling ProcessEvent off the worker thread
+to resolve missing currency display names. CLIENT-ONLY === CURRENCY STRINGTABLE KEY DIAGNOSTIC START ===
+Items_Analysis\catalog_export_status.txt:510:  [ST-keys] "currency_tokens_catalog" isRegisteredTableId=1 key count=0
+Items_Analysis\catalog_export_status.txt:513:=== CURRENCY STRINGTABLE KEY DIAGNOSTIC END ===
+Items_Analysis\catalog_export_status.txt:514:  [stringtable] CURRENCY_CELLDUST/displayName ns="UI"
+key="Common.CellDust" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:515:  [stringtable] CURRENCY_PJM_WEAPON/displayName ns="UI_PlayerJourney"
+key="Currency.PJM.CombatMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:516:  [stringtable] CURRENCY_PJM_ARMOR/displayName ns="UI_PlayerJourney"
+key="Currency.PJM.ProtectionMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:517:  [stringtable] CURRENCY_PJM_ALCHEMY/displayName ns="UI_PlayerJourney"
+key="Currency.PJM.AlchemyMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:518:  [stringtable] CURRENCY_PJM_AIRSHIP/displayName ns="UI_PlayerJourney"
+key="Currency.PJM.ExplorationMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:519:  [stringtable] CURRENCY_PJM_PRESTIGE_EMPTY/displayName
+ns="UI_PlayerJourney" key="Currency.PJM.Aethersparks.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:520:  [stringtable] CURRENCY_PJM_PRESTIGE_FILLED/displayName
+ns="UI_PlayerJourney" key="Currency.PJM.Aetherhearts.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:521:  [stringtable] CURRENCY_EVENT_RAMSGIVING/displayName
+ns="currency_tokens_catalog" key="CURRENCY_EVENT_RAMSGIVING|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:522:  [stringtable] CURRENCY_EVENT_DARKHARVEST/displayName
+ns="currency_tokens_catalog" key="CURRENCY_DARK_HARVEST|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:523:  [stringtable] CURRENCY_EVENT_01/displayName
+ns="currency_tokens_catalog" key="CURRENCY_DARK_HARVEST|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:524:  [stringtable] CURRENCY_EVENT_FROSTFALL/displayName
+ns="currency_tokens_catalog" key="CURRENCY_EVENT_FROSTFALL|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:525:  [stringtable] CURRENCY_EVENT_SAINTSBOND/displayName
+ns="currency_tokens_catalog" key="CURRENCY_EVENT_SAINTSBOND|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:526:  [stringtable] CURRENCY_EVENT_SPRINGTIDE/displayName
+ns="currency_tokens_catalog" key="CURRENCY_EVENT_SPRINGTIDE|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:527:  [stringtable] CURRENCY_S13_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S13_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:528:  [stringtable] CURRENCY_S14_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S14_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:529:  [stringtable] CURRENCY_S15_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S15_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:530:  [stringtable] CURRENCY_S16_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S16_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:531:  [stringtable] CURRENCY_S17_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S17_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:532:  [stringtable] CURRENCY_S18_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S18_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:533:  [stringtable] CURRENCY_S19_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S19_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:534:  [stringtable] CURRENCY_S20_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_S20_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:535:  [stringtable] CURRENCY_SEASONAL_COIN/displayName
+ns="currency_tokens_catalog" key="CURRENCY_SEASONAL_COIN|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:536:  [stringtable] CURRENCY_ESCALATION_HEROIC/displayName
+ns="currency_tokens_catalog" key="CURRENCY_ESCALATION_HEROIC|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:537:  [stringtable] CURRENCY_SEASON_13_CHRONOSTONE/displayName
+ns="currency_tokens_catalog" key="CURRENCY_SEASON_13_CHRONOSTONE|Display Name" tableIdIsNone=0 isRegisteredTableId=1
+result=""
+Items_Analysis\catalog_export_status.txt:538:  [stringtable] CURRENCY_GAUNTLET_COIN/displayName ns="gauntlet_mode"
+key="GauntletStore|CurrencyS01" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:539:  [stringtable] CURRENCY_GAUNTLET_COIN_B/displayName ns="gauntlet_mode"
+key="GauntletStore|CurrencyS01" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:540:  [stringtable] CURRENCY_GAUNTLET_COIN_FADED/displayName
+ns="gauntlet_mode" key="GauntletStore|CurrencyFaded" tableIdIsNone=0 isRegisteredTableId=1 result=""
+Items_Analysis\catalog_export_status.txt:541:wrote 53 currencies -> currency_names_1_14_7.jsonl | names: invariant=26
+viaFText=0 viaStringTable=0 stillUnresolved=27
+Items_Analysis\catalog_export_status.txt:542:[StoreRuntime] starting store runtime capture; open Reward Cache before
+injecting
+Items_Analysis\catalog_export_status.txt:543:[StoreRuntime] DONE storeViewModels=4 itemViewModels=1 imageRows=3168
+skipped=0
+Items_Analysis\catalog_export_status.txt:550:ALL DONE general=7318 equipment=1608 progression=139 combat=1625
+skins=445 slayers=509 hunts=1378 tables=466 dropTables=1939 currencyNames=53 storeRuntime=3173 mastery=304
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== EXPORTS VIDES ==========" -ForegroundColor Cyan
+
+========== EXPORTS VIDES ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Get-ChildItem '.\Items_Analysis' -Recurse -File |
+    Where-Object { $_.Length -eq 0 } |
+    Select-Object FullName, Length
+
+FullName                                                                                            Length
+--------                                                                                            ------
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\Items_Analysis\live_cell_slots_1_14_7.jsonl                     0
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\Items_Analysis\live_weapon_parts_1_14_7.jsonl                   0
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\Items_Analysis\loadout_gear_ui_1_14_7.jsonl                     0
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\Items_Analysis\weapon_slots_1_14_7.jsonl                        0
+E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS\Items_Analysis\progression_1_14_7\progression-tracks.jsonl      0
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 8. HISTORIQUE GIT DES HUNTS
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== HISTORIQUE PLAYER HUNTS ==========" -ForegroundColor Cyan
+
+========== HISTORIQUE PLAYER HUNTS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $huntPath = 'ParadoxDirector/game-data/player_hunts_table.json'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $revisions = @(git log -5 --format="%H" -- $huntPath)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $revisionResults = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($revision in $revisions) {
+    try {
+        $content = (
+            & git show "$($revision):$huntPath" 2>$null
+        ) -join "`n"
+
+        $document = ConvertFrom-Json -InputObject $content
+
+        $rowCount = @(
+            $document[0].Rows.PSObject.Properties
+        ).Count
+
+        $revisionResults += [PSCustomObject]@{
+            Commit = $revision.Substring(0, 8)
+            Rows = $rowCount
+        }
+
+    } catch {
+        Write-Host "Lecture impossible : $($revision.Substring(0,8))"
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $revisionResults | Format-Table -AutoSize
+
+Commit   Rows
+------   ----
+2758e11c  161
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # 9. FIXTURE SNOWBALL
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> # =====================================================
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== SNOWBALL FIXTURE ==========" -ForegroundColor Cyan
+
+========== SNOWBALL FIXTURE ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $needle = 'MatchmakerHunt_Event_Snowball_Fight_Test_00'
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $checkFiles = @(
+    '.\Items_Analysis\hunts_1_14_7\matchmaker_hunts.jsonl',
+    '.\ParadoxDirector\game-data\matchmaker_hunts_table.json',
+    '.\ParadoxDirector\src\p2p\huntLaunchManifest.gamedata.test.ts'
+)
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $checkResults = @()
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> foreach ($file in $checkFiles) {
+    $found = $false
+
+    if (Test-Path $file) {
+        $found = [bool](
+            Select-String -Path $file -SimpleMatch $needle -Quiet
+        )
+    }
+
+    $checkResults += [PSCustomObject]@{
+        File = $file
+        ContainsSnowball = $found
+    }
+}
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> $checkResults | Format-Table -AutoSize
+
+File                                                          ContainsSnowball
+----                                                          ----------------
+.\Items_Analysis\hunts_1_14_7\matchmaker_hunts.jsonl                     False
+.\ParadoxDirector\game-data\matchmaker_hunts_table.json                  False
+.\ParadoxDirector\src\p2p\huntLaunchManifest.gamedata.test.ts             True
+
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Write-Host "`n========== GIT STATUS ==========" -ForegroundColor Cyan
+
+========== GIT STATUS ==========
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> git status --short
+
+PS E:\Hmnd\DauntlessRepo\Mystic-Paradox-NAS> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261110224350
+**********************

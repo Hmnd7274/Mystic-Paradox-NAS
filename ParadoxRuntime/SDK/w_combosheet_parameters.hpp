@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "ui_comboArray_structs.hpp"
-#include "ui_combo_structs.hpp"
 #include "UMG_structs.hpp"
-#include "Engine_structs.hpp"
 #include "ui_combo_keytype_structs.hpp"
+#include "ui_combo_structs.hpp"
+#include "ui_combo_attack_info_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "ui_weapon_attack_info_structs.hpp"
-#include "ui_combo_attack_info_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
 
 

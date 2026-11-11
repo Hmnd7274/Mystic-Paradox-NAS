@@ -24,7 +24,7 @@ test("the player-hosted manifest is the shared launch manifest plus the frozen G
     assert.ok(Manifest.mapPath.startsWith("/Game/Maps/"));
 });
 
-// The 10 BPGM_ArchonStoryMissions rows of the 1.14.7 matchmaker table (2026-10-11).
+// The story-mission/event rows present in the 1.14.7 matchmaker export.
 const STORY_MISSION_ROWS = [
     "11A_MatchmakerHunt_StoryMission_01_Terramane",
     "11A_MatchmakerHunt_StoryMission_02_Sally_Terrogg",
@@ -32,7 +32,6 @@ const STORY_MISSION_ROWS = [
     "MatchmakerHunt_Event_Dark_Harvest_Hard_01",
     "MatchmakerHunt_Event_Ramsgiving_01",
     "MatchmakerHunt_Event_Ramsgiving_02",
-    "MatchmakerHunt_Event_Snowball_Fight_Test_00",
     "MatchmakerHunt_Event_Anniversary_01",
     "MatchmakerHunt_Event_Anniversary_02",
     "MatchmakerHunt_StoryMission_Linnea_01"

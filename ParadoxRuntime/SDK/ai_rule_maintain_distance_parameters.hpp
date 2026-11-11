@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "coordination_message_structs.hpp"
 #include "ai_agent_group_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "coordination_message_structs.hpp"
 
 
 SDK_NAMESPACE_START

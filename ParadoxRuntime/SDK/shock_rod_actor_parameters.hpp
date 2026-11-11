@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "Engine_structs.hpp"
-#include "shockrod_collision_pair_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "shockrod_vfx_pair_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "shockrod_collision_pair_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "AkAudio_structs.hpp"
@@ -251,15 +251,6 @@ public:
 };
 DUMPER7_ASSERTS_shock_rod_actor_C_AuthDisconnectFrom;
 
-// Function shock_rod_actor.shock_rod_actor_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct shock_rod_actor_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_shock_rod_actor_C_ReceiveTick;
-
 // Function shock_rod_actor.shock_rod_actor_C.OnQueryFinishedEvent_Event_0
 // 0x0010 (0x0010 - 0x0000)
 struct shock_rod_actor_C_OnQueryFinishedEvent_Event_0 final
@@ -467,16 +458,6 @@ public:
 };
 DUMPER7_ASSERTS_shock_rod_actor_C_GetBeamRodPairs;
 
-// Function shock_rod_actor.shock_rod_actor_C.CanHitCBPushPullTarget
-// 0x0010 (0x0010 - 0x0000)
-struct shock_rod_actor_C_CanHitCBPushPullTarget final
-{
-public:
-	class UPrimitiveComponent*                    ComponentHit;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Hits_;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_shock_rod_actor_C_CanHitCBPushPullTarget;
-
 // Function shock_rod_actor.shock_rod_actor_C.HitPlayer_NoClientAuthDodging
 // 0x0328 (0x0328 - 0x0000)
 struct shock_rod_actor_C_HitPlayer_NoClientAuthDodging final
@@ -587,6 +568,25 @@ public:
 	struct FArchonCombatHitParams                 K2Node_MakeStruct_ArchonCombatHitParams;           // 0x0350(0x0140)(ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_shock_rod_actor_C_HitPlayer_ClientAuthDodging;
+
+// Function shock_rod_actor.shock_rod_actor_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct shock_rod_actor_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_shock_rod_actor_C_ReceiveTick;
+
+// Function shock_rod_actor.shock_rod_actor_C.CanHitCBPushPullTarget
+// 0x0010 (0x0010 - 0x0000)
+struct shock_rod_actor_C_CanHitCBPushPullTarget final
+{
+public:
+	class UPrimitiveComponent*                    ComponentHit;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Hits_;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_shock_rod_actor_C_CanHitCBPushPullTarget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

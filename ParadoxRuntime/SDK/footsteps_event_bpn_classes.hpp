@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "CinematicPlayerState_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
 #include "Enum_FootstepSockets_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_classes.hpp"
 #include "PhysicsCore_structs.hpp"
-#include "Archon_structs.hpp"
-#include "LocalizationFramework_structs.hpp"
 #include "jump_type_enum_structs.hpp"
+#include "Archon_structs.hpp"
+#include "CinematicPlayerState_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -40,13 +40,13 @@ public:
 
 public:
 	void GetIsValidSprintAttempt(bool* Valid);
-	void IsIkinemaEnabled(bool* return_0);
-	void CanMove(bool* return_0);
+	void IsIkinemaEnabled(bool* Return);
+	void CanMove(bool* Return);
 	void GetDesiredLocomotionState(EArchonLocomotionState* DesiredLocomotionState);
 	void GetJumpType(Ejump_type_enum* JumpType);
-	void IsInEdgeRecovery(bool* return_0);
+	void IsInEdgeRecovery(bool* Return);
 	void IsStrafing(bool* NewParam);
-	void IsVentJumping(bool* return_0);
+	void IsVentJumping(bool* Return);
 	void IsAPlayerCharacter(bool* IsAPlayerCharacter_0);
 	void GetIsInCave(bool* IsInCave);
 	void GetIsDodgingInterface(bool* IsDodging);
@@ -58,7 +58,7 @@ public:
 	void GetWeaponMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances);
 	void GetBodyMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances);
 	void ResetMaxFallTimer(bool* Out);
-	void GetIsSprinting(bool* return_0);
+	void GetIsSprinting(bool* Return);
 	void GetNumPlayersReviving(int32* NumPlayers);
 	void IsHelmVisible(bool* Visible);
 	void GetFacialHairSlotComponent(class USkeletalMeshComponent** Facial_Hair_Slot);
@@ -80,7 +80,7 @@ public:
 	void GetDynamicMaterials(TArray<class UMaterialInstanceDynamic*>* DynamicMaterials);
 	void GetBleedoutLevel(int32* Level);
 	void GetAbilitySystemComponent(class UAbilitySystemComponent** AbilitySystem);
-	void SetCollisionWithDestructible(bool Enabled, bool* return_0);
+	void SetCollisionWithDestructible(bool Enabled, bool* Return);
 	void GetHeadSlotComponent_(class USkeletalMeshComponent** Head_Slot_Component);
 	void GetLantern(class AArchonLantern** Lantern);
 	void GetHairSlotComponent(class USkeletalMeshComponent** HairSlotComponent);
@@ -108,7 +108,7 @@ public:
 	void GetPlayerStates(struct Fplayer_states_struct* States);
 	void GetPlayerSkinMaterials(TArray<class UMaterialInstanceDynamic*>* PlayerSkinMaterials);
 	void GetPelvisCorrection(bool* Enabled);
-	void SetCollisionWithAMonster(bool Enabled, bool* return_0);
+	void SetCollisionWithAMonster(bool Enabled, bool* Return);
 	void GetBPLastMovementInputVector(struct FVector* LastMovementInputVector);
 	void GetPlayerRole(class AArchonPlayerRole** PlayerRole);
 	void GetIsChainbladesSpin(bool* IsChainbladesSpin);
@@ -117,13 +117,13 @@ public:
 	void GetDebrisData(EPhysicalSurface SurfaceType, struct Fdebris_vfx_struct* FoundVFX, bool* HasFound, class FName* SurfaceName) const;
 	class UParticleSystemComponent* EmitFootstepVFX(class UParticleSystem* EmitterTemplate, const struct FVector& Location, const struct FRotator& Rotation) const;
 	void GetPlayerSupportInfo(bool* IsSupported, struct FHitResult* PlayerSupportHitInfo, float* DistanceToGround) const;
-	void IsPlantingBanner(bool* return_0) const;
-	void IsEmoting(bool* return_0) const;
-	void IsInputEnabled_(bool* return_0) const;
+	void IsPlantingBanner(bool* Return) const;
+	void IsEmoting(bool* Return) const;
+	void IsInputEnabled_(bool* Return) const;
 	void GetGenderIdentity(ECharacterGender* GenderId) const;
 	void GetCurrentAimDirection(struct FVector* CurrentAimDirection) const;
 	void CanVentTraversal(bool* CanTraverse) const;
-	void GetMountingComponent(class UArchonMountingComponent** return_0) const;
+	void GetMountingComponent(class UArchonMountingComponent** Return) const;
 	void GetRawMovementInput(struct FVector* RawInput) const;
 	void IsFrostbitten(bool* Frostbitten_) const;
 

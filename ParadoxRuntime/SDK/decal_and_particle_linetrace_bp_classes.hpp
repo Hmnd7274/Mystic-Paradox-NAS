@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "decal_and_particle_linetrace_struct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "decal_and_particle_linetrace_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

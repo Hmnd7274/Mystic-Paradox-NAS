@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ah_arms_shrinking_struct_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "ah_body_types_struct_structs.hpp"
-#include "ah_arms_shrinking_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

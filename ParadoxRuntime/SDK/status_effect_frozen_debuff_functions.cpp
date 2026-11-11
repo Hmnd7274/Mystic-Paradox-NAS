@@ -76,30 +76,6 @@ void Astatus_effect_frozen_debuff_C::OnGameplayEventTriggered(const struct FGame
 }
 
 
-// Function status_effect_frozen_debuff.status_effect_frozen_debuff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Astatus_effect_frozen_debuff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function status_effect_frozen_debuff.status_effect_frozen_debuff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Astatus_effect_frozen_debuff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function status_effect_frozen_debuff.status_effect_frozen_debuff_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -131,6 +107,30 @@ void Astatus_effect_frozen_debuff_C::StopFrozenAnimation()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopFrozenAnimation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function status_effect_frozen_debuff.status_effect_frozen_debuff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Astatus_effect_frozen_debuff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function status_effect_frozen_debuff.status_effect_frozen_debuff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Astatus_effect_frozen_debuff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

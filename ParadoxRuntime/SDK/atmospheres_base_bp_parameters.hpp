@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "AtmosphereLinearColorParameters_structs.hpp"
-#include "weather_type_enum_structs.hpp"
 #include "Archon_structs.hpp"
+#include "weather_type_enum_structs.hpp"
 #include "AtmosphereScalarParameters_structs.hpp"
 #include "AtmosphereLayer_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AtmosphereRing_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AtmosphereLinearColorParameters_structs.hpp"
 #include "AtmosphereCard_structs.hpp"
 #include "InputCore_structs.hpp"
 

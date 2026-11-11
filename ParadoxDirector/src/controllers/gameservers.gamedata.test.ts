@@ -26,9 +26,9 @@ const LEGACY_UNRESOLVED_EXPEDITIONS = [
 
 test("all current launch-table destinations are audited and stale rows are explicit", () => {
     const Coverage = AuditHuntLaunchCoverage();
-    // 1.14.7 import: 161 exported rows + 7 older vendored rows the 1.14.7 export no longer contains.
-    assert.equal(Coverage.totalPlayerHunts, 168);
-    assert.equal(Coverage.resolvablePlayerHunts, 161);
+    // 1.14.7 export: 161 rows, including seven legacy expeditions with unresolved destinations.
+    assert.equal(Coverage.totalPlayerHunts, 162);
+    assert.equal(Coverage.resolvablePlayerHunts, 155);
     assert.deepEqual(Coverage.unresolvedPlayerHunts, LEGACY_UNRESOLVED_EXPEDITIONS);
     // 572 without the 1.14.7 arena_{hard,elite}_matchmaker_hunts_new tables (22 rows each).
     assert.ok(Coverage.referencedMatchmakerRows >= 600, "Trials auxiliary rows, including the 1.14.7 _new tables, must be included");

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "cell_buff_base_bp_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
+#include "cell_buff_base_bp_classes.hpp"
 #include "GameplayTags_structs.hpp"
 
 
@@ -50,9 +50,9 @@ public:
 	void MulticastOnAdded();
 	void TextMulti(const class FString& Name_0);
 	void OnHitRequirementMet();
-	void OnAdded();
 	void BuffExpired();
 	void RemoveElementalForms();
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

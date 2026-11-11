@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_requirement_result_structs.hpp"
 #include "projectile_base_bp_classes.hpp"
 #include "Engine_structs.hpp"
-#include "reflectable_projectile_returntarget_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "reflectable_projectile_returntarget_type_structs.hpp"
 #include "Archon_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "behemoth_requirement_result_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -55,12 +55,12 @@ public:
 	void ExecuteUbergraph_shockmane_balllightning_proj(int32 EntryPoint);
 	void ReceiveArchonPointDamage(float Damage, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FArchonExtendedDamageInfo& InExtendedDamageInfo);
 	void ProjectileExploded(const struct FVector& ExplosionLocation, EProjectileExplodeType ExplodeType);
-	void OnProjectileStopped();
 	void AuthOnReflected(class AActor* ReflectingActor);
 	void AuthOnProjectileDamageOverlap(class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, const struct FHitResult& SweepResult);
-	void AuthSweepHitEvent();
 	void ReceiveBeginPlay();
 	void Explode_On_Hit(const struct FVector& Explosion_Location_0, const struct FHitResult& HitResult, float ReflectDamage_0);
+	void OnProjectileStopped();
+	void AuthSweepHitEvent();
 	void UserConstructionScript();
 	uint8 CanHitThisTarget(class AActor* TargetActor);
 

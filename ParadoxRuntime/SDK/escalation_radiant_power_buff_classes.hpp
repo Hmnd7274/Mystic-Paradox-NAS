@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "cell_buff_base_bp_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
+#include "cell_buff_base_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -45,11 +45,11 @@ public:
 public:
 	void ExecuteUbergraph_escalation_radiant_power_buff(int32 EntryPoint);
 	void SetReadyToUseAgain();
-	void OnAdded();
 	void BuffExpired();
 	void MulticastOnAdded();
 	void TextMulti(const class FString& Name_0);
 	void OnGameplayEventTriggered(const struct FGameplayEventData& Payload);
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

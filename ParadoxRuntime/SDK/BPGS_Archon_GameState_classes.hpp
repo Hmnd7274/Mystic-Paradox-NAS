@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
-#include "behemoth_source_struct_structs.hpp"
-#include "combat_text_type_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
+#include "combat_text_type_structs.hpp"
+#include "behemoth_source_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

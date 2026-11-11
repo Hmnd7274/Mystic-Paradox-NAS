@@ -23,7 +23,7 @@ public:
 	void*                                         VTable;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
 
 public:
-	void GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* return_0);
+	void GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* Return);
 
 public:
 	static class UClass* StaticClass()

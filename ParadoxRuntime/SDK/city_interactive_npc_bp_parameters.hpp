@@ -12,8 +12,8 @@
 
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CC_MakeupDataTable_Type_structs.hpp"
 #include "morphtargetname_value_struct_structs.hpp"
+#include "CC_MakeupDataTable_Type_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

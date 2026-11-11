@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "aoe_base_bp_classes.hpp"
 #include "Archon_structs.hpp"
+#include "aoe_base_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START

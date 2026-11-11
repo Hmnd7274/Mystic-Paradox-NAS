@@ -711,9 +711,9 @@ void Iplayer_interface_C::PlayNetworkedMontage(class UAnimMontage* Montage, floa
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::SetCollisionWithDestructible(bool Enabled, bool* return_0)
+void Iplayer_interface_C::SetCollisionWithDestructible(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"SetCollisionWithDestructible", FnName));
@@ -724,8 +724,8 @@ void Iplayer_interface_C::SetCollisionWithDestructible(bool Enabled, bool* retur
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1429,9 +1429,9 @@ void Iplayer_interface_C::GetNumPlayersReviving(int32* NumPlayers)
 // Function player_interface.player_interface_C.GetIsSprinting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::GetIsSprinting(bool* return_0)
+void Iplayer_interface_C::GetIsSprinting(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"GetIsSprinting", FnName));
@@ -1440,8 +1440,8 @@ void Iplayer_interface_C::GetIsSprinting(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1902,9 +1902,9 @@ void Iplayer_interface_C::IsAPlayerCharacter(bool* IsAPlayerCharacter_0)
 // Function player_interface.player_interface_C.IsVentJumping
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsVentJumping(bool* return_0)
+void Iplayer_interface_C::IsVentJumping(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsVentJumping", FnName));
@@ -1913,8 +1913,8 @@ void Iplayer_interface_C::IsVentJumping(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1940,9 +1940,9 @@ void Iplayer_interface_C::IsStrafing(bool* NewParam)
 // Function player_interface.player_interface_C.IsInEdgeRecovery
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsInEdgeRecovery(bool* return_0)
+void Iplayer_interface_C::IsInEdgeRecovery(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsInEdgeRecovery", FnName));
@@ -1951,8 +1951,8 @@ void Iplayer_interface_C::IsInEdgeRecovery(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1997,9 +1997,9 @@ void Iplayer_interface_C::GetDesiredLocomotionState(EArchonLocomotionState* Desi
 // Function player_interface.player_interface_C.CanMove
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::CanMove(bool* return_0)
+void Iplayer_interface_C::CanMove(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"CanMove", FnName));
@@ -2008,17 +2008,17 @@ void Iplayer_interface_C::CanMove(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function player_interface.player_interface_C.IsIkinemaEnabled
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsIkinemaEnabled(bool* return_0)
+void Iplayer_interface_C::IsIkinemaEnabled(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsIkinemaEnabled", FnName));
@@ -2027,8 +2027,8 @@ void Iplayer_interface_C::IsIkinemaEnabled(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -2230,9 +2230,9 @@ void Iplayer_interface_C::ResyncMovementMode(EMovementMode NewMovement, uint8 Ne
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::SetCollisionWithAMonster(bool Enabled, bool* return_0)
+void Iplayer_interface_C::SetCollisionWithAMonster(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"SetCollisionWithAMonster", FnName));
@@ -2243,8 +2243,8 @@ void Iplayer_interface_C::SetCollisionWithAMonster(bool Enabled, bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -2512,9 +2512,9 @@ void Iplayer_interface_C::GetGenderIdentity(ECharacterGender* GenderId) const
 // Function player_interface.player_interface_C.IsInputEnabled?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsInputEnabled_(bool* return_0) const
+void Iplayer_interface_C::IsInputEnabled_(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsInputEnabled?", FnName));
@@ -2523,17 +2523,17 @@ void Iplayer_interface_C::IsInputEnabled_(bool* return_0) const
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function player_interface.player_interface_C.IsEmoting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsEmoting(bool* return_0) const
+void Iplayer_interface_C::IsEmoting(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsEmoting", FnName));
@@ -2542,17 +2542,17 @@ void Iplayer_interface_C::IsEmoting(bool* return_0) const
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function player_interface.player_interface_C.IsPlantingBanner
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Iplayer_interface_C::IsPlantingBanner(bool* return_0) const
+void Iplayer_interface_C::IsPlantingBanner(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"IsPlantingBanner", FnName));
@@ -2561,8 +2561,8 @@ void Iplayer_interface_C::IsPlantingBanner(bool* return_0) const
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -2615,9 +2615,9 @@ void Iplayer_interface_C::CanVentTraversal(bool* CanTraverse) const
 // Function player_interface.player_interface_C.GetMountingComponent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UArchonMountingComponent**        return_0                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UArchonMountingComponent**        Return                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Iplayer_interface_C::GetMountingComponent(class UArchonMountingComponent** return_0) const
+void Iplayer_interface_C::GetMountingComponent(class UArchonMountingComponent** Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"GetMountingComponent", FnName));
@@ -2626,8 +2626,8 @@ void Iplayer_interface_C::GetMountingComponent(class UArchonMountingComponent** 
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

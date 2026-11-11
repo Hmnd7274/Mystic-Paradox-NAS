@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "stagger_type_structs.hpp"
+#include "intensity_level_structs.hpp"
 #include "Engine_classes.hpp"
-#include "stagger_priority_structs.hpp"
 #include "Archon_structs.hpp"
 #include "behemoth_resistset_type_structs.hpp"
-#include "intensity_level_structs.hpp"
+#include "stagger_priority_structs.hpp"
+#include "stagger_type_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
 #include "condition_requirement_type_structs.hpp"

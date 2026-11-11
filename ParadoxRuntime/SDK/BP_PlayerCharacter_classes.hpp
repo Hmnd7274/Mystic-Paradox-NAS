@@ -11,30 +11,30 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "helm_hiding_enum_structs.hpp"
-#include "Archon_structs.hpp"
-#include "Archon_classes.hpp"
 #include "Struct_PlayerInventoryEntry_structs.hpp"
-#include "reticle_type_structs.hpp"
+#include "player_input_mode_enum_structs.hpp"
 #include "PhoenixGameplayCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "dp_weapon_attach_states_enum_structs.hpp"
-#include "hitfx_optimality_structs.hpp"
 #include "Struct_PlayerSpeedCurve_structs.hpp"
-#include "CinematicPlayerState_structs.hpp"
-#include "weather_type_enum_structs.hpp"
-#include "player_aiming_state_structs.hpp"
+#include "Archon_structs.hpp"
+#include "Archon_classes.hpp"
 #include "jump_type_enum_structs.hpp"
 #include "player_camera_state_enum_structs.hpp"
-#include "player_input_mode_enum_structs.hpp"
+#include "CinematicPlayerState_structs.hpp"
+#include "player_aiming_state_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "hitfx_optimality_structs.hpp"
+#include "helm_hiding_enum_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "reticle_type_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
+#include "dp_weapon_attach_states_enum_structs.hpp"
 #include "PhoenixGameplayBase_structs.hpp"
 #include "EPlayerStatesDefault_structs.hpp"
 #include "EUsableObjectResourceCostTypes_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "weather_type_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -565,7 +565,7 @@ public:
 	TArray<class AActor*>                         CachedAtmospheres;                                 // 0x1AA0(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                          Chainblades_Spin;                                  // 0x1AB0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	uint8                                         Pad_1AB1[0x3];                                     // 0x1AB1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Wind_Speed;                                        // 0x1AB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         wind_speed;                                        // 0x1AB4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Wind_Rotation;                                     // 0x1AB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Wind_Parameters;                                   // 0x1ABC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -996,7 +996,7 @@ public:
 	void GetBodyType(ECharacterBodyType* BodyType_0);
 	void GetLantern(class AArchonLantern** Lantern_0);
 	void GetHeadSlotComponent_(class USkeletalMeshComponent** Head_Slot_Component);
-	void SetCollisionWithDestructible(bool Enabled, bool* return_0);
+	void SetCollisionWithDestructible(bool Enabled, bool* Return);
 	void GetAbilitySystemComponent(class UAbilitySystemComponent** AbilitySystem);
 	void GetBleedoutLevel(int32* Level);
 	void GetDynamicMaterials(TArray<class UMaterialInstanceDynamic*>* DynamicMaterials);
@@ -1018,7 +1018,7 @@ public:
 	void GetFacialHairSlotComponent(class USkeletalMeshComponent** Facial_Hair_Slot);
 	void IsHelmVisible(bool* Visible);
 	void GetNumPlayersReviving(int32* NumPlayers);
-	void GetIsSprinting(bool* return_0);
+	void GetIsSprinting(bool* Return);
 	void ResetMaxFallTimer(bool* Out);
 	void GetWeaponMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances);
 	void GetBodyMaterials(TArray<class UMaterialInstanceDynamic*>* MaterialInstances);
@@ -1029,19 +1029,19 @@ public:
 	void GetIsDodgingInterface(bool* IsDodging);
 	void GetIsInCave(bool* IsInCave_0);
 	void IsAPlayerCharacter(bool* IsAPlayerCharacter_0);
-	void IsVentJumping(bool* return_0);
+	void IsVentJumping(bool* Return);
 	void IsStrafing(bool* NewParam);
-	void IsInEdgeRecovery(bool* return_0);
+	void IsInEdgeRecovery(bool* Return);
 	void GetJumpType(Ejump_type_enum* JumpType_0);
 	void GetDesiredLocomotionState(EArchonLocomotionState* DesiredLocomotionState);
-	void CanMove(bool* return_0);
-	void IsIkinemaEnabled(bool* return_0);
+	void CanMove(bool* Return);
+	void IsIkinemaEnabled(bool* Return);
 	void GetIsValidSprintAttempt(bool* Valid);
 	void GetPlayerStates(struct Fplayer_states_struct* States);
 	void GetCurrentLocomotionState(EArchonLocomotionState* State);
 	void GetPlayerSkinMaterials(TArray<class UMaterialInstanceDynamic*>* PlayerSkinMaterials);
 	void GetPelvisCorrection(bool* Enabled);
-	void SetCollisionWithAMonster(bool Enabled, bool* return_0);
+	void SetCollisionWithAMonster(bool Enabled, bool* Return);
 	void GetBPLastMovementInputVector(struct FVector* LastMovementInputVector_0);
 	void GetPlayerRole(class AArchonPlayerRole** PlayerRole_0);
 	void GetIsChainbladesSpin(bool* IsChainbladesSpin);
@@ -1090,12 +1090,12 @@ public:
 	bool IsPlayerAiming() const;
 	void GetCurrentAimDirection(struct FVector* CurrentAimDirection_0) const;
 	void GetGenderIdentity(ECharacterGender* GenderId_0) const;
-	void IsInputEnabled_(bool* return_0) const;
-	void IsEmoting(bool* return_0) const;
-	void IsPlantingBanner(bool* return_0) const;
+	void IsInputEnabled_(bool* Return) const;
+	void IsEmoting(bool* Return) const;
+	void IsPlantingBanner(bool* Return) const;
 	void GetPlayerSupportInfo(bool* IsSupported, struct FHitResult* PlayerSupportHitInfo, float* DistanceToGround) const;
 	void CanVentTraversal(bool* CanTraverse) const;
-	void GetMountingComponent(class UArchonMountingComponent** return_0) const;
+	void GetMountingComponent(class UArchonMountingComponent** Return) const;
 	void GetRawMovementInput(struct FVector* RawInput_0) const;
 	void IsFrostbitten(bool* Frostbitten_) const;
 	void GetFallbackProjectileSpawnOffset(struct FVector* Offset) const;

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Archon_structs.hpp"
 #include "actions_animset_str_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

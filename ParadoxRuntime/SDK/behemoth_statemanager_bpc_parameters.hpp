@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "blackboard_comparison_structs.hpp"
+#include "behemoth_state_description_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
 #include "behemoth_state_event_structs.hpp"
 #include "behemoth_statemanager_timedevent_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
 #include "behemoth_state_int_pair_structs.hpp"
-#include "blackboard_comparison_structs.hpp"
 #include "behemoth_state_conditions_structs.hpp"
 #include "statemanager_check_result_structs.hpp"
-#include "behemoth_state_description_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

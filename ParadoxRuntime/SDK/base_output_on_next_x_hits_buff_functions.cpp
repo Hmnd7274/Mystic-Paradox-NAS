@@ -80,30 +80,6 @@ void Abase_output_on_next_x_hits_buff_C::OnPostWeaponHitComplete_Event_0(const s
 }
 
 
-// Function base_output_on_next_x_hits_buff.base_output_on_next_x_hits_buff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abase_output_on_next_x_hits_buff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function base_output_on_next_x_hits_buff.base_output_on_next_x_hits_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abase_output_on_next_x_hits_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function base_output_on_next_x_hits_buff.base_output_on_next_x_hits_buff_C.CustomCanAffectTarget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -145,6 +121,30 @@ void Abase_output_on_next_x_hits_buff_C::HandleHitEvent(class AActor* DamagedAct
 	Parms.DamageAndInstigatorTags = std::move(DamageAndInstigatorTags);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function base_output_on_next_x_hits_buff.base_output_on_next_x_hits_buff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abase_output_on_next_x_hits_buff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function base_output_on_next_x_hits_buff.base_output_on_next_x_hits_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abase_output_on_next_x_hits_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

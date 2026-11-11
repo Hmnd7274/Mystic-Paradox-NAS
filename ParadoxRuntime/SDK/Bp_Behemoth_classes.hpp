@@ -10,43 +10,43 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_loco_type_structs.hpp"
-#include "vfx_with_socket_struct_structs.hpp"
-#include "part_resist_multiplier_structs.hpp"
-#include "Engine_structs.hpp"
-#include "damage_types_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "shiny_drop_queue_data_structs.hpp"
-#include "Struct_AttackWindowInfo_structs.hpp"
-#include "BehemothDamageTable_structs.hpp"
-#include "spawned_monter_trail_struct_structs.hpp"
-#include "select_montage_from_angle_str_structs.hpp"
-#include "behemoth_intro_cinematic_data_structs.hpp"
-#include "Struct_TagToTrailEffects_structs.hpp"
-#include "vfx_state_id_struct_structs.hpp"
-#include "stagger_type_structs.hpp"
-#include "TranslateWarpOverrideType_structs.hpp"
-#include "TurnWarpOverrideType_structs.hpp"
-#include "behemoth_spawn_params_structs.hpp"
 #include "behemoth_stagger_type_structs.hpp"
-#include "pivot_target_type_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
-#include "pivot_anim_set_structs.hpp"
-#include "behemoth_tuning_data_structs.hpp"
 #include "Struct_TagToHitEffects_structs.hpp"
+#include "behemoth_tuning_data_structs.hpp"
+#include "stagger_instance_structs.hpp"
+#include "TranslateWarpOverrideType_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Struct_AttackWindowInfo_structs.hpp"
+#include "damage_types_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
+#include "vfx_with_socket_struct_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
+#include "part_resist_multiplier_structs.hpp"
+#include "vfx_state_id_struct_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "BehemothDamageTable_structs.hpp"
+#include "select_montage_from_angle_str_structs.hpp"
+#include "spawned_monter_trail_struct_structs.hpp"
+#include "pattern_targetting_type_structs.hpp"
+#include "behemoth_resistset_type_structs.hpp"
+#include "Struct_TagToTrailEffects_structs.hpp"
+#include "TurnWarpOverrideType_structs.hpp"
+#include "stagger_type_structs.hpp"
+#include "behemoth_intro_cinematic_data_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
+#include "behemoth_loco_type_structs.hpp"
+#include "pivot_target_type_structs.hpp"
+#include "pivot_anim_set_structs.hpp"
+#include "subtree_injection_info_structs.hpp"
+#include "behemoth_bodypart_type_structs.hpp"
+#include "shiny_drop_queue_data_structs.hpp"
+#include "behemoth_spawn_params_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "stagger_instance_structs.hpp"
-#include "subtree_injection_info_structs.hpp"
-#include "behemoth_resistset_type_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
-#include "behemoth_bodypart_type_structs.hpp"
 #include "behemoth_part_type_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
-#include "pattern_targetting_type_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -325,7 +325,7 @@ public:
 	bool                                          DebugPossibleLoot;                                 // 0x0F59(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F5A[0x2];                                      // 0x0F5A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ClassificationName;                                // 0x0F5C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         IKinemaGlobalAlpha;                                // 0x0F64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         IkinemaGlobalAlpha;                                // 0x0F64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class Umonsterpart_bpc_C*                     L_StaggerPart;                                     // 0x0F68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct Fbehemoth_intro_cinematic_data         IntroCinematicData;                                // 0x0F70(0x0090)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	float                                         TurnRadiusThresholdMultiplier;                     // 0x1000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -736,7 +736,7 @@ public:
 	void GetFleeValues(float* CurrentFleeHealthThreshold_0, float* TimeUntilFlee, float* TotalFleePrepTime, bool* CurrentlyFleeing);
 	void GetStaggerLookupTable(class Ustagger_lookup_table_C** StaggerLookupTable_0);
 	void GetGenericActionLookupTable(class Ugeneric_action_lookup_table_C** GenericActionLookupTable_0);
-	void GetIsDead(bool* return_0);
+	void GetIsDead(bool* Return);
 	void GetActionRate(float* ActionRate);
 	void AddPartResistMultiplier(const struct Fpart_resist_multiplier& NewPartResistMultiplier, struct FGuid* UniqueId);
 	void GetPartResistMultipliersForType(Ebehemoth_part_type PartType, TArray<struct Fpart_resist_multiplier>* ResistMultipliers);
@@ -753,7 +753,7 @@ public:
 	void GetIsInTiredState(bool* IsInTiredState);
 	void SetStaggerProof(bool IsStaggerProof_, bool* Successful);
 	void AddPaintedTargetWidget(bool ManualAttachment, const struct FTransform& RelativeTransform, class UWidgetComponent** Widget);
-	void RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* return_0);
+	void RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* Return);
 	void EvaluateActionsByTagQuery(const struct FGameplayTagQuery& TagQuery, bool SkipCooldownAndActionConditions, bool DebugScores, float* BestActionScore, class AActor** BestAction);
 	void CanPartsBeExposed(bool* PartsCanBeExposed);
 	void CreateBreakPartLootForPlayers(class FName LootID, Ebehemoth_bodypart_type BrokenBodyPart, TMap<class FName, struct Fplayer_loot_instances_array>* LootMap);
@@ -779,7 +779,7 @@ public:
 	void SetTrackingID(const struct FGuid& TrackingId, bool* Output);
 	void GetTrackingID(struct FGuid* TrackingId);
 	bool SetGatherableVisible(bool IsVisible);
-	void GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* return_0);
+	void GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* Return);
 	bool IsAbleToBuildFrustration();
 
 	void IsInState(Ebehemoth_states_enum State, bool* InState) const;

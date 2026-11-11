@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "relative_or_world_structs.hpp"
+#include "eqs_aimed_projectile_data_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "eqs_gameplay_type_structs.hpp"
 #include "eqs_lobbed_projectile_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "eqs_aimed_projectile_data_structs.hpp"
 #include "eqs_actor_data_structs.hpp"
+#include "relative_or_world_structs.hpp"
+#include "eqs_gameplay_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

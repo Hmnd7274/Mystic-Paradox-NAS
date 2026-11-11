@@ -13,8 +13,8 @@
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "HuntActivityType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "HuntActivityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

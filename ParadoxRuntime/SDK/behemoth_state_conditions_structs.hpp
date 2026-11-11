@@ -12,8 +12,8 @@
 
 #include "behemoth_statecondition_type_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
 #include "blackboard_comparison_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 
 
 SDK_NAMESPACE_START

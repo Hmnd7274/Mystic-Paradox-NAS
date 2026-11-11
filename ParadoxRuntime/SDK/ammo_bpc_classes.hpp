@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ammo_type_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ammo_type_structs.hpp"
 #include "Archon_classes.hpp"
 
 

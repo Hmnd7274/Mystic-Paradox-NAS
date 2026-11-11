@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "eqs_actor_data_structs.hpp"
 #include "Engine_structs.hpp"
 #include "actor_spawn_table_structs.hpp"
 #include "actor_eqs_spawn_full_structs.hpp"
 #include "eqs_gameplay_data_structs.hpp"
-#include "eqs_actor_data_structs.hpp"
 #include "actor_spawn_data_structs.hpp"
 
 

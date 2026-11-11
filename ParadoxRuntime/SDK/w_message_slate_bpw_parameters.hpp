@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "UMG_structs.hpp"
+#include "message_slate_image_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "message_slate_image_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "InputCore_structs.hpp"

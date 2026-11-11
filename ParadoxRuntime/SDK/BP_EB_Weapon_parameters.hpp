@@ -14,9 +14,9 @@
 #include "Archon_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
-#include "Struct_ElementToAKEvent_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "Struct_ElementToAKEvent_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -184,15 +184,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_EB_Weapon_C_ReplicatedSwordchargesToUI;
 
-// Function BP_EB_Weapon.BP_EB_Weapon_C.CallWeaponSpecificFunction
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EB_Weapon_C_CallWeaponSpecificFunction final
-{
-public:
-	class FName                                   Function_Name;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_EB_Weapon_C_CallWeaponSpecificFunction;
-
 // Function BP_EB_Weapon.BP_EB_Weapon_C.OnPostMitDamage
 // 0x0060 (0x0060 - 0x0000)
 struct BP_EB_Weapon_C_OnPostMitDamage final
@@ -223,26 +214,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_EB_Weapon_C_EnableSuperModeEffects;
 
-// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboEnded
-// 0x0028 (0x0028 - 0x0000)
-struct BP_EB_Weapon_C_OnComboEnded final
-{
-public:
-	EArchonCombatEndReason                        Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FWeaponComboData                       WeaponComboData;                                   // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_EB_Weapon_C_OnComboEnded;
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboNextMove
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EB_Weapon_C_OnComboNextMove final
-{
-public:
-	struct FWeaponComboData                       WeaponComboData;                                   // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_EB_Weapon_C_OnComboNextMove;
-
 // Function BP_EB_Weapon.BP_EB_Weapon_C.Debug Set Weapon Color
 // 0x0010 (0x0010 - 0x0000)
 struct BP_EB_Weapon_C_Debug_Set_Weapon_Color final
@@ -251,19 +222,6 @@ public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_EB_Weapon_C_Debug_Set_Weapon_Color;
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.SpecialAttackReady
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EB_Weapon_C_SpecialAttackReady final
-{
-public:
-	bool                                          QReady;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetCurrentMeter_CurrentMeterAmount;       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetMaxMeter_MaxMeter;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_EB_Weapon_C_SpecialAttackReady;
 
 // Function BP_EB_Weapon.BP_EB_Weapon_C.UpdateSuperModeFX
 // 0x00D0 (0x00D0 - 0x0000)
@@ -540,6 +498,48 @@ public:
 	float                                         CallFunc_GetMaxMeter_MaxMeter;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_EB_Weapon_C_GetMaxMeterCharge;
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboEnded
+// 0x0028 (0x0028 - 0x0000)
+struct BP_EB_Weapon_C_OnComboEnded final
+{
+public:
+	EArchonCombatEndReason                        Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FWeaponComboData                       WeaponComboData;                                   // 0x0008(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_EB_Weapon_C_OnComboEnded;
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboNextMove
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EB_Weapon_C_OnComboNextMove final
+{
+public:
+	struct FWeaponComboData                       WeaponComboData;                                   // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_EB_Weapon_C_OnComboNextMove;
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.CallWeaponSpecificFunction
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EB_Weapon_C_CallWeaponSpecificFunction final
+{
+public:
+	class FName                                   Function_Name;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EB_Weapon_C_CallWeaponSpecificFunction;
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.SpecialAttackReady
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EB_Weapon_C_SpecialAttackReady final
+{
+public:
+	bool                                          QReady;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetCurrentMeter_CurrentMeterAmount;       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetMaxMeter_MaxMeter;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_EB_Weapon_C_SpecialAttackReady;
 
 // Function BP_EB_Weapon.BP_EB_Weapon_C.CanExecuteComboTransition
 // 0x00C8 (0x00C8 - 0x0000)

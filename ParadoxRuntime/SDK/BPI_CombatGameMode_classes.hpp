@@ -48,7 +48,7 @@ public:
 	void StartEndOfMatchCeremony(bool Success_, float Duration, class AArchonBehemoth* BehemothKilled, EndOfMatch_GameType GameModeType);
 	void GetGameModeTunables(struct Fgame_mode_tunables* GameModeTunables);
 	void SetGameModeTunables(const struct Fgame_mode_tunables& GameModeTunables);
-	void GetIsAnyBehemothInCombat(bool* return_0);
+	void GetIsAnyBehemothInCombat(bool* Return);
 	void SetDangerSystemPaused(bool Paused);
 	void GetKillLootOverrideForBehemoth(class FName BehemothName, int32* KillLootAmountOverride);
 	void AreMultipleBehemothsActive(bool* MultiBehemothsActive, int32* NumBehemoths);

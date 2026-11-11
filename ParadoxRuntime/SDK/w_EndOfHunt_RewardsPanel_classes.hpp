@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "CoreXP_Types_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Archon_structs.hpp"
-#include "CoreXP_Types_structs.hpp"
 
 
 SDK_NAMESPACE_START

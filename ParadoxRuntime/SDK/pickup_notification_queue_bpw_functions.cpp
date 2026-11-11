@@ -230,9 +230,9 @@ void Upickup_notification_queue_bpw_C::GetProgressNotificationDetails(const clas
 // Parameters:
 // const class FString&                    ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // Eloot_condition_type                    ConditionType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Upickup_notification_queue_bpw_C::IsHuntPassProgress(const class FString& ItemId, Eloot_condition_type ConditionType, bool* return_0)
+void Upickup_notification_queue_bpw_C::IsHuntPassProgress(const class FString& ItemId, Eloot_condition_type ConditionType, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsHuntPassProgress", FnName));
@@ -244,8 +244,8 @@ void Upickup_notification_queue_bpw_C::IsHuntPassProgress(const class FString& I
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

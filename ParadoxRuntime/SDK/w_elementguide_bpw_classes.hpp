@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "LoadoutStatTypes_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "LoadoutStatTypes_structs.hpp"
 
 
 SDK_NAMESPACE_START

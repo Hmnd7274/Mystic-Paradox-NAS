@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "homing_fx_component_instance_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "homing_fx_component_instance_structs.hpp"
 #include "vfx_particle_emitter_shapes_enum_structs.hpp"
 
 

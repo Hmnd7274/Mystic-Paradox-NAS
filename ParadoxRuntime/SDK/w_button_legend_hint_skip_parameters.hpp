@@ -46,7 +46,7 @@ public:
 	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_Success;                        // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_message;                        // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_Message;                        // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<struct FOnlineStorePhoenixOffer>       K2Node_CustomEvent_OnlineStoreOffers;              // 0x0088(0x0010)(ConstParm, ReferenceParm)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_1;            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FOnlineStorePhoenixOffer               CallFunc_Array_Get_Item;                           // 0x00A0(0x0230)()

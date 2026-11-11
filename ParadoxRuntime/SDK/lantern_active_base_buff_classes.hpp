@@ -37,8 +37,8 @@ public:
 public:
 	void ExecuteUbergraph_lantern_active_base_buff(int32 EntryPoint);
 	void MulticastOnAdded();
-	void ReceiveDestroyed();
 	void GetLantern(class AArchonLantern** Lantern);
+	void ReceiveDestroyed();
 
 public:
 	static class UClass* StaticClass()

@@ -36,7 +36,7 @@ public:
 	bool                                          CallFunc_BeginTransaction_ReturnValue;             // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Commit_ReturnValue;                       // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class Iplayer_controller_interface_C> K2Node_CustomEvent_Player;                // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class Iplayer_controller_interface_C> K2Node_CustomEvent_player;                // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class AArchonBehemoth*                        K2Node_CustomEvent_Spawned_Behemoth;               // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class Uglobal_event_dispatcher_C*             CallFunc_Get_Global_Event_Dispatcher_Global_Event_Dispatcher; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Erankings_enum                                K2Node_CustomEvent_Team_Rank;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_tuning_data_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "elemental_health_init_updated_data_structs.hpp"
-#include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "elemental_health_init_updated_data_structs.hpp"
+#include "behemoth_tuning_data_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START

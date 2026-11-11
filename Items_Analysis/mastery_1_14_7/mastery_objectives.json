@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "source": "Dauntless 1.14.7 CL 647472: mastery_card_table, achievements_table (CatalogExporter live export of mastery_card_table, achievements_table), extracted 2026-11-07",
+  "source": "Dauntless 1.14.7 CL 647472: mastery_card_table, achievements_table (CatalogExporter live export of mastery_card_table, achievements_table), extracted 2026-11-11",
   "objectiveIds": [
     "AchievementObjective_Antidote_Kill_Sporestruck_Charrog_With_ParasiticPerk",
     "AchievementObjective_Antidote_Kill_Sporestruck_Embermane_With_ParasiticPerk",

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "PhoenixGameplayCore_classes.hpp"
 #include "EPlayerStatesDefault_structs.hpp"
 #include "Engine_structs.hpp"
-#include "PhoenixGameplayCore_classes.hpp"
 
 
 SDK_NAMESPACE_START

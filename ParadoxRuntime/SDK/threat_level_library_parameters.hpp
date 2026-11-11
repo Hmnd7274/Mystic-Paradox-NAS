@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "threat_level_data_structs.hpp"
-#include "behemoth_tuning_data_structs.hpp"
 #include "Archon_structs.hpp"
+#include "Engine_structs.hpp"
+#include "behemoth_tuning_data_structs.hpp"
 #include "min_and_max_rewards_structs.hpp"
 #include "data_table_row_and_quantity_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START

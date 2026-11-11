@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "player_requirement_type_structs.hpp"
 #include "require_or_exclude_structs.hpp"
+#include "player_requirement_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

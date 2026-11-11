@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "base_hunt_modifier_classes.hpp"
 #include "Engine_structs.hpp"
+#include "base_hunt_modifier_classes.hpp"
 
 
 SDK_NAMESPACE_START

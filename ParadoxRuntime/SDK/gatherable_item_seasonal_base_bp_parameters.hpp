@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "pickup_notification_item_number_struct_structs.hpp"
 #include "Engine_structs.hpp"
+#include "pickup_notification_item_number_struct_structs.hpp"
 #include "Archon_structs.hpp"
 
 

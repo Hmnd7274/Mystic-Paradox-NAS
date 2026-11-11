@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "generic_action_set_entry_structs.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
 #include "montage_list_structs.hpp"
-#include "generic_action_set_entry_structs.hpp"
 
 
 SDK_NAMESPACE_START

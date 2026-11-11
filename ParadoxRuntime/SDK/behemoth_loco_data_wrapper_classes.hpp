@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "base_lookup_data_wrapper_classes.hpp"
 #include "behemoth_loco_info_structs.hpp"
+#include "base_lookup_data_wrapper_classes.hpp"
 
 
 SDK_NAMESPACE_START

@@ -13,9 +13,9 @@
 #include "PhoenixGameplayCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "player_aim_type_enum_structs.hpp"
 #include "player_aiming_state_structs.hpp"
 #include "player_aim_request_structs.hpp"
-#include "player_aim_type_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

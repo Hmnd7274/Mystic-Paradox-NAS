@@ -12,14 +12,14 @@
 
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "InputCore_structs.hpp"
-#include "HuntActivityType_structs.hpp"
 #include "EndofMatch_BehTable_structs.hpp"
-#include "player_score_info_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "rankings_enum_structs.hpp"
-#include "AkAudio_structs.hpp"
+#include "player_score_info_structs.hpp"
+#include "HuntActivityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

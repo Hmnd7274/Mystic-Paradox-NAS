@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "damage_override_rule_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
+#include "damage_override_rule_structs.hpp"
 
 
 SDK_NAMESPACE_START

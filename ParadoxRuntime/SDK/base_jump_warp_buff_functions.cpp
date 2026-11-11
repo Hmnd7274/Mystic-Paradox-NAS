@@ -34,30 +34,6 @@ void Abase_jump_warp_buff_C::ExecuteUbergraph_base_jump_warp_buff(int32 EntryPoi
 }
 
 
-// Function base_jump_warp_buff.base_jump_warp_buff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abase_jump_warp_buff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function base_jump_warp_buff.base_jump_warp_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abase_jump_warp_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function base_jump_warp_buff.base_jump_warp_buff_C.AuthInitialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -79,6 +55,30 @@ void Abase_jump_warp_buff_C::AuthInitialize(const struct FVector& Target, float 
 	Parms.CapsuleCollision = CapsuleCollision;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function base_jump_warp_buff.base_jump_warp_buff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abase_jump_warp_buff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function base_jump_warp_buff.base_jump_warp_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abase_jump_warp_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

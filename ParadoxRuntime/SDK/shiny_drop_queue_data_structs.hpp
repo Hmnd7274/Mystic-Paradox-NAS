@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_bodypart_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
+#include "behemoth_bodypart_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -34,18 +34,6 @@ void Aescalation_team_shield_sphere_warden_ge_C::ExecuteUbergraph_escalation_tea
 }
 
 
-// Function escalation_team_shield_sphere_warden_ge.escalation_team_shield_sphere_warden_ge_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_team_shield_sphere_warden_ge_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_team_shield_sphere_warden_ge.escalation_team_shield_sphere_warden_ge_C.Destroyed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -61,6 +49,18 @@ void Aescalation_team_shield_sphere_warden_ge_C::Destroyed(class AActor* Destroy
 	Parms.DestroyedActor = DestroyedActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function escalation_team_shield_sphere_warden_ge.escalation_team_shield_sphere_warden_ge_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_team_shield_sphere_warden_ge_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

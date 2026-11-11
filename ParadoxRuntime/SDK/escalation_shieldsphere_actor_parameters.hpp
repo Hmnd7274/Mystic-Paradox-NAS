@@ -88,15 +88,15 @@ public:
 };
 DUMPER7_ASSERTS_escalation_shieldsphere_actor_C_ReceivePointDamage;
 
-// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.PositionandFireVFX
+// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.PositionAndFireVFX
 // 0x0010 (0x0010 - 0x0000)
-struct escalation_shieldsphere_actor_C_PositionandFireVFX final
+struct escalation_shieldsphere_actor_C_PositionAndFireVFX final
 {
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Instagator;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_escalation_shieldsphere_actor_C_PositionandFireVFX;
+DUMPER7_ASSERTS_escalation_shieldsphere_actor_C_PositionAndFireVFX;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "player_requirements_str_structs.hpp"
+#include "jump_type_enum_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
 #include "player_states_struct_structs.hpp"
+#include "player_requirements_str_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
-#include "jump_type_enum_structs.hpp"
-#include "dp_weapon_attach_states_enum_structs.hpp"
 #include "CC_HairDataTable_Type_structs.hpp"
+#include "dp_weapon_attach_states_enum_structs.hpp"
 #include "CC_MakeupSkinSettings_Type_structs.hpp"
 #include "CC_MakeupDataTable_Type_structs.hpp"
 #include "GameplayTags_structs.hpp"
@@ -1452,7 +1452,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_GetCurrentActiveWeapon;
 struct paperdoll_render_bp_C_IsIkinemaEnabled final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsIkinemaEnabled;
 
@@ -1461,7 +1461,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_IsIkinemaEnabled;
 struct paperdoll_render_bp_C_CanMove final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_CanMove;
 
@@ -1488,7 +1488,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_GetJumpType;
 struct paperdoll_render_bp_C_IsInEdgeRecovery final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsInEdgeRecovery;
 
@@ -1506,7 +1506,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_IsStrafing;
 struct paperdoll_render_bp_C_IsVentJumping final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsVentJumping;
 
@@ -1633,7 +1633,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_ResetMaxFallTimer;
 struct paperdoll_render_bp_C_GetIsSprinting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_GetIsSprinting;
 
@@ -1855,7 +1855,7 @@ struct paperdoll_render_bp_C_SetCollisionWithDestructible final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_SetCollisionWithDestructible;
 
@@ -2149,7 +2149,7 @@ struct paperdoll_render_bp_C_SetCollisionWithAMonster final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_SetCollisionWithAMonster;
 
@@ -2271,7 +2271,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_GetPlayerSupportInfo;
 struct paperdoll_render_bp_C_IsPlantingBanner final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsPlantingBanner;
 
@@ -2280,7 +2280,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_IsPlantingBanner;
 struct paperdoll_render_bp_C_IsEmoting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsEmoting;
 
@@ -2289,7 +2289,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_IsEmoting;
 struct paperdoll_render_bp_C_IsInputEnabled_ final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_IsInputEnabled_;
 
@@ -2325,7 +2325,7 @@ DUMPER7_ASSERTS_paperdoll_render_bp_C_CanVentTraversal;
 struct paperdoll_render_bp_C_GetMountingComponent final
 {
 public:
-	class UArchonMountingComponent*               return_0;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UArchonMountingComponent*               Return;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_paperdoll_render_bp_C_GetMountingComponent;
 

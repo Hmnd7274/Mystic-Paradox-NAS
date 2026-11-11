@@ -34,18 +34,6 @@ void Alantern_instant_lifesteal_buff_C::ExecuteUbergraph_lantern_instant_lifeste
 }
 
 
-// Function lantern_instant_lifesteal_buff.lantern_instant_lifesteal_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Alantern_instant_lifesteal_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function lantern_instant_lifesteal_buff.lantern_instant_lifesteal_buff_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -79,6 +67,18 @@ void Alantern_instant_lifesteal_buff_C::IsValidTarget(class AActor* DamagedActor
 
 	if (ValidTarget != nullptr)
 		*ValidTarget = Parms.ValidTarget;
+}
+
+
+// Function lantern_instant_lifesteal_buff.lantern_instant_lifesteal_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Alantern_instant_lifesteal_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

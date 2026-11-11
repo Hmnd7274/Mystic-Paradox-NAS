@@ -94,18 +94,6 @@ void Adp_empowered_state_buff_C::MulticastOnRefreshed()
 }
 
 
-// Function dp_empowered_state_buff.dp_empowered_state_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Adp_empowered_state_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function dp_empowered_state_buff.dp_empowered_state_buff_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -229,6 +217,18 @@ void Adp_empowered_state_buff_C::MaterialEffects(float MaterialRamp)
 	Parms.MaterialRamp = MaterialRamp;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function dp_empowered_state_buff.dp_empowered_state_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Adp_empowered_state_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

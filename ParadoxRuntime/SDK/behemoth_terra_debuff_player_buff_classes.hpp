@@ -34,8 +34,8 @@ public:
 	void ExecuteUbergraph_behemoth_terra_debuff_player_buff(int32 EntryPoint);
 	void ResetCooldown();
 	void OnPostMitDamage(const struct FPostMitigationDamageSummary& PostMitDamageSummary, const struct FGameplayTagContainer& DamageTags, class AActor* DamagedActor, const struct FGameplayEffectContextHandle& Context);
-	void OnAdded();
 	void IsValidTarget(class AActor* TargetActor, const struct FGameplayTagContainer& InstigatorTags, bool* ValidTarget);
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

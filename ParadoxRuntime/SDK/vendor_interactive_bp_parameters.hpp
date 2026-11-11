@@ -13,10 +13,10 @@
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EquipmentVendor_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "E_aspect_mode_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -263,6 +263,15 @@ public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_vendor_interactive_bp_C_ReceiveEndPlay;
+
+// Function vendor_interactive_bp.vendor_interactive_bp_C.OnUserCompletedInteraction
+// 0x0008 (0x0008 - 0x0000)
+struct vendor_interactive_bp_C_OnUserCompletedInteraction final
+{
+public:
+	class UArchonInteractionUserComponent*        User;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_vendor_interactive_bp_C_OnUserCompletedInteraction;
 
 // Function vendor_interactive_bp.vendor_interactive_bp_C.K2_OnBecomeViewTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -791,24 +800,6 @@ public:
 };
 DUMPER7_ASSERTS_vendor_interactive_bp_C_Get_Crafting_Location_Transform;
 
-// Function vendor_interactive_bp.vendor_interactive_bp_C.OnUserCompletedInteraction
-// 0x0008 (0x0008 - 0x0000)
-struct vendor_interactive_bp_C_OnUserCompletedInteraction final
-{
-public:
-	class UArchonInteractionUserComponent*        User;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_vendor_interactive_bp_C_OnUserCompletedInteraction;
-
-// Function vendor_interactive_bp.vendor_interactive_bp_C.GetMarkerComponent
-// 0x0008 (0x0008 - 0x0000)
-struct vendor_interactive_bp_C_GetMarkerComponent final
-{
-public:
-	class UMarkerComponent*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_vendor_interactive_bp_C_GetMarkerComponent;
-
 // Function vendor_interactive_bp.vendor_interactive_bp_C.GetQuestStatus
 // 0x0001 (0x0001 - 0x0000)
 struct vendor_interactive_bp_C_GetQuestStatus final
@@ -828,6 +819,15 @@ public:
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_vendor_interactive_bp_C_GetPointOfInterestData;
+
+// Function vendor_interactive_bp.vendor_interactive_bp_C.GetMarkerComponent
+// 0x0008 (0x0008 - 0x0000)
+struct vendor_interactive_bp_C_GetMarkerComponent final
+{
+public:
+	class UMarkerComponent*                       ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_vendor_interactive_bp_C_GetMarkerComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

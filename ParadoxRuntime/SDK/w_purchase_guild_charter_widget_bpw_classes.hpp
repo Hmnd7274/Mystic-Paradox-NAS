@@ -25,7 +25,7 @@ class Uw_purchase_guild_charter_widget_bpw_C final : public UPurchaseGuildCharte
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)
-	class UImage*                                 BG;                                                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UImage*                                 bg;                                                // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 bg_gradient;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UButton*                                Button_0;                                          // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 Image_1;                                           // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "coordination_message_structs.hpp"
+#include "agent_claims_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "coordination_message_structs.hpp"
 #include "ai_agent_group_structs.hpp"
 #include "danger_zone_structs.hpp"
-#include "agent_claims_structs.hpp"
-#include "coordination_message_type_structs.hpp"
 #include "Engine_structs.hpp"
+#include "coordination_message_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

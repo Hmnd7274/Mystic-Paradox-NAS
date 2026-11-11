@@ -1910,9 +1910,9 @@ void ABPGM_Archon_Prototype_C::GetGameModeTunables(struct Fgame_mode_tunables* G
 // Function BPGM_Archon_Prototype.BPGM_Archon_Prototype_C.GetIsAnyBehemothInCombat
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABPGM_Archon_Prototype_C::GetIsAnyBehemothInCombat(bool* return_0)
+void ABPGM_Archon_Prototype_C::GetIsAnyBehemothInCombat(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetIsAnyBehemothInCombat", FnName));
@@ -1921,8 +1921,8 @@ void ABPGM_Archon_Prototype_C::GetIsAnyBehemothInCombat(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

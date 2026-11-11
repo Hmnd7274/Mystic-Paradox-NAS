@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "stagger_type_structs.hpp"
 #include "break_part_descriptions_structs.hpp"
+#include "stagger_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

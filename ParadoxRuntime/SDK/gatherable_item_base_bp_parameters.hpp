@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
 #include "OnlineSubsystemPhoenix_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "gatherable_interaction_buff_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -11,28 +11,28 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "behemoth_tuning_data_structs.hpp"
-#include "player_loot_instances_array_structs.hpp"
 #include "Archon_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
+#include "player_loot_instances_array_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "OnlineSubsystemPhoenix_structs.hpp"
+#include "stagger_instance_structs.hpp"
 #include "TranslateWarpOverrideType_structs.hpp"
+#include "behemoth_tuning_data_structs.hpp"
 #include "stagger_type_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 #include "damage_types_structs.hpp"
 #include "TurnWarpOverrideType_structs.hpp"
 #include "behemoth_spawn_params_structs.hpp"
+#include "behemoth_intro_cinematic_data_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
 #include "part_resist_multiplier_structs.hpp"
 #include "behemoth_part_type_structs.hpp"
 #include "behemoth_loco_type_structs.hpp"
-#include "stagger_instance_structs.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
-#include "behemoth_intro_cinematic_data_structs.hpp"
 #include "behemoth_stagger_type_structs.hpp"
-#include "OnlineSubsystemPhoenix_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -354,7 +354,7 @@ DUMPER7_ASSERTS_behemoth_interface_C_DeactivateMonsterTrail;
 struct behemoth_interface_C_GetIsDead final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_behemoth_interface_C_GetIsDead;
 
@@ -671,7 +671,7 @@ struct behemoth_interface_C_RemovePaintedTargetWidget final
 {
 public:
 	class UWidgetComponent*                       WidgetComponent;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_behemoth_interface_C_RemovePaintedTargetWidget;
 

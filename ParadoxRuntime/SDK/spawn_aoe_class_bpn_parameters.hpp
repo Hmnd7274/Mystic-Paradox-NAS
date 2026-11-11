@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "behemoth_requirement_result_structs.hpp"
 #include "Engine_structs.hpp"
+#include "behemoth_requirement_result_structs.hpp"
 
 
 SDK_NAMESPACE_START

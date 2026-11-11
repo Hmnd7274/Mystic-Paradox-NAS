@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "int_list_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "int_list_structs.hpp"
 #include "aoe_simple_classes.hpp"
 #include "AkAudio_structs.hpp"
 

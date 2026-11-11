@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "collision_shape_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "collision_shape_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AIModule_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
+#include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

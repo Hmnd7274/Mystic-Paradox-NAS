@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "behemoth_source_struct_structs.hpp"
+#include "Archon_structs.hpp"
 #include "combat_text_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Archon_structs.hpp"
 #include "gamemode_notify_data_structs.hpp"
 #include "behemoth_targetting_data_structs.hpp"
 #include "Engine_structs.hpp"

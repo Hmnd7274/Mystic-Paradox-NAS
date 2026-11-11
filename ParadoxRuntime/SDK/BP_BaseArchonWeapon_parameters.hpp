@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
+#include "ui_combo_attacktype_structs.hpp"
+#include "reticle_type_structs.hpp"
 #include "ui_comboArray_structs.hpp"
+#include "ui_combo_attack_info_structs.hpp"
+#include "Engine_structs.hpp"
+#include "ui_weapon_attack_info_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "ui_combo_attacktype_structs.hpp"
-#include "ui_combo_attack_info_structs.hpp"
-#include "reticle_type_structs.hpp"
-#include "ui_weapon_attack_info_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "loco_animset_str_structs.hpp"
 #include "actions_animset_str_structs.hpp"
+#include "vfx_state_id_struct_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "Struct_ElementToVector_structs.hpp"
 #include "Struct_TagToSpecialEffects_structs.hpp"
 #include "Struct_ElementToParticleSystem_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "Struct_TagToHitEffects_structs.hpp"
-#include "vfx_state_id_struct_structs.hpp"
+#include "Struct_ElementToVector_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -1194,7 +1194,7 @@ DUMPER7_ASSERTS_BP_BaseArchonWeapon_C_UpdateWeaponPartChargeStarted;
 struct BP_BaseArchonWeapon_C_Get_TransmogClass final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftClassPath                         Class_0;                                           // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 	struct FSoftClassPath                         CallFunc_MakeSoftClassPath_ReturnValue;            // 0x0020(0x0018)(ZeroConstructor, HasGetValueTypeHash)

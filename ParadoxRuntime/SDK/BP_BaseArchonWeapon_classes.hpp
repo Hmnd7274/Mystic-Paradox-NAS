@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Struct_TagToHitEffects_structs.hpp"
-#include "vfx_state_id_struct_structs.hpp"
-#include "hitfx_optimality_structs.hpp"
-#include "loco_animset_str_structs.hpp"
+#include "Engine_structs.hpp"
 #include "select_montage_from_angle_str_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
+#include "vfx_state_id_struct_structs.hpp"
 #include "actions_animset_str_structs.hpp"
-#include "Struct_TagToSpecialEffects_structs.hpp"
-#include "tier_weapon_data_structs.hpp"
-#include "Struct_ElementToParticleSystem_structs.hpp"
+#include "hitfx_optimality_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
+#include "Struct_TagToSpecialEffects_structs.hpp"
+#include "loco_animset_str_structs.hpp"
+#include "tier_weapon_data_structs.hpp"
+#include "Struct_ElementToParticleSystem_structs.hpp"
 #include "ui_weapon_attack_info_structs.hpp"
+#include "reticle_type_structs.hpp"
 #include "ui_combo_attacktype_structs.hpp"
 #include "ui_combo_attack_info_structs.hpp"
-#include "reticle_type_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -222,7 +222,7 @@ public:
 	void UpdateWeaponPartChargeLevel(int32 PreviousChargeLevel, int32 NewChargeLevel);
 	void UpdateWeaponPartChargeStarted();
 	void UpdateWeaponPartComboMoveInfo();
-	void Get_TransmogClass(bool* return_0, struct FSoftClassPath* Class_0);
+	void Get_TransmogClass(bool* Return, struct FSoftClassPath* Class_0);
 	void HandlePartIDChanged();
 	void AttachOrSkin();
 	void RunCustomOnEquipFunction();

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "archon_impulse_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "conditional_damage_row_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "archon_impulse_structs.hpp"
 #include "projectile_movement_type_structs.hpp"
 #include "projectile_homing_type_structs.hpp"
 

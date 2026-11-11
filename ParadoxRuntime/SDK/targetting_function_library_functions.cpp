@@ -88,7 +88,7 @@ void Utargetting_function_library_C::GetPlayerAlliedTargets(class UObject* __Wor
 // TArray<struct Fbehemoth_targetting_data>&SimpleTargetting_Data                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class APawn*                            ActorWhoIsTargetting                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    RequiresNavTrace                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                                   DistanceTargetCanBeOffNavMesh                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DistanceTargetCanBeOffNavmesh                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UClass*>&                  ValidParentClasses                                     (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // TArray<class AActor*>&                  SimpleTargettingTargetSet                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // bool                                    ScaleAreaWithMesh                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -97,7 +97,7 @@ void Utargetting_function_library_C::GetPlayerAlliedTargets(class UObject* __Wor
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class AActor*>*                  Targets                                                (Parm, OutParm)
 
-void Utargetting_function_library_C::GetTargetsFromActionData(Ebehemoth_action_eval_type TargettingType, TArray<class UPrimitiveComponent*>& ComplexDataHitAreaComponents, TArray<struct Fbehemoth_targetting_data>& SimpleTargetting_Data, class APawn* ActorWhoIsTargetting, bool RequiresNavTrace, float DistanceTargetCanBeOffNavMesh, TArray<class UClass*>& ValidParentClasses, TArray<class AActor*>& SimpleTargettingTargetSet, bool ScaleAreaWithMesh, const struct FTransform& TargetFromThisTransform, float PredictionTime, class UObject* __WorldContext, TArray<class AActor*>* Targets)
+void Utargetting_function_library_C::GetTargetsFromActionData(Ebehemoth_action_eval_type TargettingType, TArray<class UPrimitiveComponent*>& ComplexDataHitAreaComponents, TArray<struct Fbehemoth_targetting_data>& SimpleTargetting_Data, class APawn* ActorWhoIsTargetting, bool RequiresNavTrace, float DistanceTargetCanBeOffNavmesh, TArray<class UClass*>& ValidParentClasses, TArray<class AActor*>& SimpleTargettingTargetSet, bool ScaleAreaWithMesh, const struct FTransform& TargetFromThisTransform, float PredictionTime, class UObject* __WorldContext, TArray<class AActor*>* Targets)
 {
 	static ReloadableFuncInfo FuncInfo;
 	class UFunction* Func = GetStaticFunction(StaticClass(), "targetting_function_library_C", "GetTargetsFromActionData", FuncInfo);
@@ -109,7 +109,7 @@ void Utargetting_function_library_C::GetTargetsFromActionData(Ebehemoth_action_e
 	Parms.SimpleTargetting_Data = std::move(SimpleTargetting_Data);
 	Parms.ActorWhoIsTargetting = ActorWhoIsTargetting;
 	Parms.RequiresNavTrace = RequiresNavTrace;
-	Parms.DistanceTargetCanBeOffNavMesh = DistanceTargetCanBeOffNavMesh;
+	Parms.DistanceTargetCanBeOffNavmesh = DistanceTargetCanBeOffNavmesh;
 	Parms.ValidParentClasses = std::move(ValidParentClasses);
 	Parms.SimpleTargettingTargetSet = std::move(SimpleTargettingTargetSet);
 	Parms.ScaleAreaWithMesh = ScaleAreaWithMesh;

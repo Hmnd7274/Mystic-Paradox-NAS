@@ -12,11 +12,11 @@
 
 #include "lobbed_projectile_base_bp_classes.hpp"
 #include "Engine_structs.hpp"
-#include "Archon_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "loot_condition_type_structs.hpp"
 #include "player_loot_instance_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "Archon_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "loot_condition_type_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -70,13 +70,11 @@ public:
 	void BndEvt__PlayerAutoCollectRadius_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void CleanUpSoonSinceWeHaveNoLootToGiveAnymore();
 	void DisableShiny();
-	void OnProjectileStopped();
 	void ReceiveBeginPlay();
 	void SetMesh(TSoftObjectPtr<class UStaticMesh> Mesh, TSoftObjectPtr<class UParticleSystem> VFX);
 	void SpawnShinyLoot(class FName LootID, const struct Feqs_lobbed_projectile_data& ShinyInfo, class UEnvQuery* ShinyEQS, float LifeTime_0);
 	void OnLoaded_267A00A8405FB467C655939BDB8DF3EE(class UObject* Loaded);
 	void OnLoaded_267A00A8405FB467C655939BE39F747A(class UObject* Loaded);
-	void UserConstructionScript();
 	void GrantItem(class AActor* Player);
 	void AuthSetPlayerLootInstances(TArray<struct Fplayer_loot_instance>& NewPlayerLootInstances, class FName LootCategory_0);
 	void OnRep_PlayerLootInstances();
@@ -90,6 +88,8 @@ public:
 	void SetTrackingID(const struct FGuid& TrackingId, bool* Output);
 	void GetTrackingID(struct FGuid* TrackingId);
 	bool SetGatherableVisible(bool IsVisible);
+	void OnProjectileStopped();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -12,9 +12,9 @@
 
 #include "Archon_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "dp_weapon_hand_enum_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "dp_weapon_hand_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

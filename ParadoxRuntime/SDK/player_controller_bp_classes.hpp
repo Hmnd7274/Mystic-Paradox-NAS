@@ -11,20 +11,20 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "element_float_pair_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "loot_condition_type_structs.hpp"
-#include "CinematicPlayerState_structs.hpp"
-#include "element_float_pair_structs.hpp"
 #include "EndOfMatch_GameType_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "CinematicPlayerState_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass player_controller_bp.player_controller_bp_C
 // 0x0320 (0x0F90 - 0x0C70)
-class Aplayer_controller_bp_C final : public AArchonPlayerController
+class Aplayer_controller_bp_C : public AArchonPlayerController
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C70(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)

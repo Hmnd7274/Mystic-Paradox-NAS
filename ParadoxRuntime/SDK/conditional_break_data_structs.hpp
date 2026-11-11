@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_type_enum_structs.hpp"
-#include "behemoth_bodypart_type_structs.hpp"
-#include "tag_float_struct_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
-#include "Engine_structs.hpp"
-#include "condition_requirement_type_structs.hpp"
 #include "Archon_structs.hpp"
+#include "behemoth_type_enum_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
+#include "behemoth_bodypart_type_structs.hpp"
+#include "Engine_structs.hpp"
+#include "tag_float_struct_structs.hpp"
+#include "condition_requirement_type_structs.hpp"
 #include "power_to_float_struct_structs.hpp"
 #include "GameplayTags_structs.hpp"
 

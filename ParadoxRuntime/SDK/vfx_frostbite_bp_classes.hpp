@@ -69,9 +69,9 @@ public:
 	void RefreshScreenBuffer(float Param, class AActor* ActorObjectRef);
 	void GameplayCue_Combat_OnDamageReceived(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void SpawnedActor_Cleanup();
-	void ReceiveBeginPlay();
 	void ApplyImpact(const struct FVector& Position, const struct FVector& Direction, float DurationScale, float MagnitudeScale);
 	void OnRep_Health();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

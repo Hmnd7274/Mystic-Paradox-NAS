@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "AkAudio_structs.hpp"

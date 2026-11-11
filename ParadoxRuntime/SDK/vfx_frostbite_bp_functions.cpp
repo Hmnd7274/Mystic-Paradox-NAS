@@ -86,18 +86,6 @@ void Avfx_frostbite_bp_C::SpawnedActor_Cleanup()
 }
 
 
-// Function vfx_frostbite_bp.vfx_frostbite_bp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Avfx_frostbite_bp_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function vfx_frostbite_bp.vfx_frostbite_bp_C.ApplyImpact
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -129,6 +117,18 @@ void Avfx_frostbite_bp_C::OnRep_Health()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_Health", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function vfx_frostbite_bp.vfx_frostbite_bp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Avfx_frostbite_bp_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

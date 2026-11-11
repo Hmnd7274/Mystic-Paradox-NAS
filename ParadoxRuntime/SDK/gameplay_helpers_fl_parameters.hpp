@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "effect_magitudes_struct_structs.hpp"
+#include "Engine_structs.hpp"
 #include "name_float_struct_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -44,14 +44,14 @@ public:
 public:
 	void ExecuteUbergraph_w_context_menu_action_quickchat(int32 EntryPoint);
 	void UpdateSelectionTime(float Precent);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Handle_Action();
 	void Initialize();
-	void UnSelected();
-	void Selected();
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
 	struct FVector2D Get_Label_Position(float Angle_0);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Handle_Action();
+	void UnSelected();
+	void Selected();
 
 public:
 	static class UClass* StaticClass()

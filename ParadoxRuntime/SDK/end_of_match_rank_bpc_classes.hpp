@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "rankings_enum_structs.hpp"
 #include "badge_elite_status_structs.hpp"
+#include "rankings_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -12,9 +12,9 @@
 
 #include "cell_damage_modification_structs.hpp"
 #include "Engine_classes.hpp"
-#include "cell_effect_display_type_structs.hpp"
-#include "LoadoutStatTypes_structs.hpp"
 #include "Archon_structs.hpp"
+#include "LoadoutStatTypes_structs.hpp"
+#include "cell_effect_display_type_structs.hpp"
 #include "inventory_or_catalog_structs.hpp"
 
 

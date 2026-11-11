@@ -50,7 +50,7 @@ public:
 public:
 	void ExecuteUbergraph_spline_fx_spawner_bpc(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void InitializeSplineFX(class AActor* ActorSource, const struct FVector& Location_Override__Optional_, float VerticalOffset_0, float SourceRadius_0, class UParticleSystem* ParticleSystem, class UAkAudioEvent* AkStartEvent, class UAkAudioEvent* AkStopEvent, class UParticleSystem* ImpactParticle, class UAkAudioEvent* AkImpactEvent, TArray<class USplineComponent*>& SplineArray_0, float MinLife__Seconds_, float MaxLife__Seconds_, TArray<class USceneComponent*>& TargetArray__Scene_Component_, float MinDelay, float MaxDelay, bool PrintDistance__Debug_, float MaxDistanceFalloff__Units__0, float MinDistanceSpeed__Multiplier_, float MaxDistanceSpeed__Multiplier_, bool RandomRotationOnX_0);
+	void InitializeSplineFX(class AActor* ActorSource, const struct FVector& Location_Override__Optional_, float VerticalOffset_0, float SourceRadius_0, class UParticleSystem* ParticleSystem, class UAkAudioEvent* AKStartEvent, class UAkAudioEvent* AKStopEvent, class UParticleSystem* ImpactParticle, class UAkAudioEvent* AkImpactEvent, TArray<class USplineComponent*>& SplineArray_0, float MinLife__Seconds_, float MaxLife__Seconds_, TArray<class USceneComponent*>& TargetArray__Scene_Component_, float MinDelay, float MaxDelay, bool PrintDistance__Debug_, float MaxDistanceFalloff__Units__0, float MinDistanceSpeed__Multiplier_, float MaxDistanceSpeed__Multiplier_, bool RandomRotationOnX_0);
 	void CalculateNextPosition(class USplineComponent* Spline, float NormalizedDistance, float RandomLifetime, float* NormalizedDistanceOut, struct FVector* PoisitionOnSpline, struct FRotator* RotationOnSpline);
 	void DestroyRemainingParticles();
 

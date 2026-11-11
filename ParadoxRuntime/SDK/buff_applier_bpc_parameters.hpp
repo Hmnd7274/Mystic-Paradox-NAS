@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "buff_override_struct_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
-#include "ge_override_struct_structs.hpp"
 #include "effect_magitudes_struct_structs.hpp"
+#include "Engine_structs.hpp"
+#include "buff_override_struct_structs.hpp"
+#include "ge_override_struct_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START

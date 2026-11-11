@@ -11,19 +11,19 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "alternate_attack_struct_structs.hpp"
-#include "Struct_ActionHitArea_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "behemoth_targetting_data_structs.hpp"
+#include "Struct_ActionHitArea_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "behemoth_action_eval_type_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
+#include "alternate_attack_struct_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
+#include "intensity_level_structs.hpp"
 #include "tag_float_struct_structs.hpp"
 #include "Struct_ActionSet_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
-#include "intensity_level_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -86,7 +86,7 @@ public:
 	class AArchonBehemoth*                        OwningArchonBehemoth;                              // 0x0388(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          RequiresNavTrace;                                  // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_391[0x3];                                      // 0x0391(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DistanceTargetCanBeOffNavMesh;                     // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DistanceTargetCanBeOffNavmesh;                     // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<Ebehemoth_states_enum>                 RequireStates;                                     // 0x0398(0x0010)(Edit, BlueprintVisible)
 	TArray<Ebehemoth_states_enum>                 ExcludedStates;                                    // 0x03A8(0x0010)(Edit, BlueprintVisible)
 	struct Fbehemoth_requirement_struct           BehemothRequirements;                              // 0x03B8(0x0150)(Edit, BlueprintVisible, HasGetValueTypeHash)

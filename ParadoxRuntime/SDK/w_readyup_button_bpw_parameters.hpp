@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "ELobbyReadyState_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "InputCore_structs.hpp"

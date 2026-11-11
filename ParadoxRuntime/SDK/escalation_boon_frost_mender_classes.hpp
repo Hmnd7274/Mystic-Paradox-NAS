@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "base_periodic_global_effect_hunt_modifier_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "base_periodic_global_effect_hunt_modifier_classes.hpp"
 #include "AkAudio_structs.hpp"
 #include "AIModule_structs.hpp"
 
@@ -30,7 +30,7 @@ public:
 	struct FTimerHandle                           ResetFrostbiteResistBuff;                          // 0x0688(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           FrostbiteBuffResetHandle;                          // 0x0690(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_698[0x8];                                      // 0x0698(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Spawn_location;                                    // 0x06A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FTransform                             Spawn_Location;                                    // 0x06A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FVector                                Get_position;                                      // 0x06D0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

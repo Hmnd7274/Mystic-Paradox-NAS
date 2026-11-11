@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "lanternhold_damage_aura_ab_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START

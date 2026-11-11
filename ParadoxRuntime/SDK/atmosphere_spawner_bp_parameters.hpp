@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AtmosphereDrivenValueSet_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AtmosphereDrivenValueMode_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START

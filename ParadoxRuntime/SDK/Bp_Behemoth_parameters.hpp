@@ -10,63 +10,63 @@
 
 #include "Basic.hpp"
 
-#include "coordination_message_structs.hpp"
-#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "pivot_anim_set_structs.hpp"
-#include "behemoth_tuning_data_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "player_loot_instances_array_structs.hpp"
-#include "behemoth_loco_info_structs.hpp"
-#include "persistent_spawn_params_structs.hpp"
-#include "part_break_description_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "part_break_stage_structs.hpp"
+#include "Struct_TagToTrailEffects_structs.hpp"
 #include "eqs_spawn_query_structs.hpp"
+#include "part_break_stage_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
+#include "Struct_AttackWindowInfo_structs.hpp"
+#include "persistent_spawn_params_structs.hpp"
+#include "part_stage_material_info_structs.hpp"
+#include "TranslateWarpOverrideType_structs.hpp"
+#include "stagger_instance_structs.hpp"
+#include "behemoth_tuning_data_structs.hpp"
 #include "OnlineSubsystemPhoenix_structs.hpp"
 #include "Engine_structs.hpp"
+#include "subtree_injection_info_structs.hpp"
 #include "name_int_pair_structs.hpp"
+#include "reward_override_list_structs.hpp"
+#include "vfx_state_id_struct_structs.hpp"
+#include "part_resist_multiplier_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "pattern_targetting_type_structs.hpp"
-#include "pattern_row_structs.hpp"
 #include "data_table_row_and_quantity_structs.hpp"
-#include "state_sectionname_pair_stuct_structs.hpp"
 #include "behemoth_spawn_params_structs.hpp"
-#include "pivot_target_type_structs.hpp"
+#include "behemoth_intro_cinematic_data_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
 #include "behemoth_part_type_structs.hpp"
-#include "part_resist_multiplier_structs.hpp"
-#include "vfx_with_socket_struct_structs.hpp"
+#include "pivot_target_type_structs.hpp"
 #include "behemoth_loco_type_structs.hpp"
-#include "stagger_instance_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "behemoth_generic_action_type_structs.hpp"
-#include "statetosectionpair_array_struct_structs.hpp"
-#include "behemoth_intro_cinematic_data_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 #include "damage_types_structs.hpp"
-#include "TranslateWarpOverrideType_structs.hpp"
-#include "Struct_DamageTagsPerKey_structs.hpp"
 #include "stagger_type_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
+#include "part_break_description_structs.hpp"
+#include "part_reward_override_structs.hpp"
+#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
-#include "Struct_DamageMultiplier_structs.hpp"
 #include "behemoth_stagger_type_structs.hpp"
+#include "TurnWarpOverrideType_structs.hpp"
 #include "part_requirement_structs.hpp"
-#include "reward_override_list_structs.hpp"
+#include "behemoth_loco_info_structs.hpp"
 #include "stagger_stage_structs.hpp"
 #include "select_montage_from_angle_str_structs.hpp"
-#include "subtree_injection_info_structs.hpp"
-#include "stagger_lookup_table_entry_structs.hpp"
-#include "Struct_TagToTrailEffects_structs.hpp"
 #include "Struct_DamageImmunity_structs.hpp"
-#include "vfx_state_id_struct_structs.hpp"
-#include "TurnWarpOverrideType_structs.hpp"
-#include "Struct_AttackWindowInfo_structs.hpp"
+#include "pivot_anim_set_structs.hpp"
+#include "stagger_lookup_table_entry_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "vfx_with_socket_struct_structs.hpp"
+#include "statetosectionpair_array_struct_structs.hpp"
+#include "state_sectionname_pair_stuct_structs.hpp"
+#include "pattern_row_structs.hpp"
+#include "Struct_DamageMultiplier_structs.hpp"
+#include "Struct_DamageTagsPerKey_structs.hpp"
+#include "coordination_message_structs.hpp"
+#include "pattern_targetting_type_structs.hpp"
 #include "spawned_monter_trail_struct_structs.hpp"
-#include "part_stage_material_info_structs.hpp"
-#include "part_reward_override_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -4776,7 +4776,7 @@ DUMPER7_ASSERTS_Bp_Behemoth_C_GetGenericActionLookupTable;
 struct Bp_Behemoth_C_GetIsDead final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_Bp_Behemoth_C_GetIsDead;
 
@@ -5177,7 +5177,7 @@ struct Bp_Behemoth_C_RemovePaintedTargetWidget final
 {
 public:
 	class UWidgetComponent*                       WidgetComponent;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_Bp_Behemoth_C_RemovePaintedTargetWidget;
 
@@ -5472,7 +5472,7 @@ struct Bp_Behemoth_C_GetShouldExecuteAKNotify final
 {
 public:
 	const class UAnimNotify_AkEvent_C*            NotifyInstance;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          PartEnabled;                                       // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsBoneAllowedToCreateEffects_IsAllowed;   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

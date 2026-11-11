@@ -12,10 +12,10 @@
 
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
+#include "base_debuff_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "base_debuff_classes.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -32,8 +32,8 @@ public:
 	class UParticleSystemComponent*               VFX_0;                                             // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                MinVFXSize;                                        // 0x0628(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                MaxVFXSize;                                        // 0x0634(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEventBase*                      AkStopEvent;                                       // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEventBase*                      AkStartEvent;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEventBase*                      AKStopEvent;                                       // 0x0640(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEventBase*                      AKStartEvent;                                      // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DotTimer;                                          // 0x0650(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BaseDamageAmount;                                  // 0x0654(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PhysicalDamageAmount;                              // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,8 +59,6 @@ public:
 	void TriggerCombatText(float DamageAmount);
 	void MulticastOnAdded();
 	void AuthDoDamage();
-	void OnAdded();
-	void ReceiveDestroyed();
 	void ReceiveTick(float DeltaSeconds);
 	void UpdateEffectTime(float Duration);
 	void StartPersistentAudio();
@@ -68,6 +66,8 @@ public:
 	void StartPersistentVFX();
 	void StopPersistentVFX();
 	void AuthRestartDuration();
+	void OnAdded();
+	void ReceiveDestroyed();
 
 	struct FHitResult GetDotHitInfo() const;
 

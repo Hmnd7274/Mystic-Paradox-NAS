@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Eui_character_screen_mode_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Archon_classes.hpp"
-#include "Eui_character_screen_mode_structs.hpp"
 
 
 SDK_NAMESPACE_START

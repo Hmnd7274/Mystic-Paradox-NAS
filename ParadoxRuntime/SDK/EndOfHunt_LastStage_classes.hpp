@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "progression_rank_table_row_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "UpdatedMasteryStruct_structs.hpp"
-#include "progression_rank_table_row_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "UpdatedMasteryStruct_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -161,7 +161,7 @@ public:
 	class UImage*                                 shine;                                             // 0x0A50(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UVerticalBox*                           SlayerProgressionLeftPanls;                        // 0x0A58(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UVerticalBox*                           SlayerProgressionRightPanels;                      // 0x0A60(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
-	class UImage*                                 smoke;                                             // 0x0A68(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UImage*                                 Smoke;                                             // 0x0A68(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 smray1;                                            // 0x0A70(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UCanvasPanel*                           SummaryPanel1;                                     // 0x0A78(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UTextBlock*                             TeamBestTitleText;                                 // 0x0A80(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)

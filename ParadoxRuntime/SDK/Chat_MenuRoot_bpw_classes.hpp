@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "ArchonChatWindowMode_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 

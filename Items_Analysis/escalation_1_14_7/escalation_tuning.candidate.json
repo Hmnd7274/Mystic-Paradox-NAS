@@ -1,0 +1,1164 @@
+{
+    "_doc":  [
+                 "Real Dauntless 1.14.7 escalation tuning.",
+                 "Extracted from runtime DataTables, changelist 647472.",
+                 "Talent rows are assigned by the TalentsTable reference in each progression row.",
+                 "typeCode is the raw EEscalationRewardType enum value."
+             ],
+    "schemaVersion":  1,
+    "source":  "Dauntless 1.14.7 CL 647472 runtime DataTables",
+    "seasons":  {
+                    "ESC_SEASON_1":  {
+                                         "enabled":  true,
+                                         "contextCode":  11,
+                                         "talentTable":  "escalation_talents",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENT_S1_TIER1_PASSIVE":  {
+                                                                                             "pointsToUnlock":  0,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S1_TIER1_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER1_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER2_PASSIVE":  {
+                                                                                             "pointsToUnlock":  4,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S1_TIER2_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER2_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER3_PASSIVE":  {
+                                                                                             "pointsToUnlock":  8,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S1_TIER3_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER3_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER4_PASSIVE":  {
+                                                                                             "pointsToUnlock":  12,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S1_TIER4_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER4_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER5_PASSIVE":  {
+                                                                                             "pointsToUnlock":  16,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S1_TIER5_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER5_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S1_TIER6_SPECIAL_UNLOCKONE":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   },
+                                                         "ESC_TALENT_S1_TIER6_SPECIAL_UNLOCKTHREE":  {
+                                                                                                         "pointsToUnlock":  20,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S1_TIER6_SPECIAL_UNLOCKTWO":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   }
+                                                     }
+                                     },
+                    "ESC_SEASON_2":  {
+                                         "enabled":  true,
+                                         "contextCode":  10,
+                                         "talentTable":  "escalation_talents_S2",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENT_S2_TIER1_PASSIVE":  {
+                                                                                             "pointsToUnlock":  0,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S2_TIER1_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER1_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER2_PASSIVE":  {
+                                                                                             "pointsToUnlock":  4,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S2_TIER2_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER2_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER3_PASSIVE":  {
+                                                                                             "pointsToUnlock":  8,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S2_TIER3_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER3_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER4_PASSIVE":  {
+                                                                                             "pointsToUnlock":  12,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S2_TIER4_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER4_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER5_PASSIVE":  {
+                                                                                             "pointsToUnlock":  16,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S2_TIER5_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER5_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S2_TIER6_SPECIAL_UNLOCKONE":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   },
+                                                         "ESC_TALENT_S2_TIER6_SPECIAL_UNLOCKTHREE":  {
+                                                                                                         "pointsToUnlock":  20,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S2_TIER6_SPECIAL_UNLOCKTWO":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          0
+                                                                                                                      ]
+                                                                                                   }
+                                                     }
+                                     },
+                    "ESC_SEASON_3":  {
+                                         "enabled":  true,
+                                         "contextCode":  14,
+                                         "talentTable":  "escalation_talents_S3",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENT_S3_TIER1_PASSIVE":  {
+                                                                                             "pointsToUnlock":  0,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S3_TIER1_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER1_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER2_PASSIVE":  {
+                                                                                             "pointsToUnlock":  4,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S3_TIER2_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER2_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER3_PASSIVE":  {
+                                                                                             "pointsToUnlock":  8,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S3_TIER3_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER3_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER4_PASSIVE":  {
+                                                                                             "pointsToUnlock":  12,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S3_TIER4_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER4_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER5_PASSIVE":  {
+                                                                                             "pointsToUnlock":  16,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S3_TIER5_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER5_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S3_TIER6_SPECIAL_UNLOCKONE":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   },
+                                                         "ESC_TALENT_S3_TIER6_SPECIAL_UNLOCKTHREE":  {
+                                                                                                         "pointsToUnlock":  20,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S3_TIER6_SPECIAL_UNLOCKTWO":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   }
+                                                     }
+                                     },
+                    "ESC_SEASON_4":  {
+                                         "enabled":  true,
+                                         "contextCode":  15,
+                                         "talentTable":  "escalation_talents_S4",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENT_S4_TIER1_PASSIVE":  {
+                                                                                             "pointsToUnlock":  0,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S4_TIER1_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER1_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  0,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER2_PASSIVE":  {
+                                                                                             "pointsToUnlock":  4,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S4_TIER2_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER2_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  4,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER3_PASSIVE":  {
+                                                                                             "pointsToUnlock":  8,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S4_TIER3_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER3_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  8,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER4_PASSIVE":  {
+                                                                                             "pointsToUnlock":  12,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S4_TIER4_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER4_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER5_PASSIVE":  {
+                                                                                             "pointsToUnlock":  16,
+                                                                                             "pointCosts":  [
+                                                                                                                1,
+                                                                                                                1,
+                                                                                                                1
+                                                                                                            ]
+                                                                                         },
+                                                         "ESC_TALENT_S4_TIER5_UPGRADEONE":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER5_UPGRADETWO":  {
+                                                                                                "pointsToUnlock":  16,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER6_SPECIAL_UNLOCKONE":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   },
+                                                         "ESC_TALENT_S4_TIER6_SPECIAL_UNLOCKTHREE":  {
+                                                                                                         "pointsToUnlock":  20,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S4_TIER6_SPECIAL_UNLOCKTWO":  {
+                                                                                                       "pointsToUnlock":  20,
+                                                                                                       "pointCosts":  [
+                                                                                                                          1
+                                                                                                                      ]
+                                                                                                   }
+                                                     }
+                                     },
+                    "ESC_SEASON_5":  {
+                                         "enabled":  true,
+                                         "contextCode":  12,
+                                         "talentTable":  "escalation_talents_S5",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENTS_S4_TIER4_HARVESTER":  {
+                                                                                                "pointsToUnlock":  12,
+                                                                                                "pointCosts":  [
+                                                                                                                   1,
+                                                                                                                   1,
+                                                                                                                   1
+                                                                                                               ]
+                                                                                            },
+                                                         "ESC_TALENT_S4_TIER6_ASPECT_DEFENDER":  {
+                                                                                                     "pointsToUnlock":  20,
+                                                                                                     "pointCosts":  [
+                                                                                                                        1
+                                                                                                                    ]
+                                                                                                 },
+                                                         "ESC_TALENT_S4_TIER6_ASPECT_SCOUT":  {
+                                                                                                  "pointsToUnlock":  20,
+                                                                                                  "pointCosts":  [
+                                                                                                                     1
+                                                                                                                 ]
+                                                                                              },
+                                                         "ESC_TALENT_S5_TIER1_DEFENCE_AMP_UPGRADE":  {
+                                                                                                         "pointsToUnlock":  0,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S5_TIER1_MOVEMENT_PASSIVE":  {
+                                                                                                      "pointsToUnlock":  0,
+                                                                                                      "pointCosts":  [
+                                                                                                                         1,
+                                                                                                                         1,
+                                                                                                                         1
+                                                                                                                     ]
+                                                                                                  },
+                                                         "ESC_TALENT_S5_TIER1_WARMTH":  {
+                                                                                            "pointsToUnlock":  0,
+                                                                                            "pointCosts":  [
+                                                                                                               1
+                                                                                                           ]
+                                                                                        },
+                                                         "ESC_TALENT_S5_TIER1_WOUNDING_PASSIVE":  {
+                                                                                                      "pointsToUnlock":  0,
+                                                                                                      "pointCosts":  [
+                                                                                                                         1,
+                                                                                                                         1,
+                                                                                                                         1
+                                                                                                                     ]
+                                                                                                  },
+                                                         "ESC_TALENT_S5_TIER2_ATKSPD_FROSTBITE":  {
+                                                                                                      "pointsToUnlock":  4,
+                                                                                                      "pointCosts":  [
+                                                                                                                         1,
+                                                                                                                         1,
+                                                                                                                         1
+                                                                                                                     ]
+                                                                                                  },
+                                                         "ESC_TALENT_S5_TIER2_STAGGER_PASSIVE":  {
+                                                                                                     "pointsToUnlock":  4,
+                                                                                                     "pointCosts":  [
+                                                                                                                        1,
+                                                                                                                        1,
+                                                                                                                        1
+                                                                                                                    ]
+                                                                                                 },
+                                                         "ESC_TALENT_S5_TIER2_WARMTH":  {
+                                                                                            "pointsToUnlock":  4,
+                                                                                            "pointCosts":  [
+                                                                                                               1
+                                                                                                           ]
+                                                                                        },
+                                                         "ESC_TALENT_S5_TIER3_BOTTLEDBRAZIER":  {
+                                                                                                    "pointsToUnlock":  8,
+                                                                                                    "pointCosts":  [
+                                                                                                                       1
+                                                                                                                   ]
+                                                                                                },
+                                                         "ESC_TALENT_S5_TIER3_DEFENSE_PASSIVE":  {
+                                                                                                     "pointsToUnlock":  8,
+                                                                                                     "pointCosts":  [
+                                                                                                                        1,
+                                                                                                                        1,
+                                                                                                                        1
+                                                                                                                    ]
+                                                                                                 },
+                                                         "ESC_TALENT_S5_TIER3_WARMTH":  {
+                                                                                            "pointsToUnlock":  8,
+                                                                                            "pointCosts":  [
+                                                                                                               1
+                                                                                                           ]
+                                                                                        },
+                                                         "ESC_TALENT_S5_TIER4_DMG_BRAZIER":  {
+                                                                                                 "pointsToUnlock":  12,
+                                                                                                 "pointCosts":  [
+                                                                                                                    1
+                                                                                                                ]
+                                                                                             },
+                                                         "ESC_TALENT_S5_TIER4_DMG_PASSIVE":  {
+                                                                                                 "pointsToUnlock":  12,
+                                                                                                 "pointCosts":  [
+                                                                                                                    1,
+                                                                                                                    1,
+                                                                                                                    1
+                                                                                                                ]
+                                                                                             },
+                                                         "ESC_TALENT_S5_TIER4_UNFREEZE_ONCE":  {
+                                                                                                   "pointsToUnlock":  12,
+                                                                                                   "pointCosts":  [
+                                                                                                                      1
+                                                                                                                  ]
+                                                                                               },
+                                                         "ESC_TALENT_S5_TIER5_CRIT_CHANCE_PASSIVE":  {
+                                                                                                         "pointsToUnlock":  16,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1,
+                                                                                                                            1,
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S5_TIER5_MINFROSTBITE_ATK_DEF":  {
+                                                                                                          "pointsToUnlock":  16,
+                                                                                                          "pointCosts":  [
+                                                                                                                             1
+                                                                                                                         ]
+                                                                                                      },
+                                                         "ESC_TALENT_S5_TIER5_RUSHDOWN":  {
+                                                                                              "pointsToUnlock":  16,
+                                                                                              "pointCosts":  [
+                                                                                                                 1
+                                                                                                             ]
+                                                                                          },
+                                                         "ESC_TALENT_S5_TIER6_ASPECT_MENDER":  {
+                                                                                                   "pointsToUnlock":  20,
+                                                                                                   "pointCosts":  [
+                                                                                                                      1
+                                                                                                                  ]
+                                                                                               },
+                                                         "ESC_TALENT_S5_TIER6_ASPECT_WARRIOR":  {
+                                                                                                    "pointsToUnlock":  20,
+                                                                                                    "pointCosts":  [
+                                                                                                                       1
+                                                                                                                   ]
+                                                                                                }
+                                                     }
+                                     },
+                    "ESC_SEASON_6":  {
+                                         "enabled":  true,
+                                         "contextCode":  13,
+                                         "talentTable":  "escalation_talents_S6",
+                                         "maxLevel":  25,
+                                         "xpToReachLevel":  [
+                                                                500,
+                                                                600,
+                                                                700,
+                                                                800,
+                                                                900,
+                                                                1000,
+                                                                1200,
+                                                                1500,
+                                                                1800,
+                                                                2500,
+                                                                3000,
+                                                                3500,
+                                                                4000,
+                                                                4500,
+                                                                5000,
+                                                                5500,
+                                                                6000,
+                                                                6500,
+                                                                7000,
+                                                                7500,
+                                                                8000,
+                                                                8500,
+                                                                9000,
+                                                                9500,
+                                                                10000
+                                                            ],
+                                         "unlocks":  {
+                                                         "ESC_Reward_2":  {
+                                                                              "level":  8,
+                                                                              "typeCode":  0
+                                                                          },
+                                                         "ESC_Reward_3":  {
+                                                                              "level":  5,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_4":  {
+                                                                              "level":  15,
+                                                                              "typeCode":  4
+                                                                          },
+                                                         "ESC_Reward_5":  {
+                                                                              "level":  10,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_6":  {
+                                                                              "level":  20,
+                                                                              "typeCode":  2
+                                                                          },
+                                                         "ESC_Reward_7":  {
+                                                                              "level":  25,
+                                                                              "typeCode":  0
+                                                                          }
+                                                     },
+                                         "talents":  {
+                                                         "ESC_TALENT_S5_TIER6_BLAZE":  {
+                                                                                           "pointsToUnlock":  20,
+                                                                                           "pointCosts":  [
+                                                                                                              1
+                                                                                                          ]
+                                                                                       },
+                                                         "ESC_TALENT_S5_TIER6_TERRA":  {
+                                                                                           "pointsToUnlock":  20,
+                                                                                           "pointCosts":  [
+                                                                                                              1
+                                                                                                          ]
+                                                                                       },
+                                                         "ESC_TALENT_S5_TIER6_UMBRAL":  {
+                                                                                            "pointsToUnlock":  20,
+                                                                                            "pointCosts":  [
+                                                                                                               1
+                                                                                                           ]
+                                                                                        },
+                                                         "ESC_TALENT_S6_TIER1_EXECUTIONER":  {
+                                                                                                 "pointsToUnlock":  0,
+                                                                                                 "pointCosts":  [
+                                                                                                                    1,
+                                                                                                                    1,
+                                                                                                                    1
+                                                                                                                ]
+                                                                                             },
+                                                         "ESC_TALENT_S6_TIER1_FLEET":  {
+                                                                                           "pointsToUnlock":  0,
+                                                                                           "pointCosts":  [
+                                                                                                              1,
+                                                                                                              1,
+                                                                                                              1
+                                                                                                          ]
+                                                                                       },
+                                                         "ESC_TALENT_S6_TIER1_REVOLVER":  {
+                                                                                              "pointsToUnlock":  0,
+                                                                                              "pointCosts":  [
+                                                                                                                 1,
+                                                                                                                 1,
+                                                                                                                 1
+                                                                                                             ]
+                                                                                          },
+                                                         "ESC_TALENT_S6_TIER2_BLIND_FIGHTING":  {
+                                                                                                    "pointsToUnlock":  4,
+                                                                                                    "pointCosts":  [
+                                                                                                                       1,
+                                                                                                                       1
+                                                                                                                   ]
+                                                                                                },
+                                                         "ESC_TALENT_S6_TIER2_DAMAGE_REDUCTION":  {
+                                                                                                      "pointsToUnlock":  4,
+                                                                                                      "pointCosts":  [
+                                                                                                                         1,
+                                                                                                                         1,
+                                                                                                                         1
+                                                                                                                     ]
+                                                                                                  },
+                                                         "ESC_TALENT_S6_TIER2_FLASK_FLINGER":  {
+                                                                                                   "pointsToUnlock":  4,
+                                                                                                   "pointCosts":  [
+                                                                                                                      1
+                                                                                                                  ]
+                                                                                               },
+                                                         "ESC_TALENT_S6_TIER3_FARSLAYER":  {
+                                                                                               "pointsToUnlock":  8,
+                                                                                               "pointCosts":  [
+                                                                                                                  1,
+                                                                                                                  1,
+                                                                                                                  1
+                                                                                                              ]
+                                                                                           },
+                                                         "ESC_TALENT_S6_TIER3_PACT":  {
+                                                                                          "pointsToUnlock":  8,
+                                                                                          "pointCosts":  [
+                                                                                                             1
+                                                                                                         ]
+                                                                                      },
+                                                         "ESC_TALENT_S6_TIER3_THRILL":  {
+                                                                                            "pointsToUnlock":  8,
+                                                                                            "pointCosts":  [
+                                                                                                               1,
+                                                                                                               1,
+                                                                                                               1
+                                                                                                           ]
+                                                                                        },
+                                                         "ESC_TALENT_S6_TIER4_HARVESTER":  {
+                                                                                               "pointsToUnlock":  12,
+                                                                                               "pointCosts":  [
+                                                                                                                  1,
+                                                                                                                  1,
+                                                                                                                  1
+                                                                                                              ]
+                                                                                           },
+                                                         "ESC_TALENT_S6_TIER4_MASTERCLASS":  {
+                                                                                                 "pointsToUnlock":  12,
+                                                                                                 "pointCosts":  [
+                                                                                                                    1,
+                                                                                                                    1,
+                                                                                                                    1
+                                                                                                                ]
+                                                                                             },
+                                                         "ESC_TALENT_S6_TIER4_STAGGER_PASSIVE":  {
+                                                                                                     "pointsToUnlock":  12,
+                                                                                                     "pointCosts":  [
+                                                                                                                        1,
+                                                                                                                        1,
+                                                                                                                        1
+                                                                                                                    ]
+                                                                                                 },
+                                                         "ESC_TALENT_S6_TIER5_CRIT_CHANCE_PASSIVE":  {
+                                                                                                         "pointsToUnlock":  16,
+                                                                                                         "pointCosts":  [
+                                                                                                                            1,
+                                                                                                                            1,
+                                                                                                                            1
+                                                                                                                        ]
+                                                                                                     },
+                                                         "ESC_TALENT_S6_TIER5_LITTLE_BUDDY":  {
+                                                                                                  "pointsToUnlock":  16,
+                                                                                                  "pointCosts":  [
+                                                                                                                     1,
+                                                                                                                     1,
+                                                                                                                     1,
+                                                                                                                     1
+                                                                                                                 ]
+                                                                                              },
+                                                         "ESC_TALENT_S6_TIER5_TIRELESS":  {
+                                                                                              "pointsToUnlock":  16,
+                                                                                              "pointCosts":  [
+                                                                                                                 1
+                                                                                                             ]
+                                                                                          }
+                                                     }
+                                     }
+                }
+}

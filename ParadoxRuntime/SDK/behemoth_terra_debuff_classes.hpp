@@ -29,8 +29,8 @@ public:
 	void ExecuteUbergraph_behemoth_terra_debuff(int32 EntryPoint);
 	void RemoveDebuffMaterial();
 	void AddVFX();
-	void OnRemoved();
 	void MulticastOnAdded();
+	void OnRemoved();
 
 public:
 	static class UClass* StaticClass()

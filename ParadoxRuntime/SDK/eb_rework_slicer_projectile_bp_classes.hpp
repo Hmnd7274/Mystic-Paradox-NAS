@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Struct_ElementToAKEvent_structs.hpp"
 #include "projectile_base_bp_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Struct_ElementToAKEvent_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 

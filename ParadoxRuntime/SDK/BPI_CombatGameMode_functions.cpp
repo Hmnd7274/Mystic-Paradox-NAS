@@ -448,9 +448,9 @@ void IBPI_CombatGameMode_C::SetGameModeTunables(const struct Fgame_mode_tunables
 // Function BPI_CombatGameMode.BPI_CombatGameMode_C.GetIsAnyBehemothInCombat
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void IBPI_CombatGameMode_C::GetIsAnyBehemothInCombat(bool* return_0)
+void IBPI_CombatGameMode_C::GetIsAnyBehemothInCombat(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"GetIsAnyBehemothInCombat", FnName));
@@ -459,8 +459,8 @@ void IBPI_CombatGameMode_C::GetIsAnyBehemothInCombat(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

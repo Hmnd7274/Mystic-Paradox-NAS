@@ -150,18 +150,6 @@ void Aescalation_mod_boon_frost_manager_C::RoundStart()
 }
 
 
-// Function escalation_mod_boon_frost_manager.escalation_mod_boon_frost_manager_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_mod_boon_frost_manager_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_mod_boon_frost_manager.escalation_mod_boon_frost_manager_C.ShowActiveBanner
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -177,6 +165,18 @@ void Aescalation_mod_boon_frost_manager_C::ShowActiveBanner(int32 BoonInt)
 	Parms.BoonInt = BoonInt;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function escalation_mod_boon_frost_manager.escalation_mod_boon_frost_manager_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_mod_boon_frost_manager_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

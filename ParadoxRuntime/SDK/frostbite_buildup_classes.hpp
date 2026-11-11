@@ -61,11 +61,9 @@ public:
 	void OwningClientStartupFrostbite();
 	void EnableClientFrostbiteTimer();
 	void EvaluateWarmthTalents();
-	void ClientOnBuildupFinished();
 	void FrostbiteApplied();
 	void BehemothFinder();
 	void BehemothKilled(class AArchonBehemoth* Behemoth);
-	void MulticastOnAdded();
 	void RefreshScreenAndAudio();
 	void Revived(class AActor* Reviver, class AActor* ActorWhoWasRevived);
 	void StopFrostbite();
@@ -74,18 +72,20 @@ public:
 	void EscalationRoundEnd(EEscalationGameModeState NewState, EStateTransitionType StateTransitionType);
 	void EnableServerFrostbiteTimer();
 	void ServerStartupFrostbite();
-	void OnAdded();
 	void ServerRefresh();
-	void ShouldAddedBuildupPopUI(bool* ShouldIt);
 	void SetBuildupAmount();
 	void Remove_Temp_Resist(float TempResistToRemove);
 	void Add_Temp_Resist(float TempResistToAdd);
-	void ShouldFinishingStopBuildup(bool* ShouldIt);
 	void Test_Thaw_Value();
-	void ReduceBuildup(float BuildupToReduce);
 	void GetTimesFrozen(int32* TimesFrozen_0);
 	void TrackFrostbiteReduction(const class FString& Description, float Amount);
 	void ClearTrackingData();
+	void ClientOnBuildupFinished();
+	void MulticastOnAdded();
+	void OnAdded();
+	void ShouldAddedBuildupPopUI(bool* ShouldIt);
+	void ShouldFinishingStopBuildup(bool* ShouldIt);
+	void ReduceBuildup(float BuildupToReduce);
 
 public:
 	static class UClass* StaticClass()

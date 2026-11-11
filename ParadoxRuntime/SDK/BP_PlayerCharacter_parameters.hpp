@@ -10,36 +10,36 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "PhoenixGameplayCore_structs.hpp"
 #include "reticle_type_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "jump_type_enum_structs.hpp"
 #include "Archon_structs.hpp"
+#include "player_states_struct_structs.hpp"
 #include "eqs_spawn_query_structs.hpp"
 #include "Engine_structs.hpp"
-#include "player_states_struct_structs.hpp"
-#include "jump_type_enum_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "player_requirements_str_structs.hpp"
+#include "player_camera_state_enum_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
-#include "Struct_PlayerSpeedCurve_structs.hpp"
+#include "CC_HairDataTable_Type_structs.hpp"
 #include "dp_weapon_attach_states_enum_structs.hpp"
-#include "floating_combat_text_item_structs.hpp"
 #include "PhoenixGameplayBase_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "armour_footstep_vfx_struct_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
-#include "EPlayerStatesDefault_structs.hpp"
-#include "loco_animset_str_structs.hpp"
-#include "EUsableObjectResourceCostTypes_structs.hpp"
-#include "player_camera_state_enum_structs.hpp"
-#include "weather_type_enum_structs.hpp"
-#include "player_aiming_state_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "vfx_state_id_struct_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
+#include "loco_animset_str_structs.hpp"
+#include "PhoenixGameplayCore_structs.hpp"
+#include "EPlayerStatesDefault_structs.hpp"
+#include "EUsableObjectResourceCostTypes_structs.hpp"
+#include "player_aiming_state_structs.hpp"
+#include "Struct_PlayerSpeedCurve_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "weather_type_enum_structs.hpp"
 #include "name_float_struct_structs.hpp"
-#include "effect_magitudes_struct_structs.hpp"
-#include "CC_HairDataTable_Type_structs.hpp"
 #include "CC_MakeupDataTable_Type_structs.hpp"
+#include "effect_magitudes_struct_structs.hpp"
+#include "floating_combat_text_item_structs.hpp"
+#include "armour_footstep_vfx_struct_structs.hpp"
 #include "CC_MakeupSkinSettings_Type_structs.hpp"
 
 
@@ -6488,7 +6488,7 @@ struct BP_PlayerCharacter_C_SetCollisionWithDestructible final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue_1;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -6722,7 +6722,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_GetNumPlayersReviving;
 struct BP_PlayerCharacter_C_GetIsSprinting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSprinting_Sprinting;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_GetIsSprinting;
@@ -6857,7 +6857,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsAPlayerCharacter;
 struct BP_PlayerCharacter_C_IsVentJumping final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsVentJumping;
@@ -6877,7 +6877,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsStrafing;
 struct BP_PlayerCharacter_C_IsInEdgeRecovery final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsInEdgeRecovery;
 
@@ -6905,7 +6905,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_GetDesiredLocomotionState;
 struct BP_PlayerCharacter_C_CanMove final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_CanMove;
 
@@ -6914,7 +6914,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_CanMove;
 struct BP_PlayerCharacter_C_IsIkinemaEnabled final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsIkinemaEnabled;
 
@@ -6996,7 +6996,7 @@ struct BP_PlayerCharacter_C_SetCollisionWithAMonster final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_SetCollisionWithAMonster;
 
@@ -7773,7 +7773,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_GetGenderIdentity;
 struct BP_PlayerCharacter_C_IsInputEnabled_ final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
@@ -7790,7 +7790,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsInputEnabled_;
 struct BP_PlayerCharacter_C_IsEmoting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsEmoting;
 
@@ -7799,7 +7799,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_IsEmoting;
 struct BP_PlayerCharacter_C_IsPlantingBanner final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
@@ -7843,7 +7843,7 @@ DUMPER7_ASSERTS_BP_PlayerCharacter_C_CanVentTraversal;
 struct BP_PlayerCharacter_C_GetMountingComponent final
 {
 public:
-	class UArchonMountingComponent*               return_0;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UArchonMountingComponent*               Return;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PlayerCharacter_C_GetMountingComponent;
 

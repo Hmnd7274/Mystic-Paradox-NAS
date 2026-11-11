@@ -43,10 +43,10 @@ public:
 	void K2_ActivateAbility();
 	void StopAimingCall();
 	void EndAbilityCall();
-	void K2_OnEndAbility(bool bWasCancelled);
 	void AlterCamera();
 	void StartSounds();
 	void StopSounds();
+	void K2_OnEndAbility(bool bWasCancelled);
 
 	void CanUseInMontage(class UAnimMontage* ActiveMontage, bool* CanUse) const;
 

@@ -10,35 +10,35 @@
 
 #include "Basic.hpp"
 
-#include "bp_globals_enum_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Archon_structs.hpp"
-#include "behemoth_targetting_data_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "buff_init_data_structs.hpp"
-#include "badge_compare_structs.hpp"
-#include "Engine_structs.hpp"
-#include "InputCore_structs.hpp"
-#include "blackboard_math_operators_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
+#include "Archon_structs.hpp"
 #include "effect_magitudes_struct_structs.hpp"
+#include "Engine_structs.hpp"
+#include "speed_or_duration_info_structs.hpp"
+#include "InputCore_structs.hpp"
+#include "behemoth_targetting_data_structs.hpp"
+#include "buff_init_data_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "name_float_struct_structs.hpp"
 #include "LoadoutStatTypes_structs.hpp"
 #include "element_float_pair_structs.hpp"
 #include "player_stat_type_structs.hpp"
+#include "AIModule_structs.hpp"
 #include "badge_elite_status_structs.hpp"
+#include "badge_compare_structs.hpp"
 #include "badge_levels_structs.hpp"
 #include "named_attribute_structs.hpp"
 #include "inherit_stat_type_structs.hpp"
 #include "hitfx_optimality_structs.hpp"
 #include "direction_enum_structs.hpp"
-#include "speed_or_duration_info_structs.hpp"
 #include "Struct_TagToSpecialEffects_structs.hpp"
+#include "bp_globals_enum_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "archon_impulse_structs.hpp"
 #include "blackboard_comparable_key_type_structs.hpp"
 #include "simplified_blackboard_key_data_structs.hpp"
-#include "AIModule_structs.hpp"
+#include "blackboard_math_operators_structs.hpp"
 #include "Enum_CompareOperators_structs.hpp"
 #include "vfx_with_socket_struct_structs.hpp"
 #include "projectile_target_modifier_structs.hpp"
@@ -1477,7 +1477,7 @@ public:
 	struct FGameplayTagContainer                  Tags;                                              // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct Fhitfx_optimality                      InVFXOptimality;                                   // 0x0020(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        return_0;                                          // 0x0070(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Return;                                            // 0x0070(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RateScale;                                         // 0x0078(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SizeScale;                                         // 0x007C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SphereRadius;                                      // 0x0080(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1508,7 +1508,7 @@ public:
 	bool                                          LogErrors;                                         // 0x0220(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0228(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystem*                        return_0;                                          // 0x0230(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystem*                        Return;                                            // 0x0230(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           CallFunc_MakeLiteralGameplayTag_ReturnValue;       // 0x0238(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                        CallFunc_GetHitOptimality_Return;                  // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetHitOptimality_RateScale;               // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1720,7 +1720,7 @@ public:
 	bool                                          TrueIfNoMontageActive_;                            // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACharacter*                             K2Node_DynamicCast_AsCharacter;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

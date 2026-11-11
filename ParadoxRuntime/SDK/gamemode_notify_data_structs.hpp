@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "gamemode_notification_type_structs.hpp"
 #include "Archon_structs.hpp"
+#include "gamemode_notification_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

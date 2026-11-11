@@ -180,24 +180,6 @@ void ABP_EB_Weapon_C::StartSwordchargeTimer()
 }
 
 
-// Function BP_EB_Weapon.BP_EB_Weapon_C.CallWeaponSpecificFunction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Function_Name                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EB_Weapon_C::CallWeaponSpecificFunction(class FName Function_Name)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CallWeaponSpecificFunction", FnName));
-
-	Params::BP_EB_Weapon_C_CallWeaponSpecificFunction Parms{};
-
-	Parms.Function_Name = Function_Name;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_EB_Weapon.BP_EB_Weapon_C.ResetSwordchargeReady
 // (BlueprintCallable, BlueprintEvent)
 
@@ -241,18 +223,6 @@ void ABP_EB_Weapon_C::BP_HandleEquipForGameplay()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_HandleEquipForGameplay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.DeactivateWeaponComponentsInCity
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_EB_Weapon_C::DeactivateWeaponComponentsInCity()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateWeaponComponentsInCity", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -330,56 +300,6 @@ void ABP_EB_Weapon_C::BndEvt__weapon_meter_bpc_K2Node_ComponentBoundEvent_0_Mete
 }
 
 
-// Function BP_EB_Weapon.BP_EB_Weapon_C.Cheat Charge Weapon
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_EB_Weapon_C::Cheat_Charge_Weapon()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Cheat Charge Weapon", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboEnded
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// EArchonCombatEndReason                  Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FWeaponComboData&          WeaponComboData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_EB_Weapon_C::OnComboEnded(EArchonCombatEndReason Reason, const struct FWeaponComboData& WeaponComboData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnComboEnded", FnName));
-
-	Params::BP_EB_Weapon_C_OnComboEnded Parms{};
-
-	Parms.Reason = Reason;
-	Parms.WeaponComboData = std::move(WeaponComboData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboNextMove
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FWeaponComboData&          WeaponComboData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_EB_Weapon_C::OnComboNextMove(const struct FWeaponComboData& WeaponComboData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnComboNextMove", FnName));
-
-	Params::BP_EB_Weapon_C_OnComboNextMove Parms{};
-
-	Parms.WeaponComboData = std::move(WeaponComboData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboStarted
 // (Event, Protected, BlueprintEvent)
 
@@ -419,25 +339,6 @@ void ABP_EB_Weapon_C::Debug_Set_Weapon_Color(const struct FLinearColor& Color)
 	Parms.Color = std::move(Color);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EB_Weapon.BP_EB_Weapon_C.SpecialAttackReady
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   QReady                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_EB_Weapon_C::SpecialAttackReady(bool* QReady)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpecialAttackReady", FnName));
-
-	Params::BP_EB_Weapon_C_SpecialAttackReady Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (QReady != nullptr)
-		*QReady = Parms.QReady;
 }
 
 
@@ -678,6 +579,105 @@ void ABP_EB_Weapon_C::GetMaxMeterCharge(float* MaxCharge)
 
 	if (MaxCharge != nullptr)
 		*MaxCharge = Parms.MaxCharge;
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboEnded
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// EArchonCombatEndReason                  Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FWeaponComboData&          WeaponComboData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_EB_Weapon_C::OnComboEnded(EArchonCombatEndReason Reason, const struct FWeaponComboData& WeaponComboData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnComboEnded", FnName));
+
+	Params::BP_EB_Weapon_C_OnComboEnded Parms{};
+
+	Parms.Reason = Reason;
+	Parms.WeaponComboData = std::move(WeaponComboData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.OnComboNextMove
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FWeaponComboData&          WeaponComboData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_EB_Weapon_C::OnComboNextMove(const struct FWeaponComboData& WeaponComboData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnComboNextMove", FnName));
+
+	Params::BP_EB_Weapon_C_OnComboNextMove Parms{};
+
+	Parms.WeaponComboData = std::move(WeaponComboData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.CallWeaponSpecificFunction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Function_Name                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EB_Weapon_C::CallWeaponSpecificFunction(class FName Function_Name)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CallWeaponSpecificFunction", FnName));
+
+	Params::BP_EB_Weapon_C_CallWeaponSpecificFunction Parms{};
+
+	Parms.Function_Name = Function_Name;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.Cheat Charge Weapon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_EB_Weapon_C::Cheat_Charge_Weapon()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Cheat Charge Weapon", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.DeactivateWeaponComponentsInCity
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_EB_Weapon_C::DeactivateWeaponComponentsInCity()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateWeaponComponentsInCity", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EB_Weapon.BP_EB_Weapon_C.SpecialAttackReady
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   QReady                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_EB_Weapon_C::SpecialAttackReady(bool* QReady)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpecialAttackReady", FnName));
+
+	Params::BP_EB_Weapon_C_SpecialAttackReady Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (QReady != nullptr)
+		*QReady = Parms.QReady;
 }
 
 

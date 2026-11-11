@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "message_slate_parameters_structs.hpp"
 #include "UMG_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "message_slate_parameters_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 

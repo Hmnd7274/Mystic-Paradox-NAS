@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Archon_structs.hpp"
 #include "progression_track_data_structs.hpp"
+#include "Archon_structs.hpp"
 #include "progression_rank_table_row_structs.hpp"
 #include "progression_track_progress_structs.hpp"
 #include "progression_core_table_row_structs.hpp"
 #include "progression_rank_dependency_structs.hpp"
-#include "progression_event_structs.hpp"
 #include "progression_award_structs.hpp"
 #include "progression_bonus_structs.hpp"
+#include "progression_event_structs.hpp"
 
 
 SDK_NAMESPACE_START

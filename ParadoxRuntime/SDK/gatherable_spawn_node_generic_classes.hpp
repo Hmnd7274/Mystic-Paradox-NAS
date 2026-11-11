@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass gatherable_spawn_node_generic.gatherable_spawn_node_generic_C
 // 0x0028 (0x0260 - 0x0238)
-class Agatherable_spawn_node_generic_C final : public AArchonGatherableSpawnNode
+class Agatherable_spawn_node_generic_C : public AArchonGatherableSpawnNode
 {
 public:
 	class USceneComponent*                        Scene;                                             // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, UObjectWrapper, HasGetValueTypeHash)

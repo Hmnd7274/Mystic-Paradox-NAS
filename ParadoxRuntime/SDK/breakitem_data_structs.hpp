@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_bodypart_type_structs.hpp"
-#include "crafting_component_use_structs.hpp"
 #include "Archon_structs.hpp"
+#include "crafting_component_use_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "behemoth_bodypart_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

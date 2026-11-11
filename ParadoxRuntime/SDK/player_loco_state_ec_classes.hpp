@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "cond_player_state_enum_structs.hpp"
+#include "jump_type_enum_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "jump_type_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

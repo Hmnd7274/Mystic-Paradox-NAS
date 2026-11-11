@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "jump_trajectory_request_structs.hpp"
 #include "Engine_structs.hpp"
 #include "base_buff_classes.hpp"
+#include "jump_trajectory_request_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,9 +28,9 @@ public:
 
 public:
 	void ExecuteUbergraph_base_jump_warp_buff(int32 EntryPoint);
+	void AuthInitialize(const struct FVector& Target, float MaxHeight, float Gravity, class UCapsuleComponent* CapsuleCollision);
 	void OnRemoved();
 	void OnAdded();
-	void AuthInitialize(const struct FVector& Target, float MaxHeight, float Gravity, class UCapsuleComponent* CapsuleCollision);
 
 public:
 	static class UClass* StaticClass()

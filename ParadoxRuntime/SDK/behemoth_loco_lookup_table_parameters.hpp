@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "behemoth_loco_type_structs.hpp"
-#include "behemoth_loco_info_structs.hpp"
 #include "object_lookup_table_struct_structs.hpp"
+#include "behemoth_loco_info_structs.hpp"
 
 
 SDK_NAMESPACE_START

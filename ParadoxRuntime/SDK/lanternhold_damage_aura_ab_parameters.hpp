@@ -81,15 +81,6 @@ public:
 };
 DUMPER7_ASSERTS_lanternhold_damage_aura_ab_C_ExecuteUbergraph_lanternhold_damage_aura_ab;
 
-// Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.K2_OnEndAbility
-// 0x0001 (0x0001 - 0x0000)
-struct lanternhold_damage_aura_ab_C_K2_OnEndAbility final
-{
-public:
-	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_lanternhold_damage_aura_ab_C_K2_OnEndAbility;
-
 // Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.BuffPlayer
 // 0x01B0 (0x01B0 - 0x0000)
 struct lanternhold_damage_aura_ab_C_BuffPlayer final
@@ -169,6 +160,15 @@ public:
 	struct FHitResult                             Hit;                                               // 0x007C(0x009C)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_lanternhold_damage_aura_ab_C_GrantDoubleStrikeFromAmp;
+
+// Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.K2_OnEndAbility
+// 0x0001 (0x0001 - 0x0000)
+struct lanternhold_damage_aura_ab_C_K2_OnEndAbility final
+{
+public:
+	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_lanternhold_damage_aura_ab_C_K2_OnEndAbility;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

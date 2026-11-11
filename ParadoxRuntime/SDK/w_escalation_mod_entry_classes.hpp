@@ -22,7 +22,7 @@ class Uw_escalation_mod_entry_C final : public UEscalationModEntry
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)
-	class UImage*                                 BG;                                                // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UImage*                                 bg;                                                // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 Image_58;                                          // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 Image_105;                                         // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	TArray<class FName>                           Debug_EscalationModRowNames;                       // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

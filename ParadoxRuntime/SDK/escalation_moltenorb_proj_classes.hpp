@@ -53,9 +53,9 @@ public:
 	void ReceivedArchonAbilityDamage(float DamageReceived, class AController* InstigatedBy, class AActor* DamageCauser, const struct FArchonAbilityDamageInfo& DamageInfo);
 	void MultiSetVelAndRot(const struct FVector& vel, const struct FRotator& Rot);
 	void ProjectileExploded(const struct FVector& ExplosionLocation, EProjectileExplodeType ExplodeType);
-	void OnProjectileStopped();
 	void GameplayCue_Combat_OnDamageReceived(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void GetTarget(class AActor* AttackingActor, class AActor** TargetActor);
+	void OnProjectileStopped();
 
 public:
 	static class UClass* StaticClass()

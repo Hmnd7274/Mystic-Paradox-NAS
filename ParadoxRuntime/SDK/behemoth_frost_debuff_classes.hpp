@@ -29,10 +29,10 @@ public:
 
 public:
 	void ExecuteUbergraph_behemoth_frost_debuff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void OnGameplayEffectRemoved();
-	void OnAdded();
 	void MulticastOnAdded();
+	void ReceiveDestroyed();
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

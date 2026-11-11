@@ -22,7 +22,7 @@ class Uw_loadout_element_item_C final : public ULoadoutGearElementWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)
-	class UImage*                                 Fill;                                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
+	class UImage*                                 fill;                                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 	class UImage*                                 frame;                                             // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash)
 
 public:

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AIModule_classes.hpp"
 #include "random_montage_task_struct_structs.hpp"
+#include "AIModule_classes.hpp"
 
 
 SDK_NAMESPACE_START

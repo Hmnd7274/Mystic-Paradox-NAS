@@ -12,10 +12,10 @@
 
 #include "OnlineSubsystemPhoenix_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Eui_character_screen_mode_structs.hpp"
 #include "UMG_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "Eui_character_screen_mode_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
@@ -89,7 +89,7 @@ public:
 	bool                                          K2Node_CustomEvent_Success_1;                      // 0x02BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_bPurchaseMade;                  // 0x02BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_message;                        // 0x02C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_Message;                        // 0x02C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x02D8(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x02F0(0x0040)(UObjectWrapper, HasGetValueTypeHash)

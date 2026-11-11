@@ -34,6 +34,18 @@ void Aaoe_simple_C::ExecuteUbergraph_aoe_simple(int32 EntryPoint)
 }
 
 
+// Function aoe_simple.aoe_simple_C.BeginPlayPoolAgnostic
+// (Event, Protected, BlueprintEvent)
+
+void Aaoe_simple_C::BeginPlayPoolAgnostic()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BeginPlayPoolAgnostic", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function aoe_simple.aoe_simple_C.ScaleParticle
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -95,18 +107,6 @@ void Aaoe_simple_C::OnRep_ManuallySetParticleScale()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_ManuallySetParticleScale", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function aoe_simple.aoe_simple_C.BeginPlayPoolAgnostic
-// (Event, Protected, BlueprintEvent)
-
-void Aaoe_simple_C::BeginPlayPoolAgnostic()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BeginPlayPoolAgnostic", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

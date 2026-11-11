@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "tier_lantern_data_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "tier_lantern_data_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 
 

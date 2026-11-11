@@ -238,6 +238,24 @@ void Avendor_interactive_bp_C::Setup_Conditional_Markers()
 }
 
 
+// Function vendor_interactive_bp.vendor_interactive_bp_C.OnUserCompletedInteraction
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Avendor_interactive_bp_C::OnUserCompletedInteraction(class UArchonInteractionUserComponent* User)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUserCompletedInteraction", FnName));
+
+	Params::vendor_interactive_bp_C_OnUserCompletedInteraction Parms{};
+
+	Parms.User = User;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function vendor_interactive_bp.vendor_interactive_bp_C.K2_OnBecomeViewTarget
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -263,6 +281,18 @@ void Avendor_interactive_bp_C::ReceiveGameplayStart()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveGameplayStart", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function vendor_interactive_bp.vendor_interactive_bp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Avendor_interactive_bp_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -972,36 +1002,6 @@ void Avendor_interactive_bp_C::Get_Crafting_Location_Transform(struct FTransform
 }
 
 
-// Function vendor_interactive_bp.vendor_interactive_bp_C.OnUserCompletedInteraction
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UArchonInteractionUserComponent*  User                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Avendor_interactive_bp_C::OnUserCompletedInteraction(class UArchonInteractionUserComponent* User)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUserCompletedInteraction", FnName));
-
-	Params::vendor_interactive_bp_C_OnUserCompletedInteraction Parms{};
-
-	Parms.User = User;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function vendor_interactive_bp.vendor_interactive_bp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Avendor_interactive_bp_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function vendor_interactive_bp.vendor_interactive_bp_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -1011,24 +1011,6 @@ void Avendor_interactive_bp_C::UserConstructionScript()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function vendor_interactive_bp.vendor_interactive_bp_C.GetMarkerComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UMarkerComponent*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UMarkerComponent* Avendor_interactive_bp_C::GetMarkerComponent() const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerComponent", FnName));
-
-	Params::vendor_interactive_bp_C_GetMarkerComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -1061,6 +1043,24 @@ struct FPointOfInterestInfoModel Avendor_interactive_bp_C::GetPointOfInterestDat
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPointOfInterestData", FnName));
 
 	Params::vendor_interactive_bp_C_GetPointOfInterestData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function vendor_interactive_bp.vendor_interactive_bp_C.GetMarkerComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UMarkerComponent*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UMarkerComponent* Avendor_interactive_bp_C::GetMarkerComponent() const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerComponent", FnName));
+
+	Params::vendor_interactive_bp_C_GetMarkerComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

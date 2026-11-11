@@ -82,24 +82,6 @@ void Ulanternhold_vine_travel_ab_C::EndAbilityCall()
 }
 
 
-// Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.K2_OnEndAbility
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Ulanternhold_vine_travel_ab_C::K2_OnEndAbility(bool bWasCancelled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_OnEndAbility", FnName));
-
-	Params::lanternhold_vine_travel_ab_C_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.AlterCamera
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -133,6 +115,24 @@ void Ulanternhold_vine_travel_ab_C::StopSounds()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopSounds", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.K2_OnEndAbility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Ulanternhold_vine_travel_ab_C::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_OnEndAbility", FnName));
+
+	Params::lanternhold_vine_travel_ab_C_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

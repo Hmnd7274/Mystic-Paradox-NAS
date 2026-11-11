@@ -13,11 +13,11 @@
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Archon_structs.hpp"
-#include "ui_combo_keytype_structs.hpp"
 #include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "ui_comboArray_structs.hpp"
 #include "ui_combo_tablestruct_structs.hpp"
+#include "ui_combo_keytype_structs.hpp"
 
 
 SDK_NAMESPACE_START

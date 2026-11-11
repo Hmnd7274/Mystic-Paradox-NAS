@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Eui_character_screen_mode_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "UMG_structs.hpp"
+#include "Eui_character_screen_mode_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -811,9 +811,9 @@ void Uplayer_state_machine_bpc_C::UpdateFollowCamera(EPlayerStatesDefault NewPla
 // Function player_state_machine_bpc.player_state_machine_bpc_C.IsFollowCameraEnabled
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Uplayer_state_machine_bpc_C::IsFollowCameraEnabled(bool* return_0)
+void Uplayer_state_machine_bpc_C::IsFollowCameraEnabled(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsFollowCameraEnabled", FnName));
@@ -822,8 +822,8 @@ void Uplayer_state_machine_bpc_C::IsFollowCameraEnabled(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

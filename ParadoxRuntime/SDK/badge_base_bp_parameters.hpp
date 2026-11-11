@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "badge_score_data_structs.hpp"
 #include "badge_elite_status_structs.hpp"
+#include "badge_score_data_structs.hpp"
 #include "badge_levels_structs.hpp"
 #include "badge_compare_structs.hpp"
 

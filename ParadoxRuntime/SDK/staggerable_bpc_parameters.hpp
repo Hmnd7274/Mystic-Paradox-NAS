@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "stagger_stage_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "stagger_armor_data_structs.hpp"
-#include "stagger_telemetry_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "stagger_type_structs.hpp"
-#include "Engine_structs.hpp"
+#include "stagger_telemetry_data_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 SDK_NAMESPACE_START

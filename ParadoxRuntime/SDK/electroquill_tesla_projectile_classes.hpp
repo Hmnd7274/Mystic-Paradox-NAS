@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "electroquill_projectile_classes.hpp"
 #include "PhysicsCore_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -62,7 +62,6 @@ public:
 	void GameplayCue_Combat_OnDamageReceived(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void ReceivedArchonAbilityDamage(float DamageReceived, class AController* InstigatedBy, class AActor* DamageCauser, const struct FArchonAbilityDamageInfo& DamageInfo);
 	void grug();
-	void SpawnedActor_Cleanup();
 	void MulticastDie();
 	void AuthTryDie();
 	void AuthSetRageMode(bool RageMode_0);
@@ -72,14 +71,15 @@ public:
 	void AuthSpawnLightningStrike();
 	void LightningStrikeTelegraph();
 	void ReceiveBeginPlay();
-	void OnProjectileStopped();
 	void Timeline_1__UpdateFunc();
 	void Timeline_1__FinishedFunc();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
-	void UserConstructionScript();
 	void OnRep_RageMode();
 	void GetDebrisData(EPhysicalSurface SurfaceType, struct Fdebris_vfx_struct* FoundVFX, bool* HasFound, class FName* SurfaceName);
+	void SpawnedActor_Cleanup();
+	void OnProjectileStopped();
+	void UserConstructionScript();
 	void CanHitCBPushPullTarget(class UPrimitiveComponent* ComponentHit, bool* Hits_);
 
 public:

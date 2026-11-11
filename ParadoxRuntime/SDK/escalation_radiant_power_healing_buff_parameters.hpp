@@ -105,15 +105,15 @@ public:
 };
 DUMPER7_ASSERTS_escalation_radiant_power_healing_buff_C_OnHeal_Audio;
 
-// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.PositionandFireVFX
+// Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.PositionAndFireVFX
 // 0x0010 (0x0010 - 0x0000)
-struct escalation_radiant_power_healing_buff_C_PositionandFireVFX final
+struct escalation_radiant_power_healing_buff_C_PositionAndFireVFX final
 {
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 Initiator;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_escalation_radiant_power_healing_buff_C_PositionandFireVFX;
+DUMPER7_ASSERTS_escalation_radiant_power_healing_buff_C_PositionAndFireVFX;
 
 // Function escalation_radiant_power_healing_buff.escalation_radiant_power_healing_buff_C.DamageDelt
 // 0x0060 (0x0060 - 0x0000)

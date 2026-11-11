@@ -34,18 +34,6 @@ void Abehemoth_umbral_debuff_C::ExecuteUbergraph_behemoth_umbral_debuff(int32 En
 }
 
 
-// Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abehemoth_umbral_debuff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.AuthDoDamage
 // (BlueprintCallable, BlueprintEvent)
 
@@ -70,18 +58,6 @@ void Abehemoth_umbral_debuff_C::AuthApplyPartDamage()
 }
 
 
-// Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abehemoth_umbral_debuff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -89,6 +65,30 @@ void Abehemoth_umbral_debuff_C::MulticastOnAdded()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abehemoth_umbral_debuff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function behemoth_umbral_debuff.behemoth_umbral_debuff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abehemoth_umbral_debuff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

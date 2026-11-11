@@ -32,9 +32,9 @@ public:
 
 public:
 	void ExecuteUbergraph_lantern_instant_lifesteal_buff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void MulticastOnAdded();
 	void IsValidTarget(class AActor* DamagedActor, const struct FGameplayTagContainer& InsitgatorTags, bool* ValidTarget);
+	void ReceiveDestroyed();
 
 public:
 	static class UClass* StaticClass()

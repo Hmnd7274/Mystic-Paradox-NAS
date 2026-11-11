@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "GameplayAbilities_structs.hpp"
-#include "Archon_structs.hpp"
-#include "EBAttackType_structs.hpp"
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Struct_ElementToAKEvent_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "BP_BaseArchonWeapon_classes.hpp"
+#include "Archon_structs.hpp"
+#include "Engine_structs.hpp"
+#include "EBAttackType_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -93,23 +93,17 @@ public:
 	void ResetMeterGain();
 	void StartMeterGainTimer();
 	void StartSwordchargeTimer();
-	void CallWeaponSpecificFunction(class FName Function_Name);
 	void ResetSwordchargeReady();
 	void OnPostMitDamage(const struct FPostMitigationDamageSummary& PostMitDamageSummary, const struct FGameplayTagContainer& DamageTags, class AActor* DamagedActor, const struct FGameplayEffectContextHandle& Context);
 	void BP_HandleEquipForGameplay();
-	void DeactivateWeaponComponentsInCity();
 	void InitializeHUDWidget(class UUserWidget* Widget);
 	void FullMeterAudio_Multi();
 	void EnableSuperModeEffects(bool enable);
 	void TutorialChargeSpecial();
 	void BndEvt__weapon_meter_bpc_K2Node_ComponentBoundEvent_0_MeterMaxed__DelegateSignature();
-	void Cheat_Charge_Weapon();
-	void OnComboEnded(EArchonCombatEndReason Reason, const struct FWeaponComboData& WeaponComboData);
-	void OnComboNextMove(const struct FWeaponComboData& WeaponComboData);
 	void OnComboStarted();
 	void Evaluate_Ember_Charge();
 	void Debug_Set_Weapon_Color(const struct FLinearColor& Color);
-	void SpecialAttackReady(bool* QReady);
 	void UpdateSuperModeFX(bool Condition);
 	void InSuperMode(bool* InSuper);
 	void InitializeHUDWidget_Internal(class Uweapon_eb_bpw_C* Widget);
@@ -123,6 +117,12 @@ public:
 	void AddPercentPipFill(float PercentToAdd);
 	void GetMeterCharge(float* CurrentCharge);
 	void GetMaxMeterCharge(float* MaxCharge);
+	void OnComboEnded(EArchonCombatEndReason Reason, const struct FWeaponComboData& WeaponComboData);
+	void OnComboNextMove(const struct FWeaponComboData& WeaponComboData);
+	void CallWeaponSpecificFunction(class FName Function_Name);
+	void Cheat_Charge_Weapon();
+	void DeactivateWeaponComponentsInCity();
+	void SpecialAttackReady(bool* QReady);
 
 	bool CanExecuteComboTransition(const struct FComboInputBuffer& ComboInputBuffer) const;
 

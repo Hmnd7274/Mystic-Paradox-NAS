@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "stagger_lookup_table_entry_structs.hpp"
 #include "stagger_type_structs.hpp"
+#include "stagger_lookup_table_entry_structs.hpp"
 #include "object_lookup_table_struct_structs.hpp"
 
 

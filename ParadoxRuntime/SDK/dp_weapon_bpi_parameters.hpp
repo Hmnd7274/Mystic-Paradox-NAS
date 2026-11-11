@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "dp_weapon_hand_enum_structs.hpp"
 #include "player_aim_request_structs.hpp"
 #include "dp_weapon_attach_states_enum_structs.hpp"
+#include "dp_part_tracker_data_bps_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "dp_part_tracker_data_bps_structs.hpp"
+#include "dp_weapon_hand_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

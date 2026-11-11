@@ -35,7 +35,6 @@ public:
 
 public:
 	void ExecuteUbergraph_escalation_boon_frost_warrior_buff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void DestroyVFX();
 	void EndThisBuff();
 	void BOUNCE();
@@ -46,6 +45,7 @@ public:
 	void ApplyDamageGameEffect();
 	void AddFrostbiteResistance();
 	void AddVFX();
+	void ReceiveDestroyed();
 	void OnAdded();
 
 public:

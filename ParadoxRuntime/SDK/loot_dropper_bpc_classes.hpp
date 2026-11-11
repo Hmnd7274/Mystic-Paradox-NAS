@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "shiny_loot_infos_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "OnlineSubsystemPhoenix_structs.hpp"
-#include "name_int_map_structs.hpp"
+#include "behemoth_bodypart_type_structs.hpp"
 #include "shiny_drop_queue_data_structs.hpp"
-#include "loot_drop_behavior_structs.hpp"
+#include "shiny_loot_info_structs.hpp"
 #include "persistent_request_result_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "shiny_loot_infos_structs.hpp"
-#include "shiny_loot_info_structs.hpp"
+#include "name_int_map_structs.hpp"
 #include "Archon_structs.hpp"
-#include "behemoth_bodypart_type_structs.hpp"
 #include "HuntActivityType_structs.hpp"
+#include "loot_drop_behavior_structs.hpp"
 
 
 SDK_NAMESPACE_START

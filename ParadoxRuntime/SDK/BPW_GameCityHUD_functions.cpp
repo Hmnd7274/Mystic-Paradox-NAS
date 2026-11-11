@@ -76,18 +76,6 @@ void UBPW_GameCityHUD_C::OnSelectedHuntPassDataChanged_Dynamic_Event_0()
 }
 
 
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UBPW_GameCityHUD_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPW_GameCityHUD.BPW_GameCityHUD_C.OnHuntXPMultiplierStateChange
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -182,66 +170,6 @@ void UBPW_GameCityHUD_C::AddTutorialPopup(class UWidget* Tutorial)
 }
 
 
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.PrograssGranted
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FProgressGrant&            Grant                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UBPW_GameCityHUD_C::PrograssGranted(const struct FProgressGrant& Grant)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrograssGranted", FnName));
-
-	Params::BPW_GameCityHUD_C_PrograssGranted Parms{};
-
-	Parms.Grant = std::move(Grant);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.HandleUseQuickSlotFailed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ELoadoutQuickItemSlot                   QuickslotIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPW_GameCityHUD_C::HandleUseQuickSlotFailed(ELoadoutQuickItemSlot QuickslotIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleUseQuickSlotFailed", FnName));
-
-	Params::BPW_GameCityHUD_C_HandleUseQuickSlotFailed Parms{};
-
-	Parms.QuickslotIndex = QuickslotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.RefreshPlayerDeets
-// (BlueprintCallable, BlueprintEvent)
-
-void UBPW_GameCityHUD_C::RefreshPlayerDeets()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshPlayerDeets", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.RefreshBoosts
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBPW_GameCityHUD_C::RefreshBoosts()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshBoosts", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BPW_GameCityHUD.BPW_GameCityHUD_C.UpdateCityQuickSlotBar
 // (BlueprintCallable, BlueprintEvent)
 
@@ -266,24 +194,6 @@ void UBPW_GameCityHUD_C::Refresh_Watermark_City()
 }
 
 
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Set Static Hud Visibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visible_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UBPW_GameCityHUD_C::Set_Static_Hud_Visibility(bool Visible_)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Static Hud Visibility", FnName));
-
-	Params::BPW_GameCityHUD_C_Set_Static_Hud_Visibility Parms{};
-
-	Parms.Visible_ = Visible_;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPW_GameCityHUD.BPW_GameCityHUD_C.OnQuestSystemReady
 // (BlueprintCallable, BlueprintEvent)
 
@@ -305,25 +215,6 @@ void UBPW_GameCityHUD_C::GetLastLogin()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetLastLogin", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.GetPickupNotificationQueue
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class Upickup_notification_queue_bpw_C**PickupQueue                                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPW_GameCityHUD_C::GetPickupNotificationQueue(class Upickup_notification_queue_bpw_C** PickupQueue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPickupNotificationQueue", FnName));
-
-	Params::BPW_GameCityHUD_C_GetPickupNotificationQueue Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PickupQueue != nullptr)
-		*PickupQueue = Parms.PickupQueue;
 }
 
 
@@ -376,6 +267,115 @@ void UBPW_GameCityHUD_C::RefreshHuntXPMultiplier(bool Active)
 	Parms.Active = Active;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.PrograssGranted
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FProgressGrant&            Grant                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UBPW_GameCityHUD_C::PrograssGranted(const struct FProgressGrant& Grant)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrograssGranted", FnName));
+
+	Params::BPW_GameCityHUD_C_PrograssGranted Parms{};
+
+	Parms.Grant = std::move(Grant);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBPW_GameCityHUD_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.HandleUseQuickSlotFailed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ELoadoutQuickItemSlot                   QuickslotIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPW_GameCityHUD_C::HandleUseQuickSlotFailed(ELoadoutQuickItemSlot QuickslotIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleUseQuickSlotFailed", FnName));
+
+	Params::BPW_GameCityHUD_C_HandleUseQuickSlotFailed Parms{};
+
+	Parms.QuickslotIndex = QuickslotIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.RefreshPlayerDeets
+// (BlueprintCallable, BlueprintEvent)
+
+void UBPW_GameCityHUD_C::RefreshPlayerDeets()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshPlayerDeets", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.RefreshBoosts
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBPW_GameCityHUD_C::RefreshBoosts()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshBoosts", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Set Static Hud Visibility
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Visible_                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UBPW_GameCityHUD_C::Set_Static_Hud_Visibility(bool Visible_)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Static Hud Visibility", FnName));
+
+	Params::BPW_GameCityHUD_C_Set_Static_Hud_Visibility Parms{};
+
+	Parms.Visible_ = Visible_;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.GetPickupNotificationQueue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class Upickup_notification_queue_bpw_C**PickupQueue                                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPW_GameCityHUD_C::GetPickupNotificationQueue(class Upickup_notification_queue_bpw_C** PickupQueue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPickupNotificationQueue", FnName));
+
+	Params::BPW_GameCityHUD_C_GetPickupNotificationQueue Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PickupQueue != nullptr)
+		*PickupQueue = Parms.PickupQueue;
 }
 
 

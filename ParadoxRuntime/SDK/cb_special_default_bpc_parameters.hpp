@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "eqs_context_item_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "eqs_context_item_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 

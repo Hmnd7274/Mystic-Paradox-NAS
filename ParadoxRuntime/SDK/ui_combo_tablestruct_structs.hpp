@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ui_combo_structs.hpp"
 #include "ui_comboArray_structs.hpp"
+#include "ui_combo_structs.hpp"
 #include "weapon_type_enum_structs.hpp"
 
 

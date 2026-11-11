@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "can_hit_target_result_structs.hpp"
 #include "Engine_structs.hpp"
-#include "damage_guid_type_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "beam_request_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
 #include "AkAudio_structs.hpp"
-#include "can_hit_target_result_structs.hpp"
+#include "damage_guid_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

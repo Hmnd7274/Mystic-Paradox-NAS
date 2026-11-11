@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayAbilities_structs.hpp"
-#include "actions_animset_str_structs.hpp"
 #include "Engine_structs.hpp"
+#include "actions_animset_str_structs.hpp"
 
 
 SDK_NAMESPACE_START

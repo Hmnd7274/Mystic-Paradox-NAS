@@ -12,8 +12,8 @@
 
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
-#include "ui_struct_reward_display_details_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "ui_struct_reward_display_details_structs.hpp"
 
 
 SDK_NAMESPACE_START

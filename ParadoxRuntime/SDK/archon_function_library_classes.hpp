@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "badge_levels_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "badge_compare_structs.hpp"
-#include "Archon_structs.hpp"
 #include "player_stat_type_structs.hpp"
 #include "LoadoutStatTypes_structs.hpp"
+#include "Archon_structs.hpp"
 #include "badge_elite_status_structs.hpp"
+#include "badge_levels_structs.hpp"
+#include "badge_compare_structs.hpp"
 #include "inherit_stat_type_structs.hpp"
 #include "direction_enum_structs.hpp"
 #include "bp_globals_enum_structs.hpp"
@@ -80,13 +80,13 @@ public:
 	static void ActorIsAlive(class AActor* Actor, class UObject* __WorldContext, bool* IsAlive);
 	static void RunTargettingChecksOnTargetSet(TArray<struct Fbehemoth_targetting_data>& Targetting_Data, class AActor* ActorWhoIsTargetting, TArray<class AActor*>& TargetSet, bool ScaleAreaWithMesh_DisabledForNow_, const struct FTransform& TargetFromTransform, float PredictionTime, class UObject* __WorldContext, TArray<class AActor*>* AvailableTargets);
 	static void LowPassFilterVector(const struct FVector& Sample, const struct FVector& PreviousValue, float TimeConstant, float DeltaSeconds, float MaxDelta, class UObject* __WorldContext, struct FVector* SmoothedValue);
-	static void GetHitOptimality(struct FGameplayTagContainer& Tags, const struct Fhitfx_optimality& InVFXOptimality, class UObject* __WorldContext, class UParticleSystem** return_0, float* RateScale, float* SizeScale, float* SphereRadius);
-	static void GetElementHitVFX(struct FGameplayTagContainer& Tags, struct Fhitfx_optimality& Flame, struct Fhitfx_optimality& Frost, struct Fhitfx_optimality& Shock, struct Fhitfx_optimality& Radiant, struct Fhitfx_optimality& Umbral, struct Fhitfx_optimality& RawElemental, struct Fhitfx_optimality& Terra, class UObject* World_Context_Object, bool LogErrors, class UObject* __WorldContext, class UParticleSystem** return_0);
+	static void GetHitOptimality(struct FGameplayTagContainer& Tags, const struct Fhitfx_optimality& InVFXOptimality, class UObject* __WorldContext, class UParticleSystem** Return, float* RateScale, float* SizeScale, float* SphereRadius);
+	static void GetElementHitVFX(struct FGameplayTagContainer& Tags, struct Fhitfx_optimality& Flame, struct Fhitfx_optimality& Frost, struct Fhitfx_optimality& Shock, struct Fhitfx_optimality& Radiant, struct Fhitfx_optimality& Umbral, struct Fhitfx_optimality& RawElemental, struct Fhitfx_optimality& Terra, class UObject* World_Context_Object, bool LogErrors, class UObject* __WorldContext, class UParticleSystem** Return);
 	static void PrintAllTagsFunc(struct FGameplayTagContainer& Tags, class UObject* __WorldContext);
 	static void InheritPowerFromActor(Einherit_stat_type InheritType, class AActor* ApplyPowerToThisActor, class AActor* InheritPowerFromThisActor, class UObject* __WorldContext);
 	static void GetAllResistanceStats(class UObject* __WorldContext, TArray<struct Fnamed_attribute>* ResistanceStats);
 	static void BadgeIsBetter(float Impressiveness1, Ebadge_elite_status EliteStatus1, Ebadge_levels BadgeLevel1, float Impressiveness2, Ebadge_elite_status EliteStatus2, Ebadge_levels BadgeLevel2, class UObject* __WorldContext, Ebadge_compare* Result);
-	static void IsCancelWindowNotifyActive(class AActor* Actor, EArchonAttackActionKeyModifier ModifierKey, bool TrueIfNoMontageActive_, class UObject* __WorldContext, bool* return_0);
+	static void IsCancelWindowNotifyActive(class AActor* Actor, EArchonAttackActionKeyModifier ModifierKey, bool TrueIfNoMontageActive_, class UObject* __WorldContext, bool* Return);
 	static void GetBehemothIs_ElementVulnerabilityText(EArchonElementType ElementType, float Value, class UObject* __WorldContext, class FText* ElementName);
 	static void GetElementHUDColor(EArchonElementType Element, class UObject* __WorldContext, struct FLinearColor* Color);
 	static void BuildElementalFloatArray(float Flame, float Frost, float Shock, float Radiant, float Umbral, float Terra, float IgnoreElementsWithThisValue, class UObject* __WorldContext, TArray<struct Felement_float_pair>* ElementalFloatArray);

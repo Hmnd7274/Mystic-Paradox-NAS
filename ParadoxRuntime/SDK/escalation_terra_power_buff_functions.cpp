@@ -76,18 +76,6 @@ void Aescalation_terra_power_buff_C::OnPerfectDodge()
 }
 
 
-// Function escalation_terra_power_buff.escalation_terra_power_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_terra_power_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_terra_power_buff.escalation_terra_power_buff_C.BuffExpired
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -107,6 +95,18 @@ void Aescalation_terra_power_buff_C::RemoveElementalForms()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveElementalForms", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_terra_power_buff.escalation_terra_power_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_terra_power_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

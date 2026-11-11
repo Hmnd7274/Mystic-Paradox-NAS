@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "vfx_components_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "vfx_components_structs.hpp"
 #include "vfx_struct_structs.hpp"
 #include "vfx_states_structs.hpp"
 

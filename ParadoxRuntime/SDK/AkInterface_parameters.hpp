@@ -20,7 +20,7 @@ struct AkInterface_C_GetShouldExecuteAKNotify final
 {
 public:
 	const class UAnimNotify_AkEvent_C*            NotifyInstance;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_AkInterface_C_GetShouldExecuteAKNotify;
 

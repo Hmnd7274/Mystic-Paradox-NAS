@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_part_type_structs.hpp"
-#include "stagger_type_structs.hpp"
+#include "behemoth_stagger_type_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Archon_classes.hpp"
-#include "behemoth_stagger_type_structs.hpp"
+#include "stagger_type_structs.hpp"
+#include "behemoth_part_type_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
 
 
@@ -32,7 +32,7 @@ public:
 public:
 	void ExecuteUbergraph_arena_gamestate_bpc(int32 EntryPoint);
 	void OnBleedout();
-	void Staggered(Ebehemoth_stagger_type StaggerSourceType, bool WasPartBroken, bool WasPartSevered, class Umonsterpart_bpc_C* PartThatCausedStagger, Estagger_type BehemothStaggerType);
+	void staggered(Ebehemoth_stagger_type StaggerSourceType, bool WasPartBroken, bool WasPartSevered, class Umonsterpart_bpc_C* PartThatCausedStagger, Estagger_type BehemothStaggerType);
 	void ReduceTimeForPartBreak_PartCompare(class Umonsterpart_bpc_C* PartChanged);
 	void SetupTimerAndBreakNotifies();
 	void DebugToClient(const class FString& Message, float Duration);

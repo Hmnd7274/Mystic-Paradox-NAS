@@ -70,6 +70,8 @@
 {"table":"StoreItemsTable","rowName":"PRESTIGE_WP_IH_HP07B_WITCH_00","featureImage":"ihammer_witch_00.ihammer_witch_00","standardImage":"ihammer_witch_00.ihammer_witch_00"}
 {"table":"StoreItemsTable","rowName":"PRESTIGE_WP_MS_HP05_NINJA_00","featureImage":"ui_icon_hp_ninja_mspear_00.ui_icon_hp_ninja_mspear_00","standardImage":"ui_icon_hp_ninja_mspear_00.ui_icon_hp_ninja_mspear_00"}
 {"table":"StoreItemsTable","rowName":"PRESTIGE_ccfp_nighthunter","featureImage":"ui_icon_hp_witch_witch_hunter.ui_icon_hp_witch_witch_hunter","standardImage":"ui_icon_hp_witch_witch_hunter.ui_icon_hp_witch_witch_hunter"}
+{"table":"StoreItemsTable","rowName":"PRESTIGE_ccfp_ultra_monk","featureImage":"ui_icon_hp_monk_facepaint_ultramonk.ui_icon_hp_monk_facepaint_ultramonk","standardImage":"ui_icon_hp_monk_facepaint_ultramonk.ui_icon_hp_monk_facepaint_ultramonk"}
+{"table":"StoreItemsTable","rowName":"PRESTIGE_ent_ccfp_hero","featureImage":"ui_icon_huntpass_facepaint_hero.ui_icon_huntpass_facepaint_hero","standardImage":"ui_icon_huntpass_facepaint_hero.ui_icon_huntpass_facepaint_hero"}
 {"table":"StoreItemsTable","rowName":"boost_1_day_patron_openbeta","featureImage":"single_rep_boost_1_day-feature.single_rep_boost_1_day-feature","standardImage":"single_rep_boost_1_day-standard.single_rep_boost_1_day-standard"}
 {"table":"StoreItemsTable","rowName":"boost_30_day_dailychest","featureImage":"boost_30_day_dailychest-feature.boost_30_day_dailychest-feature","standardImage":"None"}
 {"table":"StoreItemsTable","rowName":"boost_30_day_patron_openbeta","featureImage":"single_rep_boost_30_day-feature.single_rep_boost_30_day-feature","standardImage":"single_rep_boost_30_day-standard.single_rep_boost_30_day-standard"}
@@ -644,7 +646,6 @@
 {"table":"StoreItemsTable","rowName":"prestige_bnc_standard_hp07b_witch_00","featureImage":"playerbanner_witch_00.playerbanner_witch_00","standardImage":"playerbanner_witch_00.playerbanner_witch_00"}
 {"table":"StoreItemsTable","rowName":"prestige_bnc_standard_hp08a_heroes_00","featureImage":"playerbanner_heroes_00.playerbanner_heroes_00","standardImage":"playerbanner_heroes_00.playerbanner_heroes_00"}
 {"table":"StoreItemsTable","rowName":"prestige_bnc_standard_hp09a_assassins_00","featureImage":"playerbanner_assassins_00.playerbanner_assassins_00","standardImage":"playerbanner_assassins_00.playerbanner_assassins_00"}
-{"table":"StoreItemsTable","rowName":"prestige_ccfp_ultra_monk","featureImage":"ui_icon_hp_monk_facepaint_ultramonk.ui_icon_hp_monk_facepaint_ultramonk","standardImage":"ui_icon_hp_monk_facepaint_ultramonk.ui_icon_hp_monk_facepaint_ultramonk"}
 {"table":"StoreItemsTable","rowName":"prestige_cchd_hp07b_00","featureImage":"tint_ultraviolent.tint_ultraviolent","standardImage":"tint_ultraviolent.tint_ultraviolent"}
 {"table":"StoreItemsTable","rowName":"prestige_dye_hp08b_punk_00_durable","featureImage":"HP8B_Dyes_deviation.HP8B_Dyes_deviation","standardImage":"None"}
 {"table":"StoreItemsTable","rowName":"prestige_dye_hp08b_punk_01_durable","featureImage":"HP8B_Dyes_atomica.HP8B_Dyes_atomica","standardImage":"None"}
@@ -705,7 +706,6 @@
 {"table":"StoreItemsTable","rowName":"prestige_em_player_hp09a_assassins_03","featureImage":"ui_icon_hp_assassins_emote_quicksand.ui_icon_hp_assassins_emote_quicksand","standardImage":"ui_icon_hp_assassins_emote_quicksand.ui_icon_hp_assassins_emote_quicksand"}
 {"table":"StoreItemsTable","rowName":"prestige_em_player_hp09b_commando_01","featureImage":"ui_icon_hp_commando_emote_grenade.ui_icon_hp_commando_emote_grenade","standardImage":"ui_icon_hp_commando_emote_grenade.ui_icon_hp_commando_emote_grenade"}
 {"table":"StoreItemsTable","rowName":"prestige_ent_ccfp_8b_aetherpunk_00","featureImage":"ui_hp_punks_facepaint_stardust.ui_hp_punks_facepaint_stardust","standardImage":"ui_hp_punks_facepaint_stardust.ui_hp_punks_facepaint_stardust"}
-{"table":"StoreItemsTable","rowName":"prestige_ent_ccfp_hero","featureImage":"ui_icon_huntpass_facepaint_hero.ui_icon_huntpass_facepaint_hero","standardImage":"ui_icon_huntpass_facepaint_hero.ui_icon_huntpass_facepaint_hero"}
 {"table":"StoreItemsTable","rowName":"prestige_ent_ccfp_hp09a_assassins_00","featureImage":"ui_hp_assassins_facepaint_1.ui_hp_assassins_facepaint_1","standardImage":"ui_hp_assassins_facepaint_1.ui_hp_assassins_facepaint_1"}
 {"table":"StoreItemsTable","rowName":"prestige_ent_ccfp_hp09a_assassins_03","featureImage":"ui_hp_assassins_facepaint_2.ui_hp_assassins_facepaint_2","standardImage":"ui_hp_assassins_facepaint_2.ui_hp_assassins_facepaint_2"}
 {"table":"StoreItemsTable","rowName":"prestige_ent_cchd_hero","featureImage":"ui_hp_hair_colour_heroes_stormbreak.ui_hp_hair_colour_heroes_stormbreak","standardImage":"ui_hp_hair_colour_heroes_stormbreak.ui_hp_hair_colour_heroes_stormbreak"}

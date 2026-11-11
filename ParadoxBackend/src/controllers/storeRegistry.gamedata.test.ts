@@ -259,29 +259,34 @@ test("store lookup binds generated SKU ids and unique catalog ids to season_stor
     assert.equal(FindStoreSkuByIdOrCatalogId("NOT_A_REAL_SKU"), undefined);
 });
 
-test("Lady Luck matches the live 1.14.7 rotation with explicit catalog images", () => {
-    // [1.14.7 2026-10-08] Built from the live capture (scripts/enrich_ladyluck_store.ts): 38 of its 43 SKUs -
-    // the five per-attribute gold cell cores do not exist in the 1.14.7 catalogue.
+test("Lady Luck matches the current live 1.14.7 rotation with explicit catalog images", () => {
+    // Current capture: 58 unique offers. The old 38/43 assertions and
+    // trials_pr_frank references belonged to an obsolete capture.
     const LadyLuck = GetLadyLuckSkus();
-    assert.equal(LadyLuck.length, 38);
-    assert.equal(new Set(LadyLuck.map((Sku) => Sku.id)).size, 38);
+
+    assert.equal(LadyLuck.length, 58);
+    assert.equal(new Set(LadyLuck.map((Sku) => Sku.id)).size, 58);
     assert.equal(GetStoreSkus("ladyluckstore"), LadyLuck);
 
     const ById = new Map(LadyLuck.map((Sku) => [Sku.id, Sku]));
-    assert.match(ById.get("trials_dye_hp08b_punk_02")?.images?.standard ?? "", /HP8B_Dyes_entropy/);
-    assert.match(ById.get("trials_dye_hp11b_engineer_00")?.images?.standard ?? "", /DYE_HP11B_ENGINEER_00_DURABLE/);
 
-    const Frank = ById.get("trials_pr_frank");
-    assert.equal(Frank?.displayName, "Artificer");
-    assert.deepEqual(Frank?.prices, [{ currencyId: "id_currency_marks_steel", price: 300 }]);
-    assert.deepEqual(Frank?.items, [{ catalogId: "PR_FRANK", quantity: 1, instanced: true }]);
-    assert.ok(Frank?.tags.includes("store_trials_tab_cells"));
-    assert.match(Frank?.images?.standard ?? "", /icon_omnicell_frank/);
+    assert.match(
+        ById.get("ladyluck_cell_epic_01")?.images?.standard ?? "",
+        /ico_cell_power/
+    );
 
-    // The 1.12-era additions are retired and the unavailable gold cores are not served.
+    assert.match(
+        ById.get("ladyluck_mod_axe")?.images?.standard ?? "",
+        /ico_ladyluck_axe_1/
+    );
+
+    // Retired 1.12 additions and unavailable gold cores must not be served.
     assert.equal(LadyLuck.filter((Sku) => Sku.tags.includes("mystic_trials_expansion")).length, 0);
     assert.equal(ById.get("ladyluck_omnicell_discipline_unlock"), undefined);
-    assert.equal(LadyLuck.some((Sku) => Sku.items.some((Item) => /^CONTAINER_CORE_GOLD_.+_CELLCORE$/.test(Item.catalogId))), false);
+    assert.equal(
+        LadyLuck.some((Sku) => Sku.items.some((Item) => /^CONTAINER_CORE_GOLD_.+_CELLCORE$/.test(Item.catalogId))),
+        false
+    );
 });
 
 test("Lady Luck prices follow the live capture (Trials gear in Gilded Marks)", () => {
@@ -305,7 +310,9 @@ test("Lady Luck prices follow the live capture (Trials gear in Gilded Marks)", (
         assert.equal(ById.get(Id)?.prices[0].currencyId, "id_currency_marks_gilded", Id);
     }
     assert.equal(ById.get("ladyluck_armor_arms")?.prices[0].price, 500);
-    assert.equal(ById.get("trials_pr_frank")?.prices[0].currencyId, "id_currency_marks_steel");
+    const AxeCore = ById.get("ladyluck_mod_axe");
+    assert.equal(AxeCore?.prices[0].currencyId, "id_currency_marks_steel");
+    assert.equal(AxeCore?.prices[0].price, 250);
 });
 
 test("Lady Luck and Reward Cache catalog lookup remains unambiguous", () => {
@@ -314,8 +321,8 @@ test("Lady Luck and Reward Cache catalog lookup remains unambiguous", () => {
     const LadyLuckCatalogIds = new Set(LadyLuck.flatMap((Sku) => Sku.items.map((Item) => Item.catalogId)));
     const Overlap = RewardCache.flatMap((Sku) => Sku.items.map((Item) => Item.catalogId)).filter((CatalogId) => LadyLuckCatalogIds.has(CatalogId));
     assert.deepEqual(Overlap, []);
-    assert.equal(FindStoreSkuByIdOrCatalogId("PR_FRANK")?.storeTag, "ladyluckstore");
-    assert.equal(FindStoreSkuByIdOrCatalogId("trials_pr_frank")?.storeTag, "ladyluckstore");
+    assert.equal(FindStoreSkuByIdOrCatalogId("PART_GA_PASSIVE_TRIALS_02")?.storeTag, "ladyluckstore");
+    assert.equal(FindStoreSkuByIdOrCatalogId("ladyluck_mod_axe")?.storeTag, "ladyluckstore");
     assert.deepEqual(GetStoreSkus("unimplemented_store"), []);
 });
 // ---------------------------------------------------------------------------------------------
@@ -353,7 +360,11 @@ test("every platinum section is registered and priced in platinum only", () => {
     }
 
     assert.equal(GetStoreSkus("hp_level_skip_rank").length, 100);
-    assert.equal(GetStoreSkus("dyes").length, 81);
+    const Dyes = GetStoreSkus("dyes");
+
+    assert.equal(Dyes.length, 72);
+    assert.equal(Dyes.filter((Sku) => Sku.tags.includes("platinum_store_captured")).length, 60);
+    assert.equal(Dyes.filter((Sku) => Sku.tags.includes("platinum_store_reconstructed")).length, 12);
 });
 
 test("every platinum webstore offer lands in a real client category", () => {
@@ -406,37 +417,57 @@ test("rank skips carry a progression payload and no item grant", () => {
     assert.equal(Twenty.prices[0].price, 3000);
 });
 
-test("entitlement offers grant an entitlement instead of an item", () => {
-    const Entitlement = [
-        ...GetStoreSkus("webstore").filter((Sku) => (Sku.entitlements ?? []).length > 0),
-        ...GetStoreSkus("huntpass_store"),
-    ];
-    assert(Entitlement.length >= 13, `expected the captured entitlement unlocks, got ${Entitlement.length}`);
+test("captured Hunt Pass offers grant their expected entitlements", () => {
+    // Current verified 1.14.7 Hunt Pass capture: five offers.
+    // The mixed historical webstore list is deliberately not treated as
+    // a homogeneous network capture.
+    const Passes = GetStoreSkus("huntpass_store");
 
-    for (const Sku of Entitlement) {
-        assert.equal(Sku.items.length, 0, `${Sku.id} should have no inventory payload`);
+    const Expected = new Map<string, string>([
+        ["pass_rewardcache_season15a", "pass_rewardcache_season15a"],
+        ["season09a_premium_plus", "season09a_premium"],
+        ["season09b_premium_plus", "season09b_premium"],
+        ["season43_premium", "season43_premium"],
+        ["season43_premium_plus", "season43_premium"],
+    ]);
+
+    assert.deepEqual(
+        Passes.map((Sku) => Sku.id).sort(),
+        [...Expected.keys()].sort()
+    );
+
+    for (const Sku of Passes) {
+        const ExpectedEntitlement = Expected.get(Sku.id);
+
+        assert(ExpectedEntitlement, `${Sku.id} is not an expected captured pass`);
+        assert.equal(Sku.items.length, 0, `${Sku.id} should not grant an inventory item`);
         assert.equal(Sku.maxAllowed, 1, Sku.id);
+
+        assert.deepEqual(
+            Sku.entitlements,
+            [{ name: ExpectedEntitlement, duration: 0 }],
+            `${Sku.id} has an unexpected entitlement payload`
+        );
+
         for (const Grant of Sku.entitlements ?? []) {
             assert.match(Grant.name, /^[A-Za-z0-9_.-]+$/, Sku.id);
         }
+
+        assert.equal(
+            Sku.tags.includes("personality_character"),
+            false,
+            `${Sku.id} is a Hunt Pass, not a character cosmetic`
+        );
     }
 
-    const Furious = Entitlement.find((Sku) => Sku.id === "single_character_facepaint_furious");
-    assert(Furious);
-    assert.equal(Furious.prices[0].price, 100);
-    assert.deepEqual(Furious.entitlements, [{ name: "character_facepaint_furious", duration: 0 }]);
-    assert(Furious.tags.includes("personality_character"));
-
-    // Season/event passes are routed to the huntpass_store section, NOT onto a webstore cosmetic
-    // shelf - an Elite Track Bundle must never appear among the face paints.
-    const Passes = GetStoreSkus("huntpass_store");
     const Gilded = Passes.find((Sku) => Sku.id === "pass_rewardcache_season15a");
+
     assert(Gilded);
     assert.equal(Gilded.prices[0].price, 950);
-    assert.deepEqual(Gilded.entitlements, [{ name: "pass_rewardcache_season15a", duration: 0 }]);
-    for (const Pass of Passes) {
-        assert.equal(Pass.tags.includes("personality_character"), false, `${Pass.id} is not a character cosmetic`);
-    }
+    assert.deepEqual(
+        Gilded.entitlements,
+        [{ name: "pass_rewardcache_season15a", duration: 0 }]
+    );
 });
 
 test("item offers always resolve artwork, natively or by injected catalog icon", () => {

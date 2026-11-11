@@ -32,11 +32,11 @@ public:
 	void ExecuteUbergraph_status_effect_frozen_debuff(int32 EntryPoint);
 	void OnDamageReceived(float DamageReceived, class AController* InstigatedBy, class AActor* DamageCauser, const struct FArchonAbilityDamageInfo& DamageInfo);
 	void OnGameplayEventTriggered(const struct FGameplayEventData& Payload);
-	void ReceiveDestroyed();
-	void OnRemoved();
 	void ReceiveBeginPlay();
 	void MulticastOnAdded();
 	void StopFrozenAnimation();
+	void ReceiveDestroyed();
+	void OnRemoved();
 
 public:
 	static class UClass* StaticClass()

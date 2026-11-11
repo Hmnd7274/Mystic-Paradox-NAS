@@ -1,0 +1,5883 @@
+[
+  {
+    "id": "season19_rewardcache_armour_ar_hp08a_heroes_helm_00_ultra",
+    "displayName": "Helm of the First Slayer",
+    "displayDescription": "Modeled after the helm worn by the legendary hero who saved the survivors of the Upheaval a thousand years ago.",
+    "displayPriority": 1,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_helm_00_ultra.armour_male_heroes_helm_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_elven_00",
+    "displayName": "Lightsworn Benediction",
+    "displayDescription": "A radiant Lightsworn axe transmog forged for a Slayer of Andar.",
+    "displayPriority": 2,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/gaxe/ico_equip_ga_elven_00.ico_equip_ga_elven_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_ELVEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_ELVEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp16a_marauders_01",
+    "displayName": "Hellion's Foil",
+    "displayDescription": "A legendary blaze axe transmog inspired by Hellion.",
+    "displayPriority": 3,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/gaxe/ico_equip_ga_marauders_01.ico_equip_ga_marauders_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP16A_MARAUDERS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP16A_MARAUDERS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_metal_00",
+    "displayName": "The Debt Collector",
+    "displayDescription": "A heavy legendary metal axe transmog built to collect what is owed.",
+    "displayPriority": 4,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/gaxe/ico_equip_ga_metal_00.ico_equip_ga_metal_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_METAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_METAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_eb_hp08a_heroes_01",
+    "displayName": "Salvator Rex",
+    "displayDescription": "A replica modeled after the legendary blade of the First Slayer.",
+    "displayPriority": 5,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/eblade/ico_equip_eb_heroes_01.ico_equip_eb_heroes_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP08A_HEROES_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP08A_HEROES_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp10a_celestial_00",
+    "displayName": "Portal Beam",
+    "displayDescription": "One to beam down.",
+    "displayPriority": 6,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/ui_icon_hp_celestial_arrival_tactorbeam.ui_icon_hp_celestial_arrival_tactorbeam'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_ac_head_unseen_00",
+    "displayName": "The Unseen Crown",
+    "displayDescription": "Are you wearing the crown, or is the crown wearing you? The answer may disturb you.",
+    "displayPriority": 7,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 3000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Accessories/ico_equip_head_unseen_00.ico_equip_head_unseen_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season_store_feature",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AC_HEAD_UNSEEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AC_HEAD_UNSEEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08a_heroes_chest_ultra",
+    "displayName": "Cuirass of the First Slayer",
+    "displayDescription": "Modeled after the plate armour worn by the legendary hero who saved the survivors of the Upheaval a thousand years ago.",
+    "displayPriority": 8,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_chest_00_ultra.armour_male_heroes_chest_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_CHEST_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_CHEST_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08a_heroes_arms_ultra",
+    "displayName": "Vambraces of the First Slayer",
+    "displayDescription": "Modeled after the vambraces worn by the legendary hero who saved the survivors of the Upheaval a thousand years ago.",
+    "displayPriority": 9,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_arms_00_ultra.armour_male_heroes_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_ARMS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_ARMS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08a_heroes_legs_ultra",
+    "displayName": "Greaves of the First Slayer",
+    "displayDescription": "Modeled after the greaves worn by the legendary hero who saved the survivors of the Upheaval a thousand years ago.",
+    "displayPriority": 10,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/armour_male_heroes_legs_00_ultra.armour_male_heroes_legs_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08A_HEROES_LEGS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08A_HEROES_LEGS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09a_assassins_helm_00_ultra",
+    "displayName": "Visage of the Blaze Hawk",
+    "displayDescription": "Evil fears its relentless sight.",
+    "displayPriority": 11,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_ultra_helm_00.armour_male_assassins_ultra_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09a_assassins_chest_00_ultra",
+    "displayName": "Mantle of the Blaze Hawk",
+    "displayDescription": "Worn only by the worthy.",
+    "displayPriority": 12,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_ultra_chest_00.armour_male_assassins_ultra_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09a_assassins_arms_00_ultra",
+    "displayName": "Vambraces of the Blaze Hawk",
+    "displayDescription": "No foe escapes their grasp.",
+    "displayPriority": 13,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_ultra_arms_00.armour_male_assassins_ultra_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09a_assassins_legs_00_ultra",
+    "displayName": "Greaves of the Blaze Hawk",
+    "displayDescription": "The talons are just for show... probably.",
+    "displayPriority": 14,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/armour_male_assassins_ultra_legs_00.armour_male_assassins_ultra_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09A_ASSASSINS_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09A_ASSASSINS_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08b_punk_helm_ultra",
+    "displayName": "Cross-Eyed Metavizor",
+    "displayDescription": "X marks the spots.",
+    "displayPriority": 15,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_helm_00_ultra.armour_male_punk_helm_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_HELM_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_HELM_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08b_punk_chest_ultra",
+    "displayName": "Slaypunk X-Thousand",
+    "displayDescription": "Take your slaying to the X-TREME!",
+    "displayPriority": 16,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_chest_00_ultra.armour_male_punk_chest_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_CHEST_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_CHEST_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08b_punk_arms_ultra",
+    "displayName": "Bioplasmic Cybersleeves",
+    "displayDescription": "The melding of aether, Slayer, and technology is the essence of aetherpunk.",
+    "displayPriority": 17,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_arms_00_ultra.armour_male_punk_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_ARMS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_ARMS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp08b_punk_legs_ultra",
+    "displayName": "Hypersonic Radpants",
+    "displayDescription": "Will your legs break the sound barrier? Only one way to find out.",
+    "displayPriority": 18,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/armour_male_punk_legs_00_ultra.armour_male_punk_legs_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP08B_PUNK_LEGS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP08B_PUNK_LEGS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10b_raiders_helm_00_ultra",
+    "displayName": "Wayfinder's Trinoculars",
+    "displayDescription": "A trio of charged archonite lenses help a Wayfinder precisely triangulate the airship's position in even the worst sailing conditions. Sometimes worn by Orrery field researchers working in low-visibility locations.",
+    "displayPriority": 19,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/armour_male_raiders_ultra_helm_00.armour_male_raiders_ultra_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10B_RAIDERS_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10B_RAIDERS_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10b_raiders_chest_00_ultra",
+    "displayName": "Wayfinder's Flight Suit",
+    "displayDescription": "Flexible but tough, insulated but breathable, a classic Wayfinder's flight suit is a one-piece affair that allows the wearer to endure (for a while) the most inhospitable atmospheres.",
+    "displayPriority": 20,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/armour_male_raiders_ultra_chest_00.armour_male_raiders_ultra_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10B_RAIDERS_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10B_RAIDERS_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10b_raiders_arms_00_ultra",
+    "displayName": "Wayfinder's Flight Gloves",
+    "displayDescription": "\"Lose your grip, lose the ship.\"\r\n\r\nPilot's Axiom",
+    "displayPriority": 21,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/armour_male_raiders_ultra_arms_00.armour_male_raiders_ultra_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10B_RAIDERS_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10B_RAIDERS_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10b_raiders_legs_00_ultra",
+    "displayName": "Wayfinder's Grav-Boots",
+    "displayDescription": "No matter how rough these skies get, a Wayfinder's feet remain firmly on the deck.",
+    "displayPriority": 22,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/armour_male_raiders_ultra_legs_00.armour_male_raiders_ultra_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10B_RAIDERS_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10B_RAIDERS_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10b_raiders_arms_01",
+    "displayName": "Forgemaster Gauntlets",
+    "displayDescription": "Mastercrafted gauntlets co-designed by Moyra Heigsketter and Wils Bormen to mark the launch of their joint venture, the new Ramsgate Smithy.",
+    "displayPriority": 23,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/armour_male_raiders_arms_00.armour_male_raiders_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10B_RAIDERS_ARMS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10B_RAIDERS_ARMS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_helm_00_ultra",
+    "displayName": "SM-CH5 \"Cyclops Rock\" Crash Helm",
+    "displayDescription": "What you'll lack in depth perception you'll make up with head protection.",
+    "displayPriority": 24,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_ultra_helm_00.armour_male_commando_ultra_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_chest_00_ultra",
+    "displayName": "SM-TA3 \"Hard Stop\" Tec-Armour",
+    "displayDescription": "Ever wanted to be that immovable object?",
+    "displayPriority": 25,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_ultra_chest_00.armour_male_commando_ultra_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_arms_00_ultra",
+    "displayName": "SM-WG5 \"Break Point\" War Gauntlets",
+    "displayDescription": "Protects arms and hands even when breaking bones and faces.",
+    "displayPriority": 26,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_ultra_arms_00.armour_male_commando_ultra_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_legs_00_ultra",
+    "displayName": "SM-PG7 \"Grand Stand\" Power Greaves",
+    "displayDescription": "Go ahead and take a stand. Don't forget to make it grand.",
+    "displayPriority": 27,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_ultra_legs_00.armour_male_commando_ultra_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_helm_00",
+    "displayName": "Seismic Haz-Mask",
+    "displayDescription": "Seismic Slayers never let a toxic atmosphere or poisonous Behemoths keep them from breathing easy.",
+    "displayPriority": 28,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_commando_helm_00.ico_equip_commando_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_HELM_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_HELM_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_chest_00",
+    "displayName": "Seismic Flak Jacket",
+    "displayDescription": "The previous owner didn't own it for long. Clean the blood off and it'll serve you well.",
+    "displayPriority": 29,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_chest_00.armour_male_commando_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_CHEST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_CHEST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_arms_00",
+    "displayName": "Seismic Battle Gloves",
+    "displayDescription": "Have you recently met a set of teeth that need to be knocked out through no fault of their own? These are the steel-plated gloves for you.",
+    "displayPriority": 30,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_arms_00.armour_male_commando_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_ARMS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_ARMS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp09b_commando_legs_00",
+    "displayName": "Seismic Combat Greaves",
+    "displayDescription": "Pouches, straps, and sheaths ensure nothing you need is ever out of reach.",
+    "displayPriority": 31,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/armour_male_commando_legs_00.armour_male_commando_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP09B_COMMANDO_LEGS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP09B_COMMANDO_LEGS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp11a_alchemist_helm_00_ultra",
+    "displayName": "Alchemancer's Monocular",
+    "displayDescription": "Skilled alchemancers use them to detect and manipulate aetheric sub-frequencies generally invisible to the human eye. Each archonite lens is unique: ground, honed, and polished by the alchemancer who wears it.",
+    "displayPriority": 32,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_hp_alchemist_11A_outfit_ultra.ui_hp_alchemist_11A_outfit_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp11a_alchemist_chest_00_ultra",
+    "displayName": "Alchemancer's Waistcoat",
+    "displayDescription": "Unlike many alchemists who favour a more homespun rustic style, alchemancers tend to prefer something a bit more dramatic.",
+    "displayPriority": 33,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_chest_00_ultra.armour_male_alchemist_chest_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp11a_alchemist_arms_00_ultra",
+    "displayName": "Alchemancer's Bucklers",
+    "displayDescription": "Designed to protect against aetheric feedback, adapted to protect against aether-charged Behemoths.",
+    "displayPriority": 34,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_arms_00_ultra.armour_male_alchemist_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp11a_alchemist_legs_00_ultra",
+    "displayName": "Alchemancer's Bootstraps",
+    "displayDescription": "An alchemancer can always pull themselves back to their feet.",
+    "displayPriority": 35,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/armour_male_alchemist_legs_00_ultra.armour_male_alchemist_legs_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP11A_ALCHEMIST_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP11A_ALCHEMIST_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10a_celestial_helm_00_ultra",
+    "displayName": "Voidmind Infinite",
+    "displayDescription": "Enter the dreamless void of the eternal shadow.",
+    "displayPriority": 36,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_helm_00_ultra.armour_male_celestial_helm_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10a_celestial_chest_00_ultra",
+    "displayName": "Cosmic Centrifuge",
+    "displayDescription": "Literally woven from the fabric of the Umbral Void itself.",
+    "displayPriority": 37,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_chest_00_ultra.armour_male_celestial_chest_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10a_celestial_arms_00_ultra",
+    "displayName": "Tactile Waveform",
+    "displayDescription": "Embrace the intangible.",
+    "displayPriority": 38,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_arms_00_ultra.armour_male_celestial_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10a_celestial_legs_00_ultra",
+    "displayName": "Quantum Pursuits",
+    "displayDescription": "Every time you make a choice, every other choice is made somewhere else.",
+    "displayPriority": 39,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/armour_male_celestial_legs_00_ultra.armour_male_celestial_legs_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp10a_celestial_helm_02",
+    "displayName": "Phantom Eclipse",
+    "displayDescription": "Few things are darker than a moonless midnight.",
+    "displayPriority": 40,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_celestial_helm_02.ico_equip_celestial_helm_02'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP10A_CELESTIAL_HELM_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP10A_CELESTIAL_HELM_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07b_witch_helm_ultra",
+    "displayName": "Demon Bane's Bicorne",
+    "displayDescription": "Shields the head whether facing a rain of toads or a river of blood.",
+    "displayPriority": 41,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_helm_00_ultra.armour_male_witch_helm_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_HELM_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_HELM_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07b_witch_chest_ultra",
+    "displayName": "Demon Bane's Coat",
+    "displayDescription": "Sturdy leather that reflects the shadows.",
+    "displayPriority": 42,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_chest_00_ultra.armour_male_witch_chest_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_CHEST_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_CHEST_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07b_witch_arms_ultra",
+    "displayName": "Demon Bane's Gloves",
+    "displayDescription": "Take the devil by the horns.",
+    "displayPriority": 43,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_arms_00_ultra.armour_male_witch_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_ARMS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_ARMS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07b_witch_legs_ultra",
+    "displayName": "Demon Bane's Boots",
+    "displayDescription": "Stride proudly where devils go to die.",
+    "displayPriority": 44,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/armour_male_witch_legs_00_ultra.armour_male_witch_legs_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07B_WITCH_LEGS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07B_WITCH_LEGS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp12a_frostwarden_helm_00_ultra",
+    "displayName": "Warden Defender's Jehylm",
+    "displayDescription": "You'll see better when there are fewer distractions.",
+    "displayPriority": 45,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/armour_male_frostwarden_ultra_helm_00.armour_male_frostwarden_ultra_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_HELM_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_HELM_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp12a_frostwarden_chest_00_ultra",
+    "displayName": "Warden Defender's Bryjind",
+    "displayDescription": "Protect yourself from the elements. And everything else.",
+    "displayPriority": 46,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/armour_male_frostwarden_ultra_chest_00.armour_male_frostwarden_ultra_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_CHEST_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_CHEST_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp12a_frostwarden_arms_00_ultra",
+    "displayName": "Warden Defender's Hanskyrs",
+    "displayDescription": "Embrace the cold and use it to your advantage.",
+    "displayPriority": 47,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/armour_male_frostwarden_ultra_arms_00.armour_male_frostwarden_ultra_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_ARMS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_ARMS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp12a_frostwarden_legs_00_ultra",
+    "displayName": "Warden Defender's Geravyrs",
+    "displayDescription": "Tread carefully, not lightly.",
+    "displayPriority": 48,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/armour_male_frostwarden_ultra_legs_00.armour_male_frostwarden_ultra_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP12A_FROSTWARDEN_LEGS_00_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP12A_FROSTWARDEN_LEGS_00_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_armstrong_helm_ultra",
+    "displayName": "Igneous Peak",
+    "displayDescription": "Volcanic armour for those who have entered the fiery domain of Torgadoro and lived to tell the tale.",
+    "displayPriority": 49,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_armstrong_ultra_helm_00.ico_equip_armstrong_ultra_helm_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_ARMSTRONG_HELM_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_ARMSTRONG_HELM_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_armstrong_chest_ultra",
+    "displayName": "Igneous Mantle",
+    "displayDescription": "Volcanic armour for those who have entered the fiery domain of Torgadoro and lived to tell the tale.",
+    "displayPriority": 50,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_armstrong_ultra_chest_00.ico_equip_armstrong_ultra_chest_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_ARMSTRONG_CHEST_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_ARMSTRONG_CHEST_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_armstrong_arms_ultra",
+    "displayName": "Igneous Summit",
+    "displayDescription": "Volcanic armour for those who have entered the fiery domain of Torgadoro and lived to tell the tale.",
+    "displayPriority": 51,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_armstrong_ultra_arms_00.ico_equip_armstrong_ultra_arms_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_ARMSTRONG_ARMS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_ARMSTRONG_ARMS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_armstrong_legs_ultra",
+    "displayName": "Igneous Bedrock",
+    "displayDescription": "Volcanic armour for those who have entered the fiery domain of Torgadoro and lived to tell the tale.",
+    "displayPriority": 52,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_armstrong_ultra_legs_00.ico_equip_armstrong_ultra_legs_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_ARMSTRONG_LEGS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_ARMSTRONG_LEGS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07a_monk_helm_ultra",
+    "displayName": "Master's Hat",
+    "displayDescription": "Exceptional head covering for a martial master of the Adamant Fist. (Eye-glow effect cannot be dyed or used with other helms.)",
+    "displayPriority": 53,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/armour_male_monk_helm_00_ultra.armour_male_monk_helm_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07A_MONK_HELM_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07A_MONK_HELM_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_armour_ar_hp07a_monk_arms_ultra",
+    "displayName": "Master's Fist Wraps",
+    "displayDescription": "Exceptional handwear for a martial master of the Adamant Fist.",
+    "displayPriority": 54,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/armour_male_monk_arms_00_ultra.armour_male_monk_arms_00_ultra'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_armour",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_HP07A_MONK_ARMS_ULTRA",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_HP07A_MONK_ARMS_ULTRA"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Schism",
+    "displayDescription": "Shares a moniker with the historic break between alchemists and alchemancers caused by the posthumus publication of Parazelcia's <italic>Alchemantic Auspices</> in 681 A.U.",
+    "displayPriority": 55,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/gaxe_alchemist_00.gaxe_alchemist_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_arcslayer_00",
+    "displayName": "Arcslayer Great Axe",
+    "displayDescription": "Originally designed for clearing wild frontier islands for settlement. Soon found to be even more useful against Behemoths.",
+    "displayPriority": 56,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/gaxe/ico_equip_ga_arcslayer_00.ico_equip_ga_arcslayer_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_ARCSLAYER_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_ARCSLAYER_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp12a_frostwarden_00",
+    "displayName": "Frostwarden Sundyr",
+    "displayDescription": "\"One enemy is too many.\"",
+    "displayPriority": 57,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/gaxe_frostwarden_00.gaxe_frostwarden_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp08a_heroes_00",
+    "displayName": "Protector's Judgment",
+    "displayDescription": "It is absolutely, unequivocably, indisputably final.",
+    "displayPriority": 58,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/gaxe_heroes_00.gaxe_heroes_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP08A_HEROES_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP08A_HEROES_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp09a_assassins_00",
+    "displayName": "Razor Eagle",
+    "displayDescription": "An eagle's vision isn't the only thing that's sharp.",
+    "displayPriority": 59,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/gaxe_assassins_00.gaxe_assassins_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp10a_celestial_00",
+    "displayName": "Striking Midnight",
+    "displayDescription": "Just like clockwork.",
+    "displayPriority": 60,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/gaxe_celestial_00.gaxe_celestial_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_headsman",
+    "displayName": "The Headsman",
+    "displayDescription": "Let's take it straight from the top.",
+    "displayPriority": 61,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ga_headsman.ico_equip_ga_headsman'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HEADSMAN",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HEADSMAN"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp07b_witch_00",
+    "displayName": "Witch's Crescent",
+    "displayDescription": "The moonlight conceals many evils.",
+    "displayPriority": 62,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/gaxe_witch_00.gaxe_witch_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP07B_WITCH_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP07B_WITCH_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp10b_raiders_00",
+    "displayName": "Chopping Maul",
+    "displayDescription": "A freelance explorer can't let anything get in the way of the next discovery. Not when they can chop any obstacle to pieces.",
+    "displayPriority": 63,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/gaxe_raiders_00.gaxe_raiders_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP10B_RAIDERS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP10B_RAIDERS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp06_pirate_00",
+    "displayName": "Corsair's Boarding Axe",
+    "displayDescription": "All aboard!",
+    "displayPriority": 64,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06-1/ui_icon_hp_pirate_gaxe_00.ui_icon_hp_pirate_gaxe_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP06_PIRATE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP06_PIRATE_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp07a_monk_00",
+    "displayName": "Elegant Wyvern",
+    "displayDescription": "Its wings cast a deadly shadow.",
+    "displayPriority": 65,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/gaxe_monk_00.gaxe_monk_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP07A_MONK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP07A_MONK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp08b_punk_00",
+    "displayName": "Rippin' Rude",
+    "displayDescription": "Nobody ever slayed a Behemoth by being polite.",
+    "displayPriority": 66,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/gaxe_punk_00.gaxe_punk_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp09b_commando_00",
+    "displayName": "SM-CX1 \"Splitting Headache\" Combat Axe",
+    "displayDescription": "A starkly effective military design adapted by the Seismic faction. Known to induce migraines in untrained users.",
+    "displayPriority": 67,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/gaxe_commando_00.gaxe_commando_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_romantic",
+    "displayName": "Torn Asunder",
+    "displayDescription": "This is no trial separation.",
+    "displayPriority": 68,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/gaxe/ico_equip_ga_romantic_00.ico_equip_ga_romantic_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_ROMANTIC",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_ROMANTIC"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp06b_academy_00",
+    "displayName": "ZAA-11 \"Valiant\"",
+    "displayDescription": "A combat axe designed by the most brilliant military minds, forged by the finest living smiths in Ostigaard.",
+    "displayPriority": 69,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season06b/gaxe_academy_00.gaxe_academy_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP06B_ACADEMY_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP06B_ACADEMY_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp04_arid",
+    "displayName": "Axe of the Nomad",
+    "displayDescription": "A savage weapon for a restless soul.",
+    "displayPriority": 70,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season04/ui_icon_hp_burndown_arid_axe.ui_icon_hp_burndown_arid_axe'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP04_ARID",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP04_ARID"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp03_mossy",
+    "displayName": "Wild Divide",
+    "displayDescription": "Useful for separating a Behemoth from its vital parts.",
+    "displayPriority": 71,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_axe_small.ui_icon_hp_mossy_axe_small'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP03_MOSSY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP03_MOSSY"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp05_ninja_00",
+    "displayName": "Midnight Sun",
+    "displayDescription": "It never sleeps.",
+    "displayPriority": 72,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_gaxe_00.ui_icon_hp_ninja_gaxe_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP05_NINJA_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP05_NINJA_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ga_hp05_ninja_02",
+    "displayName": "Moonfall",
+    "displayDescription": "When it descends don't be in the way.",
+    "displayPriority": 73,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_gaxe_02.ui_icon_hp_ninja_gaxe_02'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_HP05_NINJA_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_HP05_NINJA_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ih_hp10b_raiders_01",
+    "displayName": "Forgemaster Hammer",
+    "displayDescription": "A weapon co-designed by Wils Bormen and Moyra Heigsketter to commemorate the opening of their joint venture, the new Ramsgate Smithy.",
+    "displayPriority": 74,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ihammer/ico_equip_ih_raiders_01.ico_equip_ih_raiders_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP10B_RAIDERS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP10B_RAIDERS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_eb_hp12a_frostwarden_01",
+    "displayName": "St. Avellaine Flamberge",
+    "displayDescription": "The archipelago of Avellainia and its capital, the city of St. Avellaine, is the most advanced and populous archipelago in the known world.",
+    "displayPriority": 75,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/eblade/ico_equip_eb_frostwarden_01.ico_equip_eb_frostwarden_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP12A_FROSTWARDEN_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP12A_FROSTWARDEN_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ac_hp10a_celestial_01",
+    "displayName": "Stars Above",
+    "displayDescription": "Catch some falling stars and mount them on your strikers. Save them for a painful fray.",
+    "displayPriority": 76,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/astrikers/ico_equip_as_celestial_01.ico_equip_as_celestial_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP10A_CELESTIAL_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP10A_CELESTIAL_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_dp_hp10a_celestial_01",
+    "displayName": "Voidcore Revokers",
+    "displayDescription": "Powered by volatile umbral micro-singularities and weird physics.",
+    "displayPriority": 77,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/dpistols/ico_equip_dp_legendary_01.ico_equip_dp_legendary_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_HP10A_CELESTIAL_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_HP10A_CELESTIAL_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ms_hp11a_alchemist_01",
+    "displayName": "Weavewitch Homunculance",
+    "displayDescription": "It's probably not technically alive, but removing the leather straps is not recommended.",
+    "displayPriority": 78,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/ico_icon_default.ico_icon_default'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_HP11A_ALCHEMIST_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_HP11A_ALCHEMIST_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_eb_hp10a_celestial_00",
+    "displayName": "Eventide Contingency",
+    "displayDescription": "The first and often last resort against the terrors within the Umbral Deeps.",
+    "displayPriority": 79,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/eblade_celestial_00.eblade_celestial_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ih_hp08b_punk_00",
+    "displayName": "Captain Crushly",
+    "displayDescription": "Don't forget to salute.",
+    "displayPriority": 80,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ihammer_punk_00.ihammer_punk_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ac_hp10a_celestial_00",
+    "displayName": "Null Forces",
+    "displayDescription": "An absence of matter does not mean an absence of force.",
+    "displayPriority": 81,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/astrikers_celestial_00.astrikers_celestial_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ac_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Repercussions",
+    "displayDescription": "They must always be considered before taking action. And then, if necessary, ignored.",
+    "displayPriority": 82,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/astrikers_alchemist_00.astrikers_alchemist_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ac_hp07a_monk_00",
+    "displayName": "Deliberate Demons",
+    "displayDescription": "You look like you could use a little exorcise.",
+    "displayPriority": 83,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/astrikers_monk_00.astrikers_monk_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP07A_MONK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP07A_MONK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_weapon_wp_ac_hp08b_punk_00",
+    "displayName": "Smiley and Smacker",
+    "displayDescription": "Few are the Slayers who can tell them apart.",
+    "displayPriority": 84,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/astrikers_punk_00.astrikers_punk_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_weapon",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_dye_red01_durable",
+    "displayName": "Bloodfire Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 85,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_hp_dye_bloodfire.ui_hp_dye_bloodfire'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_6"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_RED01_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_RED01_DURABLE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_dye_gray05_durable",
+    "displayName": "Eclipse Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 86,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_hp_dye_eclipse.ui_hp_dye_eclipse'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_6"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY05_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY05_DURABLE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_dye_green14_durable",
+    "displayName": "Opalescence Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 87,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_hp_dye_opalescence.ui_hp_dye_opalescence'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_6"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GREEN14_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GREEN14_DURABLE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_dye_blue13_durable",
+    "displayName": "Subzero Dye",
+    "displayDescription": "An aether-infused dye that may be applied to many different fabrics and surfaces.",
+    "displayPriority": 88,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_hp_dye_subzero.ui_hp_dye_subzero'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_6"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_BLUE13_DURABLE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_BLUE13_DURABLE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_player_hp07a_fireball_00",
+    "displayName": "Ball of Fury",
+    "displayDescription": "A classic technique that invites the question, \"How are deadly orbs using kinetic energy now?\"",
+    "displayPriority": 89,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07a/ui_icon_hp_monk_emote_fireball_00.ui_icon_hp_monk_emote_fireball_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP07A_FIREBALL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP07A_FIREBALL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_player_hp10a_celestial_04",
+    "displayName": "Star Power",
+    "displayDescription": "When you've got it, flaunt it.",
+    "displayPriority": 90,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/ui_icon_hp_celestial_emote_cosmicenergy.ui_icon_hp_celestial_emote_cosmicenergy'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP10A_CELESTIAL_04",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP10A_CELESTIAL_04"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp08a_heroic_00",
+    "displayName": "The Ramsgate Cannonball",
+    "displayDescription": "This one's comin' in hot.",
+    "displayPriority": 91,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/ui_icon_hp_heroic_arrival.ui_icon_hp_heroic_arrival'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP08A_HEROIC_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP08A_HEROIC_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp12a_frostwarden_00",
+    "displayName": "Battlecry",
+    "displayDescription": "Come and get it.",
+    "displayPriority": 92,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_icon_hp_frostwarden_arrival_viking.ui_icon_hp_frostwarden_arrival_viking'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp09a_assassins_00",
+    "displayName": "Sand Devil",
+    "displayDescription": "It's so dramatic you'll forget the way it stings your eyes.",
+    "displayPriority": 93,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_icon_hp_assassins_arrival_sandstorm.ui_icon_hp_assassins_arrival_sandstorm'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp03_vine_00",
+    "displayName": "Vine Rider",
+    "displayDescription": "Watch out for that tree.",
+    "displayPriority": 94,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_emote_arrival_vine.ui_icon_hp_emote_arrival_vine'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP03_VINE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP03_VINE_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp08b_skateboard_00",
+    "displayName": "Power Rider",
+    "displayDescription": "All a-board!",
+    "displayPriority": 95,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_icon_hp_punk_arrival_powerrider.ui_icon_hp_punk_arrival_powerrider'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP08B_SKATEBOARD_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP08B_SKATEBOARD_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_player_hp11a_alchemist_00",
+    "displayName": "Time to Deflect",
+    "displayDescription": "Shields up!",
+    "displayPriority": 96,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_icon_hp_alchemist_emote_snap.ui_icon_hp_alchemist_emote_snap'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp10b_raiders_01",
+    "displayName": "Whip-Smart",
+    "displayDescription": "Look at this wisecracker over here.",
+    "displayPriority": 97,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/ui_icon_hp_raiders_arrival_whiparrival.ui_icon_hp_raiders_arrival_whiparrival'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP10B_RAIDERS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP10B_RAIDERS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp07b_coffindrop_bat_00",
+    "displayName": "Bat's Entertainment",
+    "displayDescription": "Strike fear into the hearts of criminals and Behemoths everywhere.",
+    "displayPriority": 98,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season07b/EM_INTRO_HP07B_COFFINDROP_BAT_00.EM_INTRO_HP07B_COFFINDROP_BAT_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP07B_COFFINDROP_BAT_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP07B_COFFINDROP_BAT_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp07b_coffindrop_dance_00",
+    "displayName": "Dance of the Dead",
+    "displayDescription": "It's true. The dead can dance.",
+    "displayPriority": 99,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Emotes/ico_arrival_coffindrop_dance_00.ico_arrival_coffindrop_dance_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP07B_COFFINDROP_DANCE_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP07B_COFFINDROP_DANCE_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp09b_commando_00",
+    "displayName": "Arrival Improbable",
+    "displayDescription": "It's too bad you're so stealthy because no one will see you being this cool.",
+    "displayPriority": 100,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_icon_hp_commando_arrival_rappel_success.ui_icon_hp_commando_arrival_rappel_success'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp10b_raiders_00",
+    "displayName": "The Brave & the Boulder",
+    "displayDescription": "And now for some classic rock.",
+    "displayPriority": 101,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/ui_icon_hp_raiders_arrival_boulderchase.ui_icon_hp_raiders_arrival_boulderchase'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP10B_RAIDERS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP10B_RAIDERS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_em_intro_hp08a_warcry_00",
+    "displayName": "Let's Ride",
+    "displayDescription": "Hi-yo Slayer, away!",
+    "displayPriority": 102,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/ui_icon_hp_warcry_arrival.ui_icon_hp_warcry_arrival'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_INTRO_HP08A_WARCRY_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_INTRO_HP08A_WARCRY_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_qi_flare_funguy",
+    "displayName": "Aetherwort",
+    "displayDescription": "They grow where living aether seeps into the earth.",
+    "displayPriority": 103,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Flares/Green/ico_flare_funguy_00.ico_flare_funguy_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_FUNGUY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "QI_FLARE_FUNGUY"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_qi_flare_hp11a_alchemist_00",
+    "displayName": "Alchemancer's Crucible",
+    "displayDescription": "Alchemists work primarily with flasks and vials. Alchemancers require equipment that's a little more sturdy.",
+    "displayPriority": 104,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/hp_alchemist_flare_hp11a_00.hp_alchemist_flare_hp11a_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "QI_FLARE_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_qi_flare_hp08b_03",
+    "displayName": "Chaos Crown",
+    "displayDescription": "The king of catastrophe.",
+    "displayPriority": 105,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_flare_hp08b_03.ui_flare_hp08b_03'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_HP08B_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "QI_FLARE_HP08B_03"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_style_qi_flare_saints19_06",
+    "displayName": "Heart of Avellaine",
+    "displayDescription": "The soul of the Undivided City.",
+    "displayPriority": 106,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/playersigil_saints19_Icon_06.playersigil_saints19_Icon_06'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_style",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_FLARE_SAINTS19_06",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "QI_FLARE_SAINTS19_06"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp09a_assassins_00",
+    "displayName": "Wings of the Blaze Hawk",
+    "displayDescription": "Used to mark the territories protected by the Blaze Hawks themselves.",
+    "displayPriority": 107,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/playerbanner_assassins_00.playerbanner_assassins_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp09a_assassins_01",
+    "displayName": "Hawk's Cry",
+    "displayDescription": "Justice arrives on wings of fire.",
+    "displayPriority": 108,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_equip_fabric_hp09a_00.ui_equip_fabric_hp09a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP09A_ASSASSINS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP09A_ASSASSINS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_hp09a_assassins_00",
+    "displayName": "Justice of the Blaze Hawk",
+    "displayDescription": "A symbol of hope shines above the burning sands.",
+    "displayPriority": 109,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_icon_hp_sigil_9a_00.ui_icon_hp_sigil_9a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp09a_assassins_00",
+    "displayName": "Desert Cyclone",
+    "displayDescription": "The swirling sands mark the arrival of a Blaze Hawk.",
+    "displayPriority": 110,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09a/ui_icon_hp_assassins_bannerplant_cyclone.ui_icon_hp_assassins_bannerplant_cyclone'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP09A_ASSASSINS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP09A_ASSASSINS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp09b_commando_00",
+    "displayName": "SM-FS8 \"Standing Salute\" Flagstaff",
+    "displayDescription": "It really snaps to attention.",
+    "displayPriority": 111,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/playerbanner_commando_00.playerbanner_commando_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp09b_commando_00",
+    "displayName": "Seismic Shield",
+    "displayDescription": "The now-notorious banner of the renegade Seismic faction displays traditional Ostian visual elements and practical design.",
+    "displayPriority": 112,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_equip_fabric_hp09b_00.ui_equip_fabric_hp09b_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_hp09b_commando_00",
+    "displayName": "Seismic Brigade",
+    "displayDescription": "The symbol of the rebel Slayers who stayed behind to protect their people when their leaders abandoned hope.",
+    "displayPriority": 113,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season09b/ui_icon_hp_sigil_9b_00.ui_icon_hp_sigil_9b_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_HP09B_COMMANDO_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_HP09B_COMMANDO_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp10b_raiders_00",
+    "displayName": "Raider's Flagstaff",
+    "displayDescription": "Not all freelance explorers are as ethical as one might hope. Some of them are, in essence, ruin raiders.",
+    "displayPriority": 114,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/playerbanner_raiders_00.playerbanner_raiders_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP10B_RAIDERS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP10B_RAIDERS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp10b_raiders_00",
+    "displayName": "Precious Cargo",
+    "displayDescription": "A constant reminder to the freelance explorer: keep your discoveries secret and safe.",
+    "displayPriority": 115,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10b/ui_equip_fabric_hp10b_00.ui_equip_fabric_hp10b_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP10B_RAIDERS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP10B_RAIDERS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_hp10b_raiders_00",
+    "displayName": "True Lodestar",
+    "displayDescription": "When sailing a sky that's forever in motion it's your one navigational constant.",
+    "displayPriority": 116,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_hp10b_00.ico_style_sigil_hp10b_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_HP10B_RAIDERS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_HP10B_RAIDERS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp08b_punk_00",
+    "displayName": "Spine of Anarchy",
+    "displayDescription": "No rules, just spikes.",
+    "displayPriority": 117,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/playerbanner_punk_00.playerbanner_punk_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP08B_PUNK_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP08B_PUNK_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp08b_00",
+    "displayName": "Psycho Circuit",
+    "displayDescription": "It will really get inside your head.",
+    "displayPriority": 118,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_hp08b_00.ico_equip_fabric_hp08b_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP08B_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP08B_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp08b_01",
+    "displayName": "Splatterpunk Shield",
+    "displayDescription": "There's nothing tidy about the business of slaying.",
+    "displayPriority": 119,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_hp08b_01.ico_equip_fabric_hp08b_01'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP08B_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP08B_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp08b_02",
+    "displayName": "Shredded Future",
+    "displayDescription": "Because sometimes you need to tear your best-laid plans to pieces.",
+    "displayPriority": 120,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_equip_fabric_hp08b_02.ui_equip_fabric_hp08b_02'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP08B_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP08B_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_hp08b_01",
+    "displayName": "Punky Pete",
+    "displayDescription": "An icon associated with the aetherpunk style movement... whatever that is.",
+    "displayPriority": 121,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_icon_hp_sigil_8b_01.ui_icon_hp_sigil_8b_01'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP08B_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP08B_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_hp08b_02",
+    "displayName": "Spike's Crest",
+    "displayDescription": "A truly spiking profile.",
+    "displayPriority": 122,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_icon_hp_sigil_8b_02.ui_icon_hp_sigil_8b_02'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP08B_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP08B_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_hp08b_03",
+    "displayName": "Chaos Crown",
+    "displayDescription": "The king of catastrophe.",
+    "displayPriority": 123,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08b/ui_icon_hp_sigil_8b_03.ui_icon_hp_sigil_8b_03'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP08B_03",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP08B_03"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp11a_alchemist_00",
+    "displayName": "The Unseeing Eye",
+    "displayDescription": "Pray its unblinking gaze never falls upon you.",
+    "displayPriority": 124,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_equip_fabric_hp11a_00.ui_equip_fabric_hp11a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp11a_alchemist_00",
+    "displayName": "Unstable Emulsions",
+    "displayDescription": "\"Alchemancy is the art of fusing impossibilities to create exponential probability.\"\r\n—Parazelcia of Byrik, <italic>The Alchemantic Auspices</> (306 A.U.)",
+    "displayPriority": 125,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season11a/ui_hp_alchemist_11A_bannerplant_00.ui_hp_alchemist_11A_bannerplant_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP11A_ALCHEMIST_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP11A_ALCHEMIST_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp12a_frostwarden_00",
+    "displayName": "Silver Family Banner",
+    "displayDescription": "To outsiders, Nikola Silver is a holiday myth. But the Silver family line has ruled the Skaldish for all of their recorded history.",
+    "displayPriority": 126,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season12a/ui_equip_fabric_hp12a_00.ui_equip_fabric_hp12a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp12a_frostwarden_00",
+    "displayName": "Winter Chill",
+    "displayDescription": "The cold is a powerful adversary. But it is also a powerful ally.",
+    "displayPriority": 127,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/plants/BNC_ANIMATION_HP12A_FROSTWARDEN_00.BNC_ANIMATION_HP12A_FROSTWARDEN_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP12A_FROSTWARDEN_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP12A_FROSTWARDEN_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp10a_celestial_00",
+    "displayName": "Void Runner's Standard",
+    "displayDescription": "The unbroken banner standard of the culture known only to modern scholars as the Void Runners.",
+    "displayPriority": 128,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/playerbanner_celestial_00.playerbanner_celestial_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_hp10a_celestial_00",
+    "displayName": "Shadow Gate",
+    "displayDescription": "A portal into the Umbral Void that is fortunately only symbolic.",
+    "displayPriority": 129,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2020_Season10a/ui_equip_fabric_hp10a_00.ui_equip_fabric_hp10a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_HP10A_CELESTIAL_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_HP10A_CELESTIAL_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_hp08a_00",
+    "displayName": "Visage of Taurus",
+    "displayDescription": "The face of a sacred creature with a warrior spirit.",
+    "displayPriority": 130,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/ui_icon_hp_sigil_8a_00.ui_icon_hp_sigil_8a_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_HP08A_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_HP08A_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp05_ninja_00",
+    "displayName": "Staff of the Laughing Death",
+    "displayDescription": "The banner standard of the Laughing Death clan.",
+    "displayPriority": 131,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_banner_standard_02.ui_icon_hp_ninja_banner_standard_02'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP05_NINJA_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP05_NINJA_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp05_ninja_01",
+    "displayName": "Staff of the Ghost Fox",
+    "displayDescription": "The banner standard of the Ghost Fox clan.",
+    "displayPriority": 132,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_banner_standard_01.ui_icon_hp_ninja_banner_standard_01'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP05_NINJA_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP05_NINJA_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp05_ninja_02",
+    "displayName": "Staff of the Blood Demon",
+    "displayDescription": "The banner standard of the Blood Demon clan.",
+    "displayPriority": 133,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_ninja_banner_standard_00.ui_icon_hp_ninja_banner_standard_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP05_NINJA_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP05_NINJA_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp05_ninjastars_00",
+    "displayName": "Starstruck",
+    "displayDescription": "The stars are out.",
+    "displayPriority": 134,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_emote_S3_ninjastars_bannerplant.ui_icon_hp_emote_S3_ninjastars_bannerplant'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP05_NINJASTARS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP05_NINJASTARS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_mesh_event_frost17_00",
+    "displayName": "Frostfall Flagstaff",
+    "displayDescription": "Frostfall Flagstaff",
+    "displayPriority": 135,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_frostfall_00.ico_equip_standard_frostfall_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_MESH_EVENT_FROST17_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_MESH_EVENT_FROST17_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_frost17_00",
+    "displayName": "Frostfall Corona",
+    "displayDescription": "The antler crown of the Frostfall Queen.",
+    "displayPriority": 136,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_playersigil_frostfall2017_00.ico_style_sigil_playersigil_frostfall2017_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_FROST17_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_FROST17_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_frost17_01",
+    "displayName": "Frostfall Snow Crystal",
+    "displayDescription": "A cool reminder of the season.",
+    "displayPriority": 137,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_playersigil_frostfall2017_01.ico_style_sigil_playersigil_frostfall2017_01'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_FROST17_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_FROST17_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_event_frost17_00",
+    "displayName": "Frostfall Banner Plant",
+    "displayDescription": "Plant your banner in celebration of the season.",
+    "displayPriority": 138,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/plants/ico_equip_plant_frostfall_00.ico_equip_plant_frostfall_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_EVENT_FROST17_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_EVENT_FROST17_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_frost18_01",
+    "displayName": "Frostfall Fringe",
+    "displayDescription": "Wreathe your banner in season's greetings.",
+    "displayPriority": 139,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_fabric_00.ui_icon_hp_fabric_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_FROST18_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_FROST18_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_frost18_02",
+    "displayName": "Frostfall Icicles",
+    "displayDescription": "You're as cold as ice and so's your banner.",
+    "displayPriority": 140,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_fabric_02.ui_icon_hp_fabric_02'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_FROST18_02",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_FROST18_02"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_event_dark17_000",
+    "displayName": "Stitched Harvest Fabric",
+    "displayDescription": "Banner Fabric for Dark Harvest 2017",
+    "displayPriority": 141,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_48.ico_equip_fabric_48'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_EVENT_DARK17_000",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_EVENT_DARK17_000"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_event_dark17_000",
+    "displayName": "Harvest Pumpkin Sigil",
+    "displayDescription": "Banner Sigil for Dark Harvest 2017",
+    "displayPriority": 142,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_playersigil_pumpkin_00.ico_style_sigil_playersigil_pumpkin_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_EVENT_DARK17_000",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_EVENT_DARK17_000"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_autumn_fox",
+    "displayName": "Autumn Fox",
+    "displayDescription": "A premium Reward Cache cosmetic: Autumn Fox.",
+    "displayPriority": 143,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_autumn_fox_00.ico_equip_fabric_autumn_fox_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_AUTUMN_FOX",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_AUTUMN_FOX"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_autumn_fox_00",
+    "displayName": "Autumn Fox",
+    "displayDescription": "A premium Reward Cache cosmetic: Autumn Fox.",
+    "displayPriority": 144,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/plants/ico_equip_plant_autumnfox_00.ico_equip_plant_autumnfox_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_AUTUMN_FOX_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_AUTUMN_FOX_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_funguy_00",
+    "displayName": "Agaric Bannerstaff",
+    "displayDescription": "It's probably spore-free.",
+    "displayPriority": 145,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_funguy_00.ico_equip_standard_funguy_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_FUNGUY_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_FUNGUY_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_funguy",
+    "displayName": "Malevolent Grove",
+    "displayDescription": "Suffering. It's what evil plants crave.",
+    "displayPriority": 146,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_funguy_00.ico_equip_fabric_funguy_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_FUNGUY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_FUNGUY"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_funguy",
+    "displayName": "Aetherwort",
+    "displayDescription": "They grow where living aether seeps into the earth.",
+    "displayPriority": 147,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_funguy_00.ico_style_sigil_funguy_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_FUNGUY",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_FUNGUY"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_fabric_armstrong",
+    "displayName": "Molten Plateau",
+    "displayDescription": "A premium Reward Cache cosmetic: Molten Plateau.",
+    "displayPriority": 148,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/fabrics/ico_equip_fabric_armstrong_00.ico_equip_fabric_armstrong_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_FABRIC_ARMSTRONG",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_FABRIC_ARMSTRONG"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_1p_arcslayer",
+    "displayName": "Arcslayer Flagstaff",
+    "displayDescription": "Magneto-aetheric elements ensure it always stands upright.",
+    "displayPriority": 149,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_arcslayer_00.ico_equip_standard_arcslayer_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_1P_ARCSLAYER",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_1P_ARCSLAYER"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_1p_unseen",
+    "displayName": "Triclops Standard",
+    "displayDescription": "Designed by the Unseen cult. \"And yet it does not see.\"",
+    "displayPriority": 150,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_unseen_00.ico_equip_standard_unseen_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_1P_UNSEEN",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_1P_UNSEEN"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp03_mossy_00",
+    "displayName": "Xelya's Standard",
+    "displayDescription": "A banner standard based on the design used by Ramsgate's own resident Farslayer.",
+    "displayPriority": 151,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season03/ui_icon_hp_mossy_standard_00.ui_icon_hp_mossy_standard_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP03_MOSSY_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP03_MOSSY_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_randall",
+    "displayName": "Horror from the Deeps",
+    "displayDescription": "A terror utterly beyond thought—at once terrible, monstrous, and unbelievable.",
+    "displayPriority": 152,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_randall_00.ico_style_sigil_randall_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_RANDALL",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_RANDALL"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_hp07a_monk_01",
+    "displayName": "Infinite Mind Standard",
+    "displayDescription": "The most perilous journey is the one walked within.",
+    "displayPriority": 153,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_monk_01.ico_equip_standard_monk_01'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP07A_MONK_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP07A_MONK_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_ostia_00",
+    "displayName": "Admiral's Flagstaff",
+    "displayDescription": "Admiral Zai's personal flagstaff",
+    "displayPriority": 154,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_flagstaffadmiral.ui_icon_hp_flagstaffadmiral'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_OSTIA_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_OSTIA_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_standard_ostia_01",
+    "displayName": "Ironclad Flagstaff",
+    "displayDescription": "Forged from Ostian steel. Designed to take hold in the coldest, rockiest conditions.",
+    "displayPriority": 155,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_flagstaffironclad.ui_icon_hp_flagstaffironclad'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_OSTIA_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_OSTIA_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_sigil_036",
+    "displayName": "Time to Work",
+    "displayDescription": "A premium Reward Cache cosmetic: Time to Work.",
+    "displayPriority": 156,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/sigils/SmallIcons/ico_style_sigil_playersigil_36.ico_style_sigil_playersigil_36'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_SIGIL_036",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_SIGIL_036"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp05_flames_00",
+    "displayName": "Burning Secrets",
+    "displayDescription": "The hidden flame burns brightest.",
+    "displayPriority": 157,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_emote_S3_flames_bannerplant.ui_icon_hp_emote_S3_flames_bannerplant'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP05_FLAMES_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP05_FLAMES_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_hp05_petals_00",
+    "displayName": "Moonflower Power",
+    "displayDescription": "Establish a Moon Blossom Festival wherever you go.",
+    "displayPriority": 158,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season05/ui_icon_hp_emote_S3_petals_bannerplant.ui_icon_hp_emote_S3_petals_bannerplant'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_HP05_PETALS_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_HP05_PETALS_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_bnc_animation_saints_bond_00",
+    "displayName": "Reign of Hearts",
+    "displayDescription": "Let love rule.",
+    "displayPriority": 159,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_banner_plant.ui_icon_hp_saintsbond_banner_plant'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_ANIMATION_SAINTS_BOND_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_ANIMATION_SAINTS_BOND_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_wp_dp_event_spring_00",
+    "displayName": "Pufflepoppers",
+    "displayDescription": "Watch out for that hare trigger.",
+    "displayPriority": 160,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/dpistols/ico_equip_dp_spring_00.ico_equip_dp_spring_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_EVENT_SPRING_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_EVENT_SPRING_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_event_em_player_event_frost17_002",
+    "displayName": "Stay Frosty",
+    "displayDescription": "The forecast calls for snow, people.",
+    "displayPriority": 161,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Emotes/ico_emote_snowman.ico_emote_snowman'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_event",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_5"
+    ],
+    "items": [
+      {
+        "catalogId": "EM_PLAYER_EVENT_FROST17_002",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "EM_PLAYER_EVENT_FROST17_002"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_ac_back_hp06_1_01",
+    "displayName": "Skyshark's Teeth",
+    "displayDescription": "Bite back.",
+    "displayPriority": 162,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Accessories/ico_equip_back_pirate_01.ico_equip_back_pirate_01'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AC_BACK_HP06-1_01",
+        "quantity": 1,
+        "instanced": true
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AC_BACK_HP06-1_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_ac_back_hp06_1_00",
+    "displayName": "Wings of Paradise",
+    "displayDescription": "Inspired by the rare bird found on remote tropical isles.",
+    "displayPriority": 163,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Accessories/ico_equip_back_pirate_00.ico_equip_back_pirate_00'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "AC_BACK_HP06-1_00",
+        "quantity": 1,
+        "instanced": true
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AC_BACK_HP06-1_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_a_redstripe",
+    "displayName": "Skysweets",
+    "displayDescription": "A premium Reward Cache cosmetic: Skysweets.",
+    "displayPriority": 164,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_A_REDSTRIPE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_A_REDSTRIPE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_a_base",
+    "displayName": "Riptalon",
+    "displayDescription": "A premium Reward Cache cosmetic: Riptalon.",
+    "displayPriority": 165,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_A_BASE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_A_BASE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_b_bluewing",
+    "displayName": "Bluefeather",
+    "displayDescription": "A premium Reward Cache cosmetic: Bluefeather.",
+    "displayPriority": 166,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_B_BLUEWING",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_B_BLUEWING"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_b_flutterheart",
+    "displayName": "Flutterheart",
+    "displayDescription": "A premium Reward Cache cosmetic: Flutterheart.",
+    "displayPriority": 167,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_B_FLUTTERHEART",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_B_FLUTTERHEART"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_b_springtide",
+    "displayName": "Springtide",
+    "displayDescription": "A premium Reward Cache cosmetic: Springtide.",
+    "displayPriority": 168,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_B_SPRINGTIDE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_B_SPRINGTIDE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_b_base",
+    "displayName": "Clearsky",
+    "displayDescription": "A premium Reward Cache cosmetic: Clearsky.",
+    "displayPriority": 169,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_B_BASE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_B_BASE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_limited_gd_frame_c_base",
+    "displayName": "Flipwing",
+    "displayDescription": "A premium Reward Cache cosmetic: Flipwing.",
+    "displayPriority": 170,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 2000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HUD/Meters/ui_hud_glider_backing.ui_hud_glider_backing'"
+    },
+    "tags": [
+      "season_store",
+      "tab_season_limited",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_3"
+    ],
+    "items": [
+      {
+        "catalogId": "GD_FRAME_C_BASE",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "GD_FRAME_C_BASE"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp10a_celestial_01",
+    "displayName": "Void Runner",
+    "displayDescription": "Honouring the ancient culture that unlocked the secrets of Umbral Void—but found only their own destruction.",
+    "displayPriority": 171,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 700
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP10A_CELESTIAL_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP10A_CELESTIAL_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_bnc_standard_hp08a_heroes_00",
+    "displayName": "Flagstaff of the First Slayer",
+    "displayDescription": "Inspired by the legendary hero of the post-Upheaval period.",
+    "displayPriority": 172,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_Season08a/playerbanner_heroes_00.playerbanner_heroes_00'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_HP08A_HEROES_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_HP08A_HEROES_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp08b_01",
+    "displayName": "Aetherpunk",
+    "displayDescription": "The dazzling paragon of anarchic style.",
+    "displayPriority": 173,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP08B_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP08B_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp09a_assassins_01",
+    "displayName": "Blaze Hawk",
+    "displayDescription": "Strike like wildfire—but with surgical precision.",
+    "displayPriority": 174,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP09A_ASSASSINS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP09A_ASSASSINS_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp07b_00",
+    "displayName": "Demon's Bane",
+    "displayDescription": "A demon's own worst nightmare.",
+    "displayPriority": 175,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP07B_00",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP07B_00"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp08a_01",
+    "displayName": "Hero of Legend",
+    "displayDescription": "Your exploits are the stuff of which epic heroes are made.",
+    "displayPriority": 176,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP08A_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP08A_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp09b_commando_01",
+    "displayName": "Renegade Agent",
+    "displayDescription": "Too much is at stake to worry about the chain of command.",
+    "displayPriority": 177,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP09B_COMMANDO_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP09B_COMMANDO_01"
+    ]
+  },
+  {
+    "id": "season19_rewardcache_general_title_hp10b_raiders_01",
+    "displayName": "The Navigator",
+    "displayDescription": "Chart the skies of the Shattered Isles and make way for those who will follow.",
+    "displayPriority": 178,
+    "prices": [
+      {
+        "currencyId": "id_currency_seasonal_coin",
+        "price": 800
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/2019_SaintsBond/ui_icon_hp_saintsbond_title.ui_icon_hp_saintsbond_title'"
+    },
+    "tags": [
+      "season_store",
+      "season_store_general",
+      "season19",
+      "reward_cache_reconstructed",
+      "reward_cache_rarity_4"
+    ],
+    "items": [
+      {
+        "catalogId": "TITLE_HP10B_RAIDERS_01",
+        "quantity": 1,
+        "instanced": false
+      }
+    ],
+    "duplicateInstancedItems": [
+      "TITLE_HP10B_RAIDERS_01"
+    ]
+  }
+]

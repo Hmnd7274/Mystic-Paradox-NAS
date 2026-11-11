@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GameFlowState_structs.hpp"
 #include "Archon_classes.hpp"
+#include "GameFlowState_structs.hpp"
 
 
 SDK_NAMESPACE_START

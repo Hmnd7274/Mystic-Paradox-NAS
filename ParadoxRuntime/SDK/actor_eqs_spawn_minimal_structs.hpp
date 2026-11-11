@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "eqs_result_iteration_method_structs.hpp"
-#include "projectile_target_modifier_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "eqs_result_iteration_method_structs.hpp"
+#include "projectile_target_modifier_structs.hpp"
 
 
 SDK_NAMESPACE_START

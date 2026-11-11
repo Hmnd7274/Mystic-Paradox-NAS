@@ -27,9 +27,9 @@ public:
 
 public:
 	void ExecuteUbergraph_behemoth_shock_debuff(int32 EntryPoint);
+	void MulticastOnAdded();
 	void ReceiveDestroyed();
 	void OnRemoved();
-	void MulticastOnAdded();
 	void OnAdded();
 
 public:

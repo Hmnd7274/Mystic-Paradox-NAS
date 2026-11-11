@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "pickup_notification_item_number_struct_structs.hpp"
 #include "Archon_structs.hpp"
+#include "pickup_notification_item_number_struct_structs.hpp"
 #include "loot_condition_type_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "SlateCore_structs.hpp"
@@ -276,7 +276,7 @@ struct pickup_notification_queue_bpw_C_IsHuntPassProgress final
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	Eloot_condition_type                          ConditionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGrantProgressCatalogTableData         ProgressData;                                      // 0x0018(0x02D8)(Edit, BlueprintVisible)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)

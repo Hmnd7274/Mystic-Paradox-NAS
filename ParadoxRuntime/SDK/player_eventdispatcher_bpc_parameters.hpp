@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "jump_type_enum_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "dp_weapon_attach_states_enum_structs.hpp"
-#include "jump_type_enum_structs.hpp"
-#include "EPlayerStatesLayered_structs.hpp"
 #include "player_camera_state_enum_structs.hpp"
+#include "EPlayerStatesLayered_structs.hpp"
 #include "EPlayerStatesDefault_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "GameplayAbilities_structs.hpp"

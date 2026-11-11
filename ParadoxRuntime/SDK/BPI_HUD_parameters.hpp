@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Archon_structs.hpp"
-#include "gamemode_notify_data_structs.hpp"
-#include "UMG_structs.hpp"
 #include "pickup_notification_item_number_struct_structs.hpp"
+#include "UMG_structs.hpp"
+#include "gamemode_notify_data_structs.hpp"
 #include "progression_award_structs.hpp"
 
 

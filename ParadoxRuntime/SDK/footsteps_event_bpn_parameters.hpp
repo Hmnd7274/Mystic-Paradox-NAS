@@ -12,15 +12,15 @@
 
 #include "CoreUObject_structs.hpp"
 #include "player_states_struct_structs.hpp"
-#include "player_requirements_str_structs.hpp"
+#include "jump_type_enum_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
+#include "player_requirements_str_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
-#include "jump_type_enum_structs.hpp"
+#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 #include "debris_vfx_struct_structs.hpp"
-#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -41,7 +41,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_GetIsValidSprintAttempt;
 struct footsteps_event_bpn_C_IsIkinemaEnabled final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsIkinemaEnabled;
 
@@ -50,7 +50,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_IsIkinemaEnabled;
 struct footsteps_event_bpn_C_CanMove final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_CanMove;
 
@@ -77,7 +77,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_GetJumpType;
 struct footsteps_event_bpn_C_IsInEdgeRecovery final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsInEdgeRecovery;
 
@@ -95,7 +95,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_IsStrafing;
 struct footsteps_event_bpn_C_IsVentJumping final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsVentJumping;
 
@@ -203,7 +203,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_ResetMaxFallTimer;
 struct footsteps_event_bpn_C_GetIsSprinting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_GetIsSprinting;
 
@@ -404,7 +404,7 @@ struct footsteps_event_bpn_C_SetCollisionWithDestructible final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_SetCollisionWithDestructible;
 
@@ -661,7 +661,7 @@ struct footsteps_event_bpn_C_SetCollisionWithAMonster final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_SetCollisionWithAMonster;
 
@@ -869,7 +869,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_GetPlayerSupportInfo;
 struct footsteps_event_bpn_C_IsPlantingBanner final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsPlantingBanner;
 
@@ -878,7 +878,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_IsPlantingBanner;
 struct footsteps_event_bpn_C_IsEmoting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsEmoting;
 
@@ -887,7 +887,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_IsEmoting;
 struct footsteps_event_bpn_C_IsInputEnabled_ final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_IsInputEnabled_;
 
@@ -923,7 +923,7 @@ DUMPER7_ASSERTS_footsteps_event_bpn_C_CanVentTraversal;
 struct footsteps_event_bpn_C_GetMountingComponent final
 {
 public:
-	class UArchonMountingComponent*               return_0;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UArchonMountingComponent*               Return;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_footsteps_event_bpn_C_GetMountingComponent;
 

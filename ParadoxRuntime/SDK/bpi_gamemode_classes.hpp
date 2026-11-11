@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "game_mode_type_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "game_mode_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

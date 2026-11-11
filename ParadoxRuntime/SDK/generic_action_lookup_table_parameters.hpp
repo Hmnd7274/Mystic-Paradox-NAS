@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_generic_action_type_structs.hpp"
 #include "generic_action_set_entry_structs.hpp"
+#include "behemoth_generic_action_type_structs.hpp"
 #include "object_lookup_table_struct_structs.hpp"
 
 

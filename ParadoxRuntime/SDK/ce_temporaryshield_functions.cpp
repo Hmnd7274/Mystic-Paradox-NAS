@@ -34,30 +34,6 @@ void Ace_temporaryshield_C::ExecuteUbergraph_ce_temporaryshield(int32 EntryPoint
 }
 
 
-// Function ce_temporaryshield.ce_temporaryshield_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Ace_temporaryshield_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ce_temporaryshield.ce_temporaryshield_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Ace_temporaryshield_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ce_temporaryshield.ce_temporaryshield_C.OnShieldRefreshed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -93,6 +69,30 @@ void Ace_temporaryshield_C::OnShieldRemoved(const struct FGameplayTag& RemovedRe
 	Parms.ShieldGUID_0 = std::move(ShieldGUID_0);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ce_temporaryshield.ce_temporaryshield_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Ace_temporaryshield_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ce_temporaryshield.ce_temporaryshield_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Ace_temporaryshield_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

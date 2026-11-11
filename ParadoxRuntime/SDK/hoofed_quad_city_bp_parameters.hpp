@@ -41,6 +41,16 @@ public:
 };
 DUMPER7_ASSERTS_hoofed_quad_city_bp_C_ExecuteUbergraph_hoofed_quad_city_bp;
 
+// Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct hoofed_quad_city_bp_C_UserConstructionScript final
+{
+public:
+	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_hoofed_quad_city_bp_C_UserConstructionScript;
+
 // Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.OnUserInteractionCompleted
 // 0x01A8 (0x01A8 - 0x0000)
 struct hoofed_quad_city_bp_C_OnUserInteractionCompleted final
@@ -81,16 +91,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x01A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_hoofed_quad_city_bp_C_OnUserInteractionCompleted;
-
-// Function hoofed_quad_city_bp.hoofed_quad_city_bp_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct hoofed_quad_city_bp_C_UserConstructionScript final
-{
-public:
-	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_hoofed_quad_city_bp_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

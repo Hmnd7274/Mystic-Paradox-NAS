@@ -35,17 +35,17 @@ public:
 
 public:
 	void ExecuteUbergraph_escalation_radiant_power_healing_buff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void TimeUp();
 	void BindingParticleEnd();
 	void PositionAndFire(class AActor* Target, class AActor* Initiator);
-	void OnAdded();
 	void OnHeal_Audio(class AActor* Actor);
-	void PositionandFireVFX(class AActor* Target, class AActor* Initiator);
+	void PositionAndFireVFX(class AActor* Target, class AActor* Initiator);
 	void OnParticleComplete();
 	void DamageDelt(class AActor* DamagedActor, const struct FPostMitigationDamageSummary& DamageSummary, const struct FGameplayTagContainer& DamageTags, const struct FGameplayEffectContextHandle& Context);
 	void MulticastOnAdded();
 	void FindTarget(class AActor** PlayerToHeal_0);
+	void ReceiveDestroyed();
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

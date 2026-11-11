@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "player_aim_request_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
+#include "player_aim_request_structs.hpp"
 
 
 SDK_NAMESPACE_START

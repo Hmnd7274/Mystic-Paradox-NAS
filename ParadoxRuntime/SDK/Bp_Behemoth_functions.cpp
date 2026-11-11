@@ -5197,9 +5197,9 @@ void ABp_Behemoth_C::GetGenericActionLookupTable(class Ugeneric_action_lookup_ta
 // Function Bp_Behemoth.Bp_Behemoth_C.GetIsDead
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABp_Behemoth_C::GetIsDead(bool* return_0)
+void ABp_Behemoth_C::GetIsDead(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetIsDead", FnName));
@@ -5208,8 +5208,8 @@ void ABp_Behemoth_C::GetIsDead(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -5571,9 +5571,9 @@ void ABp_Behemoth_C::AddPaintedTargetWidget(bool ManualAttachment, const struct 
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidgetComponent*                 WidgetComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABp_Behemoth_C::RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* return_0)
+void ABp_Behemoth_C::RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemovePaintedTargetWidget", FnName));
@@ -5584,8 +5584,8 @@ void ABp_Behemoth_C::RemovePaintedTargetWidget(class UWidgetComponent* WidgetCom
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -6189,9 +6189,9 @@ bool ABp_Behemoth_C::SetGatherableVisible(bool IsVisible)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UAnimNotify_AkEvent_C*&     NotifyInstance                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABp_Behemoth_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* return_0)
+void ABp_Behemoth_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetShouldExecuteAKNotify", FnName));
@@ -6202,8 +6202,8 @@ void ABp_Behemoth_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

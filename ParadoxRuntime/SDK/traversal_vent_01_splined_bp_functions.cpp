@@ -70,92 +70,6 @@ void Atraversal_vent_01_splined_bp_C::StartSound()
 }
 
 
-// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Atraversal_vent_01_splined_bp_C::ReceiveTick(float DeltaSeconds)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
-
-	Params::traversal_vent_01_splined_bp_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Atraversal_vent_01_splined_bp_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.SaveSplinePositions
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void Atraversal_vent_01_splined_bp_C::SaveSplinePositions()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SaveSplinePositions", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.IsCharacterOnSpline
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class AArchonCharacter*                 Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Is_On_Spline                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Atraversal_vent_01_splined_bp_C::IsCharacterOnSpline(class AArchonCharacter* Character_0, bool* Is_On_Spline)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsCharacterOnSpline", FnName));
-
-	Params::traversal_vent_01_splined_bp_C_IsCharacterOnSpline Parms{};
-
-	Parms.Character_0 = Character_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Is_On_Spline != nullptr)
-		*Is_On_Spline = Parms.Is_On_Spline;
-}
-
-
-// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.TickSplinedCharacterData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct Ftraversal_vent_splined_playerdata&CharacterData_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Atraversal_vent_01_splined_bp_C::TickSplinedCharacterData(struct Ftraversal_vent_splined_playerdata& CharacterData_0, float DeltaSeconds)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickSplinedCharacterData", FnName));
-
-	Params::traversal_vent_01_splined_bp_C_TickSplinedCharacterData Parms{};
-
-	Parms.CharacterData_0 = std::move(CharacterData_0);
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	CharacterData_0 = std::move(Parms.CharacterData_0);
-}
-
-
 // Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.AuthSetVentActive
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -186,6 +100,24 @@ void Atraversal_vent_01_splined_bp_C::ReceiveGameplayStart()
 }
 
 
+// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Atraversal_vent_01_splined_bp_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::traversal_vent_01_splined_bp_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.ReceiveActorBeginOverlap
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -201,6 +133,30 @@ void Atraversal_vent_01_splined_bp_C::ReceiveActorBeginOverlap(class AActor* Oth
 	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Atraversal_vent_01_splined_bp_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.SaveSplinePositions
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void Atraversal_vent_01_splined_bp_C::SaveSplinePositions()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SaveSplinePositions", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -257,6 +213,50 @@ void Atraversal_vent_01_splined_bp_C::GetHorizontalForce(float Time, float* xFor
 
 	if (yForce != nullptr)
 		*yForce = Parms.yForce;
+}
+
+
+// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.IsCharacterOnSpline
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class AArchonCharacter*                 Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Is_On_Spline                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Atraversal_vent_01_splined_bp_C::IsCharacterOnSpline(class AArchonCharacter* Character_0, bool* Is_On_Spline)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsCharacterOnSpline", FnName));
+
+	Params::traversal_vent_01_splined_bp_C_IsCharacterOnSpline Parms{};
+
+	Parms.Character_0 = Character_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Is_On_Spline != nullptr)
+		*Is_On_Spline = Parms.Is_On_Spline;
+}
+
+
+// Function traversal_vent_01_splined_bp.traversal_vent_01_splined_bp_C.TickSplinedCharacterData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct Ftraversal_vent_splined_playerdata&CharacterData_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Atraversal_vent_01_splined_bp_C::TickSplinedCharacterData(struct Ftraversal_vent_splined_playerdata& CharacterData_0, float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickSplinedCharacterData", FnName));
+
+	Params::traversal_vent_01_splined_bp_C_TickSplinedCharacterData Parms{};
+
+	Parms.CharacterData_0 = std::move(CharacterData_0);
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	CharacterData_0 = std::move(Parms.CharacterData_0);
 }
 
 

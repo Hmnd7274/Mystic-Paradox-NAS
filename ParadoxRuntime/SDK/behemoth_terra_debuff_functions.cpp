@@ -58,18 +58,6 @@ void Abehemoth_terra_debuff_C::AddVFX()
 }
 
 
-// Function behemoth_terra_debuff.behemoth_terra_debuff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abehemoth_terra_debuff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_terra_debuff.behemoth_terra_debuff_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -77,6 +65,18 @@ void Abehemoth_terra_debuff_C::MulticastOnAdded()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function behemoth_terra_debuff.behemoth_terra_debuff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abehemoth_terra_debuff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

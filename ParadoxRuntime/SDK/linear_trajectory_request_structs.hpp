@@ -12,8 +12,8 @@
 
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "project_linear_trajectory_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "project_linear_trajectory_type_structs.hpp"
 #include "trajectory_trace_hit_strategy_structs.hpp"
 
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "PhoenixAnimationCore_structs.hpp"
+#include "traversal_vent_splined_playerdata_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "traversal_vent_splined_playerdata_structs.hpp"
 #include "traversal_vent_01_bp_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -49,16 +49,16 @@ public:
 	void OnSplineStart();
 	void OnSplineEnd();
 	void StartSound();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void SaveSplinePositions();
-	void IsCharacterOnSpline(class AArchonCharacter* Character_0, bool* Is_On_Spline);
-	void TickSplinedCharacterData(struct Ftraversal_vent_splined_playerdata& CharacterData_0, float DeltaSeconds);
 	void AuthSetVentActive(bool NewActive);
 	void ReceiveGameplayStart();
+	void ReceiveTick(float DeltaSeconds);
 	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ReceiveBeginPlay();
+	void SaveSplinePositions();
 	void GetVerticalForce(class AArchonCharacterBase* Character_0, struct FVector* VectorVertical, float* VerticalHeight, float* Gravity);
 	void GetHorizontalForce(float Time, float* xForce, float* yForce);
+	void IsCharacterOnSpline(class AArchonCharacter* Character_0, bool* Is_On_Spline);
+	void TickSplinedCharacterData(struct Ftraversal_vent_splined_playerdata& CharacterData_0, float DeltaSeconds);
 
 	void GetAlignmentOffset(class AArchonCharacter* InCharacter, struct FVector* OffsetTranslation) const;
 	bool ShouldStopFollowingSpline(const struct Ftraversal_vent_splined_playerdata& CharacterData_0) const;

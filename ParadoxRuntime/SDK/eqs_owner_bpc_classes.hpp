@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "eqs_context_item_structs.hpp"
 #include "Engine_classes.hpp"
+#include "eqs_context_item_structs.hpp"
 
 
 SDK_NAMESPACE_START

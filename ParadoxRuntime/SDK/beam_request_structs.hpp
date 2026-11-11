@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Archon_structs.hpp"
-#include "GameplayTags_structs.hpp"
+#include "speed_or_duration_info_structs.hpp"
 #include "beam_collision_behavior_structs.hpp"
 #include "relative_or_world_structs.hpp"
-#include "damage_guid_type_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Archon_structs.hpp"
 #include "beam_type_structs.hpp"
-#include "speed_or_duration_info_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "damage_guid_type_structs.hpp"
 
 
 SDK_NAMESPACE_START

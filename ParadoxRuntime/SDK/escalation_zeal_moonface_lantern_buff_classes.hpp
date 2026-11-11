@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "cell_buff_base_bp_classes.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -30,9 +30,9 @@ public:
 
 public:
 	void ExecuteUbergraph_escalation_zeal_moonface_lantern_buff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void DamageDealtFromTable(class AActor* Actor, const struct FDamageTableData& Damage_Data, const struct FVector& Hit_Dir, const struct FHitResult& Hit);
 	void ReceiveBeginPlay();
+	void ReceiveDestroyed();
 
 public:
 	static class UClass* StaticClass()

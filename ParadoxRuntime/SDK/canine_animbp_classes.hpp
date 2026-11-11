@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "fauna_states_enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "fauna_states_enum_structs.hpp"
 #include "Archon_classes.hpp"
 
 

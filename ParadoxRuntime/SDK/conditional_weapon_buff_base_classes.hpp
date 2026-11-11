@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayAbilities_structs.hpp"
-#include "GameplayEffectClassWithMagnitude_structs.hpp"
 #include "Archon_structs.hpp"
+#include "GameplayEffectClassWithMagnitude_structs.hpp"
 #include "Engine_structs.hpp"
 #include "base_buff_classes.hpp"
 

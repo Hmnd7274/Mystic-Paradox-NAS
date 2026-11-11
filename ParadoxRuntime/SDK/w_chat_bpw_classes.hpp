@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "ArchonChatModeTab_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "ArchonChatModeTab_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "ArchonChatWindowMode_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START

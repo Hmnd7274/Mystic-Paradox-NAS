@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "PhoenixGameplayCore_structs.hpp"
-#include "beam_request_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "speed_or_duration_info_structs.hpp"
-#include "beam_type_structs.hpp"
 #include "relative_or_world_structs.hpp"
+#include "beam_request_structs.hpp"
+#include "beam_type_structs.hpp"
+#include "speed_or_duration_info_structs.hpp"
 
 
 SDK_NAMESPACE_START

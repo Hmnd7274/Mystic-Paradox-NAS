@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "persistent_spawn_criteria_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "persistent_spawn_type_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "persistent_actor_spawn_params_structs.hpp"
 #include "persistent_projectile_spawn_params_structs.hpp"
 #include "start_immediately_type_structs.hpp"
+#include "persistent_spawn_criteria_structs.hpp"
 
 
 SDK_NAMESPACE_START

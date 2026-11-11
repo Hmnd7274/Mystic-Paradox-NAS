@@ -34,42 +34,6 @@ void Aescalation_frostbite_frozen_status_C::ExecuteUbergraph_escalation_frostbit
 }
 
 
-// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_frostbite_frozen_status_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Aescalation_frostbite_frozen_status_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_frostbite_frozen_status_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.MulticastOnAdded
 // (Event, Public, BlueprintEvent)
 
@@ -101,6 +65,42 @@ void Aescalation_frostbite_frozen_status_C::Timeline_0__FinishedFunc()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_frostbite_frozen_status_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Aescalation_frostbite_frozen_status_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_frostbite_frozen_status.escalation_frostbite_frozen_status_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_frostbite_frozen_status_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

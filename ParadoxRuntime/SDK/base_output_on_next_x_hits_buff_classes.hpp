@@ -32,10 +32,10 @@ public:
 	void ExecuteUbergraph_base_output_on_next_x_hits_buff(int32 EntryPoint);
 	void OnPostMitigationDealtAnyDamage(const struct FPostMitigationDamageSummary& PostMitDamageSummary, const struct FGameplayTagContainer& DamageTags, class AActor* DamagedActor, const struct FGameplayEffectContextHandle& Context);
 	void OnPostWeaponHitComplete_Event_0(const struct FGameplayTagContainer& DamageAndInstigatorTags, class AActor* DamagedActor, float FinalDamageAmount);
-	void OnRemoved();
-	void OnAdded();
 	void CustomCanAffectTarget(class AActor* Target, const struct FGameplayTagContainer& DamageAndInstigatorTags, bool* CanAffect);
 	void HandleHitEvent(class AActor* DamagedActor, const struct FGameplayTagContainer& DamageAndInstigatorTags);
+	void OnRemoved();
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

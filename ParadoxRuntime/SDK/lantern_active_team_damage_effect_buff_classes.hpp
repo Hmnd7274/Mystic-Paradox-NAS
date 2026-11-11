@@ -31,12 +31,12 @@ public:
 
 public:
 	void ExecuteUbergraph_lantern_active_team_damage_effect_buff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void SpawnVFX();
 	void UpdateVFXTransforms();
 	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ReceiveTick(float DeltaSeconds);
+	void ReceiveDestroyed();
 
 public:
 	static class UClass* StaticClass()

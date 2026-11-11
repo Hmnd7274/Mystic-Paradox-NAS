@@ -548,3 +548,668 @@ wrote 53 currencies -> currency_names_1_14_7.jsonl | names: invariant=26 viaFTex
 [TableInventory] starting read-only DataTable census
 [TableInventory] DONE tables=466 skipped=0
 ALL DONE general=7318 equipment=1608 progression=139 combat=1625 skins=445 slayers=509 hunts=1378 tables=466 dropTables=1939 currencyNames=53 storeRuntime=3173 mastery=304
+thread start; flags: catalog=1 progression=1 combat=1 skins=1 skinsResolveStringTable=1 slayersPath=1 weaponSlots=1 hunts=1 tableInventory=1 cells=1 dropTables=1 currencyNames=1 storeRuntime=1
+*** WARNING: EXPORT_SKINS_RESOLVE_STRINGTABLE=1 — this build will call ProcessEvent off the worker thread. CLIENT-ONLY. Do not inject this build into the dedicated server. ***
+*** WARNING: EXPORT_CURRENCY_NAMES=1 — this build will call ProcessEvent off the worker thread. CLIENT-ONLY. Do not inject this build into the dedicated server. ***
+waiting for GObjects + catalog...
+general: GetAllItems returned 7322 items
+general: wrote 7322 definitions -> catalog_1_14_7.jsonl
+equipment: wrote 1608 definitions -> equipment_1_14_7.jsonl
+catalog DONE general=7322 equipment=1608
+weapon-slots: wrote 7 live weapons -> weapon_slots_1_14_7.jsonl
+weapon-parts: wrote 31 live parts -> live_weapon_parts_1_14_7.jsonl
+weapon-part-catalog: wrote 319 rows -> weapon_part_catalog_rows_1_14_7.jsonl
+loadout-gear-ui: wrote 0 rows -> loadout_gear_ui_1_14_7.jsonl
+cells: wrote 44 live cell containers -> live_cell_slots_1_14_7.jsonl
+[Progression] wrote 1/1 rows from player_experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 7/7 rows from weapon_experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 8/8 rows from experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 113/113 rows from hunt_pass_season_table (RowStruct=HuntPassSeasonDataTable)
+[Progression] experience awards: no ExperienceTableData tables found (struct walk + component fallback) - skipping
+[Progression] wrote 0/0 rows from progression_track_table (RowStruct=ProgressionTrackTableData)
+[Progression] wrote 1/1 rows from online_progression_track_info_table (RowStruct=OnlineProgressionTrackInfo)
+[Progression] wrote 9/9 rows from mastery_track_table (RowStruct=MasteryTrackTableData)
+[Progression] RunProgressionExport DONE total_rows=139
+[Combat] wrote 3/3 rows from fauna_damage_table
+[Combat] wrote 20/20 rows from shockmane_damage_table
+[Combat] wrote 346/346 rows from DamageTable
+[Combat] wrote 346/346 rows from DamageTable_composite
+[Combat] wrote 37/37 rows from DamageTable_Generic
+[Combat] ExportByRowStruct(DamageTableData) DONE total_rows=752 across 5 table(s)
+[Combat] wrote 227/227 rows from weapon_power_table_obprog
+[Combat] wrote 337/337 rows from weapon_power_table
+[Combat] wrote 309/309 rows from weapon_power_table_level_01
+[Combat] ExportByRowStruct(WeaponPowerTableData) DONE total_rows=873 across 3 table(s)
+[Combat] RunCombatExport DONE total_rows=1625
+scanning 7322 catalog items for weapon skins
+*** EXPORT_SKINS_RESOLVE_STRINGTABLE=1: calling ProcessEvent off the worker thread to resolve missing names. CLIENT-ONLY === STRINGTABLE DIAGNOSTIC START ===
+  [ST-obj] total loaded UStringTable objects=0 (cosmetic/weapon-related=0)
+  [ST-reg] GetRegisteredStringTables count=170
+  [ST-reg] registered cosmetic table: "armour_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_ac_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_cblades_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_dp_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_eblade_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_gaxe_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_ihammer_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_mspear_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "lantern_cosmetic_catalog"
+  [ST-reg] registered cosmetic table: "weapon_ac_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_cblades_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_eblade_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_gaxe_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_ihammer_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_mspear_gameplay_catalog"
+  [ST-reg] registered cosmetic table: "weapon_part_catalog"
+  [ST-reg] registered cosmetic table: "weapon_dp_gameplay_catalog"
+  [ST-keys] weapon_gaxe_cosmetic_catalog key count=0
+=== STRINGTABLE DIAGNOSTIC END ===
+  [stringtable] WP_AC_PAPER_UMBRAL_00/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_AC_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_AC_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_AC_HP11B_ENGINEER_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP11B_ENGINEER_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP12B_MAGICAL_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP12B_MAGICAL_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP13A_ANCIENT_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP13A_ANCIENT_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP13B_DIVINE_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP13B_DIVINE_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP14A_RANGER_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP14A_RANGER_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP14B_PROTECTOR_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP14B_PROTECTOR_00|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP14B_PROTECTOR_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_CUTTHROAT_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_CUTTHROAT_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_CUTTHROAT_01/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_CUTTHROAT_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_CUTTHROAT_01/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_CUTTHROAT_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_FROSTFALL_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_FROSTFALL_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP15A_ELEGANCE_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP15A_ELEGANCE_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP15B_WARLORDS_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP15B_WARLORDS_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_EVENT_MIDSOMMAR_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_EVENT_MIDSOMMAR_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16B_ROGUE_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16B_ROGUE_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP17B_ADAMANT_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP17B_ADAMANT_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16A_MARAUDERS_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16A_MARAUDERS_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16A_MARAUDERS_01/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_HP16A_MARAUDERS_01/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ROMANTIC_01/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ROMANTIC_01/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ROMANTIC_02/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ROMANTIC_02/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_RAMSGIVING_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_RAMSGIVING_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_RAMSGIVING_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_RAMSGIVING_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_RAMSGIVING_02/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_RAMSGIVING_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_RAMSGIVING_02/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_RAMSGIVING_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_UNSEEN_01/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_UNSEEN_01/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_KALTAUGA_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ARCSLAYER_00/displayName ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP_ARCSLAYER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_AC_ARCSLAYER_00/description ns="weapon_ac_cosmetic_catalog" key="WP_AC_HP_ARCSLAYER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_CB_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_CB_HP06_PIRATE_03/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP06_PIRATE_03|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP06_PIRATE_03/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP06_PIRATE_03|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP11B_ENGINEER_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP11B_ENGINEER_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP12B_MAGICAL_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP12B_MAGICAL_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13A_ANCIENT_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13A_ANCIENT_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13A_ANCIENT_01/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13A_ANCIENT_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13A_ANCIENT_01/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13A_ANCIENT_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13B_DIVINE_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP13B_DIVINE_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP14A_RANGER_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP14A_RANGER_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP14B_PROTECTOR_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP14B_PROTECTOR_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15A_ELEGANCE_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15A_ELEGANCE_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_FROSTFALL_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_FROSTFALL_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15B_WARLORDS_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15B_WARLORDS_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_EVENT_MIDSOMMAR_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_EVENT_MIDSOMMAR_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_EVENT_SPRING_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_EVENT_SPRING_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_EVENT_SPRING_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_EVENT_SPRING_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16B_ROGUE_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16B_ROGUE_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP17B_ADAMANT_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP17B_ADAMANT_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16A_MARAUDERS_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16A_MARAUDERS_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16A_MARAUDERS_01/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP16A_MARAUDERS_01/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15A_ORRERY_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15A_ORRERY_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_HP15A_ORRERY_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_HP15A_ORRERY_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ELVEN_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ELVEN_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ELVEN_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ELVEN_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_CUTTHROAT_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_CUTTHROAT_00/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_TERRA_LERAWR/displayName ns="Dialog_S_RUMOUR_TERRA" key="WP_CB_TERRA_LERAWR|Title" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_TERRA_LERAWR/description ns="Dialog_S_RUMOUR_TERRA" key="WP_CB_TERRA_LERAWR|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_LUNAR/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_LUNAR|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_LUNAR/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_LUNAR|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ROMANTIC_01/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ROMANTIC_01/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ROMANTIC_02/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_ROMANTIC_02/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_UNSEEN_01/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_UNSEEN_01/description ns="weapon_cblades_cosmetic_catalog" key="WP_CB_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_KALTAUGA_00/displayName ns="weapon_cblades_cosmetic_catalog" key="WP_CB_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_CB_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_COBALT/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_DP_COBALT/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_DP_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_DP_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_DP_HP11B_ENGINEER_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP11B_ENGINEER_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP11B_ENGINEER_00|Desciption" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP12B_MAGICAL_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP12B_MAGICAL_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP12B_MAGICAL_01/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP12B_MAGICAL_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP12B_MAGICAL_01/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP12B_MAGICAL_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP13A_ANCIENT_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP13A_ANCIENT_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP13B_DIVINE_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP13B_DIVINE_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP14A_RANGER_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP14A_RANGER_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP14B_PROTECTOR_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP14B_PROTECTOR_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP15A_ELEGANCE_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP15A_ELEGANCE_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_FROSTFALL_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_FROSTFALL_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP15B_WARLORDS_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP15B_WARLORDS_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_EVENT_MIDSOMMAR_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_EVENT_MIDSOMMAR_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16B_ROGUE_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16B_ROGUE_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP17B_ADAMANT_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP17B_ADAMANT_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16A_MARAUDERS_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16A_MARAUDERS_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16A_MARAUDERS_01/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_HP16A_MARAUDERS_01/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ELVEN_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_ELVEN_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ELVEN_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_ELVEN_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_CUTTHROAT_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_CUTTHROAT_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_RAMSGIVING_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_RAMSGIVING_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_RAMSGIVING_00/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_RAMSGIVING_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_RAMSGIVING_02/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_RAMSGIVING_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_RAMSGIVING_02/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_RAMSGIVING_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ROMANTIC_01/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ROMANTIC_01/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ROMANTIC_02/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_ROMANTIC_02/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_UNSEEN_01/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_UNSEEN_01/description ns="weapon_dp_cosmetic_catalog" key="WP_DP_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_KALTAUGA_00/displayName ns="weapon_dp_cosmetic_catalog" key="WP_DP_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_DP_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_EB_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_EB_BUGBEAR_BLAZE_00/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_EB_HP06_PIRATE_03/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP06_PIRATE_03|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP06_PIRATE_03/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP06_PIRATE_03|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP11B_ENGINEER_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP11B_ENGINEER_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP12B_MAGICAL_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP12B_MAGICAL_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13A_ANCIENT_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13A_ANCIENT_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13B_DIVINE_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13B_DIVINE_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13B_DIVINE_01/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13B_DIVINE_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP13B_DIVINE_01/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP13B_DIVINE_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP14A_RANGER_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP14A_RANGER_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP14B_PROTECTOR_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP14B_PROTECTOR_00|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP14B_PROTECTOR_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP15A_ELEGANCE_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP15A_ELEGANCE_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_FROSTFALL_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_FROSTFALL_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_FINESSE_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_FINESSE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_FINESSE_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_FINESSE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP15B_WARLORDS_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP15B_WARLORDS_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_PHOENIX_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_PHOENIX_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_PHOENIX_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_PHOENIX_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_EVENT_MIDSOMMAR_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_EVENT_MIDSOMMAR_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16B_ROGUE_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16B_ROGUE_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP17B_ADAMANT_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP17B_ADAMANT_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16A_MARAUDERS_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16A_MARAUDERS_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16A_MARAUDERS_01/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16A_MARAUDERS_01Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16A_MARAUDERS_01/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_MIDDLEMAN_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_MIDDLEMAN_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_MIDDLEMAN_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_MIDDLEMAN_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_CUTTHROAT_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_CUTTHROAT_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ANNIVERSARY_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ANNIVERSARY_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ANNIVERSARY_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ANNIVERSARY_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_TRAINING_SONY/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_TRAINING_SONY|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_TRAINING_SONY/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_TRAINING_SONY|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ROMANTIC_01/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ROMANTIC_01/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ROMANTIC_02/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_ROMANTIC_02/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_UNSEEN_01/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_UNSEEN_01/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16B_ASSAULT_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16B_ASSAULT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_HP16B_ASSAULT_00/description ns="weapon_eblade_cosmetic_catalog" key="WP_EB_HP16B_ASSAULT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_KALTAUGA_00/displayName ns="weapon_eblade_cosmetic_catalog" key="WP_EB_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_EB_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_GA_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_GA_METAL_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_METAL_00|DIsplay Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_METAL_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_METAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP11B_ENGINEER_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP11B_ENGINEER_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_TERRA_SALLY/displayName ns="Dialog_S_RUMOUR_TERRA" key="WP_GA_TERRA_SALLY|Title" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_TERRA_SALLY/description ns="Dialog_S_RUMOUR_TERRA" key="WP_GA_TERRA_SALLY|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP11B_ENGINEER_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP11B_ENGINEER_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP11B_ENGINEER_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP11B_ENGINEER_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP12B_MAGICAL_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP12B_MAGICAL_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13A_ANCIENT_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13A_ANCIENT_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13B_DIVINE_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13B_DIVINE_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13B_DIVINE_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13B_DIVINE_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13B_DIVINE_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP13B_DIVINE_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP14A_RANGER_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP14A_RANGER_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP14B_PROTECTOR_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP14B_PROTECTOR_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15A_SOUL_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15A_SOUL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15A_SOUL_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15A_SOUL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15B_WARLORDS_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15B_WARLORDS_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_EVENT_MIDSOMMAR_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_EVENT_MIDSOMMAR_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16B_ROGUE_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16B_ROGUE_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP17B_ADAMANT_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP17B_ADAMANT_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16A_MARAUDERS_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16A_MARAUDERS_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16A_MARAUDERS_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP16A_MARAUDERS_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_SPOOKY_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_SPOOKY_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_SPOOKY_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_SPOOKY_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ELVEN_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ELVEN_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ELVEN_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ELVEN_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_CUTTHROAT_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_CUTTHROAT_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15A_ELEGANCE_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_HP15A_ELEGANCE_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_FROSTFALL_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_FROSTFALL_00/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ROMANTIC_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ROMANTIC_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ROMANTIC_02/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_ROMANTIC_02/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_UNSEEN_01/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_UNSEEN_01/description ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_KALTAUGA_00/displayName ns="weapon_gaxe_cosmetic_catalog" key="WP_GA_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_GA_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_IH_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_IH_HP11B_ENGINEER_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP11B_ENGINEER_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP12B_MAGICAL_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP12B_MAGICAL_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP13A_ANCIENT_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP13A_ANCIENT_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP13B_DIVINE_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP13B_DIVINE_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP14A_RANGER_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP14A_RANGER_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP14B_PROTECTOR_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP14B_PROTECTOR_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_CUTTHROAT_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_CUTTHROAT_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_CRYSTAL_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_CRYSTAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_CRYSTAL_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_CRYSTAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP15A_ELEGANCE_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP15A_ELEGANCE_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_FROSTFALL_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_FROSTFALL_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_FLOWER_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_FLOWER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_FLOWER_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_FLOWER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP15B_WARLORDS_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP15B_WARLORDS_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_EVENT_MIDSOMMAR_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_EVENT_MIDSOMMAR_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16B_ROGUE_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16B_ROGUE_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP17B_ADAMANT_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP17B_ADAMANT_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16B_ASSAULT_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16B_ASSAULT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16B_ASSAULT_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16B_ASSAULT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16A_MARAUDERS_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16A_MARAUDERS_00/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16A_MARAUDERS_01/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_HP16A_MARAUDERS_01/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_RAMSGIVING_01/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_RAMSGIVING_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_RAMSGIVING_01/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_RAMSGIVING_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROMANTIC_01/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROMANTIC_01/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROMANTIC_02/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROMANTIC_02/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROCK_FROST/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROCK_FROST|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_ROCK_FROST/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_ROCK_FROST|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_UNSEEN_01/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_UNSEEN_01/description ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_KALTAUGA_00/displayName ns="weapon_ihammer_cosmetic_catalog" key="WP_IH_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_IH_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_COBALT_XBOX/displayName EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_MS_COBALT_XBOX/description EXTRACTION FAILED (no LocKey block found in customData)
+  [stringtable] WP_MS_HP11B_ENGINEER_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP11B_ENGINEER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP11B_ENGINEER_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP11B_ENGINEER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP12B_MAGICAL_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP12B_MAGICAL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP12B_MAGICAL_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP12B_MAGICAL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP13A_ANCIENT_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13A_ANCIENT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP13A_ANCIENT_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13A_ANCIENT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP13B_DIVINE_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13B_DIVINE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP13B_DIVINE_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP13B_DIVINE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP14A_RANGER_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14A_RANGER_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP14A_RANGER_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14A_RANGER_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP14B_PROTECTOR_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14B_PROTECTOR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP14B_PROTECTOR_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP14B_PROTECTOR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15A_ELEGANCE_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15A_ELEGANCE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15A_ELEGANCE_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15A_ELEGANCE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_FROSTFALL_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_FROSTFALL_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_FROSTFALL_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_FROSTFALL_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15B_GRIND_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_GRIND_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15B_GRIND_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_GRIND_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15B_WARLORDS_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_WARLORDS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP15B_WARLORDS_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP15B_WARLORDS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_EVENT_MIDSOMMAR_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_EVENT_MIDSOMMAR_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_EVENT_MIDSOMMAR_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_EVENT_MIDSOMMAR_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16B_ROGUE_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16B_ROGUE_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16B_ROGUE_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16B_ROGUE_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP17B_ADAMANT_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP17B_ADAMANT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP17B_ADAMANT_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP17B_ADAMANT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16A_MARAUDERS_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16A_MARAUDERS_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16A_MARAUDERS_01/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_HP16A_MARAUDERS_01/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_HP16A_MARAUDERS_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_CUTTHROAT_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_CUTTHROAT_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_CUTTHROAT_00/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_CUTTHROAT_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROMANTIC_01/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROMANTIC_01/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROMANTIC_02/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_02|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROMANTIC_02/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROMANTIC_02|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_UNSEEN_01/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_UNSEEN_01|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_UNSEEN_01/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_UNSEEN_01|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_KALTAUGA_00/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_KALTAUGA_00|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_KALTAUGA_00/description ns="armour_cosmetic_catalog" key="AR_KALTAUGA_HELM_00|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROSE/displayName ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROSE|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] WP_MS_ROSE/description ns="weapon_mspear_cosmetic_catalog" key="WP_MS_ROSE|Description" tableIdIsNone=0 isRegisteredTableId=1 result=""
+wrote 445 weapon skins -> weapon_skins_1_14_7.jsonl (Strikers=53, ChainBlades=64, Repeaters=63, Spear=61, Sword=73, Axe=66, Hammer=65) | names: invariant=267 viaFText=0 viaStringTable=0 stillUnresolved=178
+[SlayersPath] wrote 467/467 nodes from player_journey_table
+[SlayersPath] wrote 21/21 nodes from player_journey_season_1_past
+[SlayersPath] wrote 21/21 nodes from player_journey_season_1_future
+[SlayersPath] ExportByRowStruct(PlayerJourneyNodeData) DONE total_nodes=509 across 3 table(s)
+[SlayersPath] RunSlayersPathExport COMPLETE nodes=509
+[Hunts] starting read-only 1.12 hunt export
+[Hunts] wrote 162/162 rows from player_hunts_table (RowStruct=PlayerHuntTableData)
+[Hunts] wrote 27/27 rows from arena_easy_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 159/159 rows from matchmaker_hunts_table (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 22/22 rows from arena_hard_matchmaker_hunts_new (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 192/192 rows from arena_hard_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 22/22 rows from arena_elite_matchmaker_hunts_new (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 193/193 rows from arena_elite_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 46/46 rows from hunt_regions (RowStruct=Hunt_Region)
+[Hunts] wrote 19/19 rows from escalation_mode_specs (RowStruct=EscalationModeSpecification)
+[Hunts] wrote 180/180 rows from hunt_modifiers (RowStruct=HuntModifierTableRow)
+[Hunts] wrote 10/10 rows from game_activity_table (RowStruct=GameActivityTableData)
+[Hunts] wrote 134/134 rows from crafting_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 6/6 rows from game_activity_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 5/5 rows from experience_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 3/3 rows from purchase_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 1/1 rows from escalation_heroic_hunts_schedule (RowStruct=ScheduleData)
+[Hunts] wrote 5/5 rows from hunts_quests_schedule (RowStruct=ScheduleData)
+[Hunts] wrote 2/2 rows from gen_arena_hunts_schedule_new (RowStruct=ScheduleData)
+[Hunts] wrote 193/193 rows from gen_arena_hunts_schedule (RowStruct=ScheduleData)
+[Hunts] DONE playerRows=162 matchmakerRows=615 regions=46 escalationSpecs=19 modifiers=180 activities=10 unlockCriteria=148 schedule=201
+[DropTables] starting PlayFabDropTableTableData export
+[DropTables] wrote 0/0 rows from DT_gather_events
+[DropTables] wrote 33/33 rows from DT_control_events_rewards
+[DropTables] wrote 8/8 rows from dt_shared_gems_orbs
+[DropTables] wrote 30/30 rows from DT_rewards_login
+[DropTables] wrote 102/102 rows from DT_Public_Events
+[DropTables] wrote 10/10 rows from DT_Portal_Keys
+[DropTables] wrote 7/7 rows from DT_Patrol_Chests
+[DropTables] wrote 62/62 rows from DT_hunt_rewards_open_beta
+[DropTables] wrote 7/7 rows from DT_Glider_Track_Med
+[DropTables] wrote 8/8 rows from DT_Glider_Track_Hard
+[DropTables] wrote 7/7 rows from DT_Glider_Track_Easy
+[DropTables] wrote 0/0 rows from DT_gatherable_items
+[DropTables] wrote 41/41 rows from DT_core_progression_tracks
+[DropTables] wrote 59/59 rows from DT_contents_core_test
+[DropTables] wrote 9/9 rows from dt_cells_manual
+[DropTables] wrote 5/5 rows from DT_Cell_Cores
+[DropTables] wrote 18/18 rows from deprecated_generated_dt_cells_obprog
+[DropTables] wrote 0/0 rows from obsolete_generated_dt_breakitems_evergame
+[DropTables] wrote 1456/1456 rows from generated_dt_breakparts
+[DropTables] wrote 77/77 rows from DT_Behemoth_Breaks
+[DropTables] DONE tables=20 rows=1939
+scanning 7322 catalog items for currency-tagged rows
+*** EXPORT_CURRENCY_NAMES=1: calling ProcessEvent off the worker thread to resolve missing currency display names. CLIENT-ONLY === CURRENCY STRINGTABLE KEY DIAGNOSTIC START ===
+  [ST-keys] "currency_tokens_catalog" isRegisteredTableId=1 key count=0
+  [ST-keys] "UI_PlayerJourney" isRegisteredTableId=1 key count=0
+  [ST-keys] "UI" isRegisteredTableId=1 key count=0
+=== CURRENCY STRINGTABLE KEY DIAGNOSTIC END ===
+  [stringtable] CURRENCY_CELLDUST/displayName ns="UI" key="Common.CellDust" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_WEAPON/displayName ns="UI_PlayerJourney" key="Currency.PJM.CombatMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_ARMOR/displayName ns="UI_PlayerJourney" key="Currency.PJM.ProtectionMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_ALCHEMY/displayName ns="UI_PlayerJourney" key="Currency.PJM.AlchemyMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_AIRSHIP/displayName ns="UI_PlayerJourney" key="Currency.PJM.ExplorationMerits.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_PRESTIGE_EMPTY/displayName ns="UI_PlayerJourney" key="Currency.PJM.Aethersparks.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_PJM_PRESTIGE_FILLED/displayName ns="UI_PlayerJourney" key="Currency.PJM.Aetherhearts.Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_RAMSGIVING/displayName ns="currency_tokens_catalog" key="CURRENCY_EVENT_RAMSGIVING|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_DARKHARVEST/displayName ns="currency_tokens_catalog" key="CURRENCY_DARK_HARVEST|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_01/displayName ns="currency_tokens_catalog" key="CURRENCY_DARK_HARVEST|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_FROSTFALL/displayName ns="currency_tokens_catalog" key="CURRENCY_EVENT_FROSTFALL|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_SAINTSBOND/displayName ns="currency_tokens_catalog" key="CURRENCY_EVENT_SAINTSBOND|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_EVENT_SPRINGTIDE/displayName ns="currency_tokens_catalog" key="CURRENCY_EVENT_SPRINGTIDE|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S13_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S13_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S14_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S14_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S15_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S15_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S16_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S16_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S17_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S17_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S18_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S18_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S19_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S19_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_S20_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_S20_COIN|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_SEASONAL_COIN/displayName ns="currency_tokens_catalog" key="CURRENCY_SEASONAL_COIN|DisplayName" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_ESCALATION_HEROIC/displayName ns="currency_tokens_catalog" key="CURRENCY_ESCALATION_HEROIC|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_SEASON_13_CHRONOSTONE/displayName ns="currency_tokens_catalog" key="CURRENCY_SEASON_13_CHRONOSTONE|Display Name" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_GAUNTLET_COIN/displayName ns="gauntlet_mode" key="GauntletStore|CurrencyS01" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_GAUNTLET_COIN_B/displayName ns="gauntlet_mode" key="GauntletStore|CurrencyS01" tableIdIsNone=0 isRegisteredTableId=1 result=""
+  [stringtable] CURRENCY_GAUNTLET_COIN_FADED/displayName ns="gauntlet_mode" key="GauntletStore|CurrencyFaded" tableIdIsNone=0 isRegisteredTableId=1 result=""
+wrote 53 currencies -> currency_names_1_14_7.jsonl | names: invariant=26 viaFText=0 viaStringTable=0 stillUnresolved=27
+[StoreRuntime] starting store runtime capture; open Reward Cache before injecting
+[StoreRuntime] DONE storeViewModels=4 itemViewModels=1 imageRows=3168 skipped=0
+[Mastery] starting read-only mastery_card_table / achievements_table export
+[Mastery] read 258/258 rows from mastery_card_table (RowStruct=MasteryCardTableData)
+[Mastery] read 46/46 rows from achievements_table (RowStruct=AchievementTableData)
+[Mastery] DONE cards=258 achievements=46 objectiveIds=1828 skippedRows=0 skippedObjectives=0
+[TableInventory] starting read-only DataTable census
+[TableInventory] DONE tables=445 skipped=0
+ALL DONE general=7322 equipment=1608 progression=139 combat=1625 skins=445 slayers=509 hunts=1381 tables=445 dropTables=1939 currencyNames=53 storeRuntime=3173 mastery=304
+thread start; flags: catalog=1 progression=1 combat=1 skins=1 skinsResolveStringTable=0 slayersPath=1 weaponSlots=1 hunts=1 tableInventory=1 cells=1 dropTables=1 currencyNames=0 storeRuntime=1
+waiting for GObjects + catalog...
+general: GetAllItems returned 7322 items
+general: wrote 7322 definitions -> catalog_1_14_7.jsonl
+equipment: wrote 1608 definitions -> equipment_1_14_7.jsonl
+catalog DONE general=7322 equipment=1608
+weapon-slots: wrote 7 live weapons -> weapon_slots_1_14_7.jsonl
+weapon-parts: wrote 31 live parts -> live_weapon_parts_1_14_7.jsonl
+weapon-part-catalog: wrote 319 rows -> weapon_part_catalog_rows_1_14_7.jsonl
+loadout-gear-ui: wrote 0 rows -> loadout_gear_ui_1_14_7.jsonl
+cells: wrote 44 live cell containers -> live_cell_slots_1_14_7.jsonl
+[Progression] wrote 1/1 rows from player_experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 7/7 rows from weapon_experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 8/8 rows from experience_track_table (RowStruct=ExperienceTrackTableData)
+[Progression] wrote 113/113 rows from hunt_pass_season_table (RowStruct=HuntPassSeasonDataTable)
+[Progression] experience awards: no ExperienceTableData tables found (struct walk + component fallback) - skipping
+[Progression] wrote 0/0 rows from progression_track_table (RowStruct=ProgressionTrackTableData)
+[Progression] wrote 1/1 rows from online_progression_track_info_table (RowStruct=OnlineProgressionTrackInfo)
+[Progression] wrote 9/9 rows from mastery_track_table (RowStruct=MasteryTrackTableData)
+[Progression] RunProgressionExport DONE total_rows=139
+[Combat] wrote 3/3 rows from fauna_damage_table
+[Combat] wrote 20/20 rows from shockmane_damage_table
+[Combat] wrote 346/346 rows from DamageTable
+[Combat] wrote 346/346 rows from DamageTable_composite
+[Combat] wrote 37/37 rows from DamageTable_Generic
+[Combat] ExportByRowStruct(DamageTableData) DONE total_rows=752 across 5 table(s)
+[Combat] wrote 227/227 rows from weapon_power_table_obprog
+[Combat] wrote 337/337 rows from weapon_power_table
+[Combat] wrote 309/309 rows from weapon_power_table_level_01
+[Combat] ExportByRowStruct(WeaponPowerTableData) DONE total_rows=873 across 3 table(s)
+[Combat] RunCombatExport DONE total_rows=1625
+scanning 7322 catalog items for weapon skins
+wrote 445 weapon skins -> weapon_skins_1_14_7.jsonl (Strikers=53, ChainBlades=64, Repeaters=63, Spear=61, Sword=73, Axe=66, Hammer=65) | names: invariant=267 viaFText=0 viaStringTable=0 stillUnresolved=178
+[SlayersPath] wrote 467/467 nodes from player_journey_table
+[SlayersPath] wrote 21/21 nodes from player_journey_season_1_past
+[SlayersPath] wrote 21/21 nodes from player_journey_season_1_future
+[SlayersPath] ExportByRowStruct(PlayerJourneyNodeData) DONE total_nodes=509 across 3 table(s)
+[SlayersPath] RunSlayersPathExport COMPLETE nodes=509
+[Hunts] starting read-only 1.12 hunt export
+[Hunts] wrote 162/162 rows from player_hunts_table (RowStruct=PlayerHuntTableData)
+[Hunts] wrote 27/27 rows from arena_easy_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 159/159 rows from matchmaker_hunts_table (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 22/22 rows from arena_hard_matchmaker_hunts_new (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 192/192 rows from arena_hard_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 22/22 rows from arena_elite_matchmaker_hunts_new (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 193/193 rows from arena_elite_matchmaker_hunts (RowStruct=MatchmakerHuntTableData)
+[Hunts] wrote 46/46 rows from hunt_regions (RowStruct=Hunt_Region)
+[Hunts] wrote 19/19 rows from escalation_mode_specs (RowStruct=EscalationModeSpecification)
+[Hunts] wrote 180/180 rows from hunt_modifiers (RowStruct=HuntModifierTableRow)
+[Hunts] wrote 10/10 rows from game_activity_table (RowStruct=GameActivityTableData)
+[Hunts] wrote 134/134 rows from crafting_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 6/6 rows from game_activity_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 5/5 rows from experience_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 3/3 rows from purchase_unlock_criteria (RowStruct=ProgressionUnlockCriteria)
+[Hunts] wrote 1/1 rows from escalation_heroic_hunts_schedule (RowStruct=ScheduleData)
+[Hunts] wrote 5/5 rows from hunts_quests_schedule (RowStruct=ScheduleData)
+[Hunts] wrote 2/2 rows from gen_arena_hunts_schedule_new (RowStruct=ScheduleData)
+[Hunts] wrote 193/193 rows from gen_arena_hunts_schedule (RowStruct=ScheduleData)
+[Hunts] DONE playerRows=162 matchmakerRows=615 regions=46 escalationSpecs=19 modifiers=180 activities=10 unlockCriteria=148 schedule=201
+[DropTables] starting PlayFabDropTableTableData export
+[DropTables] wrote 0/0 rows from DT_gather_events
+[DropTables] wrote 33/33 rows from DT_control_events_rewards
+[DropTables] wrote 8/8 rows from dt_shared_gems_orbs
+[DropTables] wrote 30/30 rows from DT_rewards_login
+[DropTables] wrote 102/102 rows from DT_Public_Events
+[DropTables] wrote 10/10 rows from DT_Portal_Keys
+[DropTables] wrote 7/7 rows from DT_Patrol_Chests
+[DropTables] wrote 62/62 rows from DT_hunt_rewards_open_beta
+[DropTables] wrote 7/7 rows from DT_Glider_Track_Med
+[DropTables] wrote 8/8 rows from DT_Glider_Track_Hard
+[DropTables] wrote 7/7 rows from DT_Glider_Track_Easy
+[DropTables] wrote 0/0 rows from DT_gatherable_items
+[DropTables] wrote 41/41 rows from DT_core_progression_tracks
+[DropTables] wrote 59/59 rows from DT_contents_core_test
+[DropTables] wrote 9/9 rows from dt_cells_manual
+[DropTables] wrote 5/5 rows from DT_Cell_Cores
+[DropTables] wrote 18/18 rows from deprecated_generated_dt_cells_obprog
+[DropTables] wrote 0/0 rows from obsolete_generated_dt_breakitems_evergame
+[DropTables] wrote 1456/1456 rows from generated_dt_breakparts
+[DropTables] wrote 77/77 rows from DT_Behemoth_Breaks
+[DropTables] DONE tables=20 rows=1939
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+[StoreRuntime] starting store runtime capture; open Reward Cache before injecting
+[StoreRuntime] DONE storeViewModels=4 itemViewModels=1 imageRows=3168 skipped=0
+[Mastery] starting read-only mastery_card_table / achievements_table export
+[Mastery] read 258/258 rows from mastery_card_table (RowStruct=MasteryCardTableData)
+[Mastery] read 46/46 rows from achievements_table (RowStruct=AchievementTableData)
+[Mastery] DONE cards=258 achievements=46 objectiveIds=1828 skippedRows=0 skippedObjectives=0
+[TableInventory] starting read-only DataTable census
+[TableInventory] DONE tables=445 skipped=0
+ALL DONE general=7322 equipment=1608 progression=139 combat=1625 skins=445 slayers=509 hunts=1381 tables=445 dropTables=1939 currencyNames=0 storeRuntime=3173 mastery=304
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=0
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+EXPORT_STORE_RUNTIME=0, skipping store runtime capture
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+[Escalation] starting 1.14.7 escalation DataTable export
+[Escalation] wrote 6/6 rows from escalation_progression
+[Escalation] ExportByRowStruct(EscalationProgressionTuning) DONE total_rows=6
+[Escalation] wrote 18/18 rows from escalation_talents_S6
+[Escalation] wrote 21/21 rows from escalation_talents_S5
+[Escalation] wrote 18/18 rows from escalation_talents_S4
+[Escalation] wrote 18/18 rows from escalation_talents_S3
+[Escalation] wrote 18/18 rows from escalation_talents_S2
+[Escalation] wrote 18/18 rows from escalation_talents
+[Escalation] ExportByRowStruct(EscalationTalentDefinition) DONE total_rows=111
+[Escalation] wrote 144/144 rows from escalation_buffs
+[Escalation] ExportByRowStruct(EscalationBuffDefinition) DONE total_rows=144
+[Escalation] wrote 1/1 rows from generic_dialog_table
+[Escalation] wrote 37/37 rows from escalation_dialog_table
+[Escalation] ExportByRowStruct(DialogTableRow) DONE total_rows=38
+[Escalation] wrote 0/0 rows from Default__PlayerJourneySeasonsTable
+[Escalation] wrote 1/1 rows from player_journey_seasons_talent_tree_table
+[Escalation] ExportByRowStruct(PlayerJourneySeasonData) DONE total_rows=1
+[Escalation] DONE progression=6 talents=111 buffs=144 dialog=38 playerJourneySeasons=1 total=300
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=0 mastery=0
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=0
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+EXPORT_STORE_RUNTIME=0, skipping store runtime capture
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+[Escalation] starting 1.14.7 escalation DataTable export
+[Escalation] wrote 6/6 rows from escalation_progression
+[Escalation] ExportByRowStruct(EscalationProgressionTuning) DONE total_rows=6
+[Escalation] wrote 18/18 rows from escalation_talents_S6
+[Escalation] wrote 21/21 rows from escalation_talents_S5
+[Escalation] wrote 18/18 rows from escalation_talents_S4
+[Escalation] wrote 18/18 rows from escalation_talents_S3
+[Escalation] wrote 18/18 rows from escalation_talents_S2
+[Escalation] wrote 18/18 rows from escalation_talents
+[Escalation] ExportByRowStruct(EscalationTalentDefinition) DONE total_rows=111
+[Escalation] wrote 144/144 rows from escalation_buffs
+[Escalation] ExportByRowStruct(EscalationBuffDefinition) DONE total_rows=144
+[Escalation] wrote 37/37 rows from escalation_dialog_table
+[Escalation] ExportByRowStruct(DialogTableRow) DONE total_rows=37
+[Escalation] wrote 1/1 rows from player_journey_seasons_talent_tree_table
+[Escalation] ExportByRowStruct(PlayerJourneySeasonData) DONE total_rows=1
+[Escalation] DONE progression=6 talents=111 buffs=144 dialog=37 playerJourneySeasons=1 total=299
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=0 mastery=0

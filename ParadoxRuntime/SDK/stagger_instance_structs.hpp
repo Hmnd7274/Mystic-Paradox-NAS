@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "stagger_type_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "behemoth_stagger_type_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START

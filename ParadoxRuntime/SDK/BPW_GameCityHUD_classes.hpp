@@ -69,26 +69,26 @@ public:
 	void OnDisplayLevelUpNotification();
 	void OnDidAutoClaimRewardsWhenLoadingChanged(bool bDidAutoClaimRewards);
 	void OnSelectedHuntPassDataChanged_Dynamic_Event_0();
-	void Construct();
 	void OnHuntXPMultiplierStateChange(bool bActive);
 	void Quest_Tracker_Previous();
 	void Quest_Tracker_Next();
 	void ProgressRewardsClaimed(bool Success, const class FString& Track, const TArray<struct FRewardInfo>& Rewards);
 	void Bind_Hunt_Pass_Events();
 	void AddTutorialPopup(class UWidget* Tutorial);
-	void PrograssGranted(const struct FProgressGrant& Grant);
-	void HandleUseQuickSlotFailed(ELoadoutQuickItemSlot QuickslotIndex);
-	void RefreshPlayerDeets();
-	void RefreshBoosts();
 	void UpdateCityQuickSlotBar();
 	void Refresh_Watermark_City();
-	void Set_Static_Hud_Visibility(bool Visible_);
 	void OnQuestSystemReady();
 	void GetLastLogin();
-	void GetPickupNotificationQueue(class Upickup_notification_queue_bpw_C** PickupQueue);
 	void ShouldShowStinger(const class FString& MasteryCardId, bool* Show);
 	void RefreshHuntPassNotification();
 	void RefreshHuntXPMultiplier(bool Active);
+	void PrograssGranted(const struct FProgressGrant& Grant);
+	void Construct();
+	void HandleUseQuickSlotFailed(ELoadoutQuickItemSlot QuickslotIndex);
+	void RefreshPlayerDeets();
+	void RefreshBoosts();
+	void Set_Static_Hud_Visibility(bool Visible_);
+	void GetPickupNotificationQueue(class Upickup_notification_queue_bpw_C** PickupQueue);
 
 public:
 	static class UClass* StaticClass()

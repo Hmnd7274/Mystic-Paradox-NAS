@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "timed_gameplay_event_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "beam_request_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START

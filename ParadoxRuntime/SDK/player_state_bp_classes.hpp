@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "lootroll_info_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Struct_PlayerInventoryEntry_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "Struct_PlayerInventoryEntry_structs.hpp"
-#include "lootroll_info_structs.hpp"
 #include "loot_roll_source_structs.hpp"
 
 

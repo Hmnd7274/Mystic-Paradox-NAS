@@ -31,8 +31,8 @@ public:
 	void OnRefreshed();
 	void AuthSpendStack();
 	void AuthAddStack();
-	void OnRemoved();
 	void OnPostMitigationHitWithWeapon_Event_0(class AActor* DamagedActor, const struct FPostMitigationDamageSummary& DamageSummary, const struct FGameplayTagContainer& DamageTags, const struct FGameplayEffectContextHandle& Context);
+	void OnRemoved();
 	void OnAdded();
 
 public:

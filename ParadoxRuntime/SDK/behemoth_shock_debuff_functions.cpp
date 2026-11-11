@@ -34,6 +34,18 @@ void Abehemoth_shock_debuff_C::ExecuteUbergraph_behemoth_shock_debuff(int32 Entr
 }
 
 
+// Function behemoth_shock_debuff.behemoth_shock_debuff_C.MulticastOnAdded
+// (Event, Public, BlueprintEvent)
+
+void Abehemoth_shock_debuff_C::MulticastOnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function behemoth_shock_debuff.behemoth_shock_debuff_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
 
@@ -53,18 +65,6 @@ void Abehemoth_shock_debuff_C::OnRemoved()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function behemoth_shock_debuff.behemoth_shock_debuff_C.MulticastOnAdded
-// (Event, Public, BlueprintEvent)
-
-void Abehemoth_shock_debuff_C::MulticastOnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

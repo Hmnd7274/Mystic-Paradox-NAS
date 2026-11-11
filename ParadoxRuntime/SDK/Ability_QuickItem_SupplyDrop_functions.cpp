@@ -69,16 +69,16 @@ void UAbility_QuickItem_SupplyDrop_C::OnActivateAbilityImpl()
 // Function Ability_QuickItem_SupplyDrop.Ability_QuickItem_SupplyDrop_C.ApplyEffect
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Spawn_location                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Spawn_Location                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAbility_QuickItem_SupplyDrop_C::ApplyEffect(const struct FVector& Spawn_location)
+void UAbility_QuickItem_SupplyDrop_C::ApplyEffect(const struct FVector& Spawn_Location)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ApplyEffect", FnName));
 
 	Params::Ability_QuickItem_SupplyDrop_C_ApplyEffect Parms{};
 
-	Parms.Spawn_location = std::move(Spawn_location);
+	Parms.Spawn_Location = std::move(Spawn_Location);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

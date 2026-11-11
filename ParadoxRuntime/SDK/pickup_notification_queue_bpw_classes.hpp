@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "pickup_notification_item_number_struct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
+#include "pickup_notification_item_number_struct_structs.hpp"
 #include "loot_condition_type_structs.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -45,7 +45,7 @@ public:
 	void Find_Empty_Notification_Slot(bool* Slot_Found, int32* Empty_Slot_ID);
 	void Add_New_Notification(const class FString& Item_ID, int32 Amount, Eloot_condition_type ConditionType, bool UseCustomUIString, const class FString& CustomUIString, bool OverrideShouldShowChecks);
 	void GetProgressNotificationDetails(const class FString& ProgressTrack, bool* bIsPassProgress, class FText* Name_0, Eloot_condition_type* Condition);
-	void IsHuntPassProgress(const class FString& ItemId, Eloot_condition_type ConditionType, bool* return_0);
+	void IsHuntPassProgress(const class FString& ItemId, Eloot_condition_type ConditionType, bool* Return);
 	void QueueNewNotification(const struct Fpickup_notification_item_number_struct& PickupData);
 	void AlreadyHasRumourToken(const struct Fpickup_notification_item_number_struct& InPickupData, bool* HasRumourToken);
 

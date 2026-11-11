@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "hoofed_quad_bp_classes.hpp"
 #include "Engine_structs.hpp"
+#include "hoofed_quad_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,9 +28,9 @@ public:
 
 public:
 	void ExecuteUbergraph_hoofed_quad_city_bp(int32 EntryPoint);
-	void OnUserInteractionCompleted(class UArchonInteractionUserComponent* User);
 	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void OnUserInteractionCompleted(class UArchonInteractionUserComponent* User);
 
 public:
 	static class UClass* StaticClass()

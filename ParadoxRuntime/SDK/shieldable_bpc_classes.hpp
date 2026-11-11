@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "shield_data_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
-#include "shield_parameters_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "archon_impulse_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "shield_data_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "shield_parameters_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 

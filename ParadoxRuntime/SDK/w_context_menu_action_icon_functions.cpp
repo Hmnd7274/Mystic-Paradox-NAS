@@ -46,18 +46,6 @@ void Uw_context_menu_action_icon_C::Refresh_Action()
 }
 
 
-// Function w_context_menu_action_icon.w_context_menu_action_icon_C.Handle Action
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_icon_C::Handle_Action()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Handle Action", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function w_context_menu_action_icon.w_context_menu_action_icon_C.Initialize
 // (BlueprintCallable, BlueprintEvent)
 
@@ -65,30 +53,6 @@ void Uw_context_menu_action_icon_C::Initialize()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function w_context_menu_action_icon.w_context_menu_action_icon_C.UnSelected
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_icon_C::UnSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function w_context_menu_action_icon.w_context_menu_action_icon_C.Selected
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_icon_C::Selected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Selected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -178,6 +142,42 @@ void Uw_context_menu_action_icon_C::Set_Action_From_ItemID(const class FString& 
 	Parms.ItemId = std::move(ItemId);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function w_context_menu_action_icon.w_context_menu_action_icon_C.Handle Action
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_icon_C::Handle_Action()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Handle Action", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function w_context_menu_action_icon.w_context_menu_action_icon_C.UnSelected
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_icon_C::UnSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function w_context_menu_action_icon.w_context_menu_action_icon_C.Selected
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_icon_C::Selected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Selected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

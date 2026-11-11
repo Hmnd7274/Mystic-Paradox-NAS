@@ -11,13 +11,13 @@
 #include "Basic.hpp"
 
 #include "badge_infos_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "player_highlight_info_structs.hpp"
-#include "rankings_enum_structs.hpp"
 #include "badge_elite_status_structs.hpp"
-#include "badge_score_data_structs.hpp"
 #include "badge_display_info_structs.hpp"
+#include "badge_score_data_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "player_score_info_structs.hpp"
+#include "rankings_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "cell_buff_base_bp_classes.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "cell_buff_base_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -38,10 +38,10 @@ public:
 
 public:
 	void ExecuteUbergraph_ce_temporaryshield(int32 EntryPoint);
-	void OnAdded();
-	void OnRemoved();
 	void OnShieldRefreshed(const struct Fshield_data& ShieldData);
 	void OnShieldRemoved(const struct FGameplayTag& RemovedReasonTag, const struct FGuid& ShieldGUID_0);
+	void OnAdded();
+	void OnRemoved();
 
 public:
 	static class UClass* StaticClass()

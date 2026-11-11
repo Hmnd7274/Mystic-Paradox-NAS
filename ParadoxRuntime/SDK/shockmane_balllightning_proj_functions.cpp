@@ -90,18 +90,6 @@ void Ashockmane_balllightning_proj_C::ProjectileExploded(const struct FVector& E
 }
 
 
-// Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.OnProjectileStopped
-// (BlueprintCallable, BlueprintEvent)
-
-void Ashockmane_balllightning_proj_C::OnProjectileStopped()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.AuthOnReflected
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -142,18 +130,6 @@ void Ashockmane_balllightning_proj_C::AuthOnProjectileDamageOverlap(class AActor
 }
 
 
-// Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.AuthSweepHitEvent
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void Ashockmane_balllightning_proj_C::AuthSweepHitEvent()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthSweepHitEvent", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -185,6 +161,30 @@ void Ashockmane_balllightning_proj_C::Explode_On_Hit(const struct FVector& Explo
 	Parms.ReflectDamage_0 = ReflectDamage_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.OnProjectileStopped
+// (BlueprintCallable, BlueprintEvent)
+
+void Ashockmane_balllightning_proj_C::OnProjectileStopped()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function shockmane_balllightning_proj.shockmane_balllightning_proj_C.AuthSweepHitEvent
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void Ashockmane_balllightning_proj_C::AuthSweepHitEvent()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthSweepHitEvent", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

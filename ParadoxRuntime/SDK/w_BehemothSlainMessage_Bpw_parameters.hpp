@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "HuntActivityType_structs.hpp"
 #include "Archon_structs.hpp"
+#include "HuntActivityType_structs.hpp"
 
 
 SDK_NAMESPACE_START

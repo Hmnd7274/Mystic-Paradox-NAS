@@ -743,9 +743,9 @@ void Ibehemoth_interface_C::UpdateBehemothMusicState_Interface()
 // Function behemoth_interface.behemoth_interface_C.GetIsDead
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ibehemoth_interface_C::GetIsDead(bool* return_0)
+void Ibehemoth_interface_C::GetIsDead(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"GetIsDead", FnName));
@@ -754,8 +754,8 @@ void Ibehemoth_interface_C::GetIsDead(bool* return_0)
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1435,9 +1435,9 @@ void Ibehemoth_interface_C::AddPaintedTargetWidget(bool ManualAttachment, const 
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidgetComponent*                 WidgetComponent                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Ibehemoth_interface_C::RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* return_0)
+void Ibehemoth_interface_C::RemovePaintedTargetWidget(class UWidgetComponent* WidgetComponent, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"RemovePaintedTargetWidget", FnName));
@@ -1448,8 +1448,8 @@ void Ibehemoth_interface_C::RemovePaintedTargetWidget(class UWidgetComponent* Wi
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

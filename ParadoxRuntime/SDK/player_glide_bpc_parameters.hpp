@@ -12,8 +12,8 @@
 
 #include "PhoenixGameplayCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "player_glide_anim_struct_structs.hpp"
+#include "Engine_structs.hpp"
 #include "PhoenixAnimationCore_structs.hpp"
 #include "Archon_structs.hpp"
 

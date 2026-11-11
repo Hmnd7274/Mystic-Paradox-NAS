@@ -46,7 +46,7 @@ void Uarena_gamestate_bpc_C::OnBleedout()
 }
 
 
-// Function arena_gamestate_bpc.arena_gamestate_bpc_C.Staggered
+// Function arena_gamestate_bpc.arena_gamestate_bpc_C.staggered
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // Ebehemoth_stagger_type                  StaggerSourceType                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,12 +55,12 @@ void Uarena_gamestate_bpc_C::OnBleedout()
 // class Umonsterpart_bpc_C*               PartThatCausedStagger                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // Estagger_type                           BehemothStaggerType                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Uarena_gamestate_bpc_C::Staggered(Ebehemoth_stagger_type StaggerSourceType, bool WasPartBroken, bool WasPartSevered, class Umonsterpart_bpc_C* PartThatCausedStagger, Estagger_type BehemothStaggerType)
+void Uarena_gamestate_bpc_C::staggered(Ebehemoth_stagger_type StaggerSourceType, bool WasPartBroken, bool WasPartSevered, class Umonsterpart_bpc_C* PartThatCausedStagger, Estagger_type BehemothStaggerType)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Staggered", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"staggered", FnName));
 
-	Params::arena_gamestate_bpc_C_Staggered Parms{};
+	Params::arena_gamestate_bpc_C_staggered Parms{};
 
 	Parms.StaggerSourceType = StaggerSourceType;
 	Parms.WasPartBroken = WasPartBroken;

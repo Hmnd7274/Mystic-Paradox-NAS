@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "relative_or_world_structs.hpp"
 #include "beam_request_structs.hpp"
 #include "beam_type_structs.hpp"
-#include "relative_or_world_structs.hpp"
 
 
 SDK_NAMESPACE_START

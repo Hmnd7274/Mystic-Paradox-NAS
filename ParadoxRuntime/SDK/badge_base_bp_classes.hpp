@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "badge_levels_structs.hpp"
-#include "badge_compare_structs.hpp"
 #include "Engine_classes.hpp"
 #include "badge_elite_status_structs.hpp"
+#include "badge_levels_structs.hpp"
+#include "badge_compare_structs.hpp"
 
 
 SDK_NAMESPACE_START

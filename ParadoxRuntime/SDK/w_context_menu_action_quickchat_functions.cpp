@@ -52,38 +52,6 @@ void Uw_context_menu_action_quickchat_C::UpdateSelectionTime(float Precent)
 }
 
 
-// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Uw_context_menu_action_quickchat_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::w_context_menu_action_quickchat_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Handle Action
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_quickchat_C::Handle_Action()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Handle Action", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Initialize
 // (BlueprintCallable, BlueprintEvent)
 
@@ -91,30 +59,6 @@ void Uw_context_menu_action_quickchat_C::Initialize()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.UnSelected
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_quickchat_C::UnSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Selected
-// (BlueprintCallable, BlueprintEvent)
-
-void Uw_context_menu_action_quickchat_C::Selected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Selected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -168,6 +112,62 @@ struct FVector2D Uw_context_menu_action_quickchat_C::Get_Label_Position(float An
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Uw_context_menu_action_quickchat_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::w_context_menu_action_quickchat_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Handle Action
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_quickchat_C::Handle_Action()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Handle Action", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.UnSelected
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_quickchat_C::UnSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function w_context_menu_action_quickchat.w_context_menu_action_quickchat_C.Selected
+// (BlueprintCallable, BlueprintEvent)
+
+void Uw_context_menu_action_quickchat_C::Selected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Selected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

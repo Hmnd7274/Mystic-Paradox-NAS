@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "update_max_actors_strategy_structs.hpp"
+#include "spawnedactor_type_to_list_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "spawnedactor_type_to_list_structs.hpp"
 #include "spawnedactor_manager_info_structs.hpp"
 #include "too_many_actors_strategy_structs.hpp"
+#include "update_max_actors_strategy_structs.hpp"
 
 
 SDK_NAMESPACE_START

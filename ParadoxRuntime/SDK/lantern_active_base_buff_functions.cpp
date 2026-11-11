@@ -46,18 +46,6 @@ void Alantern_active_base_buff_C::MulticastOnAdded()
 }
 
 
-// Function lantern_active_base_buff.lantern_active_base_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Alantern_active_base_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function lantern_active_base_buff.lantern_active_base_buff_C.GetLantern
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -74,6 +62,18 @@ void Alantern_active_base_buff_C::GetLantern(class AArchonLantern** Lantern)
 
 	if (Lantern != nullptr)
 		*Lantern = Parms.Lantern;
+}
+
+
+// Function lantern_active_base_buff.lantern_active_base_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Alantern_active_base_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

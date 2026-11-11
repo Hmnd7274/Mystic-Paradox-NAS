@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "aoe_damage_distribution_structs.hpp"
 #include "Engine_structs.hpp"
+#include "aoe_damage_distribution_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "archon_impulse_structs.hpp"
 #include "aoe_base_bp_classes.hpp"
@@ -45,12 +45,12 @@ public:
 
 public:
 	void ExecuteUbergraph_aoe_simple(int32 EntryPoint);
+	void BeginPlayPoolAgnostic();
 	void ScaleParticle();
 	void OnSpawnImpulse(class UParticleSystemComponent* ParticleSystem);
 	void OverrideEffects();
 	void CustomAOELogic();
 	void OnRep_ManuallySetParticleScale();
-	void BeginPlayPoolAgnostic();
 	void UserConstructionScript();
 
 public:

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "LoadoutStatTypes_structs.hpp"
 #include "stat_value_type_structs.hpp"
+#include "LoadoutStatTypes_structs.hpp"
 
 
 SDK_NAMESPACE_START

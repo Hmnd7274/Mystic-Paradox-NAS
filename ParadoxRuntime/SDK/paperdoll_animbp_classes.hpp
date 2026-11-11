@@ -12,12 +12,12 @@
 
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
+#include "player_glide_anim_struct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "bone_offset_str_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
-#include "player_glide_anim_struct_structs.hpp"
 #include "PhoenixAnimationCore_structs.hpp"
 
 

@@ -35,14 +35,14 @@ public:
 
 public:
 	void ExecuteUbergraph_status_effect_frozen_escapable_debuff(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void ClientOnDodgeKeyPressed(class FName InputActionName, const struct FKeyEvent& KeyEvent, EInputEvent Event);
-	void OnRemoved();
 	void ReduceTimer();
 	void MulticastOnAdded();
 	void RefreshFrozenGE();
 	void ServerUpdateDuration(float NewDuration);
 	void ClientReduceTime();
+	void ReceiveDestroyed();
+	void OnRemoved();
 	void OnAdded();
 
 public:

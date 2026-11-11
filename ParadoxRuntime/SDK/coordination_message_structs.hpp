@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "message_restrictions_structs.hpp"
 #include "coordination_message_type_structs.hpp"
 #include "agent_allocation_type_structs.hpp"
-#include "message_restrictions_structs.hpp"
 #include "task_exclusivity_structs.hpp"
 #include "task_assignment_strategy_structs.hpp"
 #include "message_handling_type_structs.hpp"

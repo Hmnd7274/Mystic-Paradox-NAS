@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Struct_ActionHitArea_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_ActionHitArea_structs.hpp"
 #include "Archon_classes.hpp"
 
 

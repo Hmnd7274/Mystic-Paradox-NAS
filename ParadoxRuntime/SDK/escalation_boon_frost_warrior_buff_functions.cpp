@@ -34,18 +34,6 @@ void Aescalation_boon_frost_warrior_buff_C::ExecuteUbergraph_escalation_boon_fro
 }
 
 
-// Function escalation_boon_frost_warrior_buff.escalation_boon_frost_warrior_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Aescalation_boon_frost_warrior_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_boon_frost_warrior_buff.escalation_boon_frost_warrior_buff_C.DestroyVFX
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -173,6 +161,18 @@ void Aescalation_boon_frost_warrior_buff_C::AddVFX()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddVFX", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_boon_frost_warrior_buff.escalation_boon_frost_warrior_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Aescalation_boon_frost_warrior_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

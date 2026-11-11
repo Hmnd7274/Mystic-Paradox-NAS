@@ -144,18 +144,6 @@ void Ahunt_modifier_boon_frost_scout_C::SetupEndConditions()
 }
 
 
-// Function hunt_modifier_boon_frost_scout.hunt_modifier_boon_frost_scout_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Ahunt_modifier_boon_frost_scout_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function hunt_modifier_boon_frost_scout.hunt_modifier_boon_frost_scout_C.DoBuffs
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -346,6 +334,18 @@ void Ahunt_modifier_boon_frost_scout_C::FindBehemoth(class AArchonBehemoth** Tar
 
 	if (FoundBehemoth != nullptr)
 		*FoundBehemoth = Parms.FoundBehemoth;
+}
+
+
+// Function hunt_modifier_boon_frost_scout.hunt_modifier_boon_frost_scout_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Ahunt_modifier_boon_frost_scout_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

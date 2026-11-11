@@ -84,18 +84,6 @@ void Ashock_rod_actor_C::Client_death()
 }
 
 
-// Function shock_rod_actor.shock_rod_actor_C.AuthDie
-// (BlueprintCallable, BlueprintEvent)
-
-void Ashock_rod_actor_C::AuthDie()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthDie", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function shock_rod_actor.shock_rod_actor_C.FenceShockPlayer
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -111,18 +99,6 @@ void Ashock_rod_actor_C::FenceShockPlayer(const struct FVector& PlayerShockLocat
 	Parms.PlayerShockLocation = std::move(PlayerShockLocation);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function shock_rod_actor.shock_rod_actor_C.AuthOnKilled
-// (BlueprintCallable, BlueprintEvent)
-
-void Ashock_rod_actor_C::AuthOnKilled()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthOnKilled", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -228,24 +204,6 @@ void Ashock_rod_actor_C::AuthRefreshRods()
 }
 
 
-// Function shock_rod_actor.shock_rod_actor_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ashock_rod_actor_C::ReceiveTick(float DeltaSeconds)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
-
-	Params::shock_rod_actor_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function shock_rod_actor.shock_rod_actor_C.OnQueryFinishedEvent_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -263,18 +221,6 @@ void Ashock_rod_actor_C::OnQueryFinishedEvent_Event_0(class UEnvQueryInstanceBlu
 	Parms.QueryStatus = QueryStatus;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function shock_rod_actor.shock_rod_actor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Ashock_rod_actor_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -441,28 +387,6 @@ void Ashock_rod_actor_C::GetBeamRodPairs(TArray<struct Fshockrod_vfx_pair>* Beam
 }
 
 
-// Function shock_rod_actor.shock_rod_actor_C.CanHitCBPushPullTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              ComponentHit                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Hits_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Ashock_rod_actor_C::CanHitCBPushPullTarget(class UPrimitiveComponent* ComponentHit, bool* Hits_)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanHitCBPushPullTarget", FnName));
-
-	Params::shock_rod_actor_C_CanHitCBPushPullTarget Parms{};
-
-	Parms.ComponentHit = ComponentHit;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Hits_ != nullptr)
-		*Hits_ = Parms.Hits_;
-}
-
-
 // Function shock_rod_actor.shock_rod_actor_C.HitPlayer_NoClientAuthDodging
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -500,6 +424,82 @@ void Ashock_rod_actor_C::HitPlayer_ClientAuthDodging(class AActor* Player, const
 	Parms.Hit_Result = std::move(Hit_Result);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function shock_rod_actor.shock_rod_actor_C.AuthDie
+// (BlueprintCallable, BlueprintEvent)
+
+void Ashock_rod_actor_C::AuthDie()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthDie", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function shock_rod_actor.shock_rod_actor_C.AuthOnKilled
+// (BlueprintCallable, BlueprintEvent)
+
+void Ashock_rod_actor_C::AuthOnKilled()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AuthOnKilled", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function shock_rod_actor.shock_rod_actor_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ashock_rod_actor_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::shock_rod_actor_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function shock_rod_actor.shock_rod_actor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Ashock_rod_actor_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function shock_rod_actor.shock_rod_actor_C.CanHitCBPushPullTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              ComponentHit                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Hits_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Ashock_rod_actor_C::CanHitCBPushPullTarget(class UPrimitiveComponent* ComponentHit, bool* Hits_)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanHitCBPushPullTarget", FnName));
+
+	Params::shock_rod_actor_C_CanHitCBPushPullTarget Parms{};
+
+	Parms.ComponentHit = ComponentHit;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Hits_ != nullptr)
+		*Hits_ = Parms.Hits_;
 }
 
 

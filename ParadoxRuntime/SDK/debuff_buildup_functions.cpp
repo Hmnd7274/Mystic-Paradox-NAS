@@ -118,6 +118,18 @@ void Adebuff_buildup_C::OnRefreshed()
 }
 
 
+// Function debuff_buildup.debuff_buildup_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Adebuff_buildup_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function debuff_buildup.debuff_buildup_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -265,18 +277,6 @@ void Adebuff_buildup_C::CanBeTrackedBy(class UWidget* Widget, bool* bCanBeTrack)
 
 	if (bCanBeTrack != nullptr)
 		*bCanBeTrack = Parms.bCanBeTrack;
-}
-
-
-// Function debuff_buildup.debuff_buildup_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Adebuff_buildup_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

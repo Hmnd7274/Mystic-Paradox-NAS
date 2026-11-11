@@ -70,18 +70,18 @@ void Aescalation_shieldsphere_actor_C::ReceivePointDamage(float Damage, const cl
 }
 
 
-// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.PositionandFireVFX
+// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.PositionAndFireVFX
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Instagator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Aescalation_shieldsphere_actor_C::PositionandFireVFX(class AActor* Target, class AActor* Instagator)
+void Aescalation_shieldsphere_actor_C::PositionAndFireVFX(class AActor* Target, class AActor* Instagator)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PositionandFireVFX", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PositionAndFireVFX", FnName));
 
-	Params::escalation_shieldsphere_actor_C_PositionandFireVFX Parms{};
+	Params::escalation_shieldsphere_actor_C_PositionAndFireVFX Parms{};
 
 	Parms.Target = Target;
 	Parms.Instagator = Instagator;
@@ -97,18 +97,6 @@ void Aescalation_shieldsphere_actor_C::DestroyedByPlayer()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyedByPlayer", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Aescalation_shieldsphere_actor_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,6 +121,18 @@ void Aescalation_shieldsphere_actor_C::DestroyVFXMulti()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyVFXMulti", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_shieldsphere_actor.escalation_shieldsphere_actor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Aescalation_shieldsphere_actor_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "LocalizationFramework_structs.hpp"
+#include "tier_lantern_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "tier_lantern_data_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "AkAudio_structs.hpp"

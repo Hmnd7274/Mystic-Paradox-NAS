@@ -46,30 +46,6 @@ void Aplayer_wound_aetherstate_buff_C::MulticastOnAdded()
 }
 
 
-// Function player_wound_aetherstate_buff.player_wound_aetherstate_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Aplayer_wound_aetherstate_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function player_wound_aetherstate_buff.player_wound_aetherstate_buff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aplayer_wound_aetherstate_buff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function player_wound_aetherstate_buff.player_wound_aetherstate_buff_C.MulticastOnRefreshed
 // (Event, Public, BlueprintEvent)
 
@@ -113,6 +89,30 @@ void Aplayer_wound_aetherstate_buff_C::GetMagnitudes()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMagnitudes", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function player_wound_aetherstate_buff.player_wound_aetherstate_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Aplayer_wound_aetherstate_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function player_wound_aetherstate_buff.player_wound_aetherstate_buff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aplayer_wound_aetherstate_buff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

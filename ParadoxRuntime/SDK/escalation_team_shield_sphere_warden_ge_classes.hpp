@@ -26,8 +26,8 @@ public:
 
 public:
 	void ExecuteUbergraph_escalation_team_shield_sphere_warden_ge(int32 EntryPoint);
-	void OnAdded();
 	void Destroyed(class AActor* DestroyedActor);
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

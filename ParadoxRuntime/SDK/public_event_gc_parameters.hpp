@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "game_content_description_structs.hpp"
 #include "Archon_structs.hpp"
+#include "game_content_description_structs.hpp"
 
 
 SDK_NAMESPACE_START

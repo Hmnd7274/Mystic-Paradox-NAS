@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "TurnWarpOverrideType_structs.hpp"
-#include "behemoth_requirement_struct_structs.hpp"
 #include "Archon_classes.hpp"
+#include "behemoth_requirement_struct_structs.hpp"
+#include "TurnWarpOverrideType_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
 
 

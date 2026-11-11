@@ -13,9 +13,9 @@
 #include "Engine_structs.hpp"
 #include "gatherable_interaction_buff_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Archon_structs.hpp"
-#include "mesh_swap_interaction_bp_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "mesh_swap_interaction_bp_classes.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -49,7 +49,6 @@ public:
 	void ExecuteUbergraph_gatherable_item_base_bp(int32 EntryPoint);
 	void OnMeshSwap();
 	void ReceiveBeginPlay();
-	void SwapMesh();
 	void EventOnDisableHighlight();
 	void EventOnEnableHighlight(float Duration);
 	void OnUserCompletedInteraction(class UArchonInteractionUserComponent* User);
@@ -65,6 +64,7 @@ public:
 	void SetTrackingID(const struct FGuid& TrackingId, bool* Output);
 	void GetTrackingID(struct FGuid* TrackingId);
 	bool SetGatherableVisible(bool IsVisible);
+	void SwapMesh();
 
 public:
 	static class UClass* StaticClass()

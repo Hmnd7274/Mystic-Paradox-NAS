@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "gear_type_structs.hpp"
-#include "Archon_structs.hpp"
-#include "OnlineSubsystemPhoenix_structs.hpp"
-#include "loot_roll_source_structs.hpp"
 #include "element_float_pair_structs.hpp"
-#include "armor_slot_enum_structs.hpp"
+#include "Archon_structs.hpp"
 #include "sort_type_structs.hpp"
+#include "OnlineSubsystemPhoenix_structs.hpp"
 #include "sort_direction_structs.hpp"
+#include "loot_roll_source_structs.hpp"
+#include "gear_type_structs.hpp"
+#include "armor_slot_enum_structs.hpp"
 
 
 SDK_NAMESPACE_START

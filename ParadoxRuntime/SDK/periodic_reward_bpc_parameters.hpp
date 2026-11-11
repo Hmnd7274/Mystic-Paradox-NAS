@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "periodic_reward_entry_structs.hpp"
 #include "Archon_structs.hpp"
+#include "periodic_reward_entry_structs.hpp"
 
 
 SDK_NAMESPACE_START

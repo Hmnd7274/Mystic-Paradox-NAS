@@ -38,16 +38,16 @@ public:
 public:
 	void ExecuteUbergraph_debuff_hit_actor_bp(int32 EntryPoint);
 	void CleanupFromServer();
-	void ReceiveTick(float DeltaSeconds);
 	void MultiSpawnHitEvent(const struct FTransform& Location, class UParticleSystem* ParticleSystem, class AActor* DamageCauser);
 	void ReceiveArchonRadialDamage(float DamageReceived, const class UDamageType* DamageType, const struct FVector& Origin, const TArray<struct FHitResult>& HitInfos, class AController* InstigatedBy, class AActor* DamageCauser, const struct FArchonExtendedDamageInfo& InExtendedDamageInfo);
 	void ReceivePointDamage(float Damage_0, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
 	void MultiDestroy();
-	void ReceiveBeginPlay();
 	void ReduceHealth(float Amount);
 	void DoDamage(class AActor* HittingActor, const struct FVector& HitLocation);
 	void Cleanup();
 	void ResetHealth();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

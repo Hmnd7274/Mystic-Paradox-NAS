@@ -10,17 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "alternate_attack_struct_structs.hpp"
-#include "coordination_message_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "behemoth_requirement_result_structs.hpp"
-#include "Struct_ActionHitArea_structs.hpp"
 #include "Engine_structs.hpp"
+#include "Struct_ActionHitArea_structs.hpp"
 #include "behemoth_targetting_data_structs.hpp"
+#include "alternate_attack_struct_structs.hpp"
+#include "behemoth_requirement_result_structs.hpp"
 #include "montage_probability_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
-#include "intensity_level_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
+#include "intensity_level_structs.hpp"
+#include "coordination_message_structs.hpp"
 #include "danger_zone_structs.hpp"
 
 

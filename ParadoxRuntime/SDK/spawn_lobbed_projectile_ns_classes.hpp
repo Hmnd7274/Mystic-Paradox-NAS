@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "behemoth_requirement_result_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "eqs_lobbed_projectile_data_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
-#include "behemoth_requirement_result_structs.hpp"
 #include "Engine_classes.hpp"
 
 

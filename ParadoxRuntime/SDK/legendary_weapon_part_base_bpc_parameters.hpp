@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "legendary_weapon_part_tuning_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "legendary_weapon_part_tuning_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 

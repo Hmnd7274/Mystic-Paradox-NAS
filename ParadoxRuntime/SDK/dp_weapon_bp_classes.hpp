@@ -12,12 +12,12 @@
 
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Struct_ElementToParticleSystem_structs.hpp"
-#include "dp_weapon_hand_enum_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "player_aim_request_structs.hpp"
+#include "Struct_ElementToParticleSystem_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "dp_weapon_hand_enum_structs.hpp"
 #include "dp_weapon_attach_states_enum_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "dp_shooting_override_entry_structs.hpp"
 #include "BP_BaseArchonWeapon_classes.hpp"
 #include "AkAudio_structs.hpp"
@@ -251,7 +251,7 @@ public:
 	void CalculateAnimRateOfFire(class UAnimMontage* ShootMontage, float* AnimRateOfFire);
 	void GetHeldReloadTime(float* Time);
 	void SetupTickPrequisites();
-	void IsCellEquipped_(TArray<struct FEquippedCellData>& EquippedCells, const class FString& ItemId_0, bool* return_0);
+	void IsCellEquipped_(TArray<struct FEquippedCellData>& EquippedCells, const class FString& ItemId_0, bool* Return);
 	void FindCellSlotIndex(ECellType CellType, class UArchonInventoryItem_CellContainer* InventoryItem, int32* SlotIndex);
 	bool LookupPowerTableRow(const class FName& RowName, struct FWeaponPowerTableData* OutPowerTableData);
 	void ShootVFX(class AActor* WpnOwner, const struct FVector& TargetPosition, const struct FRotator& AimDirection, bool IsShooterLocal);

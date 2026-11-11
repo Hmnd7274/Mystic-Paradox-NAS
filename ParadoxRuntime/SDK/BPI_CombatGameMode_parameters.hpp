@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
+#include "Archon_structs.hpp"
 #include "game_mode_tunables_structs.hpp"
-#include "behemoth_spawn_params_structs.hpp"
 #include "EndOfMatch_GameType_structs.hpp"
 #include "behemoth_spawn_data_structs.hpp"
-#include "Archon_structs.hpp"
+#include "behemoth_spawn_params_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -206,7 +206,7 @@ DUMPER7_ASSERTS_BPI_CombatGameMode_C_SetGameModeTunables;
 struct BPI_CombatGameMode_C_GetIsAnyBehemothInCombat final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BPI_CombatGameMode_C_GetIsAnyBehemothInCombat;
 

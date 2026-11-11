@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Archon_structs.hpp"
+#include "active_trajectory_info_structs.hpp"
 #include "trajectory_status_structs.hpp"
 #include "PhoenixGameplayCore_structs.hpp"
-#include "active_trajectory_info_structs.hpp"
+#include "Archon_structs.hpp"
 #include "trajectory_trace_hit_strategy_structs.hpp"
 
 

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "message_slate_image_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
+#include "message_slate_image_structs.hpp"
 
 
 SDK_NAMESPACE_START

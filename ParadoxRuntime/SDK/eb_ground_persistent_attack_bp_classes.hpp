@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Struct_ElementToAKEvent_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Struct_ElementToAKEvent_structs.hpp"
 #include "Archon_structs.hpp"
 #include "AkAudio_structs.hpp"
 

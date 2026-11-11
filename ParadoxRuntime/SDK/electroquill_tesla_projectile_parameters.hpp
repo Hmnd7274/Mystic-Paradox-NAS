@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "PhysicsCore_structs.hpp"
+#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "PhysicsCore_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "debris_vfx_struct_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
-#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -295,6 +295,25 @@ public:
 };
 DUMPER7_ASSERTS_electroquill_tesla_projectile_C_ReceiveTick;
 
+// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.GetDebrisData
+// 0x0058 (0x0058 - 0x0000)
+struct electroquill_tesla_projectile_C_GetDebrisData final
+{
+public:
+	EPhysicalSurface                              SurfaceType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct Fdebris_vfx_struct                     FoundVFX;                                          // 0x0008(0x0010)(Parm, OutParm, HasGetValueTypeHash)
+	bool                                          HasFound;                                          // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SurfaceName;                                       // 0x001C(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0028(0x0010)(ReferenceParm)
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct Fdebris_vfx_struct                     CallFunc_GetDataTableRowFromName_OutRow;           // 0x0040(0x0010)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_electroquill_tesla_projectile_C_GetDebrisData;
+
 // Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.UserConstructionScript
 // 0x00C8 (0x00C8 - 0x0000)
 struct electroquill_tesla_projectile_C_UserConstructionScript final
@@ -338,25 +357,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_electroquill_tesla_projectile_C_UserConstructionScript;
-
-// Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.GetDebrisData
-// 0x0058 (0x0058 - 0x0000)
-struct electroquill_tesla_projectile_C_GetDebrisData final
-{
-public:
-	EPhysicalSurface                              SurfaceType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct Fdebris_vfx_struct                     FoundVFX;                                          // 0x0008(0x0010)(Parm, OutParm, HasGetValueTypeHash)
-	bool                                          HasFound;                                          // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   SurfaceName;                                       // 0x001C(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0028(0x0010)(ReferenceParm)
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct Fdebris_vfx_struct                     CallFunc_GetDataTableRowFromName_OutRow;           // 0x0040(0x0010)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_electroquill_tesla_projectile_C_GetDebrisData;
 
 // Function electroquill_tesla_projectile.electroquill_tesla_projectile_C.CanHitCBPushPullTarget
 // 0x0010 (0x0010 - 0x0000)

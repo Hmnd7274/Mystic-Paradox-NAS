@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "dot_base_debuff_classes.hpp"
+#include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -33,11 +33,11 @@ public:
 
 public:
 	void ExecuteUbergraph_behemoth_radiant_debuff(int32 EntryPoint);
-	void OnRemoved();
 	void AuthDoDamage();
 	void AuthApplyPartDamage();
-	void OnAdded();
 	void MulticastOnAdded();
+	void OnRemoved();
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

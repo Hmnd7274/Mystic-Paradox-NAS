@@ -7086,9 +7086,9 @@ void ABP_PlayerCharacter_C::GetHeadSlotComponent_(class USkeletalMeshComponent**
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::SetCollisionWithDestructible(bool Enabled, bool* return_0)
+void ABP_PlayerCharacter_C::SetCollisionWithDestructible(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCollisionWithDestructible", FnName));
@@ -7099,8 +7099,8 @@ void ABP_PlayerCharacter_C::SetCollisionWithDestructible(bool Enabled, bool* ret
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -7512,9 +7512,9 @@ void ABP_PlayerCharacter_C::GetNumPlayersReviving(int32* NumPlayers)
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.GetIsSprinting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::GetIsSprinting(bool* return_0)
+void ABP_PlayerCharacter_C::GetIsSprinting(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetIsSprinting", FnName));
@@ -7523,8 +7523,8 @@ void ABP_PlayerCharacter_C::GetIsSprinting(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -7720,9 +7720,9 @@ void ABP_PlayerCharacter_C::IsAPlayerCharacter(bool* IsAPlayerCharacter_0)
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsVentJumping
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsVentJumping(bool* return_0)
+void ABP_PlayerCharacter_C::IsVentJumping(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsVentJumping", FnName));
@@ -7731,8 +7731,8 @@ void ABP_PlayerCharacter_C::IsVentJumping(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -7758,9 +7758,9 @@ void ABP_PlayerCharacter_C::IsStrafing(bool* NewParam)
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsInEdgeRecovery
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsInEdgeRecovery(bool* return_0)
+void ABP_PlayerCharacter_C::IsInEdgeRecovery(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsInEdgeRecovery", FnName));
@@ -7769,8 +7769,8 @@ void ABP_PlayerCharacter_C::IsInEdgeRecovery(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -7815,9 +7815,9 @@ void ABP_PlayerCharacter_C::GetDesiredLocomotionState(EArchonLocomotionState* De
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.CanMove
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::CanMove(bool* return_0)
+void ABP_PlayerCharacter_C::CanMove(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanMove", FnName));
@@ -7826,17 +7826,17 @@ void ABP_PlayerCharacter_C::CanMove(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsIkinemaEnabled
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsIkinemaEnabled(bool* return_0)
+void ABP_PlayerCharacter_C::IsIkinemaEnabled(bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsIkinemaEnabled", FnName));
@@ -7845,8 +7845,8 @@ void ABP_PlayerCharacter_C::IsIkinemaEnabled(bool* return_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -7949,9 +7949,9 @@ void ABP_PlayerCharacter_C::GetPelvisCorrection(bool* Enabled)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::SetCollisionWithAMonster(bool Enabled, bool* return_0)
+void ABP_PlayerCharacter_C::SetCollisionWithAMonster(bool Enabled, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCollisionWithAMonster", FnName));
@@ -7962,8 +7962,8 @@ void ABP_PlayerCharacter_C::SetCollisionWithAMonster(bool Enabled, bool* return_
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -9000,9 +9000,9 @@ void ABP_PlayerCharacter_C::GetGenderIdentity(ECharacterGender* GenderId_0) cons
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsInputEnabled?
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsInputEnabled_(bool* return_0) const
+void ABP_PlayerCharacter_C::IsInputEnabled_(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsInputEnabled?", FnName));
@@ -9011,17 +9011,17 @@ void ABP_PlayerCharacter_C::IsInputEnabled_(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsEmoting
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsEmoting(bool* return_0) const
+void ABP_PlayerCharacter_C::IsEmoting(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsEmoting", FnName));
@@ -9030,17 +9030,17 @@ void ABP_PlayerCharacter_C::IsEmoting(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.IsPlantingBanner
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PlayerCharacter_C::IsPlantingBanner(bool* return_0) const
+void ABP_PlayerCharacter_C::IsPlantingBanner(bool* Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsPlantingBanner", FnName));
@@ -9049,8 +9049,8 @@ void ABP_PlayerCharacter_C::IsPlantingBanner(bool* return_0) const
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -9103,9 +9103,9 @@ void ABP_PlayerCharacter_C::CanVentTraversal(bool* CanTraverse) const
 // Function BP_PlayerCharacter.BP_PlayerCharacter_C.GetMountingComponent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UArchonMountingComponent**        return_0                                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UArchonMountingComponent**        Return                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerCharacter_C::GetMountingComponent(class UArchonMountingComponent** return_0) const
+void ABP_PlayerCharacter_C::GetMountingComponent(class UArchonMountingComponent** Return) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMountingComponent", FnName));
@@ -9114,8 +9114,8 @@ void ABP_PlayerCharacter_C::GetMountingComponent(class UArchonMountingComponent*
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

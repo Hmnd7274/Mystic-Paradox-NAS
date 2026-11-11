@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Archon_structs.hpp"
-#include "LoadoutStat_Type_struct_structs.hpp"
 #include "element_float_pair_structs.hpp"
 #include "LoadoutStatTypes_structs.hpp"
+#include "Archon_structs.hpp"
+#include "LoadoutStat_Type_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

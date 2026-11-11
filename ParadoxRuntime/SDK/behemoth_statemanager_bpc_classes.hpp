@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "statemanager_check_result_structs.hpp"
+#include "behemoth_states_enum_structs.hpp"
+#include "behemoth_state_description_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "behemoth_state_description_structs.hpp"
 #include "behemoth_state_event_structs.hpp"
 #include "behemoth_statemanager_timedevent_structs.hpp"
 #include "behemoth_state_int_pair_structs.hpp"
-#include "behemoth_states_enum_structs.hpp"
 #include "statemanager_enter_or_cancel_structs.hpp"
+#include "statemanager_check_result_structs.hpp"
 
 
 SDK_NAMESPACE_START

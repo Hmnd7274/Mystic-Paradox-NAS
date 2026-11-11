@@ -12,12 +12,12 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "element_emitter_struct_structs.hpp"
-#include "ui_combo_attacktype_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "LocalizationFramework_structs.hpp"
+#include "ui_combo_attacktype_structs.hpp"
 #include "ui_combo_attack_info_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
+#include "element_emitter_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

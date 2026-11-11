@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Ability_QuickItem_Base_classes.hpp"
 #include "Engine_structs.hpp"
+#include "Ability_QuickItem_Base_classes.hpp"
 
 
 SDK_NAMESPACE_START

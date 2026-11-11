@@ -46,24 +46,6 @@ void Adebuff_hit_actor_bp_C::CleanupFromServer()
 }
 
 
-// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Adebuff_hit_actor_bp_C::ReceiveTick(float DeltaSeconds)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
-
-	Params::debuff_hit_actor_bp_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.MultiSpawnHitEvent
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -164,18 +146,6 @@ void Adebuff_hit_actor_bp_C::MultiDestroy()
 }
 
 
-// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void Adebuff_hit_actor_bp_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReduceHealth
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -233,6 +203,36 @@ void Adebuff_hit_actor_bp_C::ResetHealth()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetHealth", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Adebuff_hit_actor_bp_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::debuff_hit_actor_bp_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void Adebuff_hit_actor_bp_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -11,25 +11,25 @@
 #include "Basic.hpp"
 
 #include "player_aim_request_structs.hpp"
-#include "Archon_structs.hpp"
-#include "AkAudio_structs.hpp"
-#include "weapon_part_emitter_struct_structs.hpp"
-#include "dp_weapon_attach_states_enum_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "dp_part_tracker_data_bps_structs.hpp"
+#include "Archon_structs.hpp"
+#include "ui_comboArray_structs.hpp"
+#include "dp_weapon_attach_states_enum_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ui_comboArray_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "dp_shooting_override_entry_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "dp_weapon_hand_enum_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Struct_ElementToParticleSystem_structs.hpp"
 #include "reticle_type_structs.hpp"
+#include "dp_weapon_hand_enum_structs.hpp"
+#include "weapon_part_audio_struct_structs.hpp"
 #include "debris_vfx_intensity_emitter_struct_structs.hpp"
 #include "debris_vfx_struct_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "emitter_options_struct_structs.hpp"
-#include "weapon_part_audio_struct_structs.hpp"
+#include "weapon_part_emitter_struct_structs.hpp"
 #include "Struct_ElementToVector_structs.hpp"
 
 
@@ -1585,7 +1585,7 @@ struct dp_weapon_bp_C_IsCellEquipped_ final
 public:
 	TArray<struct FEquippedCellData>              EquippedCells;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class FString                                 ItemId_0;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          return_0;                                          // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          LItemEquipped;                                     // 0x0021(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

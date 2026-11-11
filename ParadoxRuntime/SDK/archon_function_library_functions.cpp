@@ -1318,12 +1318,12 @@ void Uarchon_function_library_C::LowPassFilterVector(const struct FVector& Sampl
 // struct FGameplayTagContainer&           Tags                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // const struct Fhitfx_optimality&         InVFXOptimality                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UParticleSystem**                 return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystem**                 Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float*                                  RateScale                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float*                                  SizeScale                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float*                                  SphereRadius                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Uarchon_function_library_C::GetHitOptimality(struct FGameplayTagContainer& Tags, const struct Fhitfx_optimality& InVFXOptimality, class UObject* __WorldContext, class UParticleSystem** return_0, float* RateScale, float* SizeScale, float* SphereRadius)
+void Uarchon_function_library_C::GetHitOptimality(struct FGameplayTagContainer& Tags, const struct Fhitfx_optimality& InVFXOptimality, class UObject* __WorldContext, class UParticleSystem** Return, float* RateScale, float* SizeScale, float* SphereRadius)
 {
 	static ReloadableFuncInfo FuncInfo;
 	class UFunction* Func = GetStaticFunction(StaticClass(), "archon_function_library_C", "GetHitOptimality", FuncInfo);
@@ -1338,8 +1338,8 @@ void Uarchon_function_library_C::GetHitOptimality(struct FGameplayTagContainer& 
 
 	Tags = std::move(Parms.Tags);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 
 	if (RateScale != nullptr)
 		*RateScale = Parms.RateScale;
@@ -1366,9 +1366,9 @@ void Uarchon_function_library_C::GetHitOptimality(struct FGameplayTagContainer& 
 // class UObject*                          World_Context_Object                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    LogErrors                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UParticleSystem**                 return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystem**                 Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Uarchon_function_library_C::GetElementHitVFX(struct FGameplayTagContainer& Tags, struct Fhitfx_optimality& Flame, struct Fhitfx_optimality& Frost, struct Fhitfx_optimality& Shock, struct Fhitfx_optimality& Radiant, struct Fhitfx_optimality& Umbral, struct Fhitfx_optimality& RawElemental, struct Fhitfx_optimality& Terra, class UObject* World_Context_Object, bool LogErrors, class UObject* __WorldContext, class UParticleSystem** return_0)
+void Uarchon_function_library_C::GetElementHitVFX(struct FGameplayTagContainer& Tags, struct Fhitfx_optimality& Flame, struct Fhitfx_optimality& Frost, struct Fhitfx_optimality& Shock, struct Fhitfx_optimality& Radiant, struct Fhitfx_optimality& Umbral, struct Fhitfx_optimality& RawElemental, struct Fhitfx_optimality& Terra, class UObject* World_Context_Object, bool LogErrors, class UObject* __WorldContext, class UParticleSystem** Return)
 {
 	static ReloadableFuncInfo FuncInfo;
 	class UFunction* Func = GetStaticFunction(StaticClass(), "archon_function_library_C", "GetElementHitVFX", FuncInfo);
@@ -1398,8 +1398,8 @@ void Uarchon_function_library_C::GetElementHitVFX(struct FGameplayTagContainer& 
 	RawElemental = std::move(Parms.RawElemental);
 	Terra = std::move(Parms.Terra);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
@@ -1512,9 +1512,9 @@ void Uarchon_function_library_C::BadgeIsBetter(float Impressiveness1, Ebadge_eli
 // EArchonAttackActionKeyModifier          ModifierKey                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    TrueIfNoMontageActive_                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void Uarchon_function_library_C::IsCancelWindowNotifyActive(class AActor* Actor, EArchonAttackActionKeyModifier ModifierKey, bool TrueIfNoMontageActive_, class UObject* __WorldContext, bool* return_0)
+void Uarchon_function_library_C::IsCancelWindowNotifyActive(class AActor* Actor, EArchonAttackActionKeyModifier ModifierKey, bool TrueIfNoMontageActive_, class UObject* __WorldContext, bool* Return)
 {
 	static ReloadableFuncInfo FuncInfo;
 	class UFunction* Func = GetStaticFunction(StaticClass(), "archon_function_library_C", "IsCancelWindowNotifyActive", FuncInfo);
@@ -1528,8 +1528,8 @@ void Uarchon_function_library_C::IsCancelWindowNotifyActive(class AActor* Actor,
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

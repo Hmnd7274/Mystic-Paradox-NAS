@@ -36,10 +36,10 @@ public:
 
 public:
 	void ExecuteUbergraph_weapon_dp_reticle_bpw(int32 EntryPoint);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
 	void TickDynamicReticle();
 	void ShowEmpoweredReticle(bool bShow, class Adp_weapon_bp_C* DPWeapon);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

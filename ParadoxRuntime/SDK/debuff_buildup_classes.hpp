@@ -52,6 +52,7 @@ public:
 	void ClientFinishedBuildingUp();
 	void MulticastOnAdded();
 	void OnRefreshed();
+	void OnAdded();
 	void ReceiveTick(float DeltaSeconds);
 	void AddBuildup(float Amount);
 	void FinishBuildup();
@@ -61,7 +62,6 @@ public:
 	void ReduceBuildup(float BuildupToReduce);
 	void ShouldFinishingStopBuildup(bool* ShouldIt);
 	void CanBeTrackedBy(class UWidget* Widget, bool* bCanBeTrack);
-	void OnAdded();
 
 	void GetBuildupPct(float* Pct) const;
 	void IsBuildingUp(bool* BuildingUp_0) const;

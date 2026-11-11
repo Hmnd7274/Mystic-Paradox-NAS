@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "base_periodic_global_effect_hunt_modifier_classes.hpp"
+#include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "AIModule_structs.hpp"
 

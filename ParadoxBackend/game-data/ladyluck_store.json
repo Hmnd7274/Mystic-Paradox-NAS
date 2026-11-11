@@ -1,1 +1,1670 @@
-[]
+[
+  {
+    "id": "ladyluck_cell_epic_01",
+    "displayName": "+3 Berserker Cell",
+    "displayDescription": "Reduces max health. Dealing damage stacks increased damage dealt for a short period.",
+    "displayPriority": 1,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/cells/ico_cell_power.ico_cell_power'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "CELL_TRIALS_01_E",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_cell_epic_05",
+    "displayName": "+3 Sprinter Cell",
+    "displayDescription": "Increases movespeed and reduces sprint cost.",
+    "displayPriority": 2,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/cells/ico_cell_mobility.ico_cell_mobility'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "CELL_TRIALS_04_E",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_cell_epic_06",
+    "displayName": "+3 Mender Cell",
+    "displayDescription": "Using your flask restores other Slayers' health.",
+    "displayPriority": 3,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/cells/ico_cell_utility.ico_cell_utility'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "CELL_TRIALS_06_E",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_cell_epic_02",
+    "displayName": "+3 Strategist Cell",
+    "displayDescription": "Dodging through Behemoth attacks grants health shields to all Slayers.",
+    "displayPriority": 4,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/cells/ico_cell_defense.ico_cell_defense'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "CELL_TRIALS_02_E",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_cell_epic_03",
+    "displayName": "+3 Engineer Cell",
+    "displayDescription": "Increases range of pylons.",
+    "displayPriority": 5,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/cells/ico_cell_utility.ico_cell_utility'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "CELL_TRIALS_03_E",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_axe",
+    "displayName": "Furious Axecore",
+    "displayDescription": "Perfectly charged attacks grants +15 meter on hit, but no longer grant resolve.",
+    "displayPriority": 6,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_axe_1.ico_ladyluck_axe_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_GA_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_axe_1_fixed",
+    "displayName": "Railsplitter's Canteen",
+    "displayDescription": "Tonics consumed while your axe is thrown have +50% effectiveness.",
+    "displayPriority": 7,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_railsplitterscanteen_6_1.ico_mastery_railsplitterscanteen_6_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_GA_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_cb_passive_trials_02",
+    "displayName": "Demolition Blades",
+    "displayDescription": "After using a special, deal +100% damage to objects created by Behemoths for 6 seconds.",
+    "displayPriority": 8,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_chainblade_1.ico_ladyluck_chainblade_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_CB_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_chainblade",
+    "displayName": "Momentum Blades",
+    "displayDescription": "After using a special, your next special use within 4 seconds is free.",
+    "displayPriority": 9,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_momentumblades_6_1.ico_mastery_momentumblades_6_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_CB_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_hammer_1_fixed",
+    "displayName": "Antique Clip",
+    "displayDescription": "Ammo decreased to 2, but bonus from aethercharged ammo is increased by 300%.",
+    "displayPriority": 10,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_Antiqueclip_6_1.ico_mastery_Antiqueclip_6_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_IH_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_hammer",
+    "displayName": "Turbine Trigger",
+    "displayDescription": "Priming attacks increases attack speed by 10% until the combo ends. Stacks.",
+    "displayPriority": 11,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_hammer_1.ico_ladyluck_hammer_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_IH_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_repeater",
+    "displayName": "Tactician's Magazine",
+    "displayDescription": "Empowered Reloading at exactly 0 ammo decreases the cooldown of both abilities by 4 seconds.",
+    "displayPriority": 12,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_tacticiansmagazine_6_1.ico_mastery_tacticiansmagazine_6_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_DP_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_repeaters",
+    "displayName": "Demolition Sights",
+    "displayDescription": "While empowered, deal +50% damage to objects created by Behemoths.",
+    "displayPriority": 13,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_repeater_2.ico_ladyluck_repeater_2'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_DP_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_sword_1",
+    "displayName": "Keen Edge",
+    "displayDescription": "After the Bladesurge projectile travels a short distance, the damage is increased by 100%.",
+    "displayPriority": 14,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_keenedge.ico_mastery_keenedge'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_EB_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_eb_passives_trials_02",
+    "displayName": "Dynamic Bladecore",
+    "displayDescription": "After using any Valour combo, your next Valour combo within 5 seconds deals +30% damage.",
+    "displayPriority": 15,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_sword_1.ico_ladyluck_sword_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_EB_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_spear",
+    "displayName": "Barbed Spearhead",
+    "displayDescription": "After a dodge piercing attack, gain +50% wound damage for 8 seconds.",
+    "displayPriority": 16,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_mastery_barbedspearhead_6_1.ico_mastery_barbedspearhead_6_1'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_MS_PASSIVE_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_mod_spear_2",
+    "displayName": "Executioner's Spearhead",
+    "displayDescription": "Each time the Behemoth is wounded, gain +6% damage.",
+    "displayPriority": 17,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 250
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Framed/ico_ladyluck_spear_2.ico_ladyluck_spear_2'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_MS_PASSIVE_TRIALS_02",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_special_axe",
+    "displayName": "Relentless Onslaught",
+    "displayDescription": "Hurl the axe forward, damaging enemies in its path. Catch the axe to throw it again up to 2 more times in the next 5 seconds, dealing 500/600/1000 damage (further increased by determination). Does not build meter.",
+    "displayPriority": 18,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Ability/ico_mastery_relentlessonslaught.ico_mastery_relentlessonslaught'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_GA_SPECIAL_SKILLSHOT_RESET",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_special_cb",
+    "displayName": "Insatiable Dance",
+    "displayDescription": "From afar: Pull to targets and grant a stack of Insatiable Dance. While close: Push off targets, then use primary or secondary attacks to perform a followup. Primary followup grants a stack of Insatiable Dance. Secondary followup expends stacks and creates a 50 health healing orb per stack.",
+    "displayPriority": 19,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Ability/ico_mastery_insatiabledance.ico_mastery_insatiabledance'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_CB_SPECIAL_INSATIABLE_DANCE",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_special_hammer",
+    "displayName": "Ironheart Landbreaker",
+    "displayDescription": "Hold to load ammo into the hammer. Release to create an aether vent that buffs players who step over it, granting them +40% damage reduction and up to 155 healing over 30 seconds when aethercharged.",
+    "displayPriority": 20,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Ability/ico_mastery_ironheartlandbreaker.ico_mastery_ironheartlandbreaker'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_IH_SPECIAL_ISLANDCRACKER_DEFENSIVE",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_special_sword",
+    "displayName": "Avenging Overdrive",
+    "displayDescription": "Activate at full meter to enter Overdrive, increasing attack speed and causing attacks to deal AoE damage. Reactivate to parry and riposte a behemoth attack.",
+    "displayPriority": 21,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Ability/ico_mastery_defensiveoverdrive.ico_mastery_defensiveoverdrive'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_EB_SPECIAL_PARRY",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_weapon_pike_special",
+    "displayName": "Reckless Leap",
+    "displayDescription": "Press to convert meter into ammo. Hold to spend ammo and perform a flying lunge attack that deals up to 1500 damage based on distance and ammo quality.",
+    "displayPriority": 22,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Mastery/Ability/ico_mastery_recklessleap.ico_mastery_recklessleap'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "PART_MS_SPECIAL_ROCKETLUNGE",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_lantern_cooldown_01",
+    "displayName": "Broadsides Lantern",
+    "displayDescription": "Strike with the full fury of the Fortunate Soul. Hold to drop a bomb from above that explodes after 1 second. Deals 2750 damage and can interrupt Behemoths.\n",
+    "displayPriority": 23,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Lanterns/ico_equip_LT_trials_00.ico_equip_LT_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_pr_discipline_token",
+    "displayName": "Discipline",
+    "displayDescription": "Unlocks the Discipline Omnicell for crafting. This omnicell turns (and burns) the tables with a blazing parry attack that also steadily improves your critical strike damage. As your trade-off for fighting with fire, you'll take more damage and heal more slowly-but with discipline and skill, you'll set the skies ablaze!",
+    "displayPriority": 24,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "TOKEN_PLAYER_ROLE_DISCIPLINE_UNLOCK",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_exotic_repeaters",
+    "displayName": "The Twin Suns",
+    "displayDescription": "Add a new exotic to your arsenal with the Twin Suns repeaters. Special: Explosive Mag Bombs cling to your target and detonate at your command.\nThis purchase is for a complete weapon; not a skin.",
+    "displayPriority": 25,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/dpistols/ico_equip_dp_trials_exotic_00.ico_equip_dp_trials_exotic_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "live",
+      "one_time"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_EXOTIC_BOMBS",
+        "quantity": 1
+      },
+      {
+        "catalogId": "PART_DP_BARREL_EXOTIC_BOMBS",
+        "quantity": 1
+      },
+      {
+        "catalogId": "PART_DP_GRIP_EXOTIC_BOMBS",
+        "quantity": 1
+      },
+      {
+        "catalogId": "PART_DP_RECEIVER_EXOTIC_BOMBS",
+        "quantity": 1
+      },
+      {
+        "catalogId": "PART_DP_PASSIVE_EXOTIC_BOMBS",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_core_silver_slayer",
+    "displayName": "Lady Luck Uncommon",
+    "displayDescription": "Open this Slayer Core at the Core Breaker to collect cells that can augment your gear.",
+    "displayPriority": 26,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_silverslayercore.ui_icon_hp_silverslayercore'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "Container_Core_Slayer_Silver",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_core_gold_slayer",
+    "displayName": "Lady Luck Rare",
+    "displayDescription": "Open this Slayer Core at the Core Breaker to collect cells that can augment your gear.",
+    "displayPriority": 27,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_goldslayercore.ui_icon_hp_goldslayercore'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cells"
+    ],
+    "items": [
+      {
+        "catalogId": "Container_Core_Slayer_Gold",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_bundle_consumables_00",
+    "displayName": "Silver Tonic Pack",
+    "displayDescription": "A bundle of useful tonics for a seasoned Trials slayer. Contains 25x Blitz Tonics, 25x Aetherdrive Tonics, and 25x Frenzy Tonics.",
+    "displayPriority": 28,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_steel",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_frenzy.ui_icon_hp_frenzy'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_supplies",
+      "rarity_uncommon"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_DAMAGE_ENRAGEBONUS_POTION",
+        "quantity": 25
+      },
+      {
+        "catalogId": "QI_LANTERN_POTION",
+        "quantity": 25
+      },
+      {
+        "catalogId": "QI_ATTACK_SPEED_POTION",
+        "quantity": 25
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "ladyluck_bundle_consumables_01",
+    "displayName": "Gold Tonic Pack",
+    "displayDescription": "A bundle of useful tonics for a seasoned Trials slayer. Contains 50x Blitz Tonics, 50x Aetherdrive Tonics, and 50x Frenzy Tonics.",
+    "displayPriority": 29,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 150
+      }
+    ],
+    "maxAllowed": null,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/HuntpassRewards/ui_icon_hp_frenzy.ui_icon_hp_frenzy'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_supplies"
+    ],
+    "items": [
+      {
+        "catalogId": "QI_DAMAGE_ENRAGEBONUS_POTION",
+        "quantity": 50
+      },
+      {
+        "catalogId": "QI_LANTERN_POTION",
+        "quantity": 50
+      },
+      {
+        "catalogId": "QI_ATTACK_SPEED_POTION",
+        "quantity": 50
+      }
+    ],
+    "duplicateInstancedItems": []
+  },
+  {
+    "id": "single_dye_black",
+    "displayName": "Midnight Champion",
+    "displayDescription": "If you're going to own the night you'd better look the part.",
+    "displayPriority": 30,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY02_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY02_DURABLE"
+    ]
+  },
+  {
+    "id": "single_dye_white",
+    "displayName": "Sunlight Champion",
+    "displayDescription": "Set a shining example of what it looks like to be a winner.",
+    "displayPriority": 31,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "DYE_GRAY01_DURABLE",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "DYE_GRAY01_DURABLE"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_strikers_normal",
+    "displayName": "Victorious Aether Strikers",
+    "displayDescription": "A sterling set of aether strikers for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 32,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/astrikers/ico_equip_as_trials_00.ico_equip_as_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_axe_normal",
+    "displayName": "Victorious Axe",
+    "displayDescription": "A sterling axe for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 33,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ax_trials_00.ico_equip_ax_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_chainblade_normal",
+    "displayName": "Victorious Chain Blades",
+    "displayDescription": "A sterling set of chain blades for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 34,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_cb_trials_00.ico_equip_cb_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_hammer_normal",
+    "displayName": "Victorious Hammer",
+    "displayDescription": "A sterling hammer for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 35,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ih_trials_00.ico_equip_ih_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_repeaters_normal",
+    "displayName": "Victorious Repeaters",
+    "displayDescription": "A sterling set of repeaters for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 36,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/dpistols/ico_equip_dp_trials_00.ico_equip_dp_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_sword_normal",
+    "displayName": "Victorious Sword",
+    "displayDescription": "A sterling sword for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 37,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_eb_trials_00.ico_equip_eb_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_spear_normal",
+    "displayName": "Victorious War Pike",
+    "displayDescription": "A sterling war pike for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 38,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ms_trials_00.ico_equip_ms_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_headbling_normal",
+    "displayName": "Crown of the Victor",
+    "displayDescription": "An impressive head accessory for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 39,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Accessories/ico_equip_head_trials_00.ico_equip_head_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "AC_HEAD_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AC_HEAD_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_helm",
+    "displayName": "Victorious Helm",
+    "displayDescription": "Sterling head protection for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 40,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_helm_00.ico_equip_trials_helm_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_HELM_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_HELM_00"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_chest",
+    "displayName": "Victorious Plate",
+    "displayDescription": "Sterling torso protection for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 41,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_chest_00.ico_equip_trials_chest_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_CHEST_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_CHEST_00"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_arms",
+    "displayName": "Victorious Gauntlets",
+    "displayDescription": "Sterling arm and hand protection for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 42,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_arms_00.ico_equip_trials_arms_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_ARMS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_ARMS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_legs",
+    "displayName": "Victorious Greaves",
+    "displayDescription": "Sterling leg and foot protection for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 43,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_legs_00.ico_equip_trials_legs_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_LEGS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_LEGS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_banner_normal",
+    "displayName": "Victorious Standard",
+    "displayDescription": "A sterling standard for those who have earned gilded marks on the Island of Trials.",
+    "displayPriority": 44,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 500
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_trials_00.ico_equip_standard_trials_00'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_cosmetics"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_TRIALS_00",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_TRIALS_00"
+    ]
+  },
+  {
+    "id": "ladyluck_lantern_01_cosmetic",
+    "displayName": "Champion's Light",
+    "displayDescription": "A golden lantern for those who have defeated a Dauntless Behemoth on the Island of Trials.",
+    "displayPriority": 45,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Lanterns/ico_equip_LT_trials_01.ico_equip_LT_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "LT_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "LT_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_strikers_prestige",
+    "displayName": "Champion's Aether Strikers",
+    "displayDescription": "A golden set of aether strikers for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 46,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/astrikers/ico_equip_as_trials_01.ico_equip_as_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_AC_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_AC_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_axe_prestige",
+    "displayName": "Champion's Axe",
+    "displayDescription": "A golden axe for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 47,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ax_trials_01.ico_equip_ax_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_GA_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_GA_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_chainblade_prestige",
+    "displayName": "Champion's Chain Blades",
+    "displayDescription": "A golden set of chain blades for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 48,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_cb_trials_01.ico_equip_cb_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_CB_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_CB_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_hammer_prestige",
+    "displayName": "Champion's Hammer",
+    "displayDescription": "A golden hammer for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 49,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ih_trials_01.ico_equip_ih_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_IH_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_IH_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_repeaters_prestige",
+    "displayName": "Champion's Repeaters",
+    "displayDescription": "A golden set of repeaters for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 50,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/dpistols/ico_equip_dp_trials_01.ico_equip_dp_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_DP_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_DP_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_sword_prestige",
+    "displayName": "Champion's Sword",
+    "displayDescription": "A golden sword for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 51,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_eb_trials_01.ico_equip_eb_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_EB_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_EB_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_spear_prestige",
+    "displayName": "Champion's War Pike",
+    "displayDescription": "A golden war pike for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 52,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Weapons/ico_equip_ms_trials_01.ico_equip_ms_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "WP_MS_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "WP_MS_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_headbling_prestige",
+    "displayName": "Crown of the Champion",
+    "displayDescription": "An extremely impressive head accessory for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 53,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Accessories/ico_equip_head_trials_01.ico_equip_head_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "AC_HEAD_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AC_HEAD_TRIALS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_helm_prestige",
+    "displayName": "Champion's Helm",
+    "displayDescription": "Golden head protection for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 54,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_helm_01.ico_equip_trials_helm_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_HELM_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_HELM_01"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_chest_prestige",
+    "displayName": "Champion's Plate",
+    "displayDescription": "Golden torso protection for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 55,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_chest_01.ico_equip_trials_chest_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_CHEST_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_CHEST_01"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_arms_prestige",
+    "displayName": "Champion's Gauntlets",
+    "displayDescription": "Golden arm and hand protection for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 56,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_arms_01.ico_equip_trials_arms_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_ARMS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_ARMS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_armor_legs_prestige",
+    "displayName": "Champion's Greaves",
+    "displayDescription": "Golden leg and foot protection for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"\n",
+    "displayPriority": 57,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/Armour/ico_equip_trials_legs_01.ico_equip_trials_legs_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "AR_TRIALS_LEGS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "AR_TRIALS_LEGS_01"
+    ]
+  },
+  {
+    "id": "ladyluck_weapon_banner_prestige",
+    "displayName": "Champion's Standard",
+    "displayDescription": "A golden standard for those who have earned gilded marks on the Island of Trials and won the title \"Trials Champion.\"",
+    "displayPriority": 58,
+    "prices": [
+      {
+        "currencyId": "id_currency_marks_gilded",
+        "price": 1000
+      }
+    ],
+    "maxAllowed": 1,
+    "images": {
+      "standard": "Engine.Texture2D'/Game/UI/Textures/Icons/banners/standards/ico_equip_standard_trials_01.ico_equip_standard_trials_01'"
+    },
+    "tags": [
+      "ladyluckstore",
+      "store_trials_tab_champion"
+    ],
+    "items": [
+      {
+        "catalogId": "BNC_STANDARD_TRIALS_01",
+        "quantity": 1
+      }
+    ],
+    "duplicateInstancedItems": [
+      "BNC_STANDARD_TRIALS_01"
+    ]
+  }
+]

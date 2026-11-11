@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "grenade_base_bp_classes.hpp"
 #include "Engine_structs.hpp"
+#include "grenade_base_bp_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 

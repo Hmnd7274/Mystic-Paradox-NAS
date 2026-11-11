@@ -34,18 +34,6 @@ void Astatus_effect_frozen_escapable_debuff_C::ExecuteUbergraph_status_effect_fr
 }
 
 
-// Function status_effect_frozen_escapable_debuff.status_effect_frozen_escapable_debuff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Astatus_effect_frozen_escapable_debuff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function status_effect_frozen_escapable_debuff.status_effect_frozen_escapable_debuff_C.ClientOnDodgeKeyPressed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -65,18 +53,6 @@ void Astatus_effect_frozen_escapable_debuff_C::ClientOnDodgeKeyPressed(class FNa
 	Parms.Event = Event;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function status_effect_frozen_escapable_debuff.status_effect_frozen_escapable_debuff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Astatus_effect_frozen_escapable_debuff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -141,6 +117,30 @@ void Astatus_effect_frozen_escapable_debuff_C::ClientReduceTime()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClientReduceTime", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function status_effect_frozen_escapable_debuff.status_effect_frozen_escapable_debuff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Astatus_effect_frozen_escapable_debuff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function status_effect_frozen_escapable_debuff.status_effect_frozen_escapable_debuff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Astatus_effect_frozen_escapable_debuff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

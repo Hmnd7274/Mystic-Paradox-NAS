@@ -9,11 +9,15 @@
 // FORWARD DECLARATIONS
 
 
-namespace AtmosphereDrivenValueMode { enum class EAtmosphereDrivenValueMode : uint8; }
-
 namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
 
 namespace HuntActivityType { enum class EHuntActivityType : uint8; }
+
+namespace lamp_hanging_01_bp_0 { class Alamp_hanging_01_bp_C; }
+
+namespace lamp_hanging_01_bp { class Alamp_hanging_01_bp_C; }
+
+namespace AtmosphereDrivenValueMode { enum class EAtmosphereDrivenValueMode : uint8; }
 
 
 namespace Archon

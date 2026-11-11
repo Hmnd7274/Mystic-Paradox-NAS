@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "cell_buff_base_bp_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Archon_structs.hpp"
+#include "cell_buff_base_bp_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -44,8 +44,8 @@ public:
 	void EventEnded(EEscalationGameModeState NewState, EStateTransitionType StateTransitionType);
 	void RoundEnd();
 	void RoundStart();
-	void OnAdded();
 	void ShowActiveBanner(int32 BoonInt);
+	void OnAdded();
 
 public:
 	static class UClass* StaticClass()

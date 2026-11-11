@@ -34,24 +34,6 @@ void Ulanternhold_damage_aura_ab_C::ExecuteUbergraph_lanternhold_damage_aura_ab(
 }
 
 
-// Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.K2_OnEndAbility
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Ulanternhold_damage_aura_ab_C::K2_OnEndAbility(bool bWasCancelled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_OnEndAbility", FnName));
-
-	Params::lanternhold_damage_aura_ab_C_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 
@@ -119,6 +101,24 @@ void Ulanternhold_damage_aura_ab_C::GrantDoubleStrikeFromAmp(class AActor* Actor
 	Parms.Damage_Data = std::move(Damage_Data);
 	Parms.Hit_Dir = std::move(Hit_Dir);
 	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function lanternhold_damage_aura_ab.lanternhold_damage_aura_ab_C.K2_OnEndAbility
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Ulanternhold_damage_aura_ab_C::K2_OnEndAbility(bool bWasCancelled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_OnEndAbility", FnName));
+
+	Params::lanternhold_damage_aura_ab_C_K2_OnEndAbility Parms{};
+
+	Parms.bWasCancelled = bWasCancelled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "stat_icon_type_structs.hpp"
 #include "Engine_structs.hpp"
-#include "LoadoutStatTypes_structs.hpp"
+#include "stat_icon_type_structs.hpp"
 #include "Archon_structs.hpp"
 #include "UMG_classes.hpp"
+#include "LoadoutStatTypes_structs.hpp"
 
 
 SDK_NAMESPACE_START

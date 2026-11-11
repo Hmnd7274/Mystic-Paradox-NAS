@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "collision_shape_structs.hpp"
+#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "actor_list_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "collision_shape_structs.hpp"
+#include "actor_list_structs.hpp"
 #include "debris_vfx_struct_structs.hpp"
-#include "debris_vfx_intensity_emitter_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -729,7 +729,7 @@ public:
 	struct FVector                                Final_Location;                                    // 0x0024(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               Final_Rotation;                                    // 0x0030(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                               Spawn_Rotation;                                    // 0x003C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                Spawn_location;                                    // 0x0048(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Spawn_Location;                                    // 0x0048(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_BuildString_Vector_ReturnValue;           // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0068(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)

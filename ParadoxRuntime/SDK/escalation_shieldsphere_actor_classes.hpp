@@ -38,11 +38,11 @@ public:
 public:
 	void ExecuteUbergraph_escalation_shieldsphere_actor(int32 EntryPoint);
 	void ReceivePointDamage(float Damage, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
-	void PositionandFireVFX(class AActor* Target, class AActor* Instagator);
+	void PositionAndFireVFX(class AActor* Target, class AActor* Instagator);
 	void DestroyedByPlayer();
-	void ReceiveBeginPlay();
 	void Timeout();
 	void DestroyVFXMulti();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "LocalizationFramework_structs.hpp"
 #include "ah_arms_settings_struct_structs.hpp"
+#include "LocalizationFramework_structs.hpp"
 
 
 SDK_NAMESPACE_START

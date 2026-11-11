@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "behemoth_part_type_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
 #include "base_periodic_global_effect_hunt_modifier_classes.hpp"
+#include "Engine_structs.hpp"
+#include "behemoth_part_type_structs.hpp"
 #include "Archon_structs.hpp"
 
 
@@ -66,7 +66,6 @@ public:
 	void SetupTimerForNextMark();
 	void RoundOver(EEscalationGameModeState NewState, EStateTransitionType StateTransitionType);
 	void SetupEndConditions();
-	void OnAdded();
 	void DoBuffs(class UArchonBuffableComponent* BuffableComponent);
 	void MarkAlmostExpired();
 	void ReapplyActivation();
@@ -80,6 +79,7 @@ public:
 	void PartBroken(class Umonsterpart_bpc_C* part);
 	void ActivateEffect();
 	void FindBehemoth(class AArchonBehemoth** TargetBehemoth_0, bool* FoundBehemoth);
+	void OnAdded();
 	void FindBehemothPart(class UMonsterPartComponent** TargetBehemothPart_0, bool* PartsAvailable);
 
 public:

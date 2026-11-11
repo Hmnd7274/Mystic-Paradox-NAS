@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Struct_ElementToVector_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
-#include "Struct_ElementToAKEvent_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "Struct_ElementToVector_structs.hpp"
+#include "Struct_ElementToAKEvent_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
 SDK_NAMESPACE_START

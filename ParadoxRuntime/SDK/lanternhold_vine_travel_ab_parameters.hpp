@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "player_aim_request_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "player_aim_request_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -62,15 +62,6 @@ public:
 };
 DUMPER7_ASSERTS_lanternhold_vine_travel_ab_C_ExecuteUbergraph_lanternhold_vine_travel_ab;
 
-// Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.K2_OnEndAbility
-// 0x0001 (0x0001 - 0x0000)
-struct lanternhold_vine_travel_ab_C_K2_OnEndAbility final
-{
-public:
-	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_lanternhold_vine_travel_ab_C_K2_OnEndAbility;
-
 // Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.AlterCamera
 // 0x0160 (0x0160 - 0x0000)
 struct lanternhold_vine_travel_ab_C_AlterCamera final
@@ -106,6 +97,15 @@ public:
 	TDelegate<void(class UObject* WorldContext, EAkCallbackType CallbackType, int32 PlayingID, float EstimatedDuration)> Temp_delegate_Variable; // 0x004C(0x0010)(ConstParm, ZeroConstructor, NoDestructor)
 };
 DUMPER7_ASSERTS_lanternhold_vine_travel_ab_C_StopSounds;
+
+// Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.K2_OnEndAbility
+// 0x0001 (0x0001 - 0x0000)
+struct lanternhold_vine_travel_ab_C_K2_OnEndAbility final
+{
+public:
+	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_lanternhold_vine_travel_ab_C_K2_OnEndAbility;
 
 // Function lanternhold_vine_travel_ab.lanternhold_vine_travel_ab_C.CanUseInMontage
 // 0x0078 (0x0078 - 0x0000)

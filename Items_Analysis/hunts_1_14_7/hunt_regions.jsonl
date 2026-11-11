@@ -41,5 +41,6 @@
 {"sourceTable":"hunt_regions","rowName":"ZONE_T","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}
 {"sourceTable":"hunt_regions","rowName":"ZONE_TRAINING","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}
 {"sourceTable":"hunt_regions","rowName":"ZONE_TRIALS","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}
+{"sourceTable":"hunt_regions","rowName":"ZONE_TWILIGHT","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}
 {"sourceTable":"hunt_regions","rowName":"ZONE_U","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}
 {"sourceTable":"hunt_regions","rowName":"ZONE_U_174TEST","matchmakingId":"None","tokenId":"None","numTokensRequired":1,"numHuntPassBehemothRewards":0,"targetedBehemothList":"","behemothPresets":[]}

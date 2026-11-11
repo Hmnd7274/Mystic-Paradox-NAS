@@ -20,7 +20,8 @@ SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass npc_vendor_animbp.npc_vendor_animbp_C
 // 0x1030 (0x1300 - 0x02D0)
-class Unpc_vendor_animbp_C final : public UAnimInstance
+#pragma pack(push, 0x1)
+class SDK_ALIGN(0x10) Unpc_vendor_animbp_C : public UAnimInstance
 {
 public:
 	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -102,6 +103,7 @@ public:
 		return GetDefaultObjImpl<Unpc_vendor_animbp_C>();
 	}
 };
+#pragma pack(pop)
 DUMPER7_ASSERTS_Unpc_vendor_animbp_C;
 
 SDK_NAMESPACE_END

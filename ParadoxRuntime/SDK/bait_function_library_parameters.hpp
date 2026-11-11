@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "behemoth_spawn_data_structs.hpp"
 #include "Archon_structs.hpp"
+#include "behemoth_spawn_data_structs.hpp"
 
 
 SDK_NAMESPACE_START

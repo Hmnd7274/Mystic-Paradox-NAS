@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_chooser_option_structs.hpp"
 #include "behemoth_set_info_structs.hpp"
-#include "behemoth_source_struct_structs.hpp"
+#include "behemoth_chooser_option_structs.hpp"
 #include "Archon_structs.hpp"
+#include "behemoth_source_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

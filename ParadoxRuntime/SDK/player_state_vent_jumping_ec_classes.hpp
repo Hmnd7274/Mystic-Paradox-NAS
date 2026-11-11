@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Archon_classes.hpp"
 #include "jump_type_enum_structs.hpp"
+#include "Archon_classes.hpp"
 
 
 SDK_NAMESPACE_START

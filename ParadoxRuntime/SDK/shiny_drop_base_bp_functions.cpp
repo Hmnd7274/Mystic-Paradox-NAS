@@ -156,18 +156,6 @@ void Ashiny_drop_base_bp_C::DisableShiny()
 }
 
 
-// Function shiny_drop_base_bp.shiny_drop_base_bp_C.OnProjectileStopped
-// (BlueprintCallable, BlueprintEvent)
-
-void Ashiny_drop_base_bp_C::OnProjectileStopped()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function shiny_drop_base_bp.shiny_drop_base_bp_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
@@ -257,18 +245,6 @@ void Ashiny_drop_base_bp_C::OnLoaded_267A00A8405FB467C655939BE39F747A(class UObj
 	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function shiny_drop_base_bp.shiny_drop_base_bp_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void Ashiny_drop_base_bp_C::UserConstructionScript()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -503,6 +479,30 @@ bool Ashiny_drop_base_bp_C::SetGatherableVisible(bool IsVisible)
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function shiny_drop_base_bp.shiny_drop_base_bp_C.OnProjectileStopped
+// (BlueprintCallable, BlueprintEvent)
+
+void Ashiny_drop_base_bp_C::OnProjectileStopped()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function shiny_drop_base_bp.shiny_drop_base_bp_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void Ashiny_drop_base_bp_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

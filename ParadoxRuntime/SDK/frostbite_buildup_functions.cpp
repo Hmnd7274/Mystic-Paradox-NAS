@@ -118,18 +118,6 @@ void Afrostbite_buildup_C::EvaluateWarmthTalents()
 }
 
 
-// Function frostbite_buildup.frostbite_buildup_C.ClientOnBuildupFinished
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void Afrostbite_buildup_C::ClientOnBuildupFinished()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClientOnBuildupFinished", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function frostbite_buildup.frostbite_buildup_C.FrostbiteApplied
 // (BlueprintCallable, BlueprintEvent)
 
@@ -169,18 +157,6 @@ void Afrostbite_buildup_C::BehemothKilled(class AArchonBehemoth* Behemoth)
 	Parms.Behemoth = Behemoth;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function frostbite_buildup.frostbite_buildup_C.MulticastOnAdded
-// (Event, Public, BlueprintEvent)
-
-void Afrostbite_buildup_C::MulticastOnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -302,18 +278,6 @@ void Afrostbite_buildup_C::ServerStartupFrostbite()
 }
 
 
-// Function frostbite_buildup.frostbite_buildup_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Afrostbite_buildup_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function frostbite_buildup.frostbite_buildup_C.ServerRefresh
 // (BlueprintCallable, BlueprintEvent)
 
@@ -323,25 +287,6 @@ void Afrostbite_buildup_C::ServerRefresh()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ServerRefresh", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function frostbite_buildup.frostbite_buildup_C.ShouldAddedBuildupPopUI
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   ShouldIt                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Afrostbite_buildup_C::ShouldAddedBuildupPopUI(bool* ShouldIt)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShouldAddedBuildupPopUI", FnName));
-
-	Params::frostbite_buildup_C_ShouldAddedBuildupPopUI Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ShouldIt != nullptr)
-		*ShouldIt = Parms.ShouldIt;
 }
 
 
@@ -393,25 +338,6 @@ void Afrostbite_buildup_C::Add_Temp_Resist(float TempResistToAdd)
 }
 
 
-// Function frostbite_buildup.frostbite_buildup_C.ShouldFinishingStopBuildup
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   ShouldIt                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void Afrostbite_buildup_C::ShouldFinishingStopBuildup(bool* ShouldIt)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShouldFinishingStopBuildup", FnName));
-
-	Params::frostbite_buildup_C_ShouldFinishingStopBuildup Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ShouldIt != nullptr)
-		*ShouldIt = Parms.ShouldIt;
-}
-
-
 // Function frostbite_buildup.frostbite_buildup_C.Test Thaw Value
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -421,24 +347,6 @@ void Afrostbite_buildup_C::Test_Thaw_Value()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Test Thaw Value", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function frostbite_buildup.frostbite_buildup_C.ReduceBuildup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   BuildupToReduce                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Afrostbite_buildup_C::ReduceBuildup(float BuildupToReduce)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReduceBuildup", FnName));
-
-	Params::frostbite_buildup_C_ReduceBuildup Parms{};
-
-	Parms.BuildupToReduce = BuildupToReduce;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -490,6 +398,98 @@ void Afrostbite_buildup_C::ClearTrackingData()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClearTrackingData", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.ClientOnBuildupFinished
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void Afrostbite_buildup_C::ClientOnBuildupFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClientOnBuildupFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.MulticastOnAdded
+// (Event, Public, BlueprintEvent)
+
+void Afrostbite_buildup_C::MulticastOnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MulticastOnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Afrostbite_buildup_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.ShouldAddedBuildupPopUI
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   ShouldIt                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Afrostbite_buildup_C::ShouldAddedBuildupPopUI(bool* ShouldIt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShouldAddedBuildupPopUI", FnName));
+
+	Params::frostbite_buildup_C_ShouldAddedBuildupPopUI Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ShouldIt != nullptr)
+		*ShouldIt = Parms.ShouldIt;
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.ShouldFinishingStopBuildup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   ShouldIt                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void Afrostbite_buildup_C::ShouldFinishingStopBuildup(bool* ShouldIt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShouldFinishingStopBuildup", FnName));
+
+	Params::frostbite_buildup_C_ShouldFinishingStopBuildup Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ShouldIt != nullptr)
+		*ShouldIt = Parms.ShouldIt;
+}
+
+
+// Function frostbite_buildup.frostbite_buildup_C.ReduceBuildup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   BuildupToReduce                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Afrostbite_buildup_C::ReduceBuildup(float BuildupToReduce)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReduceBuildup", FnName));
+
+	Params::frostbite_buildup_C_ReduceBuildup Parms{};
+
+	Parms.BuildupToReduce = BuildupToReduce;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

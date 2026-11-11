@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "GameplayAbilities_structs.hpp"
-#include "weapon_part_base_bpc_classes.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "legendary_weapon_part_tuning_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "legendary_weapon_part_tuning_structs.hpp"
+#include "weapon_part_base_bpc_classes.hpp"
 
 
 SDK_NAMESPACE_START

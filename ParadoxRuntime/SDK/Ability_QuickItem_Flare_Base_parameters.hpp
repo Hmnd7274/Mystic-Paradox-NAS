@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "Archon_structs.hpp"
 #include "rarity_level_type_to_particle_struct_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

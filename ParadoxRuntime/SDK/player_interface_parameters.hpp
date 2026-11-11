@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
+#include "Archon_structs.hpp"
 #include "jump_type_enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "player_states_struct_structs.hpp"
 #include "player_requirements_str_structs.hpp"
-#include "Archon_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
 #include "GameplayTags_structs.hpp"
@@ -344,7 +344,7 @@ struct player_interface_C_SetCollisionWithDestructible final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_SetCollisionWithDestructible;
 
@@ -636,7 +636,7 @@ DUMPER7_ASSERTS_player_interface_C_GetNumPlayersReviving;
 struct player_interface_C_GetIsSprinting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_GetIsSprinting;
 
@@ -843,7 +843,7 @@ DUMPER7_ASSERTS_player_interface_C_IsAPlayerCharacter;
 struct player_interface_C_IsVentJumping final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsVentJumping;
 
@@ -861,7 +861,7 @@ DUMPER7_ASSERTS_player_interface_C_IsStrafing;
 struct player_interface_C_IsInEdgeRecovery final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsInEdgeRecovery;
 
@@ -888,7 +888,7 @@ DUMPER7_ASSERTS_player_interface_C_GetDesiredLocomotionState;
 struct player_interface_C_CanMove final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_CanMove;
 
@@ -897,7 +897,7 @@ DUMPER7_ASSERTS_player_interface_C_CanMove;
 struct player_interface_C_IsIkinemaEnabled final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsIkinemaEnabled;
 
@@ -991,7 +991,7 @@ struct player_interface_C_SetCollisionWithAMonster final
 {
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          return_0;                                          // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_SetCollisionWithAMonster;
 
@@ -1111,7 +1111,7 @@ DUMPER7_ASSERTS_player_interface_C_GetGenderIdentity;
 struct player_interface_C_IsInputEnabled_ final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsInputEnabled_;
 
@@ -1120,7 +1120,7 @@ DUMPER7_ASSERTS_player_interface_C_IsInputEnabled_;
 struct player_interface_C_IsEmoting final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsEmoting;
 
@@ -1129,7 +1129,7 @@ DUMPER7_ASSERTS_player_interface_C_IsEmoting;
 struct player_interface_C_IsPlantingBanner final
 {
 public:
-	bool                                          return_0;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Return;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_player_interface_C_IsPlantingBanner;
 
@@ -1159,7 +1159,7 @@ DUMPER7_ASSERTS_player_interface_C_CanVentTraversal;
 struct player_interface_C_GetMountingComponent final
 {
 public:
-	class UArchonMountingComponent*               return_0;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UArchonMountingComponent*               Return;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_player_interface_C_GetMountingComponent;
 

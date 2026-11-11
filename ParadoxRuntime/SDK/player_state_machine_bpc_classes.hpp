@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "EPlayerStatesDefault_structs.hpp"
-#include "strafe_transition_states_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "EPlayerStatesDefault_structs.hpp"
+#include "strafe_states_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "strafe_states_structs.hpp"
 #include "EPlayerStatesLayered_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "strafe_transition_states_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -126,7 +126,7 @@ public:
 	void SetLocomotionTunables();
 	void OnDefaultStateChanged();
 	void UpdateFollowCamera(EPlayerStatesDefault NewPlayerState, EPlayerStatesDefault PreviousPlayerState);
-	void IsFollowCameraEnabled(bool* return_0);
+	void IsFollowCameraEnabled(bool* Return);
 	void UpdateJumpVariables();
 	void SetDesiredLocomotionState(EArchonLocomotionState DesiredLocomotionState);
 	void OnLayeredStateChanged();

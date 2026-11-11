@@ -12,14 +12,14 @@
 
 #include "Slate_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "progression_event_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "progression_bonus_table_row_structs.hpp"
 #include "progression_award_structs.hpp"
 #include "Archon_structs.hpp"
+#include "progression_event_structs.hpp"
 #include "Engine_structs.hpp"
 #include "progression_core_table_row_structs.hpp"
 #include "progression_bonus_structs.hpp"
-#include "progression_bonus_table_row_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "base_interactioncode_component_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "base_interactioncode_component_classes.hpp"
 #include "Engine_structs.hpp"
 
 

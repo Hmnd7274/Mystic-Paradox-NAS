@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "armour_hiding_enum_structs.hpp"
+#include "armour_hiding_properties_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Engine_structs.hpp"
-#include "armour_hiding_properties_structs.hpp"
+#include "armour_hiding_enum_structs.hpp"
 #include "LocalizationFramework_structs.hpp"
 
 

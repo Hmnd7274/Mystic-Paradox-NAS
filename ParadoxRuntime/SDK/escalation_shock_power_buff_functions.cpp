@@ -110,18 +110,6 @@ void Aescalation_shock_power_buff_C::OnHitRequirementMet()
 }
 
 
-// Function escalation_shock_power_buff.escalation_shock_power_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Aescalation_shock_power_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_shock_power_buff.escalation_shock_power_buff_C.BuffExpired
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -141,6 +129,18 @@ void Aescalation_shock_power_buff_C::RemoveElementalForms()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveElementalForms", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function escalation_shock_power_buff.escalation_shock_power_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Aescalation_shock_power_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

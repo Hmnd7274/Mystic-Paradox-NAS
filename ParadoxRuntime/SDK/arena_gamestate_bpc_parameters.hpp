@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "behemoth_stagger_type_structs.hpp"
-#include "behemoth_part_type_structs.hpp"
 #include "stagger_type_structs.hpp"
-#include "Archon_structs.hpp"
+#include "behemoth_part_type_structs.hpp"
 #include "behemoth_bodypart_type_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -43,7 +43,7 @@ public:
 	uint8                                         Pad_66[0x2];                                       // 0x0066(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_message;                        // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_Message;                        // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_Duration;                       // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AArchonPlayerController*>        CallFunc_Get_All_Archon_Player_Controllers_Archon_Player_Controllers; // 0x0088(0x0010)(ReferenceParm)
@@ -99,9 +99,9 @@ public:
 };
 DUMPER7_ASSERTS_arena_gamestate_bpc_C_ExecuteUbergraph_arena_gamestate_bpc;
 
-// Function arena_gamestate_bpc.arena_gamestate_bpc_C.Staggered
+// Function arena_gamestate_bpc.arena_gamestate_bpc_C.staggered
 // 0x0018 (0x0018 - 0x0000)
-struct arena_gamestate_bpc_C_Staggered final
+struct arena_gamestate_bpc_C_staggered final
 {
 public:
 	Ebehemoth_stagger_type                        StaggerSourceType;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -111,7 +111,7 @@ public:
 	class Umonsterpart_bpc_C*                     PartThatCausedStagger;                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	Estagger_type                                 BehemothStaggerType;                               // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_arena_gamestate_bpc_C_Staggered;
+DUMPER7_ASSERTS_arena_gamestate_bpc_C_staggered;
 
 // Function arena_gamestate_bpc.arena_gamestate_bpc_C.ReduceTimeForPartBreak_PartCompare
 // 0x0008 (0x0008 - 0x0000)

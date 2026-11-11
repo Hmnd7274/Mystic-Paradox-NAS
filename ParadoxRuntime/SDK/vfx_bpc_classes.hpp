@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "vfx_struct_structs.hpp"
-#include "Engine_structs.hpp"
-#include "vfx_states_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "vfx_components_structs.hpp"
+#include "vfx_states_structs.hpp"
 #include "material_array_struct_structs.hpp"
+#include "Engine_structs.hpp"
+#include "vfx_components_structs.hpp"
 #include "EElementalTypes_structs.hpp"
+#include "vfx_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -41,9 +41,9 @@ public:
 	class UMeshComponent*                         legs_skel_mesh;                                    // 0x0108(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class UMeshComponent*                         arms_skel_mesh;                                    // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	class Uvfx_stack_C*                           ActiveVFXList;                                     // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	bool                                          Removing;                                          // 0x0120(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay)
+	bool                                          removing;                                          // 0x0120(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                          show_debug_info;                                   // 0x0121(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Adding;                                            // 0x0122(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay)
+	bool                                          adding;                                            // 0x0122(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                          initialized;                                       // 0x0123(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<Evfx_states>                           PreInitQueue;                                      // 0x0128(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, AdvancedDisplay)

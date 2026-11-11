@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
 #include "LoadoutStat_Type_struct_structs.hpp"
-#include "Engine_structs.hpp"
 #include "stat_icon_type_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

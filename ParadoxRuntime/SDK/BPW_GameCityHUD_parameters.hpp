@@ -151,33 +151,6 @@ public:
 };
 DUMPER7_ASSERTS_BPW_GameCityHUD_C_AddTutorialPopup;
 
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.PrograssGranted
-// 0x0040 (0x0040 - 0x0000)
-struct BPW_GameCityHUD_C_PrograssGranted final
-{
-public:
-	struct FProgressGrant                         Grant;                                             // 0x0000(0x0040)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BPW_GameCityHUD_C_PrograssGranted;
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.HandleUseQuickSlotFailed
-// 0x0001 (0x0001 - 0x0000)
-struct BPW_GameCityHUD_C_HandleUseQuickSlotFailed final
-{
-public:
-	ELoadoutQuickItemSlot                         QuickslotIndex;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPW_GameCityHUD_C_HandleUseQuickSlotFailed;
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Set Static Hud Visibility
-// 0x0001 (0x0001 - 0x0000)
-struct BPW_GameCityHUD_C_Set_Static_Hud_Visibility final
-{
-public:
-	bool                                          Visible_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BPW_GameCityHUD_C_Set_Static_Hud_Visibility;
-
 // Function BPW_GameCityHUD.BPW_GameCityHUD_C.GetLastLogin
 // 0x00B0 (0x00B0 - 0x0000)
 struct BPW_GameCityHUD_C_GetLastLogin final
@@ -206,15 +179,6 @@ public:
 	class FString                                 CallFunc_BuildString_Int_ReturnValue_1;            // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BPW_GameCityHUD_C_GetLastLogin;
-
-// Function BPW_GameCityHUD.BPW_GameCityHUD_C.GetPickupNotificationQueue
-// 0x0008 (0x0008 - 0x0000)
-struct BPW_GameCityHUD_C_GetPickupNotificationQueue final
-{
-public:
-	class Upickup_notification_queue_bpw_C*       PickupQueue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPW_GameCityHUD_C_GetPickupNotificationQueue;
 
 // Function BPW_GameCityHUD.BPW_GameCityHUD_C.ShouldShowStinger
 // 0x0028 (0x0028 - 0x0000)
@@ -250,6 +214,42 @@ public:
 	class FText                                   CallFunc_GetClientHuntPassXPMultiplierDisplay_ReturnValue; // 0x0008(0x0018)()
 };
 DUMPER7_ASSERTS_BPW_GameCityHUD_C_RefreshHuntXPMultiplier;
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.PrograssGranted
+// 0x0040 (0x0040 - 0x0000)
+struct BPW_GameCityHUD_C_PrograssGranted final
+{
+public:
+	struct FProgressGrant                         Grant;                                             // 0x0000(0x0040)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BPW_GameCityHUD_C_PrograssGranted;
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.HandleUseQuickSlotFailed
+// 0x0001 (0x0001 - 0x0000)
+struct BPW_GameCityHUD_C_HandleUseQuickSlotFailed final
+{
+public:
+	ELoadoutQuickItemSlot                         QuickslotIndex;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPW_GameCityHUD_C_HandleUseQuickSlotFailed;
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.Set Static Hud Visibility
+// 0x0001 (0x0001 - 0x0000)
+struct BPW_GameCityHUD_C_Set_Static_Hud_Visibility final
+{
+public:
+	bool                                          Visible_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BPW_GameCityHUD_C_Set_Static_Hud_Visibility;
+
+// Function BPW_GameCityHUD.BPW_GameCityHUD_C.GetPickupNotificationQueue
+// 0x0008 (0x0008 - 0x0000)
+struct BPW_GameCityHUD_C_GetPickupNotificationQueue final
+{
+public:
+	class Upickup_notification_queue_bpw_C*       PickupQueue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPW_GameCityHUD_C_GetPickupNotificationQueue;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

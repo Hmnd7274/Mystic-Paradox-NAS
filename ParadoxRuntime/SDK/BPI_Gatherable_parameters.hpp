@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "eqs_lobbed_projectile_data_structs.hpp"
 
 
 SDK_NAMESPACE_START

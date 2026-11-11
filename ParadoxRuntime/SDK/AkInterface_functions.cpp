@@ -20,9 +20,9 @@ SDK_NAMESPACE_START
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UAnimNotify_AkEvent_C*&     NotifyInstance                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   return_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void IAkInterface_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* return_0)
+void IAkInterface_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*& NotifyInstance, bool* Return)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"GetShouldExecuteAKNotify", FnName));
@@ -33,8 +33,8 @@ void IAkInterface_C::GetShouldExecuteAKNotify(const class UAnimNotify_AkEvent_C*
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 
-	if (return_0 != nullptr)
-		*return_0 = Parms.return_0;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 

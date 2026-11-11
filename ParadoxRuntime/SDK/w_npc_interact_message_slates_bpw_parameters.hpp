@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Archon_structs.hpp"
 #include "message_slate_parameters_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -70,18 +70,6 @@ void Abehemoth_terra_debuff_player_buff_C::OnPostMitDamage(const struct FPostMit
 }
 
 
-// Function behemoth_terra_debuff_player_buff.behemoth_terra_debuff_player_buff_C.OnAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Abehemoth_terra_debuff_player_buff_C::OnAdded()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function behemoth_terra_debuff_player_buff.behemoth_terra_debuff_player_buff_C.IsValidTarget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -103,6 +91,18 @@ void Abehemoth_terra_debuff_player_buff_C::IsValidTarget(class AActor* TargetAct
 
 	if (ValidTarget != nullptr)
 		*ValidTarget = Parms.ValidTarget;
+}
+
+
+// Function behemoth_terra_debuff_player_buff.behemoth_terra_debuff_player_buff_C.OnAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Abehemoth_terra_debuff_player_buff_C::OnAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

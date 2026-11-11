@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "E_aspect_mode_structs.hpp"
-#include "Engine_classes.hpp"
-#include "Archon_structs.hpp"
 #include "EquipmentVendor_structs.hpp"
+#include "Engine_classes.hpp"
+#include "stat_value_type_structs.hpp"
 #include "player_stat_type_structs.hpp"
 #include "LoadoutStatTypes_structs.hpp"
-#include "stat_value_type_structs.hpp"
+#include "Archon_structs.hpp"
+#include "E_aspect_mode_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -40,7 +40,7 @@ public:
 	static void ConvertElementFloatArrayToHUDStatArray(Eplayer_stat_type StatType, TArray<struct Felement_float_pair>& ElementFloatData, Estat_value_type StatValueType, class UObject* __WorldContext, TArray<struct Floadout_stat_info>* HUDStatArray);
 	static void SortElementFloatPairs(TArray<struct Felement_float_pair>& ElementFloatPairs, class UObject* __WorldContext, TArray<struct Felement_float_pair>* SortedElementFloatPairs);
 	static void CombineElementFloatPairs(TArray<struct Felement_float_pair>& FloatPairs1, TArray<struct Felement_float_pair>& FloatPairs2, class UObject* __WorldContext, TArray<struct Felement_float_pair>* CombinedArray);
-	static void GetElementFloatPairDeltas(TArray<struct Felement_float_pair>& Removing, TArray<struct Felement_float_pair>& Adding, class UObject* __WorldContext, TArray<struct Felement_float_pair>* Deltas);
+	static void GetElementFloatPairDeltas(TArray<struct Felement_float_pair>& removing, TArray<struct Felement_float_pair>& adding, class UObject* __WorldContext, TArray<struct Felement_float_pair>* Deltas);
 	static void GetWeaponMatchupText(float GlobalPower, float PrimaryElementPower, EArchonElementType PrimaryElementType, class UObject* __WorldContext, class FText* VsStrong, class FText* VsWeak, class FText* VsAllOrNeutral);
 	static void GetCurrentScreenAspectRatio(class UObject* __WorldContext, float* ExactRatio, E_aspect_mode* AvgAspectRatio);
 	static class UArchonInventoryItem* GetItem_from_Inventory_with_InstanceId(const class FString& ItemInstanceID, class UObject* __WorldContext);

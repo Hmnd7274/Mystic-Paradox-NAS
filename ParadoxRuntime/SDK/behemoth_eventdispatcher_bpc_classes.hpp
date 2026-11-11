@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "behemoth_states_enum_structs.hpp"
+#include "behemoth_state_event_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Archon_structs.hpp"
-#include "behemoth_state_event_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_classes.hpp"
 
 

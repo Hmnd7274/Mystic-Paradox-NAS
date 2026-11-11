@@ -88,18 +88,6 @@ void Alightning_stars_damage_buff_C::AuthAddStack()
 }
 
 
-// Function lightning_stars_damage_buff.lightning_stars_damage_buff_C.OnRemoved
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-
-void Alightning_stars_damage_buff_C::OnRemoved()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function lightning_stars_damage_buff.lightning_stars_damage_buff_C.OnPostMitigationHitWithWeapon_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -121,6 +109,18 @@ void Alightning_stars_damage_buff_C::OnPostMitigationHitWithWeapon_Event_0(class
 	Parms.Context = std::move(Context);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function lightning_stars_damage_buff.lightning_stars_damage_buff_C.OnRemoved
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+
+void Alightning_stars_damage_buff_C::OnRemoved()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemoved", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

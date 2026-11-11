@@ -32,8 +32,8 @@ public:
 public:
 	void ExecuteUbergraph_lanternhold_damaging_aura_ab(int32 EntryPoint);
 	void RockDamage();
-	void K2_OnEndAbility(bool bWasCancelled);
 	void K2_ActivateAbility();
+	void K2_OnEndAbility(bool bWasCancelled);
 
 	void CanUseInMontage(class UAnimMontage* ActiveMontage, bool* CanUse) const;
 

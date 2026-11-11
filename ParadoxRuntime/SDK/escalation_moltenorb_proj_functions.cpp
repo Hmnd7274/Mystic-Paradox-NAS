@@ -146,18 +146,6 @@ void Aescalation_moltenorb_proj_C::ProjectileExploded(const struct FVector& Expl
 }
 
 
-// Function escalation_moltenorb_proj.escalation_moltenorb_proj_C.OnProjectileStopped
-// (BlueprintCallable, BlueprintEvent)
-
-void Aescalation_moltenorb_proj_C::OnProjectileStopped()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function escalation_moltenorb_proj.escalation_moltenorb_proj_C.GameplayCue.Combat.OnDamageReceived
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -197,6 +185,18 @@ void Aescalation_moltenorb_proj_C::GetTarget(class AActor* AttackingActor, class
 
 	if (TargetActor != nullptr)
 		*TargetActor = Parms.TargetActor;
+}
+
+
+// Function escalation_moltenorb_proj.escalation_moltenorb_proj_C.OnProjectileStopped
+// (BlueprintCallable, BlueprintEvent)
+
+void Aescalation_moltenorb_proj_C::OnProjectileStopped()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnProjectileStopped", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

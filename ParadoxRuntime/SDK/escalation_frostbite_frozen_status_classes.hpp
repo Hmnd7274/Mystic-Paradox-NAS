@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "badge_infos_structs.hpp"
+#include "status_effect_frozen_debuff_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 #include "player_score_info_structs.hpp"
 #include "Engine_structs.hpp"
-#include "status_effect_frozen_debuff_classes.hpp"
+#include "badge_infos_structs.hpp"
 #include "Archon_structs.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -47,12 +47,12 @@ public:
 
 public:
 	void ExecuteUbergraph_escalation_frostbite_frozen_status(int32 EntryPoint);
-	void OnAdded();
-	void ReceiveDestroyed();
-	void OnRemoved();
 	void MulticastOnAdded();
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void OnAdded();
+	void ReceiveDestroyed();
+	void OnRemoved();
 
 public:
 	static class UClass* StaticClass()

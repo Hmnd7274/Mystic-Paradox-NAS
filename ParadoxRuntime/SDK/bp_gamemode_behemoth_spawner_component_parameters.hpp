@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "behemoth_spawn_params_structs.hpp"
 #include "threat_level_data_structs.hpp"
-#include "Archon_structs.hpp"
+#include "Engine_structs.hpp"
 #include "behemoth_tuning_data_structs.hpp"
 #include "behemoth_intro_cinematic_data_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "behemoth_spawn_params_structs.hpp"
-#include "Engine_structs.hpp"
+#include "Archon_structs.hpp"
 
 
 SDK_NAMESPACE_START

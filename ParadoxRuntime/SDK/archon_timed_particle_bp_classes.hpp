@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_requirement_struct_structs.hpp"
 #include "Archon_classes.hpp"
+#include "behemoth_requirement_struct_structs.hpp"
 #include "player_requirements_str_structs.hpp"
 #include "behemoth_requirement_result_structs.hpp"
 

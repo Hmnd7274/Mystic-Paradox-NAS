@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ability_quick_item_play_montage_base_classes.hpp"
 #include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ability_quick_item_play_montage_base_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -29,7 +29,7 @@ public:
 	void ExecuteUbergraph_Ability_QuickItem_SupplyDrop(int32 EntryPoint);
 	void Spot_Found(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus);
 	void OnActivateAbilityImpl();
-	void ApplyEffect(const struct FVector& Spawn_location);
+	void ApplyEffect(const struct FVector& Spawn_Location);
 	void HasEnoughToApplyEffect(bool* Result);
 
 	void CustomCanActivateAbility(class AActor* ActorInfoOwnerActor, class AActor* ActorInfoAvatarActor, class APlayerController* ActorInfoPlayerController, class UAbilitySystemComponent* ActorInfoAbilitySystemComponent, class UAnimInstance* ActorInfoAnimInstance, class UMovementComponent* ActorInfoMovementComponent, bool* CanUse) const;

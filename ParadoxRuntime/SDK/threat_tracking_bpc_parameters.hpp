@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "intensity_level_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "threat_details_structs.hpp"
 #include "Engine_structs.hpp"
+#include "intensity_level_structs.hpp"
+#include "threat_details_structs.hpp"
+#include "GameplayTags_structs.hpp"
 
 
 SDK_NAMESPACE_START

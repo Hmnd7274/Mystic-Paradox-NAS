@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "progression_event_structs.hpp"
+#include "Eui_character_screen_mode_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "progression_award_structs.hpp"
-#include "progression_event_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Archon_structs.hpp"
 #include "Archon_classes.hpp"
-#include "Eui_character_screen_mode_structs.hpp"
 #include "EndOfMatch_GameType_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
 
@@ -26,7 +26,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPH_ArchonHUD.BPH_ArchonHUD_C
 // 0x0190 (0x0540 - 0x03B0)
-class ABPH_ArchonHUD_C final : public AArchonHUD
+class ABPH_ArchonHUD_C : public AArchonHUD
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient, UObjectWrapper)

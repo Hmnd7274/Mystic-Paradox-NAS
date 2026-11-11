@@ -13,10 +13,10 @@
 #include "loot_condition_type_structs.hpp"
 #include "badge_wrapper_thx_unreal_structs.hpp"
 #include "Archon_structs.hpp"
-#include "player_highlight_info_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "player_score_wrapper_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "CinematicPlayerState_structs.hpp"
+#include "player_highlight_info_structs.hpp"
 #include "EndOfMatch_GameType_structs.hpp"
 
 

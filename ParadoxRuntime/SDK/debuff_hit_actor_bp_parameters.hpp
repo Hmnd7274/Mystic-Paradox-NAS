@@ -91,15 +91,6 @@ public:
 };
 DUMPER7_ASSERTS_debuff_hit_actor_bp_C_ExecuteUbergraph_debuff_hit_actor_bp;
 
-// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct debuff_hit_actor_bp_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_debuff_hit_actor_bp_C_ReceiveTick;
-
 // Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.MultiSpawnHitEvent
 // 0x0040 (0x0040 - 0x0000)
 struct debuff_hit_actor_bp_C_MultiSpawnHitEvent final
@@ -178,6 +169,15 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_debuff_hit_actor_bp_C_DoDamage;
+
+// Function debuff_hit_actor_bp.debuff_hit_actor_bp_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct debuff_hit_actor_bp_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_debuff_hit_actor_bp_C_ReceiveTick;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

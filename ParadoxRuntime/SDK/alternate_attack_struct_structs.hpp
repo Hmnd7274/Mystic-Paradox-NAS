@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "montage_probability_structs.hpp"
 #include "blackboard_comparison_structs.hpp"
+#include "montage_probability_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
-#include "eqs_lobbed_projectile_data_structs.hpp"
 #include "fauna_base_bp_classes.hpp"
 #include "fauna_loco_state_enum_structs.hpp"
 

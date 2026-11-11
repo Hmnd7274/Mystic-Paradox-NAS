@@ -30,12 +30,12 @@ public:
 public:
 	void ExecuteUbergraph_player_wound_aetherstate_buff(int32 EntryPoint);
 	void MulticastOnAdded();
-	void ReceiveDestroyed();
-	void OnRemoved();
 	void MulticastOnRefreshed();
 	void Apply_VFX();
 	void ReceiveBeginPlay();
 	void GetMagnitudes();
+	void ReceiveDestroyed();
+	void OnRemoved();
 
 public:
 	static class UClass* StaticClass()

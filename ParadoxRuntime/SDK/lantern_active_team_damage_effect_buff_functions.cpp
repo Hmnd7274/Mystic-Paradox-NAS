@@ -34,18 +34,6 @@ void Alantern_active_team_damage_effect_buff_C::ExecuteUbergraph_lantern_active_
 }
 
 
-// Function lantern_active_team_damage_effect_buff.lantern_active_team_damage_effect_buff_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void Alantern_active_team_damage_effect_buff_C::ReceiveDestroyed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function lantern_active_team_damage_effect_buff.lantern_active_team_damage_effect_buff_C.SpawnVFX
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -115,6 +103,18 @@ void Alantern_active_team_damage_effect_buff_C::ReceiveTick(float DeltaSeconds)
 	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function lantern_active_team_damage_effect_buff.lantern_active_team_damage_effect_buff_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void Alantern_active_team_damage_effect_buff_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

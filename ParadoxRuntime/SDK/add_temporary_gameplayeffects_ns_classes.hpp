@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "effect_magitudes_struct_structs.hpp"
 #include "Engine_classes.hpp"
+#include "effect_magitudes_struct_structs.hpp"
 
 
 SDK_NAMESPACE_START

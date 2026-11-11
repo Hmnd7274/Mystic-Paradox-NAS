@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "behemoth_requirement_result_structs.hpp"
-#include "Engine_classes.hpp"
 #include "stagger_type_structs.hpp"
 #include "behemoth_requirement_struct_structs.hpp"
 #include "damage_types_structs.hpp"
+#include "Engine_classes.hpp"
+#include "behemoth_requirement_result_structs.hpp"
 
 
 SDK_NAMESPACE_START

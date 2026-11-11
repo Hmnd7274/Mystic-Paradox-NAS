@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "hide_or_show_structs.hpp"
 #include "Engine_classes.hpp"
+#include "hide_or_show_structs.hpp"
 
 
 SDK_NAMESPACE_START

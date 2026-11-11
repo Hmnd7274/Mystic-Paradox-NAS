@@ -365,26 +365,26 @@ void UUserWidgetFunctions_C::CombineElementFloatPairs(TArray<struct Felement_flo
 // Function UserWidgetFunctions.UserWidgetFunctions_C.GetElementFloatPairDeltas
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct Felement_float_pair>&     Removing                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<struct Felement_float_pair>&     Adding                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct Felement_float_pair>&     removing                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct Felement_float_pair>&     adding                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct Felement_float_pair>*     Deltas                                                 (Parm, OutParm)
 
-void UUserWidgetFunctions_C::GetElementFloatPairDeltas(TArray<struct Felement_float_pair>& Removing, TArray<struct Felement_float_pair>& Adding, class UObject* __WorldContext, TArray<struct Felement_float_pair>* Deltas)
+void UUserWidgetFunctions_C::GetElementFloatPairDeltas(TArray<struct Felement_float_pair>& removing, TArray<struct Felement_float_pair>& adding, class UObject* __WorldContext, TArray<struct Felement_float_pair>* Deltas)
 {
 	static ReloadableFuncInfo FuncInfo;
 	class UFunction* Func = GetStaticFunction(StaticClass(), "UserWidgetFunctions_C", "GetElementFloatPairDeltas", FuncInfo);
 
 	Params::UserWidgetFunctions_C_GetElementFloatPairDeltas Parms{};
 
-	Parms.Removing = std::move(Removing);
-	Parms.Adding = std::move(Adding);
+	Parms.removing = std::move(removing);
+	Parms.adding = std::move(adding);
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
-	Removing = std::move(Parms.Removing);
-	Adding = std::move(Parms.Adding);
+	removing = std::move(Parms.removing);
+	adding = std::move(Parms.adding);
 
 	if (Deltas != nullptr)
 		*Deltas = std::move(Parms.Deltas);

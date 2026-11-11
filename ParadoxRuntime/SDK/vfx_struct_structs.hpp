@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "vfx_states_structs.hpp"
 #include "Archon_structs.hpp"
-#include "vfx_components_structs.hpp"
+#include "vfx_states_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "vfx_components_structs.hpp"
 #include "EElementalTypes_structs.hpp"
 
 

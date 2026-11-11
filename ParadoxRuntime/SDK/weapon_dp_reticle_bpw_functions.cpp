@@ -34,6 +34,26 @@ void Uweapon_dp_reticle_bpw_C::ExecuteUbergraph_weapon_dp_reticle_bpw(int32 Entr
 }
 
 
+// Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Uweapon_dp_reticle_bpw_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::weapon_dp_reticle_bpw_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -73,26 +93,6 @@ void Uweapon_dp_reticle_bpw_C::ShowEmpoweredReticle(bool bShow, class Adp_weapon
 
 	Parms.bShow = bShow;
 	Parms.DPWeapon = DPWeapon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function weapon_dp_reticle_bpw.weapon_dp_reticle_bpw_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Uweapon_dp_reticle_bpw_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::weapon_dp_reticle_bpw_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
