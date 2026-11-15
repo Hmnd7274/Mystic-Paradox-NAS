@@ -1,0 +1,35 @@
+{
+  "comment": "Custom daily fountain offer using catalogued Dauntless items: one Daily Core and four standard Bounty Tokens.",
+  "skus": [
+    {
+      "id": "custom_fountain_daily_core_tokens",
+      "displayName": "Daily Fountain Reward",
+      "displayDescription": "Claim one Daily Core and four Bounty Tokens.",
+      "displayPriority": 0,
+      "prices": [
+        {
+          "currencyId": "id_currency_platinum",
+          "price": 0
+        }
+      ],
+      "maxAllowed": 1,
+      "images": {},
+      "tags": [
+        "fountain_daily_free_bundle"
+      ],
+      "items": [
+        {
+          "catalogId": "CONTAINER_CORE_REWARD_DAILY",
+          "quantity": 1,
+          "instanced": false
+        },
+        {
+          "catalogId": "TOKEN_BOUNTY_DRAFT",
+          "quantity": 4,
+          "instanced": false
+        }
+      ],
+      "duplicateInstancedItems": []
+    }
+  ]
+}

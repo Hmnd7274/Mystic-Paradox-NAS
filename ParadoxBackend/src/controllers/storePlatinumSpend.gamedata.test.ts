@@ -6,10 +6,10 @@ import { GetStoreSkus, PurchaseStoreSku } from "./store";
 // transaction with the SKU as its economy scope, so the spend is logged as a STORE spend for that SKU. Uses the real platinum store
 // data (game-data), through the store's own transaction seam.
 
-test("a store purchase priced in Platinum runs its transaction as a STORE spend of its SKU", async () => {
+test("a converted store purchase runs its transaction as a STORE spend of its SKU", async () => {
     const Sku = GetStoreSkus("webstore").find((Candidate) =>
-        Candidate.prices.some((Price) => /platinum/i.test(String(Price.currencyId)) && Price.price > 0));
-    assert.ok(Sku, "the platinum store has a Platinum-priced SKU");
+        Candidate.prices.some((Price) => /notes/i.test(String(Price.currencyId)) && Price.price > 0));
+    assert.ok(Sku, "the converted store has a Rams-priced SKU");
 
     let Captured: unknown[] | undefined;
     const Result = await PurchaseStoreSku("store-user-1", "store-character-1", "webstore", Sku.id, true, {
@@ -25,6 +25,6 @@ test("a store purchase priced in Platinum runs its transaction as a STORE spend 
     const Options = Captured[8] as { economy?: unknown };
     assert.deepEqual(Options.economy, { source: "STORE", storeSkuId: Sku.id });
     const Removes = Captured[6] as Array<{ catalogId: string; quantity: number }>;
-    assert.ok(Removes.some((Remove) => Remove.catalogId === "CURRENCY_PLATINUM" && Remove.quantity > 0),
-        "the price is a Platinum removal");
+    assert.ok(Removes.some((Remove) => Remove.catalogId === "CURRENCY_NOTES" && Remove.quantity > 0),
+        "the price is a Rams removal");
 });

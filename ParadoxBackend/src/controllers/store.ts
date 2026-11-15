@@ -342,13 +342,13 @@ const CURRENCY_ID_MAP: Record<string, string> = {
     // [1.14.7 2026-10-08] The Reward Cache is priced in the 1.14.7 seasonal coin (the HUD's blue-star "Cache Coins").
     id_currency_seasonal_coin: "CURRENCY_SEASONAL_COIN",
     id_currency_rewardcache: "CURRENCY_REWARDCACHE",
+    id_currency_notes: "CURRENCY_NOTES",
     // [2026-07-30] Platinum resolves to the AGGREGATE id; ApplyCurrencyDeltas splits the debit across
     // the real per-storefront buckets (platinumWallet.ts). Without this entry the fallback below
     // produced "ID_CURRENCY_PLATINUM", which fails the CURRENCY_ prefix test in ApplyCurrencyDeltas and
     // is then treated as a stacked ITEM removal - so a platinum SKU would have failed with a confusing
     // InsufficientStackedItemError (unmapped -> 500) instead of charging anything. It failed closed,
     // but it would have failed. See Progress/33_PLATINUM_STORE.md.
-    id_currency_notes: "CURRENCY_NOTES",
     id_currency_platinum: "CURRENCY_PLATINUM",
 };
 

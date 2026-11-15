@@ -347,13 +347,13 @@ const CLIENT_WEBSTORE_SUBTAGS = new Set([
     "tab_platstore_vault", "1stparty",
 ]);
 
-test("every platinum section is registered and priced in platinum only", () => {
+test("every legacy Platinum section is registered and priced in Rams", () => {
     for (const Section of PLATINUM_SECTIONS) {
         const Skus = GetStoreSkus(Section);
         assert(Skus.length > 0, `${Section} is empty`);
         for (const Sku of Skus) {
             assert.equal(Sku.prices.length, 1, Sku.id);
-            assert.equal(Sku.prices[0].currencyId, "id_currency_platinum", Sku.id);
+            assert.equal(Sku.prices[0].currencyId, "id_currency_notes", Sku.id);
             assert(Sku.prices[0].price > 0, `${Sku.id} is free`);
             assert(Sku.tags.includes(Section), `${Sku.id} missing its section tag`);
         }
@@ -414,7 +414,7 @@ test("rank skips carry a progression payload and no item grant", () => {
 
     const Twenty = Skus.find((Sku) => Sku.id === "hp_level_skip_20_ranks");
     assert(Twenty);
-    assert.equal(Twenty.prices[0].price, 3000);
+    assert.equal(Twenty.prices[0].price, 45000);
 });
 
 test("captured Hunt Pass offers grant their expected entitlements", () => {
@@ -463,7 +463,7 @@ test("captured Hunt Pass offers grant their expected entitlements", () => {
     const Gilded = Passes.find((Sku) => Sku.id === "pass_rewardcache_season15a");
 
     assert(Gilded);
-    assert.equal(Gilded.prices[0].price, 950);
+    assert.equal(Gilded.prices[0].price, 14250);
     assert.deepEqual(
         Gilded.entitlements,
         [{ name: "pass_rewardcache_season15a", duration: 0 }]
@@ -501,7 +501,7 @@ test("Middleman fusion slots 2 and 3 are sold for 1,000 Platinum as permanent en
         assert.equal(Skus.length, 1);
         const Sku = Skus[0];
         assert.equal(Sku.id, `single_exchange_slot_${Slot}`);
-        assert.deepEqual(Sku.prices, [{ currencyId: "id_currency_platinum", price: 1000 }]);
+        assert.deepEqual(Sku.prices, [{ currencyId: "id_currency_notes", price: 15000 }]);
         assert.deepEqual(Sku.entitlements, [{ name: `exchange_slot_${Slot}`, duration: 0 }]);
         assert.equal(Sku.maxAllowed, 1);
         assert.deepEqual(Sku.items, []);

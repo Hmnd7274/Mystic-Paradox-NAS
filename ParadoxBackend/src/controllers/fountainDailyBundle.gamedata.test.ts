@@ -111,6 +111,18 @@ test("the served offer is free, stacked-only and reachable only by its own SKU i
     assert.deepEqual(OFFER!.prices, [{ currencyId: "id_currency_platinum", price: 0 }]);
     assert.ok(OFFER!.tags.includes(TAG));
     assert.ok(OFFER!.items.length > 0);
+    assert.deepEqual(
+        OFFER!.items.map((Item) => ({
+            catalogId: Item.catalogId,
+            quantity: Item.quantity,
+            instanced: Item.instanced,
+        })),
+        [
+            { catalogId: "CONTAINER_CORE_REWARD_DAILY", quantity: 1, instanced: false },
+            { catalogId: "TOKEN_BOUNTY_DRAFT", quantity: 4, instanced: false },
+        ],
+        "the daily fountain reward is one Fountain Core and four standard Bounty Tokens",
+    );
     assert.ok(OFFER!.items.every((Item) => Item.instanced === false && Number.isSafeInteger(Item.quantity) && Item.quantity > 0));
     assert.deepEqual(OFFER!.entitlements ?? [], []);
     assert.equal(OFFER!.skuProgression ?? null, null);
@@ -201,9 +213,9 @@ test("a zero price never reaches the wallet; paid offers still debit", { skip: N
         { nowMs: BEFORE_RESET, runTransaction: Paid.RunTransaction });
     await PurchaseStoreSku("user-a", "user-a-character", "exchange_vendor_slot_2", "single_exchange_slot_2", true,
         { nowMs: AFTER_RESET + 7 * 24 * 60 * 60 * 1000, runTransaction: Paid.RunTransaction });
-    assert.deepEqual(Paid.Calls[0].stackedRemoves, [{ catalogId: "CURRENCY_PLATINUM", quantity: 1000 }]);
+    assert.deepEqual(Paid.Calls[0].stackedRemoves, [{ catalogId: "CURRENCY_NOTES", quantity: 15000 }]);
     assert.equal(Paid.Calls[1].transactionId, Paid.Calls[0].transactionId);
-    assert.deepEqual(Paid.Wallet, { CURRENCY_PLATINUM: -1000 }, "charged once (the fake wallet has no balance check)");
+    assert.deepEqual(Paid.Wallet, { CURRENCY_NOTES: -15000 }, "charged once in Rams (the fake wallet has no balance check)");
 });
 
 test("the listing fails closed", { skip: NO_OFFER }, async () => {

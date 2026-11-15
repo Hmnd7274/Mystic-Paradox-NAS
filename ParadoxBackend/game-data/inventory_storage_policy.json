@@ -13755,5 +13755,21 @@
         "WeaponType_MSPEAR"
       ]
     }
+  },
+  "CONTAINER_CORE_REWARD_DAILY": {
+    "storage": "stacked",
+    "maxQuantity": 0,
+    "tags": [
+      "tank",
+      "tank_Model_C",
+      "TANK"
+    ]
+  },
+  "TOKEN_BOUNTY_DRAFT": {
+    "storage": "stacked",
+    "maxQuantity": 0,
+    "tags": [
+      "token"
+    ]
   }
 }

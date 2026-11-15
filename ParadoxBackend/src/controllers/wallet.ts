@@ -27,7 +27,7 @@ const NO_PLAYER_SENTINEL = "INVALID";
 //   CURRENCY_PJM_WEAPON = Combat Merit (Slayer's Path weapon branch)  [icon ui_icon_merit_combat]
 //   CURRENCY_PJM_*      = the other Slayer's Path merit branches
 export const STARTER_WALLET: Record<string, number> = {
-    CURRENCY_NOTES: 5000,
+    CURRENCY_NOTES: 0,
     CURRENCY_PJM_WEAPON: 50,
     CURRENCY_PJM_ARMOR: 50,
     CURRENCY_PJM_ALCHEMY: 50,
