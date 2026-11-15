@@ -1,0 +1,185 @@
+diff --git a/ParadoxRuntime/dllmain.cpp b/ParadoxRuntime/dllmain.cpp
+index 2dde212..6adafa4 100644
+--- a/ParadoxRuntime/dllmain.cpp
++++ b/ParadoxRuntime/dllmain.cpp
+@@ -43,6 +43,7 @@
+ #include "SDK/Archon_parameters.hpp"
+ #include "SDK/lantern_equipped_ab_parameters.hpp"
+ #include "SDK/base_gameobject_bp_parameters.hpp"
++#include "SDK/OnlineSubsystemPhoenix_classes.hpp"
+ 
+ #include <cwchar>
+ #include <fstream>
+@@ -14358,6 +14359,152 @@ namespace TravelCause {
+     }
+ }
+ 
++// [2026-11-15 STORE RAMS PRICE FIX]
++// Phoenix's legacy PlatPrice/DustPrice fields are -1 for data-backed Rams offers. The authoritative
++// amount is UStoreOfferBlueprintLibrary::GetPriceDetails(StoreItem), whose entries carry Price,
++// RegularPrice, formatted FText values, and CurrencyId. Apply those values to the item ViewModel
++// immediately before the store-item Blueprint refreshes its UI.
++//
++// The CurrencyDataTable contains a valid CURRENCY_NOTES row (DisplayName=Rams, gold Rams icon),
++// while the backend-facing id_currency_notes row has no presentation data. During this one
++// synchronous OnUpdatedViewModel dispatch, temporarily alias the two CurrencyCode fields to
++// CURRENCY_NOTES so the existing Blueprint resolves the proper icon/name. Restore the exact
++// original strings immediately after the Blueprint returns. In particular, StoreItem.CurrencyCode
++// is never left changed, so the purchase path keeps id_currency_notes.
++struct MpStoreRamsPriceRestoreState {
++    void* ViewModel = nullptr;
++    void* Offer = nullptr;
++    std::wstring ViewModelCurrencyCode;
++    std::wstring OfferCurrencyCode;
++    bool RestoreViewModelCurrencyCode = false;
++    bool RestoreOfferCurrencyCode = false;
++};
++
++static bool MpReadStoreFString(const void* Address, std::wstring& Out) {
++    struct RawFString { wchar_t* Data; int32_t Num; int32_t Max; };
++    Out.clear();
++    if (!Address || !IsReadablePointer(Address, sizeof(RawFString))) return false;
++    const auto* Value = reinterpret_cast<const RawFString*>(Address);
++    if (!Value->Data || Value->Num <= 0 || Value->Num > 256 || Value->Max < Value->Num
++        || !IsReadablePointer(Value->Data, static_cast<size_t>(Value->Num) * sizeof(wchar_t))) {
++        return false;
++    }
++    const int32_t Length = Value->Data[Value->Num - 1] == L'\0' ? Value->Num - 1 : Value->Num;
++    Out.assign(Value->Data, Value->Data + Length);
++    return true;
++}
++
++static void MpRestoreStoreRamsPriceCurrencyCodes(MpStoreRamsPriceRestoreState& State) {
++    if (State.RestoreViewModelCurrencyCode && State.ViewModel) {
++        MpWriteEngineFString(reinterpret_cast<uint8_t*>(State.ViewModel) + 0x640,
++            State.ViewModelCurrencyCode);
++    }
++    if (State.RestoreOfferCurrencyCode && State.Offer) {
++        MpWriteEngineFString(reinterpret_cast<uint8_t*>(State.Offer) + 0x0E0,
++            State.OfferCurrencyCode);
++    }
++    State = {};
++}
++
++static bool MpPrepareStoreRamsPriceForWidget(UObject* Widget, MpStoreRamsPriceRestoreState& Restore) {
++    if (!Widget || !IsRegisteredLiveObject(Widget)
++        || !Widget->IsA(SDK::UStoreItemWidget::StaticClass())) {
++        return false;
++    }
++
++    // UStoreItemWidget::StoreItemViewModel (+0x538); fields below are the 1.14.7 SDK offsets.
++    const uintptr_t WidgetAddress = reinterpret_cast<uintptr_t>(Widget);
++    if (!IsReadablePointer(reinterpret_cast<void*>(WidgetAddress + 0x538), sizeof(void*))) return false;
++    auto* ViewModel = reinterpret_cast<UObject*>(
++        *reinterpret_cast<void**>(WidgetAddress + 0x538));
++    if (!ViewModel || !IsRegisteredLiveObject(ViewModel)) return false;
++
++    const uintptr_t VmAddress = reinterpret_cast<uintptr_t>(ViewModel);
++    auto* Offer = reinterpret_cast<SDK::FOnlineStorePhoenixOffer*>(VmAddress + 0x650);
++    if (!IsReadablePointer(Offer, sizeof(SDK::FOnlineStorePhoenixOffer))) return false;
++
++    // Use the Phoenix price-details API; do not infer Rams from the legacy StoreCurrency enum.
++    const SDK::TArray<SDK::FOnlineStorePhoenixPriceDetails> PriceDetails =
++        SDK::UStoreOfferBlueprintLibrary::GetPriceDetails(*Offer);
++    const int32_t Count = PriceDetails.Num();
++    const auto* Entries = PriceDetails.GetDataPtr();
++    if (Count <= 0 || Count > 32 || PriceDetails.Max() < Count || !Entries
++        || !IsReadablePointer(Entries, static_cast<size_t>(Count) * sizeof(SDK::FOnlineStorePhoenixPriceDetails))) {
++        return false;
++    }
++
++    const SDK::FOnlineStorePhoenixPriceDetails* Rams = nullptr;
++    for (int32_t Index = 0; Index < Count; ++Index) {
++        const std::string CurrencyId = Entries[Index].CurrencyId.ToString();
++        if (CurrencyId == "id_currency_notes" || CurrencyId == "CURRENCY_NOTES") {
++            Rams = &Entries[Index];
++            break;
++        }
++    }
++    if (!Rams || Rams->Price < 0) return false;
++
++    const int32_t CurrentPrice = Rams->Price;
++    const int32_t RegularPrice = Rams->RegularPrice >= 0 ? Rams->RegularPrice : CurrentPrice;
++
++    // UStoreItemViewModel: ItemPrice FText +0x170, ItemCurrentPrice +0x188,
++    // ItemPriceNumber +0x24C, ItemCurrentPriceNumber +0x250.
++    *reinterpret_cast<int32_t*>(VmAddress + 0x24C) = RegularPrice;
++    *reinterpret_cast<int32_t*>(VmAddress + 0x250) = CurrentPrice;
++
++    // FText is an opaque 0x18-byte engine value. Copy the engine-generated localized texts
++    // returned by GetPriceDetails rather than formatting/guessing the currency ourselves.
++    static_assert(sizeof(SDK::FText) == 0x18, "Unexpected 1.14.7 FText size");
++    const void* CurrentTextData = *reinterpret_cast<void* const*>(&Rams->PriceText);
++    if (CurrentTextData && IsReadablePointer(CurrentTextData, 0x10)
++        && IsReadablePointer(&Rams->PriceText, sizeof(SDK::FText))) {
++        std::memcpy(reinterpret_cast<void*>(VmAddress + 0x188), &Rams->PriceText, sizeof(SDK::FText));
++    }
++    const SDK::FText& RegularText = Rams->RegularPrice >= 0 ? Rams->RegularPriceText : Rams->PriceText;
++    const void* RegularTextData = *reinterpret_cast<void* const*>(&RegularText);
++    if (RegularTextData && IsReadablePointer(RegularTextData, 0x10)
++        && IsReadablePointer(&RegularText, sizeof(SDK::FText))) {
++        std::memcpy(reinterpret_cast<void*>(VmAddress + 0x170), &RegularText, sizeof(SDK::FText));
++    }
++
++    // The valid row in CurrencyDataTable is named CURRENCY_NOTES; the current id_currency_notes
++    // row is intentionally empty in the captured table. Change only the display keys for the
++    // duration of this widget refresh, saving the exact originals for restoration afterwards.
++    static const std::wstring kBackendCurrencyCode = L"id_currency_notes";
++    static const std::wstring kDisplayCurrencyCode = L"CURRENCY_NOTES";
++    std::wstring OriginalViewModelCode;
++    if (MpReadStoreFString(reinterpret_cast<void*>(VmAddress + 0x640), OriginalViewModelCode)
++        && OriginalViewModelCode == kBackendCurrencyCode
++        && MpWriteEngineFString(reinterpret_cast<void*>(VmAddress + 0x640), kDisplayCurrencyCode)) {
++        Restore.ViewModel = ViewModel;
++        Restore.ViewModelCurrencyCode = OriginalViewModelCode;
++        Restore.RestoreViewModelCurrencyCode = true;
++    }
++
++    std::wstring OriginalOfferCode;
++    void* OfferCurrencyCodeAddress = reinterpret_cast<uint8_t*>(Offer) + 0x0E0;
++    if (MpReadStoreFString(OfferCurrencyCodeAddress, OriginalOfferCode)
++        && OriginalOfferCode == kBackendCurrencyCode
++        && MpWriteEngineFString(OfferCurrencyCodeAddress, kDisplayCurrencyCode)) {
++        Restore.Offer = Offer;
++        Restore.OfferCurrencyCode = OriginalOfferCode;
++        Restore.RestoreOfferCurrencyCode = true;
++    }
++
++    static std::atomic<int> s_storeRamsFixLogCount{ 0 };
++    if (s_storeRamsFixLogCount.fetch_add(1, std::memory_order_relaxed) < 48) {
++        MpLog("[StoreRamsPrice] patched widget=" + MpPtr(Widget)
++            + " viewModel=" + MpPtr(ViewModel)
++            + " sku=" + CoreCapFString(reinterpret_cast<void*>(VmAddress + 0x650))
++            + " currency=id_currency_notes display=CURRENCY_NOTES"
++            + " regular=" + std::to_string(RegularPrice)
++            + " current=" + std::to_string(CurrentPrice)
++            + " details=" + std::to_string(Count)
++            + " vmCodeOverride=" + std::to_string(Restore.RestoreViewModelCurrencyCode ? 1 : 0)
++            + " offerCodeOverride=" + std::to_string(Restore.RestoreOfferCurrencyCode ? 1 : 0));
++    }
++    return true;
++}
++
+ void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
+     g_clientProcessEventCount.fetch_add(1, std::memory_order_relaxed);
+     if (g_clientGameThreadId.load(std::memory_order_relaxed) == 0) {
+@@ -14827,7 +14974,19 @@ void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
+ 
+     const int GauntletCensusSeq = GauntletCensus::Enter(Object, Function, FunctionName, Parms);
+     const int32_t TravelUrlNumBefore = TravelCause::Before(FunctionNameEntry);
++
++    // Patch only the store item's BP refresh, immediately before its own handler reads the ViewModel.
++    // The currency-code alias is restored directly after this synchronous ProcessEvent call.
++    MpStoreRamsPriceRestoreState StoreRamsRestore;
++    const bool IsStoreItemViewModelUpdate = Function
++        && FunctionName.find("OnUpdatedViewModel") != std::string::npos
++        && MpPrepareStoreRamsPriceForWidget(Object, StoreRamsRestore);
++
+     reinterpret_cast<void(*)(UObject*, UFunction*, void*)>(OrigProcessEventClient)(Object, Function, Parms);
++
++    if (IsStoreItemViewModelUpdate) {
++        MpRestoreStoreRamsPriceCurrencyCodes(StoreRamsRestore);
++    }
+     TravelCause::After(FunctionNameEntry, TravelUrlNumBefore);
+     GauntletCensus::Exit(GauntletCensusSeq, Function, Parms);
+     TraceArtificerDroneEvent("Client", "EXIT", Object, FunctionName, Parms);

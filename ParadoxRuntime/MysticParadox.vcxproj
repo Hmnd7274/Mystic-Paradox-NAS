@@ -181,6 +181,7 @@
     <ClCompile Include="p2p\AntiCheatHooksStub.cpp" Condition="Exists('p2p\PlayerHost.cpp') And !Exists('anticheat\HuntGuard.cpp')" />
     <ClCompile Include="anticheat\HuntGuard.cpp" Condition="Exists('p2p\PlayerHost.cpp') And Exists('anticheat\HuntGuard.cpp')" />
     <ClCompile Include="SDK\Archon_functions.cpp" />
+    <ClCompile Include="SDK\OnlineSubsystemPhoenix_functions.cpp" />
     <ClCompile Include="SDK\Basic.cpp" />
     <ClCompile Include="SDK\BPGM_Archon_Prototype_functions.cpp" />
     <ClCompile Include="SDK\BP_EB_Weapon_functions.cpp" />
