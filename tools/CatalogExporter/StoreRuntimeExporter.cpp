@@ -1,4 +1,4 @@
-/*
+﻿/*
  * StoreRuntimeExporter - read-only capture of the loaded 1.12 store view-model state.
  *
  * PURPOSE
@@ -222,6 +222,10 @@ __declspec(noinline) static void RawSerializeStoreItemViewModel(UStoreItemViewMo
     line += ",\"displayName\":" + Q(FTxt(vm->DisplayName));
     line += ",\"displayDescription\":" + Q(FTxt(vm->DisplayDescription));
     line += ",\"displayItemType\":" + Q(FTxt(vm->DisplayItemType));
+    line += ",\"itemPriceText\":" + Q(FTxt(vm->ItemPrice));
+    line += ",\"itemCurrentPriceText\":" + Q(FTxt(vm->ItemCurrentPrice));
+    line += ",\"itemOfferOffPercentText\":" + Q(FTxt(vm->ItemOfferOffPercent));
+    line += ",\"isPlatinum\":" + std::string(vm->bIsPlatinum ? "true" : "false");
     line += ",\"itemPriceNumber\":" + std::to_string(vm->ItemPriceNumber);
     line += ",\"itemCurrentPriceNumber\":" + std::to_string(vm->ItemCurrentPriceNumber);
     line += ",\"storeCurrencyEnum\":" + std::to_string(static_cast<int>(vm->StoreCurrency));
@@ -336,6 +340,115 @@ static bool HasLoadedStoreTag(const std::string& requiredTag) {
     return false;
 }
 
+// Read-only export of the actual CurrencyDataTable referenced by the loaded Webstore.
+static std::string CurrencyGroupArray(const TArray<ECurrencyGroup>& values) {
+    std::string out = "[";
+    for (int i = 0; i < values.Num(); ++i) {
+        if (i) out += ",";
+        out += std::to_string(static_cast<int>(values[i]));
+    }
+    return out + "]";
+}
+
+__declspec(noinline) static void RawSerializeCurrencyRow(
+    const std::string& tableName,
+    const std::string& rowName,
+    const FCurrencyTableData& row,
+    std::string* out
+) {
+    *out = "{\"table\":" + Q(tableName)
+        + ",\"rowName\":" + Q(rowName)
+        + ",\"displayName\":" + Q(FTxt(row.DisplayName))
+        + ",\"icon\":" + Q(SoftPath(row.Icon))
+        + ",\"groups\":" + CurrencyGroupArray(row.Groups)
+        + ",\"bIsInGameCurrencyOnly\":" + std::string(row.bIsInGameCurrencyOnly ? "true" : "false")
+        + ",\"bAwardVIPBonus\":" + std::string(row.bAwardVIPBonus ? "true" : "false")
+        + ",\"VIPBonusPercentage\":" + std::to_string(row.VIPBonusPercentage)
+        + ",\"bDataDrivenCurrency\":" + std::string(row.bDataDrivenCurrency ? "true" : "false")
+        + ",\"bHideInWidgetIfZero\":" + std::string(row.bHideInWidgetIfZero ? "true" : "false")
+        + "}";
+}
+
+static bool SafeSerializeCurrencyRow(
+    const std::string& tableName,
+    const std::string& rowName,
+    const FCurrencyTableData& row,
+    std::string* out
+) {
+    __try {
+        RawSerializeCurrencyRow(tableName, rowName, row, out);
+        return true;
+    } __except (EXCEPTION_EXECUTE_HANDLER) {
+        return false;
+    }
+}
+
+static UDataTable* SafeGetCurrencyDataTable(UStoreViewModel* vm) {
+    __try {
+        return vm ? vm->CurrencyDataTable : nullptr;
+    } __except (EXCEPTION_EXECUTE_HANDLER) {
+        return nullptr;
+    }
+}
+
+static int DumpCurrencyTableRows(UDataTable* table, std::ofstream& out) {
+    if (!table || !table->RowStruct) return -1;
+
+    const std::string rowStructName = table->RowStruct->GetName();
+    const std::string tableName = table->GetName();
+
+    if (rowStructName != "CurrencyTableData") {
+        Status("currency table '" + tableName + "' has unexpected RowStruct=" + rowStructName);
+        return -1;
+    }
+
+    const int rowCount = table->RowMap.Num();
+    if (rowCount < 0 || rowCount > 10000) {
+        Status("implausible currency table row count on " + tableName);
+        return -1;
+    }
+
+    int written = 0;
+
+    for (auto& pair : table->RowMap) {
+        std::string rowName;
+        if (!SehNm(pair.Key(), &rowName)) continue;
+
+        uint8_t* rowPtr = pair.Value();
+        if (!rowPtr) continue;
+
+        std::string line;
+        const FCurrencyTableData& row =
+            *reinterpret_cast<const FCurrencyTableData*>(rowPtr);
+
+        if (!SafeSerializeCurrencyRow(tableName, rowName, row, &line)) {
+            Status("currency row '" + rowName + "' faulted; skipped");
+            continue;
+        }
+
+        out << line << "\n";
+        ++written;
+    }
+
+    Status("currency table '" + tableName + "' wrote "
+        + std::to_string(written) + "/" + std::to_string(rowCount)
+        + " CurrencyTableData rows");
+
+    return written;
+}
+
+static bool SafeDumpCurrencyTableRows(
+    UDataTable* table,
+    std::ofstream* out,
+    int* written
+) {
+    __try {
+        *written = DumpCurrencyTableRows(table, *out);
+        return true;
+    } __except (EXCEPTION_EXECUTE_HANDLER) {
+        return false;
+    }
+}
 } // namespace StoreRuntime
 
 int RunStoreRuntimeExport() {
@@ -351,7 +464,8 @@ int RunStoreRuntimeExport() {
     std::ofstream viewModels(outDir + L"\\store_view_models_1_14_7.jsonl", std::ios::trunc);
     std::ofstream itemViewModels(outDir + L"\\store_item_view_models_1_14_7.jsonl", std::ios::trunc);
     std::ofstream imageRows(outDir + L"\\store_item_images_1_14_7.jsonl", std::ios::trunc);
-    if (!viewModels || !itemViewModels || !imageRows) {
+    std::ofstream currencyRows(outDir + L"\\store_currency_table_1_14_7.jsonl", std::ios::trunc);
+    if (!viewModels || !itemViewModels || !imageRows || !currencyRows) {
         Status("cannot open one or more store runtime output files");
         return -1;
     }
@@ -366,12 +480,36 @@ int RunStoreRuntimeExport() {
     int storeVmWritten = 0;
     int itemVmWritten = 0;
     int skipped = 0;
+    int currencyTablesDumped = 0;
+    int currencyTableRowsWritten = 0;
+    std::vector<UDataTable*> dumpedCurrencyTables;
     const int count = UObject::GObjects->Num();
     for (int i = 0; i < count; ++i) {
         UObject* obj = UObject::GObjects->GetByIndex(i);
         if (!obj || !obj->Class) continue;
 
         if (obj->IsA(storeVmClass)) {
+            UStoreViewModel* storeVm = static_cast<UStoreViewModel*>(obj);
+            UDataTable* currencyTable = SafeGetCurrencyDataTable(storeVm);
+
+            if (currencyTable &&
+                std::find(dumpedCurrencyTables.begin(), dumpedCurrencyTables.end(),
+                          currencyTable) == dumpedCurrencyTables.end()) {
+                dumpedCurrencyTables.push_back(currencyTable);
+
+                int rowsWritten = 0;
+                if (SafeDumpCurrencyTableRows(currencyTable, &currencyRows, &rowsWritten)) {
+                    if (rowsWritten >= 0) {
+                        ++currencyTablesDumped;
+                        currencyTableRowsWritten += rowsWritten;
+                    } else {
+                        ++skipped;
+                    }
+                } else {
+                    ++skipped;
+                    Status("currency table capture faulted; skipped");
+                }
+            }
             std::string line;
             if (SafeSerializeStoreViewModel(static_cast<UStoreViewModel*>(obj), &line)) {
                 viewModels << line << "\n";
@@ -396,10 +534,13 @@ int RunStoreRuntimeExport() {
     viewModels.close();
     itemViewModels.close();
     imageRows.close();
+    currencyRows.close();
 
     Status("DONE storeViewModels=" + std::to_string(storeVmWritten)
         + " itemViewModels=" + std::to_string(itemVmWritten)
         + " imageRows=" + std::to_string(imageWritten)
+        + " currencyTables=" + std::to_string(currencyTablesDumped)
+        + " currencyTableRows=" + std::to_string(currencyTableRowsWritten)
         + " skipped=" + std::to_string(skipped));
     return storeVmWritten + itemVmWritten + imageWritten;
 }

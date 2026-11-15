@@ -1,0 +1,985 @@
+﻿diff --git a/ParadoxBackend/src/controllers/launcherAuth.ts b/ParadoxBackend/src/controllers/launcherAuth.ts
+index 165881b4..1252fbb8 100644
+--- a/ParadoxBackend/src/controllers/launcherAuth.ts
++++ b/ParadoxBackend/src/controllers/launcherAuth.ts
+@@ -74,50 +74,68 @@ export interface LauncherAccountView {
+ }
+ 
+ export interface LauncherSessionResult {
+     accessToken: string;
+     refreshToken: string;
+     account: LauncherAccountView;
+ }
+ 
+ export interface PendingRegistrationResult {
+     /** False when the account was approved at once (MYSTICPARADOX_REGISTRATION_APPROVAL=off, the default). */
+     approvalRequired: boolean;
+     account: LauncherAccountView;
+     /** [2026-10-15] Present (true, with the normalized address) when a code was mailed and the launcher must ask for it (EMAIL_VERIFICATION=required). */
+     verificationRequired?: true;
+     email?: string;
+ }
+ 
+ function NormalizeEmail(email: string): string {
+     return email.trim().toLowerCase();
+ }
+ 
+ function UsernameAuthenticationEnabled(): boolean {
+     return (process.env.MYSTICPARADOX_USERNAME_AUTH ?? "").trim().toLowerCase() === "on";
+ }
+ 
++export interface LauncherAuthCapabilities {
++    usernameAuthentication: boolean;
++    emailRequired: boolean;
++    emailVerificationRequired: boolean;
++}
++
++/** Public, non-sensitive capabilities used by the launcher for the selected backend. */
++export function GetLauncherAuthCapabilities(): LauncherAuthCapabilities {
++    const usernameAuthentication = UsernameAuthenticationEnabled();
++    const emailVerificationRequired = EmailVerificationRequired();
++
++    return {
++        usernameAuthentication,
++        emailRequired: !usernameAuthentication || emailVerificationRequired,
++        emailVerificationRequired,
++    };
++}
++
+ function NormalizeDisplayName(displayName: string): string {
+     return displayName.trim().toLowerCase();
+ }
+ 
+ /** [2026-10-16] True when another account (not `exceptUserId`) holds this name in any letter case. */
+ async function UsernameTaken(username: string, exceptUserId?: string): Promise<boolean> {
+     const Existing = await GetRepositories().launcherAccounts.findByDisplayNameNormalized(username.toLowerCase());
+     return Existing != undefined && Existing.userId !== exceptUserId;
+ }
+ 
+ // [2026-10-09, ported from the public repo's August security follow-ups] Linear-time email check. The old
+ // /^[^\s@]+@[^\s@]+\.[^\s@]+$/ backtracks quadratically: a 50 KB "a@...." body held the event loop for 2.2 s
+ // (measured), and express.json accepts 100 KB, so one unauthenticated registration could stall the Metagame.
+ export function IsValidEmailAddress(raw: unknown): raw is string {
+     if (typeof raw !== "string" || raw.length === 0 || raw.length > 254) {
+         return false;
+     }
+     const at = raw.indexOf("@");
+     if (at <= 0 || at !== raw.lastIndexOf("@") || at > 64) {
+         return false;
+     }
+     const local = raw.slice(0, at);
+     const domain = raw.slice(at + 1);
+     if (
+         domain.length < 3
+diff --git a/ParadoxBackend/src/routes/launcherAuth.ts b/ParadoxBackend/src/routes/launcherAuth.ts
+index fb1fdbbe..689f681e 100644
+--- a/ParadoxBackend/src/routes/launcherAuth.ts
++++ b/ParadoxBackend/src/routes/launcherAuth.ts
+@@ -1,43 +1,44 @@
+ /*
+  * Original work Copyright (C) 2026 gwog :3 (SyST3MDeV/Undaunted)
+  * Modified work Copyright (C) 2026 MysticFox / Pranav Karande (pranav158/Mystic-Paradox)
+  *
+  * Licensed under the GNU Affero General Public License v3.0.
+  * You may obtain a copy of the License at the root of this repository.
+  *
+  * SPDX-License-Identifier: AGPL-3.0-only
+  * Additional terms under AGPLv3 Section 7 apply. See ADDITIONAL_TERMS.md.
+  */
+ 
+ import { Router, Request, Response } from "express";
+ import crypto from "crypto";
+ import { logger } from "../logger";
+ import { GetPersistenceLifecycle } from "../persistence";
+ import { HasLauncherAuth } from "../middleware/HasLauncherAuth";
+ import { LauncherApiError, SendLauncherError } from "../security/launcherErrors";
+ import {
++    GetLauncherAuthCapabilities,
+     RegisterAccount,
+     LoginWithPassword,
+     RefreshSession,
+     Logout,
+     LogoutAll,
+     RequestGameExchangeCode,
+     GetAccountView,
+     CheckUsernameAvailable,
+     SetUsername
+ } from "../controllers/launcherAuth";
+ import {
+     StartDiscordAuth, StartDiscordLink, HandleDiscordCallback, CompleteDiscordLogin, StartDiscordUnlink, ConfirmDiscordUnlink
+ } from "../controllers/discordAuth";
+ // [2026-10-15] The email routes (email verification, resend, password reset by code) and their code flow (controllers/emailCodes.ts).
+ import { ResendEmailCode, RequestPasswordResetCode, ResetPasswordWithCode, VerifyEmailWithPassword } from "../controllers/launcherEmail";
+ import { GetLauncherPolicy } from "../controllers/launcherPolicy";
+ // [2026-10-15] The launcher notices the launcher shows (controllers/launcherNotices.ts): public, the sign-in screen shows them too.
+ import { GetPublicLauncherNotices } from "../controllers/launcherNotices";
+ import { AcceptConsent, CancelAccountDeletion, GetConsentState, GetDeletionState, RequestAccountDeletion } from "../controllers/launcherAccount";
+ import { CurrentLegalRequirements } from "../legal/legalPolicy";
+ import { ReadOfficialPlay } from "../config/officialPlay";
+ import { ParseRuntimeChannel } from "../security/runtimeAuthorization";
+ 
+ // Implements the /launcher/v1 contract from Plans/LAUNCHER_BACKEND_AUTH_REQUIREMENTS.md.
+ // Deliberately additive to the running Metagame: nothing here touches routes/eos.ts,
+@@ -116,50 +117,54 @@ function GetDeviceFields(req: Request): { deviceId: string; deviceName: string }
+ 
+     return {
+         deviceId: typeof Body.deviceId === "string" && Body.deviceId.length > 0 ? Body.deviceId : crypto.randomUUID(),
+         deviceName: typeof Body.deviceName === "string" && Body.deviceName.length > 0 ? Body.deviceName : "Unknown device"
+     };
+ }
+ 
+ /** Every handler below funnels errors through here so a thrown LauncherApiError
+  *  becomes the documented {error:{code,message,requestId}} body, and anything
+  *  unexpected is logged (never leaked to the client) and reported as INTERNAL. */
+ async function Handle(req: Request, res: Response, fn: () => Promise<unknown>, successStatus = 200): Promise<void> {
+     try {
+         const Result = await fn();
+         res.status(successStatus).json(Result ?? {});
+     } catch (error) {
+         if (error instanceof LauncherApiError) {
+             SendLauncherError(res, error);
+             return;
+         }
+ 
+         logger.error(`Unhandled error in launcher auth route ${req.method} ${req.path}: ${error}`);
+         SendLauncherError(res, new LauncherApiError("INTERNAL", "Something went wrong. Please try again."));
+     }
+ }
+ 
++launcherAuthRouter.get("/launcher/v1/auth/config", (req, res) =>
++    Handle(req, res, async () => GetLauncherAuthCapabilities())
++);
++
+ launcherAuthRouter.post("/launcher/v1/auth/register", (req, res) =>
+     Handle(req, res, () => {
+         const { deviceId, deviceName } = GetDeviceFields(req);
+         return RegisterAccount(req.body?.displayName, req.body?.email, req.body?.password, deviceName, deviceId, GetClientIp(req), req.body?.consent);
+     }, 202)
+ );
+ 
+ launcherAuthRouter.post("/launcher/v1/auth/login", (req, res) =>
+     Handle(req, res, () => {
+         const { deviceId, deviceName } = GetDeviceFields(req);
+         return LoginWithPassword(req.body?.email, req.body?.password, deviceId, deviceName, GetClientIp(req));
+     })
+ );
+ 
+ launcherAuthRouter.post("/launcher/v1/auth/refresh", (req, res) =>
+     Handle(req, res, () => {
+         const { deviceId, deviceName } = GetDeviceFields(req);
+         return RefreshSession(req.body?.refreshToken, deviceId, deviceName);
+     })
+ );
+ 
+ launcherAuthRouter.post("/launcher/v1/auth/logout", HasLauncherAuth, (req, res) =>
+     Handle(req, res, () => Logout((req as any).LauncherAuthData.sid))
+ );
+ 
+diff --git a/ParadoxLauncher/src-tauri/src/commands/auth.rs b/ParadoxLauncher/src-tauri/src/commands/auth.rs
+index 4291b8b8..a4d7e596 100644
+--- a/ParadoxLauncher/src-tauri/src/commands/auth.rs
++++ b/ParadoxLauncher/src-tauri/src/commands/auth.rs
+@@ -1055,50 +1055,79 @@ pub(crate) fn fetch_status(scope: &AuthScope) -> Result<NativeServerStatus, Stri
+                 )
+                 .to_string()
+         })?;
+     parse_success(response, "Couldn't check the service health.")
+ }
+ 
+ #[tauri::command]
+ pub async fn native_get_server_status(
+     app: AppHandle,
+     server_id: Option<String>,
+ ) -> Result<NativeServerStatus, String> {
+     run_auth_task(move || {
+         let scope = command_scope(&app, server_id.as_deref())?;
+         fetch_status(&scope)
+     })
+     .await
+ }
+ 
+ #[derive(Deserialize, Serialize)]
+ pub struct NativeUsernameCheck {
+     pub available: bool,
+     #[serde(default, skip_serializing_if = "Option::is_none")]
+     pub reason: Option<String>,
+ }
+ 
++#[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
++#[serde(rename_all = "camelCase")]
++pub struct NativeAuthCapabilities {
++    pub username_authentication: bool,
++    pub email_required: bool,
++    pub email_verification_required: bool,
++}
++
++/// Reads the public authentication capabilities from the selected server's own backend.
++#[tauri::command]
++pub async fn native_get_auth_capabilities(
++    app: AppHandle,
++    server_id: Option<String>,
++) -> Result<NativeAuthCapabilities, String> {
++    run_auth_task(move || {
++        let scope = command_scope(&app, server_id.as_deref())?;
++
++        let response = http_client_for(&scope)?
++            .get(format!("{}/launcher/v1/auth/config", scope.base_url()))
++            .send()
++            .map_err(|_| "Couldn't reach the selected server's authentication settings.".to_string())?;
++
++        parse_success(
++            response,
++            "Couldn't read the selected server's authentication settings.",
++        )
++    }).await
++}
++
+ /// The registration screen's availability check, answered by the SELECTED server's backend (a local server's
+ /// usernames are its own).
+ #[tauri::command]
+ pub async fn native_check_username(
+     app: AppHandle,
+     server_id: Option<String>,
+     name: String,
+ ) -> Result<NativeUsernameCheck, String> {
+     run_auth_task(move || {
+         let scope = command_scope(&app, server_id.as_deref())?;
+         let response = http_client_for(&scope)?
+             .get(format!("{}/launcher/v1/username", scope.base_url()))
+             .query(&[("name", name.as_str())])
+             .send()
+             .map_err(|_| {
+                 scope
+                     .pick(
+                         "Can't reach the Mystic Paradox server right now.",
+                         "Can't reach this server right now.",
+                     )
+                     .to_string()
+             })?;
+         parse_success(response, "Couldn't check that username.")
+     })
+     .await
+diff --git a/ParadoxLauncher/src-tauri/src/lib.rs b/ParadoxLauncher/src-tauri/src/lib.rs
+index cc9dcc20..1c995725 100644
+--- a/ParadoxLauncher/src-tauri/src/lib.rs
++++ b/ParadoxLauncher/src-tauri/src/lib.rs
+@@ -49,50 +49,51 @@ macro_rules! launcher_commands {
+             commands::account::native_accept_consent,
+             commands::account::native_set_runtime_channel,
+             commands::account::native_deletion_status,
+             commands::account::native_request_deletion,
+             commands::account::native_cancel_deletion,
+             commands::install::get_install_status,
+             commands::install::pick_install_path,
+             // [2026-10-15] About -> "Check against GitHub" (contacts GitHub only when asked).
+             commands::provenance::check_public_builds,
+             // [2026-10-16] The UNOFFICIAL BUILD / DEVELOPMENT BUILD badge (a courtesy label; the build profile sets the marker).
+             commands::provenance::launcher_build_kind,
+             // [2026-10-15] The launcher's own update waits while a game runs or this PC hosts.
+             commands::updates::launcher_update_hold_reason,
+             commands::launch::is_game_running,
+             commands::launch::secure_launch,
+             commands::updates::check_runtime_update,
+             // [2026-10-15] About -> Runtime: the installed DLL against the signed manifest (read-only).
+             commands::updates::verify_installed_runtime,
+             commands::updates::install_runtime_update,
+             commands::logs::native_get_log_paths,
+             commands::logs::native_open_log_folder,
+             // [2026-10-17] Upload logs: the newest session and host logs, with per-file results.
+             commands::logs::native_upload_logs,
+             commands::logs::native_recent_sessions,
+             // [2026-10-13 realms S1] Multi-server list.
++            commands::auth::native_get_auth_capabilities,
+             commands::servers::list_servers,
+             commands::servers::add_server,
+             commands::servers::remove_server,
+             commands::servers::select_server,
+             commands::servers::acknowledge_local_server,
+             commands::servers::set_server_game_exe,
+             commands::servers::use_official_install,
+             // [2026-10-14 realms] The host key of a Paradox realm: the directory lookup and the stored key.
+             commands::servers::realm_lookup,
+             commands::servers::set_realm_host_key,
+             commands::servers::realm_invites,
+             commands::servers::realm_answer_invite,
+             commands::servers::realm_request_join,
+             $($extra),*
+         ]
+     };
+ }
+ 
+ #[cfg_attr(mobile, tauri::mobile_entry_point)]
+ pub fn run() {
+     // [2026-10-18] A second start never opens a second launcher: it is handed to the running one, or told it already runs.
+     #[cfg(windows)]
+     let _instance = single_instance::ensure_single_instance();
+     let builder = tauri::Builder::default()
+         .plugin(tauri_plugin_single_instance::init(|app, argv, _cwd| {
+diff --git a/ParadoxLauncher/src/api/tauri.ts b/ParadoxLauncher/src/api/tauri.ts
+index 3f53cfdf..8656b3d1 100644
+--- a/ParadoxLauncher/src/api/tauri.ts
++++ b/ParadoxLauncher/src/api/tauri.ts
+@@ -1,28 +1,28 @@
+ import { invoke } from "@tauri-apps/api/core";
+ import { listen, type UnlistenFn } from "@tauri-apps/api/event";
+-import type { LauncherNotices, LauncherPolicy, LogPaths, LogUploadProgress, LogUploadReport, OfficialPlay, ServerStatusResponse, UsernameAvailabilityResponse } from "./types";
++import type { LauncherAuthCapabilities, LauncherNotices, LauncherPolicy, LogPaths, LogUploadProgress, LogUploadReport, OfficialPlay, ServerStatusResponse, UsernameAvailabilityResponse } from "./types";
+ import type { SessionSummary } from "../lib/sessions";
+ 
+ /** [2026-10-13 realms S1] The three kinds of server the launcher can play on. */
+ export type ServerKind = "official" | "paradox_realm" | "local";
+ 
+ export interface InstallStatus {
+   located: boolean;
+   exePath?: string | null;
+   exeSha256?: string | null;
+   runtimeRepairRequired: boolean;
+   error?: string | null;
+   /** The Dauntless changelist this launcher and its signed runtime target. */
+   targetChangelist?: number;
+   /** Which server this status describes: the selected one unless a call named another. Absent = official. */
+   serverId?: string;
+   serverKind?: ServerKind;
+   serverName?: string;
+   /** Set when Play is off for this server whatever its installation holds (a local server whose warning is not accepted). */
+   playBlockedReason?: string | null;
+   /** False when the realm's own runtime files are used and the launcher neither checks nor updates them. */
+   runtimeManaged?: boolean;
+ }
+ 
+ /** The selected server's installation, or `serverId`'s. */
+ export async function getInstallStatus(serverId?: string): Promise<InstallStatus> {
+@@ -217,50 +217,55 @@ export interface RuntimeUpdateStatus {
+   currentSha256?: string | null;
+   latestSha256?: string | null;
+   size?: number | null;
+   /** False for a local server: its runtime files are the realm's own and the launcher does not update them. */
+   feedManaged?: boolean;
+ }
+ 
+ export async function checkRuntimeUpdate(channel = "stable"): Promise<RuntimeUpdateStatus> {
+   return invoke<RuntimeUpdateStatus>("check_runtime_update", { channel });
+ }
+ 
+ export async function installRuntimeUpdate(channel = "stable"): Promise<RuntimeUpdateStatus> {
+   return invoke<RuntimeUpdateStatus>("install_runtime_update", { channel });
+ }
+ 
+ /** The selected server's policy. `serverId` is the server the screen shows: a different selection is refused. */
+ export async function getPolicy(serverId?: string): Promise<LauncherPolicy> {
+   return invoke<LauncherPolicy>("native_get_policy", { serverId });
+ }
+ 
+ /** The selected server's backend status (`/launcher/v1/status` of that server, never of another). */
+ export async function getServerStatus(serverId?: string): Promise<ServerStatusResponse> {
+   return invoke<ServerStatusResponse>("native_get_server_status", { serverId });
+ }
+ 
++/** Authentication capabilities reported by the selected server's own backend. */
++export async function getAuthCapabilities(serverId?: string): Promise<LauncherAuthCapabilities> {
++  return invoke<LauncherAuthCapabilities>("native_get_auth_capabilities", { serverId });
++}
++
+ /**
+  * [2026-10-15] The official server's play switch, read from its own status whatever server is selected. It rejects when
+  * the status cannot be read; the caller then shows no note (the official server is not marked unavailable).
+  */
+ export async function getOfficialPlay(): Promise<OfficialPlay> {
+   return invoke<OfficialPlay>("native_official_play");
+ }
+ 
+ /**
+  * [2026-10-15] The launcher notices from the official backend. No sign-in. Rejects only when the backend cannot be
+  * reached; any other answer (including none, from an older backend) is an answer with no notices.
+  */
+ export async function getLauncherNotices(): Promise<LauncherNotices> {
+   return invoke<LauncherNotices>("native_launcher_notices");
+ }
+ 
+ /** Whether a username is free on the selected server (a local server's usernames are its own). */
+ export async function checkUsername(name: string, serverId?: string): Promise<UsernameAvailabilityResponse> {
+   return invoke<UsernameAvailabilityResponse>("native_check_username", { serverId, name });
+ }
+ 
+ export async function getLogPaths(): Promise<LogPaths> {
+   return invoke<LogPaths>("native_get_log_paths");
+ }
+ 
+diff --git a/ParadoxLauncher/src/api/types.ts b/ParadoxLauncher/src/api/types.ts
+index 11f849a2..a1be0749 100644
+--- a/ParadoxLauncher/src/api/types.ts
++++ b/ParadoxLauncher/src/api/types.ts
+@@ -31,50 +31,56 @@ export type LauncherErrorCode =
+   | "GAME_BUILD_UNSUPPORTED"
+   | "NOT_FOUND"
+   | "INTERNAL"
+   | "SERVER_UNAVAILABLE"
+   | "UNKNOWN";
+ 
+ export interface LauncherAccount {
+   userId: string;
+   displayName: string;
+   email: string;
+   discordLinked: boolean;
+   status: "active" | "banned" | "disabled";
+   approvalStatus: "pending" | "approved" | "rejected";
+   /** True for a fresh Discord account with no chosen username yet ΓÇö the launcher
+    *  must show the set-username step before the account can play. */
+   needsUsername: boolean;
+   /** [2026-10-15] The account's Discord link. Missing means unknown (an older backend), not "not linked". */
+   discord?: { linked: boolean; username?: string };
+ }
+ 
+ export interface UsernameAvailabilityResponse {
+   available: boolean;
+   reason?: string;
+ }
+ 
++export interface LauncherAuthCapabilities {
++  usernameAuthentication: boolean;
++  emailRequired: boolean;
++  emailVerificationRequired: boolean;
++}
++
+ export interface ServerStatusResponse {
+   online: boolean;
+   supportedBuildChangelist: number;
+   /** [2026-10-15] The official server's play switch. Absent on an older backend, which means available. */
+   officialPlay?: OfficialPlay;
+ }
+ 
+ /** [2026-10-15] `officialPlay` of `/launcher/v1/status`: when `available` is false the official server cannot be played. */
+ export interface OfficialPlay {
+   available: boolean;
+   message?: string;
+ }
+ 
+ /** [2026-10-15] Launcher notices (`GET /launcher/v1/notices`, read from the official backend). Text only, never markup. */
+ export type NoticeTone = "info" | "warning" | "critical";
+ export type TagTone = "info" | "warning" | "danger" | "success";
+ 
+ export interface LauncherAnnouncement {
+   id: string;
+   text: string;
+   tone: NoticeTone;
+   /** When `{time}` shows, as an ISO time. Absent when the text has no time. */
+   eventAt?: string;
+ }
+ 
+diff --git a/ParadoxLauncher/src/screens/LoginScreen.tsx b/ParadoxLauncher/src/screens/LoginScreen.tsx
+index e43bcfaa..e4f22f30 100644
+--- a/ParadoxLauncher/src/screens/LoginScreen.tsx
++++ b/ParadoxLauncher/src/screens/LoginScreen.tsx
+@@ -1,124 +1,128 @@
+ import { useState, type FormEvent } from "react";
+ import { useAuth, describeAuthError } from "../auth/AuthContext";
+ import { RevealToggle, TextField } from "../components/TextField";
+ import { Button } from "../components/Button";
+ import { Banner } from "../components/Banner";
+ import { AuthCard, AuthLayout } from "../components/AuthLayout";
+ import { DiscordIcon } from "../components/icons";
+ import { LegalLinks, useLegalViewer } from "../components/LegalDocument";
+ import { useServer } from "../servers/ServerContext";
+ import { serverNaming } from "../servers/serverNames";
+ 
+ interface LoginScreenProps {
+   onCreateAccount: () => void;
+ }
+ 
+ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
+   const { login, startDiscordLogin, authError, startPasswordReset } = useAuth();
+   // [2026-10-13 realms S5] Sign-in goes to the selected server's own backend. Discord belongs to the official account
+   // system, so a local server (which has its own accounts) offers email and password only.
+-  const { selected, officialNetwork, servers, select } = useServer();
++  const { selected, officialNetwork, servers, select, authCapabilities, authCapabilitiesReady } = useServer();
+   const serverName = selected && !officialNetwork ? serverNaming(selected).primary : null;
+-  const usernameLogin = Boolean(selected && !officialNetwork);
++  const usernameLogin = authCapabilities.usernameAuthentication;
+   const legal = useLegalViewer();
+ 
+-  const [email, setEmail] = useState("");
++  const [loginIdentifier, setLoginIdentifier] = useState("");
+   const [password, setPassword] = useState("");
+   const [showPassword, setShowPassword] = useState(false);
+   const [submitting, setSubmitting] = useState(false);
+   const [discordSubmitting, setDiscordSubmitting] = useState(false);
+   const [error, setError] = useState<string | null>(null);
+ 
+   // A Discord flow can fail asynchronously (deep-link error, or the completion
+   // exchange itself failing) after this screen has already unmounted and
+   // remounted ΓÇö authError from context covers that; local `error` covers
+   // synchronous form-submit failures this screen caused directly.
+   const displayedError = error ?? authError;
+ 
+   async function handleSubmit(event: FormEvent) {
+     event.preventDefault();
+-    if (!email || !password) {
+-      setError(usernameLogin ? "Enter your username and password." : "Enter your email and password.");
++    if (!authCapabilitiesReady) {
++      setError("The server's authentication settings are still loading.");
++      return;
++    }
++    if (!loginIdentifier.trim() || !password) {
++      setError(usernameLogin ? "Enter your username or email and password." : "Enter your email and password.");
+       return;
+     }
+     setError(null);
+     setSubmitting(true);
+     try {
+-      await login(email, password);
++      await login(loginIdentifier.trim(), password);
+       // Entered credentials are intentionally left in state ΓÇö a successful
+       // login unmounts this screen, and a failed one should not lose them.
+     } catch (err) {
+       setError(describeAuthError(err));
+     } finally {
+       setSubmitting(false);
+     }
+   }
+ 
+   // [2026-10-16] The sign-in card has no server choice. A local server chosen on the Servers page still shows its own
+   // sign-in here, so this is the way back to the Mystic Paradox account (otherwise the card would be a dead end).
+   async function switchToOfficialAccount() {
+     const official = servers.find((server) => server.kind === "official");
+     if (!official) return;
+     setError(null);
+     try {
+       await select(official.id);
+     } catch (err) {
+       setError(typeof err === "string" && err.trim() ? err.trim().slice(0, 300) : "Couldn't switch to the Mystic Paradox account.");
+     }
+   }
+ 
+   async function handleDiscord() {
+     setError(null);
+     setDiscordSubmitting(true);
+     try {
+       await startDiscordLogin();
+     } catch (err) {
+       setError(describeAuthError(err));
+       setDiscordSubmitting(false);
+     }
+   }
+ 
+   return (
+     <AuthLayout>
+       <AuthCard
+         title={serverName ? `Sign in to ${serverName}` : "Welcome back, Slayer"}
+         subtitle={serverName
+           ? "Use your account on this server. It is not your Mystic Paradox account, and Mystic Paradox never sees it."
+           : "Sign in to return to the Shattered Isles."}
+       >
+         <form onSubmit={handleSubmit} className="auth-form" noValidate>
+           {displayedError && <Banner>{displayedError}</Banner>}
+ 
+           <TextField
+-            label={usernameLogin ? "Username" : "Email"}
++            label={usernameLogin ? "Username or email" : "Email"}
+             type={usernameLogin ? "text" : "email"}
+             autoComplete={usernameLogin ? "username" : "email"}
+-            placeholder={usernameLogin ? "Your username" : "slayer@example.com"}
+-            value={email}
+-            onChange={(e) => setEmail(e.target.value)}
+-            disabled={submitting}
++            placeholder={usernameLogin ? "Your username or email" : "slayer@example.com"}
++            value={loginIdentifier}
++            onChange={(e) => setLoginIdentifier(e.target.value)}
++            disabled={submitting || !authCapabilitiesReady}
+             autoFocus
+           />
+ 
+           <TextField
+             label="Password"
+             type={showPassword ? "text" : "password"}
+             autoComplete="current-password"
+             value={password}
+             onChange={(e) => setPassword(e.target.value)}
+             disabled={submitting}
+             rightAdornment={<RevealToggle shown={showPassword} onToggle={() => setShowPassword((v) => !v)} />}
+           />
+ 
+           {/* [2026-10-15] Password resets are the official backend's (a local server keeps its own accounts). */}
+           {officialNetwork && (
+             <p className="auth-aside">
+               <button type="button" className="link" onClick={() => startPasswordReset()}>Forgot password?</button>
+             </p>
+           )}
+ 
+           <Button type="submit" size="lg" block loading={submitting} loadingLabel="Signing inΓÇª">
+             Sign in
+           </Button>
+ 
+           {officialNetwork && (
+diff --git a/ParadoxLauncher/src/screens/RegisterScreen.tsx b/ParadoxLauncher/src/screens/RegisterScreen.tsx
+index 6c67b9a8..74955bfc 100644
+--- a/ParadoxLauncher/src/screens/RegisterScreen.tsx
++++ b/ParadoxLauncher/src/screens/RegisterScreen.tsx
+@@ -1,129 +1,132 @@
+ import { useState, type FormEvent } from "react";
+ import { useAuth, describeAuthError } from "../auth/AuthContext";
+ import { RevealToggle, TextField } from "../components/TextField";
+ import { Button } from "../components/Button";
+ import { Banner } from "../components/Banner";
+ import { AuthCard, AuthLayout } from "../components/AuthLayout";
+ import { UsernameField, useUsernameField } from "../components/UsernameField";
+ import { LegalConsentChecks } from "../components/LegalConsentChecks";
+ import { LegalLinks, useLegalViewer } from "../components/LegalDocument";
+ import { LEGAL } from "../legal/legalMeta";
+ import { useServer } from "../servers/ServerContext";
+ import { serverNaming } from "../servers/serverNames";
+ import { EMAIL_PATTERN, authErrorCode, passwordProblem, stripAuthCode } from "../auth/authRules";
+ 
+ interface RegisterScreenProps {
+   onBackToLogin: () => void;
+ }
+ 
+ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
+   const { register } = useAuth();
+-  const { selected, officialNetwork } = useServer();
++  const { selected, officialNetwork, authCapabilities, authCapabilitiesReady } = useServer();
+   const serverName = selected && !officialNetwork ? serverNaming(selected).primary : null;
+   // [2026-10-14] The official backend (the official server and Paradox realms) requires the age and the acceptance of
+   // the documents. A local server keeps its own rules, so its registration is unchanged and sends no consent.
+   const askConsent = officialNetwork;
+-  const usernameOnlyAuth = Boolean(selected && !officialNetwork);
++  const emailRequired = authCapabilities.emailRequired;
+   const username = useUsernameField();
+   const legal = useLegalViewer();
+ 
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
+   const [confirmPassword, setConfirmPassword] = useState("");
+   const [showPassword, setShowPassword] = useState(false);
+   const [ageConfirmed, setAgeConfirmed] = useState(false);
+   const [termsAccepted, setTermsAccepted] = useState(false);
+   const [submitting, setSubmitting] = useState(false);
+   const [error, setError] = useState<string | null>(null);
+   // [2026-10-16] Which fields the player has left: their mistakes show from then on (the button waits, so it must say why).
+   const [touched, setTouched] = useState({ email: false, password: false, confirm: false });
+   const consentReady = !askConsent || (ageConfirmed && termsAccepted);
+-  const emailError = usernameOnlyAuth || EMAIL_PATTERN.test(email) ? null : "Enter a valid email address.";
++  const emailValue = email.trim();
++  const emailError = emailValue.length === 0
++    ? (emailRequired ? "Enter a valid email address." : null)
++    : EMAIL_PATTERN.test(emailValue) ? null : "Enter a valid email address.";
+   // [2026-10-15] The password rule is shared with the password reset (auth/authRules.ts): its length, then the match.
+   const passwordLengthError = passwordProblem(password, password);
+   const confirmError = confirmPassword && confirmPassword !== password ? "Passwords don't match." : null;
+   // [2026-10-16] Create account waits until every field is valid and the username check says Available (0.1.71: the name is
+   // asked for here again; an account held for approval has no session, so it could never reach the set-username step).
+-  const formReady = username.ready && !emailError && !passwordProblem(password, confirmPassword) && consentReady;
++  const formReady = authCapabilitiesReady && username.ready && !emailError && !passwordProblem(password, confirmPassword) && consentReady;
+ 
+   function validate(): string | null {
+     const usernameError = username.validate();
+     if (usernameError) return usernameError;
+     if (emailError) return emailError;
+     const passwordError = passwordProblem(password, confirmPassword);
+     if (passwordError) return passwordError;
+     if (!consentReady) return `Confirm that you are ${LEGAL.minimumAge} or older and accept the Terms of Use and Privacy Policy.`;
+     return null;
+   }
+ 
+   async function handleSubmit(event: FormEvent) {
+     event.preventDefault();
+     const validationError = validate();
+     if (validationError) {
+       setError(validationError);
+       return;
+     }
+     setError(null);
+     setSubmitting(true);
+     try {
+       await register(
+-        usernameOnlyAuth ? "" : email,
++        email.trim(),
+         password,
+         askConsent
+           ? { termsVersion: LEGAL.termsVersion, privacyVersion: LEGAL.privacyVersion, ageConfirmed: true }
+           : undefined,
+         username.value,
+       );
+     } catch (err) {
+       // [2026-10-16] The server refused the name after the live check passed (someone took it meanwhile): on the field.
+       if (authErrorCode(err) === "AUTH_USERNAME_REFUSED") {
+         username.setRefusal(stripAuthCode(typeof err === "string" ? err : err instanceof Error ? err.message : ""));
+       } else {
+         setError(describeAuthError(err));
+       }
+     } finally {
+       setSubmitting(false);
+     }
+   }
+ 
+   return (
+     <AuthLayout>
+       <AuthCard
+         title={serverName ? `Join ${serverName}` : "Become a Slayer"}
+         subtitle={serverName
+         ? "Create an account on this server with a username and password. No email address or host approval is required."
+         : "Create your Mystic Paradox account. Closed-test accounts are approved by an administrator."}
+       >
+         <form onSubmit={handleSubmit} className="auth-form" noValidate>
+           {error && <Banner>{error}</Banner>}
+ 
+           <UsernameField field={username} disabled={submitting} />
+ 
+-          {!usernameOnlyAuth && (
++          {(
+             <TextField
+-              label="Email"
++              label={emailRequired ? "Email" : "Email (optional)"}
+               type="email"
+               autoComplete="email"
+               value={email}
+               onChange={(e) => setEmail(e.target.value)}
+               onBlur={() => setTouched((current) => ({ ...current, email: true }))}
+               disabled={submitting}
+               error={touched.email && email && emailError ? emailError : undefined}
+             />
+           )}
+ 
+           <TextField
+             label="Password"
+             type={showPassword ? "text" : "password"}
+             autoComplete="new-password"
+             value={password}
+             onChange={(e) => setPassword(e.target.value)}
+             onBlur={() => setTouched((current) => ({ ...current, password: true }))}
+             disabled={submitting}
+             hint="At least 8 characters."
+             error={touched.password && password && passwordLengthError ? passwordLengthError : undefined}
+             rightAdornment={<RevealToggle shown={showPassword} onToggle={() => setShowPassword((v) => !v)} />}
+           />
+ 
+           <TextField
+             label="Confirm password"
+diff --git a/ParadoxLauncher/src/servers/ServerContext.tsx b/ParadoxLauncher/src/servers/ServerContext.tsx
+index 782857f7..3178e0f5 100644
+--- a/ParadoxLauncher/src/servers/ServerContext.tsx
++++ b/ParadoxLauncher/src/servers/ServerContext.tsx
+@@ -1,145 +1,221 @@
+ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+-import { acknowledgeLocalServer, getOfficialPlay, listServers, selectServer, type ServerView } from "../api/tauri";
+-import type { OfficialPlay } from "../api/types";
++import { acknowledgeLocalServer, getAuthCapabilities, getOfficialPlay, listServers, selectServer, type ServerView } from "../api/tauri";
++import type { LauncherAuthCapabilities, OfficialPlay } from "../api/types";
+ import { LocalServerWarning } from "../components/LocalServerWarning";
+ 
+ // [2026-10-13 realms S5] The selected server, as the whole UI sees it. Sign-in, the session, the policy and the status
+ // chip all follow it; the launcher's native side resolves the same selection and refuses a call that names another.
+ 
+ /** [2026-10-15] How often the official server's play switch is read again. */
+ const OFFICIAL_PLAY_POLL_MS = 60_000;
+ 
++const DEFAULT_AUTH_CAPABILITIES: LauncherAuthCapabilities = {
++  usernameAuthentication: false,
++  emailRequired: true,
++  emailVerificationRequired: false,
++};
++
+ export interface ServerState {
+   /** The server list has been read (if it could not be, the official server is assumed). */
+   ready: boolean;
+   servers: ServerView[];
+   selected: ServerView | null;
+   /** The selected server's id; `undefined` while it is unknown (the native side then uses its own selection). */
+   serverId: string | undefined;
+   /** The selected server is local and its warning has not been accepted: nothing may be sent to it yet. */
+   needsAck: boolean;
++  /** Authentication options reported by the selected server, not inferred from its server kind. */
++  authCapabilities: LauncherAuthCapabilities;
++  authCapabilitiesReady: boolean;
+   /** The official backend and sign-in serve the selected server (the official server and Paradox realms). */
+   officialNetwork: boolean;
+   /**
+    * [2026-10-15] The official server's play switch, read from its own status whichever server is selected (the server
+    * list shows it while another is chosen). Null until it is read, or when it cannot be read: no note is shown then.
+    */
+   officialPlay: OfficialPlay | null;
+   /** Replaces the list with a fresher one returned by a server command. */
+   sync: (next: ServerView[]) => void;
+   /** Selects a server. Rejects with a readable message (for example while a game runs). */
+   select: (serverId: string) => Promise<void>;
+   /** Shows a local server's warning popup (the red badge). */
+   openWarning: (serverId: string) => void;
+ }
+ 
+ const IDLE: ServerState = {
+   ready: true,
+   servers: [],
+   selected: null,
+   serverId: undefined,
+   needsAck: false,
++  authCapabilities: DEFAULT_AUTH_CAPABILITIES,
++  authCapabilitiesReady: false,
+   officialNetwork: true,
+   officialPlay: null,
+   sync: () => {},
+   select: async () => {},
+   openWarning: () => {},
+ };
+ 
+ const ServerContext = createContext<ServerState>(IDLE);
+ 
+ export function useServer(): ServerState {
+   return useContext(ServerContext);
+ }
+ 
+ export function ServerProvider({ children }: { children: ReactNode }) {
+   const [list, setList] = useState<{ ready: boolean; servers: ServerView[] }>({ ready: false, servers: [] });
+   const [warningFor, setWarningFor] = useState<string | null>(null);
+   const movedFromLocalRef = useRef(false);
+ 
+   const sync = useCallback((next: ServerView[]) => setList({ ready: true, servers: next }), []);
+ 
+   useEffect(() => {
+     let cancelled = false;
+     listServers()
+       .then((servers) => { if (!cancelled) setList({ ready: true, servers }); })
+       .catch(() => { if (!cancelled) setList({ ready: true, servers: [] }); });
+     return () => { cancelled = true; };
+   }, []);
+ 
+   // [2026-10-15] The official server's status is read whichever server is selected: the switcher, the Servers tab and
+   // Home all show it. Nothing is sent with it (no token), so a local server's warning does not apply.
+   const [officialPlay, setOfficialPlay] = useState<OfficialPlay | null>(null);
+   useEffect(() => {
+     let cancelled = false;
+     const read = () => {
+       getOfficialPlay()
+         .then((play) => { if (!cancelled) setOfficialPlay(play); })
+         .catch(() => { if (!cancelled) setOfficialPlay(null); });
+     };
+     read();
+     const timer = window.setInterval(read, OFFICIAL_PLAY_POLL_MS);
+     return () => {
+       cancelled = true;
+       window.clearInterval(timer);
+     };
+   }, []);
+ 
+   const selected = list.servers.find((server) => server.selected) ?? null;
+   const needsAck = selected?.kind === "local" && !selected.acknowledged;
+   const selectedId = selected?.id;
+ 
++  const [authCapabilitiesState, setAuthCapabilitiesState] = useState<{
++    serverId: string | undefined;
++    loading: boolean;
++    value: LauncherAuthCapabilities;
++  }>({
++    serverId: undefined,
++    loading: true,
++    value: DEFAULT_AUTH_CAPABILITIES,
++  });
++
++  useEffect(() => {
++    if (!list.ready) return;
++
++    const requestedServerId = selectedId;
++    let cancelled = false;
++
++    setAuthCapabilitiesState({
++      serverId: requestedServerId,
++      loading: true,
++      value: DEFAULT_AUTH_CAPABILITIES,
++    });
++
++    // Do not contact a local server before its warning has been accepted.
++    if (needsAck) {
++      setAuthCapabilitiesState({
++        serverId: requestedServerId,
++        loading: false,
++        value: DEFAULT_AUTH_CAPABILITIES,
++      });
++      return () => { cancelled = true; };
++    }
++
++    getAuthCapabilities(requestedServerId)
++      .then((capabilities) => {
++        if (!cancelled) {
++          setAuthCapabilitiesState({
++            serverId: requestedServerId,
++            loading: false,
++            value: capabilities,
++          });
++        }
++      })
++      .catch(() => {
++        // Older or unreachable backends keep the conservative email-required behavior.
++        if (!cancelled) {
++          setAuthCapabilitiesState({
++            serverId: requestedServerId,
++            loading: false,
++            value: DEFAULT_AUTH_CAPABILITIES,
++          });
++        }
++      });
++
++    return () => { cancelled = true; };
++  }, [list.ready, selectedId, needsAck, selected?.kind]);
++
++  const authCapabilitiesReady =
++    authCapabilitiesState.serverId === selectedId && !authCapabilitiesState.loading;
++
++  const authCapabilities = authCapabilitiesReady
++    ? authCapabilitiesState.value
++    : DEFAULT_AUTH_CAPABILITIES;
++
+   // [2026-10-16] Local servers are not supported by this launcher any more: one still selected from an earlier version is
+   // left for the official server as soon as the list is read (once; a refusal, for example while a game runs, is left alone).
+   // The local server's warning no longer opens by itself.
+   const selectedKind = selected?.kind;
+   useEffect(() => {
+     if (!list.ready || selectedKind !== "local" || movedFromLocalRef.current) return;
+     const official = list.servers.find((server) => server.kind === "official");
+     if (!official) return;
+     movedFromLocalRef.current = true;
+     selectServer(official.id)
+       .then((next) => setList({ ready: true, servers: next }))
+       .catch(() => {});
+   }, [list, selectedKind]);
+ 
+   const select = useCallback(async (serverId: string) => {
+     sync(await selectServer(serverId));
+   }, [sync]);
+ 
+   const openWarning = useCallback((serverId: string) => setWarningFor(serverId), []);
+ 
+   const value = useMemo<ServerState>(() => ({
+     ready: list.ready,
+     servers: list.servers,
+     selected,
+     serverId: selectedId,
+     needsAck: Boolean(needsAck),
++    authCapabilities,
++    authCapabilitiesReady,
+     officialNetwork: selected ? selected.kind !== "local" : true,
+     officialPlay,
+     sync,
+     select,
+     openWarning,
+-  }), [list, selected, selectedId, needsAck, officialPlay, sync, select, openWarning]);
++  }), [list, selected, selectedId, needsAck, authCapabilities, authCapabilitiesReady, officialPlay, sync, select, openWarning]);
+ 
+   const warningServer = warningFor
+     ? list.servers.find((server) => server.id === warningFor && server.kind === "local") ?? null
+     : null;
+ 
+   return (
+     <ServerContext.Provider value={value}>
+       {children}
+       {warningServer && (
+         <LocalServerWarning
+           key={warningServer.id}
+           server={warningServer}
+           onClose={() => setWarningFor(null)}
+           onAgree={async (remember) => {
+             sync(await acknowledgeLocalServer(warningServer.id, remember));
+             setWarningFor(null);
+           }}
+         />
+       )}
+     </ServerContext.Provider>
+   );
+ }

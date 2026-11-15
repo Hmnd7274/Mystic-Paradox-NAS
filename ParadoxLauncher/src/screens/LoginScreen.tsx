@@ -17,12 +17,12 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
   const { login, startDiscordLogin, authError, startPasswordReset } = useAuth();
   // [2026-10-13 realms S5] Sign-in goes to the selected server's own backend. Discord belongs to the official account
   // system, so a local server (which has its own accounts) offers email and password only.
-  const { selected, officialNetwork, servers, select } = useServer();
+  const { selected, officialNetwork, servers, select, authCapabilities, authCapabilitiesReady } = useServer();
   const serverName = selected && !officialNetwork ? serverNaming(selected).primary : null;
-  const usernameLogin = Boolean(selected && !officialNetwork);
+  const usernameLogin = authCapabilities.usernameAuthentication;
   const legal = useLegalViewer();
 
-  const [email, setEmail] = useState("");
+  const [loginIdentifier, setLoginIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -37,14 +37,18 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    if (!email || !password) {
-      setError(usernameLogin ? "Enter your username and password." : "Enter your email and password.");
+    if (!authCapabilitiesReady) {
+      setError("The server's authentication settings are still loading.");
+      return;
+    }
+    if (!loginIdentifier.trim() || !password) {
+      setError(usernameLogin ? "Enter your username or email and password." : "Enter your email and password.");
       return;
     }
     setError(null);
     setSubmitting(true);
     try {
-      await login(email, password);
+      await login(loginIdentifier.trim(), password);
       // Entered credentials are intentionally left in state — a successful
       // login unmounts this screen, and a failed one should not lose them.
     } catch (err) {
@@ -90,13 +94,13 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
           {displayedError && <Banner>{displayedError}</Banner>}
 
           <TextField
-            label={usernameLogin ? "Username" : "Email"}
+            label={usernameLogin ? "Username or email" : "Email"}
             type={usernameLogin ? "text" : "email"}
             autoComplete={usernameLogin ? "username" : "email"}
-            placeholder={usernameLogin ? "Your username" : "slayer@example.com"}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            disabled={submitting}
+            placeholder={usernameLogin ? "Your username or email" : "slayer@example.com"}
+            value={loginIdentifier}
+            onChange={(e) => setLoginIdentifier(e.target.value)}
+            disabled={submitting || !authCapabilitiesReady}
             autoFocus
           />
 
@@ -112,9 +116,16 @@ export function LoginScreen({ onCreateAccount }: LoginScreenProps) {
 
           {/* [2026-10-15] Password resets are the official backend's (a local server keeps its own accounts). */}
           {officialNetwork && (
-            <p className="auth-aside">
-              <button type="button" className="link" onClick={() => startPasswordReset()}>Forgot password?</button>
-            </p>
+            <>
+              <p className="auth-aside">
+                <button type="button" className="link" onClick={() => startPasswordReset()}>Forgot password?</button>
+              </p>
+              {usernameLogin && !authCapabilities.emailRequired && (
+                <p className="auth-aside">
+                  Accounts registered without an email address cannot use email-based password recovery.
+                </p>
+              )}
+            </>
           )}
 
           <Button type="submit" size="lg" block loading={submitting} loadingLabel="Signing in…">

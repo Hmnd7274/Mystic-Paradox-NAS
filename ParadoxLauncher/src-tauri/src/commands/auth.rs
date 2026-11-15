@@ -1077,6 +1077,68 @@ pub struct NativeUsernameCheck {
     pub reason: Option<String>,
 }
 
+#[derive(Clone, Debug, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct NativeAuthCapabilities {
+    pub username_authentication: bool,
+    pub email_required: bool,
+    pub email_verification_required: bool,
+}
+
+/// Uses the explicitly configured self-host build policy when an older
+/// backend does not expose /launcher/v1/auth/config.
+/// Both variables must be present in the launcher build environment.
+fn self_host_auth_capabilities() -> Option<NativeAuthCapabilities> {
+    let username_mode = option_env!("MYSTICPARADOX_USERNAME_AUTH")?;
+    let email_verification_mode = option_env!("MYSTICPARADOX_EMAIL_VERIFICATION")?;
+
+    let username_authentication =
+        username_mode.trim().eq_ignore_ascii_case("on");
+
+    // Mirror the backend policy: blank and "off" disable verification;
+    // "required" and unrecognised values fail closed to required.
+    let verification_mode = email_verification_mode.trim();
+    let email_verification_required =
+        !(verification_mode.is_empty() || verification_mode.eq_ignore_ascii_case("off"));
+
+    Some(NativeAuthCapabilities {
+        username_authentication,
+        email_required: !username_authentication || email_verification_required,
+        email_verification_required,
+    })
+}
+
+
+
+/// Reads the public authentication capabilities from the selected server's own backend.
+#[tauri::command]
+pub async fn native_get_auth_capabilities(
+    app: AppHandle,
+    server_id: Option<String>,
+) -> Result<NativeAuthCapabilities, String> {
+    run_auth_task(move || {
+        let scope = command_scope(&app, server_id.as_deref())?;
+
+        let response = http_client_for(&scope)?
+            .get(format!("{}/launcher/v1/auth/config", scope.base_url()))
+            .send()
+            .map_err(|_| "Couldn't reach the selected server's authentication settings.".to_string())?;
+
+        // Older self-hosted backends may not expose this endpoint yet.
+        // Only a 404 activates the explicit policy embedded in this build.
+        if response.status().as_u16() == 404 {
+            if let Some(capabilities) = self_host_auth_capabilities() {
+                return Ok(capabilities);
+            }
+        }
+
+        parse_success(
+            response,
+            "Couldn't read the selected server's authentication settings.",
+        )
+    }).await
+}
+
 /// The registration screen's availability check, answered by the SELECTED server's backend (a local server's
 /// usernames are its own).
 #[tauri::command]

@@ -71,6 +71,7 @@ macro_rules! launcher_commands {
             commands::logs::native_upload_logs,
             commands::logs::native_recent_sessions,
             // [2026-10-13 realms S1] Multi-server list.
+            commands::auth::native_get_auth_capabilities,
             commands::servers::list_servers,
             commands::servers::add_server,
             commands::servers::remove_server,

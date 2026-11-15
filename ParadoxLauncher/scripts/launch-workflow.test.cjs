@@ -631,6 +631,11 @@ function realServerContext(api) {
   return load('src/servers/ServerContext.tsx', {
     '../api/tauri': {
       getOfficialPlay: async () => ({ available: true }),
+      getAuthCapabilities: async () => ({
+        usernameAuthentication: false,
+        emailRequired: true,
+        emailVerificationRequired: false,
+      }),
       selectServer: async () => { throw 'Close Dauntless before changing servers or install folders.'; },
       ...api,
     },
@@ -843,7 +848,7 @@ test('every account call names the server it is for, and a switch restores that 
   const harness = authHarness(officialServerState, {
     native_restore_session: ({ serverId }) => Promise.resolve(serverId === 'official' ? account : null),
     native_login: () => Promise.resolve(localAccount),
-    native_register: () => Promise.resolve({ account: { ...localAccount, approvalStatus: 'pending' }, verificationRequired: false }),
+    native_register: () => Promise.resolve({ approvalRequired: true, account: { ...localAccount, approvalStatus: 'pending' }, verificationRequired: false }),
   });
   await mount(harness.App);
   assert.equal(harness.context.status, 'signedIn');
@@ -912,12 +917,20 @@ test('Discord sign-in is not applied while a local server is selected', async ()
   assert.equal(harness.context.status, 'signedIn');
 });
 
-function loginScreen(serverState) {
+function loginScreen(serverState, authOverrides = {}) {
   const TextField = ({ label, hint, error, rightAdornment, ...input }) =>
     React.createElement('label', null, label, React.createElement('input', input));
   return load('src/screens/LoginScreen.tsx', {
     '../servers/serverNames': serverNames,
-    '../auth/AuthContext': { useAuth: () => ({ login: async () => {}, startDiscordLogin: async () => {}, authError: null }), describeAuthError: String },
+    '../auth/AuthContext': {
+      useAuth: () => ({
+        login: async () => {},
+        startDiscordLogin: async () => {},
+        authError: null,
+        ...authOverrides,
+      }),
+      describeAuthError: String,
+    },
     '../components/TextField': { TextField, RevealToggle: () => null },
     '../components/Button': { Button: plainButton },
     '../components/Banner': { Banner: ({ children }) => React.createElement('div', null, children) },
@@ -927,7 +940,17 @@ function loginScreen(serverState) {
     },
     '../components/icons': icons,
     '../components/LegalDocument': LegalDocument,
-    '../servers/ServerContext': { useServer: () => serverState },
+    '../servers/ServerContext': {
+      useServer: () => ({
+        ...serverState,
+        authCapabilities: serverState.authCapabilities ?? {
+          usernameAuthentication: false,
+          emailRequired: true,
+          emailVerificationRequired: false,
+        },
+        authCapabilitiesReady: serverState.authCapabilitiesReady ?? true,
+      }),
+    },
   }).LoginScreen;
 }
 
@@ -946,6 +969,47 @@ test('the sign-in card names a local server, offers no Discord there, and leads 
   assert.equal(document.querySelector('[role="combobox"]'), null, 'the card has no server choice');
   await act(async () => button('Use your Mystic Paradox account instead').click());
   assert.deepEqual(chosen, [officialEntry.id]);
+});
+
+test('username-enabled sign-in accepts a username and an existing email identifier', async () => {
+  const submitted = [];
+  const serverState = {
+    selected: officialEntry,
+    officialNetwork: true,
+    authCapabilities: {
+      usernameAuthentication: true,
+      emailRequired: false,
+      emailVerificationRequired: false,
+    },
+    authCapabilitiesReady: true,
+  };
+
+  await mount(loginScreen(serverState, {
+    login: async (identifier, password) => {
+      submitted.push([identifier, password]);
+    },
+  }), { onCreateAccount() {} });
+
+  await act(async () => {
+    typeInto(field('Username or email'), 'AetherHunter');
+    typeInto(field('Password'), 'a long password');
+  });
+  await act(async () => button('Sign in').click());
+
+  await act(async () => {
+    typeInto(field('Username or email'), 'legacy@example.com');
+  });
+  await act(async () => button('Sign in').click());
+
+  assert.deepEqual(submitted, [
+    ['AetherHunter', 'a long password'],
+    ['legacy@example.com', 'a long password'],
+  ]);
+
+  assert.ok(button('Forgot password?'));
+  assert.ok(document.body.textContent.includes(
+    'Accounts registered without an email address cannot use email-based password recovery.'
+  ));
 });
 
 test('the official sign-in card is unchanged and keeps Discord', async () => {
@@ -2355,7 +2419,17 @@ function registerScreen(serverState, sent) {
     '../components/LegalConsentChecks': { LegalConsentChecks },
     '../components/LegalDocument': LegalDocument,
     '../legal/legalMeta': legalMeta,
-    '../servers/ServerContext': { useServer: () => serverState },
+    '../servers/ServerContext': {
+      useServer: () => ({
+        ...serverState,
+        authCapabilities: serverState.authCapabilities ?? {
+          usernameAuthentication: false,
+          emailRequired: true,
+          emailVerificationRequired: false,
+        },
+        authCapabilitiesReady: serverState.authCapabilitiesReady ?? true,
+      }),
+    },
   }).RegisterScreen;
 }
 const officialUserServer = { selected: undefined, officialNetwork: true };
@@ -2531,7 +2605,17 @@ function registerWithUsername(register, checkUsername = async () => ({ available
     '../components/LegalConsentChecks': { LegalConsentChecks },
     '../components/LegalDocument': LegalDocument,
     '../legal/legalMeta': legalMeta,
-    '../servers/ServerContext': { useServer: () => officialUserServer },
+    '../servers/ServerContext': {
+      useServer: () => ({
+        ...officialUserServer,
+        authCapabilities: {
+          usernameAuthentication: true,
+          emailRequired: false,
+          emailVerificationRequired: false,
+        },
+        authCapabilitiesReady: true,
+      }),
+    },
   }).RegisterScreen;
 }
 async function fillSignUp(timers, name) {
@@ -2546,6 +2630,32 @@ async function fillSignUp(timers, name) {
   await timers.fire();
   await act(async () => {});
 }
+
+test('sign-up permits an empty email when the selected server marks it optional', async () => {
+  const sent = [];
+
+  await mount(
+    registerWithUsername(async (...args) => { sent.push(args); }),
+    { onBackToLogin() {} },
+  );
+
+  const timers = manualTimeouts();
+  await fillSignUp(timers, 'NoEmailSlayer');
+
+  await act(async () => {
+    typeInto(document.querySelector('input[type="email"]'), '');
+  });
+
+  assert.equal(document.querySelector('input[type="email"]').value, '');
+  assert.equal(button('Create account').disabled, false);
+
+  await act(async () => button('Create account').click());
+
+  assert.equal(sent.length, 1);
+  assert.equal(sent[0][0], '', 'the registration sends an empty email');
+  assert.equal(sent[0][1], 'a long password');
+  assert.equal(sent[0][3], 'NoEmailSlayer');
+});
 
 test('sign-up asks for the username and sends it, and waits until it is valid and available', async () => {
   const sent = [];
@@ -2590,7 +2700,7 @@ test('a name refused at submit (taken meanwhile) shows on the username field, no
 });
 
 test('the register call carries the username on the official server too', async () => {
-  const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ account: localAccount, verificationRequired: false }) });
+  const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ approvalRequired: true, account: { ...localAccount, approvalStatus: 'pending' }, verificationRequired: false }) });
   await mount(harness.App);
   const consent = { termsVersion: '2026-10-14', privacyVersion: '2026-10-14', ageConfirmed: true };
   await act(async () => harness.context.register('slayer@example.com', 'a long password', consent, 'AetherHunter'));
@@ -2598,7 +2708,7 @@ test('the register call carries the username on the official server too', async 
 });
 
 test('the official register call carries the consent, and a local one does not', async () => {
-  const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ account: localAccount, verificationRequired: false }) });
+  const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ approvalRequired: true, account: { ...localAccount, approvalStatus: 'pending' }, verificationRequired: false }) });
   await mount(harness.App);
   const consent = { termsVersion: '2026-10-14', privacyVersion: '2026-10-14', ageConfirmed: true };
   await act(async () => harness.context.register('slayer@example.com', 'a long password', consent));

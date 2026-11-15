@@ -1,0 +1,617 @@
+========== TEST HARNESS ==========
+
+========== LINES 1-130 ==========
+    1: const { test, afterEach } = require('node:test');
+    2: const assert = require('node:assert/strict');
+    3: const fs = require('node:fs');
+    4: const path = require('node:path');
+    5: const { createRequire } = require('node:module');
+    6: const ts = require('typescript');
+    7: const { JSDOM } = require('jsdom');
+    8: const React = require('react');
+    9: // React DOM decides when it loads whether the DOM supports the `input` event (typing into a controlled field). Give
+   10: // it a window to look at; every test still mounts into its own fresh JSDOM (see `mount`).
+   11: {
+   12:   const bootDom = new JSDOM('<div id="root"></div>', { url: 'http://localhost' });
+   13:   global.window = bootDom.window;
+   14:   global.document = bootDom.window.document;
+   15: }
+   16: const { createRoot } = require('react-dom/client');
+   17: const { act } = React;
+   18: 
+   19: // Execute the real TSX components with real React/DOM scheduling. Only native IPC and
+   20: // unrelated presentation imports are replaced; no production logic is copied into the tests.
+   21: function load(relative, mocks) {
+   22:   const filename = path.resolve(__dirname, '..', relative);
+   23:   const source = ts.transpileModule(fs.readFileSync(filename, 'utf8'), {
+   24:     compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, target: ts.ScriptTarget.ES2020 },
+   25:   }).outputText;
+   26:   const module = { exports: {} };
+   27:   const realRequire = createRequire(filename);
+   28:   new Function('require', 'module', 'exports', source)(
+   29:     (name) => Object.hasOwn(mocks, name) ? mocks[name] : realRequire(name), module, module.exports);
+   30:   return module.exports;
+   31: }
+   32: 
+   33: function deferred() {
+   34:   let resolve, reject;
+   35:   const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+   36:   return { promise, resolve, reject };
+   37: }
+   38: 
+   39: let root, dom;
+   40: async function mount(Component, props = {}) {
+   41:   dom = new JSDOM('<div id="root"></div>', { url: 'http://localhost' });
+   42:   global.window = dom.window;
+   43:   global.document = dom.window.document;
+   44:   global.IS_REACT_ACT_ENVIRONMENT = true;
+   45:   root = createRoot(document.getElementById('root'));
+   46:   await act(async () => root.render(React.createElement(Component, props)));
+   47: }
+   48: afterEach(async () => {
+   49:   if (root) await act(async () => root.unmount());
+   50:   dom?.window.close();
+   51:   root = dom = undefined;
+   52: });
+   53: function button(label) {
+   54:   return [...document.querySelectorAll('button')].find((item) => item.textContent.trim() === label);
+   55: }
+   56: 
+   57: const account = { userId: 'a', displayName: 'Slayer', needsUsername: false };
+   58: // Any icon name renders nothing; the tests target behaviour, not artwork.
+   59: const icons = new Proxy({}, { get: () => () => null });
+   60: // [2026-10-14] The realm trust note, loaded for real: the tests check its words where a realm is joined, hosted or added.
+   61: const realmTrustNote = load('src/components/RealmTrustNote.tsx', { './icons': icons });
+   62: const sessionsLib = load('src/lib/sessions.ts', {});
+   63: // [2026-10-14] The realm naming rule (a pure module) and the launcher's dropdown, loaded for real. Every factory that
+   64: // imports either one maps its import to these.
+   65: const serverNames = load('src/servers/serverNames.ts', {});
+   66: // [2026-10-15] The email-code and Discord rules, and the official server's play switch: pure modules, loaded for real.
+   67: const authRules = load('src/auth/authRules.ts', {});
+   68: const officialPlayLib = load('src/servers/officialPlay.ts', {});
+   69: // [2026-10-16] Whether the selected realm can be entered (pure, loaded for real).
+   70: const realmStatusLib = load('src/servers/realmStatus.ts', {});
+   71: const dropdownLib = load('src/components/Dropdown.tsx', { './icons': icons });
+   72: const services = { health: 'online', checkedAt: 0, refreshing: false, supportedChangelist: 647472, refresh: async () => {} };
+   73: // [2026-10-13 realms S5] The selected-server state, as a screen under test sees it.
+   74: const serverCtx = { opened: [], synced: [], openWarning(id) { serverCtx.opened.push(id); }, sync(list) { serverCtx.synced.push(list); } };
+   75: const LocalServerBadge = ({ onOpen, children }) =>
+   76:   React.createElement('button', { type: 'button', onClick: onOpen }, children ?? 'LOCAL SERVER WARNING');
+   77: const policy = { channel: 'beta', roles: ['tester'] };
+   78: const install = { located: true, exeSha256: 'approved', runtimeRepairRequired: false };
+   79: // [2026-10-14 realms] The realm trust Home sees: nothing to agree to and no notice, unless a test says otherwise.
+   80: const noTrust = () => ({ notice: null, dismissNotice() {}, ensureHost: async () => true, trustNewHost: async () => false });
+   81: const Banner = ({ tone, children, onDismiss }) => React.createElement('div', { className: 'banner', 'data-tone': tone ?? 'danger' },
+   82:   children, onDismiss ? React.createElement('button', { type: 'button', onClick: onDismiss }, 'Dismiss') : null);
+   83: function home(api, refreshPolicy = async () => policy, serviceState = services, { trust = noTrust(), selected, rules = accountRulesDefault(), officialPlay = null, realm = null, realmHook } = {}) {
+   84:   return load('src/screens/dashboard/HomeTab.tsx', {
+   85:     '../../auth/AuthContext': { useAuth: () => ({ account }) },
+   86:     '../../auth/AccountRules': { useAccountRules: () => rules },
+   87:     '../../components/DeactivationBanner': { DeactivationBanner },
+   88:     '../../lib/accountDeletion': accountDeletionLib,
+   89:     '../../policy/PolicyContext': { usePolicy: () => ({ policy, refreshPolicy }) },
+   90:     '../../services/ServicesContext': { useServices: () => serviceState },
+   91:     '../../servers/ServerContext': { useServer: () => ({ ...serverCtx, selected, officialPlay }) },
+   92:     '../../servers/RealmTrust': { useRealmTrust: () => trust },
+   93:     '../../components/Banner': { Banner },
+   94:     '../../components/LocalServerWarning': { LocalServerBadge },
+   95:     '../../api/tauri': {
+   96:       getInstallStatus: async () => install,
+   97:       isGameRunning: async () => false,
+   98:       onGameExited: async () => () => {},
+   99:       checkRuntimeUpdate: async () => ({ available: false, version: '0.2.80' }),
+  100:       getRecentSessions: async () => [],
+  101:       REALM_OWNER_CHANGED: 'REALM_OWNER_CHANGED',
+  102:       REALM_HOST_KEY_REQUIRED: 'REALM_HOST_KEY_REQUIRED',
+  103:       ...api,
+  104:     },
+  105:     '../../lib/sanitize': { sanitizeError: (error) => error },
+  106:     '../../lib/sessions': sessionsLib,
+  107:     '../../components/icons': icons,
+  108:     '../../components/AetherMark': { AetherMark: () => null },
+  109:     '../../components/ArtBackdrop': { ArtBackdrop: () => null, heroArt: 'art.webp' },
+  110:     '../../servers/serverNames': serverNames,
+  111:     '../../servers/officialPlay': officialPlayLib,
+  112:     // [2026-10-16] The selected realm's own state (none unless a test gives one); the rules are loaded for real.
+  113:     '../../servers/realmStatus': realmStatusLib,
+  114:     '../../servers/useRealmStatus': { useRealmStatus: realmHook ?? (() => ({ status: realm, refresh() {}, markRequested() {} })) },
+  115:     '@tauri-apps/api/app': { getVersion: async () => '0.1.67' },
+  116:   }).HomeTab;
+  117: }
+  118: 
+  119: test('Play is single-flight, avoids a WebView runtime pass, and retries after failure', async () => {
+  120:   const launch = deferred();
+  121:   let calls = 0, repairs = 0;
+  122:   await mount(home({
+  123:     installRuntimeUpdate: async () => { repairs++; },
+  124:     secureLaunch: (channel) => {
+  125:       assert.equal(channel, 'beta');
+  126:       calls++;
+  127:       return calls === 1 ? launch.promise : Promise.resolve();
+  128:     },
+  129:     isGameRunning: async () => false,
+  130:   }));
+
+========== LINES 835-880 ==========
+  835:   function App() { return React.createElement(AuthProvider, null, React.createElement(Probe)); }
+  836:   return { App, calls, listeners, server, get context() { return context; } };
+  837: }
+  838: const officialServerState = { ready: true, serverId: 'official', needsAck: false, officialNetwork: true };
+  839: const localServerState = { ready: true, serverId: 's-1', needsAck: false, officialNetwork: false };
+  840: const localAccount = { ...account, userId: 'local-user', displayName: 'LocalFriend' };
+  841: 
+  842: test('every account call names the server it is for, and a switch restores that server\'s own session', async () => {
+  843:   const harness = authHarness(officialServerState, {
+  844:     native_restore_session: ({ serverId }) => Promise.resolve(serverId === 'official' ? account : null),
+  845:     native_login: () => Promise.resolve(localAccount),
+  846:     native_register: () => Promise.resolve({ account: { ...localAccount, approvalStatus: 'pending' }, verificationRequired: false }),
+  847:   });
+  848:   await mount(harness.App);
+  849:   assert.equal(harness.context.status, 'signedIn');
+  850:   assert.equal(harness.context.account.userId, 'a');
+  851:   assert.equal(harness.context.serverId, 'official');
+  852:   assert.deepEqual(harness.calls[0], ['native_restore_session', { serverId: 'official' }]);
+  853: 
+  854:   // Another server is a different session: the official account is gone from the screen, and the local server's saved
+  855:   // session is looked for (there is none), so its own sign-in shows.
+  856:   harness.server.current = localServerState;
+  857:   await act(async () => root.render(React.createElement(harness.App)));
+  858:   assert.equal(harness.context.status, 'signedOut');
+  859:   assert.equal(harness.context.account, null);
+  860:   assert.deepEqual(harness.calls.at(-1), ['native_restore_session', { serverId: 's-1' }]);
+  861: 
+  862:   await act(async () => harness.context.login('friend@example.com', 'a long password'));
+  863:   assert.deepEqual(harness.calls.at(-1), ['native_login', { serverId: 's-1', email: 'friend@example.com', password: 'a long password' }]);
+  864:   assert.equal(harness.context.status, 'signedIn');
+  865:   assert.equal(harness.context.account.userId, 'local-user');
+  866: 
+  867:   await act(async () => harness.context.register('friend@example.com', 'a long password', undefined, 'Friend'));
+  868:   assert.deepEqual(harness.calls.at(-1), ['native_register', { serverId: 's-1', displayName: 'Friend', email: 'friend@example.com', password: 'a long password' }]);
+  869:   await act(async () => harness.context.logout());
+  870:   assert.deepEqual(harness.calls.at(-1), ['native_logout', { serverId: 's-1' }]);
+  871: 
+  872:   // And back: the official session is restored for the official server.
+  873:   harness.server.current = officialServerState;
+  874:   await act(async () => root.render(React.createElement(harness.App)));
+  875:   assert.deepEqual(harness.calls.at(-1), ['native_restore_session', { serverId: 'official' }]);
+  876:   assert.equal(harness.context.status, 'signedIn');
+  877:   assert.equal(harness.context.account.userId, 'a');
+  878: });
+  879: 
+  880: test('a local server is not contacted at all until its warning is accepted', async () => {
+
+========== LINES 925-975 ==========
+  925:       AuthLayout: ({ children }) => React.createElement('div', null, children),
+  926:       AuthCard: ({ title, subtitle, children }) => React.createElement('section', null, React.createElement('h1', null, title), React.createElement('p', null, subtitle), children),
+  927:     },
+  928:     '../components/icons': icons,
+  929:     '../components/LegalDocument': LegalDocument,
+  930:     '../servers/ServerContext': { useServer: () => serverState },
+  931:   }).LoginScreen;
+  932: }
+  933: 
+  934: test('the sign-in card names a local server, offers no Discord there, and leads back to the Mystic Paradox account', async () => {
+  935:   const chosen = [];
+  936:   const local = { ...localEntry, acknowledged: true, selected: true };
+  937:   await mount(loginScreen({
+  938:     selected: local, officialNetwork: false, servers: [{ ...officialEntry, selected: false }, local],
+  939:     select: async (serverId) => { chosen.push(serverId); },
+  940:   }), { onCreateAccount() {} });
+  941:   assert.match(document.querySelector('h1').textContent, /Sign in to My server/);
+  942:   assert.match(document.body.textContent, /never sees it/);
+  943:   assert.equal(button('Sign in with Discord'), undefined);
+  944:   assert.ok(button('Sign in'));
+  945:   assert.match(document.body.textContent, /New to this server\?/);
+  946:   assert.equal(document.querySelector('[role="combobox"]'), null, 'the card has no server choice');
+  947:   await act(async () => button('Use your Mystic Paradox account instead').click());
+  948:   assert.deepEqual(chosen, [officialEntry.id]);
+  949: });
+  950: 
+  951: test('the official sign-in card is unchanged and keeps Discord', async () => {
+  952:   await mount(loginScreen({ selected: officialEntry, officialNetwork: true }), { onCreateAccount() {} });
+  953:   assert.match(document.querySelector('h1').textContent, /Welcome back, Slayer/);
+  954:   assert.ok(button('Sign in with Discord'));
+  955:   assert.match(document.body.textContent, /New to Mystic Paradox\?/);
+  956:   assert.equal(button('Use your Mystic Paradox account instead'), undefined, 'the way back is only on a local server\'s card');
+  957: });
+  958: 
+  959: test('the policy is read from the selected server and never reused by another server', async () => {
+  960:   const responses = [deferred(), deferred()];
+  961:   const asked = [];
+  962:   let auth = { status: 'signedIn', account, serverId: 'official' }, calls = 0, context;
+  963:   const { PolicyProvider, usePolicy } = load('src/policy/PolicyContext.tsx', {
+  964:     '../auth/AuthContext': { useAuth: () => auth },
+  965:     '../api/tauri': { getPolicy: (serverId) => { asked.push(serverId); return responses[calls++].promise; } },
+  966:   });
+  967:   function Probe() { context = usePolicy(); return null; }
+  968:   function App() { return React.createElement(PolicyProvider, null, React.createElement(Probe)); }
+  969:   await mount(App);
+  970:   assert.deepEqual(asked, ['official']);
+  971:   await act(async () => responses[0].resolve({ channel: 'beta', roles: ['tester'] }));
+  972:   assert.equal(context.policy.channel, 'beta');
+  973: 
+  974:   // The same account id on another server is another account: the beta policy of the official server is gone at once.
+  975:   auth = { status: 'signedIn', account, serverId: 's-1' };
+
+========== LINES 2355-2415 ==========
+ 2355:     '../components/LegalConsentChecks': { LegalConsentChecks },
+ 2356:     '../components/LegalDocument': LegalDocument,
+ 2357:     '../legal/legalMeta': legalMeta,
+ 2358:     '../servers/ServerContext': { useServer: () => serverState },
+ 2359:   }).RegisterScreen;
+ 2360: }
+ 2361: const officialUserServer = { selected: undefined, officialNetwork: true };
+ 2362: const localUserServer = { selected: { name: 'My server' }, officialNetwork: false };
+ 2363: 
+ 2364: test('registration waits for the age and the documents, then sends the current versions with the account', async () => {
+ 2365:   const sent = [];
+ 2366:   await mount(registerScreen(officialUserServer, sent), { onBackToLogin() {} });
+ 2367:   assert.ok(document.querySelector('.legal-checks'), 'the official server asks for both boxes');
+ 2368:   await act(async () => {
+ 2369:     typeInto(field('Email'), 'slayer@example.com');
+ 2370:     typeInto(field('Password'), 'a long password');
+ 2371:     typeInto(field('Confirm password'), 'a long password');
+ 2372:   });
+ 2373:   assert.equal(button('Create account').disabled, true);
+ 2374:   await act(async () => checkboxOf('I am 16').click());
+ 2375:   assert.equal(button('Create account').disabled, true, 'the age alone is not enough');
+ 2376:   await act(async () => checkboxOf('I agree').click());
+ 2377:   assert.equal(button('Create account').disabled, false);
+ 2378:   await act(async () => button('Create account').click());
+ 2379:   assert.deepEqual(sent[0].slice(0, 3), ['slayer@example.com', 'a long password', { termsVersion: legalMeta.LEGAL.termsVersion, privacyVersion: legalMeta.LEGAL.privacyVersion, ageConfirmed: true }]);
+ 2380:   // [2026-10-16] The name is sent again on the official server (0.1.67-0.1.70 sent none).
+ 2381:   assert.equal(sent[0][3], 'Slayer', 'the official sign-up sends the name');
+ 2382: });
+ 2383: 
+ 2384: test('the document names in the registration boxes open the documents and do not tick the box', async () => {
+ 2385:   await mount(registerScreen(officialUserServer, []), { onBackToLogin() {} });
+ 2386:   const termsName = [...document.querySelectorAll('.legal-checks button')].find((item) => item.textContent === 'Terms of Use');
+ 2387:   await act(async () => termsName.click());
+ 2388:   assert.equal(titleOfDialog(), 'Terms of Use');
+ 2389:   assert.ok(document.querySelector('.legal-doc').textContent.includes('Version 2026-10-14'));
+ 2390:   assert.equal(checkboxOf('I agree').checked, false, 'a document name does not tick the box');
+ 2391:   await escapeKey();
+ 2392:   assert.equal(document.querySelector('[role="dialog"]'), null, 'Escape closes the viewer and keeps the form');
+ 2393:   assert.ok(button('Create account'));
+ 2394: });
+ 2395: 
+ 2396: test('a local server registers as before: no document boxes, and nothing about the documents is sent', async () => {
+ 2397:   const sent = [];
+ 2398:   await mount(registerScreen(localUserServer, sent), { onBackToLogin() {} });
+ 2399:   assert.equal(document.querySelector('.legal-checks'), null);
+ 2400:   await act(async () => {
+ 2401:     typeInto(field('Email'), 'friend@example.com');
+ 2402:     typeInto(field('Password'), 'a long password');
+ 2403:     typeInto(field('Confirm password'), 'a long password');
+ 2404:   });
+ 2405:   await act(async () => button('Create account').click());
+ 2406:   assert.equal(sent[0][2], undefined, 'the local server gets no consent');
+ 2407:   assert.equal(sent[0][3], 'Slayer', 'a local server takes the name on its own form');
+ 2408: });
+ 2409: 
+ 2410: // ---- [2026-10-16] launcher 0.1.71: the username is on the sign-up form again --------------------------------------------
+ 2411: // An account held for approval has no session, so it could never reach the set-username step: 0.1.67-0.1.70 left three VPS
+ 2412: // accounts named by their id. The local rules mirror the backend's ValidateUsername; the server decides the rest.
+ 2413: 
+ 2414: const textFieldLib = load('src/components/TextField.tsx', {});
+ 2415: function usernameFieldLib(checkUsername) {
+
+========== LINES 2540-2610 ==========
+ 2540:     typeInto(inputFor('Email'), 'slayer@example.com');
+ 2541:     typeInto(inputFor('Password'), 'a long password');
+ 2542:     typeInto(inputFor('Confirm password'), 'a long password');
+ 2543:   });
+ 2544:   await act(async () => checkboxOf('I am 16').click());
+ 2545:   await act(async () => checkboxOf('I agree').click());
+ 2546:   await timers.fire();
+ 2547:   await act(async () => {});
+ 2548: }
+ 2549: 
+ 2550: test('sign-up asks for the username and sends it, and waits until it is valid and available', async () => {
+ 2551:   const sent = [];
+ 2552:   const check = deferred();
+ 2553:   await mount(registerWithUsername(async (...args) => { sent.push(args); }, () => check.promise), { onBackToLogin() {} });
+ 2554:   const timers = manualTimeouts();
+ 2555:   assert.ok(inputFor('Username'), 'the username is on the official sign-up form');
+ 2556:   await fillSignUp(timers, 'AetherHunter');
+ 2557:   assert.equal(button('Create account').disabled, true, 'everything else is ready, the name is still being checked');
+ 2558:   await act(async () => check.resolve({ available: true }));
+ 2559:   assert.equal(button('Create account').disabled, false);
+ 2560:   await act(async () => button('Create account').click());
+ 2561:   assert.equal(sent.length, 1);
+ 2562:   assert.equal(sent[0][0], 'slayer@example.com');
+ 2563:   assert.equal(sent[0][3], 'AetherHunter', 'the name goes with the registration (displayName)');
+ 2564:   assert.deepEqual(sent[0][2], { termsVersion: legalMeta.LEGAL.termsVersion, privacyVersion: legalMeta.LEGAL.privacyVersion, ageConfirmed: true });
+ 2565: });
+ 2566: 
+ 2567: test('sign-up stays disabled for a name the server refuses, and a mismatch shows on its own field', async () => {
+ 2568:   await mount(registerWithUsername(async () => {}, async () => ({ available: false, reason: 'That username is already taken.' })), { onBackToLogin() {} });
+ 2569:   const timers = manualTimeouts();
+ 2570:   await fillSignUp(timers, 'Tempest');
+ 2571:   assert.equal(fieldError(), 'That username is already taken.');
+ 2572:   assert.equal(button('Create account').disabled, true);
+ 2573:   await act(async () => typeInto(inputFor('Confirm password'), 'another long password'));
+ 2574:   assert.ok([...document.querySelectorAll('.field-error')].some((item) => item.textContent === "Passwords don't match."));
+ 2575: });
+ 2576: 
+ 2577: test('a name refused at submit (taken meanwhile) shows on the username field, not as a banner', async () => {
+ 2578:   await mount(registerWithUsername(async () => { throw 'AUTH_USERNAME_REFUSED: That username is already taken.'; }), { onBackToLogin() {} });
+ 2579:   const timers = manualTimeouts();
+ 2580:   await fillSignUp(timers, 'AetherHunter');
+ 2581:   await act(async () => button('Create account').click());
+ 2582:   assert.equal(fieldError(), 'That username is already taken.');
+ 2583:   assert.ok(!document.querySelector('.banner'), 'no banner: the field says it');
+ 2584:   assert.equal(button('Create account').disabled, true, 'that name cannot be sent again');
+ 2585:   await act(async () => typeInto(inputFor('Username'), 'AetherHunter2'));
+ 2586:   await timers.fire();
+ 2587:   await act(async () => {});
+ 2588:   assert.equal(fieldError(), null, 'a new name clears it');
+ 2589:   assert.equal(button('Create account').disabled, false);
+ 2590: });
+ 2591: 
+ 2592: test('the register call carries the username on the official server too', async () => {
+ 2593:   const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ account: localAccount, verificationRequired: false }) });
+ 2594:   await mount(harness.App);
+ 2595:   const consent = { termsVersion: '2026-10-14', privacyVersion: '2026-10-14', ageConfirmed: true };
+ 2596:   await act(async () => harness.context.register('slayer@example.com', 'a long password', consent, 'AetherHunter'));
+ 2597:   assert.deepEqual(harness.calls.at(-1), ['native_register', { serverId: 'official', email: 'slayer@example.com', password: 'a long password', consent, displayName: 'AetherHunter' }]);
+ 2598: });
+ 2599: 
+ 2600: test('the official register call carries the consent, and a local one does not', async () => {
+ 2601:   const harness = authHarness(officialServerState, { native_register: () => Promise.resolve({ account: localAccount, verificationRequired: false }) });
+ 2602:   await mount(harness.App);
+ 2603:   const consent = { termsVersion: '2026-10-14', privacyVersion: '2026-10-14', ageConfirmed: true };
+ 2604:   await act(async () => harness.context.register('slayer@example.com', 'a long password', consent));
+ 2605:   // [2026-10-15] The official account names itself after sign-in: no displayName is sent.
+ 2606:   assert.deepEqual(harness.calls.at(-1), ['native_register', { serverId: 'official', email: 'slayer@example.com', password: 'a long password', consent }]);
+ 2607: });
+ 2608: 
+ 2609: function accountRulesHarness(api, serverState = officialServerState) {
+ 2610:   const calls = [];
+
+========== LINES 3480-3505 ==========
+ 3480:   await act(async () => button('Set password').click());
+ 3481:   assert.equal(document.querySelector('[role="alert"]').textContent, "Passwords don't match.");
+ 3482:   assert.equal(completed.length, 0);
+ 3483: 
+ 3484:   await act(async () => typeInto(field('Confirm new password'), 'brand new pass'));
+ 3485:   await act(async () => button('Set password').click());
+ 3486:   assert.deepEqual(completed[0], ['slayer@example.com', '123456', 'brand new pass']);
+ 3487: });
+ 3488: 
+ 3489: test('the sign-in card offers Forgot password? on the official server only', async () => {
+ 3490:   await mount(loginScreen(officialServerState), { onCreateAccount() {} });
+ 3491:   assert.ok(button('Forgot password?'));
+ 3492:   await unmountNow();
+ 3493:   await mount(loginScreen(localServerState), { onCreateAccount() {} });
+ 3494:   assert.equal(button('Forgot password?'), undefined, 'a local server keeps its own accounts');
+ 3495: });
+ 3496: 
+ 3497: test('Home: an unavailable official server waits for Play with its note, shows the red badge, the version and the new copy', async () => {
+ 3498:   await mount(home({ getInstallStatus: async () => install }, undefined, undefined, { officialPlay: { available: false, message: 'Maintenance until 18:00.' } }));
+ 3499:   await act(async () => {});
+ 3500:   assert.equal(button('Unavailable').disabled, true, 'Play is disabled while the official server is off');
+ 3501:   assert.ok(document.body.textContent.includes('Maintenance until 18:00.'));
+ 3502:   const badge = document.querySelector('[data-testid="server-status"]');
+ 3503:   assert.equal(badge.textContent, 'Unavailable');
+ 3504:   assert.ok(badge.classList.contains('bad'));
+ 3505:   assert.equal(document.querySelectorAll('[data-testid="server-status"]').length, 1, 'one badge, not two');
+
+========== AUTH CONTEXT ==========
+
+  src\auth\AuthContext.tsx:32:  authError: string | null;
+  src\auth\AuthContext.tsx:33:  accountCheckedAt: number | null;
+  src\auth\AuthContext.tsx:34:  accountRefreshing: boolean;
+  src\auth\AuthContext.tsx:35:  accountRefreshError: string | null;
+  src\auth\AuthContext.tsx:36:  refreshAccount: () => Promise<LauncherAccount | null>;
+> src\auth\AuthContext.tsx:37:  login: (email: string, password: string) => Promise<void>;
+  src\auth\AuthContext.tsx:38:  /**
+  src\auth\AuthContext.tsx:39:   * `consent` is the Terms of Use and Privacy Policy acceptance; the official server 
+requires it, a local server never gets
+  src\auth\AuthContext.tsx:40:   * it. [2026-10-15] `displayName` is sent only by a local server's own form: the 
+official account names itself after sign-in.
+  src\auth\AuthContext.tsx:41:   */
+> src\auth\AuthContext.tsx:42:  register: (email: string, password: string, consent?: ConsentInput, displayName?: 
+string) => Promise<void>;
+  src\auth\AuthContext.tsx:43:  logout: () => Promise<void>;
+> src\auth\AuthContext.tsx:44:  startDiscordLogin: () => Promise<void>;
+  src\auth\AuthContext.tsx:45:  setUsername: (username: string) => Promise<void>;
+  src\auth\AuthContext.tsx:46:  retrySavedSession: () => Promise<void>;
+  src\auth\AuthContext.tsx:47:  forgetSavedSession: () => Promise<void>;
+  src\auth\AuthContext.tsx:48:  /** [2026-10-15] The email the code screen sent a code to (null when that screen is 
+not up). */
+  src\auth\AuthContext.tsx:49:  codeEmail: string | null;
+  src\auth\AuthContext.tsx:50:  /** Enters the emailed code: signs in, or ends in approval pending. A wrong code 
+rejects with AUTH_CODE_INVALID. */
+  src\auth\AuthContext.tsx:51:  verifyEmailCode: (code: string) => Promise<void>;
+  src\auth\AuthContext.tsx:52:  /** Sends a new code to the code screen's address. */
+  src\auth\AuthContext.tsx:53:  resendEmailCode: () => Promise<void>;
+  src\auth\AuthContext.tsx:54:  /** Opens the forgot-password flow from the sign-in screen. */
+  src\auth\AuthContext.tsx:246:      setStatus("signedOut");
+  src\auth\AuthContext.tsx:247:    });
+  src\auth\AuthContext.tsx:248:    return () => { void unlistenPromise.then((unlisten) => unlisten()); };
+  src\auth\AuthContext.tsx:249:  }, []);
+  src\auth\AuthContext.tsx:250:
+> src\auth\AuthContext.tsx:251:  // [2026-10-15] A verify or reset answer: signed in like login, or waiting for 
+approval (the same screen as a registration).
+  src\auth\AuthContext.tsx:252:  const settleEmailOutcome = useCallback((outcome: EmailOutcome) => {
+  src\auth\AuthContext.tsx:253:    if (!outcome.approvalRequired) {
+  src\auth\AuthContext.tsx:254:      applyAccount(outcome.account);
+  src\auth\AuthContext.tsx:255:      return;
+  src\auth\AuthContext.tsx:256:    }
+  src\auth\AuthContext.tsx:257:    const checkedAt = Date.now();
+  src\auth\AuthContext.tsx:258:    accountLastCheckedRef.current = checkedAt;
+  src\auth\AuthContext.tsx:259:    setAccount(outcome.account);
+  src\auth\AuthContext.tsx:260:    setAccountSync({ checkedAt, refreshing: false, error: null });
+  src\auth\AuthContext.tsx:261:    setStatus("pendingApproval");
+  src\auth\AuthContext.tsx:282:      void unlistenDone.then((unlisten) => unlisten());
+  src\auth\AuthContext.tsx:283:      void unlistenError.then((unlisten) => unlisten());
+  src\auth\AuthContext.tsx:284:    };
+  src\auth\AuthContext.tsx:285:  }, [applyAccount]);
+  src\auth\AuthContext.tsx:286:
+> src\auth\AuthContext.tsx:287:  const login = useCallback(async (email: string, password: string) => {
+  src\auth\AuthContext.tsx:288:    discordPendingRef.current = false;
+  src\auth\AuthContext.tsx:289:    const operation = ++operationRef.current;
+  src\auth\AuthContext.tsx:290:    setAuthError(null);
+  src\auth\AuthContext.tsx:291:    try {
+> src\auth\AuthContext.tsx:292:      const next = await invoke<LauncherAccount>("native_login", { serverId, email, 
+password });
+  src\auth\AuthContext.tsx:293:      if (operation === operationRef.current) applyAccount(next);
+  src\auth\AuthContext.tsx:294:    } catch (error) {
+  src\auth\AuthContext.tsx:295:      // [2026-10-15] The password was right but the email is not verified yet: the 
+backend has just emailed a code, so the
+  src\auth\AuthContext.tsx:296:      // code screen takes over. Any other refusal is thrown as before. Only the 
+official server asks for codes.
+  src\auth\AuthContext.tsx:297:      if (operation !== operationRef.current || authErrorCode(error) !== 
+"AUTH_EMAIL_UNVERIFIED" || !officialRef.current) {
+  src\auth\AuthContext.tsx:298:        throw error;
+  src\auth\AuthContext.tsx:299:      }
+  src\auth\AuthContext.tsx:300:      setEmailCode({ email, password });
+  src\auth\AuthContext.tsx:301:      setStatus("awaitingEmailCode");
+  src\auth\AuthContext.tsx:302:    }
+  src\auth\AuthContext.tsx:319:    applyAccount(next);
+  src\auth\AuthContext.tsx:320:  }, [applyAccount]);
+  src\auth\AuthContext.tsx:321:
+  src\auth\AuthContext.tsx:322:  const dismissDiscordLinkNotice = useCallback(() => setDiscordLinkNotice(null), []);
+  src\auth\AuthContext.tsx:323:
+> src\auth\AuthContext.tsx:324:  const register = useCallback(async (email: string, password: string, consent?: 
+ConsentInput, displayName?: string) => {
+  src\auth\AuthContext.tsx:325:    discordPendingRef.current = false;
+  src\auth\AuthContext.tsx:326:    const operation = ++operationRef.current;
+  src\auth\AuthContext.tsx:327:    setAuthError(null);
+  src\auth\AuthContext.tsx:328:    // The consent key is sent only when the player accepted (official servers). 
+[2026-10-16] The name is sent again on every
+  src\auth\AuthContext.tsx:329:    // server (0.1.71): an account held for approval has no session, so it could not 
+choose its name afterwards.
+  src\auth\AuthContext.tsx:330:    const args: Record<string, unknown> = { serverId, email, password };
+  src\auth\AuthContext.tsx:331:    if (consent) args.consent = consent;
+  src\auth\AuthContext.tsx:332:    if (displayName !== undefined) args.displayName = displayName;
+> src\auth\AuthContext.tsx:333:    const registered = await invoke<RegistrationOutcome>("native_register", args);
+  src\auth\AuthContext.tsx:334:    if (operation !== operationRef.current) return;
+> src\auth\AuthContext.tsx:335:    if (registered.verificationRequired) {
+  src\auth\AuthContext.tsx:336:      // [2026-10-15] A code was emailed: the account is not signed in yet, so the code 
+screen comes next.
+  src\auth\AuthContext.tsx:337:      setEmailCode({ email, password });
+  src\auth\AuthContext.tsx:338:      setStatus("awaitingEmailCode");
+  src\auth\AuthContext.tsx:339:      return;
+  src\auth\AuthContext.tsx:340:    }
+> src\auth\AuthContext.tsx:341:    if (registered.approvalRequired) {
+  src\auth\AuthContext.tsx:342:      const checkedAt = Date.now();
+  src\auth\AuthContext.tsx:343:      accountLastCheckedRef.current = checkedAt;
+> src\auth\AuthContext.tsx:344:      setAccount(registered.account);
+  src\auth\AuthContext.tsx:345:      setAccountSync({ checkedAt, refreshing: false, error: null });
+  src\auth\AuthContext.tsx:346:      setStatus("pendingApproval");
+  src\auth\AuthContext.tsx:347:      return;
+  src\auth\AuthContext.tsx:348:    }
+  src\auth\AuthContext.tsx:349:
+  src\auth\AuthContext.tsx:350:    // Registration succeeded and the server approved the account immediately.
+  src\auth\AuthContext.tsx:351:    // Sign in now so the player receives the session tokens needed to play.
+> src\auth\AuthContext.tsx:352:    const loginIdentifier = email.trim() || displayName || "";
+> src\auth\AuthContext.tsx:353:    await login(loginIdentifier, password);
+> src\auth\AuthContext.tsx:354:  }, [login, serverId]);
+  src\auth\AuthContext.tsx:355:
+  src\auth\AuthContext.tsx:356:  // ---- [2026-10-15] email codes and password resets (the official server) 
+-------------------------------------------
+  src\auth\AuthContext.tsx:357:
+  src\auth\AuthContext.tsx:358:  const verifyEmailCode = useCallback(async (code: string) => {
+  src\auth\AuthContext.tsx:359:    const held = emailCode;
+  src\auth\AuthContext.tsx:360:    if (!held) return;
+  src\auth\AuthContext.tsx:361:    const operation = ++operationRef.current;
+  src\auth\AuthContext.tsx:362:    setAuthError(null);
+  src\auth\AuthContext.tsx:363:    const outcome = await invoke<EmailOutcome>("native_verify_email", { serverId, 
+email: held.email, password: held.password, code });
+  src\auth\AuthContext.tsx:364:    if (operation !== operationRef.current) return;
+  src\auth\AuthContext.tsx:419:        setStatus("signedOut");
+  src\auth\AuthContext.tsx:420:      }
+  src\auth\AuthContext.tsx:421:    }
+  src\auth\AuthContext.tsx:422:  }, [serverId]);
+  src\auth\AuthContext.tsx:423:
+> src\auth\AuthContext.tsx:424:  const startDiscordLogin = useCallback(async () => {
+  src\auth\AuthContext.tsx:425:    discordPendingRef.current = true;
+  src\auth\AuthContext.tsx:426:    const operation = ++operationRef.current;
+  src\auth\AuthContext.tsx:427:    setAuthError(null);
+  src\auth\AuthContext.tsx:428:    setStatus("awaitingDiscord");
+  src\auth\AuthContext.tsx:429:    try {
+> src\auth\AuthContext.tsx:430:      await invoke("native_start_discord_login");
+  src\auth\AuthContext.tsx:431:    } catch (error) {
+  src\auth\AuthContext.tsx:432:      if (operation === operationRef.current) {
+  src\auth\AuthContext.tsx:433:        discordPendingRef.current = false;
+  src\auth\AuthContext.tsx:434:        setStatus("signedOut");
+  src\auth\AuthContext.tsx:435:      }
+  src\auth\AuthContext.tsx:436:      throw error;
+  src\auth\AuthContext.tsx:437:    }
+  src\auth\AuthContext.tsx:438:  }, []);
+  src\auth\AuthContext.tsx:439:
+  src\auth\AuthContext.tsx:440:  const forgetSavedSession = useCallback(async () => {
+  src\auth\AuthContext.tsx:456:      authError,
+  src\auth\AuthContext.tsx:457:      accountCheckedAt: accountSync.checkedAt,
+  src\auth\AuthContext.tsx:458:      accountRefreshing: accountSync.refreshing,
+  src\auth\AuthContext.tsx:459:      accountRefreshError: accountSync.error,
+  src\auth\AuthContext.tsx:460:      refreshAccount,
+> src\auth\AuthContext.tsx:461:      login,
+> src\auth\AuthContext.tsx:462:      register,
+  src\auth\AuthContext.tsx:463:      logout,
+> src\auth\AuthContext.tsx:464:      startDiscordLogin,
+  src\auth\AuthContext.tsx:465:      setUsername,
+  src\auth\AuthContext.tsx:466:      retrySavedSession: restoreSavedSession,
+  src\auth\AuthContext.tsx:467:      forgetSavedSession,
+  src\auth\AuthContext.tsx:468:      codeEmail: emailCode?.email ?? null,
+  src\auth\AuthContext.tsx:469:      verifyEmailCode,
+  src\auth\AuthContext.tsx:470:      resendEmailCode,
+  src\auth\AuthContext.tsx:471:      startPasswordReset,
+  src\auth\AuthContext.tsx:472:      sendPasswordResetCode,
+  src\auth\AuthContext.tsx:473:      completePasswordReset,
+  src\auth\AuthContext.tsx:474:      backToSignIn,
+  src\auth\AuthContext.tsx:476:      linkDiscord,
+  src\auth\AuthContext.tsx:477:      startDiscordUnlink,
+  src\auth\AuthContext.tsx:478:      confirmDiscordUnlink,
+  src\auth\AuthContext.tsx:479:      dismissDiscordLinkNotice,
+  src\auth\AuthContext.tsx:480:    }),
+> src\auth\AuthContext.tsx:481:    [status, serverId, account, authError, accountSync, refreshAccount, login, 
+register, logout, startDiscordLogin, setUsername, restoreSavedSession, forgetSavedSession, emailCode, verifyEmailCode, 
+resendEmailCode, startPasswordReset, sendPasswordResetCode, completePasswordReset, backToSignIn, discordLinkNotice, 
+linkDiscord, startDiscordUnlink, confirmDiscordUnlink, dismissDiscordLinkNotice],
+  src\auth\AuthContext.tsx:482:  );
+  src\auth\AuthContext.tsx:483:
+  src\auth\AuthContext.tsx:484:  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  src\auth\AuthContext.tsx:485:}
+  src\auth\AuthContext.tsx:486:
+  src\auth\AuthContext.tsx:487:export function isLauncherApiError(error: unknown): error is LauncherApiError {
+  src\auth\AuthContext.tsx:488:  return error instanceof LauncherApiError;
+  src\auth\AuthContext.tsx:489:}
+  src\auth\AuthContext.tsx:490:
+  src\auth\AuthContext.tsx:491:export function describeAuthError(error: unknown): string {
+  src\auth\AuthContext.tsx:497:  if (isLauncherApiError(error)) {
+  src\auth\AuthContext.tsx:498:    const known: Partial<Record<LauncherErrorCode, string>> = {
+  src\auth\AuthContext.tsx:499:      SERVER_UNAVAILABLE: "Can't reach the Mystic Paradox server right now. Check your 
+connection and try again.",
+  src\auth\AuthContext.tsx:500:      AUTH_VALIDATION_FAILED: "Check the highlighted fields and try again.",
+  src\auth\AuthContext.tsx:501:      AUTH_INVALID_CREDENTIALS: "The email or password is incorrect.",
+> src\auth\AuthContext.tsx:502:      AUTH_EMAIL_TAKEN: "That email is already registered.",
+  src\auth\AuthContext.tsx:503:      AUTH_DISPLAY_NAME_TAKEN: "That display name is already taken.",
+  src\auth\AuthContext.tsx:504:      AUTH_ACCOUNT_DISABLED: "This account has been disabled.",
+  src\auth\AuthContext.tsx:505:      AUTH_ACCOUNT_BANNED: "This account has been banned.",
+  src\auth\AuthContext.tsx:506:      AUTH_APPROVAL_PENDING: "Your closed-test access request is waiting for approval.",
+  src\auth\AuthContext.tsx:507:      AUTH_APPROVAL_REJECTED: "Your closed-test access request was not approved.",
+  src\auth\AuthContext.tsx:508:      // [2026-10-15] The sign-in deep link for a Discord user with no Mystic Paradox 
+account (sign-in never creates one).
+> src\auth\AuthContext.tsx:509:      AUTH_DISCORD_NOT_LINKED: "Your Discord isn't linked to a Mystic Paradox account. 
+Register with your email, then link Discord on the Account page.",
+  src\auth\AuthContext.tsx:510:      AUTH_USERNAME_REQUIRED: "Choose your launcher username before playing.",
+  src\auth\AuthContext.tsx:511:      AUTH_REFRESH_INVALID: "Your session has expired. Please sign in again.",
+  src\auth\AuthContext.tsx:512:      AUTH_UNAUTHORIZED: "Please sign in again.",
+  src\auth\AuthContext.tsx:513:      AUTH_RATE_LIMITED: "Too many attempts. Please wait a moment and try again.",
+  src\auth\AuthContext.tsx:514:      AUTH_DISCORD_NOT_CONFIGURED: "Discord sign-in isn't available right now.",
+  src\auth\AuthContext.tsx:515:      AUTH_DISCORD_CANCELLED: "Discord sign-in was cancelled.",
+  src\auth\AuthContext.tsx:516:      AUTH_DISCORD_ALREADY_LINKED: "That Discord account is already linked to another 
+Mystic Paradox account.",
+  src\auth\AuthContext.tsx:517:      GAME_BUILD_UNSUPPORTED: "This Dauntless build isn't supported. Verify or repair 
+your installation.",
+  src\auth\AuthContext.tsx:518:    };
+  src\auth\AuthContext.tsx:519:    return known[error.code] ?? error.message;
+
+
+
+
+========== TAURI AUTH API ==========
+

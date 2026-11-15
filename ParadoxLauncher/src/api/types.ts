@@ -53,6 +53,12 @@ export interface UsernameAvailabilityResponse {
   reason?: string;
 }
 
+export interface LauncherAuthCapabilities {
+  usernameAuthentication: boolean;
+  emailRequired: boolean;
+  emailVerificationRequired: boolean;
+}
+
 export interface ServerStatusResponse {
   online: boolean;
   supportedBuildChangelist: number;

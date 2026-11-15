@@ -89,14 +89,14 @@ function PlatinumSection(sectionTag: string): StoreSku[] {
 // entitlements exchange_slot_2 / exchange_slot_3 (a live account carries exchange_slot_2 in
 // Auth/GetEntitlements.md), sold under the store tags the Middleman requests (exchange_vendor_slot_2/3). The SKU
 // ids are the client's own StoreItemsTable rows (single_exchange_slot_2/3, art Store_Art_512x512_cell_slot_middleman).
-// No live SKU capture exists: price set by the operator, 1,000 Platinum each, permanent (duration 0).
+// No live SKU capture exists: price set by the operator, 15,000 Rams each, permanent (duration 0).
 function ExchangeSlotSku(Slot: 2 | 3): StoreSku {
     return {
         id: `single_exchange_slot_${Slot}`,
         displayName: `Cell Fusion Slot ${Slot}`,
         displayDescription: `Unlocks cell fusion slot ${Slot} at the Middleman permanently.`,
         displayPriority: Slot,
-        prices: [{ currencyId: "id_currency_platinum", price: 1000 }],
+        prices: [{ currencyId: "id_currency_notes", price: 15000 }],
         maxAllowed: 1,
         tags: [`exchange_vendor_slot_${Slot}`],
         items: [],
@@ -348,8 +348,13 @@ const CURRENCY_ID_MAP: Record<string, string> = {
     // is then treated as a stacked ITEM removal - so a platinum SKU would have failed with a confusing
     // InsufficientStackedItemError (unmapped -> 500) instead of charging anything. It failed closed,
     // but it would have failed. See Progress/33_PLATINUM_STORE.md.
+    id_currency_notes: "CURRENCY_NOTES",
     id_currency_platinum: "CURRENCY_PLATINUM",
 };
+
+export function ResolveStoreCurrencyId(currencyId: string): string {
+    return CURRENCY_ID_MAP[currencyId] ?? currencyId.toUpperCase();
+}
 
 export function GetLadyLuckSkus(): StoreSku[] {
     return LADYLUCK_SKUS;
@@ -507,7 +512,7 @@ export async function PurchaseStoreSku(userId: string, characterId: string, stor
         return { ok: false, reason: "transaction_failed" };
     }
     const StackedItemsToRemove = Sku.prices.filter((p) => p.price > 0).map((p) => ({
-        catalogId: CURRENCY_ID_MAP[p.currencyId] ?? p.currencyId.toUpperCase(),
+        catalogId: ResolveStoreCurrencyId(p.currencyId),
         quantity: p.price,
     }));
 

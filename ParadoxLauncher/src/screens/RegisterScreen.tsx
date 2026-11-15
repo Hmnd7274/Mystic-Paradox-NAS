@@ -18,12 +18,12 @@ interface RegisterScreenProps {
 
 export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
   const { register } = useAuth();
-  const { selected, officialNetwork } = useServer();
+  const { selected, officialNetwork, authCapabilities, authCapabilitiesReady } = useServer();
   const serverName = selected && !officialNetwork ? serverNaming(selected).primary : null;
   // [2026-10-14] The official backend (the official server and Paradox realms) requires the age and the acceptance of
   // the documents. A local server keeps its own rules, so its registration is unchanged and sends no consent.
   const askConsent = officialNetwork;
-  const usernameOnlyAuth = Boolean(selected && !officialNetwork);
+  const emailRequired = authCapabilities.emailRequired;
   const username = useUsernameField();
   const legal = useLegalViewer();
 
@@ -38,15 +38,21 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
   // [2026-10-16] Which fields the player has left: their mistakes show from then on (the button waits, so it must say why).
   const [touched, setTouched] = useState({ email: false, password: false, confirm: false });
   const consentReady = !askConsent || (ageConfirmed && termsAccepted);
-  const emailError = usernameOnlyAuth || EMAIL_PATTERN.test(email) ? null : "Enter a valid email address.";
+  const emailValue = email.trim();
+  const emailError = emailValue.length === 0
+    ? (emailRequired ? "Enter a valid email address." : null)
+    : EMAIL_PATTERN.test(emailValue) ? null : "Enter a valid email address.";
   // [2026-10-15] The password rule is shared with the password reset (auth/authRules.ts): its length, then the match.
   const passwordLengthError = passwordProblem(password, password);
   const confirmError = confirmPassword && confirmPassword !== password ? "Passwords don't match." : null;
   // [2026-10-16] Create account waits until every field is valid and the username check says Available (0.1.71: the name is
   // asked for here again; an account held for approval has no session, so it could never reach the set-username step).
-  const formReady = username.ready && !emailError && !passwordProblem(password, confirmPassword) && consentReady;
+  const formReady = authCapabilitiesReady && username.ready && !emailError && !passwordProblem(password, confirmPassword) && consentReady;
 
   function validate(): string | null {
+    if (!authCapabilitiesReady) {
+      return "The server's authentication settings are still loading.";
+    }
     const usernameError = username.validate();
     if (usernameError) return usernameError;
     if (emailError) return emailError;
@@ -67,7 +73,7 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
     setSubmitting(true);
     try {
       await register(
-        usernameOnlyAuth ? "" : email,
+        email.trim(),
         password,
         askConsent
           ? { termsVersion: LEGAL.termsVersion, privacyVersion: LEGAL.privacyVersion, ageConfirmed: true }
@@ -99,9 +105,9 @@ export function RegisterScreen({ onBackToLogin }: RegisterScreenProps) {
 
           <UsernameField field={username} disabled={submitting} />
 
-          {!usernameOnlyAuth && (
+          {(
             <TextField
-              label="Email"
+              label={emailRequired ? "Email" : "Email (optional)"}
               type="email"
               autoComplete="email"
               value={email}

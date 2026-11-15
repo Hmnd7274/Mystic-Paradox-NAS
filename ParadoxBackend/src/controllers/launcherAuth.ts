@@ -96,6 +96,24 @@ function UsernameAuthenticationEnabled(): boolean {
     return (process.env.MYSTICPARADOX_USERNAME_AUTH ?? "").trim().toLowerCase() === "on";
 }
 
+export interface LauncherAuthCapabilities {
+    usernameAuthentication: boolean;
+    emailRequired: boolean;
+    emailVerificationRequired: boolean;
+}
+
+/** Public, non-sensitive capabilities used by the launcher for the selected backend. */
+export function GetLauncherAuthCapabilities(): LauncherAuthCapabilities {
+    const usernameAuthentication = UsernameAuthenticationEnabled();
+    const emailVerificationRequired = EmailVerificationRequired();
+
+    return {
+        usernameAuthentication,
+        emailRequired: !usernameAuthentication || emailVerificationRequired,
+        emailVerificationRequired,
+    };
+}
+
 function NormalizeDisplayName(displayName: string): string {
     return displayName.trim().toLowerCase();
 }

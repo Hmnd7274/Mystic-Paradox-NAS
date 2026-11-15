@@ -2,7 +2,7 @@
   "gameVersion": "1.14.7",
   "changelist": 647472,
   "engineVersion": "4.26.2",
-  "exportedAt": "2026-11-11T11:45:31Z",
+  "exportedAt": "2026-11-15T13:46:47Z",
   "flags": {
     "EXPORT_CATALOG": false,
     "EXPORT_PROGRESSION": false,
@@ -13,7 +13,7 @@
     "EXPORT_WEAPON_SLOTS": false,
     "EXPORT_HUNTS": false,
     "EXPORT_TABLE_INVENTORY": false,
-    "EXPORT_STORE_RUNTIME": false,
+    "EXPORT_STORE_RUNTIME": true,
     "EXPORT_MASTERY": false,
     "EXPORT_ESCALATION": true
   },
@@ -27,7 +27,7 @@
     "slayersPathNodes": 0,
     "huntRows": 0,
     "tableInventoryRows": 0,
-    "storeRuntimeRows": 0,
+    "storeRuntimeRows": 3394,
     "masteryRows": 0
   }
 }

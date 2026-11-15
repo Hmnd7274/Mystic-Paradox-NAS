@@ -16,6 +16,7 @@ import { GetPersistenceLifecycle } from "../persistence";
 import { HasLauncherAuth } from "../middleware/HasLauncherAuth";
 import { LauncherApiError, SendLauncherError } from "../security/launcherErrors";
 import {
+    GetLauncherAuthCapabilities,
     RegisterAccount,
     LoginWithPassword,
     RefreshSession,
@@ -137,6 +138,10 @@ async function Handle(req: Request, res: Response, fn: () => Promise<unknown>, s
         SendLauncherError(res, new LauncherApiError("INTERNAL", "Something went wrong. Please try again."));
     }
 }
+
+launcherAuthRouter.get("/launcher/v1/auth/config", (req, res) =>
+    Handle(req, res, async () => GetLauncherAuthCapabilities())
+);
 
 launcherAuthRouter.post("/launcher/v1/auth/register", (req, res) =>
     Handle(req, res, () => {

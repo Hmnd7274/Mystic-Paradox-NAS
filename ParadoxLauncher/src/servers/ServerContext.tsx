@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { acknowledgeLocalServer, getOfficialPlay, listServers, selectServer, type ServerView } from "../api/tauri";
-import type { OfficialPlay } from "../api/types";
+import { acknowledgeLocalServer, getAuthCapabilities, getOfficialPlay, listServers, selectServer, type ServerView } from "../api/tauri";
+import type { LauncherAuthCapabilities, OfficialPlay } from "../api/types";
 import { LocalServerWarning } from "../components/LocalServerWarning";
 
 // [2026-10-13 realms S5] The selected server, as the whole UI sees it. Sign-in, the session, the policy and the status
@@ -8,6 +8,12 @@ import { LocalServerWarning } from "../components/LocalServerWarning";
 
 /** [2026-10-15] How often the official server's play switch is read again. */
 const OFFICIAL_PLAY_POLL_MS = 60_000;
+
+const DEFAULT_AUTH_CAPABILITIES: LauncherAuthCapabilities = {
+  usernameAuthentication: false,
+  emailRequired: true,
+  emailVerificationRequired: false,
+};
 
 export interface ServerState {
   /** The server list has been read (if it could not be, the official server is assumed). */
@@ -18,6 +24,9 @@ export interface ServerState {
   serverId: string | undefined;
   /** The selected server is local and its warning has not been accepted: nothing may be sent to it yet. */
   needsAck: boolean;
+  /** Authentication options reported by the selected server, not inferred from its server kind. */
+  authCapabilities: LauncherAuthCapabilities;
+  authCapabilitiesReady: boolean;
   /** The official backend and sign-in serve the selected server (the official server and Paradox realms). */
   officialNetwork: boolean;
   /**
@@ -39,6 +48,8 @@ const IDLE: ServerState = {
   selected: null,
   serverId: undefined,
   needsAck: false,
+  authCapabilities: DEFAULT_AUTH_CAPABILITIES,
+  authCapabilitiesReady: false,
   officialNetwork: true,
   officialPlay: null,
   sync: () => {},
@@ -89,6 +100,69 @@ export function ServerProvider({ children }: { children: ReactNode }) {
   const needsAck = selected?.kind === "local" && !selected.acknowledged;
   const selectedId = selected?.id;
 
+  const [authCapabilitiesState, setAuthCapabilitiesState] = useState<{
+    serverId: string | undefined;
+    loading: boolean;
+    value: LauncherAuthCapabilities;
+  }>({
+    serverId: undefined,
+    loading: true,
+    value: DEFAULT_AUTH_CAPABILITIES,
+  });
+
+  useEffect(() => {
+    if (!list.ready) return;
+
+    const requestedServerId = selectedId;
+    let cancelled = false;
+
+    setAuthCapabilitiesState({
+      serverId: requestedServerId,
+      loading: true,
+      value: DEFAULT_AUTH_CAPABILITIES,
+    });
+
+    // Do not contact a local server before its warning has been accepted.
+    if (needsAck) {
+      setAuthCapabilitiesState({
+        serverId: requestedServerId,
+        loading: false,
+        value: DEFAULT_AUTH_CAPABILITIES,
+      });
+      return () => { cancelled = true; };
+    }
+
+    getAuthCapabilities(requestedServerId)
+      .then((capabilities) => {
+        if (!cancelled) {
+          setAuthCapabilitiesState({
+            serverId: requestedServerId,
+            loading: false,
+            value: capabilities,
+          });
+        }
+      })
+      .catch(() => {
+        // Older or unreachable backends keep the conservative email-required behavior.
+        if (!cancelled) {
+          setAuthCapabilitiesState({
+            serverId: requestedServerId,
+            loading: false,
+            value: DEFAULT_AUTH_CAPABILITIES,
+          });
+        }
+      });
+
+    return () => { cancelled = true; };
+  }, [list.ready, selectedId, needsAck, selected?.kind]);
+
+  const authCapabilitiesReady =
+    authCapabilitiesState.serverId === selectedId && !authCapabilitiesState.loading;
+
+  const authCapabilities = authCapabilitiesReady
+    ? authCapabilitiesState.value
+    : DEFAULT_AUTH_CAPABILITIES;
+
   // [2026-10-16] Local servers are not supported by this launcher any more: one still selected from an earlier version is
   // left for the official server as soon as the list is read (once; a refusal, for example while a game runs, is left alone).
   // The local server's warning no longer opens by itself.
@@ -115,12 +189,14 @@ export function ServerProvider({ children }: { children: ReactNode }) {
     selected,
     serverId: selectedId,
     needsAck: Boolean(needsAck),
+    authCapabilities,
+    authCapabilitiesReady,
     officialNetwork: selected ? selected.kind !== "local" : true,
     officialPlay,
     sync,
     select,
     openWarning,
-  }), [list, selected, selectedId, needsAck, officialPlay, sync, select, openWarning]);
+  }), [list, selected, selectedId, needsAck, authCapabilities, authCapabilitiesReady, officialPlay, sync, select, openWarning]);
 
   const warningServer = warningFor
     ? list.servers.find((server) => server.id === warningFor && server.kind === "local") ?? null

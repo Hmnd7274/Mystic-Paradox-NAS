@@ -1213,3 +1213,123 @@ EXPORT_MASTERY=0, skipping mastery/achievement objective export
 [Escalation] DONE progression=6 talents=111 buffs=144 dialog=37 playerJourneySeasons=1 total=299
 EXPORT_TABLE_INVENTORY=0, skipping DataTable census
 ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=0 mastery=0
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=1
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+[StoreRuntime] starting store runtime capture; open Reward Cache before injecting
+[StoreRuntime] DONE storeViewModels=5 itemViewModels=221 imageRows=3168 skipped=0
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+EXPORT_ESCALATION=0, skipping escalation data export
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=3394 mastery=0
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=0
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+EXPORT_STORE_RUNTIME=0, skipping store runtime capture
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+[Escalation] starting 1.14.7 escalation DataTable export
+[Escalation] wrote 6/6 rows from escalation_progression
+[Escalation] ExportByRowStruct(EscalationProgressionTuning) DONE total_rows=6
+[Escalation] wrote 18/18 rows from escalation_talents_S6
+[Escalation] wrote 21/21 rows from escalation_talents_S5
+[Escalation] wrote 18/18 rows from escalation_talents_S4
+[Escalation] wrote 18/18 rows from escalation_talents_S3
+[Escalation] wrote 18/18 rows from escalation_talents_S2
+[Escalation] wrote 18/18 rows from escalation_talents
+[Escalation] ExportByRowStruct(EscalationTalentDefinition) DONE total_rows=111
+[Escalation] wrote 144/144 rows from escalation_buffs
+[Escalation] ExportByRowStruct(EscalationBuffDefinition) DONE total_rows=144
+[Escalation] wrote 37/37 rows from escalation_dialog_table
+[Escalation] ExportByRowStruct(DialogTableRow) DONE total_rows=37
+[Escalation] wrote 1/1 rows from player_journey_seasons_talent_tree_table
+[Escalation] ExportByRowStruct(PlayerJourneySeasonData) DONE total_rows=1
+[Escalation] DONE progression=6 talents=111 buffs=144 dialog=37 playerJourneySeasons=1 total=299
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=0 mastery=0
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=1
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+[StoreRuntime] starting store runtime capture; open Reward Cache before injecting
+[StoreRuntime] DONE storeViewModels=5 itemViewModels=221 imageRows=3168 skipped=0
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+[Escalation] starting 1.14.7 escalation DataTable export
+[Escalation] wrote 6/6 rows from escalation_progression
+[Escalation] ExportByRowStruct(EscalationProgressionTuning) DONE total_rows=6
+[Escalation] wrote 18/18 rows from escalation_talents_S6
+[Escalation] wrote 21/21 rows from escalation_talents_S5
+[Escalation] wrote 18/18 rows from escalation_talents_S4
+[Escalation] wrote 18/18 rows from escalation_talents_S3
+[Escalation] wrote 18/18 rows from escalation_talents_S2
+[Escalation] wrote 18/18 rows from escalation_talents
+[Escalation] ExportByRowStruct(EscalationTalentDefinition) DONE total_rows=111
+[Escalation] wrote 144/144 rows from escalation_buffs
+[Escalation] ExportByRowStruct(EscalationBuffDefinition) DONE total_rows=144
+[Escalation] wrote 37/37 rows from escalation_dialog_table
+[Escalation] ExportByRowStruct(DialogTableRow) DONE total_rows=37
+[Escalation] wrote 1/1 rows from player_journey_seasons_talent_tree_table
+[Escalation] ExportByRowStruct(PlayerJourneySeasonData) DONE total_rows=1
+[Escalation] DONE progression=6 talents=111 buffs=144 dialog=37 playerJourneySeasons=1 total=299
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=3394 mastery=0
+thread start; flags: catalog=0 progression=0 combat=0 skins=0 skinsResolveStringTable=0 slayersPath=0 weaponSlots=0 hunts=0 tableInventory=0 cells=0 dropTables=0 currencyNames=0 storeRuntime=1
+waiting for GObjects + catalog...
+EXPORT_CATALOG=0, skipping catalog export
+EXPORT_WEAPON_SLOTS=0, skipping live weapon-slot export
+EXPORT_CELLS=0, skipping live cell-slot export
+EXPORT_PROGRESSION=0, skipping progression export
+EXPORT_COMBAT=0, skipping combat export
+EXPORT_SKINS=0, skipping weapon skins export
+EXPORT_SLAYERS_PATH=0, skipping Slayer's Path node export
+EXPORT_HUNTS=0, skipping live hunt table export
+EXPORT_DROP_TABLES=0, skipping drop-table export
+EXPORT_CURRENCY_NAMES=0, skipping currency name resolution
+[StoreRuntime] starting store runtime capture; open Reward Cache before injecting
+[StoreRuntime] currency table 'currency_table' wrote 34/34 CurrencyTableData rows
+[StoreRuntime] DONE storeViewModels=5 itemViewModels=221 imageRows=3168 currencyTables=1 currencyTableRows=34 skipped=0
+EXPORT_MASTERY=0, skipping mastery/achievement objective export
+[Escalation] starting 1.14.7 escalation DataTable export
+[Escalation] wrote 6/6 rows from escalation_progression
+[Escalation] ExportByRowStruct(EscalationProgressionTuning) DONE total_rows=6
+[Escalation] wrote 18/18 rows from escalation_talents_S6
+[Escalation] wrote 21/21 rows from escalation_talents_S5
+[Escalation] wrote 18/18 rows from escalation_talents_S4
+[Escalation] wrote 18/18 rows from escalation_talents_S3
+[Escalation] wrote 18/18 rows from escalation_talents_S2
+[Escalation] wrote 18/18 rows from escalation_talents
+[Escalation] ExportByRowStruct(EscalationTalentDefinition) DONE total_rows=111
+[Escalation] wrote 144/144 rows from escalation_buffs
+[Escalation] ExportByRowStruct(EscalationBuffDefinition) DONE total_rows=144
+[Escalation] wrote 37/37 rows from escalation_dialog_table
+[Escalation] ExportByRowStruct(DialogTableRow) DONE total_rows=37
+[Escalation] wrote 1/1 rows from player_journey_seasons_talent_tree_table
+[Escalation] ExportByRowStruct(PlayerJourneySeasonData) DONE total_rows=1
+[Escalation] DONE progression=6 talents=111 buffs=144 dialog=37 playerJourneySeasons=1 total=299
+EXPORT_TABLE_INVENTORY=0, skipping DataTable census
+ALL DONE general=0 equipment=0 progression=0 combat=0 skins=0 slayers=0 hunts=0 tables=0 dropTables=0 currencyNames=0 storeRuntime=3394 mastery=0
