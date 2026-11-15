@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "component": "ParadoxRuntime",
+  "target": "client",
+  "version": "0.1.2",
+  "channel": "stable",
+  "targetChangelist": 647472,
+  "platform": "windows-x86_64",
+  "size": 3594240,
+  "sha256": "30e3762c35d1fdf567352d98669321911b51070d72984ef295d26be80b191545",
+  "signature": "cO70wgGa9M0Bb/FRJgg0f8OgwC3T+oIFnk8Bgtc28e/CimqYB0G5l+H5K+IYGQIUd5oh/NdIl51MObt3zyZUAQ==",
+  "file": "MysticParadox-0.1.2-client-647472.dll",
+  "publishedAt": "2026-11-15T16:05:12.549Z",
+  "url": "https://nas.tail4f97f9.ts.net/launcher/v1/runtime/client/stable/windows-x86_64/download",
+  "extraFiles": [
+    {
+      "name": "winmm.dll",
+      "size": 144384,
+      "sha256": "9dda636d05f2d39868c2e7ca74bbbb6efe7f6aad1d6519c73931a21915a751dd",
+      "signature": "bHOiu67GwdSHy7ARDHomQNLJ1rKYuTlRPiZY/A4xCOiv1Yr4hkAC+e6mOHp2xM/5v5Xe5kKf8ItINbEwQ4k/Ag==",
+      "url": "https://nas.tail4f97f9.ts.net/launcher/v1/runtime/client/stable/windows-x86_64/extra/winmm.dll"
+    }
+  ]
+}
