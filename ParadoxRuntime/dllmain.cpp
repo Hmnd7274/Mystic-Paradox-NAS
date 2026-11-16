@@ -14991,16 +14991,19 @@ void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
     const int GauntletCensusSeq = GauntletCensus::Enter(Object, Function, FunctionName, Parms);
     const int32_t TravelUrlNumBefore = TravelCause::Before(FunctionNameEntry);
 
-    // Patch only the store item's BP refresh, immediately before its own handler reads the ViewModel.
-    // The currency-code alias is restored directly after this synchronous ProcessEvent call.
+    // Keep Rams display aliases active during both the ViewModel refresh
+    // and the dedicated multiple-currency icon setup.
     MpStoreRamsPriceRestoreState StoreRamsRestore;
-    const bool IsStoreItemViewModelUpdate = Function
-        && FunctionName.find("OnUpdatedViewModel") != std::string::npos
+
+    const bool IsStoreItemCurrencyRefresh = Function
+        && (FunctionName.find("OnUpdatedViewModel") != std::string::npos
+            || FunctionName.find("SetUpForMultipleCurrencies") != std::string::npos)
         && MpPrepareStoreRamsPriceForWidget(Object, StoreRamsRestore);
 
-    reinterpret_cast<void(*)(UObject*, UFunction*, void*)>(OrigProcessEventClient)(Object, Function, Parms);
+    reinterpret_cast<void(*)(UObject*, UFunction*, void*)>(
+        OrigProcessEventClient)(Object, Function, Parms);
 
-    if (IsStoreItemViewModelUpdate) {
+    if (IsStoreItemCurrencyRefresh) {
         MpRestoreStoreRamsPriceCurrencyCodes(StoreRamsRestore);
     }
     TravelCause::After(FunctionNameEntry, TravelUrlNumBefore);
