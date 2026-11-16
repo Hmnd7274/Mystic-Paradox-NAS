@@ -13,7 +13,7 @@ const MAX_RUNTIME_BYTES = 200 * 1024 * 1024;
 const DEFAULT_MANIFEST_URL =
   "https://paradox.mysticfox.dev/launcher/v1/runtime/server/stable/windows-x86_64";
 const RUNTIME_PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
-MCowBQYDK2VwAyEA3ZMtA7qUgs1F+1NQs2kmSG2zbOvXfjsh6+axI6eC/tc=
+MCowBQYDK2VwAyEAETsd9zKFUE4KfY62HXDxK55ixPsPo4IUEankcoc6Md8=
 -----END PUBLIC KEY-----`;
 
 type RuntimeManifest = {

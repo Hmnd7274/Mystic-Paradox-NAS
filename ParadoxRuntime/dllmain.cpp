@@ -14378,6 +14378,9 @@ struct MpStoreRamsPriceRestoreState {
     std::wstring OfferCurrencyCode;
     bool RestoreViewModelCurrencyCode = false;
     bool RestoreOfferCurrencyCode = false;
+
+    SDK::EOnlineStorePhoenixCurrency OfferCurrency = SDK::EOnlineStorePhoenixCurrency::None;
+    bool RestoreOfferCurrency = false;
 };
 
 static bool MpReadStoreFString(const void* Address, std::wstring& Out) {
@@ -14402,6 +14405,11 @@ static void MpRestoreStoreRamsPriceCurrencyCodes(MpStoreRamsPriceRestoreState& S
     if (State.RestoreOfferCurrencyCode && State.Offer) {
         MpWriteEngineFString(reinterpret_cast<uint8_t*>(State.Offer) + 0x0E0,
             State.OfferCurrencyCode);
+    }
+    if (State.RestoreOfferCurrency && State.Offer
+        && IsReadablePointer(State.Offer, sizeof(SDK::FOnlineStorePhoenixOffer))) {
+        auto* SavedOffer = reinterpret_cast<SDK::FOnlineStorePhoenixOffer*>(State.Offer);
+        SavedOffer->Currency = State.OfferCurrency;
     }
     State = {};
 }
@@ -14443,6 +14451,14 @@ static bool MpPrepareStoreRamsPriceForWidget(UObject* Widget, MpStoreRamsPriceRe
     }
     if (!Rams || Rams->Price < 0) return false;
 
+    // TEST: expose the native Rams currency enum only during the store widget refresh.
+    // The original value is restored immediately after the Blueprint handler returns.
+    if (Offer->Currency != SDK::EOnlineStorePhoenixCurrency::Rams) {
+        Restore.Offer = Offer;
+        Restore.OfferCurrency = Offer->Currency;
+        Restore.RestoreOfferCurrency = true;
+        Offer->Currency = SDK::EOnlineStorePhoenixCurrency::Rams;
+    }
     const int32_t CurrentPrice = Rams->Price;
     const int32_t RegularPrice = Rams->RegularPrice >= 0 ? Rams->RegularPrice : CurrentPrice;
 
