@@ -22,8 +22,15 @@ import { SumPlatinum } from "../platinumWallet";
 
 export const ramsToPlatinumRouter = Router();
 
+export function IsPlayerBearerRequest(req: any): boolean {
+    const Authorization = req.headers?.authorization;
+    const HasBearer = typeof Authorization === "string" && /^bearer\\s+/i.test(Authorization);
+    const HasGameserverKey = req.headers?.["x-mysticparadox-gameserver-apikey"] !== undefined;
+    return HasBearer && !HasGameserverKey && req.AuthData?.IsGameserver !== true;
+}
+
 function PlayerUserId(req: any): string | undefined {
-    if (req.AuthData?.IsGameserver === true) return undefined;
+    if (!IsPlayerBearerRequest(req)) return undefined;
     const UserId = req.AuthData?.userId;
     if (typeof UserId !== "string" || UserId.trim().length === 0 || UserId === "INVALID") return undefined;
     return UserId;
