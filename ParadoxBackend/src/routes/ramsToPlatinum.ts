@@ -25,7 +25,7 @@ export const ramsToPlatinumRouter = Router();
 
 
 function PlayerUserId(req: any): string | undefined {
-    if (!IsRamsToPlatinumPlayerBearer(req.headers?.authorization, req.headers?.["x-mysticparadox-gameserver-apikey"], req.AuthData?.IsGameserver)) return undefined;
+    if (!IsRamsToPlatinumPlayerBearer(req.headers?.authorization, req.headers?.["x-mysticparadox-gameserver-apikey"], req.AuthData)) return undefined;
     const UserId = req.AuthData?.userId;
     if (typeof UserId !== "string" || UserId.trim().length === 0 || UserId === "INVALID") return undefined;
     return UserId;
