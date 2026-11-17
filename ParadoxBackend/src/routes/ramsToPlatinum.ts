@@ -24,7 +24,7 @@ export const ramsToPlatinumRouter = Router();
 
 export function IsPlayerBearerRequest(req: any): boolean {
     const Authorization = req.headers?.authorization;
-    const HasBearer = typeof Authorization === "string" && /^bearer\\s+/i.test(Authorization);
+    const HasBearer = typeof Authorization === "string" && /^bearer\s+/i.test(Authorization);
     const HasGameserverKey = req.headers?.["x-mysticparadox-gameserver-apikey"] !== undefined;
     return HasBearer && !HasGameserverKey && req.AuthData?.IsGameserver !== true;
 }
