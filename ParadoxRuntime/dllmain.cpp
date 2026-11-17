@@ -65,6 +65,12 @@ static void DumpLoadManagerEntries(const char* Tag);
 // [2026-10-13 realms S1] defined with the URL redirect below; Init resolves the backend address, MainThread logs it.
 static void MpResolveBackendAddress();
 static void MpLogBackendAddress();
+
+// Client-only currency exchange menu (implementation included immediately before DllMain).
+namespace RamsToPlatinumMenu {
+    void OnClientHttpRequest(void* Request);
+    void OnClientProcessEvent();
+}
 // [1.14.7 active hunt pass] defined later; used by the readiness predicate hook.
 static void* g_archonGameInstanceForHuntPass = nullptr;
 static void CallFindActiveHuntPassRow(const char* Why);
@@ -8432,6 +8438,7 @@ char ProcessRequest(void* Request) {
     // pre-dispatch boundary; +0x032C5B40 is only the one-argument in-flight
     // SetURL diagnostic and cannot accept a replacement FString.
     MpRewriteRequestUrl(Request);
+    if (!Globals::AmServer) RamsToPlatinumMenu::OnClientHttpRequest(Request);
 
     // [1.14.7 2026-10-10] Dedicated-server XP grants carry an idempotent grant id (see MpEnsureProgressionGrantId).
     // Globals::AuthMode defaults to GlobalGameserver in every process (only Init() on a server changes it), so the
@@ -14582,6 +14589,7 @@ void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
     if (g_clientGameThreadId.load(std::memory_order_relaxed) == 0) {
         g_clientGameThreadId.store(GetCurrentThreadId(), std::memory_order_relaxed);   // ProcessEvent runs on the game thread
     }
+    RamsToPlatinumMenu::OnClientProcessEvent();
     // [2026-10-10 1.14.7] Read-only UWorld census around map changes (travel-crash probe). The engine-tick hook is
     // server-only, so the client checks GWorld from here, at most every 250 ms.
     {
@@ -25471,6 +25479,8 @@ void Init() {
     CreateThread(nullptr, 0x1000, (LPTHREAD_START_ROUTINE)MainThread, nullptr, 0, &threadId);
     InitLog("[Init] MainThread created, returning from DllMain");
 }
+
+#include "RamsToPlatinumMenu.inl"
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,

@@ -74,6 +74,23 @@ jobs:
       - run: cargo clippy --locked --manifest-path src-tauri/Cargo.toml --all-targets -- -D warnings
       - run: cargo test --locked --manifest-path src-tauri/Cargo.toml
 
+  runtime-dll:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: ParadoxRuntime
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the combined client/server runtime DLL
+        run: |
+          .\_build.bat
+          if ($LASTEXITCODE -ne 0) { throw "runtime DLL build failed (exit $LASTEXITCODE)" }
+          $Dll = "x64\Release\MysticParadox.dll"
+          if (-not (Test-Path $Dll)) { throw "runtime DLL was not produced at $Dll" }
+          Get-FileHash $Dll -Algorithm SHA256 | Format-List
+
   runtime-loader:
     runs-on: windows-latest
     defaults:
