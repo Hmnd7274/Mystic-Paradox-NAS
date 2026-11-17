@@ -130,3 +130,12 @@ test("insufficient Rams, concurrency conflicts and reused ids are mapped safely"
 test("Universal Platinum is not a prestige-gated reward currency", () => {
     assert.equal(IsPrestigeGatedReward(PLATINUM_CURRENCY_ID), false);
 });
+
+test("player Bearer validation rejects gameserver-only and mixed service credentials", async () => {
+    const { IsRamsToPlatinumPlayerBearer } = await import("./ramsToPlatinum");
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", undefined, false), true);
+    assert.equal(IsRamsToPlatinumPlayerBearer("bearer player-jwt", undefined, false), true);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", "service-key", true), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer(undefined, undefined, true), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Basic credential", undefined, false), false);
+});
