@@ -25,7 +25,7 @@ static int64_t s_rams = 0;
 static int64_t s_platinum = 0;
 static int s_rate = 15;
 static int s_selected = 0;
-static uint64_t s_retryAtMs = 0;
+static std::atomic<uint64_t> s_retryAtMs{ 0 };
 static uint64_t s_lastTickMs = 0;
 static std::wstring s_status = L"Connexion au serveur...";
 static SDK::UUserWidget* s_widget = nullptr;
@@ -376,7 +376,7 @@ static void RefreshQuoteAsync() {
     if (!GetBearer(Bearer)) {
         s_requestInFlight.store(false, std::memory_order_release);
         SetStatus(L"En attente de la session joueur...");
-        s_retryAtMs = GetTickCount64() + 1500;
+        s_retryAtMs.store(GetTickCount64() + 1500, std::memory_order_release);
         return;
     }
 
@@ -395,7 +395,7 @@ static void RefreshQuoteAsync() {
             s_status = Reply.status == 403 ? L"Session joueur refusee (403)."
                 : L"Impossible de lire le solde. Reessayez.";
         }
-        s_retryAtMs = GetTickCount64() + 3000;
+        s_retryAtMs.store(GetTickCount64() + 3000, std::memory_order_release);
         s_requestInFlight.store(false, std::memory_order_release);
     }).detach();
 }
@@ -437,7 +437,7 @@ static void ConvertSelectedAsync() {
         } else {
             s_status = L"Echec de conversion. Verifiez le serveur.";
         }
-        s_retryAtMs = GetTickCount64() + 2500;
+        s_retryAtMs.store(GetTickCount64() + 2500, std::memory_order_release);
         s_requestInFlight.store(false, std::memory_order_release);
     }).detach();
 }
@@ -526,7 +526,7 @@ static void OnClientProcessEvent() {
 
     if (!s_quoteReady.load(std::memory_order_acquire)
         && !s_requestInFlight.load(std::memory_order_acquire)
-        && Now >= s_retryAtMs) {
+        && Now >= s_retryAtMs.load(std::memory_order_acquire)) {
         RefreshQuoteAsync();
     }
 
