@@ -48,6 +48,14 @@ static bool Call(SDK::UObject* Object, const char* ClassName, const char* Functi
     return true;
 }
 
+static bool IsGameForeground() {
+    const HWND Foreground = GetForegroundWindow();
+    if (!Foreground) return false;
+    DWORD ProcessId = 0;
+    GetWindowThreadProcessId(Foreground, &ProcessId);
+    return ProcessId == GetCurrentProcessId();
+}
+
 static bool KeyPressed(int VirtualKey, SHORT& Previous) {
     const SHORT Current = GetAsyncKeyState(VirtualKey);
     const bool Pressed = (Current & 0x8000) != 0 && (Previous & 0x8000) == 0;
@@ -502,7 +510,8 @@ static void OnClientProcessEvent() {
     s_lastTickMs = Now;
     s_inClientTick = true;
 
-    if (KeyPressed(VK_F8, s_keyF8)) {
+    const bool GameForeground = IsGameForeground();
+    if (GameForeground && KeyPressed(VK_F8, s_keyF8)) {
         if (IsOpen()) CloseWidget();
         else OpenMenu();
     }
@@ -512,14 +521,14 @@ static void OnClientProcessEvent() {
         return;
     }
 
-    if (KeyPressed(VK_ESCAPE, s_keyEscape)) {
+    if (GameForeground && KeyPressed(VK_ESCAPE, s_keyEscape)) {
         CloseWidget();
         s_inClientTick = false;
         return;
     }
-    if (KeyPressed(VK_UP, s_keyUp)) s_selected = (s_selected + 3) % 4;
-    if (KeyPressed(VK_DOWN, s_keyDown)) s_selected = (s_selected + 1) % 4;
-    if (KeyPressed(VK_RETURN, s_keyEnter)) {
+    if (GameForeground && KeyPressed(VK_UP, s_keyUp)) s_selected = (s_selected + 3) % 4;
+    if (GameForeground && KeyPressed(VK_DOWN, s_keyDown)) s_selected = (s_selected + 1) % 4;
+    if (GameForeground && KeyPressed(VK_RETURN, s_keyEnter)) {
         if (s_quoteReady.load(std::memory_order_acquire)) ConvertSelectedAsync();
         else SetStatus(L"Attendez le chargement du solde.");
     }
