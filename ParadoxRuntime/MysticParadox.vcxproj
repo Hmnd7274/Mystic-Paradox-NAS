@@ -155,6 +155,7 @@
     <ClInclude Include="Networking.h" />
     <ClInclude Include="P2PHooks.h" />
     <ClInclude Include="RuntimeShared.h" />
+    <ClInclude Include="RamsToPlatinumMenu.inl" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
