@@ -16,11 +16,13 @@ export const RAMS_TO_PLATINUM_AMOUNTS = [100, 500, 1000, 5000] as const;
 export const RAMS_CURRENCY_ID = "CURRENCY_NOTES";
 export const PLATINUM_CURRENCY_ID = "CURRENCY_PLATINUM_UNIV";
 
-export function IsRamsToPlatinumPlayerBearer(Authorization: unknown, GameserverApiKey: unknown, IsGameserver: unknown): boolean {
+export function IsRamsToPlatinumPlayerBearer(Authorization: unknown, GameserverApiKey: unknown, AuthData: any): boolean {
     return typeof Authorization === "string"
         && /^bearer\s+/i.test(Authorization)
         && GameserverApiKey === undefined
-        && IsGameserver !== true;
+        && AuthData?.IsGameserver !== true
+        && AuthData?.iss === "paradox-backend"
+        && AuthData?.aud === "paradox-backend";
 }
 
 export type RamsToPlatinumAmount = typeof RAMS_TO_PLATINUM_AMOUNTS[number];
