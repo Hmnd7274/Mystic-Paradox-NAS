@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -182,6 +182,7 @@
     <ClCompile Include="anticheat\HuntGuard.cpp" Condition="Exists('p2p\PlayerHost.cpp') And Exists('anticheat\HuntGuard.cpp')" />
     <ClCompile Include="SDK\Archon_functions.cpp" />
     <ClCompile Include="SDK\OnlineSubsystemPhoenix_functions.cpp" />
+    <ClCompile Include="SDK\UMG_functions.cpp" />
     <ClCompile Include="SDK\Basic.cpp" />
     <ClCompile Include="SDK\BPGM_Archon_Prototype_functions.cpp" />
     <ClCompile Include="SDK\BP_EB_Weapon_functions.cpp" />
@@ -195,3 +196,4 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>
+

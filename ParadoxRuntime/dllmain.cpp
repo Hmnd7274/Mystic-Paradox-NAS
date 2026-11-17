@@ -14521,6 +14521,62 @@ static bool MpPrepareStoreRamsPriceForWidget(UObject* Widget, MpStoreRamsPriceRe
     return true;
 }
 
+ // [2026-11-16 STORE RAMS ICON FIX - direct PriceIcon override]
+ // The store card Blueprint can still leave its legacy Platinum texture on PriceIcon,
+ // even when its price text has been corrected and CurrencyCode is temporarily aliased.
+ // Resolve the known Rams presentation row directly from the ViewModel's CurrencyDataTable,
+ // then apply that soft texture AFTER the Blueprint refresh has completed.
+ static bool MpForceStoreRamsCurrencyIconForWidget(UObject* Widget) {
+     if (!Widget || !IsRegisteredLiveObject(Widget)
+         || !Widget->IsA(SDK::UStoreItemWidget::StaticClass())) {
+         return false;
+     }
+
+     // SDK 1.14.7:
+     // UStoreItemWidget::StoreItemViewModel = +0x538
+     // w_store_item_bpw_C::PriceIcon        = +0x648
+     const uintptr_t WidgetAddress = reinterpret_cast<uintptr_t>(Widget);
+     if (!IsReadablePointer(reinterpret_cast<void*>(WidgetAddress + 0x538), sizeof(void*))
+         || !IsReadablePointer(reinterpret_cast<void*>(WidgetAddress + 0x648), sizeof(void*))) {
+         return false;
+     }
+
+     auto* ViewModel = reinterpret_cast<UObject*>(
+         *reinterpret_cast<void**>(WidgetAddress + 0x538));
+     if (!ViewModel || !IsRegisteredLiveObject(ViewModel)) {
+         return false;
+     }
+
+     auto* PriceIcon = reinterpret_cast<SDK::UImage*>(
+         *reinterpret_cast<void**>(WidgetAddress + 0x648));
+     if (!PriceIcon || !IsRegisteredLiveObject(PriceIcon)
+         || !PriceIcon->IsA(SDK::UImage::StaticClass())) {
+         return false;
+     }
+
+     // UStoreItemViewModel::CurrencyDataTable = +0x8B0.
+     const uintptr_t ViewModelAddress = reinterpret_cast<uintptr_t>(ViewModel);
+     if (!IsReadablePointer(reinterpret_cast<void*>(ViewModelAddress + 0x8B0), sizeof(void*))) {
+         return false;
+     }
+
+     auto* CurrencyDataTable = reinterpret_cast<SDK::UDataTable*>(
+         *reinterpret_cast<void**>(ViewModelAddress + 0x8B0));
+     if (!CurrencyDataTable || !IsRegisteredLiveObject(CurrencyDataTable)) {
+         return false;
+     }
+
+     // The captured CurrencyDataTable has a populated CURRENCY_NOTES row with the Rams icon.
+     // This uses the game's own lookup API; no guessed texture path or manual FName layout.
+     const auto RamsCurrencyId =
+         SDK::UKismetStringLibrary::Conv_StringToName(L"CURRENCY_NOTES");
+     const auto RamsIcon =
+         SDK::UCurrencyBlueprintLibrary::GetCurrencyIcon(CurrencyDataTable, RamsCurrencyId);
+
+     // bMatchSize=false keeps the card's existing icon dimensions/layout.
+     PriceIcon->SetBrushFromSoftTexture(RamsIcon, false);
+     return true;
+ }
 void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
     g_clientProcessEventCount.fetch_add(1, std::memory_order_relaxed);
     if (g_clientGameThreadId.load(std::memory_order_relaxed) == 0) {
@@ -15004,6 +15060,7 @@ void ProcessEventClientHook(UObject* Object, UFunction* Function, void* Parms) {
         OrigProcessEventClient)(Object, Function, Parms);
 
     if (IsStoreItemCurrencyRefresh) {
+        MpForceStoreRamsCurrencyIconForWidget(Object);
         MpRestoreStoreRamsPriceCurrencyCodes(StoreRamsRestore);
     }
     TravelCause::After(FunctionNameEntry, TravelUrlNumBefore);
