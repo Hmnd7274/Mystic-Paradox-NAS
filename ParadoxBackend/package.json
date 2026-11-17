@@ -54,7 +54,8 @@
     "approval:migrate": "tsx --env-file=.env scripts/migrate_launcher_approval.ts",
     "p2p:steam-link": "tsx --env-file=.env scripts/p2p/bind_p2p_steam_account.ts",
     "test:p2p-operator": "node --import tsx --test scripts/p2p/bind_p2p_steam_account.test.ts",
-    "test": "node scripts/run-tests.cjs"
+    "test": "node scripts/run-tests.cjs",
+    "test:rams-to-platinum": "node --import tsx --test src/controllers/ramsToPlatinum.test.ts"
   },
   "dependencies": {
     "@node-rs/argon2": "^2.0.2",
