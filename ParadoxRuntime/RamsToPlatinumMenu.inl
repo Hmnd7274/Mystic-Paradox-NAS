@@ -332,6 +332,24 @@ static HttpReply SendBackendRequest(const std::wstring& Bearer, const wchar_t* P
 
 static bool ReadPlayerBearerFromRequest(void* Request, std::wstring& Out) {
     if (!Request || !IsReadablePointer(Request, 0xD0)) return false;
+
+    // ProcessRequest has already run MpRewriteRequestUrl. Only retain a token from a request
+    // addressed to this configured backend; other Bearer tokens (Epic/XMPP/third-party) must
+    // never replace the player session used by this menu.
+    struct RawFString { wchar_t* Data; int32_t Num; int32_t Max; };
+    const auto* Url = reinterpret_cast<const RawFString*>(reinterpret_cast<uintptr_t>(Request) + 0x70);
+    if (!Url->Data || Url->Num < 2 || Url->Max < Url->Num || Url->Num > 32768
+        || !IsReadablePointer(Url->Data, static_cast<size_t>(Url->Num) * sizeof(wchar_t))) return false;
+    const std::wstring RequestUrl(Url->Data, static_cast<size_t>(Url->Num - 1));
+    const wchar_t* ApiBase = MpApiBase();
+    if (!ApiBase || !*ApiBase) return false;
+    const size_t ApiBaseLength = wcslen(ApiBase);
+    if (RequestUrl.size() < ApiBaseLength
+        || _wcsnicmp(RequestUrl.c_str(), ApiBase, ApiBaseLength) != 0
+        || (RequestUrl.size() > ApiBaseLength && RequestUrl[ApiBaseLength] != L'/' && RequestUrl[ApiBaseLength] != L'?')) {
+        return false;
+    }
+
     void** Vtable = *reinterpret_cast<void***>(Request);
     if (!Vtable || !IsReadablePointer(Vtable, 17 * sizeof(void*))) return false;
 
