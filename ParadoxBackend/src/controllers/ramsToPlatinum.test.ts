@@ -133,9 +133,12 @@ test("Universal Platinum is not a prestige-gated reward currency", () => {
 
 test("player Bearer validation rejects gameserver-only and mixed service credentials", async () => {
     const { IsRamsToPlatinumPlayerBearer } = await import("./ramsToPlatinum");
-    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", undefined, false), true);
-    assert.equal(IsRamsToPlatinumPlayerBearer("bearer player-jwt", undefined, false), true);
-    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", "service-key", true), false);
-    assert.equal(IsRamsToPlatinumPlayerBearer(undefined, undefined, true), false);
-    assert.equal(IsRamsToPlatinumPlayerBearer("Basic credential", undefined, false), false);
+    const PlayerAuth = { userId: "player-1", iss: "paradox-backend", aud: "paradox-backend" };
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", undefined, PlayerAuth), true);
+    assert.equal(IsRamsToPlatinumPlayerBearer("bearer player-jwt", undefined, PlayerAuth), true);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer player-jwt", "service-key", { ...PlayerAuth, IsGameserver: true }), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer(undefined, undefined, PlayerAuth), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Basic credential", undefined, PlayerAuth), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer other-token", undefined, { ...PlayerAuth, iss: "other-service" }), false);
+    assert.equal(IsRamsToPlatinumPlayerBearer("Bearer other-token", undefined, { ...PlayerAuth, aud: "other-service" }), false);
 });
