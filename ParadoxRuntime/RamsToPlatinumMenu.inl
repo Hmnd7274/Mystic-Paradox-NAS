@@ -511,7 +511,8 @@ static void OnClientProcessEvent() {
     s_inClientTick = true;
 
     const bool GameForeground = IsGameForeground();
-    if (GameForeground && KeyPressed(VK_F8, s_keyF8)) {
+    const bool F8Pressed = KeyPressed(VK_F8, s_keyF8);
+    if (GameForeground && F8Pressed) {
         if (IsOpen()) CloseWidget();
         else OpenMenu();
     }
@@ -521,14 +522,18 @@ static void OnClientProcessEvent() {
         return;
     }
 
-    if (GameForeground && KeyPressed(VK_ESCAPE, s_keyEscape)) {
+    const bool EscapePressed = KeyPressed(VK_ESCAPE, s_keyEscape);
+    const bool UpPressed = KeyPressed(VK_UP, s_keyUp);
+    const bool DownPressed = KeyPressed(VK_DOWN, s_keyDown);
+    const bool EnterPressed = KeyPressed(VK_RETURN, s_keyEnter);
+    if (GameForeground && EscapePressed) {
         CloseWidget();
         s_inClientTick = false;
         return;
     }
-    if (GameForeground && KeyPressed(VK_UP, s_keyUp)) s_selected = (s_selected + 3) % 4;
-    if (GameForeground && KeyPressed(VK_DOWN, s_keyDown)) s_selected = (s_selected + 1) % 4;
-    if (GameForeground && KeyPressed(VK_RETURN, s_keyEnter)) {
+    if (GameForeground && UpPressed) s_selected = (s_selected + 3) % 4;
+    if (GameForeground && DownPressed) s_selected = (s_selected + 1) % 4;
+    if (GameForeground && EnterPressed) {
         if (s_quoteReady.load(std::memory_order_acquire)) ConvertSelectedAsync();
         else SetStatus(L"Attendez le chargement du solde.");
     }
